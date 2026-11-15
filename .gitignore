@@ -1,0 +1,11 @@
+# Customer/book documents never go into git
+Recipe.pdf
+*.pdf
+
+# Secrets
+.env
+
+# Python
+__pycache__/
+*.pyc
+.venv/
