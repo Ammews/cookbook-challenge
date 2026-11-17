@@ -11,8 +11,8 @@
 | Amount | Ingredient | Source |
 | --- | --- | --- |
 | amount not given | festen Bratenstücke (roast meat) | read, p. 1: “die festen Bratenstücke” |
-| ½ l | Essig (vinegar) | read, p. 1: “1/2 l Essig” |
-| ½ l | Wasser (water) | read, p. 1: “1/2 l Wasser” |
+| 0.5 l | Essig (vinegar) | read, p. 1: “1/2 l Essig” |
+| 0.5 l | Wasser (water) | read, p. 1: “1/2 l Wasser” |
 | 4 | Zwiebeln (onions), sliced | read, p. 1: “4 in Scheiben geschnittene Zwiebeln” |
 | amount not given | Pfeffer (pepper) | read, p. 1: “Pfeffer” |
 | amount not given | Nelken (cloves) | read, p. 1: “Nelken” |

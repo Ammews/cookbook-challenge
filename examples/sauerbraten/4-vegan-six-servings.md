@@ -11,8 +11,8 @@
 | Amount | Ingredient | Source |
 | --- | --- | --- |
 | amount not given | seitan roast (or a whole celeriac) | **changed**: vegan substitute for 'festen Bratenstücke': The meat is the main ingredient. Seitan holds together in a long braise and takes up the marinade; a whole celeriac is a soy- and gluten-free alternative. |
-| ¾ l | Essig (vinegar) | **changed** (scaled); read, p. 1: “1/2 l Essig” |
-| ¾ l | Wasser (water) | **changed** (scaled); read, p. 1: “1/2 l Wasser” |
+| 0.75 l | Essig (vinegar) | **changed** (scaled); read, p. 1: “1/2 l Essig” |
+| 0.75 l | Wasser (water) | **changed** (scaled); read, p. 1: “1/2 l Wasser” |
 | 6 | Zwiebeln (onions), sliced | **changed** (scaled); read, p. 1: “4 in Scheiben geschnittene Zwiebeln” |
 | amount not given | Pfeffer (pepper) | read, p. 1: “Pfeffer” |
 | amount not given | Nelken (cloves) | read, p. 1: “Nelken” |
@@ -86,8 +86,8 @@
 | vegan | red_wine | Rotwein | unchanged, check the label | Some wines are clarified with egg white, gelatin or isinglass. Choose one labelled vegan. |
 | vegan | sugar | Zucker | unchanged, check the label | Some cane sugar is filtered through bone char. Beet sugar and sugar labelled vegan are safe. |
 | scale | servings | 4 | 6 | Requested 6 servings; the original serves 4 (inferred, not stated: No serving count is stated. Estimated from about 1 l of marinade and a roast of solid cut.). |
-| scale | vinegar | ½ l Essig | ¾ l Essig | ×1 ½ |
-| scale | water | ½ l Wasser | ¾ l Wasser | ×1 ½ |
+| scale | vinegar | 0.5 l Essig | 0.75 l Essig | ×1 ½ |
+| scale | water | 0.5 l Wasser | 0.75 l Wasser | ×1 ½ |
 | scale | onions | 4 Zwiebeln | 6 Zwiebeln | ×1 ½ |
 | scale | amounts not given | seitan roast (or a whole celeriac), Pfeffer, Nelken, Salz, Lorbeerblätter, Essigwasser, smoked tofu, diced, vegan butter, Äpfel, Möhren, Wacholderbeeren, vegetable stock with the pan juices of the vegan roast, Mehl, Rotwein, Korinthen, Rosinen, Zucker | unchanged | The recipe gives no number for these, so there is nothing to multiply. Adjust by taste. |
 | scale | times | as written | unchanged | Cooking and marinating times depend on the size of each piece, not on the number of people. A bigger roast needs longer: check doneness instead of the clock. |

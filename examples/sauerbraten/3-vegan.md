@@ -11,8 +11,8 @@
 | Amount | Ingredient | Source |
 | --- | --- | --- |
 | amount not given | seitan roast (or a whole celeriac) | **changed**: vegan substitute for 'festen Bratenstücke': The meat is the main ingredient. Seitan holds together in a long braise and takes up the marinade; a whole celeriac is a soy- and gluten-free alternative. |
-| ½ l | Essig (vinegar) | read, p. 1: “1/2 l Essig” |
-| ½ l | Wasser (water) | read, p. 1: “1/2 l Wasser” |
+| 0.5 l | Essig (vinegar) | read, p. 1: “1/2 l Essig” |
+| 0.5 l | Wasser (water) | read, p. 1: “1/2 l Wasser” |
 | 4 | Zwiebeln (onions), sliced | read, p. 1: “4 in Scheiben geschnittene Zwiebeln” |
 | amount not given | Pfeffer (pepper) | read, p. 1: “Pfeffer” |
 | amount not given | Nelken (cloves) | read, p. 1: “Nelken” |

@@ -1,0 +1,1333 @@
+{
+  "document": {
+    "name": "input.jpg",
+    "kind": "image",
+    "pages": [
+      {
+        "number": 1,
+        "text": "2 eggs    1/2 t baking powder\n3/4 c brown sugar    2 t soda\n3/4 c molasses    2 t ginger\n3/4 c melted shortening    1 1/2 t cinnamon\n2 1/2 c flour    1/2 t nutmeg\n1/2 t cloves    1 c boiling water\n\nAdd beaten eggs to sugar, molasses and shortening. Add dry ingredients. Add hot water. Bake in moderate oven.",
+        "method": "vision",
+        "decoration_text": [
+          "SPICY GINGERBREAD",
+          "(Shirley G)"
+        ],
+        "uncertain": [],
+        "usage": {
+          "model": "claude-haiku-5-5",
+          "input_tokens": 1549,
+          "output_tokens": 889,
+          "seconds": 4.739949299999807,
+          "cached": true
+        }
+      }
+    ]
+  },
+  "extraction": {
+    "is_recipe": true,
+    "recipes_in_document": 1,
+    "recipe": {
+      "title": "Spicy Gingerbread",
+      "language": "en",
+      "servings": {
+        "value": 8,
+        "source": {
+          "status": "inferred",
+          "page": 1,
+          "quote": null,
+          "note": "Not stated in the text. Estimated from one batch of 2 1/2 c flour, a typical 8-serving loaf or square cake."
+        }
+      },
+      "ingredients": [
+        {
+          "id": "eggs",
+          "name": "eggs",
+          "name_original": "eggs",
+          "quantity": {
+            "kind": "exact",
+            "value": 2.0,
+            "max_value": null,
+            "unit": null,
+            "raw": "2"
+          },
+          "preparation": "beaten",
+          "optional": false,
+          "is_intermediate": false,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "2 eggs",
+            "note": null
+          }
+        },
+        {
+          "id": "brown_sugar",
+          "name": "brown sugar",
+          "name_original": "brown sugar",
+          "quantity": {
+            "kind": "exact",
+            "value": 0.75,
+            "max_value": null,
+            "unit": "c",
+            "raw": "3/4 c"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "3/4 c brown sugar",
+            "note": null
+          }
+        },
+        {
+          "id": "molasses",
+          "name": "molasses",
+          "name_original": "molasses",
+          "quantity": {
+            "kind": "exact",
+            "value": 0.75,
+            "max_value": null,
+            "unit": "c",
+            "raw": "3/4 c"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "3/4 c molasses",
+            "note": null
+          }
+        },
+        {
+          "id": "shortening",
+          "name": "shortening",
+          "name_original": "shortening",
+          "quantity": {
+            "kind": "exact",
+            "value": 0.75,
+            "max_value": null,
+            "unit": "c",
+            "raw": "3/4 c"
+          },
+          "preparation": "melted",
+          "optional": false,
+          "is_intermediate": false,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "3/4 c melted shortening",
+            "note": null
+          }
+        },
+        {
+          "id": "flour",
+          "name": "flour",
+          "name_original": "flour",
+          "quantity": {
+            "kind": "exact",
+            "value": 2.5,
+            "max_value": null,
+            "unit": "c",
+            "raw": "2 1/2 c"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "2 1/2 c flour",
+            "note": null
+          }
+        },
+        {
+          "id": "baking_powder",
+          "name": "baking powder",
+          "name_original": "baking powder",
+          "quantity": {
+            "kind": "exact",
+            "value": 0.5,
+            "max_value": null,
+            "unit": "t",
+            "raw": "1/2 t"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "1/2 t baking powder",
+            "note": null
+          }
+        },
+        {
+          "id": "soda",
+          "name": "soda",
+          "name_original": "soda",
+          "quantity": {
+            "kind": "exact",
+            "value": 2.0,
+            "max_value": null,
+            "unit": "t",
+            "raw": "2 t"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "2 t soda",
+            "note": null
+          }
+        },
+        {
+          "id": "ginger",
+          "name": "ginger",
+          "name_original": "ginger",
+          "quantity": {
+            "kind": "exact",
+            "value": 2.0,
+            "max_value": null,
+            "unit": "t",
+            "raw": "2 t"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "2 t ginger",
+            "note": null
+          }
+        },
+        {
+          "id": "cinnamon",
+          "name": "cinnamon",
+          "name_original": "cinnamon",
+          "quantity": {
+            "kind": "exact",
+            "value": 1.5,
+            "max_value": null,
+            "unit": "t",
+            "raw": "1 1/2 t"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "1 1/2 t cinnamon",
+            "note": null
+          }
+        },
+        {
+          "id": "nutmeg",
+          "name": "nutmeg",
+          "name_original": "nutmeg",
+          "quantity": {
+            "kind": "exact",
+            "value": 0.5,
+            "max_value": null,
+            "unit": "t",
+            "raw": "1/2 t"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "1/2 t nutmeg",
+            "note": null
+          }
+        },
+        {
+          "id": "cloves",
+          "name": "cloves",
+          "name_original": "cloves",
+          "quantity": {
+            "kind": "exact",
+            "value": 0.5,
+            "max_value": null,
+            "unit": "t",
+            "raw": "1/2 t"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "1/2 t cloves",
+            "note": null
+          }
+        },
+        {
+          "id": "water",
+          "name": "water",
+          "name_original": "boiling water",
+          "quantity": {
+            "kind": "exact",
+            "value": 1.0,
+            "max_value": null,
+            "unit": "c",
+            "raw": "1 c"
+          },
+          "preparation": "boiling",
+          "optional": false,
+          "is_intermediate": false,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "1 c boiling water",
+            "note": null
+          }
+        }
+      ],
+      "tools": [
+        {
+          "id": "oven",
+          "name": "oven",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Bake in moderate oven.",
+            "note": null
+          }
+        },
+        {
+          "id": "bowl",
+          "name": "bowl",
+          "source": {
+            "status": "inferred",
+            "page": 1,
+            "quote": null,
+            "note": "Implied: needed to beat the eggs and mix the sugar, molasses, shortening and dry ingredients in the first steps."
+          }
+        }
+      ],
+      "steps": [
+        {
+          "order": 1,
+          "text": "Add beaten eggs to sugar, molasses and shortening.",
+          "ingredient_ids": [
+            "eggs",
+            "brown_sugar",
+            "molasses",
+            "shortening"
+          ],
+          "tool_ids": [
+            "bowl"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Add beaten eggs to sugar, molasses and shortening.",
+            "note": null
+          }
+        },
+        {
+          "order": 2,
+          "text": "Add dry ingredients.",
+          "ingredient_ids": [
+            "flour",
+            "baking_powder",
+            "soda",
+            "ginger",
+            "cinnamon",
+            "nutmeg",
+            "cloves"
+          ],
+          "tool_ids": [
+            "bowl"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Add dry ingredients.",
+            "note": null
+          }
+        },
+        {
+          "order": 3,
+          "text": "Add hot water.",
+          "ingredient_ids": [
+            "water"
+          ],
+          "tool_ids": [
+            "bowl"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Add hot water.",
+            "note": null
+          }
+        },
+        {
+          "order": 4,
+          "text": "Bake in moderate oven.",
+          "ingredient_ids": [],
+          "tool_ids": [
+            "oven"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Bake in moderate oven.",
+            "note": null
+          }
+        }
+      ],
+      "warnings": [
+        {
+          "message": "Servings are not stated; 8 is an estimate from the flour quantity.",
+          "target_id": null
+        },
+        {
+          "message": "The text says only 'moderate oven' with no temperature; no baking time or pan size is given.",
+          "target_id": null
+        },
+        {
+          "message": "No preheating step is written; the oven is listed because the text says to bake in it.",
+          "target_id": null
+        },
+        {
+          "message": "The abbreviation 't' is read as teaspoon and 'c' as cup; the source does not spell these out.",
+          "target_id": null
+        },
+        {
+          "message": "'soda' is written without 'baking'; it is kept as written and may mean baking soda.",
+          "target_id": null
+        },
+        {
+          "message": "The word 'hot' in 'Add hot water' is read against 'boiling water' in the ingredient list; both are kept.",
+          "target_id": null
+        },
+        {
+          "message": "Transcription by vision; amounts such as '1/2' and '3/4' should be checked against the original image.",
+          "target_id": null
+        },
+        {
+          "message": "The bowl is an implied tool, not named in the text.",
+          "target_id": null
+        }
+      ]
+    },
+    "usage": [
+      {
+        "model": "claude-haiku-5-5",
+        "input_tokens": 4012,
+        "output_tokens": 4238,
+        "seconds": 16.334524699999974,
+        "cached": true
+      }
+    ],
+    "problems_found": [],
+    "problems_left": []
+  },
+  "manipulation": {
+    "original": {
+      "title": "Spicy Gingerbread",
+      "language": "en",
+      "servings": {
+        "value": 8,
+        "source": {
+          "status": "inferred",
+          "page": 1,
+          "quote": null,
+          "note": "Not stated in the text. Estimated from one batch of 2 1/2 c flour, a typical 8-serving loaf or square cake."
+        }
+      },
+      "ingredients": [
+        {
+          "id": "eggs",
+          "name": "eggs",
+          "name_original": "eggs",
+          "quantity": {
+            "kind": "exact",
+            "value": 2.0,
+            "max_value": null,
+            "unit": null,
+            "raw": "2"
+          },
+          "preparation": "beaten",
+          "optional": false,
+          "is_intermediate": false,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "2 eggs",
+            "note": null
+          }
+        },
+        {
+          "id": "brown_sugar",
+          "name": "brown sugar",
+          "name_original": "brown sugar",
+          "quantity": {
+            "kind": "exact",
+            "value": 0.75,
+            "max_value": null,
+            "unit": "c",
+            "raw": "3/4 c"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "3/4 c brown sugar",
+            "note": null
+          }
+        },
+        {
+          "id": "molasses",
+          "name": "molasses",
+          "name_original": "molasses",
+          "quantity": {
+            "kind": "exact",
+            "value": 0.75,
+            "max_value": null,
+            "unit": "c",
+            "raw": "3/4 c"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "3/4 c molasses",
+            "note": null
+          }
+        },
+        {
+          "id": "shortening",
+          "name": "shortening",
+          "name_original": "shortening",
+          "quantity": {
+            "kind": "exact",
+            "value": 0.75,
+            "max_value": null,
+            "unit": "c",
+            "raw": "3/4 c"
+          },
+          "preparation": "melted",
+          "optional": false,
+          "is_intermediate": false,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "3/4 c melted shortening",
+            "note": null
+          }
+        },
+        {
+          "id": "flour",
+          "name": "flour",
+          "name_original": "flour",
+          "quantity": {
+            "kind": "exact",
+            "value": 2.5,
+            "max_value": null,
+            "unit": "c",
+            "raw": "2 1/2 c"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "2 1/2 c flour",
+            "note": null
+          }
+        },
+        {
+          "id": "baking_powder",
+          "name": "baking powder",
+          "name_original": "baking powder",
+          "quantity": {
+            "kind": "exact",
+            "value": 0.5,
+            "max_value": null,
+            "unit": "t",
+            "raw": "1/2 t"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "1/2 t baking powder",
+            "note": null
+          }
+        },
+        {
+          "id": "soda",
+          "name": "soda",
+          "name_original": "soda",
+          "quantity": {
+            "kind": "exact",
+            "value": 2.0,
+            "max_value": null,
+            "unit": "t",
+            "raw": "2 t"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "2 t soda",
+            "note": null
+          }
+        },
+        {
+          "id": "ginger",
+          "name": "ginger",
+          "name_original": "ginger",
+          "quantity": {
+            "kind": "exact",
+            "value": 2.0,
+            "max_value": null,
+            "unit": "t",
+            "raw": "2 t"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "2 t ginger",
+            "note": null
+          }
+        },
+        {
+          "id": "cinnamon",
+          "name": "cinnamon",
+          "name_original": "cinnamon",
+          "quantity": {
+            "kind": "exact",
+            "value": 1.5,
+            "max_value": null,
+            "unit": "t",
+            "raw": "1 1/2 t"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "1 1/2 t cinnamon",
+            "note": null
+          }
+        },
+        {
+          "id": "nutmeg",
+          "name": "nutmeg",
+          "name_original": "nutmeg",
+          "quantity": {
+            "kind": "exact",
+            "value": 0.5,
+            "max_value": null,
+            "unit": "t",
+            "raw": "1/2 t"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "1/2 t nutmeg",
+            "note": null
+          }
+        },
+        {
+          "id": "cloves",
+          "name": "cloves",
+          "name_original": "cloves",
+          "quantity": {
+            "kind": "exact",
+            "value": 0.5,
+            "max_value": null,
+            "unit": "t",
+            "raw": "1/2 t"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "1/2 t cloves",
+            "note": null
+          }
+        },
+        {
+          "id": "water",
+          "name": "water",
+          "name_original": "boiling water",
+          "quantity": {
+            "kind": "exact",
+            "value": 1.0,
+            "max_value": null,
+            "unit": "c",
+            "raw": "1 c"
+          },
+          "preparation": "boiling",
+          "optional": false,
+          "is_intermediate": false,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "1 c boiling water",
+            "note": null
+          }
+        }
+      ],
+      "tools": [
+        {
+          "id": "oven",
+          "name": "oven",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Bake in moderate oven.",
+            "note": null
+          }
+        },
+        {
+          "id": "bowl",
+          "name": "bowl",
+          "source": {
+            "status": "inferred",
+            "page": 1,
+            "quote": null,
+            "note": "Implied: needed to beat the eggs and mix the sugar, molasses, shortening and dry ingredients in the first steps."
+          }
+        }
+      ],
+      "steps": [
+        {
+          "order": 1,
+          "text": "Add beaten eggs to sugar, molasses and shortening.",
+          "ingredient_ids": [
+            "eggs",
+            "brown_sugar",
+            "molasses",
+            "shortening"
+          ],
+          "tool_ids": [
+            "bowl"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Add beaten eggs to sugar, molasses and shortening.",
+            "note": null
+          }
+        },
+        {
+          "order": 2,
+          "text": "Add dry ingredients.",
+          "ingredient_ids": [
+            "flour",
+            "baking_powder",
+            "soda",
+            "ginger",
+            "cinnamon",
+            "nutmeg",
+            "cloves"
+          ],
+          "tool_ids": [
+            "bowl"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Add dry ingredients.",
+            "note": null
+          }
+        },
+        {
+          "order": 3,
+          "text": "Add hot water.",
+          "ingredient_ids": [
+            "water"
+          ],
+          "tool_ids": [
+            "bowl"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Add hot water.",
+            "note": null
+          }
+        },
+        {
+          "order": 4,
+          "text": "Bake in moderate oven.",
+          "ingredient_ids": [],
+          "tool_ids": [
+            "oven"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Bake in moderate oven.",
+            "note": null
+          }
+        }
+      ],
+      "warnings": [
+        {
+          "message": "Servings are not stated; 8 is an estimate from the flour quantity.",
+          "target_id": null
+        },
+        {
+          "message": "The text says only 'moderate oven' with no temperature; no baking time or pan size is given.",
+          "target_id": null
+        },
+        {
+          "message": "No preheating step is written; the oven is listed because the text says to bake in it.",
+          "target_id": null
+        },
+        {
+          "message": "The abbreviation 't' is read as teaspoon and 'c' as cup; the source does not spell these out.",
+          "target_id": null
+        },
+        {
+          "message": "'soda' is written without 'baking'; it is kept as written and may mean baking soda.",
+          "target_id": null
+        },
+        {
+          "message": "The word 'hot' in 'Add hot water' is read against 'boiling water' in the ingredient list; both are kept.",
+          "target_id": null
+        },
+        {
+          "message": "Transcription by vision; amounts such as '1/2' and '3/4' should be checked against the original image.",
+          "target_id": null
+        },
+        {
+          "message": "The bowl is an implied tool, not named in the text.",
+          "target_id": null
+        }
+      ]
+    },
+    "recipe": {
+      "title": "Spicy Gingerbread",
+      "language": "en",
+      "servings": {
+        "value": 8,
+        "source": {
+          "status": "inferred",
+          "page": 1,
+          "quote": null,
+          "note": "Not stated in the text. Estimated from one batch of 2 1/2 c flour, a typical 8-serving loaf or square cake."
+        }
+      },
+      "ingredients": [
+        {
+          "id": "eggs",
+          "name": "eggs",
+          "name_original": "eggs",
+          "quantity": {
+            "kind": "exact",
+            "value": 2.0,
+            "max_value": null,
+            "unit": null,
+            "raw": "2"
+          },
+          "preparation": "beaten",
+          "optional": false,
+          "is_intermediate": false,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "2 eggs",
+            "note": null
+          }
+        },
+        {
+          "id": "brown_sugar",
+          "name": "brown sugar",
+          "name_original": "brown sugar",
+          "quantity": {
+            "kind": "exact",
+            "value": 180.0,
+            "max_value": null,
+            "unit": "ml",
+            "raw": "3/4 c"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "3/4 c brown sugar",
+            "note": null
+          }
+        },
+        {
+          "id": "molasses",
+          "name": "molasses",
+          "name_original": "molasses",
+          "quantity": {
+            "kind": "exact",
+            "value": 180.0,
+            "max_value": null,
+            "unit": "ml",
+            "raw": "3/4 c"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "3/4 c molasses",
+            "note": null
+          }
+        },
+        {
+          "id": "shortening",
+          "name": "shortening",
+          "name_original": "shortening",
+          "quantity": {
+            "kind": "exact",
+            "value": 180.0,
+            "max_value": null,
+            "unit": "ml",
+            "raw": "3/4 c"
+          },
+          "preparation": "melted",
+          "optional": false,
+          "is_intermediate": false,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "3/4 c melted shortening",
+            "note": null
+          }
+        },
+        {
+          "id": "flour",
+          "name": "flour",
+          "name_original": "flour",
+          "quantity": {
+            "kind": "exact",
+            "value": 600.0,
+            "max_value": null,
+            "unit": "ml",
+            "raw": "2 1/2 c"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "2 1/2 c flour",
+            "note": null
+          }
+        },
+        {
+          "id": "baking_powder",
+          "name": "baking powder",
+          "name_original": "baking powder",
+          "quantity": {
+            "kind": "exact",
+            "value": 2.5,
+            "max_value": null,
+            "unit": "ml",
+            "raw": "1/2 t"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "1/2 t baking powder",
+            "note": null
+          }
+        },
+        {
+          "id": "soda",
+          "name": "soda",
+          "name_original": "soda",
+          "quantity": {
+            "kind": "exact",
+            "value": 10.0,
+            "max_value": null,
+            "unit": "ml",
+            "raw": "2 t"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "2 t soda",
+            "note": null
+          }
+        },
+        {
+          "id": "ginger",
+          "name": "ginger",
+          "name_original": "ginger",
+          "quantity": {
+            "kind": "exact",
+            "value": 10.0,
+            "max_value": null,
+            "unit": "ml",
+            "raw": "2 t"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "2 t ginger",
+            "note": null
+          }
+        },
+        {
+          "id": "cinnamon",
+          "name": "cinnamon",
+          "name_original": "cinnamon",
+          "quantity": {
+            "kind": "exact",
+            "value": 7.5,
+            "max_value": null,
+            "unit": "ml",
+            "raw": "1 1/2 t"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "1 1/2 t cinnamon",
+            "note": null
+          }
+        },
+        {
+          "id": "nutmeg",
+          "name": "nutmeg",
+          "name_original": "nutmeg",
+          "quantity": {
+            "kind": "exact",
+            "value": 2.5,
+            "max_value": null,
+            "unit": "ml",
+            "raw": "1/2 t"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "1/2 t nutmeg",
+            "note": null
+          }
+        },
+        {
+          "id": "cloves",
+          "name": "cloves",
+          "name_original": "cloves",
+          "quantity": {
+            "kind": "exact",
+            "value": 2.5,
+            "max_value": null,
+            "unit": "ml",
+            "raw": "1/2 t"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "1/2 t cloves",
+            "note": null
+          }
+        },
+        {
+          "id": "water",
+          "name": "water",
+          "name_original": "boiling water",
+          "quantity": {
+            "kind": "exact",
+            "value": 240.0,
+            "max_value": null,
+            "unit": "ml",
+            "raw": "1 c"
+          },
+          "preparation": "boiling",
+          "optional": false,
+          "is_intermediate": false,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "1 c boiling water",
+            "note": null
+          }
+        }
+      ],
+      "tools": [
+        {
+          "id": "oven",
+          "name": "oven",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Bake in moderate oven.",
+            "note": null
+          }
+        },
+        {
+          "id": "bowl",
+          "name": "bowl",
+          "source": {
+            "status": "inferred",
+            "page": 1,
+            "quote": null,
+            "note": "Implied: needed to beat the eggs and mix the sugar, molasses, shortening and dry ingredients in the first steps."
+          }
+        }
+      ],
+      "steps": [
+        {
+          "order": 1,
+          "text": "Add beaten eggs to sugar, molasses and shortening.",
+          "ingredient_ids": [
+            "eggs",
+            "brown_sugar",
+            "molasses",
+            "shortening"
+          ],
+          "tool_ids": [
+            "bowl"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Add beaten eggs to sugar, molasses and shortening.",
+            "note": null
+          }
+        },
+        {
+          "order": 2,
+          "text": "Add dry ingredients.",
+          "ingredient_ids": [
+            "flour",
+            "baking_powder",
+            "soda",
+            "ginger",
+            "cinnamon",
+            "nutmeg",
+            "cloves"
+          ],
+          "tool_ids": [
+            "bowl"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Add dry ingredients.",
+            "note": null
+          }
+        },
+        {
+          "order": 3,
+          "text": "Add hot water.",
+          "ingredient_ids": [
+            "water"
+          ],
+          "tool_ids": [
+            "bowl"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Add hot water.",
+            "note": null
+          }
+        },
+        {
+          "order": 4,
+          "text": "Bake in moderate oven.",
+          "ingredient_ids": [],
+          "tool_ids": [
+            "oven"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Bake in moderate oven.",
+            "note": null
+          }
+        }
+      ],
+      "warnings": [
+        {
+          "message": "Servings are not stated; 8 is an estimate from the flour quantity.",
+          "target_id": null
+        },
+        {
+          "message": "The text says only 'moderate oven' with no temperature; no baking time or pan size is given.",
+          "target_id": null
+        },
+        {
+          "message": "No preheating step is written; the oven is listed because the text says to bake in it.",
+          "target_id": null
+        },
+        {
+          "message": "The abbreviation 't' is read as teaspoon and 'c' as cup; the source does not spell these out.",
+          "target_id": null
+        },
+        {
+          "message": "'soda' is written without 'baking'; it is kept as written and may mean baking soda.",
+          "target_id": null
+        },
+        {
+          "message": "The word 'hot' in 'Add hot water' is read against 'boiling water' in the ingredient list; both are kept.",
+          "target_id": null
+        },
+        {
+          "message": "Transcription by vision; amounts such as '1/2' and '3/4' should be checked against the original image.",
+          "target_id": null
+        },
+        {
+          "message": "The bowl is an implied tool, not named in the text.",
+          "target_id": null
+        }
+      ]
+    },
+    "changes": [
+      {
+        "rule": "metric",
+        "target": "brown_sugar",
+        "before": "¾ c brown sugar",
+        "after": "180 ml brown sugar",
+        "reason": "1 c (US cup) = 240 ml"
+      },
+      {
+        "rule": "metric",
+        "target": "molasses",
+        "before": "¾ c molasses",
+        "after": "180 ml molasses",
+        "reason": "1 c (US cup) = 240 ml"
+      },
+      {
+        "rule": "metric",
+        "target": "shortening",
+        "before": "¾ c shortening",
+        "after": "180 ml shortening",
+        "reason": "1 c (US cup) = 240 ml"
+      },
+      {
+        "rule": "metric",
+        "target": "flour",
+        "before": "2 ½ c flour",
+        "after": "600 ml flour",
+        "reason": "1 c (US cup) = 240 ml"
+      },
+      {
+        "rule": "metric",
+        "target": "baking_powder",
+        "before": "½ t baking powder",
+        "after": "2.5 ml baking powder",
+        "reason": "1 t (teaspoon) = 5 ml"
+      },
+      {
+        "rule": "metric",
+        "target": "soda",
+        "before": "2 t soda",
+        "after": "10 ml soda",
+        "reason": "1 t (teaspoon) = 5 ml"
+      },
+      {
+        "rule": "metric",
+        "target": "ginger",
+        "before": "2 t ginger",
+        "after": "10 ml ginger",
+        "reason": "1 t (teaspoon) = 5 ml"
+      },
+      {
+        "rule": "metric",
+        "target": "cinnamon",
+        "before": "1 ½ t cinnamon",
+        "after": "7.5 ml cinnamon",
+        "reason": "1 t (teaspoon) = 5 ml"
+      },
+      {
+        "rule": "metric",
+        "target": "nutmeg",
+        "before": "½ t nutmeg",
+        "after": "2.5 ml nutmeg",
+        "reason": "1 t (teaspoon) = 5 ml"
+      },
+      {
+        "rule": "metric",
+        "target": "cloves",
+        "before": "½ t cloves",
+        "after": "2.5 ml cloves",
+        "reason": "1 t (teaspoon) = 5 ml"
+      },
+      {
+        "rule": "metric",
+        "target": "water",
+        "before": "1 c boiling water",
+        "after": "240 ml boiling water",
+        "reason": "1 c (US cup) = 240 ml"
+      }
+    ]
+  }
+}

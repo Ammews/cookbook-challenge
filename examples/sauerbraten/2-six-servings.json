@@ -2138,15 +2138,15 @@
       {
         "rule": "scale",
         "target": "vinegar",
-        "before": "½ l Essig",
-        "after": "¾ l Essig",
+        "before": "0.5 l Essig",
+        "after": "0.75 l Essig",
         "reason": "×1 ½"
       },
       {
         "rule": "scale",
         "target": "water",
-        "before": "½ l Wasser",
-        "after": "¾ l Wasser",
+        "before": "0.5 l Wasser",
+        "after": "0.75 l Wasser",
         "reason": "×1 ½"
       },
       {

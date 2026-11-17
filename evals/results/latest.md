@@ -1,6 +1,6 @@
 # Evaluation report
 
-**294/294 checks passed** across 11 case(s). Model calls: 12 new, 5 cached; cost of new calls: $0.0378.
+**294/294 checks passed** across 11 case(s). Model calls: 0 new, 17 cached; cost of new calls: $0.0000.
 
 Checks marked unreviewed were drafted by the coding agent and not yet confirmed by a person.
 
