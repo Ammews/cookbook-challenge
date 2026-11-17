@@ -1,0 +1,48 @@
+id: de-linseneintopf
+title: Linseneintopf
+language: de
+input: input.txt
+source: https://de.wikibooks.org/w/index.php?title=Kochbuch/%20Linseneintopf&oldid=591096
+license: CC BY-SA 4.0, Wikibooks contributors
+reviewed: false
+traps:
+  - Servings stated as "6 Personen"
+  - Vegetarian but not vegan; only the Parmesan should change under the vegan rule
+  - German decimal comma, "1,2 Liter"
+  - Unusual units, "Teeglas", "Stück", "Bund", "Stangen"
+  - The variations section names ingredients that are not in the recipe (Spirelli, Sojawürstchen, Haferflocken, Buchweizenmehl)
+  - 21 ingredients, the longest list in the set
+
+expect:
+  servings:
+    status_any: [read]
+    value: 6
+  ingredients:
+    - match: [linse, lentil]
+      quantity: {accept: [{value: 250, unit: g}]}
+    - match: [olivenöl, olive oil]
+      quantity: {accept: [{value: 1, unit: [teeglas, tea glass, glass]}]}
+    - match: [gemüsebrühe, vegetable stock, vegetable broth]
+      quantity: {accept: [{value: 1.2, unit: [liter, l, litre]}, {value: 1200, unit: ml}]}
+    - match: [parmesan]
+      quantity: {accept: [{value: 50, unit: g}]}
+    - match: [kartoffel, potato]
+      quantity: {accept: [{value: 6}]}
+    - match: [lorbeer, bay]
+      quantity: {accept: [{value: 3}]}
+    - match: [knoblauchbaguette, garlic baguette, baguette]
+      quantity: {accept: [{value: 3}]}
+    - match: [möhre, carrot]
+      quantity: {accept: [{value: 4}]}
+    - match: [tomatenpüree, tomato pur]
+      quantity: {accept: [{value: 300, unit: ml}]}
+  absent_ingredients: [spirelli, sojawürstchen, haferflocken, buchweizen]
+  ingredient_count: {min: 21, max: 21}
+  tools:
+    - match: [sieb, sieve]
+      stated: true
+    - match: [topf, pot]
+      stated: true
+    - match: [ofen, oven]
+      stated: true
+  step_count: {min: 6, max: 14}

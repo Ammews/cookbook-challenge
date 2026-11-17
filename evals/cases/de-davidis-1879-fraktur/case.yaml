@@ -1,0 +1,52 @@
+id: de-davidis-1879-fraktur
+title: Rother Kohl, Henriette Davidis, Praktisches Kochbuch für die Deutschen in Amerika (1879), p. 58
+language: de
+input: input.jpg
+reference_transcription: reference_transcription.txt
+source: https://commons.wikimedia.org/wiki/File:Kochbuch_Amerika_(Davidis)_058.jpg
+license: >-
+  Scan in the public domain (published 1879). Reference transcription by Wikisource
+  volunteers, CC BY-SA, https://de.wikisource.org/wiki/Seite:Kochbuch_Amerika_(Davidis)_058.jpg
+reviewed: false
+traps:
+  - Printed in Fraktur (blackletter) with long s (ſ); old spelling (Rothwein, gahr, Theelöffel)
+  - Three recipes on one page (No. 31, 32, 33); No. 33 continues on the next page
+  - Expected behaviour is to extract No. 31 (Rother Kohl) and warn about the others
+  - Running prose, no ingredient list; every amount is inside a sentence
+  - '"Beilagen" lists dishes to serve with it (Filet, Ochsenzunge, ...), not ingredients'
+  - Sauerbraten and duck appear only as possible sources of fat
+  - Red wine is optional ("nach Belieben"); sugar is a range, "1–2 Theelöffel"
+  - The reference transcription writes ſ as s, so compare after normalising ſ to s
+
+expect:
+  multiple_recipes: true
+  min_warnings: 1
+  servings:
+    status_any: [inferred, missing]
+  ingredients:
+    - match: [kohl, cabbage]
+      quantity: {kind_any: [absent, vague, exact]}
+      note: '"den Kopf": one head is a fair reading, so an exact 1 is accepted.'
+    - match: [fett, fat]
+    - match: [zwiebel, onion]
+      quantity: {kind_any: [vague, absent]}
+    - match: [salz, salt]
+      quantity: {kind_any: [absent, to_taste, vague]}
+    - match: [mehl, flour]
+      quantity: {kind_any: [vague, absent, to_taste]}
+    - match: [butter]
+      quantity: {kind_any: [vague, absent]}
+    - match: [essig, vinegar]
+      quantity: {kind_any: [vague, absent, to_taste]}
+    - match: [pfeffer, pepper]
+      quantity: {kind_any: [vague, absent, to_taste]}
+    - match: [rothwein, rotwein, red wine]
+      optional: true
+    - match: [zucker, sugar]
+      quantity: {accept: [{value: 1, unit: [theelöffel, teelöffel, tl, teaspoon, tsp]}, {value: 1.5, unit: [theelöffel, teelöffel, tl, teaspoon, tsp]}, {value: 2, unit: [theelöffel, teelöffel, tl, teaspoon, tsp]}]}
+  absent_ingredients: [ochsenzunge, fricadell, saucisse, filet, schweinsrippe, kümmel]
+  ingredient_count: {min: 9, max: 13}
+  tools:
+    - match: [topf, pot]
+      stated: true
+  step_count: {min: 4, max: 12}

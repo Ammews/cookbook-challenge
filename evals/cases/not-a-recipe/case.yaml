@@ -1,0 +1,15 @@
+id: not-a-recipe
+title: Shopping list for a Sauerbraten (not a recipe)
+language: de
+input: input.txt
+source: "local: written for this project"
+license: CC0, written for this project
+reviewed: false
+traps:
+  - Looks like an ingredient list, with quantities and Sauerbraten ingredients
+  - Has no method at all; the only hint of a step is a question to grandma
+  - Contains non-food items (washing-up liquid, batteries)
+  - A pipeline that invents steps or a recipe here is hallucinating
+
+expect:
+  is_recipe: false

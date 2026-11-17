@@ -1,0 +1,55 @@
+id: en-chocolate-chip-cookies
+title: Chocolate Chip Cookies I
+language: en
+input: input.txt
+source: https://en.wikibooks.org/w/index.php?title=Cookbook%3AChocolate%20Chip%20Cookies%20I&oldid=4630845
+license: CC BY-SA 4.0, Wikibooks contributors
+reviewed: false
+traps:
+  - One amount written in four units, "2 sticks (½ lb / 225 g / 1 cup) butter"; must stay one ingredient
+  - US units (cups, oz, °F) next to metric
+  - Two optional ingredients
+  - Notes section names ingredients that are not in the recipe (cinnamon, oatmeal, shortening, margarine)
+  - Yield (56 cookies) is not the same as servings (10)
+
+expect:
+  servings:
+    status_any: [read]
+    value: 10
+  ingredients:
+    - match: [butter]
+      quantity:
+        accept:
+          - {value: 2, unit: [stick, sticks]}
+          - {value: 0.5, unit: [lb, pound]}
+          - {value: 225, unit: g}
+          - {value: 1, unit: [cup, cups]}
+    - match: [granulated]
+      quantity: {accept: [{value: 0.75, unit: [cup, cups]}, {value: 180, unit: ml}]}
+    - match: [brown sugar]
+      quantity: {accept: [{value: 0.75, unit: [cup, cups]}, {value: 180, unit: ml}]}
+    - match: [vanilla]
+      quantity: {accept: [{value: 0.25, unit: [teaspoon, tsp]}]}
+    - match: [egg]
+      quantity: {accept: [{value: 2}, {value: 100, unit: g}]}
+    - match: [flour]
+      quantity: {accept: [{value: 2.25, unit: [cup, cups]}, {value: 600, unit: ml}, {value: 290, unit: g}]}
+    - match: [baking soda]
+      quantity: {accept: [{value: 1, unit: [teaspoon, tsp]}]}
+    - match: [salt]
+      quantity: {accept: [{value: 1, unit: [teaspoon, tsp]}]}
+    - match: [peel]
+      optional: true
+    - match: [chocolate]
+      quantity: {accept: [{value: 2, unit: [cup, cups]}, {value: 480, unit: ml}, {value: 12, unit: oz}]}
+    - match: [nut]
+      optional: true
+      quantity: {accept: [{value: 5, unit: oz}, {value: 150, unit: g}]}
+  absent_ingredients: [cinnamon, oatmeal, shortening, margarine, vegetable oil, vanilla sugar]
+  ingredient_count: {min: 11, max: 11}
+  tools:
+    - match: [oven]
+    - match: [baking sheet, baking pan]
+    - match: [bowl]
+    - match: [rack]
+  step_count: {min: 6, max: 10}

@@ -1,0 +1,41 @@
+id: pt-bolo-de-cenoura
+title: Bolo de cenoura
+language: pt
+input: input.txt
+source: https://pt.wikibooks.org/w/index.php?title=Livro%20de%20receitas/Bolo%20de%20cenoura&oldid=436698
+license: CC BY-SA 4.0, Wikibooks contributors
+reviewed: false
+traps:
+  - The page holds seven different recipes; the pipeline must say so and must not merge them
+  - Expected behaviour is to extract the first recipe (Receita 1) and warn about the others
+  - Brazilian household units, "xícara (chá)", "colher (sopa)", "copo (americano)"
+  - Ingredients that only exist in other recipes (cravo, erva-doce, cobertura de chocolate, limão)
+  - Servings not stated
+
+expect:
+  multiple_recipes: true
+  min_warnings: 1
+  servings:
+    status_any: [inferred, missing]
+  ingredients:
+    - match: [óleo]
+      quantity: {accept: [{value: 1, unit: [xícara, xícaras, xícara de chá, cup]}]}
+    - match: [açúcar]
+      quantity: {accept: [{value: 2, unit: [xícara, xícaras, xícara de chá, cup, cups]}]}
+    - match: [ovo]
+      quantity: {accept: [{value: 4}]}
+    - match: [farinha]
+      quantity: {accept: [{value: 3, unit: [xícara, xícaras, xícara de chá, cup, cups]}]}
+    - match: [fermento]
+      quantity: {accept: [{value: 3, unit: [colher, colheres, colher de chá, colheres de chá, teaspoon, tsp]}]}
+    - match: [cenoura]
+      quantity: {accept: [{value: 2}]}
+    - match: [leite]
+      quantity: {accept: [{value: 1, unit: [xícara, xícaras, xícara de chá, cup]}]}
+  absent_ingredients: [cravo, erva-doce, achocolatado, margarina, oatbran, limão, manteiga, chocolate, sal]
+  ingredient_count: {min: 7, max: 7}
+  tools:
+    - match: [batedeira]
+    - match: [forma, fôrma]
+    - match: [forno]
+  step_count: {min: 3, max: 6}

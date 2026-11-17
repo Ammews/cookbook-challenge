@@ -1,0 +1,17 @@
+id: ru-soviet-notebook
+title: Soviet recipe notebook (two pages, three cake recipes)
+language: ru
+input: input.jpg
+source: https://commons.wikimedia.org/wiki/File:Soviet_Recipe_Notebook.jpg
+license: CC0, by Ergoldinka, via Wikimedia Commons
+reviewed: false
+traps:
+  - Russian, Cyrillic script
+  - Low resolution photo (720 x 488) of an open notebook
+  - Three recipes, one handwritten (left) and two typewritten and glued in (right)
+  - Expected behaviour is not a perfect extraction; it is to say there are several recipes and that the reading is uncertain, instead of a confident mix
+  - No ingredient checks on purpose; nobody on the project can verify the handwriting
+
+expect:
+  multiple_recipes: true
+  min_warnings: 1

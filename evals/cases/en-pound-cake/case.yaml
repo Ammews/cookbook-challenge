@@ -1,0 +1,41 @@
+id: en-pound-cake
+title: Traditional Pound Cake
+language: en
+input: input.txt
+source: https://en.wikibooks.org/w/index.php?title=Cookbook%3ATraditional%20Pound%20Cake&oldid=4516964
+license: CC BY-SA 4.0, Wikibooks contributors
+reviewed: false
+traps:
+  - The intro says "one pound each" (the traditional amount); the ingredient list uses half. The list wins.
+  - Eggs given two ways, "½ pound (4 ea.) eggs"
+  - One ingredient line is a group (currants, sultanas, raisins, cherries); must stay one ingredient
+  - Notes convert to 250 g; that is a tip, not the recipe
+  - Servings not stated
+  - Old pound units
+
+expect:
+  servings:
+    status_any: [inferred, missing]
+    min_value: 4
+    max_value: 16
+  ingredients:
+    - match: [flour]
+      quantity: {accept: [{value: 0.5, unit: [pound, lb]}]}
+    - match: [butter]
+      quantity: {accept: [{value: 0.5, unit: [pound, lb]}]}
+    - match: [egg]
+      quantity: {accept: [{value: 0.5, unit: [pound, lb]}, {value: 4}]}
+    - match: [sugar]
+      quantity: {accept: [{value: 0.5, unit: [pound, lb]}]}
+    - match: [vanilla]
+      optional: true
+      quantity: {accept: [{value: 1, unit: [teaspoon, tsp]}]}
+    - match: [dried fruit, fruit]
+      optional: true
+      quantity: {accept: [{value: 0.5, unit: [pound, lb]}]}
+  ingredient_count: {min: 6, max: 6}
+  tools:
+    - match: [oven]
+    - match: [pan, tin]
+    - match: [skewer]
+  step_count: {min: 4, max: 7}

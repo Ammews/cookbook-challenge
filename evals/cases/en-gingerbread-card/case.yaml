@@ -1,0 +1,52 @@
+id: en-gingerbread-card
+title: Spicy Gingerbread (typewritten recipe card)
+language: en
+input: input.jpg
+source: https://commons.wikimedia.org/wiki/File:Spicy_Gingerbread_(Shirley_G.)_Handwritten_2024-05-21_103943_page_1.jpg
+license: CC BY-SA 4.0, by SJW, via Wikimedia Commons
+reviewed: false
+traps:
+  - Image input, typewritten, ingredients in two columns (reading order)
+  - Abbreviated units, "c" for cup and "t" for teaspoon
+  - Fractions typed in two ways, "3/4" and "½"
+  - '"soda" means baking soda'
+  - '"Bake in moderate oven": no temperature, no time'
+  - '"(Shirley G)" is an attribution, not an ingredient'
+  - Water is listed as "boiling" and called "hot water" in the method
+  - Servings not stated
+
+expect:
+  servings:
+    status_any: [inferred, missing]
+  ingredients:
+    - match: [egg]
+      quantity: {accept: [{value: 2}]}
+    - match: [brown sugar, sugar]
+      quantity: {accept: [{value: 0.75, unit: [c, cup, cups]}]}
+    - match: [molasses]
+      quantity: {accept: [{value: 0.75, unit: [c, cup, cups]}]}
+    - match: [shortening]
+      quantity: {accept: [{value: 0.75, unit: [c, cup, cups]}]}
+    - match: [flour]
+      quantity: {accept: [{value: 2.5, unit: [c, cup, cups]}]}
+    - match: [clove]
+      quantity: {accept: [{value: 0.5, unit: [t, tsp, teaspoon]}]}
+    - match: [baking powder]
+      quantity: {accept: [{value: 0.5, unit: [t, tsp, teaspoon]}]}
+    - match: [soda]
+      quantity: {accept: [{value: 2, unit: [t, tsp, teaspoon]}]}
+    - match: [ginger]
+      exclude: [gingerbread]
+      quantity: {accept: [{value: 2, unit: [t, tsp, teaspoon]}]}
+    - match: [cinnamon]
+      quantity: {accept: [{value: 1.5, unit: [t, tsp, teaspoon]}]}
+    - match: [nutmeg]
+      quantity: {accept: [{value: 0.5, unit: [t, tsp, teaspoon]}]}
+    - match: [water]
+      quantity: {accept: [{value: 1, unit: [c, cup]}]}
+  absent_ingredients: [shirley]
+  ingredient_count: {min: 12, max: 12}
+  tools:
+    - match: [oven]
+      stated: true
+  step_count: {min: 3, max: 5}

@@ -1,0 +1,75 @@
+id: de-sauerbraten-1887
+title: Sauerbraten, Großmutter Josefines handgeschriebenes Kochbuch, 1887
+language: de
+input: ../../../Recipe.pdf
+input_in_repo: false
+source: "local: Recipe.pdf supplied with the case study. A page from a printed book, so it is never committed. Put it in the repository root."
+license: All rights reserved (book page). Used locally only.
+reviewed: false
+traps:
+  - PDF with no text layer; handwriting
+  - Drawings with labels (Rosinen, Essig, Korinthen, Rotwein) that must not become extra ingredients
+  - The meat is never quantified
+  - Servings are never stated
+  - Essigwasser is made once and reused three times (intermediate)
+  - Bratenfond is produced by a step, not bought (intermediate)
+  - Apples, carrots and juniper are optional ("auch kann man")
+  - Sugar is "soviel ... daß die Soße säuerlich-süß wird" (to taste)
+  - Hot or cold marinade depending on when the roast is cooked (condition)
+
+expect:
+  servings:
+    status_any: [inferred, missing]
+    min_value: 2
+    max_value: 8
+  ingredients:
+    - match: [braten, beef, rind, fleisch, roast]
+      exclude: [fond]
+      quantity: {kind_any: [absent, vague]}
+      note: '"die festen Bratenstücke": no amount anywhere. A number here is a hallucination.'
+    - match: [essig, vinegar]
+      exclude: [wasser, water]
+      quantity: {accept: [{value: 0.5, unit: [l, liter, litre]}, {value: 500, unit: ml}]}
+    - match: [wasser, water]
+      exclude: [essig, vinegar]
+      quantity: {accept: [{value: 0.5, unit: [l, liter, litre]}, {value: 500, unit: ml}]}
+    - match: [zwiebel, onion]
+      quantity: {accept: [{value: 4}]}
+    - match: [pfeffer, pepper]
+      quantity: {kind_any: [absent, to_taste, vague]}
+    - match: [nelke, clove]
+      quantity: {kind_any: [absent, to_taste, vague]}
+    - match: [salz, salt]
+      quantity: {kind_any: [absent, to_taste, vague]}
+    - match: [lorbeer, bay]
+      quantity: {kind_any: [absent, to_taste, vague]}
+    - match: [speck, bacon]
+      quantity: {kind_any: [absent, vague]}
+    - match: [butter]
+      quantity: {kind_any: [absent, vague]}
+    - match: [äpfel, apfel, apple]
+      optional: true
+      quantity: {kind_any: [vague, absent]}
+      note: '"einige Äpfel": vague, and optional.'
+    - match: [möhre, carrot]
+      optional: true
+    - match: [wacholder, juniper]
+      optional: true
+    - match: [mehl, flour]
+      quantity: {kind_any: [absent, vague]}
+    - match: [rotwein, red wine]
+      quantity: {kind_any: [absent, vague]}
+    - match: [korinthe, currant]
+    - match: [rosine, raisin]
+      note: Also drawn on page 188. Must still be one ingredient.
+    - match: [zucker, sugar]
+      quantity: {kind_any: [to_taste, vague, absent]}
+    - match: [essigwasser, marinade, vinegar water, vinegar-water]
+      intermediate: true
+    - match: [bratenfond, fond, drippings, pan juices]
+      intermediate: true
+  ingredient_count: {min: 18, max: 20}
+  tools:
+    - match: [topf, pot]
+      stated: true
+  step_count: {min: 5, max: 12}

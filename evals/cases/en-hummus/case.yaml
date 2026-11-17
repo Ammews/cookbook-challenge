@@ -1,0 +1,43 @@
+id: en-hummus
+title: Hummus I
+language: en
+input: input.txt
+source: https://en.wikibooks.org/w/index.php?title=Cookbook%3AHummus%20I&oldid=4515548
+license: CC BY-SA 4.0, Wikibooks contributors
+reviewed: false
+traps:
+  - Already vegan; the vegan rule must change nothing
+  - Salt is listed twice ("1 teaspoon salt" and "Salt to taste")
+  - Water has no amount in the list, but the steps give 2.5 and 3 cups
+  - Lemon juice, olive oil, za'atar, pine nuts and fries only appear in the notes
+  - Garlic is a range, "2–3 cloves"
+  - Servings not stated
+
+expect:
+  servings:
+    status_any: [inferred, missing]
+    min_value: 2
+    max_value: 12
+  ingredients:
+    - match: [chickpea]
+      quantity: {accept: [{value: 1, unit: [cup, cups]}]}
+    - match: [water]
+    - match: [baking soda]
+      quantity: {accept: [{value: 1, unit: [teaspoon, tsp]}]}
+    - match: [garlic]
+      quantity: {accept: [{value: 2}, {value: 2.5}, {value: 3}]}
+    - match: [salt]
+      max_count: 2
+      note: One teaspoon for cooking, more to taste. One merged ingredient or two are both acceptable.
+    - match: [tahini]
+    - match: [cumin]
+      quantity: {kind_any: [absent, to_taste, vague]}
+    - match: [coriander, cilantro]
+      quantity: {kind_any: [absent, to_taste, vague]}
+  absent_ingredients: [lemon, olive oil, za'atar, pine nut, fries]
+  ingredient_count: {min: 8, max: 9}
+  tools:
+    - match: [pot]
+    - match: [slotted spoon, spoon]
+    - match: [sieve, food processor]
+  step_count: {min: 7, max: 12}
