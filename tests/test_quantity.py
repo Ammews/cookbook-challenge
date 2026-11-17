@@ -36,3 +36,18 @@ def test_absent_quantity_is_valid_with_no_text_at_all():
 def test_value_must_be_positive():
     with pytest.raises(ValidationError):
         Quantity(kind=QuantityKind.EXACT, value=0, raw="0")
+
+
+def test_range_keeps_both_ends():
+    quantity = Quantity(kind=QuantityKind.EXACT, value=2, max_value=3, unit="cups", raw="2–3 cups")
+    assert (quantity.value, quantity.max_value) == (2, 3)
+
+
+def test_range_upper_end_must_be_greater():
+    with pytest.raises(ValidationError, match="max_value must be greater"):
+        Quantity(kind=QuantityKind.EXACT, value=3, max_value=2, raw="3–2")
+
+
+def test_range_needs_a_lower_end():
+    with pytest.raises(ValidationError):
+        Quantity(kind=QuantityKind.VAGUE, max_value=3, raw="up to 3")

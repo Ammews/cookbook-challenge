@@ -11,6 +11,7 @@ class SourceStatus(StrEnum):
     READ = "read"          # literally written in the document
     INFERRED = "inferred"  # not written; deduced, and must say why
     MISSING = "missing"    # the document does not give this value
+    RULE = "rule"          # set by a manipulation rule (scaling, vegan); must say which and why
 
 
 class Source(DomainModel):
@@ -40,8 +41,10 @@ class Source(DomainModel):
         has_note = bool(self.note and self.note.strip())
         if self.status is SourceStatus.READ and not has_quote:
             raise ValueError("a value marked 'read' must carry the quote it was read from")
-        if self.status is SourceStatus.INFERRED and not has_note:
-            raise ValueError("a value marked 'inferred' must explain the reasoning in 'note'")
+        if self.status in (SourceStatus.INFERRED, SourceStatus.RULE) and not has_note:
+            raise ValueError(
+                f"a value marked '{self.status.value}' must explain the reasoning in 'note'"
+            )
         if self.status is SourceStatus.MISSING and has_quote:
             raise ValueError("a value marked 'missing' cannot have a quote")
         return self

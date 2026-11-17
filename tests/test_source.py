@@ -37,3 +37,9 @@ def test_only_read_values_are_not_guesses():
 def test_page_numbers_start_at_one():
     with pytest.raises(ValidationError):
         Source(status=SourceStatus.READ, quote="x", page=0)
+
+
+def test_rule_value_must_say_which_rule_and_why():
+    with pytest.raises(ValidationError, match="'rule' must explain"):
+        Source(status=SourceStatus.RULE)
+    assert Source(status=SourceStatus.RULE, note="vegan substitute for butter").is_guess

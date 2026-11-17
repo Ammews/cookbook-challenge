@@ -24,6 +24,9 @@ class Quantity(DomainModel):
 
     kind: QuantityKind
     value: float | None = Field(default=None, gt=0)
+    max_value: float | None = Field(
+        default=None, gt=0, description='Upper end of a range such as "2–3 cups"; value is the lower end.'
+    )
     unit: str | None = Field(
         default=None, description='Unit as written, e.g. "l", "g". None for countable items.'
     )
@@ -39,6 +42,8 @@ class Quantity(DomainModel):
             raise ValueError(f"a '{self.kind.value}' quantity cannot have a numeric value")
         if self.kind is not QuantityKind.EXACT and self.unit is not None:
             raise ValueError(f"a '{self.kind.value}' quantity cannot have a unit")
+        if self.max_value is not None and (self.value is None or self.max_value <= self.value):
+            raise ValueError("max_value must be greater than value")
         return self
 
     @property
