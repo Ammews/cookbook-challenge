@@ -190,6 +190,33 @@ live demo in the interview.
 - Looking at the page in the browser showed a preparation note printed twice
   ("finely chopped, finely chopped"); fixed in the view model.
 
+## Session 7: checking the submission against the brief
+
+**Asked:** does the repository follow everything in the case study? I gave
+the agent the brief again.
+
+**What it found**: two gaps it had not mentioned before, although both were
+in the hand-in list from the start.
+- **Unit conversion tests** were explicitly asked for ("tests for the
+  deterministic parts such as scaling and unit conversion"). There was no unit
+  conversion at all; the README had quietly put it under "another week".
+- **Remove duplicates**: deduplication relied on the prompt and was only
+  measured by the evaluation set. If the model listed an ingredient twice, the
+  code renamed the second one instead of merging it.
+
+**What it built**
+- `ConvertToMetric`, a third deterministic rule with 38 tests, including the
+  German Pfund (500 g) vs the English pound, t vs T, and Portuguese spoons.
+  It does not convert volume to weight, because that needs densities.
+- Duplicate merging in the mapper, keeping the most precise amount and
+  re-pointing the steps. One old test broke because it had used two
+  ingredients with the same name; it now uses distinct names.
+- A README paragraph on sentences across a page break.
+
+**What I take from it**: the agent declared the work complete twice before
+this check. Comparing the result line by line with the brief should have
+been part of finishing, not a question I had to ask.
+
 **Things I should double-check myself**
 - The transcription prompt tells the model to re-join words hyphenated across
   lines. That is convenient for later quote matching, but it means the

@@ -16,7 +16,7 @@ Sauerbraten from 1887; the pipeline is also measured on an
 | Sauerbraten, first run | 3 model calls, ≈ 38 s, **≈ $0.006** (repeat runs: $0, from cache) |
 | Evaluation set (11 inputs, 4 languages) | **294/294** checks passed, **≈ $0.04** for the whole set |
 | Fraktur page from 1879 vs human transcription | **99 %** character similarity |
-| Tests | 208, no network or API key needed |
+| Tests | 252, no network or API key needed (10 of them need the optional web extra) |
 | Model | Claude Haiku 5.5 for reading and extracting; everything else is plain code |
 
 ## Run it
@@ -40,6 +40,7 @@ The command writes `out/recipe_vegan_6-servings.md` (to cook from) and `.json`
 uv run cookbook run <file>                  # extraction only
 uv run cookbook run <file> --servings 6     # scale (needs servings: stated, inferred or --assume-servings)
 uv run cookbook run <file> --vegan          # make it vegan
+uv run cookbook run <file> --metric         # convert cups, spoons, lb, Pfund, oz to ml, l, g, kg
 uv run cookbook eval                        # run the evaluation set, writes evals/results/latest.md
 uv run cookbook ingest <file>               # only show what was read from the file
 uv run pytest                               # tests (no API key needed)
@@ -123,6 +124,11 @@ with fakes.
   labels are passed to extraction explicitly as *not evidence*.
 - Re-join hyphenated words during transcription, so the next stage can match
   quotes.
+- **Sentences across a page break**: pages are joined into one text before
+  extraction, with page markers, so a sentence that starts on one page and
+  ends on the next is read as one sentence and its quote is still found. In
+  this recipe p. 188 happens to end with a full sentence; the Fraktur case in
+  the evaluation set has a recipe cut mid-sentence at the bottom of the page.
 
 **Result**: Haiku 5.5 read both pages without a wrong word I could find, kept
 all four drawing labels out of the running text, and read *garbrötscheln*
@@ -163,6 +169,11 @@ volunteers' transcription.
   quote ("4 Zwiebeln" supports 4, not 5). Ids used by steps must exist.
 - Problems go back to the model **once**, with the exact list. Whatever still
   fails is not hidden: it is demoted to "guessed" and a warning is added.
+- **Duplicates are merged in code**, not only by asking the model: two entries
+  with the same original or English name ("Salt" and "salt to taste") become
+  one, the most precise amount is kept, steps are pointed at the survivor, and
+  a warning says what was merged. Different things with similar names
+  (*Korinthen* and *Rosinen*) stay apart.
 - The prompt asks to extract only the recipe (not notes, variations or side
   dishes), to report how many recipes the document holds, and to refuse
   documents that are not recipes.
@@ -199,6 +210,10 @@ recipe states what its starting number was based on.
   marinade (a week in vinegar destroys seitan), the browning, and removes the
   *Bratenfond*, which the sauce is built on.
 - **Order**: vegan-then-scale must equal scale-then-vegan.
+- **Units**: the same letters mean different things. "t" is a teaspoon and "T"
+  a tablespoon on an American card; a German *Pfund* is 500 g, an English
+  pound 453.6 g; "colher (chá)" and "colher (sopa)" differ by three times.
+  "Teeglas" and "Stück" have no standard size at all.
 
 **What I did**
 - Both rules are **pure functions in code**, `Recipe -> (Recipe, [Change])`.
@@ -216,7 +231,13 @@ recipe states what its starting number was based on.
   bone char).
 - A whole chicken replaced by mushrooms becomes "same weight as the chicken",
   not "2 mushrooms": a count of the original means nothing for the substitute.
-- **Tests prove** that the two rules commute, that vegan applied twice equals
+- **Metric conversion** (`--metric`) is a third rule
+  ([`units.py`](src/cookbook/manipulate/units.py)): cups, spoons, fl oz, lb,
+  oz, *Pfund*, *Lot* and Brazilian spoons and cups to ml, l, g and kg. Units
+  are matched as written (case matters for t/T); units with no standard size
+  are left alone and listed, never guessed. It runs last, so rounding happens
+  once, after scaling.
+- **Tests prove** that vegan and scaling commute, that vegan applied twice equals
   once, that an already vegan recipe is unchanged, and that "Braten" is not
   matched inside "Bratenfond" (a bug the examples exposed; see AI_LOG.md).
 
@@ -226,6 +247,9 @@ recipe states what its starting number was based on.
   text* fluently; the code check would then verify that no replaced
   ingredient is still mentioned.
 - **Scaling cooking times**: physically wrong for a roast.
+- **Converting cups of flour to grams**: needs the density of each ingredient
+  (a cup of flour ≈ 125 g, of sugar ≈ 200 g). Without a reviewed density
+  table that would be a guess, so volume stays volume (2 ½ c flour → 600 ml).
 
 ### 4. Output
 
@@ -330,9 +354,8 @@ models, calls, tokens and cost. Warnings collect everything uncertain.
   values that change between runs are uncertain and should be flagged.
 - **Rewrite vegan steps fluently** with an LLM, verified by code (no replaced
   ingredient may still be mentioned).
-- **Unit normalisation and conversion** (cups ↔ ml, Pfund ↔ g, decimal
-  comma) as a separate deterministic rule; amounts are currently kept as
-  written.
+- **Volume to weight for dry ingredients**, with a reviewed density table
+  (flour, sugar, butter), so "2 ½ c flour" can become grams.
 - **Key the extraction cache on content only**: leave the file name out of the
   prompt, so the same document always gives the same answer whatever it is
   called.
