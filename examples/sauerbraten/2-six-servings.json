@@ -1,0 +1,2110 @@
+{
+  "document": {
+    "name": "Recipe.pdf",
+    "kind": "pdf",
+    "pages": [
+      {
+        "number": 1,
+        "text": "Hierzu eignen sich am besten die festen Bratenstücke. Zum Einlegen kocht man 1/2 l Essig, 1/2 l Wasser, 4 in Scheiben geschnittene Zwiebeln, Pfeffer, Nelken, Salz und Lorbeerblätter.",
+        "method": "vision",
+        "decoration_text": [
+          "188",
+          "Alte Rezepte – neu entdeckt",
+          "Aus Großmutter Josefines handgeschriebenem Kochbuch – Anno 1887",
+          "Sauerbraten",
+          "Rosinen",
+          "Essig"
+        ],
+        "uncertain": [],
+        "usage": {
+          "model": "claude-haiku-5-5",
+          "input_tokens": 4379,
+          "output_tokens": 201,
+          "seconds": 2.9458775999992213,
+          "cached": true
+        }
+      },
+      {
+        "number": 2,
+        "text": "Will man den Braten nach dem 1. Tag oder 2. Tag gebrauchen, so gießt man das Essigwasser heiß darüber. Soll der Braten erst nach 8 Tagen zubereitet werden, so gießt man es kalt darauf.\n\nZum Anbraten den Speck auslassen, Butter dazugeben, dann gibt man den abgetrockneten Braten ins heiße Fett. Wenn er von allen Seiten knusprig angebraten ist, gießt man etwas Essigwasser hinzu.\n\nAuch kann man einige Äpfel, Möhren und Wacholderbeeren in den Topf geben. Man läßt den Braten langsam mit den Zutaten garbrötscheln.\n\nFür die Soße schwitzt man den Bratenfond mit Mehl an, füllt mit Essigwasser und Rotwein auf, gibt dann gequollene Korinthen u. Rosinen hinzu und soviel Zucker, daß die Soße einen säuerlich-süßen Geschmack bekommt.\n\nMan legt den Braten, wenn er noch nicht geschnitten ist, eine Stunde vor dem Anrichten in die Soße, damit er den Geschmack derselben bekommt.",
+        "method": "vision",
+        "decoration_text": [
+          "189",
+          "Rotwein",
+          "Korinthen"
+        ],
+        "uncertain": [],
+        "usage": {
+          "model": "claude-haiku-5-5",
+          "input_tokens": 4379,
+          "output_tokens": 1285,
+          "seconds": 5.672614600000088,
+          "cached": true
+        }
+      }
+    ]
+  },
+  "extraction": {
+    "is_recipe": true,
+    "recipes_in_document": 1,
+    "recipe": {
+      "title": "Sauerbraten",
+      "language": "de",
+      "servings": {
+        "value": null,
+        "source": {
+          "status": "missing",
+          "page": null,
+          "quote": null,
+          "note": "the document does not say"
+        }
+      },
+      "ingredients": [
+        {
+          "id": "essig",
+          "name": "vinegar",
+          "name_original": "Essig",
+          "quantity": {
+            "kind": "exact",
+            "value": 0.5,
+            "max_value": null,
+            "unit": "l",
+            "raw": "1/2 l"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "1/2 l Essig",
+            "note": null
+          }
+        },
+        {
+          "id": "wasser",
+          "name": "water",
+          "name_original": "Wasser",
+          "quantity": {
+            "kind": "exact",
+            "value": 0.5,
+            "max_value": null,
+            "unit": "l",
+            "raw": "1/2 l"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "1/2 l Wasser",
+            "note": null
+          }
+        },
+        {
+          "id": "zwiebeln",
+          "name": "onions",
+          "name_original": "Zwiebeln",
+          "quantity": {
+            "kind": "exact",
+            "value": 4.0,
+            "max_value": null,
+            "unit": null,
+            "raw": "4"
+          },
+          "preparation": "in Scheiben geschnitten",
+          "optional": false,
+          "is_intermediate": false,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "4 in Scheiben geschnittene Zwiebeln",
+            "note": null
+          }
+        },
+        {
+          "id": "pfeffer",
+          "name": "pepper",
+          "name_original": "Pfeffer",
+          "quantity": {
+            "kind": "absent",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Pfeffer",
+            "note": null
+          }
+        },
+        {
+          "id": "nelken",
+          "name": "cloves",
+          "name_original": "Nelken",
+          "quantity": {
+            "kind": "absent",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Nelken",
+            "note": null
+          }
+        },
+        {
+          "id": "salz",
+          "name": "salt",
+          "name_original": "Salz",
+          "quantity": {
+            "kind": "absent",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Salz",
+            "note": null
+          }
+        },
+        {
+          "id": "lorbeerblaetter",
+          "name": "bay leaves",
+          "name_original": "Lorbeerblätter",
+          "quantity": {
+            "kind": "absent",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Lorbeerblätter",
+            "note": null
+          }
+        },
+        {
+          "id": "braten",
+          "name": "roast",
+          "name_original": "Braten",
+          "quantity": {
+            "kind": "absent",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": "fest, Bratenstück",
+          "optional": false,
+          "is_intermediate": false,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "die festen Bratenstücke",
+            "note": null
+          }
+        },
+        {
+          "id": "essigwasser",
+          "name": "vinegar water",
+          "name_original": "Essigwasser",
+          "quantity": {
+            "kind": "absent",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": true,
+          "source": {
+            "status": "read",
+            "page": 2,
+            "quote": "das Essigwasser heiß darüber",
+            "note": "The boiled marinade made from the vinegar and water."
+          }
+        },
+        {
+          "id": "speck",
+          "name": "bacon",
+          "name_original": "Speck",
+          "quantity": {
+            "kind": "absent",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": "auslassen",
+          "optional": false,
+          "is_intermediate": false,
+          "source": {
+            "status": "read",
+            "page": 2,
+            "quote": "den Speck auslassen",
+            "note": null
+          }
+        },
+        {
+          "id": "butter",
+          "name": "butter",
+          "name_original": "Butter",
+          "quantity": {
+            "kind": "absent",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "source": {
+            "status": "read",
+            "page": 2,
+            "quote": "Butter dazugeben",
+            "note": null
+          }
+        },
+        {
+          "id": "aepfel",
+          "name": "apples",
+          "name_original": "Äpfel",
+          "quantity": {
+            "kind": "vague",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": "einige"
+          },
+          "preparation": null,
+          "optional": true,
+          "is_intermediate": false,
+          "source": {
+            "status": "read",
+            "page": 2,
+            "quote": "einige Äpfel, Möhren und Wacholderbeeren",
+            "note": null
+          }
+        },
+        {
+          "id": "moehren",
+          "name": "carrots",
+          "name_original": "Möhren",
+          "quantity": {
+            "kind": "vague",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": "einige"
+          },
+          "preparation": null,
+          "optional": true,
+          "is_intermediate": false,
+          "source": {
+            "status": "read",
+            "page": 2,
+            "quote": "einige Äpfel, Möhren und Wacholderbeeren",
+            "note": null
+          }
+        },
+        {
+          "id": "wacholderbeeren",
+          "name": "juniper berries",
+          "name_original": "Wacholderbeeren",
+          "quantity": {
+            "kind": "vague",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": "einige"
+          },
+          "preparation": null,
+          "optional": true,
+          "is_intermediate": false,
+          "source": {
+            "status": "read",
+            "page": 2,
+            "quote": "einige Äpfel, Möhren und Wacholderbeeren",
+            "note": null
+          }
+        },
+        {
+          "id": "bratenfond",
+          "name": "pan juices",
+          "name_original": "Bratenfond",
+          "quantity": {
+            "kind": "absent",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": true,
+          "source": {
+            "status": "read",
+            "page": 2,
+            "quote": "den Bratenfond mit Mehl an",
+            "note": "Juices from searing the roast."
+          }
+        },
+        {
+          "id": "mehl",
+          "name": "flour",
+          "name_original": "Mehl",
+          "quantity": {
+            "kind": "absent",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "source": {
+            "status": "read",
+            "page": 2,
+            "quote": "mit Mehl an",
+            "note": null
+          }
+        },
+        {
+          "id": "rotwein",
+          "name": "red wine",
+          "name_original": "Rotwein",
+          "quantity": {
+            "kind": "absent",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "source": {
+            "status": "read",
+            "page": 2,
+            "quote": "Essigwasser und Rotwein",
+            "note": null
+          }
+        },
+        {
+          "id": "korinthen",
+          "name": "currants",
+          "name_original": "Korinthen",
+          "quantity": {
+            "kind": "absent",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": "gequollen",
+          "optional": false,
+          "is_intermediate": false,
+          "source": {
+            "status": "read",
+            "page": 2,
+            "quote": "gequollene Korinthen u. Rosinen",
+            "note": null
+          }
+        },
+        {
+          "id": "rosinen",
+          "name": "raisins",
+          "name_original": "Rosinen",
+          "quantity": {
+            "kind": "absent",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": "gequollen",
+          "optional": false,
+          "is_intermediate": false,
+          "source": {
+            "status": "read",
+            "page": 2,
+            "quote": "Korinthen u. Rosinen",
+            "note": null
+          }
+        },
+        {
+          "id": "zucker",
+          "name": "sugar",
+          "name_original": "Zucker",
+          "quantity": {
+            "kind": "to_taste",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": "soviel Zucker"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "source": {
+            "status": "read",
+            "page": 2,
+            "quote": "soviel Zucker, daß die Soße einen säuerlich-süßen Geschmack bekommt",
+            "note": null
+          }
+        }
+      ],
+      "tools": [
+        {
+          "id": "topf",
+          "name": "pot",
+          "source": {
+            "status": "read",
+            "page": 2,
+            "quote": "in den Topf geben",
+            "note": null
+          }
+        }
+      ],
+      "steps": [
+        {
+          "order": 1,
+          "text": "Hierzu eignen sich am besten die festen Bratenstücke.",
+          "ingredient_ids": [
+            "braten"
+          ],
+          "tool_ids": [],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Hierzu eignen sich am besten die festen Bratenstücke.",
+            "note": null
+          }
+        },
+        {
+          "order": 2,
+          "text": "Zum Einlegen Essig, Wasser, Zwiebeln, Pfeffer, Nelken, Salz und Lorbeerblätter aufkochen.",
+          "ingredient_ids": [
+            "essig",
+            "wasser",
+            "zwiebeln",
+            "pfeffer",
+            "nelken",
+            "salz",
+            "lorbeerblaetter"
+          ],
+          "tool_ids": [],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Zum Einlegen kocht man 1/2 l Essig, 1/2 l Wasser, 4 in Scheiben geschnittene Zwiebeln, Pfeffer, Nelken, Salz und Lorbeerblätter.",
+            "note": null
+          }
+        },
+        {
+          "order": 3,
+          "text": "Wird der Braten am 1. oder 2. Tag gebraucht, das Essigwasser heiß darübergießen.",
+          "ingredient_ids": [
+            "essigwasser",
+            "braten"
+          ],
+          "tool_ids": [],
+          "duration": null,
+          "condition": "if the roast is used on day 1 or day 2",
+          "source": {
+            "status": "read",
+            "page": 2,
+            "quote": "Will man den Braten nach dem 1. Tag oder 2. Tag gebrauchen, so gießt man das Essigwasser heiß darüber.",
+            "note": null
+          }
+        },
+        {
+          "order": 4,
+          "text": "Soll der Braten erst nach 8 Tagen zubereitet werden, das Essigwasser kalt darauf gießen.",
+          "ingredient_ids": [
+            "essigwasser",
+            "braten"
+          ],
+          "tool_ids": [],
+          "duration": null,
+          "condition": "if the roast is prepared only after 8 days",
+          "source": {
+            "status": "read",
+            "page": 2,
+            "quote": "Soll der Braten erst nach 8 Tagen zubereitet werden, so gießt man es kalt darauf.",
+            "note": null
+          }
+        },
+        {
+          "order": 5,
+          "text": "Zum Anbraten den Speck auslassen, Butter dazugeben und den abgetrockneten Braten ins heiße Fett geben.",
+          "ingredient_ids": [
+            "speck",
+            "butter",
+            "braten"
+          ],
+          "tool_ids": [],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 2,
+            "quote": "Zum Anbraten den Speck auslassen, Butter dazugeben, dann gibt man den abgetrockneten Braten ins heiße Fett.",
+            "note": null
+          }
+        },
+        {
+          "order": 6,
+          "text": "Wenn der Braten von allen Seiten knusprig angebraten ist, etwas Essigwasser hinzugießen.",
+          "ingredient_ids": [
+            "braten",
+            "essigwasser"
+          ],
+          "tool_ids": [],
+          "duration": null,
+          "condition": "when the roast is browned crisply on all sides",
+          "source": {
+            "status": "read",
+            "page": 2,
+            "quote": "Wenn er von allen Seiten knusprig angebraten ist, gießt man etwas Essigwasser hinzu.",
+            "note": null
+          }
+        },
+        {
+          "order": 7,
+          "text": "Optional einige Äpfel, Möhren und Wacholderbeeren in den Topf geben.",
+          "ingredient_ids": [
+            "aepfel",
+            "moehren",
+            "wacholderbeeren"
+          ],
+          "tool_ids": [
+            "topf"
+          ],
+          "duration": null,
+          "condition": "optional",
+          "source": {
+            "status": "read",
+            "page": 2,
+            "quote": "Auch kann man einige Äpfel, Möhren und Wacholderbeeren in den Topf geben.",
+            "note": null
+          }
+        },
+        {
+          "order": 8,
+          "text": "Den Braten mit den Zutaten langsam garbrötscheln lassen.",
+          "ingredient_ids": [
+            "braten",
+            "aepfel",
+            "moehren",
+            "wacholderbeeren"
+          ],
+          "tool_ids": [
+            "topf"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 2,
+            "quote": "Man läßt den Braten langsam mit den Zutaten garbrötscheln.",
+            "note": null
+          }
+        },
+        {
+          "order": 9,
+          "text": "Für die Soße den Bratenfond mit Mehl anschwitzen, mit Essigwasser und Rotwein auffüllen, gequollene Korinthen und Rosinen hinzugeben und so viel Zucker, dass die Soße süßsauer schmeckt.",
+          "ingredient_ids": [
+            "bratenfond",
+            "mehl",
+            "essigwasser",
+            "rotwein",
+            "korinthen",
+            "rosinen",
+            "zucker"
+          ],
+          "tool_ids": [],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 2,
+            "quote": "Für die Soße schwitzt man den Bratenfond mit Mehl an, füllt mit Essigwasser und Rotwein auf, gibt dann gequollene Korinthen u. Rosinen hinzu und soviel Zucker, daß die Soße einen säuerlich-süßen Geschmack bekommt.",
+            "note": null
+          }
+        },
+        {
+          "order": 10,
+          "text": "Den Braten, falls noch nicht geschnitten, eine Stunde vor dem Anrichten in die Soße legen, damit er deren Geschmack annimmt.",
+          "ingredient_ids": [
+            "braten"
+          ],
+          "tool_ids": [],
+          "duration": {
+            "raw": "eine Stunde",
+            "min_minutes": 60.0,
+            "max_minutes": 60.0
+          },
+          "condition": "if the roast is not yet cut",
+          "source": {
+            "status": "read",
+            "page": 2,
+            "quote": "Man legt den Braten, wenn er noch nicht geschnitten ist, eine Stunde vor dem Anrichten in die Soße, damit er den Geschmack derselben bekommt.",
+            "note": null
+          }
+        }
+      ],
+      "warnings": [
+        {
+          "message": "The type of meat and its amount are not stated; the roast quantity is absent.",
+          "target_id": null
+        },
+        {
+          "message": "No amounts are given for pepper, cloves, salt, bay leaves, bacon, butter, flour, red wine, currants, raisins; quantities left absent.",
+          "target_id": null
+        },
+        {
+          "message": "Servings are not stated and cannot be reliably estimated from the text.",
+          "target_id": null
+        },
+        {
+          "message": "The text was read by vision; old spelling such as 'garbrötscheln', 'Anbraten' and 'läßt' should be checked against the scan.",
+          "target_id": null
+        },
+        {
+          "message": "Apples, carrots and juniper berries are marked optional from 'kann man'; amounts are only 'einige'.",
+          "target_id": null
+        },
+        {
+          "message": "The step about adding the pan-juice sauce mentions 'dass' where the source reads 'daß'; check transcription.",
+          "target_id": null
+        }
+      ]
+    },
+    "usage": [
+      {
+        "model": "claude-haiku-5-5",
+        "input_tokens": 4450,
+        "output_tokens": 9127,
+        "seconds": 32.83169380000004,
+        "cached": true
+      }
+    ],
+    "problems_found": [],
+    "problems_left": []
+  },
+  "manipulation": {
+    "original": {
+      "title": "Sauerbraten",
+      "language": "de",
+      "servings": {
+        "value": null,
+        "source": {
+          "status": "missing",
+          "page": null,
+          "quote": null,
+          "note": "the document does not say"
+        }
+      },
+      "ingredients": [
+        {
+          "id": "essig",
+          "name": "vinegar",
+          "name_original": "Essig",
+          "quantity": {
+            "kind": "exact",
+            "value": 0.5,
+            "max_value": null,
+            "unit": "l",
+            "raw": "1/2 l"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "1/2 l Essig",
+            "note": null
+          }
+        },
+        {
+          "id": "wasser",
+          "name": "water",
+          "name_original": "Wasser",
+          "quantity": {
+            "kind": "exact",
+            "value": 0.5,
+            "max_value": null,
+            "unit": "l",
+            "raw": "1/2 l"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "1/2 l Wasser",
+            "note": null
+          }
+        },
+        {
+          "id": "zwiebeln",
+          "name": "onions",
+          "name_original": "Zwiebeln",
+          "quantity": {
+            "kind": "exact",
+            "value": 4.0,
+            "max_value": null,
+            "unit": null,
+            "raw": "4"
+          },
+          "preparation": "in Scheiben geschnitten",
+          "optional": false,
+          "is_intermediate": false,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "4 in Scheiben geschnittene Zwiebeln",
+            "note": null
+          }
+        },
+        {
+          "id": "pfeffer",
+          "name": "pepper",
+          "name_original": "Pfeffer",
+          "quantity": {
+            "kind": "absent",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Pfeffer",
+            "note": null
+          }
+        },
+        {
+          "id": "nelken",
+          "name": "cloves",
+          "name_original": "Nelken",
+          "quantity": {
+            "kind": "absent",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Nelken",
+            "note": null
+          }
+        },
+        {
+          "id": "salz",
+          "name": "salt",
+          "name_original": "Salz",
+          "quantity": {
+            "kind": "absent",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Salz",
+            "note": null
+          }
+        },
+        {
+          "id": "lorbeerblaetter",
+          "name": "bay leaves",
+          "name_original": "Lorbeerblätter",
+          "quantity": {
+            "kind": "absent",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Lorbeerblätter",
+            "note": null
+          }
+        },
+        {
+          "id": "braten",
+          "name": "roast",
+          "name_original": "Braten",
+          "quantity": {
+            "kind": "absent",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": "fest, Bratenstück",
+          "optional": false,
+          "is_intermediate": false,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "die festen Bratenstücke",
+            "note": null
+          }
+        },
+        {
+          "id": "essigwasser",
+          "name": "vinegar water",
+          "name_original": "Essigwasser",
+          "quantity": {
+            "kind": "absent",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": true,
+          "source": {
+            "status": "read",
+            "page": 2,
+            "quote": "das Essigwasser heiß darüber",
+            "note": "The boiled marinade made from the vinegar and water."
+          }
+        },
+        {
+          "id": "speck",
+          "name": "bacon",
+          "name_original": "Speck",
+          "quantity": {
+            "kind": "absent",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": "auslassen",
+          "optional": false,
+          "is_intermediate": false,
+          "source": {
+            "status": "read",
+            "page": 2,
+            "quote": "den Speck auslassen",
+            "note": null
+          }
+        },
+        {
+          "id": "butter",
+          "name": "butter",
+          "name_original": "Butter",
+          "quantity": {
+            "kind": "absent",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "source": {
+            "status": "read",
+            "page": 2,
+            "quote": "Butter dazugeben",
+            "note": null
+          }
+        },
+        {
+          "id": "aepfel",
+          "name": "apples",
+          "name_original": "Äpfel",
+          "quantity": {
+            "kind": "vague",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": "einige"
+          },
+          "preparation": null,
+          "optional": true,
+          "is_intermediate": false,
+          "source": {
+            "status": "read",
+            "page": 2,
+            "quote": "einige Äpfel, Möhren und Wacholderbeeren",
+            "note": null
+          }
+        },
+        {
+          "id": "moehren",
+          "name": "carrots",
+          "name_original": "Möhren",
+          "quantity": {
+            "kind": "vague",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": "einige"
+          },
+          "preparation": null,
+          "optional": true,
+          "is_intermediate": false,
+          "source": {
+            "status": "read",
+            "page": 2,
+            "quote": "einige Äpfel, Möhren und Wacholderbeeren",
+            "note": null
+          }
+        },
+        {
+          "id": "wacholderbeeren",
+          "name": "juniper berries",
+          "name_original": "Wacholderbeeren",
+          "quantity": {
+            "kind": "vague",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": "einige"
+          },
+          "preparation": null,
+          "optional": true,
+          "is_intermediate": false,
+          "source": {
+            "status": "read",
+            "page": 2,
+            "quote": "einige Äpfel, Möhren und Wacholderbeeren",
+            "note": null
+          }
+        },
+        {
+          "id": "bratenfond",
+          "name": "pan juices",
+          "name_original": "Bratenfond",
+          "quantity": {
+            "kind": "absent",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": true,
+          "source": {
+            "status": "read",
+            "page": 2,
+            "quote": "den Bratenfond mit Mehl an",
+            "note": "Juices from searing the roast."
+          }
+        },
+        {
+          "id": "mehl",
+          "name": "flour",
+          "name_original": "Mehl",
+          "quantity": {
+            "kind": "absent",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "source": {
+            "status": "read",
+            "page": 2,
+            "quote": "mit Mehl an",
+            "note": null
+          }
+        },
+        {
+          "id": "rotwein",
+          "name": "red wine",
+          "name_original": "Rotwein",
+          "quantity": {
+            "kind": "absent",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "source": {
+            "status": "read",
+            "page": 2,
+            "quote": "Essigwasser und Rotwein",
+            "note": null
+          }
+        },
+        {
+          "id": "korinthen",
+          "name": "currants",
+          "name_original": "Korinthen",
+          "quantity": {
+            "kind": "absent",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": "gequollen",
+          "optional": false,
+          "is_intermediate": false,
+          "source": {
+            "status": "read",
+            "page": 2,
+            "quote": "gequollene Korinthen u. Rosinen",
+            "note": null
+          }
+        },
+        {
+          "id": "rosinen",
+          "name": "raisins",
+          "name_original": "Rosinen",
+          "quantity": {
+            "kind": "absent",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": "gequollen",
+          "optional": false,
+          "is_intermediate": false,
+          "source": {
+            "status": "read",
+            "page": 2,
+            "quote": "Korinthen u. Rosinen",
+            "note": null
+          }
+        },
+        {
+          "id": "zucker",
+          "name": "sugar",
+          "name_original": "Zucker",
+          "quantity": {
+            "kind": "to_taste",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": "soviel Zucker"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "source": {
+            "status": "read",
+            "page": 2,
+            "quote": "soviel Zucker, daß die Soße einen säuerlich-süßen Geschmack bekommt",
+            "note": null
+          }
+        }
+      ],
+      "tools": [
+        {
+          "id": "topf",
+          "name": "pot",
+          "source": {
+            "status": "read",
+            "page": 2,
+            "quote": "in den Topf geben",
+            "note": null
+          }
+        }
+      ],
+      "steps": [
+        {
+          "order": 1,
+          "text": "Hierzu eignen sich am besten die festen Bratenstücke.",
+          "ingredient_ids": [
+            "braten"
+          ],
+          "tool_ids": [],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Hierzu eignen sich am besten die festen Bratenstücke.",
+            "note": null
+          }
+        },
+        {
+          "order": 2,
+          "text": "Zum Einlegen Essig, Wasser, Zwiebeln, Pfeffer, Nelken, Salz und Lorbeerblätter aufkochen.",
+          "ingredient_ids": [
+            "essig",
+            "wasser",
+            "zwiebeln",
+            "pfeffer",
+            "nelken",
+            "salz",
+            "lorbeerblaetter"
+          ],
+          "tool_ids": [],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Zum Einlegen kocht man 1/2 l Essig, 1/2 l Wasser, 4 in Scheiben geschnittene Zwiebeln, Pfeffer, Nelken, Salz und Lorbeerblätter.",
+            "note": null
+          }
+        },
+        {
+          "order": 3,
+          "text": "Wird der Braten am 1. oder 2. Tag gebraucht, das Essigwasser heiß darübergießen.",
+          "ingredient_ids": [
+            "essigwasser",
+            "braten"
+          ],
+          "tool_ids": [],
+          "duration": null,
+          "condition": "if the roast is used on day 1 or day 2",
+          "source": {
+            "status": "read",
+            "page": 2,
+            "quote": "Will man den Braten nach dem 1. Tag oder 2. Tag gebrauchen, so gießt man das Essigwasser heiß darüber.",
+            "note": null
+          }
+        },
+        {
+          "order": 4,
+          "text": "Soll der Braten erst nach 8 Tagen zubereitet werden, das Essigwasser kalt darauf gießen.",
+          "ingredient_ids": [
+            "essigwasser",
+            "braten"
+          ],
+          "tool_ids": [],
+          "duration": null,
+          "condition": "if the roast is prepared only after 8 days",
+          "source": {
+            "status": "read",
+            "page": 2,
+            "quote": "Soll der Braten erst nach 8 Tagen zubereitet werden, so gießt man es kalt darauf.",
+            "note": null
+          }
+        },
+        {
+          "order": 5,
+          "text": "Zum Anbraten den Speck auslassen, Butter dazugeben und den abgetrockneten Braten ins heiße Fett geben.",
+          "ingredient_ids": [
+            "speck",
+            "butter",
+            "braten"
+          ],
+          "tool_ids": [],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 2,
+            "quote": "Zum Anbraten den Speck auslassen, Butter dazugeben, dann gibt man den abgetrockneten Braten ins heiße Fett.",
+            "note": null
+          }
+        },
+        {
+          "order": 6,
+          "text": "Wenn der Braten von allen Seiten knusprig angebraten ist, etwas Essigwasser hinzugießen.",
+          "ingredient_ids": [
+            "braten",
+            "essigwasser"
+          ],
+          "tool_ids": [],
+          "duration": null,
+          "condition": "when the roast is browned crisply on all sides",
+          "source": {
+            "status": "read",
+            "page": 2,
+            "quote": "Wenn er von allen Seiten knusprig angebraten ist, gießt man etwas Essigwasser hinzu.",
+            "note": null
+          }
+        },
+        {
+          "order": 7,
+          "text": "Optional einige Äpfel, Möhren und Wacholderbeeren in den Topf geben.",
+          "ingredient_ids": [
+            "aepfel",
+            "moehren",
+            "wacholderbeeren"
+          ],
+          "tool_ids": [
+            "topf"
+          ],
+          "duration": null,
+          "condition": "optional",
+          "source": {
+            "status": "read",
+            "page": 2,
+            "quote": "Auch kann man einige Äpfel, Möhren und Wacholderbeeren in den Topf geben.",
+            "note": null
+          }
+        },
+        {
+          "order": 8,
+          "text": "Den Braten mit den Zutaten langsam garbrötscheln lassen.",
+          "ingredient_ids": [
+            "braten",
+            "aepfel",
+            "moehren",
+            "wacholderbeeren"
+          ],
+          "tool_ids": [
+            "topf"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 2,
+            "quote": "Man läßt den Braten langsam mit den Zutaten garbrötscheln.",
+            "note": null
+          }
+        },
+        {
+          "order": 9,
+          "text": "Für die Soße den Bratenfond mit Mehl anschwitzen, mit Essigwasser und Rotwein auffüllen, gequollene Korinthen und Rosinen hinzugeben und so viel Zucker, dass die Soße süßsauer schmeckt.",
+          "ingredient_ids": [
+            "bratenfond",
+            "mehl",
+            "essigwasser",
+            "rotwein",
+            "korinthen",
+            "rosinen",
+            "zucker"
+          ],
+          "tool_ids": [],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 2,
+            "quote": "Für die Soße schwitzt man den Bratenfond mit Mehl an, füllt mit Essigwasser und Rotwein auf, gibt dann gequollene Korinthen u. Rosinen hinzu und soviel Zucker, daß die Soße einen säuerlich-süßen Geschmack bekommt.",
+            "note": null
+          }
+        },
+        {
+          "order": 10,
+          "text": "Den Braten, falls noch nicht geschnitten, eine Stunde vor dem Anrichten in die Soße legen, damit er deren Geschmack annimmt.",
+          "ingredient_ids": [
+            "braten"
+          ],
+          "tool_ids": [],
+          "duration": {
+            "raw": "eine Stunde",
+            "min_minutes": 60.0,
+            "max_minutes": 60.0
+          },
+          "condition": "if the roast is not yet cut",
+          "source": {
+            "status": "read",
+            "page": 2,
+            "quote": "Man legt den Braten, wenn er noch nicht geschnitten ist, eine Stunde vor dem Anrichten in die Soße, damit er den Geschmack derselben bekommt.",
+            "note": null
+          }
+        }
+      ],
+      "warnings": [
+        {
+          "message": "The type of meat and its amount are not stated; the roast quantity is absent.",
+          "target_id": null
+        },
+        {
+          "message": "No amounts are given for pepper, cloves, salt, bay leaves, bacon, butter, flour, red wine, currants, raisins; quantities left absent.",
+          "target_id": null
+        },
+        {
+          "message": "Servings are not stated and cannot be reliably estimated from the text.",
+          "target_id": null
+        },
+        {
+          "message": "The text was read by vision; old spelling such as 'garbrötscheln', 'Anbraten' and 'läßt' should be checked against the scan.",
+          "target_id": null
+        },
+        {
+          "message": "Apples, carrots and juniper berries are marked optional from 'kann man'; amounts are only 'einige'.",
+          "target_id": null
+        },
+        {
+          "message": "The step about adding the pan-juice sauce mentions 'dass' where the source reads 'daß'; check transcription.",
+          "target_id": null
+        }
+      ]
+    },
+    "recipe": {
+      "title": "Sauerbraten",
+      "language": "de",
+      "servings": {
+        "value": 6,
+        "source": {
+          "status": "rule",
+          "page": null,
+          "quote": null,
+          "note": "scaled from 4 servings (assumed by the user: 4)"
+        }
+      },
+      "ingredients": [
+        {
+          "id": "essig",
+          "name": "vinegar",
+          "name_original": "Essig",
+          "quantity": {
+            "kind": "exact",
+            "value": 0.75,
+            "max_value": null,
+            "unit": "l",
+            "raw": "1/2 l"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "1/2 l Essig",
+            "note": null
+          }
+        },
+        {
+          "id": "wasser",
+          "name": "water",
+          "name_original": "Wasser",
+          "quantity": {
+            "kind": "exact",
+            "value": 0.75,
+            "max_value": null,
+            "unit": "l",
+            "raw": "1/2 l"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "1/2 l Wasser",
+            "note": null
+          }
+        },
+        {
+          "id": "zwiebeln",
+          "name": "onions",
+          "name_original": "Zwiebeln",
+          "quantity": {
+            "kind": "exact",
+            "value": 6.0,
+            "max_value": null,
+            "unit": null,
+            "raw": "4"
+          },
+          "preparation": "in Scheiben geschnitten",
+          "optional": false,
+          "is_intermediate": false,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "4 in Scheiben geschnittene Zwiebeln",
+            "note": null
+          }
+        },
+        {
+          "id": "pfeffer",
+          "name": "pepper",
+          "name_original": "Pfeffer",
+          "quantity": {
+            "kind": "absent",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Pfeffer",
+            "note": null
+          }
+        },
+        {
+          "id": "nelken",
+          "name": "cloves",
+          "name_original": "Nelken",
+          "quantity": {
+            "kind": "absent",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Nelken",
+            "note": null
+          }
+        },
+        {
+          "id": "salz",
+          "name": "salt",
+          "name_original": "Salz",
+          "quantity": {
+            "kind": "absent",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Salz",
+            "note": null
+          }
+        },
+        {
+          "id": "lorbeerblaetter",
+          "name": "bay leaves",
+          "name_original": "Lorbeerblätter",
+          "quantity": {
+            "kind": "absent",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Lorbeerblätter",
+            "note": null
+          }
+        },
+        {
+          "id": "braten",
+          "name": "roast",
+          "name_original": "Braten",
+          "quantity": {
+            "kind": "absent",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": "fest, Bratenstück",
+          "optional": false,
+          "is_intermediate": false,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "die festen Bratenstücke",
+            "note": null
+          }
+        },
+        {
+          "id": "essigwasser",
+          "name": "vinegar water",
+          "name_original": "Essigwasser",
+          "quantity": {
+            "kind": "absent",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": true,
+          "source": {
+            "status": "read",
+            "page": 2,
+            "quote": "das Essigwasser heiß darüber",
+            "note": "The boiled marinade made from the vinegar and water."
+          }
+        },
+        {
+          "id": "speck",
+          "name": "bacon",
+          "name_original": "Speck",
+          "quantity": {
+            "kind": "absent",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": "auslassen",
+          "optional": false,
+          "is_intermediate": false,
+          "source": {
+            "status": "read",
+            "page": 2,
+            "quote": "den Speck auslassen",
+            "note": null
+          }
+        },
+        {
+          "id": "butter",
+          "name": "butter",
+          "name_original": "Butter",
+          "quantity": {
+            "kind": "absent",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "source": {
+            "status": "read",
+            "page": 2,
+            "quote": "Butter dazugeben",
+            "note": null
+          }
+        },
+        {
+          "id": "aepfel",
+          "name": "apples",
+          "name_original": "Äpfel",
+          "quantity": {
+            "kind": "vague",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": "einige"
+          },
+          "preparation": null,
+          "optional": true,
+          "is_intermediate": false,
+          "source": {
+            "status": "read",
+            "page": 2,
+            "quote": "einige Äpfel, Möhren und Wacholderbeeren",
+            "note": null
+          }
+        },
+        {
+          "id": "moehren",
+          "name": "carrots",
+          "name_original": "Möhren",
+          "quantity": {
+            "kind": "vague",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": "einige"
+          },
+          "preparation": null,
+          "optional": true,
+          "is_intermediate": false,
+          "source": {
+            "status": "read",
+            "page": 2,
+            "quote": "einige Äpfel, Möhren und Wacholderbeeren",
+            "note": null
+          }
+        },
+        {
+          "id": "wacholderbeeren",
+          "name": "juniper berries",
+          "name_original": "Wacholderbeeren",
+          "quantity": {
+            "kind": "vague",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": "einige"
+          },
+          "preparation": null,
+          "optional": true,
+          "is_intermediate": false,
+          "source": {
+            "status": "read",
+            "page": 2,
+            "quote": "einige Äpfel, Möhren und Wacholderbeeren",
+            "note": null
+          }
+        },
+        {
+          "id": "bratenfond",
+          "name": "pan juices",
+          "name_original": "Bratenfond",
+          "quantity": {
+            "kind": "absent",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": true,
+          "source": {
+            "status": "read",
+            "page": 2,
+            "quote": "den Bratenfond mit Mehl an",
+            "note": "Juices from searing the roast."
+          }
+        },
+        {
+          "id": "mehl",
+          "name": "flour",
+          "name_original": "Mehl",
+          "quantity": {
+            "kind": "absent",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "source": {
+            "status": "read",
+            "page": 2,
+            "quote": "mit Mehl an",
+            "note": null
+          }
+        },
+        {
+          "id": "rotwein",
+          "name": "red wine",
+          "name_original": "Rotwein",
+          "quantity": {
+            "kind": "absent",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "source": {
+            "status": "read",
+            "page": 2,
+            "quote": "Essigwasser und Rotwein",
+            "note": null
+          }
+        },
+        {
+          "id": "korinthen",
+          "name": "currants",
+          "name_original": "Korinthen",
+          "quantity": {
+            "kind": "absent",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": "gequollen",
+          "optional": false,
+          "is_intermediate": false,
+          "source": {
+            "status": "read",
+            "page": 2,
+            "quote": "gequollene Korinthen u. Rosinen",
+            "note": null
+          }
+        },
+        {
+          "id": "rosinen",
+          "name": "raisins",
+          "name_original": "Rosinen",
+          "quantity": {
+            "kind": "absent",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": "gequollen",
+          "optional": false,
+          "is_intermediate": false,
+          "source": {
+            "status": "read",
+            "page": 2,
+            "quote": "Korinthen u. Rosinen",
+            "note": null
+          }
+        },
+        {
+          "id": "zucker",
+          "name": "sugar",
+          "name_original": "Zucker",
+          "quantity": {
+            "kind": "to_taste",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": "soviel Zucker"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "source": {
+            "status": "read",
+            "page": 2,
+            "quote": "soviel Zucker, daß die Soße einen säuerlich-süßen Geschmack bekommt",
+            "note": null
+          }
+        }
+      ],
+      "tools": [
+        {
+          "id": "topf",
+          "name": "pot",
+          "source": {
+            "status": "read",
+            "page": 2,
+            "quote": "in den Topf geben",
+            "note": null
+          }
+        }
+      ],
+      "steps": [
+        {
+          "order": 1,
+          "text": "Hierzu eignen sich am besten die festen Bratenstücke.",
+          "ingredient_ids": [
+            "braten"
+          ],
+          "tool_ids": [],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Hierzu eignen sich am besten die festen Bratenstücke.",
+            "note": null
+          }
+        },
+        {
+          "order": 2,
+          "text": "Zum Einlegen Essig, Wasser, Zwiebeln, Pfeffer, Nelken, Salz und Lorbeerblätter aufkochen.",
+          "ingredient_ids": [
+            "essig",
+            "wasser",
+            "zwiebeln",
+            "pfeffer",
+            "nelken",
+            "salz",
+            "lorbeerblaetter"
+          ],
+          "tool_ids": [],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Zum Einlegen kocht man 1/2 l Essig, 1/2 l Wasser, 4 in Scheiben geschnittene Zwiebeln, Pfeffer, Nelken, Salz und Lorbeerblätter.",
+            "note": null
+          }
+        },
+        {
+          "order": 3,
+          "text": "Wird der Braten am 1. oder 2. Tag gebraucht, das Essigwasser heiß darübergießen.",
+          "ingredient_ids": [
+            "essigwasser",
+            "braten"
+          ],
+          "tool_ids": [],
+          "duration": null,
+          "condition": "if the roast is used on day 1 or day 2",
+          "source": {
+            "status": "read",
+            "page": 2,
+            "quote": "Will man den Braten nach dem 1. Tag oder 2. Tag gebrauchen, so gießt man das Essigwasser heiß darüber.",
+            "note": null
+          }
+        },
+        {
+          "order": 4,
+          "text": "Soll der Braten erst nach 8 Tagen zubereitet werden, das Essigwasser kalt darauf gießen.",
+          "ingredient_ids": [
+            "essigwasser",
+            "braten"
+          ],
+          "tool_ids": [],
+          "duration": null,
+          "condition": "if the roast is prepared only after 8 days",
+          "source": {
+            "status": "read",
+            "page": 2,
+            "quote": "Soll der Braten erst nach 8 Tagen zubereitet werden, so gießt man es kalt darauf.",
+            "note": null
+          }
+        },
+        {
+          "order": 5,
+          "text": "Zum Anbraten den Speck auslassen, Butter dazugeben und den abgetrockneten Braten ins heiße Fett geben.",
+          "ingredient_ids": [
+            "speck",
+            "butter",
+            "braten"
+          ],
+          "tool_ids": [],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 2,
+            "quote": "Zum Anbraten den Speck auslassen, Butter dazugeben, dann gibt man den abgetrockneten Braten ins heiße Fett.",
+            "note": null
+          }
+        },
+        {
+          "order": 6,
+          "text": "Wenn der Braten von allen Seiten knusprig angebraten ist, etwas Essigwasser hinzugießen.",
+          "ingredient_ids": [
+            "braten",
+            "essigwasser"
+          ],
+          "tool_ids": [],
+          "duration": null,
+          "condition": "when the roast is browned crisply on all sides",
+          "source": {
+            "status": "read",
+            "page": 2,
+            "quote": "Wenn er von allen Seiten knusprig angebraten ist, gießt man etwas Essigwasser hinzu.",
+            "note": null
+          }
+        },
+        {
+          "order": 7,
+          "text": "Optional einige Äpfel, Möhren und Wacholderbeeren in den Topf geben.",
+          "ingredient_ids": [
+            "aepfel",
+            "moehren",
+            "wacholderbeeren"
+          ],
+          "tool_ids": [
+            "topf"
+          ],
+          "duration": null,
+          "condition": "optional",
+          "source": {
+            "status": "read",
+            "page": 2,
+            "quote": "Auch kann man einige Äpfel, Möhren und Wacholderbeeren in den Topf geben.",
+            "note": null
+          }
+        },
+        {
+          "order": 8,
+          "text": "Den Braten mit den Zutaten langsam garbrötscheln lassen.",
+          "ingredient_ids": [
+            "braten",
+            "aepfel",
+            "moehren",
+            "wacholderbeeren"
+          ],
+          "tool_ids": [
+            "topf"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 2,
+            "quote": "Man läßt den Braten langsam mit den Zutaten garbrötscheln.",
+            "note": null
+          }
+        },
+        {
+          "order": 9,
+          "text": "Für die Soße den Bratenfond mit Mehl anschwitzen, mit Essigwasser und Rotwein auffüllen, gequollene Korinthen und Rosinen hinzugeben und so viel Zucker, dass die Soße süßsauer schmeckt.",
+          "ingredient_ids": [
+            "bratenfond",
+            "mehl",
+            "essigwasser",
+            "rotwein",
+            "korinthen",
+            "rosinen",
+            "zucker"
+          ],
+          "tool_ids": [],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 2,
+            "quote": "Für die Soße schwitzt man den Bratenfond mit Mehl an, füllt mit Essigwasser und Rotwein auf, gibt dann gequollene Korinthen u. Rosinen hinzu und soviel Zucker, daß die Soße einen säuerlich-süßen Geschmack bekommt.",
+            "note": null
+          }
+        },
+        {
+          "order": 10,
+          "text": "Den Braten, falls noch nicht geschnitten, eine Stunde vor dem Anrichten in die Soße legen, damit er deren Geschmack annimmt.",
+          "ingredient_ids": [
+            "braten"
+          ],
+          "tool_ids": [],
+          "duration": {
+            "raw": "eine Stunde",
+            "min_minutes": 60.0,
+            "max_minutes": 60.0
+          },
+          "condition": "if the roast is not yet cut",
+          "source": {
+            "status": "read",
+            "page": 2,
+            "quote": "Man legt den Braten, wenn er noch nicht geschnitten ist, eine Stunde vor dem Anrichten in die Soße, damit er den Geschmack derselben bekommt.",
+            "note": null
+          }
+        }
+      ],
+      "warnings": [
+        {
+          "message": "The type of meat and its amount are not stated; the roast quantity is absent.",
+          "target_id": null
+        },
+        {
+          "message": "No amounts are given for pepper, cloves, salt, bay leaves, bacon, butter, flour, red wine, currants, raisins; quantities left absent.",
+          "target_id": null
+        },
+        {
+          "message": "Servings are not stated and cannot be reliably estimated from the text.",
+          "target_id": null
+        },
+        {
+          "message": "The text was read by vision; old spelling such as 'garbrötscheln', 'Anbraten' and 'läßt' should be checked against the scan.",
+          "target_id": null
+        },
+        {
+          "message": "Apples, carrots and juniper berries are marked optional from 'kann man'; amounts are only 'einige'.",
+          "target_id": null
+        },
+        {
+          "message": "The step about adding the pan-juice sauce mentions 'dass' where the source reads 'daß'; check transcription.",
+          "target_id": null
+        }
+      ]
+    },
+    "changes": [
+      {
+        "rule": "scale",
+        "target": "servings",
+        "before": "4",
+        "after": "6",
+        "reason": "Requested 6 servings; the original serves 4 (assumed by the user: 4)."
+      },
+      {
+        "rule": "scale",
+        "target": "essig",
+        "before": "½ l Essig",
+        "after": "¾ l Essig",
+        "reason": "×1 ½"
+      },
+      {
+        "rule": "scale",
+        "target": "wasser",
+        "before": "½ l Wasser",
+        "after": "¾ l Wasser",
+        "reason": "×1 ½"
+      },
+      {
+        "rule": "scale",
+        "target": "zwiebeln",
+        "before": "4 Zwiebeln",
+        "after": "6 Zwiebeln",
+        "reason": "×1 ½"
+      },
+      {
+        "rule": "scale",
+        "target": "amounts not given",
+        "before": "Pfeffer, Nelken, Salz, Lorbeerblätter, Braten, Essigwasser, Speck, Butter, Äpfel, Möhren, Wacholderbeeren, Bratenfond, Mehl, Rotwein, Korinthen, Rosinen, Zucker",
+        "after": "unchanged",
+        "reason": "The recipe gives no number for these, so there is nothing to multiply. Adjust by taste."
+      },
+      {
+        "rule": "scale",
+        "target": "times",
+        "before": "as written",
+        "after": "unchanged",
+        "reason": "Cooking and marinating times depend on the size of each piece, not on the number of people. A bigger roast needs longer: check doneness instead of the clock."
+      },
+      {
+        "rule": "scale",
+        "target": "tools",
+        "before": "pot",
+        "after": "check sizes",
+        "reason": "Amounts change by ×1 ½; check that pots and pans still fit."
+      }
+    ]
+  }
+}
