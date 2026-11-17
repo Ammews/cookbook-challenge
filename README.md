@@ -16,7 +16,7 @@ Sauerbraten from 1887; the pipeline is also measured on an
 | Sauerbraten, first run | 3 model calls, ≈ 38 s, **≈ $0.006** (repeat runs: $0, from cache) |
 | Evaluation set (11 inputs, 4 languages) | **294/294** checks passed, **≈ $0.04** for the whole set |
 | Fraktur page from 1879 vs human transcription | **99 %** character similarity |
-| Tests | 199, no network or API key needed |
+| Tests | 208, no network or API key needed |
 | Model | Claude Haiku 5.5 for reading and extracting; everything else is plain code |
 
 ## Run it
@@ -44,6 +44,20 @@ uv run cookbook eval                        # run the evaluation set, writes eva
 uv run cookbook ingest <file>               # only show what was read from the file
 uv run pytest                               # tests (no API key needed)
 ```
+
+### Optional: web page
+
+A small local page to drop a file, tick "vegan", choose servings and see the
+result with a colour-coded source for every value. It is an optional extra,
+so the setup above stays the same.
+
+```bash
+uv sync --extra web
+uv run --extra web cookbook web     # then open http://127.0.0.1:8000
+```
+
+It calls the same pipeline as the CLI (`src/cookbook/web/`: a FastAPI endpoint
+and one HTML file with no build step and no external scripts).
 
 Example outputs: [`examples/sauerbraten/`](examples/sauerbraten) (raw extraction,
 6 servings, vegan, vegan for 6), plus a second recipe in English
@@ -225,8 +239,12 @@ change against the original, and a **Check before cooking** list with the
 model's warnings, guessed values and vegan label checks. The JSON has the full
 result, including token use per call.
 
-**Rejected**: a web UI. Not scored, and the Markdown already shows provenance
-and the diff.
+A small optional web page shows the same data with colour-coded source
+badges. It holds no recipe logic: the wording comes from the same Python code
+as the Markdown.
+
+**Rejected**: a full front-end framework. UI is not scored; a single HTML file
+is enough to demo and keeps the setup to three commands.
 
 ## The AI challenges
 
@@ -333,7 +351,8 @@ src/cookbook/
   output/       Markdown and JSON
   evaluation/   check spec, evaluator, dataset loader, runner
   models/       domain objects
-  cli.py        cookbook run | ingest | eval
+  web/          optional FastAPI endpoint + one HTML page
+  cli.py        cookbook run | ingest | eval | web
 evals/          11 cases, report
 examples/       generated outputs
 tests/          unit tests, no network

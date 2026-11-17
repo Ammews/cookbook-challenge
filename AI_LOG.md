@@ -169,6 +169,27 @@ report them, and asked for commits along the way.
   prompt version, different answer: the cache keys include the prompt version
   for exactly this reason.
 
+## Session 6: optional web page
+
+**Asked:** a simple front end. The agent laid out three options (Streamlit,
+static HTML, FastAPI + HTML) and argued against doing it at all on
+submission day (UI is not scored). I chose FastAPI + HTML because it helps the
+live demo in the interview.
+
+**What it did to keep the risk low**
+- Web packages are an optional extra; the three setup commands did not change.
+- The endpoint only calls the existing pipeline; all wording comes from the
+  same Python as the Markdown, so the page has no recipe logic.
+- Endpoint tests run against a scripted model.
+
+**What went wrong**
+- Starting the preview server picked up a launch configuration for another of
+  my projects from the parent folder and started that server instead. The
+  agent stopped it, noticed why, and added its own entry next to mine
+  instead of inside the repository.
+- Looking at the page in the browser showed a preparation note printed twice
+  ("finely chopped, finely chopped"); fixed in the view model.
+
 **Things I should double-check myself**
 - The transcription prompt tells the model to re-join words hyphenated across
   lines. That is convenient for later quote matching, but it means the
