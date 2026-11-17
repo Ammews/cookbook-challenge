@@ -32,6 +32,7 @@ expect:
       animal: [fish, uncertain, other_animal]
       note: Contains anchovies.
     - match: [butter]
+      exclude: [butternut]
       animal: [dairy]
     - match: [parmesan]
       animal: [dairy]

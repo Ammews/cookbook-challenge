@@ -22,6 +22,8 @@ expect:
     - match: [chickpea]
       quantity: {accept: [{value: 1, unit: [cup, cups]}]}
     - match: [water]
+      exclude: [tahini]
+      note: 'The list line "Tahini and water, to make a paste" belongs to the tahini.'
     - match: [baking soda]
       quantity: {accept: [{value: 1, unit: [teaspoon, tsp]}]}
     - match: [garlic]
