@@ -23,6 +23,7 @@ def render_markdown(result: PipelineResult) -> str:
     recipe = result.recipe
     changes = result.manipulation.changes if result.manipulation else ()
     scaled_ids = {c.target for c in changes if c.rule == "scale"}
+    converted_ids = {c.target for c in changes if c.rule == "metric"}
     flagged = {c.target: c.after for c in changes if c.rule == "vegan" and c.after.startswith("unchanged")}
     lines = [f"# {recipe.title}", "", _header(result), "", _servings(recipe), "", LEGEND, ""]
 
@@ -31,7 +32,7 @@ def render_markdown(result: PipelineResult) -> str:
         lines.append(
             f"| {_cell(format_amount(ingredient.quantity))} "
             f"| {_cell(_ingredient_label(ingredient))} "
-            f"| {_cell(_source_label(ingredient.source, ingredient.id in scaled_ids, ingredient.id in flagged))} |"
+            f"| {_cell(_source_label(ingredient.source, ingredient.id in scaled_ids, ingredient.id in flagged, ingredient.id in converted_ids))} |"
         )
 
     if recipe.tools:
@@ -117,7 +118,7 @@ def _ingredient_label(ingredient: Ingredient) -> str:
     return label + (f" *[{', '.join(tags)}]*" if tags else "")
 
 
-def _source_label(source: Source, scaled: bool, flagged: bool = False) -> str:
+def _source_label(source: Source, scaled: bool, flagged: bool = False, converted: bool = False) -> str:
     page = f", p. {source.page}" if source.page else ""
     if source.status is SourceStatus.READ:
         label = f"read{page}: “{source.quote}”"
@@ -127,8 +128,11 @@ def _source_label(source: Source, scaled: bool, flagged: bool = False) -> str:
         label = "not given" + (f": {source.note}" if source.note else "")
     else:
         label = f"**changed**: {source.note}"
-    if scaled and source.status is not SourceStatus.RULE:
-        label = "**changed** (scaled); " + label
+    how = [word for word, done in (("scaled", scaled), ("converted to metric", converted)) if done]
+    if how and source.status is not SourceStatus.RULE:
+        label = f"**changed** ({', '.join(how)}); " + label
+    elif converted:
+        label = "**converted to metric**; " + label
     if flagged:
         label = "**check** (vegan, see below); " + label
     return label

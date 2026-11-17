@@ -43,6 +43,7 @@ def build_view(result: PipelineResult) -> dict:
     recipe = result.recipe
     changes = result.manipulation.changes if result.manipulation else ()
     scaled = {c.target for c in changes if c.rule == "scale"}
+    converted = {c.target for c in changes if c.rule == "metric"}
     flagged = {c.target for c in changes if c.rule == "vegan" and c.after.startswith("unchanged")}
     view["recipe"] = {
         "title": recipe.title,
@@ -62,6 +63,7 @@ def build_view(result: PipelineResult) -> dict:
                 "intermediate": i.is_intermediate,
                 "source": _source(i.source),
                 "scaled": i.id in scaled,
+                "converted": i.id in converted,
                 "vegan_check": i.id in flagged,
             }
             for i in recipe.ingredients

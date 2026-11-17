@@ -97,3 +97,18 @@ def test_preparation_already_in_the_name_is_not_repeated():
     )
     view = post(client(wire([onion]))).json()
     assert view["recipe"]["ingredients"][0]["preparation"] is None
+
+
+def test_metric_conversion_is_applied_last():
+    from cookbook.extract.schema import WireIngredient, WireQuantity
+
+    vinegar = WireIngredient(
+        id="vinegar", name="vinegar", name_original="Essig",
+        quantity=WireQuantity(kind="exact", value=0.5, max_value=0, unit="l", raw="½ l"),
+        preparation="", optional=False, is_intermediate=False,
+        evidence="read", page=1, quote="½ l Essig", note="",
+    )
+    view = post(client(wire([vinegar], steps=[])), servings="6", metric="true").json()
+    row = view["recipe"]["ingredients"][0]
+    assert row["amount"] == "750 ml"
+    assert row["scaled"] and row["converted"]

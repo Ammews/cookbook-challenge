@@ -83,6 +83,7 @@
       </div>
       <div class="row">
         <label class="check"><input id="vegan" name="vegan" type="checkbox"> Make it vegan</label>
+        <label class="check"><input id="metric" name="metric" type="checkbox"> Metric units</label>
         <label>Servings
           <input id="servings" name="servings" type="number" min="1" max="100" placeholder="as written">
         </label>
@@ -131,6 +132,7 @@ $("form").addEventListener("submit", async (event) => {
   const body = new FormData();
   body.append("file", fileInput.files[0]);
   body.append("vegan", $("vegan").checked);
+  body.append("metric", $("metric").checked);
   if ($("servings").value) body.append("servings", $("servings").value);
   if ($("assume").value) body.append("assume_servings", $("assume").value);
 
@@ -197,6 +199,7 @@ function render(view) {
       i.intermediate ? el("span", { class: "tag" }, "made in the recipe") : null),
     el("td", {},
       i.scaled ? el("span", { class: "badge b-scaled" }, "scaled") : null,
+      i.converted ? el("span", { class: "badge b-scaled" }, "metric") : null,
       i.vegan_check ? el("span", { class: "badge b-check" }, "vegan check") : null,
       ...sourceBadge(i.source))));
   out.append(el("div", { class: "tablewrap" },

@@ -14,7 +14,7 @@ from fastapi.responses import FileResponse
 from cookbook.config import Settings
 from cookbook.extract import ExtractionError, Extractor, build_extractor
 from cookbook.ingest import Ingestor, TranscriptionError, UnsupportedInputError, build_ingestor
-from cookbook.manipulate import MakeVegan, ManipulationError, ScaleServings
+from cookbook.manipulate import ConvertToMetric, MakeVegan, ManipulationError, ScaleServings
 from cookbook.pipeline import run_pipeline
 from cookbook.web.view import build_view
 
@@ -40,6 +40,7 @@ def create_app(
     def run(
         file: UploadFile = File(...),
         vegan: bool = Form(False),
+        metric: bool = Form(False),
         servings: int | None = Form(None),
         assume_servings: int | None = Form(None),
     ) -> dict:
@@ -54,6 +55,8 @@ def create_app(
             rules.append(MakeVegan())
         if servings:
             rules.append(ScaleServings(servings, assume_base=assume_servings))
+        if metric:
+            rules.append(ConvertToMetric())  # last, so rounding happens once
 
         # Keep the original name: the pipeline reports it, and the extension does not decide the type.
         name = Path(file.filename or "upload").name

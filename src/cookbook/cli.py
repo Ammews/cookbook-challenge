@@ -1,6 +1,6 @@
 """Command line entry point.
 
-    cookbook run <file> [--servings N] [--vegan] [--out DIR]
+    cookbook run <file> [--servings N] [--vegan] [--metric] [--out DIR]
     cookbook ingest <file>
     cookbook eval [--case ID]
     cookbook web [--port 8000]
@@ -18,7 +18,7 @@ from cookbook.evaluation import load_cases
 from cookbook.evaluation.runner import render_report, run_case
 from cookbook.extract import ExtractionError, build_extractor
 from cookbook.ingest import TranscriptionError, UnsupportedInputError, build_ingestor
-from cookbook.manipulate import MakeVegan, ManipulationError, ScaleServings
+from cookbook.manipulate import ConvertToMetric, MakeVegan, ManipulationError, ScaleServings
 from cookbook.models import Document
 from cookbook.output import write_outputs
 from cookbook.pipeline import run_pipeline
@@ -54,6 +54,7 @@ def _parser() -> argparse.ArgumentParser:
     run.add_argument("--servings", type=int, help="scale to this many servings")
     run.add_argument("--assume-servings", type=int, help="servings of the original, if the recipe does not say")
     run.add_argument("--vegan", action="store_true", help="replace animal products")
+    run.add_argument("--metric", action="store_true", help="convert amounts to ml, l, g, kg")
     run.add_argument("--out", type=Path, default=Path("out"), help="output folder (default: out)")
     run.add_argument("--name", help="output file name without extension")
     run.set_defaults(handler=_run)
@@ -81,8 +82,10 @@ def _run(args: argparse.Namespace) -> int:
         rules.append(MakeVegan())
     if args.servings:
         rules.append(ScaleServings(args.servings, assume_base=args.assume_servings))
+    if args.metric:
+        rules.append(ConvertToMetric())  # last, so rounding happens once
     result = run_pipeline(args.file, build_ingestor(settings), build_extractor(settings), rules)
-    stem = args.name or _stem(args.file, args.servings, args.vegan)
+    stem = args.name or _stem(args.file, args.servings, args.vegan, args.metric)
     markdown, data = write_outputs(result, args.out, stem)
 
     recipe = result.recipe
@@ -141,12 +144,14 @@ def _web(args: argparse.Namespace) -> int:
     return 0
 
 
-def _stem(path: Path, servings: int | None, vegan: bool) -> str:
+def _stem(path: Path, servings: int | None, vegan: bool, metric: bool = False) -> str:
     parts = [path.stem.lower().replace(" ", "-")]
     if vegan:
         parts.append("vegan")
     if servings:
         parts.append(f"{servings}-servings")
+    if metric:
+        parts.append("metric")
     return "_".join(parts)
 
 

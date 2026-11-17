@@ -74,3 +74,10 @@ def test_amount_text_is_not_repeated_when_it_says_the_same_thing():
 
     assert format_amount(Quantity(kind=QuantityKind.TO_TASTE, raw="to taste")) == "to taste"
     assert format_amount(Quantity(kind=QuantityKind.VAGUE, raw="einige")) == "some (einige)"
+
+
+def test_converted_amounts_are_marked():
+    from cookbook.manipulate import ConvertToMetric
+
+    page = render_markdown(result([ScaleServings(6), ConvertToMetric()]))
+    assert "**changed** (scaled)" in page
