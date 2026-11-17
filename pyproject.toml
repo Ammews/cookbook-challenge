@@ -14,8 +14,16 @@ dependencies = [
 [project.scripts]
 cookbook = "cookbook.cli:main"
 
+[project.optional-dependencies]
+web = [
+    "fastapi>=0.163.1",
+    "python-multipart>=0.0.34",
+    "uvicorn>=0.54.0",
+]
+
 [dependency-groups]
 dev = [
+    "httpx>=0.28.1",
     "pytest>=8",
 ]
 
