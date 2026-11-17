@@ -1,4 +1,9 @@
-"""Command line entry point: `cookbook ingest <file>`."""
+"""Command line entry point.
+
+    cookbook run <file> [--servings N] [--vegan] [--out DIR]
+    cookbook ingest <file>
+    cookbook eval [--case ID]
+"""
 
 import argparse
 import sys
@@ -8,9 +13,18 @@ import anthropic
 from dotenv import load_dotenv
 
 from cookbook.config import Settings
+from cookbook.evaluation import load_cases
+from cookbook.evaluation.runner import render_report, run_case
+from cookbook.extract import ExtractionError, build_extractor
 from cookbook.ingest import TranscriptionError, UnsupportedInputError, build_ingestor
+from cookbook.manipulate import MakeVegan, ManipulationError, ScaleServings
 from cookbook.models import Document
+from cookbook.output import write_outputs
+from cookbook.pipeline import run_pipeline
 from cookbook.pricing import total_cost_usd
+
+EVAL_ROOT = Path("evals/cases")
+EVAL_REPORT = Path("evals/results/latest.md")
 
 
 def main(argv: list[str] | None = None) -> int:
@@ -20,7 +34,7 @@ def main(argv: list[str] | None = None) -> int:
         return args.handler(args)
     except FileNotFoundError as error:
         return _fail(f"file not found: {error.filename}")
-    except (UnsupportedInputError, TranscriptionError) as error:
+    except (UnsupportedInputError, TranscriptionError, ExtractionError, ManipulationError) as error:
         return _fail(str(error))
     except anthropic.AuthenticationError:
         return _fail("the Anthropic API key was rejected; check ANTHROPIC_API_KEY in .env")
@@ -34,11 +48,52 @@ def _parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(prog="cookbook", description="AI-powered cookbook pipeline.")
     commands = parser.add_subparsers(required=True)
 
-    ingest = commands.add_parser("ingest", help="read a PDF, image or text file into page texts")
+    run = commands.add_parser("run", help="turn a recipe file into an adjusted, cookable recipe")
+    run.add_argument("file", type=Path)
+    run.add_argument("--servings", type=int, help="scale to this many servings")
+    run.add_argument("--assume-servings", type=int, help="servings of the original, if the recipe does not say")
+    run.add_argument("--vegan", action="store_true", help="replace animal products")
+    run.add_argument("--out", type=Path, default=Path("out"), help="output folder (default: out)")
+    run.add_argument("--name", help="output file name without extension")
+    run.set_defaults(handler=_run)
+
+    ingest = commands.add_parser("ingest", help="only read a PDF, image or text file into page texts")
     ingest.add_argument("file", type=Path)
     ingest.add_argument("--json", type=Path, metavar="PATH", help="also save the document as JSON")
     ingest.set_defaults(handler=_ingest)
+
+    evaluate = commands.add_parser("eval", help="run the evaluation set and write a report")
+    evaluate.add_argument("--case", help="run only this case id")
+    evaluate.add_argument("--report", type=Path, default=EVAL_REPORT)
+    evaluate.set_defaults(handler=_eval)
     return parser
+
+
+def _run(args: argparse.Namespace) -> int:
+    settings = Settings.from_env()
+    rules = []
+    if args.vegan:
+        rules.append(MakeVegan())
+    if args.servings:
+        rules.append(ScaleServings(args.servings, assume_base=args.assume_servings))
+    result = run_pipeline(args.file, build_ingestor(settings), build_extractor(settings), rules)
+    stem = args.name or _stem(args.file, args.servings, args.vegan)
+    markdown, data = write_outputs(result, args.out, stem)
+
+    recipe = result.recipe
+    if recipe is None:
+        print(f"{args.file.name}: not a recipe; nothing extracted.")
+    else:
+        guessed = sum(i.source.is_guess for i in recipe.ingredients)
+        print(
+            f"{recipe.title}: {len(recipe.ingredients)} ingredients ({guessed} not read directly), "
+            f"{len(recipe.steps)} steps, {len(recipe.warnings)} warning(s)"
+        )
+        if result.manipulation:
+            print(f"Changes applied: {len(result.manipulation.changes)}")
+    print(_usage_line(result.usage))
+    print(f"Wrote {markdown} and {data}")
+    return 0
 
 
 def _ingest(args: argparse.Namespace) -> int:
@@ -51,6 +106,33 @@ def _ingest(args: argparse.Namespace) -> int:
     return 0
 
 
+def _eval(args: argparse.Namespace) -> int:
+    settings = Settings.from_env()
+    ingestor, extractor = build_ingestor(settings), build_extractor(settings)
+    cases = [c for c in load_cases(EVAL_ROOT) if not args.case or c.spec.id == args.case]
+    if not cases:
+        return _fail(f"no case named {args.case!r}")
+    reports = []
+    for case in cases:
+        print(f"running {case.spec.id} ...", flush=True)
+        reports.append(run_case(case, ingestor, extractor))
+    report = render_report(reports)
+    args.report.parent.mkdir(parents=True, exist_ok=True)
+    args.report.write_text(report, encoding="utf-8")
+    print(report)
+    print(f"Saved to {args.report}")
+    return 0
+
+
+def _stem(path: Path, servings: int | None, vegan: bool) -> str:
+    parts = [path.stem.lower().replace(" ", "-")]
+    if vegan:
+        parts.append("vegan")
+    if servings:
+        parts.append(f"{servings}-servings")
+    return "_".join(parts)
+
+
 def _format_document(document: Document) -> str:
     lines = [f"{document.name}: {document.kind.value}, {len(document.pages)} page(s)"]
     for page in document.pages:
@@ -60,12 +142,12 @@ def _format_document(document: Document) -> str:
             lines.append(f"[not running text] {' | '.join(page.decoration_text)}")
         if page.uncertain:
             lines.append(f"[uncertain words] {', '.join(page.uncertain)}")
-    lines.append("\n" + _format_usage(document))
+    usages = [p.usage for p in document.pages if p.usage is not None]
+    lines.append("\n" + _usage_line(usages))
     return "\n".join(lines)
 
 
-def _format_usage(document: Document) -> str:
-    usages = [p.usage for p in document.pages if p.usage is not None]
+def _usage_line(usages) -> str:
     if not usages:
         return "Model calls: none (no LLM needed for this input)"
     fresh = [u for u in usages if not u.cached]
