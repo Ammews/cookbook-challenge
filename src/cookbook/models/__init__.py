@@ -2,6 +2,7 @@
 
 from cookbook.models.ingredient import Ingredient
 from cookbook.models.quantity import Quantity, QuantityKind
+from cookbook.models.recipe import Recipe, ReviewWarning, Servings
 from cookbook.models.source import Source, SourceStatus
 from cookbook.models.step import Duration, Step
 from cookbook.models.tool import Tool
@@ -11,6 +12,9 @@ __all__ = [
     "Ingredient",
     "Quantity",
     "QuantityKind",
+    "Recipe",
+    "ReviewWarning",
+    "Servings",
     "Source",
     "SourceStatus",
     "Step",
