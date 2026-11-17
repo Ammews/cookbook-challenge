@@ -105,9 +105,9 @@ def _servings(recipe: Recipe) -> str:
 
 def _ingredient_label(ingredient: Ingredient) -> str:
     label = ingredient.name_original
-    if ingredient.name.lower() != ingredient.name_original.lower():
+    if ingredient.name.lower() not in ingredient.name_original.lower():
         label += f" ({ingredient.name})"
-    if ingredient.preparation:
+    if ingredient.preparation and ingredient.preparation.lower() not in label.lower():
         label += f", {ingredient.preparation}"
     tags = []
     if ingredient.optional:

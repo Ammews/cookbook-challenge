@@ -29,4 +29,5 @@ def format_amount(quantity: Quantity) -> str:
         QuantityKind.TO_TASTE: "to taste",
         QuantityKind.ABSENT: "amount not given",
     }[quantity.kind]
-    return f"{label} ({quantity.raw})" if quantity.raw else label
+    raw = quantity.raw.strip()
+    return f"{label} ({raw})" if raw and raw.lower() != label else label

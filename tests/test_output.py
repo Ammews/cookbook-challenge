@@ -67,3 +67,10 @@ def test_not_a_recipe_says_so_and_invents_nothing():
     page = render_markdown(PipelineResult(document=DOCUMENT, extraction=extraction))
     assert "not a recipe" in page
     assert "## Ingredients" not in page
+
+
+def test_amount_text_is_not_repeated_when_it_says_the_same_thing():
+    from cookbook.formatting import format_amount
+
+    assert format_amount(Quantity(kind=QuantityKind.TO_TASTE, raw="to taste")) == "to taste"
+    assert format_amount(Quantity(kind=QuantityKind.VAGUE, raw="einige")) == "some (einige)"
