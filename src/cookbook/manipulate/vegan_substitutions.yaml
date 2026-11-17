@@ -1,0 +1,91 @@
+# Vegan substitutions, applied in order: the first matching entry wins.
+# Matching is case-insensitive and by word start, on the ingredient's English
+# and original name ("braten" matches "Bratenstücke", "ei" does not match "weiß").
+# Terms are chosen to avoid false hits: "rinder", not "rind" (lemon rind);
+# no bare "roast" (roasted peppers).
+#
+# A substitution keeps the amount (ratio 1:1). That keeps scaling and the
+# vegan rule independent of order: vegan(scale(r)) == scale(vegan(r)).
+#
+# "check" entries change nothing; they add a review warning, because the
+# product may or may not be vegan depending on the brand.
+
+# Names that are already vegan replacements. Never substituted again, so the
+# rule can be applied twice without changing anything the second time.
+already_vegan: [vegan, seitan, tofu, plant-based, flax, oat milk, nutritional yeast, vegetable oil, vegetable stock, maple, agar, mushroom]
+
+substitutions:
+  - match: [bratenfond, fond, drippings, pan juices, meat juices, beef stock, chicken stock, fleischbrühe, rinderbrühe, hühnerbrühe, caldo de carne, caldo de galinha]
+    replace_with: vegetable stock with the pan juices of the vegan roast
+    reason: There are no meat juices in a vegan version; stock plus the juices of the browned substitute takes their place.
+
+  - match: [bacon grease, grease, lard, schmalz, fett, banha, fat, nierenfett, suet]
+    exclude: [fettuc]
+    replace_with: vegetable oil
+    reason: Animal fat; any neutral oil does the same job for browning.
+
+  - match: [bacon, speck, toucinho, pancetta, ham, schinken, presunto]
+    replace_with: smoked tofu, diced
+    reason: Cured pork; smoked tofu brings the smoky, salty note.
+
+  - match: [chicken, huhn, hühn, hähnchen, frango, galinha, poultry, turkey, pute, duck, ente]
+    replace_with: oyster mushrooms or seitan pieces
+    reason: Poultry; oyster mushrooms or seitan take up the sauce in the same way.
+    step_note: Brown the mushrooms or seitan briefly; they cook much faster than chicken.
+
+  - match: [beef, braten, rinder, rindfleisch, fleisch, meat, pork, schwein, veal, kalb, lamb, lamm, carne, rabbit, kaninchen, hase, steak, mince, hackfleisch, sausage, wurst, bratwurst, linguiça, salsicha, paio]
+    replace_with: seitan roast (or a whole celeriac)
+    reason: The meat is the main ingredient. Seitan holds together in a long braise and takes up the marinade; a whole celeriac is a soy- and gluten-free alternative.
+    step_note: Marinate seitan for 1–2 days at most; a week in an acidic marinade makes it soft. Braise 45–60 minutes instead of hours.
+
+  - match: [fish, fisch, peixe, anchov, sardell, shrimp, prawn, garnele, camarão]
+    replace_with: marinated smoked tofu
+    reason: Fish or seafood.
+
+  - match: [buttermilk, buttermilch, milk, milch, leite]
+    replace_with: oat milk
+    reason: Dairy milk.
+
+  - match: [sour cream, saure sahne, schmand, crème fraîche, creme fraiche, cream, sahne, creme de leite, nata]
+    exclude: [tartar]
+    replace_with: plant-based sour cream or cream
+    reason: Dairy cream.
+
+  - match: [butter, manteiga]
+    exclude: [peanut, cocoa, nut butter, butter bean]
+    replace_with: vegan butter
+    reason: Dairy butter; vegan butter behaves the same for frying and baking.
+
+  - match: [parmesan, cheese, käse, queijo, mozzarella, cheddar, gouda]
+    replace_with: vegan parmesan or nutritional yeast
+    reason: Dairy cheese.
+
+  - match: [yogurt, yoghurt, joghurt, iogurte]
+    replace_with: plant-based yogurt
+    reason: Dairy yogurt.
+
+  - match: [egg, eier, ei, ovo, gemma, eigelb, eiweiß]
+    exclude: [eggplant]
+    replace_with: flax egg (1 tbsp ground flaxseed + 3 tbsp water per egg)
+    reason: Eggs; a flax egg binds doughs and batters.
+
+  - match: [honey, honig, mel]
+    replace_with: maple syrup
+    reason: Honey is an animal product.
+
+  - match: [gelatin, gelatine]
+    replace_with: agar-agar
+    reason: Gelatin is made from animal bones and skin.
+
+checks:
+  - match: [wine, wein, vinho]
+    reason: Some wines are clarified with egg white, gelatin or isinglass. Choose one labelled vegan.
+
+  - match: [sugar, zucker, açúcar]
+    reason: Some cane sugar is filtered through bone char. Beet sugar and sugar labelled vegan are safe.
+
+  - match: [margarine, margarina]
+    reason: Some margarines contain whey or buttermilk. Check the label.
+
+  - match: [chocolate, schokolade, achocolatado, morsel]
+    reason: Milk chocolate is not vegan; dark chocolate often is. Check the label.
