@@ -78,6 +78,18 @@ def test_step_that_only_mentions_the_meat_in_its_text_is_annotated():
     assert "[Vegan:" in step3.text
 
 
+def test_a_name_inside_a_longer_word_is_not_a_mention():
+    step2 = apply_rules(sauerbraten(), [MakeVegan()]).recipe.steps[1]
+    assert "Bratenfond" in step2.text
+    assert "seitan roast" not in step2.text  # "Braten" must not match inside "Bratenfond"
+
+
+def test_substitute_does_not_inherit_the_meat_preparation_note():
+    meat = ingredient("beef", name="beef roast", name_original="Braten", quantity=absent(), preparation="fest")
+    result = apply_rules(recipe(ingredients=(meat,), steps=(step(ingredient_ids=("beef",), tool_ids=()),), tools=()), [MakeVegan()])
+    assert result.recipe.ingredients[0].preparation is None
+
+
 def test_steps_without_animal_products_are_untouched():
     result = apply_rules(sauerbraten(), [MakeVegan()])
     assert result.recipe.steps[3] == sauerbraten().steps[3]

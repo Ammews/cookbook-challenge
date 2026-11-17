@@ -127,6 +127,7 @@ def _replace(ingredient: Ingredient, substitution: Substitution, taken_ids: set[
             "id": _free_id(f"vegan_{ingredient.id}", taken_ids),
             "name": substitution.replace_with,
             "name_original": substitution.replace_with,
+            "preparation": None,  # "fest", "auslassen" described the meat, not the substitute
             "source": Source(
                 status=SourceStatus.RULE,
                 page=ingredient.source.page,
@@ -164,10 +165,13 @@ def _carry_into_step(
 
 
 def _mentions(text: str, ingredient: Ingredient, substitution: Substitution) -> bool:
+    """Whole-word mention of the ingredient or one of its table terms.
+
+    Whole words only: "den Braten" mentions the roast, "Bratenfond" does not.
+    """
     lowered = text.lower().replace("ſ", "s")
-    if ingredient.name_original.lower() in lowered:
-        return True
-    return _matches_any(lowered, substitution.match) and not _matches_any(lowered, substitution.exclude)
+    words = [ingredient.name_original.lower(), *(t.lower() for t in substitution.match)]
+    return any(re.search(rf"(?<![^\W\d_]){re.escape(w)}(?![^\W\d_])", lowered) for w in words)
 
 
 def _names(ingredient: Ingredient) -> str:
