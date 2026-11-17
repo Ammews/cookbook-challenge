@@ -146,3 +146,24 @@ def test_scaled_substitute_keeps_the_amount_logic():
     result = apply_rules(sauerbraten(), [MakeVegan(), ScaleServings(6)])
     flax = next(i for i in result.recipe.ingredients if i.id == "vegan_egg")
     assert flax.quantity.value == 3
+
+
+def test_counted_meat_becomes_same_weight_instead_of_a_meaningless_count():
+    chicken = ingredient("chicken", name="whole chicken", name_original="1 whole chicken", quantity=exact(1))
+    dish = recipe(ingredients=(chicken,), steps=(step(ingredient_ids=("chicken",), tool_ids=()),), tools=())
+
+    substitute = apply_rules(dish, [MakeVegan()]).recipe.ingredients[0]
+
+    assert substitute.quantity.kind is QuantityKind.VAGUE
+    assert substitute.quantity.raw == "same weight as the whole chicken it replaces"
+
+
+def test_same_weight_substitution_still_commutes_with_scaling():
+    chicken = ingredient("chicken", name="whole chicken", name_original="1 whole chicken", quantity=exact(1))
+    dish = recipe(
+        servings=Servings(value=4, source=read("Servings: 4")),
+        ingredients=(chicken,), steps=(step(ingredient_ids=("chicken",), tool_ids=()),), tools=(),
+    )
+    a = apply_rules(dish, [MakeVegan(), ScaleServings(6)]).recipe
+    b = apply_rules(dish, [ScaleServings(6), MakeVegan()]).recipe
+    assert a == b

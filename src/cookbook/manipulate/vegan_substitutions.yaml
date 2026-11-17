@@ -4,7 +4,11 @@
 # Terms are chosen to avoid false hits: "rinder", not "rind" (lemon rind);
 # no bare "roast" (roasted peppers).
 #
-# A substitution keeps the amount (ratio 1:1). That keeps scaling and the
+# A substitution keeps the amount (ratio 1:1), except entries marked by_weight:
+# a count of the original ("1 whole chicken") means nothing for the substitute
+# ("1 mushroom"), so those say "same weight as the ... it replaces" instead of
+# inventing grams.
+# That keeps scaling and the
 # vegan rule independent of order: vegan(scale(r)) == scale(vegan(r)).
 #
 # "check" entries change nothing; they add a review warning, because the
@@ -26,20 +30,24 @@ substitutions:
 
   - match: [bacon, speck, toucinho, pancetta, ham, schinken, presunto]
     replace_with: smoked tofu, diced
+    by_weight: true
     reason: Cured pork; smoked tofu brings the smoky, salty note.
 
   - match: [chicken, huhn, hühn, hähnchen, frango, galinha, poultry, turkey, pute, duck, ente]
     replace_with: oyster mushrooms or seitan pieces
+    by_weight: true
     reason: Poultry; oyster mushrooms or seitan take up the sauce in the same way.
     step_note: Brown the mushrooms or seitan briefly; they cook much faster than chicken.
 
   - match: [beef, braten, rinder, rindfleisch, fleisch, meat, pork, schwein, veal, kalb, lamb, lamm, carne, rabbit, kaninchen, hase, steak, mince, hackfleisch, sausage, wurst, bratwurst, linguiça, salsicha, paio]
     replace_with: seitan roast (or a whole celeriac)
+    by_weight: true
     reason: The meat is the main ingredient. Seitan holds together in a long braise and takes up the marinade; a whole celeriac is a soy- and gluten-free alternative.
     step_note: Marinate seitan for 1–2 days at most; a week in an acidic marinade makes it soft. Braise 45–60 minutes instead of hours.
 
   - match: [fish, fisch, peixe, anchov, sardell, shrimp, prawn, garnele, camarão]
     replace_with: marinated smoked tofu
+    by_weight: true
     reason: Fish or seafood.
 
   - match: [buttermilk, buttermilch, milk, milch, leite]

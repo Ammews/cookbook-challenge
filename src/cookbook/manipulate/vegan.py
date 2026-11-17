@@ -13,7 +13,7 @@ from pathlib import Path
 import yaml
 from pydantic import Field
 
-from cookbook.models import Change, Ingredient, Recipe, ReviewWarning, Source, SourceStatus, Step
+from cookbook.models import Change, Ingredient, Quantity, QuantityKind, Recipe, ReviewWarning, Source, SourceStatus, Step
 from cookbook.models.base import DomainModel
 
 _TABLE = Path(__file__).with_name("vegan_substitutions.yaml")
@@ -25,6 +25,7 @@ class Substitution(DomainModel):
     replace_with: str
     reason: str
     step_note: str | None = None
+    by_weight: bool = False
 
 
 class Check(DomainModel):
@@ -122,8 +123,14 @@ class MakeVegan:
 
 
 def _replace(ingredient: Ingredient, substitution: Substitution, taken_ids: set[str]) -> Ingredient:
+    quantity = ingredient.quantity
+    if substitution.by_weight and quantity.kind is QuantityKind.EXACT:
+        # No number in the raw text, so the result is the same whether the
+        # recipe was scaled before or after: the rules stay order-independent.
+        quantity = Quantity(kind=QuantityKind.VAGUE, raw=f"same weight as the {ingredient.name} it replaces")
     return ingredient.model_copy(
         update={
+            "quantity": quantity,
             "id": _free_id(f"vegan_{ingredient.id}", taken_ids),
             "name": substitution.replace_with,
             "name_original": substitution.replace_with,
