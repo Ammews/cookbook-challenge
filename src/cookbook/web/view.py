@@ -61,6 +61,7 @@ def build_view(result: PipelineResult) -> dict:
                 ),
                 "optional": i.optional,
                 "intermediate": i.is_intermediate,
+                "animal": i.animal.value if i.animal else None,
                 "source": _source(i.source),
                 "scaled": i.id in scaled,
                 "converted": i.id in converted,

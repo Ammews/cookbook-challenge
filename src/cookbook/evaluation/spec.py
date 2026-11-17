@@ -11,7 +11,7 @@ from typing import Annotated
 
 from pydantic import Field, StringConstraints, model_validator
 
-from cookbook.models import QuantityKind, SourceStatus
+from cookbook.models import AnimalContent, QuantityKind, SourceStatus
 from cookbook.models.base import DomainModel, NonEmptyStr
 
 Matcher = Annotated[str, StringConstraints(strip_whitespace=True, min_length=1, to_lower=True)]
@@ -53,6 +53,9 @@ class IngredientCheck(DomainModel):
     quantity: QuantityCheck | None = None
     optional: bool | None = None
     intermediate: bool | None = None
+    animal: list[AnimalContent] = Field(
+        default_factory=list, description="Accepted animal-content classes. Empty means not checked."
+    )
     note: str | None = Field(default=None, description="Why this check exists, for the reviewer.")
 
     @model_validator(mode="after")

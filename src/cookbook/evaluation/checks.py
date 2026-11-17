@@ -128,6 +128,15 @@ def _check_ingredient(check: IngredientCheck, ingredients: Iterable[Ingredient])
     if check.optional is not None:
         ok = any(i.optional == check.optional for i in hits)
         results.append(_check(f"{label}: optional", ok, f"expected optional={check.optional}"))
+    if check.animal:
+        ok = any(i.animal in check.animal for i in hits)
+        results.append(
+            _check(
+                f"{label}: animal content",
+                ok,
+                f"expected one of {[a.value for a in check.animal]}, got {[i.animal.value if i.animal else None for i in hits]}",
+            )
+        )
     if check.intermediate is not None:
         ok = any(i.is_intermediate == check.intermediate for i in hits)
         results.append(_check(f"{label}: intermediate", ok, f"expected intermediate={check.intermediate}"))

@@ -81,3 +81,15 @@ def test_converted_amounts_are_marked():
 
     page = render_markdown(result([ScaleServings(6), ConvertToMetric()]))
     assert "**changed** (scaled)" in page
+
+
+def test_animal_content_is_shown():
+    from cookbook.models import AnimalContent
+
+    dish = sample().model_copy(
+        update={"ingredients": (ingredient("pesto", name="pesto", name_original="pesto", animal=AnimalContent.DAIRY),),
+                "steps": ()}
+    )
+    extraction = Extraction(is_recipe=True, recipes_in_document=1, recipe=dish, usage=())
+    page = render_markdown(PipelineResult(document=DOCUMENT, extraction=extraction))
+    assert "*[contains dairy]*" in page

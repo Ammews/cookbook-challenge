@@ -1,0 +1,39 @@
+id: en-vegan-traps
+title: Butternut pesto noodles (vegan classification traps)
+language: en
+input: input.txt
+source: "local: written for this project"
+license: CC0, written for this project
+reviewed: false
+traps:
+  - Plant ingredients whose names look animal ("butternut", "coconut milk")
+  - Products that contain animal ingredients without saying so (pesto, Worcestershire sauce, egg noodles)
+  - Plain animal products that have a known substitute (butter, Parmesan)
+  - Built to measure the animal-content classification that the vegan rule relies on
+
+expect:
+  servings:
+    status_any: [read]
+    value: 2
+  ingredients:
+    - match: [noodle]
+      animal: [egg]
+      quantity: {accept: [{value: 200, unit: g}]}
+    - match: [butternut, squash]
+      animal: [none]
+    - match: [olive oil]
+      animal: [none]
+    - match: [coconut]
+      animal: [none]
+    - match: [pesto]
+      animal: [dairy, uncertain]
+      note: Classic basil pesto contains Parmesan; "uncertain" is acceptable because recipes vary.
+    - match: [worcestershire]
+      animal: [fish, uncertain, other_animal]
+      note: Contains anchovies.
+    - match: [butter]
+      animal: [dairy]
+    - match: [parmesan]
+      animal: [dairy]
+  ingredient_count: {min: 9, max: 10}
+  step_count: {min: 5, max: 7}

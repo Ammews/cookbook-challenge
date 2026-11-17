@@ -1,6 +1,6 @@
 # Evaluation set
 
-Eleven inputs chosen to break the pipeline in different ways, each with a list
+Twelve inputs chosen to break the pipeline in different ways, each with a list
 of checks a correct extraction must pass. There is no "correct JSON" to diff
 against: each case holds checks a human can review one at a time, such as
 "onion: exactly one ingredient, quantity 4" or "lemon must not appear, it is
@@ -21,6 +21,7 @@ only in the notes".
 | `pt-bolo-de-cenoura` | text | Seven recipes on one page; Brazilian household units. |
 | `de-linseneintopf` | text | Vegetarian, not vegan; decimal comma; 21 ingredients. |
 | `not-a-recipe` | text | A shopping list. The pipeline must refuse, not invent steps. |
+| `en-vegan-traps` | text | Pesto, Worcestershire sauce and egg noodles (animal, unnamed); butternut and coconut milk (plant, animal-sounding names). Checks the animal-content classification. |
 
 ## Layout
 

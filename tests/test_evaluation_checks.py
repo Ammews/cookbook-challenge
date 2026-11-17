@@ -174,3 +174,14 @@ def test_unit_normalisation(written, normalised):
 def test_long_s_in_old_print_does_not_break_matching():
     old = ingredient("salt", name_original="Salʒ ſalz")
     assert failed(evaluate(expect(ingredients=[{"match": ["salz"]}]), outcome(ingredients=(old,), steps=(step(),)))) == []
+
+
+def test_animal_content_is_checked():
+    from cookbook.models import AnimalContent
+
+    pesto = ingredient("pesto", name="pesto", name_original="pesto", animal=AnimalContent.NONE)
+    results = evaluate(
+        expect(ingredients=[{"match": ["pesto"], "animal": ["dairy", "uncertain"]}]),
+        outcome(ingredients=(pesto,), steps=(step(),)),
+    )
+    assert failed(results) == ["pesto: animal content"]

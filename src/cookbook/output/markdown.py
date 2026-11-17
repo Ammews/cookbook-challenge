@@ -5,7 +5,7 @@ what was read from the page, what was guessed, and what a rule changed.
 """
 
 from cookbook.formatting import format_amount
-from cookbook.models import Ingredient, Recipe, Source, SourceStatus
+from cookbook.models import AnimalContent, Ingredient, Recipe, Source, SourceStatus
 from cookbook.pipeline import PipelineResult
 from cookbook.pricing import total_cost_usd
 
@@ -115,6 +115,10 @@ def _ingredient_label(ingredient: Ingredient) -> str:
         tags.append("optional")
     if ingredient.is_intermediate:
         tags.append("made in the recipe")
+    if ingredient.animal is not None and ingredient.animal.is_animal:
+        tags.append(f"contains {ingredient.animal.value.replace('_', ' ')}")
+    elif ingredient.animal is AnimalContent.UNCERTAIN:
+        tags.append("may contain animal products")
     return label + (f" *[{', '.join(tags)}]*" if tags else "")
 
 
