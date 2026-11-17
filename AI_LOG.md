@@ -122,6 +122,53 @@ so the pipeline can be validated on more than the one recipe it was built on.
   "Sauerbraten must be absent" check). It removed those before committing, but
   this is exactly why I need to review the checks.
 
+## Session 5: extraction, rules, output, evaluation, README (submission day)
+
+**Asked:** finish everything today. I let the agent take small decisions and
+report them, and asked for commits along the way.
+
+**What the agent built**
+- Extraction with Claude Haiku 5.5 and a code check of every quote and number,
+  one correction round, then demotion to "guessed" with a warning.
+- Scaling and vegan rules as pure functions, with a substitution table in a
+  data file; tests for commutativity and idempotence.
+- Markdown and JSON output with a source column per ingredient, a change table
+  and a "check before cooking" list; `run` and `eval` commands.
+
+**What went wrong, and how it was caught**
+- **API rejected the first extraction schema** ("compiled grammar is too
+  large"). Cause: every nullable field doubles the grammar for constrained
+  decoding. The agent flattened the wire schema ("" and 0 for "not given")
+  and kept the domain model strict.
+- **Wrong vegan note in the sauce step.** Reading the generated example, the
+  sauce step said "use seitan instead of Braten": "Braten" matched inside
+  "Bratenfond". The agent's first fix (whole word, original name only) broke
+  two tests, because a step saying "den Braten" was no longer recognised when
+  the ingredient was called "Bratenstücke". Final fix: whole-word match on the
+  name and on the table terms.
+- **"2 oyster mushrooms" for a whole chicken.** Scaling 1 chicken to 6
+  servings gives 2, and the vegan swap kept the count. Now protein swaps say
+  "same weight as the chicken it replaces" instead of inventing grams, and a
+  test checks that this still commutes with scaling.
+- **Wine and sugar shown as "scaled"** in the output when they were only
+  flagged by the vegan check. Fixed and tested.
+- **Cost shown as $0 in the examples** because the calls came from the cache.
+  The header now prices every call as on its first run.
+- **First evaluation run: 287/294; after the fixes 294/294.** Five of the seven failures were mistakes
+  in the agent's own checks (Portuguese tool names when the model answered in
+  English; "creme de cenoura" counted as a duplicate carrot). Two were real:
+  the model never listed the oven as a tool. One line in the prompt fixed it.
+  This is why the checks stay `reviewed: false` until I go through them.
+
+**Decision I made**
+- With prompt v2 the model declined to guess the Sauerbraten servings. I did
+  not want to push it into inventing a number, so scaling stops and asks for
+  `--assume-servings` when servings are missing, and the output says "assumed
+  by the user". With prompt v3 (the oven fix) the model inferred 4 servings
+  from the litre of marinade, labelled as guessed. Same document, different
+  prompt version, different answer: the cache keys include the prompt version
+  for exactly this reason.
+
 **Things I should double-check myself**
 - The transcription prompt tells the model to re-join words hyphenated across
   lines. That is convenient for later quote matching, but it means the
