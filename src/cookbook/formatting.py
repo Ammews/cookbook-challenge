@@ -18,11 +18,20 @@ def format_number(value: float) -> str:
     return f"{value:.2f}".rstrip("0").rstrip(".")
 
 
+_METRIC = {"ml", "l", "g", "kg"}
+
+
+def _decimal(value: float) -> str:
+    """Metric amounts read as decimals: 2.5 ml, not 2 ½ ml."""
+    return f"{value:.2f}".rstrip("0").rstrip(".")
+
+
 def format_amount(quantity: Quantity) -> str:
     if quantity.kind is QuantityKind.EXACT and quantity.value is not None:
-        number = format_number(quantity.value)
+        show = _decimal if quantity.unit in _METRIC else format_number
+        number = show(quantity.value)
         if quantity.max_value is not None:
-            number = f"{number}–{format_number(quantity.max_value)}"
+            number = f"{number}–{show(quantity.max_value)}"
         return f"{number} {quantity.unit}".strip() if quantity.unit else number
     label = {
         QuantityKind.VAGUE: "some",
