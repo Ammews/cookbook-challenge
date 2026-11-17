@@ -88,6 +88,40 @@ study material so I could understand the domain before building.
     certainty: one clean run says little about how stable the reading is.
     Running the same page several times and comparing is still to do.
 
+## Session 4: evaluation set
+
+**My idea:** collect recipes of many kinds online, with the expected results,
+so the pipeline can be validated on more than the one recipe it was built on.
+
+**What the agent pushed back on, and I agreed**
+- **Licences.** Copying recipes from cooking sites into a public repo has the
+  same problem as committing `Recipe.pdf`. It used only Wikibooks (CC BY-SA),
+  Wikimedia Commons (public domain, CC0, CC BY-SA) and a text written for the
+  project, and recorded the exact revision of every source.
+- **Who writes the answer key.** If the agent writes the expected results and
+  another model is graded against them, the evaluation is circular. The
+  expectations are short checks I can review one by one, and every case starts
+  as `reviewed: false` until I have done that.
+
+**What it found while searching**
+- A Fraktur-printed page from Henriette Davidis (1879) whose Wikisource
+  volunteers already transcribed it. That gives a free human transcription to
+  measure reading errors against.
+- A Brazilian carrot-cake page with seven recipes on it, and a Soviet notebook
+  with three, both useful for "several recipes in one document".
+- The set already exposed a gap in my data model: ranges like "2–3 cups" have
+  no representation, because `Quantity` holds one number.
+
+**What went wrong**
+- Wikimedia refused downloads with HTTP 429 until the agent sent a
+  descriptive user agent, as their policy asks.
+- Its first quoting of a YAML note broke the parser; the dataset test caught
+  it.
+- In two places its first draft of a check would have failed a correct
+  answer (an ingredient named "fat from a Sauerbraten" would have tripped the
+  "Sauerbraten must be absent" check). It removed those before committing, but
+  this is exactly why I need to review the checks.
+
 **Things I should double-check myself**
 - The transcription prompt tells the model to re-join words hyphenated across
   lines. That is convenient for later quote matching, but it means the
