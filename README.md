@@ -264,6 +264,13 @@ Everything after extraction is deterministic code. Tests never call the model:
 they use fakes and fixed answers. Changing the prompt bumps its version, which
 invalidates the cache on purpose.
 
+One known gap: the file name is part of the text sent to the extraction model,
+so renaming a file (`Recipe.pdf` to `Recipe (4).pdf`) is a cache miss and a new
+model call. The page images are still cached, but the extraction can come back
+slightly different, for example servings "not stated" instead of "guessed: 4",
+or a step split in two. Both answers pass the evaluation checks; it is the
+non-determinism above, made visible.
+
 **Validation without ground truth.** [`evals/`](evals/README.md): 11 inputs
 (handwriting, Fraktur print, a typed card, Russian, Portuguese, multi-recipe
 pages, a non-recipe), each with checks a person can review one by one
@@ -326,6 +333,9 @@ models, calls, tokens and cost. Warnings collect everything uncertain.
 - **Unit normalisation and conversion** (cups ↔ ml, Pfund ↔ g, decimal
   comma) as a separate deterministic rule; amounts are currently kept as
   written.
+- **Key the extraction cache on content only**: leave the file name out of the
+  prompt, so the same document always gives the same answer whatever it is
+  called.
 - **Lower model effort** for extraction and compare quality, cost and latency
   on the evaluation set; try a stronger model only where the set shows a gap.
 - **Several recipes per document**: today the first is extracted and the rest
