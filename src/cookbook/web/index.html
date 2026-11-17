@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cookbook</title>
+<style>
+  :root {
+    --bg: #f7f6f2; --surface: #ffffff; --fg: #1f2420; --muted: #5d665f; --line: #dfe2dc;
+    --accent: #2f6f4e; --accent-fg: #ffffff;
+    --read: #2f6f4e; --read-bg: #e3f0e8;
+    --guess: #8a5a00; --guess-bg: #fbefd6;
+    --none: #5d665f; --none-bg: #eceeea;
+    --rule: #3a55a0; --rule-bg: #e4e9f7;
+    --error: #a3322a; --error-bg: #f9e3e1;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #141815; --surface: #1c211d; --fg: #e5e9e4; --muted: #9aa49c; --line: #2e3530;
+      --accent: #6fc196; --accent-fg: #0f1a13;
+      --read: #8fd3ad; --read-bg: #1f3a2b; --guess: #f0c060; --guess-bg: #3a2e14;
+      --none: #b3bbb4; --none-bg: #2a302b; --rule: #a9baf0; --rule-bg: #252d47;
+      --error: #f2a39b; --error-bg: #3d1f1c;
+    }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg); line-height: 1.5; }
+  main { max-width: 980px; margin: 0 auto; padding: 24px 16px 64px; }
+  h1 { font-size: 28px; margin: 0 0 4px; }
+  h2 { font-size: 19px; margin: 28px 0 10px; }
+  .sub { color: var(--muted); margin: 0 0 20px; }
+  .card { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 16px; }
+  form { display: grid; gap: 14px; }
+  .row { display: flex; flex-wrap: wrap; gap: 16px; align-items: end; }
+  label { display: grid; gap: 4px; font-size: 14px; color: var(--muted); }
+  input[type=number] { width: 120px; padding: 7px 9px; border: 1px solid var(--line); border-radius: 6px;
+    background: var(--bg); color: var(--fg); font: inherit; }
+  .check { display: flex; gap: 8px; align-items: center; color: var(--fg); font-size: 15px; }
+  .drop { border: 2px dashed var(--line); border-radius: 10px; padding: 22px; text-align: center; cursor: pointer; }
+  .drop.over { border-color: var(--accent); }
+  .drop strong { color: var(--fg); }
+  button { background: var(--accent); color: var(--accent-fg); border: 0; border-radius: 6px; padding: 10px 18px;
+    font: inherit; font-weight: 600; cursor: pointer; }
+  button:disabled { opacity: .55; cursor: progress; }
+  button:focus-visible, .drop:focus-visible, input:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .status { color: var(--muted); font-size: 14px; }
+  .error { background: var(--error-bg); color: var(--error); border-radius: 8px; padding: 10px 14px; }
+  .meta { color: var(--muted); font-size: 14px; }
+  .legend { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0 0; font-size: 13px; color: var(--muted); align-items: center; }
+  .tablewrap { overflow-x: auto; }
+  table { border-collapse: collapse; width: 100%; font-size: 14.5px; }
+  th, td { text-align: left; vertical-align: top; padding: 8px 10px; border-bottom: 1px solid var(--line); }
+  th { color: var(--muted); font-weight: 500; font-size: 13px; }
+  td.amount { white-space: nowrap; font-variant-numeric: tabular-nums; }
+  .badge { display: inline-block; font-size: 12px; font-weight: 600; border-radius: 4px; padding: 1px 7px; margin-right: 6px; white-space: nowrap; }
+  .b-read { color: var(--read); background: var(--read-bg); }
+  .b-guessed, .b-check { color: var(--guess); background: var(--guess-bg); }
+  .b-not { color: var(--none); background: var(--none-bg); }
+  .b-changed, .b-scaled { color: var(--rule); background: var(--rule-bg); }
+  .tag { font-size: 12px; color: var(--muted); margin-left: 6px; }
+  .quote { color: var(--muted); }
+  ol.steps { padding-left: 22px; }
+  ol.steps li { margin-bottom: 10px; white-space: pre-line; }
+  .details { color: var(--muted); font-size: 13.5px; white-space: normal; }
+  ul.warn li { margin-bottom: 4px; }
+  .hidden { display: none; }
+  details summary { cursor: pointer; color: var(--muted); }
+  pre { white-space: pre-wrap; background: var(--bg); border: 1px solid var(--line); border-radius: 8px; padding: 12px; font-size: 13px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Cookbook</h1>
+  <p class="sub">Drop a recipe: scanned PDF, photo, digital PDF or text, in any language. Every value shows whether it was read from the page, guessed, or changed.</p>
+
+  <div class="card">
+    <form id="form">
+      <div class="drop" id="drop" tabindex="0" role="button" aria-label="Choose a recipe file">
+        <strong id="fileLabel">Choose or drop a file</strong>
+        <div class="status">PDF, PNG, JPEG or .txt</div>
+        <input id="file" name="file" type="file" accept=".pdf,.png,.jpg,.jpeg,.webp,.gif,.txt,.md" hidden>
+      </div>
+      <div class="row">
+        <label class="check"><input id="vegan" name="vegan" type="checkbox"> Make it vegan</label>
+        <label>Servings
+          <input id="servings" name="servings" type="number" min="1" max="100" placeholder="as written">
+        </label>
+        <label>If not stated, original serves
+          <input id="assume" name="assume_servings" type="number" min="1" max="100" placeholder="ask me">
+        </label>
+        <button id="go" type="submit">Make recipe</button>
+      </div>
+      <div class="status" id="status">The first run of a new document takes about 10–60 seconds. Repeats come from the cache.</div>
+    </form>
+  </div>
+
+  <div id="error" class="error hidden" role="alert"></div>
+  <section id="result" class="hidden" aria-live="polite"></section>
+</main>
+
+<script>
+const $ = (id) => document.getElementById(id);
+const el = (tag, attrs = {}, ...children) => {
+  const node = document.createElement(tag);
+  for (const [key, value] of Object.entries(attrs)) {
+    if (key === "class") node.className = value; else node.setAttribute(key, value);
+  }
+  for (const child of children.flat()) {
+    if (child === null || child === undefined || child === false) continue;
+    node.append(child instanceof Node ? child : document.createTextNode(String(child)));
+  }
+  return node;
+};
+
+const fileInput = $("file"), drop = $("drop");
+drop.addEventListener("click", () => fileInput.click());
+drop.addEventListener("keydown", (e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); fileInput.click(); } });
+drop.addEventListener("dragover", (e) => { e.preventDefault(); drop.classList.add("over"); });
+drop.addEventListener("dragleave", () => drop.classList.remove("over"));
+drop.addEventListener("drop", (e) => {
+  e.preventDefault(); drop.classList.remove("over");
+  if (e.dataTransfer.files.length) { fileInput.files = e.dataTransfer.files; showFile(); }
+});
+fileInput.addEventListener("change", showFile);
+function showFile() { $("fileLabel").textContent = fileInput.files[0] ? fileInput.files[0].name : "Choose or drop a file"; }
+
+$("form").addEventListener("submit", async (event) => {
+  event.preventDefault();
+  if (!fileInput.files[0]) { showError("Choose a file first."); return; }
+  const body = new FormData();
+  body.append("file", fileInput.files[0]);
+  body.append("vegan", $("vegan").checked);
+  if ($("servings").value) body.append("servings", $("servings").value);
+  if ($("assume").value) body.append("assume_servings", $("assume").value);
+
+  $("go").disabled = true; $("error").classList.add("hidden");
+  const started = Date.now();
+  const timer = setInterval(() => { $("status").textContent = `Working… ${Math.round((Date.now() - started) / 1000)} s`; }, 500);
+  try {
+    const response = await fetch("/api/run", { method: "POST", body });
+    const data = await response.json();
+    if (!response.ok) throw new Error(data.detail || `Request failed (${response.status})`);
+    render(data);
+    $("status").textContent = `Done in ${Math.round((Date.now() - started) / 1000)} s.`;
+  } catch (error) {
+    showError(error.message);
+    $("status").textContent = "";
+  } finally {
+    clearInterval(timer); $("go").disabled = false;
+  }
+});
+
+function showError(message) { $("error").textContent = message; $("error").classList.remove("hidden"); }
+
+function sourceBadge(source) {
+  const cls = { "read": "b-read", "guessed": "b-guessed", "not given": "b-not", "changed": "b-changed" }[source.kind];
+  const page = source.page ? `p. ${source.page}` : "";
+  const text = source.kind === "read" ? `“${source.text}”` : (source.text || "");
+  return [el("span", { class: `badge ${cls}` }, source.kind), page ? `${page} ` : "", el("span", { class: "quote" }, text)];
+}
+
+function render(view) {
+  const out = $("result");
+  out.replaceChildren();
+  out.classList.remove("hidden");
+  const u = view.usage;
+  const cost = u.cost_usd === null ? "unknown cost" : `$${u.cost_usd.toFixed(4)}`;
+  const meta = `${view.document.name} · ${view.document.pages} page(s) read by ${view.document.read_by.join(", ")} · `
+    + `${u.models.join(", ") || "no model"} · ${u.calls} call(s) (${u.cached_calls} cached) · `
+    + `${u.input_tokens} tokens in / ${u.output_tokens} out · ${cost}`;
+
+  if (!view.is_recipe) {
+    out.append(el("h2", {}, "Not a recipe"), el("p", { class: "meta" }, meta),
+      el("p", {}, "This document is not a recipe, so nothing was extracted and nothing was invented."));
+    return;
+  }
+  const r = view.recipe;
+  out.append(el("h2", {}, r.title), el("p", { class: "meta" }, meta));
+  if (view.recipes_in_document > 1) {
+    out.append(el("p", { class: "error" }, `This document holds ${view.recipes_in_document} recipes. The first one is shown; see the warnings.`));
+  }
+  const servings = r.servings.value ? [`Serves ${r.servings.value} `, ...sourceBadge(r.servings.source)] : ["Servings not stated."];
+  out.append(el("p", {}, ...servings));
+  out.append(el("div", { class: "legend" },
+    el("span", { class: "badge b-read" }, "read"), "written in the document",
+    el("span", { class: "badge b-guessed" }, "guessed"), "deduced, with the reason",
+    el("span", { class: "badge b-not" }, "not given"),
+    el("span", { class: "badge b-changed" }, "changed"), "set by a rule"));
+
+  out.append(el("h2", {}, "Ingredients"));
+  const rows = r.ingredients.map((i) => el("tr", {},
+    el("td", { class: "amount" }, i.amount),
+    el("td", {}, i.name, i.english ? el("span", { class: "tag" }, `(${i.english})`) : null,
+      i.preparation ? `, ${i.preparation}` : "",
+      i.optional ? el("span", { class: "tag" }, "optional") : null,
+      i.intermediate ? el("span", { class: "tag" }, "made in the recipe") : null),
+    el("td", {},
+      i.scaled ? el("span", { class: "badge b-scaled" }, "scaled") : null,
+      i.vegan_check ? el("span", { class: "badge b-check" }, "vegan check") : null,
+      ...sourceBadge(i.source))));
+  out.append(el("div", { class: "tablewrap" },
+    el("table", {}, el("thead", {}, el("tr", {}, el("th", {}, "Amount"), el("th", {}, "Ingredient"), el("th", {}, "Source"))),
+      el("tbody", {}, rows))));
+
+  if (r.tools.length) {
+    out.append(el("h2", {}, "Tools"), el("ul", {}, r.tools.map((t) =>
+      el("li", {}, t.name, el("span", { class: "tag" }, t.stated ? "named in the recipe" : `implied: ${t.note}`)))));
+  }
+
+  out.append(el("h2", {}, "Method"), el("ol", { class: "steps" }, r.steps.map((s) => {
+    const details = [s.condition ? `only if: ${s.condition}` : null, s.duration ? `time: ${s.duration}` : null,
+      s.uses.length ? `uses: ${s.uses.join(", ")}` : null].filter(Boolean).join(" · ");
+    return el("li", {}, s.text, details ? el("div", { class: "details" }, details) : null);
+  })));
+
+  if (r.changes.length) {
+    out.append(el("h2", {}, "What changed against the original"), el("div", { class: "tablewrap" },
+      el("table", {}, el("thead", {}, el("tr", {}, ["Rule", "What", "Before", "After", "Why"].map((h) => el("th", {}, h)))),
+        el("tbody", {}, r.changes.map((c) => el("tr", {},
+          el("td", {}, c.rule), el("td", {}, c.target), el("td", {}, c.before), el("td", {}, c.after), el("td", {}, c.reason)))))));
+  }
+
+  if (r.warnings.length || view.check.problems_found.length) {
+    const items = [...r.warnings];
+    if (view.check.problems_found.length) {
+      items.push(`The code check found ${view.check.problems_found.length} problem(s) in the model's first answer; `
+        + `${view.check.problems_left.length} left after one correction (shown as guessed).`);
+    }
+    out.append(el("h2", {}, "Check before cooking"), el("ul", { class: "warn" }, items.map((w) => el("li", {}, w))));
+  }
+
+  out.append(el("details", {}, el("summary", {}, "Markdown version"), el("pre", {}, view.markdown)));
+}
+</script>
+</body>
+</html>

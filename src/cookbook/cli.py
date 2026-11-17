@@ -3,6 +3,7 @@
     cookbook run <file> [--servings N] [--vegan] [--out DIR]
     cookbook ingest <file>
     cookbook eval [--case ID]
+    cookbook web [--port 8000]
 """
 
 import argparse
@@ -61,6 +62,10 @@ def _parser() -> argparse.ArgumentParser:
     ingest.add_argument("file", type=Path)
     ingest.add_argument("--json", type=Path, metavar="PATH", help="also save the document as JSON")
     ingest.set_defaults(handler=_ingest)
+
+    web = commands.add_parser("web", help="start the local web page (needs: uv sync --extra web)")
+    web.add_argument("--port", type=int, default=8000)
+    web.set_defaults(handler=_web)
 
     evaluate = commands.add_parser("eval", help="run the evaluation set and write a report")
     evaluate.add_argument("--case", help="run only this case id")
@@ -121,6 +126,18 @@ def _eval(args: argparse.Namespace) -> int:
     args.report.write_text(report, encoding="utf-8")
     print(report)
     print(f"Saved to {args.report}")
+    return 0
+
+
+def _web(args: argparse.Namespace) -> int:
+    try:
+        import uvicorn
+
+        from cookbook.web.app import create_app
+    except ImportError:
+        return _fail("the web page needs extra packages: run `uv sync --extra web` first")
+    print(f"Open http://127.0.0.1:{args.port}")
+    uvicorn.run(create_app(), host="127.0.0.1", port=args.port, log_level="warning")
     return 0
 
 
