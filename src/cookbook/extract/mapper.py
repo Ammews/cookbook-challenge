@@ -57,13 +57,15 @@ def find_problems(wire: WireExtraction, text: str) -> list[str]:
 
 def to_recipe(wire: WireExtraction, text: str) -> Recipe:
     warnings = [ReviewWarning(message=w) for w in wire.warnings if w.strip()]
-    ingredient_ids = _unique_slugs([i.id or i.name for i in wire.ingredients])
+    kept, aliases = merge_duplicates(wire.ingredients, warnings)
+    ingredient_ids = _unique_slugs([i.id or i.name for i in kept])
     tool_ids = _unique_slugs([t.id or t.name for t in wire.tools])
-    ingredient_map = {w.id: new for w, new in zip(wire.ingredients, ingredient_ids)}
+    ingredient_map = {w.id: new for w, new in zip(kept, ingredient_ids)}
+    ingredient_map.update({dup: ingredient_map[target] for dup, target in aliases.items() if target in ingredient_map})
     tool_map = {w.id: new for w, new in zip(wire.tools, tool_ids)}
 
     ingredients = tuple(
-        _ingredient(item, new_id, text, warnings) for item, new_id in zip(wire.ingredients, ingredient_ids)
+        _ingredient(item, new_id, text, warnings) for item, new_id in zip(kept, ingredient_ids)
     )
     tools = tuple(
         Tool(
@@ -94,6 +96,64 @@ def to_recipe(wire: WireExtraction, text: str) -> Recipe:
         steps=steps,
         warnings=tuple(warnings),
     )
+
+
+# --- duplicates ------------------------------------------------------------
+
+_KIND_RANK = {"exact": 0, "vague": 1, "to_taste": 2, "absent": 3}
+
+
+def merge_duplicates(
+    items: list[WireIngredient], warnings: list[ReviewWarning]
+) -> tuple[list[WireIngredient], dict[str, str]]:
+    """Merge ingredients that are the same thing listed twice.
+
+    Two entries are the same ingredient when their original or English names
+    are equal after normalising case, spacing and long s ("Salz" and "salz",
+    "salt" and "Salt"). The entry with the most precise amount is kept (a
+    number beats "to taste"); it is optional only if both were. Steps that
+    used the dropped entry are pointed at the kept one, and a warning says
+    what was merged, so nothing disappears silently.
+
+    Returns the kept entries and a map from dropped id to kept id.
+    """
+    kept: list[WireIngredient] = []
+    aliases: dict[str, str] = {}
+    for item in items:
+        match = next((k for k in kept if _same_ingredient(k, item)), None)
+        if match is None:
+            kept.append(item)
+            continue
+        best = min((match, item), key=lambda i: _KIND_RANK[i.quantity.kind])
+        merged = best.model_copy(
+            update={
+                "id": match.id,
+                "optional": match.optional and item.optional,
+                "is_intermediate": match.is_intermediate or item.is_intermediate,
+            }
+        )
+        kept[kept.index(match)] = merged
+        if item.id != match.id:
+            aliases[item.id] = match.id
+        warnings.append(
+            ReviewWarning(
+                message=f"'{item.name_original}' was listed twice; merged into one ingredient "
+                f"(kept the amount '{best.quantity.raw or best.quantity.kind}').",
+                target_id=match.id,
+            )
+        )
+    return kept, aliases
+
+
+def _same_ingredient(a: WireIngredient, b: WireIngredient) -> bool:
+    return bool(
+        (_key(a.name_original) and _key(a.name_original) == _key(b.name_original))
+        or (_key(a.name) and _key(a.name) == _key(b.name))
+    )
+
+
+def _key(name: str) -> str:
+    return re.sub(r"\s+", " ", name.lower().replace("ſ", "s")).strip()
 
 
 # --- problems --------------------------------------------------------------

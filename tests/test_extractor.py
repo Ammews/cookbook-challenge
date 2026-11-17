@@ -148,7 +148,12 @@ def test_stated_servings_without_the_number_in_the_quote_become_inferred():
 
 def test_ids_are_made_valid_and_unique():
     answer = wire(
-        [wire_ingredient(id="Red Wine", quote="½ l Essig", value=0.5), wire_ingredient(id="Red Wine")],
+        [
+            wire_ingredient(id="Red Wine", quote="½ l Essig", value=0.5).model_copy(
+                update={"name": "vinegar", "name_original": "Essig"}
+            ),
+            wire_ingredient(id="Red Wine"),
+        ],
         steps=[],
     )
     result = Extractor(ScriptedModel(answer, answer)).extract(DOCUMENT)
@@ -166,3 +171,65 @@ def test_implied_tool_is_inferred_and_stated_tool_is_read():
     pot, knife = result.recipe.tools
     assert pot.stated and pot.source.note is None
     assert not knife.stated and knife.source.note == "onions are sliced"
+
+
+def named(id, name, original, kind="absent", value=0.0, raw="", quote="Zwiebeln", optional=False):
+    return WireIngredient(
+        id=id, name=name, name_original=original,
+        quantity=WireQuantity(kind=kind, value=value, max_value=0, unit="", raw=raw),
+        preparation="", optional=optional, is_intermediate=False,
+        evidence="read", page=1, quote=quote, note="",
+    )
+
+
+def test_ingredient_listed_twice_is_merged_and_reported():
+    answer = wire(
+        [
+            named("raisins", "raisins", "Rosinen", quote="Zwiebeln"),
+            named("raisins_again", "raisins", "Rosinen", quote="Zwiebeln"),
+        ],
+        steps=[],
+    )
+    recipe = Extractor(ScriptedModel(answer)).extract(DOCUMENT).recipe
+
+    assert [i.name_original for i in recipe.ingredients] == ["Rosinen"]
+    assert any("listed twice" in w.message for w in recipe.warnings)
+
+
+def test_merge_keeps_the_most_precise_amount_and_repoints_steps():
+    answer = wire(
+        [
+            named("salt", "salt", "Salt to taste", kind="to_taste"),
+            named("salt_cooking", "salt", "salt", kind="exact", value=4, raw="4", quote="4 Zwiebeln"),
+            wire_ingredient(),
+        ],
+        steps=[
+            WireStep(
+                text="Salzen.", ingredient_ids=["salt_cooking"], tool_ids=[], duration_raw="",
+                duration_min_minutes=0, duration_max_minutes=0, condition="", page=1, quote="kocht man",
+            )
+        ],
+    )
+    recipe = Extractor(ScriptedModel(answer)).extract(DOCUMENT).recipe
+
+    salt = recipe.ingredients[0]
+    assert len(recipe.ingredients) == 2
+    assert salt.quantity.value == 4
+    assert recipe.steps[0].ingredient_ids == (salt.id,)
+
+
+def test_merged_ingredient_is_optional_only_if_both_were():
+    answer = wire(
+        [named("a", "apple", "Äpfel", optional=True), named("b", "apple", "Apfel", optional=False)],
+        steps=[],
+    )
+    recipe = Extractor(ScriptedModel(answer)).extract(DOCUMENT).recipe
+    assert recipe.ingredients[0].optional is False
+
+
+def test_different_ingredients_with_similar_names_are_not_merged():
+    answer = wire(
+        [named("currants", "currants", "Korinthen"), named("raisins", "raisins", "Rosinen")],
+        steps=[],
+    )
+    assert len(Extractor(ScriptedModel(answer)).extract(DOCUMENT).recipe.ingredients) == 2
