@@ -106,6 +106,20 @@ def test_uncertain_ingredient_is_kept_and_warned():
     assert any("could not tell" in w.message for w in result.recipe.warnings)
 
 
+def test_intermediate_made_from_replaced_ingredients_is_not_a_false_alarm():
+    result = vegan(
+        item("eggs", "Eier", animal=A.EGG),
+        item("dumpling dough", "dough", animal=A.EGG, is_intermediate=True),
+    )
+    assert [i.name for i in result.recipe.ingredients][1] == "dumpling dough"
+    assert not any("Not fully vegan" in w.message for w in result.recipe.warnings)
+
+
+def test_intermediate_with_its_own_row_is_still_replaced():
+    result = vegan(item("pan juices", "Bratenfond", animal=A.MEAT, is_intermediate=True))
+    assert "vegetable stock" in only(result).name
+
+
 def test_substitute_is_marked_as_containing_nothing_animal():
     assert only(vegan(item("butter", animal=A.DAIRY))).animal is A.NONE
 

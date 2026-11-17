@@ -155,6 +155,11 @@ class MakeVegan:
             return None, "could not tell whether it contains animal products (it depends on the brand or recipe)."
         rows = [s for s in self.table.substitutions if category in s.categories]
         substitution = self._find(names, rows)
+        if substitution is None and ingredient.is_intermediate:
+            # Made in the recipe from listed ingredients (a dough from the eggs, a
+            # marinade): its animal content comes from those, which this rule already
+            # handles, so a warning here would be a false alarm.
+            return None, None
         if substitution is None:
             return None, f"contains {category.value.replace('_', ' ')}, and no vegan substitute is known for it."
         return substitution, None
