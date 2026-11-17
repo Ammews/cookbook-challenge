@@ -4,8 +4,14 @@ version = "0.1.0"
 description = "AI-powered cookbook pipeline: ingest, extract, manipulate, output."
 requires-python = ">=3.11"
 dependencies = [
+    "anthropic>=2.9.0",
     "pydantic>=2.9",
+    "pymupdf>=2.1",
+    "python-dotenv>=1.2.4",
 ]
+
+[project.scripts]
+cookbook = "cookbook.cli:main"
 
 [dependency-groups]
 dev = [

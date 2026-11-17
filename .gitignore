@@ -9,3 +9,7 @@ Recipe.pdf
 __pycache__/
 *.pyc
 .venv/
+
+# Local model-response cache and generated output
+.cache/
+out/
