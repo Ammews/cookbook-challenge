@@ -1,87 +1,119 @@
-# Vegan substitutions, applied in order: the first matching entry wins.
-# Matching is case-insensitive and by word start, on the ingredient's English
-# and original name ("braten" matches "Bratenstücke", "ei" does not match "weiß").
-# Terms are chosen to avoid false hits: "rinder", not "rind" (lemon rind);
-# no bare "roast" (roasted peppers).
+# Vegan substitutions.
 #
-# A substitution keeps the amount (ratio 1:1), except entries marked by_weight:
-# a count of the original ("1 whole chicken") means nothing for the substitute
-# ("1 mushroom"), so those say "same weight as the ... it replaces" instead of
-# inventing grams.
-# That keeps scaling and the
-# vegan rule independent of order: vegan(scale(r)) == scale(vegan(r)).
+# How a row is chosen:
+# 1. The extraction model classifies each ingredient by what it contains of
+#    animal origin (`animal`: none, meat, poultry, fish, dairy, egg, honey,
+#    gelatin, other_animal, uncertain).
+# 2. Only the rows whose `categories` include that category are searched, in
+#    order; the first row whose `match` terms appear in the ingredient's English
+#    or original name wins. Matching is case-insensitive and by word start
+#    ("braten" matches "Bratenstücke").
+# 3. No matching row means no known substitute: the ingredient is kept and a
+#    warning asks the cook to choose. The rule never invents a substitute.
 #
-# "check" entries change nothing; they add a review warning, because the
-# product may or may not be vegan depending on the brand.
+# `exclude` lists products that contain the category but are not the thing the
+# row replaces (egg noodles are not eggs). An exclusion turns a wrong swap into
+# a warning, which is the safe direction.
+#
+# A substitution keeps the amount (ratio 1:1), except rows marked by_weight: a
+# count of the original ("1 whole chicken") means nothing for the substitute,
+# so those say "same weight as the ... it replaces" instead of inventing grams.
+# That keeps scaling and the vegan rule independent of order.
+#
+# Ingredients without a classification (older data) are matched by name
+# against all rows, as before categories existed.
 
-# Names that are already vegan replacements. Never substituted again, so the
-# rule can be applied twice without changing anything the second time.
+# Names of things that are already vegan replacements. Never substituted again,
+# so the rule can be applied twice without changing anything the second time.
+# Every `replace_with` below must contain one of these (a test checks it).
 already_vegan: [vegan, seitan, tofu, plant-based, flax, oat milk, nutritional yeast, vegetable oil, vegetable stock, maple, agar, mushroom]
 
 substitutions:
-  - match: [bratenfond, fond, drippings, pan juices, meat juices, beef stock, chicken stock, fleischbrühe, rinderbrühe, hühnerbrühe, caldo de carne, caldo de galinha]
+  - categories: [meat, poultry, fish, other_animal]
+    match: [bratenfond, fond, drippings, pan juices, meat juices, stock, broth, brühe, caldo]
     replace_with: vegetable stock with the pan juices of the vegan roast
     reason: There are no meat juices in a vegan version; stock plus the juices of the browned substitute takes their place.
 
-  - match: [bacon grease, grease, lard, schmalz, fett, banha, fat, nierenfett, suet]
+  - categories: [meat, poultry, other_animal]
+    match: [bacon grease, grease, lard, schmalz, fett, banha, fat, nierenfett, suet, dripping]
     exclude: [fettuc]
     replace_with: vegetable oil
     reason: Animal fat; any neutral oil does the same job for browning.
 
-  - match: [bacon, speck, toucinho, pancetta, ham, schinken, presunto]
+  - categories: [meat]
+    match: [bacon, speck, toucinho, pancetta, ham, schinken, presunto, guanciale]
     replace_with: smoked tofu, diced
     by_weight: true
     reason: Cured pork; smoked tofu brings the smoky, salty note.
 
-  - match: [chicken, huhn, hühn, hähnchen, frango, galinha, poultry, turkey, pute, duck, ente]
+  - categories: [poultry]
+    match: [chicken, huhn, hühn, hähnchen, frango, galinha, poultry, turkey, pute, duck, ente]
     replace_with: oyster mushrooms or seitan pieces
     by_weight: true
     reason: Poultry; oyster mushrooms or seitan take up the sauce in the same way.
     step_note: Brown the mushrooms or seitan briefly; they cook much faster than chicken.
 
-  - match: [beef, braten, rinder, rindfleisch, fleisch, meat, pork, schwein, veal, kalb, lamb, lamm, carne, rabbit, kaninchen, hase, steak, mince, hackfleisch, sausage, wurst, bratwurst, linguiça, salsicha, paio]
+  - categories: [meat]
+    match: [beef, braten, rinder, rindfleisch, fleisch, meat, pork, schwein, veal, kalb, lamb, lamm, carne, rabbit, kaninchen, hase, steak]
+    exclude: [mince, minced, ground, hack, sausage, wurst, salsicha, linguiça, salami, mortadel]
     replace_with: seitan roast (or a whole celeriac)
     by_weight: true
     reason: The meat is the main ingredient. Seitan holds together in a long braise and takes up the marinade; a whole celeriac is a soy- and gluten-free alternative.
     step_note: Marinate seitan for 1–2 days at most; a week in an acidic marinade makes it soft. Braise 45–60 minutes instead of hours.
 
-  - match: [fish, fisch, peixe, anchov, sardell, shrimp, prawn, garnele, camarão]
+  - categories: [fish]
+    match: [fish, fisch, peixe, anchov, sardell, shrimp, prawn, garnele, camarão]
+    exclude: [sauce, soße, molho]
     replace_with: marinated smoked tofu
     by_weight: true
     reason: Fish or seafood.
 
-  - match: [buttermilk, buttermilch, milk, milch, leite]
+  - categories: [dairy]
+    match: [buttermilk, buttermilch, milk, milch, leite]
+    exclude: [chocolate, schokolade, condensed, kondens]
     replace_with: oat milk
     reason: Dairy milk.
 
-  - match: [sour cream, saure sahne, schmand, crème fraîche, creme fraiche, cream, sahne, creme de leite, nata]
-    exclude: [tartar]
+  - categories: [dairy]
+    match: [cream cheese, frischkäse, requeijão]
+    replace_with: plant-based cream cheese
+    reason: Dairy cream cheese.
+
+  - categories: [dairy]
+    match: [sour cream, saure sahne, schmand, crème fraîche, creme fraiche, cream, sahne, creme de leite, nata]
+    exclude: [tartar, ice cream]
     replace_with: plant-based sour cream or cream
     reason: Dairy cream.
 
-  - match: [butter, manteiga]
+  - categories: [dairy]
+    match: [butter, manteiga, ghee]
     exclude: [peanut, cocoa, nut butter, butter bean]
     replace_with: vegan butter
     reason: Dairy butter; vegan butter behaves the same for frying and baking.
 
-  - match: [parmesan, cheese, käse, queijo, mozzarella, cheddar, gouda]
+  - categories: [dairy]
+    match: [parmesan, parmigiano, grana, pecorino]
     replace_with: vegan parmesan or nutritional yeast
-    reason: Dairy cheese.
+    reason: Hard cheese, used for its salty, savoury taste.
 
-  - match: [yogurt, yoghurt, joghurt, iogurte]
+  - categories: [dairy]
+    match: [yogurt, yoghurt, joghurt, iogurte]
     replace_with: plant-based yogurt
     reason: Dairy yogurt.
 
-  - match: [egg, eier, ei, ovo, gemma, eigelb, eiweiß]
-    exclude: [eggplant]
+  - categories: [egg]
+    match: [egg, eier, ei, ovo, gemma, eigelb, eiweiß]
+    exclude: [eggplant, noodle, nudel, pasta, massa, macarr, mayo, scrambled, mexido, rührei, omelet]
     replace_with: flax egg (1 tbsp ground flaxseed + 3 tbsp water per egg)
-    reason: Eggs; a flax egg binds doughs and batters.
+    reason: Eggs that bind a dough or batter; a flax egg does the same.
 
-  - match: [honey, honig, mel]
+  - categories: [honey]
+    match: [honey, honig, mel]
     replace_with: maple syrup
     reason: Honey is an animal product.
 
-  - match: [gelatin, gelatine]
+  - categories: [gelatin]
+    match: [gelatin, gelatine]
     replace_with: agar-agar
     reason: Gelatin is made from animal bones and skin.
 

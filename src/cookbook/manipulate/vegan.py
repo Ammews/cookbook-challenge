@@ -1,9 +1,17 @@
-"""Make a recipe vegan with a substitution table, carried through to the steps.
+"""Make a recipe vegan, carried through to the steps.
 
-The table lives in a data file (vegan_substitutions.yaml), so a cook or a
-reviewer can read and extend it without touching code. Every substitution is
-recorded as a change with its reason, and every step that used a replaced
-ingredient gets a visible note, so nothing is swapped silently.
+Two jobs, split the way the rest of the pipeline is split:
+- **Recognising** what an ingredient contains is a language task, so the
+  extraction model does it (`Ingredient.animal`: none, dairy, egg, meat...).
+- **Deciding** what to do is code: a substitution table in a data file
+  (vegan_substitutions.yaml), searched only among the rows for that category.
+
+When the table has no substitute, or the model could not tell, the
+ingredient is kept and a warning says so. The rule never invents a
+substitute and never lets an animal product through silently.
+
+Ingredients without a classification (older data) fall back to matching
+the table by name, which was the only method before categories existed.
 """
 
 import re
@@ -13,13 +21,25 @@ from pathlib import Path
 import yaml
 from pydantic import Field
 
-from cookbook.models import Change, Ingredient, Quantity, QuantityKind, Recipe, ReviewWarning, Source, SourceStatus, Step
+from cookbook.models import (
+    AnimalContent,
+    Change,
+    Ingredient,
+    Quantity,
+    QuantityKind,
+    Recipe,
+    ReviewWarning,
+    Source,
+    SourceStatus,
+    Step,
+)
 from cookbook.models.base import DomainModel
 
 _TABLE = Path(__file__).with_name("vegan_substitutions.yaml")
 
 
 class Substitution(DomainModel):
+    categories: list[AnimalContent] = Field(min_length=1)
     match: list[str]
     exclude: list[str] = Field(default_factory=list)
     replace_with: str
@@ -53,13 +73,16 @@ class MakeVegan:
     def apply(self, recipe: Recipe) -> tuple[Recipe, list[Change]]:
         changes: list[Change] = []
         replaced: dict[str, tuple[Ingredient, Ingredient, Substitution]] = {}
+        unresolved: list[tuple[Ingredient, str]] = []
         taken_ids = {i.id for i in recipe.ingredients}
         ingredients = []
 
         for ingredient in recipe.ingredients:
-            substitution = self._substitution_for(ingredient)
+            substitution, problem = self._decide(ingredient)
             if substitution is None:
                 ingredients.append(ingredient)
+                if problem:
+                    unresolved.append((ingredient, problem))
                 continue
             new = _replace(ingredient, substitution, taken_ids)
             taken_ids.add(new.id)
@@ -84,38 +107,64 @@ class MakeVegan:
 
         warnings = list(recipe.warnings)
         existing = {w.message for w in warnings}
-        for ingredient in ingredients:
-            check = self._check_for(ingredient)
-            if check is None:
-                continue
-            message = f"Vegan check, {ingredient.name_original}: {check.reason}"
+
+        def warn(ingredient: Ingredient, message: str, after: str, reason: str) -> None:
             if message in existing:
-                continue
+                return  # applying the rule again adds nothing
             warnings.append(ReviewWarning(message=message, target_id=ingredient.id))
             existing.add(message)
             changes.append(
-                Change(
-                    rule=self.name,
-                    target=ingredient.id,
-                    before=ingredient.name_original,
-                    after="unchanged, check the label",
-                    reason=check.reason,
-                )
+                Change(rule=self.name, target=ingredient.id, before=ingredient.name_original, after=after, reason=reason)
             )
+
+        if unresolved:
+            names = ", ".join(i.name_original for i, _ in unresolved)
+            summary = f"Not fully vegan: no vegan substitute is known for {names}. Choose one before cooking."
+            if summary not in existing:
+                warnings.append(ReviewWarning(message=summary))
+                existing.add(summary)
+        for ingredient, problem in unresolved:
+            warn(ingredient, f"Vegan, {ingredient.name_original}: {problem}", "unchanged, no known substitute", problem)
+
+        for ingredient in ingredients:
+            check = self._check_for(ingredient)
+            if check is not None:
+                warn(
+                    ingredient,
+                    f"Vegan check, {ingredient.name_original}: {check.reason}",
+                    "unchanged, check the label",
+                    check.reason,
+                )
 
         updated = recipe.model_copy(
             update={"ingredients": tuple(ingredients), "steps": tuple(steps), "warnings": tuple(warnings)}
         )
         return updated, changes
 
-    def _substitution_for(self, ingredient: Ingredient) -> Substitution | None:
+    def _decide(self, ingredient: Ingredient) -> tuple[Substitution | None, str | None]:
+        """Return the substitution to apply, or a problem to report, or neither."""
         names = _names(ingredient)
         if _matches_any(names, self.table.already_vegan):
-            return None
-        for substitution in self.table.substitutions:
-            if _matches_any(names, substitution.match) and not _matches_any(names, substitution.exclude):
-                return substitution
-        return None
+            return None, None
+        category = ingredient.animal
+        if category is None:  # not classified: match by name, as before categories existed
+            return self._find(names, self.table.substitutions), None
+        if category is AnimalContent.NONE:
+            return None, None
+        if category is AnimalContent.UNCERTAIN:
+            return None, "could not tell whether it contains animal products (it depends on the brand or recipe)."
+        rows = [s for s in self.table.substitutions if category in s.categories]
+        substitution = self._find(names, rows)
+        if substitution is None:
+            return None, f"contains {category.value.replace('_', ' ')}, and no vegan substitute is known for it."
+        return substitution, None
+
+    @staticmethod
+    def _find(names: str, rows: list[Substitution]) -> Substitution | None:
+        return next(
+            (s for s in rows if _matches_any(names, s.match) and not _matches_any(names, s.exclude)),
+            None,
+        )
 
     def _check_for(self, ingredient: Ingredient) -> Check | None:
         names = _names(ingredient)
@@ -135,6 +184,7 @@ def _replace(ingredient: Ingredient, substitution: Substitution, taken_ids: set[
             "name": substitution.replace_with,
             "name_original": substitution.replace_with,
             "preparation": None,  # "fest", "auslassen" described the meat, not the substitute
+            "animal": AnimalContent.NONE if ingredient.animal is not None else None,
             "source": Source(
                 status=SourceStatus.RULE,
                 page=ingredient.source.page,
