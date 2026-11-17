@@ -1,0 +1,601 @@
+{
+  "document": {
+    "name": "input.txt",
+    "kind": "text",
+    "pages": [
+      {
+        "number": 1,
+        "text": "Chicken Paprikash\nServings: 4\n\n== Ingredients ==\n1 whole chicken, cut up (skin optional)\nBacon grease, lard, or other fat\n2 standard-size containers of sour cream\nPaprika\nWhite or yellow onion, finely chopped\n2–3 cups (480–700 g) flour\n2–3 eggs\nWater\nSalt\nBacon grease or oil\n\n\n== Equipment ==\nBig pot\nPan with lid\n\n\n== Procedure ==\n\n\n=== Chicken ===\nBrown the onions in a heavy skillet with some bacon grease until softened and well-colored.\nAdd chicken. Brown rapidly, then season with paprika to taste.\nTurn heat down, add enough water added to cover the bottom of the pan, and cook on low. Keep covered but with the lid slightly cocked to prevent boiling.\nProceed with the dumplings while cooking the chicken.\n\n\n=== Dumplings ===\nCombine flour, eggs, and a pinch of salt with enough to make a dough. For dumplings to be ‘sticky’ inside, make a wetter dough; for all the way through, make a drier dough.\nUse a dessert spoon (or a melon baller for smaller dumplings) to drop pieces of dough into boiling salted water. To keep them from sticking to the spoon, let it heat up in the water.\nLet simmer until the dumplings float. Drain, put in a bowl with a tiny slick of melted fat, and keep them to one side in a warm place.\n\n\n=== Assembly ===\nOnce the chicken is fully cooked (160°F) and your dumplings are all done, stir dumplings and sour cream into the pan of chicken. Mix thoroughly but carefully to coat.\nAdd more paprika until it is more pink (or orange) than white.\nTaste sauce; it may need more paprika or salt. Sometimes it is easier to remove the chicken, and then pour the dumplings and sour cream over the top to coat (when serving), depending on how big your pan is.\n\n\n== Notes, tips, and variations ==\nUse seeded rye bread to sop up the sauce when you're done eating.",
+        "method": "plain_text",
+        "decoration_text": [],
+        "uncertain": [],
+        "usage": null
+      }
+    ]
+  },
+  "extraction": {
+    "is_recipe": true,
+    "recipes_in_document": 1,
+    "recipe": {
+      "title": "Chicken Paprikash",
+      "language": "en",
+      "servings": {
+        "value": 4,
+        "source": {
+          "status": "read",
+          "page": 1,
+          "quote": "Servings: 4",
+          "note": null
+        }
+      },
+      "ingredients": [
+        {
+          "id": "chicken",
+          "name": "chicken",
+          "name_original": "1 whole chicken, cut up (skin optional)",
+          "quantity": {
+            "kind": "exact",
+            "value": 1.0,
+            "max_value": null,
+            "unit": null,
+            "raw": "1 whole chicken"
+          },
+          "preparation": "cut up",
+          "optional": false,
+          "is_intermediate": false,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "1 whole chicken, cut up (skin optional)",
+            "note": null
+          }
+        },
+        {
+          "id": "bacon_grease",
+          "name": "bacon grease or other fat",
+          "name_original": "Bacon grease, lard, or other fat",
+          "quantity": {
+            "kind": "vague",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": "some"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "with some bacon grease",
+            "note": null
+          }
+        },
+        {
+          "id": "sour_cream",
+          "name": "sour cream",
+          "name_original": "2 standard-size containers of sour cream",
+          "quantity": {
+            "kind": "exact",
+            "value": 2.0,
+            "max_value": null,
+            "unit": null,
+            "raw": "2 standard-size containers"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "2 standard-size containers of sour cream",
+            "note": null
+          }
+        },
+        {
+          "id": "paprika",
+          "name": "paprika",
+          "name_original": "Paprika",
+          "quantity": {
+            "kind": "to_taste",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": "to taste"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "season with paprika to taste",
+            "note": null
+          }
+        },
+        {
+          "id": "onion",
+          "name": "onion",
+          "name_original": "White or yellow onion, finely chopped",
+          "quantity": {
+            "kind": "absent",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": "finely chopped",
+          "optional": false,
+          "is_intermediate": false,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Brown the onions in a heavy skillet",
+            "note": null
+          }
+        },
+        {
+          "id": "flour",
+          "name": "flour",
+          "name_original": "2–3 cups (480–700 g) flour",
+          "quantity": {
+            "kind": "exact",
+            "value": 2.0,
+            "max_value": 3.0,
+            "unit": "cups",
+            "raw": "2–3 cups (480–700 g)"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "2–3 cups (480–700 g) flour",
+            "note": null
+          }
+        },
+        {
+          "id": "eggs",
+          "name": "eggs",
+          "name_original": "2–3 eggs",
+          "quantity": {
+            "kind": "exact",
+            "value": 2.0,
+            "max_value": 3.0,
+            "unit": null,
+            "raw": "2–3 eggs"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "2–3 eggs",
+            "note": null
+          }
+        },
+        {
+          "id": "water",
+          "name": "water",
+          "name_original": "Water",
+          "quantity": {
+            "kind": "vague",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": "enough to cover the bottom of the pan"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "add enough water added to cover the bottom of the pan",
+            "note": null
+          }
+        },
+        {
+          "id": "salt",
+          "name": "salt",
+          "name_original": "Salt",
+          "quantity": {
+            "kind": "vague",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": "a pinch of salt"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "a pinch of salt",
+            "note": null
+          }
+        }
+      ],
+      "tools": [
+        {
+          "id": "big_pot",
+          "name": "big pot",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Big pot",
+            "note": null
+          }
+        },
+        {
+          "id": "pan_with_lid",
+          "name": "pan with lid",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Pan with lid",
+            "note": null
+          }
+        },
+        {
+          "id": "heavy_skillet",
+          "name": "heavy skillet",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "in a heavy skillet",
+            "note": null
+          }
+        },
+        {
+          "id": "dessert_spoon",
+          "name": "dessert spoon",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Use a dessert spoon",
+            "note": null
+          }
+        },
+        {
+          "id": "melon_baller",
+          "name": "melon baller",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "a melon baller for smaller dumplings",
+            "note": null
+          }
+        },
+        {
+          "id": "bowl",
+          "name": "bowl",
+          "source": {
+            "status": "inferred",
+            "page": 1,
+            "quote": "put in a bowl with a tiny slick of melted fat",
+            "note": "Implied for combining the dough and for holding the drained dumplings (steps 5 and 9)."
+          }
+        },
+        {
+          "id": "colander",
+          "name": "colander",
+          "source": {
+            "status": "inferred",
+            "page": 1,
+            "quote": "Drain",
+            "note": "Implied to drain the dumplings after boiling (step 9)."
+          }
+        }
+      ],
+      "steps": [
+        {
+          "order": 1,
+          "text": "Brown the onions in a heavy skillet with some bacon grease until softened and well-colored.",
+          "ingredient_ids": [
+            "onion",
+            "bacon_grease"
+          ],
+          "tool_ids": [
+            "heavy_skillet"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Brown the onions in a heavy skillet with some bacon grease until softened and well-colored.",
+            "note": null
+          }
+        },
+        {
+          "order": 2,
+          "text": "Add chicken. Brown rapidly, then season with paprika to taste.",
+          "ingredient_ids": [
+            "chicken",
+            "paprika"
+          ],
+          "tool_ids": [],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Add chicken. Brown rapidly, then season with paprika to taste.",
+            "note": null
+          }
+        },
+        {
+          "order": 3,
+          "text": "Turn heat down, add enough water to cover the bottom of the pan, and cook on low. Keep covered with the lid slightly cocked to prevent boiling.",
+          "ingredient_ids": [
+            "water",
+            "chicken"
+          ],
+          "tool_ids": [
+            "pan_with_lid"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Turn heat down, add enough water added to cover the bottom of the pan, and cook on low. Keep covered but with the lid slightly cocked to prevent boiling.",
+            "note": null
+          }
+        },
+        {
+          "order": 4,
+          "text": "Proceed with the dumplings while cooking the chicken.",
+          "ingredient_ids": [],
+          "tool_ids": [],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Proceed with the dumplings while cooking the chicken.",
+            "note": null
+          }
+        },
+        {
+          "order": 5,
+          "text": "Combine flour, eggs, and a pinch of salt with enough to make a dough.",
+          "ingredient_ids": [
+            "flour",
+            "eggs",
+            "salt"
+          ],
+          "tool_ids": [
+            "bowl"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Combine flour, eggs, and a pinch of salt with enough to make a dough.",
+            "note": null
+          }
+        },
+        {
+          "order": 6,
+          "text": "Make a wetter dough for dumplings that should be sticky inside; make a drier dough for dumplings that should be cooked all the way through.",
+          "ingredient_ids": [
+            "flour",
+            "eggs"
+          ],
+          "tool_ids": [],
+          "duration": null,
+          "condition": "wetter dough for sticky centres, drier dough for fully cooked centres",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "For dumplings to be ‘sticky’ inside, make a wetter dough; for all the way through, make a drier dough.",
+            "note": null
+          }
+        },
+        {
+          "order": 7,
+          "text": "Use a dessert spoon (or a melon baller for smaller dumplings) to drop pieces of dough into boiling salted water.",
+          "ingredient_ids": [
+            "flour",
+            "water",
+            "salt"
+          ],
+          "tool_ids": [
+            "dessert_spoon",
+            "melon_baller"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Use a dessert spoon (or a melon baller for smaller dumplings) to drop pieces of dough into boiling salted water.",
+            "note": null
+          }
+        },
+        {
+          "order": 8,
+          "text": "Let the spoon heat up in the water so the dough does not stick to it.",
+          "ingredient_ids": [
+            "water"
+          ],
+          "tool_ids": [
+            "dessert_spoon"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "To keep them from sticking to the spoon, let it heat up in the water.",
+            "note": null
+          }
+        },
+        {
+          "order": 9,
+          "text": "Let simmer until the dumplings float. Drain, put in a bowl with a tiny slick of melted fat, and keep them to one side in a warm place.",
+          "ingredient_ids": [
+            "bacon_grease"
+          ],
+          "tool_ids": [
+            "colander",
+            "bowl"
+          ],
+          "duration": {
+            "raw": "until the dumplings float",
+            "min_minutes": null,
+            "max_minutes": null
+          },
+          "condition": "until the dumplings float",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Let simmer until the dumplings float. Drain, put in a bowl with a tiny slick of melted fat, and keep them to one side in a warm place.",
+            "note": null
+          }
+        },
+        {
+          "order": 10,
+          "text": "Once the chicken is fully cooked (160°F) and the dumplings are all done, stir dumplings and sour cream into the pan of chicken.",
+          "ingredient_ids": [
+            "chicken",
+            "sour_cream"
+          ],
+          "tool_ids": [
+            "pan_with_lid"
+          ],
+          "duration": null,
+          "condition": "once the chicken is fully cooked (160°F)",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Once the chicken is fully cooked (160°F) and your dumplings are all done, stir dumplings and sour cream into the pan of chicken.",
+            "note": null
+          }
+        },
+        {
+          "order": 11,
+          "text": "Mix thoroughly but carefully to coat.",
+          "ingredient_ids": [
+            "chicken"
+          ],
+          "tool_ids": [],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Mix thoroughly but carefully to coat.",
+            "note": null
+          }
+        },
+        {
+          "order": 12,
+          "text": "Add more paprika until it is more pink (or orange) than white.",
+          "ingredient_ids": [
+            "paprika"
+          ],
+          "tool_ids": [],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Add more paprika until it is more pink (or orange) than white.",
+            "note": null
+          }
+        },
+        {
+          "order": 13,
+          "text": "Taste the sauce; it may need more paprika or salt.",
+          "ingredient_ids": [
+            "paprika",
+            "salt"
+          ],
+          "tool_ids": [],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Taste sauce; it may need more paprika or salt.",
+            "note": null
+          }
+        },
+        {
+          "order": 14,
+          "text": "Sometimes it is easier to remove the chicken, and then pour the dumplings and sour cream over the top to coat when serving.",
+          "ingredient_ids": [
+            "chicken",
+            "sour_cream"
+          ],
+          "tool_ids": [],
+          "duration": null,
+          "condition": "depending on how big the pan is",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Sometimes it is easier to remove the chicken, and then pour the dumplings and sour cream over the top to coat (when serving), depending on how big your pan is.",
+            "note": null
+          }
+        }
+      ],
+      "warnings": [
+        {
+          "message": "Bacon grease is listed as 'Bacon grease, lard, or other fat' and again as 'Bacon grease or oil'; merged into one entry.",
+          "target_id": null
+        },
+        {
+          "message": "The amount of bacon grease is only given as 'some' in the browning step; the amount is vague.",
+          "target_id": null
+        },
+        {
+          "message": "Flour is given as both cups and grams; the first unit (cups) was used.",
+          "target_id": null
+        },
+        {
+          "message": "Eggs have no size given; the count is a range of 2 to 3.",
+          "target_id": null
+        },
+        {
+          "message": "Paprika, onion, water and salt have no amount in the ingredient list; amounts come from the procedure or are absent.",
+          "target_id": null
+        },
+        {
+          "message": "'Heavy skillet' and 'pan with lid' may be the same vessel; both were kept as listed.",
+          "target_id": null
+        },
+        {
+          "message": "The procedure gives no cooking times for the chicken or the dumplings beyond 'until the dumplings float'.",
+          "target_id": null
+        },
+        {
+          "message": "The 160°F doneness temperature is taken as written.",
+          "target_id": null
+        },
+        {
+          "message": "Sour cream container size is not stated; the count of 2 containers was kept with an empty unit.",
+          "target_id": null
+        }
+      ]
+    },
+    "usage": [
+      {
+        "model": "claude-haiku-5-5",
+        "input_tokens": 4524,
+        "output_tokens": 7017,
+        "seconds": 25.77219889999992,
+        "cached": true
+      }
+    ],
+    "problems_found": [],
+    "problems_left": []
+  },
+  "manipulation": null
+}

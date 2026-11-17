@@ -51,17 +51,38 @@
       "title": "Sauerbraten",
       "language": "de",
       "servings": {
-        "value": null,
+        "value": 4,
         "source": {
-          "status": "missing",
+          "status": "inferred",
           "page": null,
           "quote": null,
-          "note": "the document does not say"
+          "note": "No serving count is stated. Estimated from about 1 l of marinade and a roast of solid cut."
         }
       },
       "ingredients": [
         {
-          "id": "essig",
+          "id": "roast",
+          "name": "roast meat",
+          "name_original": "festen Bratenstücke",
+          "quantity": {
+            "kind": "absent",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "die festen Bratenstücke",
+            "note": null
+          }
+        },
+        {
+          "id": "vinegar",
           "name": "vinegar",
           "name_original": "Essig",
           "quantity": {
@@ -82,7 +103,7 @@
           }
         },
         {
-          "id": "wasser",
+          "id": "water",
           "name": "water",
           "name_original": "Wasser",
           "quantity": {
@@ -103,7 +124,7 @@
           }
         },
         {
-          "id": "zwiebeln",
+          "id": "onions",
           "name": "onions",
           "name_original": "Zwiebeln",
           "quantity": {
@@ -113,7 +134,7 @@
             "unit": null,
             "raw": "4"
           },
-          "preparation": "in Scheiben geschnitten",
+          "preparation": "sliced",
           "optional": false,
           "is_intermediate": false,
           "source": {
@@ -124,7 +145,7 @@
           }
         },
         {
-          "id": "pfeffer",
+          "id": "black_pepper",
           "name": "pepper",
           "name_original": "Pfeffer",
           "quantity": {
@@ -145,7 +166,7 @@
           }
         },
         {
-          "id": "nelken",
+          "id": "cloves",
           "name": "cloves",
           "name_original": "Nelken",
           "quantity": {
@@ -166,7 +187,7 @@
           }
         },
         {
-          "id": "salz",
+          "id": "salt",
           "name": "salt",
           "name_original": "Salz",
           "quantity": {
@@ -187,7 +208,7 @@
           }
         },
         {
-          "id": "lorbeerblaetter",
+          "id": "bay_leaves",
           "name": "bay leaves",
           "name_original": "Lorbeerblätter",
           "quantity": {
@@ -208,28 +229,7 @@
           }
         },
         {
-          "id": "braten",
-          "name": "roast",
-          "name_original": "Braten",
-          "quantity": {
-            "kind": "absent",
-            "value": null,
-            "max_value": null,
-            "unit": null,
-            "raw": ""
-          },
-          "preparation": "fest, Bratenstück",
-          "optional": false,
-          "is_intermediate": false,
-          "source": {
-            "status": "read",
-            "page": 1,
-            "quote": "die festen Bratenstücke",
-            "note": null
-          }
-        },
-        {
-          "id": "essigwasser",
+          "id": "vinegar_water",
           "name": "vinegar water",
           "name_original": "Essigwasser",
           "quantity": {
@@ -245,12 +245,12 @@
           "source": {
             "status": "read",
             "page": 2,
-            "quote": "das Essigwasser heiß darüber",
-            "note": "The boiled marinade made from the vinegar and water."
+            "quote": "gießt man das Essigwasser heiß darüber",
+            "note": null
           }
         },
         {
-          "id": "speck",
+          "id": "bacon",
           "name": "bacon",
           "name_original": "Speck",
           "quantity": {
@@ -260,7 +260,7 @@
             "unit": null,
             "raw": ""
           },
-          "preparation": "auslassen",
+          "preparation": "rendered",
           "optional": false,
           "is_intermediate": false,
           "source": {
@@ -292,7 +292,7 @@
           }
         },
         {
-          "id": "aepfel",
+          "id": "apples",
           "name": "apples",
           "name_original": "Äpfel",
           "quantity": {
@@ -313,15 +313,15 @@
           }
         },
         {
-          "id": "moehren",
+          "id": "carrots",
           "name": "carrots",
           "name_original": "Möhren",
           "quantity": {
-            "kind": "vague",
+            "kind": "absent",
             "value": null,
             "max_value": null,
             "unit": null,
-            "raw": "einige"
+            "raw": ""
           },
           "preparation": null,
           "optional": true,
@@ -329,20 +329,20 @@
           "source": {
             "status": "read",
             "page": 2,
-            "quote": "einige Äpfel, Möhren und Wacholderbeeren",
+            "quote": "Möhren und Wacholderbeeren",
             "note": null
           }
         },
         {
-          "id": "wacholderbeeren",
+          "id": "juniper_berries",
           "name": "juniper berries",
           "name_original": "Wacholderbeeren",
           "quantity": {
-            "kind": "vague",
+            "kind": "absent",
             "value": null,
             "max_value": null,
             "unit": null,
-            "raw": "einige"
+            "raw": ""
           },
           "preparation": null,
           "optional": true,
@@ -350,12 +350,12 @@
           "source": {
             "status": "read",
             "page": 2,
-            "quote": "einige Äpfel, Möhren und Wacholderbeeren",
+            "quote": "Wacholderbeeren in den Topf geben",
             "note": null
           }
         },
         {
-          "id": "bratenfond",
+          "id": "pan_juices",
           "name": "pan juices",
           "name_original": "Bratenfond",
           "quantity": {
@@ -372,11 +372,11 @@
             "status": "read",
             "page": 2,
             "quote": "den Bratenfond mit Mehl an",
-            "note": "Juices from searing the roast."
+            "note": null
           }
         },
         {
-          "id": "mehl",
+          "id": "flour",
           "name": "flour",
           "name_original": "Mehl",
           "quantity": {
@@ -397,7 +397,7 @@
           }
         },
         {
-          "id": "rotwein",
+          "id": "red_wine",
           "name": "red wine",
           "name_original": "Rotwein",
           "quantity": {
@@ -413,12 +413,12 @@
           "source": {
             "status": "read",
             "page": 2,
-            "quote": "Essigwasser und Rotwein",
+            "quote": "Essigwasser und Rotwein auf",
             "note": null
           }
         },
         {
-          "id": "korinthen",
+          "id": "currants",
           "name": "currants",
           "name_original": "Korinthen",
           "quantity": {
@@ -428,18 +428,18 @@
             "unit": null,
             "raw": ""
           },
-          "preparation": "gequollen",
+          "preparation": "soaked",
           "optional": false,
           "is_intermediate": false,
           "source": {
             "status": "read",
             "page": 2,
-            "quote": "gequollene Korinthen u. Rosinen",
+            "quote": "gequollene Korinthen",
             "note": null
           }
         },
         {
-          "id": "rosinen",
+          "id": "raisins",
           "name": "raisins",
           "name_original": "Rosinen",
           "quantity": {
@@ -449,18 +449,18 @@
             "unit": null,
             "raw": ""
           },
-          "preparation": "gequollen",
+          "preparation": null,
           "optional": false,
           "is_intermediate": false,
           "source": {
             "status": "read",
             "page": 2,
-            "quote": "Korinthen u. Rosinen",
+            "quote": "u. Rosinen hinzu",
             "note": null
           }
         },
         {
-          "id": "zucker",
+          "id": "sugar",
           "name": "sugar",
           "name_original": "Zucker",
           "quantity": {
@@ -483,13 +483,23 @@
       ],
       "tools": [
         {
-          "id": "topf",
+          "id": "pot",
           "name": "pot",
           "source": {
             "status": "read",
             "page": 2,
             "quote": "in den Topf geben",
             "note": null
+          }
+        },
+        {
+          "id": "pan",
+          "name": "frying pan",
+          "source": {
+            "status": "inferred",
+            "page": 2,
+            "quote": "ins heiße Fett",
+            "note": "Implied by the frying step (Anbraten) in which the roast is seared in hot fat; no pan is named."
           }
         }
       ],
@@ -498,7 +508,7 @@
           "order": 1,
           "text": "Hierzu eignen sich am besten die festen Bratenstücke.",
           "ingredient_ids": [
-            "braten"
+            "roast"
           ],
           "tool_ids": [],
           "duration": null,
@@ -512,17 +522,19 @@
         },
         {
           "order": 2,
-          "text": "Zum Einlegen Essig, Wasser, Zwiebeln, Pfeffer, Nelken, Salz und Lorbeerblätter aufkochen.",
+          "text": "Zum Einlegen Essig, Wasser, in Scheiben geschnittene Zwiebeln, Pfeffer, Nelken, Salz und Lorbeerblätter kochen.",
           "ingredient_ids": [
-            "essig",
-            "wasser",
-            "zwiebeln",
-            "pfeffer",
-            "nelken",
-            "salz",
-            "lorbeerblaetter"
+            "vinegar",
+            "water",
+            "onions",
+            "black_pepper",
+            "cloves",
+            "salt",
+            "bay_leaves"
           ],
-          "tool_ids": [],
+          "tool_ids": [
+            "pot"
+          ],
           "duration": null,
           "condition": null,
           "source": {
@@ -534,14 +546,14 @@
         },
         {
           "order": 3,
-          "text": "Wird der Braten am 1. oder 2. Tag gebraucht, das Essigwasser heiß darübergießen.",
+          "text": "If the roast is to be used on the 1st or 2nd day, pour the hot vinegar water over it.",
           "ingredient_ids": [
-            "essigwasser",
-            "braten"
+            "vinegar_water",
+            "roast"
           ],
           "tool_ids": [],
           "duration": null,
-          "condition": "if the roast is used on day 1 or day 2",
+          "condition": "Braten am 1. oder 2. Tag gebraucht",
           "source": {
             "status": "read",
             "page": 2,
@@ -551,14 +563,18 @@
         },
         {
           "order": 4,
-          "text": "Soll der Braten erst nach 8 Tagen zubereitet werden, das Essigwasser kalt darauf gießen.",
+          "text": "If the roast is to be prepared only after 8 days, pour the cold vinegar water over it.",
           "ingredient_ids": [
-            "essigwasser",
-            "braten"
+            "vinegar_water",
+            "roast"
           ],
           "tool_ids": [],
-          "duration": null,
-          "condition": "if the roast is prepared only after 8 days",
+          "duration": {
+            "raw": "8 Tage",
+            "min_minutes": 11520.0,
+            "max_minutes": 11520.0
+          },
+          "condition": "Braten erst nach 8 Tagen zubereitet",
           "source": {
             "status": "read",
             "page": 2,
@@ -568,13 +584,15 @@
         },
         {
           "order": 5,
-          "text": "Zum Anbraten den Speck auslassen, Butter dazugeben und den abgetrockneten Braten ins heiße Fett geben.",
+          "text": "For frying, render the bacon, add butter, then put the dried roast into the hot fat.",
           "ingredient_ids": [
-            "speck",
+            "bacon",
             "butter",
-            "braten"
+            "roast"
           ],
-          "tool_ids": [],
+          "tool_ids": [
+            "pan"
+          ],
           "duration": null,
           "condition": null,
           "source": {
@@ -586,14 +604,16 @@
         },
         {
           "order": 6,
-          "text": "Wenn der Braten von allen Seiten knusprig angebraten ist, etwas Essigwasser hinzugießen.",
+          "text": "When the roast is crispy browned on all sides, add some of the vinegar water.",
           "ingredient_ids": [
-            "braten",
-            "essigwasser"
+            "roast",
+            "vinegar_water"
           ],
-          "tool_ids": [],
+          "tool_ids": [
+            "pan"
+          ],
           "duration": null,
-          "condition": "when the roast is browned crisply on all sides",
+          "condition": "Wenn er von allen Seiten knusprig angebraten ist",
           "source": {
             "status": "read",
             "page": 2,
@@ -603,17 +623,17 @@
         },
         {
           "order": 7,
-          "text": "Optional einige Äpfel, Möhren und Wacholderbeeren in den Topf geben.",
+          "text": "Optionally, add some apples, carrots and juniper berries to the pot.",
           "ingredient_ids": [
-            "aepfel",
-            "moehren",
-            "wacholderbeeren"
+            "apples",
+            "carrots",
+            "juniper_berries"
           ],
           "tool_ids": [
-            "topf"
+            "pot"
           ],
           "duration": null,
-          "condition": "optional",
+          "condition": null,
           "source": {
             "status": "read",
             "page": 2,
@@ -623,15 +643,15 @@
         },
         {
           "order": 8,
-          "text": "Den Braten mit den Zutaten langsam garbrötscheln lassen.",
+          "text": "Let the roast braise slowly with the ingredients.",
           "ingredient_ids": [
-            "braten",
-            "aepfel",
-            "moehren",
-            "wacholderbeeren"
+            "roast",
+            "apples",
+            "carrots",
+            "juniper_berries"
           ],
           "tool_ids": [
-            "topf"
+            "pot"
           ],
           "duration": null,
           "condition": null,
@@ -644,15 +664,15 @@
         },
         {
           "order": 9,
-          "text": "Für die Soße den Bratenfond mit Mehl anschwitzen, mit Essigwasser und Rotwein auffüllen, gequollene Korinthen und Rosinen hinzugeben und so viel Zucker, dass die Soße süßsauer schmeckt.",
+          "text": "For the sauce, sweat the pan juices with flour, add vinegar water and red wine, then add the soaked currants and raisins and enough sugar for a sour-sweet taste.",
           "ingredient_ids": [
-            "bratenfond",
-            "mehl",
-            "essigwasser",
-            "rotwein",
-            "korinthen",
-            "rosinen",
-            "zucker"
+            "pan_juices",
+            "flour",
+            "vinegar_water",
+            "red_wine",
+            "currants",
+            "raisins",
+            "sugar"
           ],
           "tool_ids": [],
           "duration": null,
@@ -666,9 +686,9 @@
         },
         {
           "order": 10,
-          "text": "Den Braten, falls noch nicht geschnitten, eine Stunde vor dem Anrichten in die Soße legen, damit er deren Geschmack annimmt.",
+          "text": "If the roast is not yet sliced, put it into the sauce one hour before serving so it takes on its flavour.",
           "ingredient_ids": [
-            "braten"
+            "roast"
           ],
           "tool_ids": [],
           "duration": {
@@ -676,7 +696,7 @@
             "min_minutes": 60.0,
             "max_minutes": 60.0
           },
-          "condition": "if the roast is not yet cut",
+          "condition": "Braten noch nicht geschnitten",
           "source": {
             "status": "read",
             "page": 2,
@@ -687,27 +707,31 @@
       ],
       "warnings": [
         {
-          "message": "The type of meat and its amount are not stated; the roast quantity is absent.",
+          "message": "The type of meat is not named; only 'festen Bratenstücke' is given.",
           "target_id": null
         },
         {
-          "message": "No amounts are given for pepper, cloves, salt, bay leaves, bacon, butter, flour, red wine, currants, raisins; quantities left absent.",
+          "message": "Servings are not stated; the value 4 is an estimate from the marinade volume.",
           "target_id": null
         },
         {
-          "message": "Servings are not stated and cannot be reliably estimated from the text.",
+          "message": "No amounts are given for most ingredients (flour, red wine, currants, raisins, butter, bacon, spices).",
           "target_id": null
         },
         {
-          "message": "The text was read by vision; old spelling such as 'garbrötscheln', 'Anbraten' and 'läßt' should be checked against the scan.",
+          "message": "The text uses old spelling and the archaic verb 'garbrötscheln'; check the transcription.",
           "target_id": null
         },
         {
-          "message": "Apples, carrots and juniper berries are marked optional from 'kann man'; amounts are only 'einige'.",
+          "message": "The title Sauerbraten comes from the page header, not the running text.",
           "target_id": null
         },
         {
-          "message": "The step about adding the pan-juice sauce mentions 'dass' where the source reads 'daß'; check transcription.",
+          "message": "The frying pan is implied, not named in the text.",
+          "target_id": null
+        },
+        {
+          "message": "Marinade times: 'nach dem 1. Tag oder 2. Tag' and 'nach 8 Tagen' were taken as stated; the 8-day duration is recorded as 11520 minutes.",
           "target_id": null
         }
       ]
@@ -715,9 +739,9 @@
     "usage": [
       {
         "model": "claude-haiku-5-5",
-        "input_tokens": 4450,
-        "output_tokens": 9127,
-        "seconds": 32.83169380000004,
+        "input_tokens": 4481,
+        "output_tokens": 8009,
+        "seconds": 29.396934500000043,
         "cached": true
       }
     ],
@@ -729,17 +753,38 @@
       "title": "Sauerbraten",
       "language": "de",
       "servings": {
-        "value": null,
+        "value": 4,
         "source": {
-          "status": "missing",
+          "status": "inferred",
           "page": null,
           "quote": null,
-          "note": "the document does not say"
+          "note": "No serving count is stated. Estimated from about 1 l of marinade and a roast of solid cut."
         }
       },
       "ingredients": [
         {
-          "id": "essig",
+          "id": "roast",
+          "name": "roast meat",
+          "name_original": "festen Bratenstücke",
+          "quantity": {
+            "kind": "absent",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "die festen Bratenstücke",
+            "note": null
+          }
+        },
+        {
+          "id": "vinegar",
           "name": "vinegar",
           "name_original": "Essig",
           "quantity": {
@@ -760,7 +805,7 @@
           }
         },
         {
-          "id": "wasser",
+          "id": "water",
           "name": "water",
           "name_original": "Wasser",
           "quantity": {
@@ -781,7 +826,7 @@
           }
         },
         {
-          "id": "zwiebeln",
+          "id": "onions",
           "name": "onions",
           "name_original": "Zwiebeln",
           "quantity": {
@@ -791,7 +836,7 @@
             "unit": null,
             "raw": "4"
           },
-          "preparation": "in Scheiben geschnitten",
+          "preparation": "sliced",
           "optional": false,
           "is_intermediate": false,
           "source": {
@@ -802,7 +847,7 @@
           }
         },
         {
-          "id": "pfeffer",
+          "id": "black_pepper",
           "name": "pepper",
           "name_original": "Pfeffer",
           "quantity": {
@@ -823,7 +868,7 @@
           }
         },
         {
-          "id": "nelken",
+          "id": "cloves",
           "name": "cloves",
           "name_original": "Nelken",
           "quantity": {
@@ -844,7 +889,7 @@
           }
         },
         {
-          "id": "salz",
+          "id": "salt",
           "name": "salt",
           "name_original": "Salz",
           "quantity": {
@@ -865,7 +910,7 @@
           }
         },
         {
-          "id": "lorbeerblaetter",
+          "id": "bay_leaves",
           "name": "bay leaves",
           "name_original": "Lorbeerblätter",
           "quantity": {
@@ -886,28 +931,7 @@
           }
         },
         {
-          "id": "braten",
-          "name": "roast",
-          "name_original": "Braten",
-          "quantity": {
-            "kind": "absent",
-            "value": null,
-            "max_value": null,
-            "unit": null,
-            "raw": ""
-          },
-          "preparation": "fest, Bratenstück",
-          "optional": false,
-          "is_intermediate": false,
-          "source": {
-            "status": "read",
-            "page": 1,
-            "quote": "die festen Bratenstücke",
-            "note": null
-          }
-        },
-        {
-          "id": "essigwasser",
+          "id": "vinegar_water",
           "name": "vinegar water",
           "name_original": "Essigwasser",
           "quantity": {
@@ -923,12 +947,12 @@
           "source": {
             "status": "read",
             "page": 2,
-            "quote": "das Essigwasser heiß darüber",
-            "note": "The boiled marinade made from the vinegar and water."
+            "quote": "gießt man das Essigwasser heiß darüber",
+            "note": null
           }
         },
         {
-          "id": "speck",
+          "id": "bacon",
           "name": "bacon",
           "name_original": "Speck",
           "quantity": {
@@ -938,7 +962,7 @@
             "unit": null,
             "raw": ""
           },
-          "preparation": "auslassen",
+          "preparation": "rendered",
           "optional": false,
           "is_intermediate": false,
           "source": {
@@ -970,7 +994,7 @@
           }
         },
         {
-          "id": "aepfel",
+          "id": "apples",
           "name": "apples",
           "name_original": "Äpfel",
           "quantity": {
@@ -991,15 +1015,15 @@
           }
         },
         {
-          "id": "moehren",
+          "id": "carrots",
           "name": "carrots",
           "name_original": "Möhren",
           "quantity": {
-            "kind": "vague",
+            "kind": "absent",
             "value": null,
             "max_value": null,
             "unit": null,
-            "raw": "einige"
+            "raw": ""
           },
           "preparation": null,
           "optional": true,
@@ -1007,20 +1031,20 @@
           "source": {
             "status": "read",
             "page": 2,
-            "quote": "einige Äpfel, Möhren und Wacholderbeeren",
+            "quote": "Möhren und Wacholderbeeren",
             "note": null
           }
         },
         {
-          "id": "wacholderbeeren",
+          "id": "juniper_berries",
           "name": "juniper berries",
           "name_original": "Wacholderbeeren",
           "quantity": {
-            "kind": "vague",
+            "kind": "absent",
             "value": null,
             "max_value": null,
             "unit": null,
-            "raw": "einige"
+            "raw": ""
           },
           "preparation": null,
           "optional": true,
@@ -1028,12 +1052,12 @@
           "source": {
             "status": "read",
             "page": 2,
-            "quote": "einige Äpfel, Möhren und Wacholderbeeren",
+            "quote": "Wacholderbeeren in den Topf geben",
             "note": null
           }
         },
         {
-          "id": "bratenfond",
+          "id": "pan_juices",
           "name": "pan juices",
           "name_original": "Bratenfond",
           "quantity": {
@@ -1050,11 +1074,11 @@
             "status": "read",
             "page": 2,
             "quote": "den Bratenfond mit Mehl an",
-            "note": "Juices from searing the roast."
+            "note": null
           }
         },
         {
-          "id": "mehl",
+          "id": "flour",
           "name": "flour",
           "name_original": "Mehl",
           "quantity": {
@@ -1075,7 +1099,7 @@
           }
         },
         {
-          "id": "rotwein",
+          "id": "red_wine",
           "name": "red wine",
           "name_original": "Rotwein",
           "quantity": {
@@ -1091,12 +1115,12 @@
           "source": {
             "status": "read",
             "page": 2,
-            "quote": "Essigwasser und Rotwein",
+            "quote": "Essigwasser und Rotwein auf",
             "note": null
           }
         },
         {
-          "id": "korinthen",
+          "id": "currants",
           "name": "currants",
           "name_original": "Korinthen",
           "quantity": {
@@ -1106,18 +1130,18 @@
             "unit": null,
             "raw": ""
           },
-          "preparation": "gequollen",
+          "preparation": "soaked",
           "optional": false,
           "is_intermediate": false,
           "source": {
             "status": "read",
             "page": 2,
-            "quote": "gequollene Korinthen u. Rosinen",
+            "quote": "gequollene Korinthen",
             "note": null
           }
         },
         {
-          "id": "rosinen",
+          "id": "raisins",
           "name": "raisins",
           "name_original": "Rosinen",
           "quantity": {
@@ -1127,18 +1151,18 @@
             "unit": null,
             "raw": ""
           },
-          "preparation": "gequollen",
+          "preparation": null,
           "optional": false,
           "is_intermediate": false,
           "source": {
             "status": "read",
             "page": 2,
-            "quote": "Korinthen u. Rosinen",
+            "quote": "u. Rosinen hinzu",
             "note": null
           }
         },
         {
-          "id": "zucker",
+          "id": "sugar",
           "name": "sugar",
           "name_original": "Zucker",
           "quantity": {
@@ -1161,13 +1185,23 @@
       ],
       "tools": [
         {
-          "id": "topf",
+          "id": "pot",
           "name": "pot",
           "source": {
             "status": "read",
             "page": 2,
             "quote": "in den Topf geben",
             "note": null
+          }
+        },
+        {
+          "id": "pan",
+          "name": "frying pan",
+          "source": {
+            "status": "inferred",
+            "page": 2,
+            "quote": "ins heiße Fett",
+            "note": "Implied by the frying step (Anbraten) in which the roast is seared in hot fat; no pan is named."
           }
         }
       ],
@@ -1176,7 +1210,7 @@
           "order": 1,
           "text": "Hierzu eignen sich am besten die festen Bratenstücke.",
           "ingredient_ids": [
-            "braten"
+            "roast"
           ],
           "tool_ids": [],
           "duration": null,
@@ -1190,17 +1224,19 @@
         },
         {
           "order": 2,
-          "text": "Zum Einlegen Essig, Wasser, Zwiebeln, Pfeffer, Nelken, Salz und Lorbeerblätter aufkochen.",
+          "text": "Zum Einlegen Essig, Wasser, in Scheiben geschnittene Zwiebeln, Pfeffer, Nelken, Salz und Lorbeerblätter kochen.",
           "ingredient_ids": [
-            "essig",
-            "wasser",
-            "zwiebeln",
-            "pfeffer",
-            "nelken",
-            "salz",
-            "lorbeerblaetter"
+            "vinegar",
+            "water",
+            "onions",
+            "black_pepper",
+            "cloves",
+            "salt",
+            "bay_leaves"
           ],
-          "tool_ids": [],
+          "tool_ids": [
+            "pot"
+          ],
           "duration": null,
           "condition": null,
           "source": {
@@ -1212,14 +1248,14 @@
         },
         {
           "order": 3,
-          "text": "Wird der Braten am 1. oder 2. Tag gebraucht, das Essigwasser heiß darübergießen.",
+          "text": "If the roast is to be used on the 1st or 2nd day, pour the hot vinegar water over it.",
           "ingredient_ids": [
-            "essigwasser",
-            "braten"
+            "vinegar_water",
+            "roast"
           ],
           "tool_ids": [],
           "duration": null,
-          "condition": "if the roast is used on day 1 or day 2",
+          "condition": "Braten am 1. oder 2. Tag gebraucht",
           "source": {
             "status": "read",
             "page": 2,
@@ -1229,14 +1265,18 @@
         },
         {
           "order": 4,
-          "text": "Soll der Braten erst nach 8 Tagen zubereitet werden, das Essigwasser kalt darauf gießen.",
+          "text": "If the roast is to be prepared only after 8 days, pour the cold vinegar water over it.",
           "ingredient_ids": [
-            "essigwasser",
-            "braten"
+            "vinegar_water",
+            "roast"
           ],
           "tool_ids": [],
-          "duration": null,
-          "condition": "if the roast is prepared only after 8 days",
+          "duration": {
+            "raw": "8 Tage",
+            "min_minutes": 11520.0,
+            "max_minutes": 11520.0
+          },
+          "condition": "Braten erst nach 8 Tagen zubereitet",
           "source": {
             "status": "read",
             "page": 2,
@@ -1246,13 +1286,15 @@
         },
         {
           "order": 5,
-          "text": "Zum Anbraten den Speck auslassen, Butter dazugeben und den abgetrockneten Braten ins heiße Fett geben.",
+          "text": "For frying, render the bacon, add butter, then put the dried roast into the hot fat.",
           "ingredient_ids": [
-            "speck",
+            "bacon",
             "butter",
-            "braten"
+            "roast"
           ],
-          "tool_ids": [],
+          "tool_ids": [
+            "pan"
+          ],
           "duration": null,
           "condition": null,
           "source": {
@@ -1264,14 +1306,16 @@
         },
         {
           "order": 6,
-          "text": "Wenn der Braten von allen Seiten knusprig angebraten ist, etwas Essigwasser hinzugießen.",
+          "text": "When the roast is crispy browned on all sides, add some of the vinegar water.",
           "ingredient_ids": [
-            "braten",
-            "essigwasser"
+            "roast",
+            "vinegar_water"
           ],
-          "tool_ids": [],
+          "tool_ids": [
+            "pan"
+          ],
           "duration": null,
-          "condition": "when the roast is browned crisply on all sides",
+          "condition": "Wenn er von allen Seiten knusprig angebraten ist",
           "source": {
             "status": "read",
             "page": 2,
@@ -1281,17 +1325,17 @@
         },
         {
           "order": 7,
-          "text": "Optional einige Äpfel, Möhren und Wacholderbeeren in den Topf geben.",
+          "text": "Optionally, add some apples, carrots and juniper berries to the pot.",
           "ingredient_ids": [
-            "aepfel",
-            "moehren",
-            "wacholderbeeren"
+            "apples",
+            "carrots",
+            "juniper_berries"
           ],
           "tool_ids": [
-            "topf"
+            "pot"
           ],
           "duration": null,
-          "condition": "optional",
+          "condition": null,
           "source": {
             "status": "read",
             "page": 2,
@@ -1301,15 +1345,15 @@
         },
         {
           "order": 8,
-          "text": "Den Braten mit den Zutaten langsam garbrötscheln lassen.",
+          "text": "Let the roast braise slowly with the ingredients.",
           "ingredient_ids": [
-            "braten",
-            "aepfel",
-            "moehren",
-            "wacholderbeeren"
+            "roast",
+            "apples",
+            "carrots",
+            "juniper_berries"
           ],
           "tool_ids": [
-            "topf"
+            "pot"
           ],
           "duration": null,
           "condition": null,
@@ -1322,15 +1366,15 @@
         },
         {
           "order": 9,
-          "text": "Für die Soße den Bratenfond mit Mehl anschwitzen, mit Essigwasser und Rotwein auffüllen, gequollene Korinthen und Rosinen hinzugeben und so viel Zucker, dass die Soße süßsauer schmeckt.",
+          "text": "For the sauce, sweat the pan juices with flour, add vinegar water and red wine, then add the soaked currants and raisins and enough sugar for a sour-sweet taste.",
           "ingredient_ids": [
-            "bratenfond",
-            "mehl",
-            "essigwasser",
-            "rotwein",
-            "korinthen",
-            "rosinen",
-            "zucker"
+            "pan_juices",
+            "flour",
+            "vinegar_water",
+            "red_wine",
+            "currants",
+            "raisins",
+            "sugar"
           ],
           "tool_ids": [],
           "duration": null,
@@ -1344,9 +1388,9 @@
         },
         {
           "order": 10,
-          "text": "Den Braten, falls noch nicht geschnitten, eine Stunde vor dem Anrichten in die Soße legen, damit er deren Geschmack annimmt.",
+          "text": "If the roast is not yet sliced, put it into the sauce one hour before serving so it takes on its flavour.",
           "ingredient_ids": [
-            "braten"
+            "roast"
           ],
           "tool_ids": [],
           "duration": {
@@ -1354,7 +1398,7 @@
             "min_minutes": 60.0,
             "max_minutes": 60.0
           },
-          "condition": "if the roast is not yet cut",
+          "condition": "Braten noch nicht geschnitten",
           "source": {
             "status": "read",
             "page": 2,
@@ -1365,27 +1409,31 @@
       ],
       "warnings": [
         {
-          "message": "The type of meat and its amount are not stated; the roast quantity is absent.",
+          "message": "The type of meat is not named; only 'festen Bratenstücke' is given.",
           "target_id": null
         },
         {
-          "message": "No amounts are given for pepper, cloves, salt, bay leaves, bacon, butter, flour, red wine, currants, raisins; quantities left absent.",
+          "message": "Servings are not stated; the value 4 is an estimate from the marinade volume.",
           "target_id": null
         },
         {
-          "message": "Servings are not stated and cannot be reliably estimated from the text.",
+          "message": "No amounts are given for most ingredients (flour, red wine, currants, raisins, butter, bacon, spices).",
           "target_id": null
         },
         {
-          "message": "The text was read by vision; old spelling such as 'garbrötscheln', 'Anbraten' and 'läßt' should be checked against the scan.",
+          "message": "The text uses old spelling and the archaic verb 'garbrötscheln'; check the transcription.",
           "target_id": null
         },
         {
-          "message": "Apples, carrots and juniper berries are marked optional from 'kann man'; amounts are only 'einige'.",
+          "message": "The title Sauerbraten comes from the page header, not the running text.",
           "target_id": null
         },
         {
-          "message": "The step about adding the pan-juice sauce mentions 'dass' where the source reads 'daß'; check transcription.",
+          "message": "The frying pan is implied, not named in the text.",
+          "target_id": null
+        },
+        {
+          "message": "Marinade times: 'nach dem 1. Tag oder 2. Tag' and 'nach 8 Tagen' were taken as stated; the 8-day duration is recorded as 11520 minutes.",
           "target_id": null
         }
       ]
@@ -1399,159 +1447,12 @@
           "status": "rule",
           "page": null,
           "quote": null,
-          "note": "scaled from 4 servings (assumed by the user: 4)"
+          "note": "scaled from 4 servings (inferred, not stated: No serving count is stated. Estimated from about 1 l of marinade and a roast of solid cut.)"
         }
       },
       "ingredients": [
         {
-          "id": "essig",
-          "name": "vinegar",
-          "name_original": "Essig",
-          "quantity": {
-            "kind": "exact",
-            "value": 0.75,
-            "max_value": null,
-            "unit": "l",
-            "raw": "1/2 l"
-          },
-          "preparation": null,
-          "optional": false,
-          "is_intermediate": false,
-          "source": {
-            "status": "read",
-            "page": 1,
-            "quote": "1/2 l Essig",
-            "note": null
-          }
-        },
-        {
-          "id": "wasser",
-          "name": "water",
-          "name_original": "Wasser",
-          "quantity": {
-            "kind": "exact",
-            "value": 0.75,
-            "max_value": null,
-            "unit": "l",
-            "raw": "1/2 l"
-          },
-          "preparation": null,
-          "optional": false,
-          "is_intermediate": false,
-          "source": {
-            "status": "read",
-            "page": 1,
-            "quote": "1/2 l Wasser",
-            "note": null
-          }
-        },
-        {
-          "id": "zwiebeln",
-          "name": "onions",
-          "name_original": "Zwiebeln",
-          "quantity": {
-            "kind": "exact",
-            "value": 6.0,
-            "max_value": null,
-            "unit": null,
-            "raw": "4"
-          },
-          "preparation": "in Scheiben geschnitten",
-          "optional": false,
-          "is_intermediate": false,
-          "source": {
-            "status": "read",
-            "page": 1,
-            "quote": "4 in Scheiben geschnittene Zwiebeln",
-            "note": null
-          }
-        },
-        {
-          "id": "pfeffer",
-          "name": "pepper",
-          "name_original": "Pfeffer",
-          "quantity": {
-            "kind": "absent",
-            "value": null,
-            "max_value": null,
-            "unit": null,
-            "raw": ""
-          },
-          "preparation": null,
-          "optional": false,
-          "is_intermediate": false,
-          "source": {
-            "status": "read",
-            "page": 1,
-            "quote": "Pfeffer",
-            "note": null
-          }
-        },
-        {
-          "id": "nelken",
-          "name": "cloves",
-          "name_original": "Nelken",
-          "quantity": {
-            "kind": "absent",
-            "value": null,
-            "max_value": null,
-            "unit": null,
-            "raw": ""
-          },
-          "preparation": null,
-          "optional": false,
-          "is_intermediate": false,
-          "source": {
-            "status": "read",
-            "page": 1,
-            "quote": "Nelken",
-            "note": null
-          }
-        },
-        {
-          "id": "salz",
-          "name": "salt",
-          "name_original": "Salz",
-          "quantity": {
-            "kind": "absent",
-            "value": null,
-            "max_value": null,
-            "unit": null,
-            "raw": ""
-          },
-          "preparation": null,
-          "optional": false,
-          "is_intermediate": false,
-          "source": {
-            "status": "read",
-            "page": 1,
-            "quote": "Salz",
-            "note": null
-          }
-        },
-        {
-          "id": "lorbeerblaetter",
-          "name": "bay leaves",
-          "name_original": "Lorbeerblätter",
-          "quantity": {
-            "kind": "absent",
-            "value": null,
-            "max_value": null,
-            "unit": null,
-            "raw": ""
-          },
-          "preparation": null,
-          "optional": false,
-          "is_intermediate": false,
-          "source": {
-            "status": "read",
-            "page": 1,
-            "quote": "Lorbeerblätter",
-            "note": null
-          }
-        },
-        {
-          "id": "vegan_braten",
+          "id": "vegan_roast",
           "name": "seitan roast (or a whole celeriac)",
           "name_original": "seitan roast (or a whole celeriac)",
           "quantity": {
@@ -1568,11 +1469,158 @@
             "status": "rule",
             "page": 1,
             "quote": "die festen Bratenstücke",
-            "note": "vegan substitute for 'Braten': The meat is the main ingredient. Seitan holds together in a long braise and takes up the marinade; a whole celeriac is a soy- and gluten-free alternative."
+            "note": "vegan substitute for 'festen Bratenstücke': The meat is the main ingredient. Seitan holds together in a long braise and takes up the marinade; a whole celeriac is a soy- and gluten-free alternative."
           }
         },
         {
-          "id": "essigwasser",
+          "id": "vinegar",
+          "name": "vinegar",
+          "name_original": "Essig",
+          "quantity": {
+            "kind": "exact",
+            "value": 0.75,
+            "max_value": null,
+            "unit": "l",
+            "raw": "1/2 l"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "1/2 l Essig",
+            "note": null
+          }
+        },
+        {
+          "id": "water",
+          "name": "water",
+          "name_original": "Wasser",
+          "quantity": {
+            "kind": "exact",
+            "value": 0.75,
+            "max_value": null,
+            "unit": "l",
+            "raw": "1/2 l"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "1/2 l Wasser",
+            "note": null
+          }
+        },
+        {
+          "id": "onions",
+          "name": "onions",
+          "name_original": "Zwiebeln",
+          "quantity": {
+            "kind": "exact",
+            "value": 6.0,
+            "max_value": null,
+            "unit": null,
+            "raw": "4"
+          },
+          "preparation": "sliced",
+          "optional": false,
+          "is_intermediate": false,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "4 in Scheiben geschnittene Zwiebeln",
+            "note": null
+          }
+        },
+        {
+          "id": "black_pepper",
+          "name": "pepper",
+          "name_original": "Pfeffer",
+          "quantity": {
+            "kind": "absent",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Pfeffer",
+            "note": null
+          }
+        },
+        {
+          "id": "cloves",
+          "name": "cloves",
+          "name_original": "Nelken",
+          "quantity": {
+            "kind": "absent",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Nelken",
+            "note": null
+          }
+        },
+        {
+          "id": "salt",
+          "name": "salt",
+          "name_original": "Salz",
+          "quantity": {
+            "kind": "absent",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Salz",
+            "note": null
+          }
+        },
+        {
+          "id": "bay_leaves",
+          "name": "bay leaves",
+          "name_original": "Lorbeerblätter",
+          "quantity": {
+            "kind": "absent",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Lorbeerblätter",
+            "note": null
+          }
+        },
+        {
+          "id": "vinegar_water",
           "name": "vinegar water",
           "name_original": "Essigwasser",
           "quantity": {
@@ -1588,12 +1636,12 @@
           "source": {
             "status": "read",
             "page": 2,
-            "quote": "das Essigwasser heiß darüber",
-            "note": "The boiled marinade made from the vinegar and water."
+            "quote": "gießt man das Essigwasser heiß darüber",
+            "note": null
           }
         },
         {
-          "id": "vegan_speck",
+          "id": "vegan_bacon",
           "name": "smoked tofu, diced",
           "name_original": "smoked tofu, diced",
           "quantity": {
@@ -1635,7 +1683,7 @@
           }
         },
         {
-          "id": "aepfel",
+          "id": "apples",
           "name": "apples",
           "name_original": "Äpfel",
           "quantity": {
@@ -1656,15 +1704,15 @@
           }
         },
         {
-          "id": "moehren",
+          "id": "carrots",
           "name": "carrots",
           "name_original": "Möhren",
           "quantity": {
-            "kind": "vague",
+            "kind": "absent",
             "value": null,
             "max_value": null,
             "unit": null,
-            "raw": "einige"
+            "raw": ""
           },
           "preparation": null,
           "optional": true,
@@ -1672,20 +1720,20 @@
           "source": {
             "status": "read",
             "page": 2,
-            "quote": "einige Äpfel, Möhren und Wacholderbeeren",
+            "quote": "Möhren und Wacholderbeeren",
             "note": null
           }
         },
         {
-          "id": "wacholderbeeren",
+          "id": "juniper_berries",
           "name": "juniper berries",
           "name_original": "Wacholderbeeren",
           "quantity": {
-            "kind": "vague",
+            "kind": "absent",
             "value": null,
             "max_value": null,
             "unit": null,
-            "raw": "einige"
+            "raw": ""
           },
           "preparation": null,
           "optional": true,
@@ -1693,12 +1741,12 @@
           "source": {
             "status": "read",
             "page": 2,
-            "quote": "einige Äpfel, Möhren und Wacholderbeeren",
+            "quote": "Wacholderbeeren in den Topf geben",
             "note": null
           }
         },
         {
-          "id": "vegan_bratenfond",
+          "id": "vegan_pan_juices",
           "name": "vegetable stock with the pan juices of the vegan roast",
           "name_original": "vegetable stock with the pan juices of the vegan roast",
           "quantity": {
@@ -1719,7 +1767,7 @@
           }
         },
         {
-          "id": "mehl",
+          "id": "flour",
           "name": "flour",
           "name_original": "Mehl",
           "quantity": {
@@ -1740,7 +1788,7 @@
           }
         },
         {
-          "id": "rotwein",
+          "id": "red_wine",
           "name": "red wine",
           "name_original": "Rotwein",
           "quantity": {
@@ -1756,12 +1804,12 @@
           "source": {
             "status": "read",
             "page": 2,
-            "quote": "Essigwasser und Rotwein",
+            "quote": "Essigwasser und Rotwein auf",
             "note": null
           }
         },
         {
-          "id": "korinthen",
+          "id": "currants",
           "name": "currants",
           "name_original": "Korinthen",
           "quantity": {
@@ -1771,18 +1819,18 @@
             "unit": null,
             "raw": ""
           },
-          "preparation": "gequollen",
+          "preparation": "soaked",
           "optional": false,
           "is_intermediate": false,
           "source": {
             "status": "read",
             "page": 2,
-            "quote": "gequollene Korinthen u. Rosinen",
+            "quote": "gequollene Korinthen",
             "note": null
           }
         },
         {
-          "id": "rosinen",
+          "id": "raisins",
           "name": "raisins",
           "name_original": "Rosinen",
           "quantity": {
@@ -1792,18 +1840,18 @@
             "unit": null,
             "raw": ""
           },
-          "preparation": "gequollen",
+          "preparation": null,
           "optional": false,
           "is_intermediate": false,
           "source": {
             "status": "read",
             "page": 2,
-            "quote": "Korinthen u. Rosinen",
+            "quote": "u. Rosinen hinzu",
             "note": null
           }
         },
         {
-          "id": "zucker",
+          "id": "sugar",
           "name": "sugar",
           "name_original": "Zucker",
           "quantity": {
@@ -1826,7 +1874,7 @@
       ],
       "tools": [
         {
-          "id": "topf",
+          "id": "pot",
           "name": "pot",
           "source": {
             "status": "read",
@@ -1834,14 +1882,24 @@
             "quote": "in den Topf geben",
             "note": null
           }
+        },
+        {
+          "id": "pan",
+          "name": "frying pan",
+          "source": {
+            "status": "inferred",
+            "page": 2,
+            "quote": "ins heiße Fett",
+            "note": "Implied by the frying step (Anbraten) in which the roast is seared in hot fat; no pan is named."
+          }
         }
       ],
       "steps": [
         {
           "order": 1,
-          "text": "Hierzu eignen sich am besten die festen Bratenstücke.\n[Vegan: use seitan roast (or a whole celeriac) instead of Braten. Marinate seitan for 1–2 days at most; a week in an acidic marinade makes it soft. Braise 45–60 minutes instead of hours.]",
+          "text": "Hierzu eignen sich am besten die festen Bratenstücke.\n[Vegan: use seitan roast (or a whole celeriac) instead of festen Bratenstücke. Marinate seitan for 1–2 days at most; a week in an acidic marinade makes it soft. Braise 45–60 minutes instead of hours.]",
           "ingredient_ids": [
-            "vegan_braten"
+            "vegan_roast"
           ],
           "tool_ids": [],
           "duration": null,
@@ -1855,17 +1913,19 @@
         },
         {
           "order": 2,
-          "text": "Zum Einlegen Essig, Wasser, Zwiebeln, Pfeffer, Nelken, Salz und Lorbeerblätter aufkochen.",
+          "text": "Zum Einlegen Essig, Wasser, in Scheiben geschnittene Zwiebeln, Pfeffer, Nelken, Salz und Lorbeerblätter kochen.",
           "ingredient_ids": [
-            "essig",
-            "wasser",
-            "zwiebeln",
-            "pfeffer",
-            "nelken",
-            "salz",
-            "lorbeerblaetter"
+            "vinegar",
+            "water",
+            "onions",
+            "black_pepper",
+            "cloves",
+            "salt",
+            "bay_leaves"
           ],
-          "tool_ids": [],
+          "tool_ids": [
+            "pot"
+          ],
           "duration": null,
           "condition": null,
           "source": {
@@ -1877,14 +1937,14 @@
         },
         {
           "order": 3,
-          "text": "Wird der Braten am 1. oder 2. Tag gebraucht, das Essigwasser heiß darübergießen.\n[Vegan: use seitan roast (or a whole celeriac) instead of Braten. Marinate seitan for 1–2 days at most; a week in an acidic marinade makes it soft. Braise 45–60 minutes instead of hours.]",
+          "text": "If the roast is to be used on the 1st or 2nd day, pour the hot vinegar water over it.\n[Vegan: use seitan roast (or a whole celeriac) instead of festen Bratenstücke. Marinate seitan for 1–2 days at most; a week in an acidic marinade makes it soft. Braise 45–60 minutes instead of hours.]",
           "ingredient_ids": [
-            "essigwasser",
-            "vegan_braten"
+            "vinegar_water",
+            "vegan_roast"
           ],
           "tool_ids": [],
           "duration": null,
-          "condition": "if the roast is used on day 1 or day 2",
+          "condition": "Braten am 1. oder 2. Tag gebraucht",
           "source": {
             "status": "read",
             "page": 2,
@@ -1894,14 +1954,18 @@
         },
         {
           "order": 4,
-          "text": "Soll der Braten erst nach 8 Tagen zubereitet werden, das Essigwasser kalt darauf gießen.\n[Vegan: use seitan roast (or a whole celeriac) instead of Braten. Marinate seitan for 1–2 days at most; a week in an acidic marinade makes it soft. Braise 45–60 minutes instead of hours.]",
+          "text": "If the roast is to be prepared only after 8 days, pour the cold vinegar water over it.\n[Vegan: use seitan roast (or a whole celeriac) instead of festen Bratenstücke. Marinate seitan for 1–2 days at most; a week in an acidic marinade makes it soft. Braise 45–60 minutes instead of hours.]",
           "ingredient_ids": [
-            "essigwasser",
-            "vegan_braten"
+            "vinegar_water",
+            "vegan_roast"
           ],
           "tool_ids": [],
-          "duration": null,
-          "condition": "if the roast is prepared only after 8 days",
+          "duration": {
+            "raw": "8 Tage",
+            "min_minutes": 11520.0,
+            "max_minutes": 11520.0
+          },
+          "condition": "Braten erst nach 8 Tagen zubereitet",
           "source": {
             "status": "read",
             "page": 2,
@@ -1911,13 +1975,15 @@
         },
         {
           "order": 5,
-          "text": "Zum Anbraten den Speck auslassen, Butter dazugeben und den abgetrockneten Braten ins heiße Fett geben.\n[Vegan: use seitan roast (or a whole celeriac) instead of Braten; use smoked tofu, diced instead of Speck; use vegan butter instead of Butter. Marinate seitan for 1–2 days at most; a week in an acidic marinade makes it soft. Braise 45–60 minutes instead of hours.]",
+          "text": "For frying, render the bacon, add butter, then put the dried roast into the hot fat.\n[Vegan: use seitan roast (or a whole celeriac) instead of festen Bratenstücke; use smoked tofu, diced instead of Speck; use vegan butter instead of Butter. Marinate seitan for 1–2 days at most; a week in an acidic marinade makes it soft. Braise 45–60 minutes instead of hours.]",
           "ingredient_ids": [
-            "vegan_speck",
+            "vegan_bacon",
             "vegan_butter",
-            "vegan_braten"
+            "vegan_roast"
           ],
-          "tool_ids": [],
+          "tool_ids": [
+            "pan"
+          ],
           "duration": null,
           "condition": null,
           "source": {
@@ -1929,14 +1995,16 @@
         },
         {
           "order": 6,
-          "text": "Wenn der Braten von allen Seiten knusprig angebraten ist, etwas Essigwasser hinzugießen.\n[Vegan: use seitan roast (or a whole celeriac) instead of Braten. Marinate seitan for 1–2 days at most; a week in an acidic marinade makes it soft. Braise 45–60 minutes instead of hours.]",
+          "text": "When the roast is crispy browned on all sides, add some of the vinegar water.\n[Vegan: use seitan roast (or a whole celeriac) instead of festen Bratenstücke. Marinate seitan for 1–2 days at most; a week in an acidic marinade makes it soft. Braise 45–60 minutes instead of hours.]",
           "ingredient_ids": [
-            "vegan_braten",
-            "essigwasser"
+            "vegan_roast",
+            "vinegar_water"
           ],
-          "tool_ids": [],
+          "tool_ids": [
+            "pan"
+          ],
           "duration": null,
-          "condition": "when the roast is browned crisply on all sides",
+          "condition": "Wenn er von allen Seiten knusprig angebraten ist",
           "source": {
             "status": "read",
             "page": 2,
@@ -1946,17 +2014,17 @@
         },
         {
           "order": 7,
-          "text": "Optional einige Äpfel, Möhren und Wacholderbeeren in den Topf geben.",
+          "text": "Optionally, add some apples, carrots and juniper berries to the pot.",
           "ingredient_ids": [
-            "aepfel",
-            "moehren",
-            "wacholderbeeren"
+            "apples",
+            "carrots",
+            "juniper_berries"
           ],
           "tool_ids": [
-            "topf"
+            "pot"
           ],
           "duration": null,
-          "condition": "optional",
+          "condition": null,
           "source": {
             "status": "read",
             "page": 2,
@@ -1966,15 +2034,15 @@
         },
         {
           "order": 8,
-          "text": "Den Braten mit den Zutaten langsam garbrötscheln lassen.\n[Vegan: use seitan roast (or a whole celeriac) instead of Braten. Marinate seitan for 1–2 days at most; a week in an acidic marinade makes it soft. Braise 45–60 minutes instead of hours.]",
+          "text": "Let the roast braise slowly with the ingredients.\n[Vegan: use seitan roast (or a whole celeriac) instead of festen Bratenstücke. Marinate seitan for 1–2 days at most; a week in an acidic marinade makes it soft. Braise 45–60 minutes instead of hours.]",
           "ingredient_ids": [
-            "vegan_braten",
-            "aepfel",
-            "moehren",
-            "wacholderbeeren"
+            "vegan_roast",
+            "apples",
+            "carrots",
+            "juniper_berries"
           ],
           "tool_ids": [
-            "topf"
+            "pot"
           ],
           "duration": null,
           "condition": null,
@@ -1987,15 +2055,15 @@
         },
         {
           "order": 9,
-          "text": "Für die Soße den Bratenfond mit Mehl anschwitzen, mit Essigwasser und Rotwein auffüllen, gequollene Korinthen und Rosinen hinzugeben und so viel Zucker, dass die Soße süßsauer schmeckt.\n[Vegan: use vegetable stock with the pan juices of the vegan roast instead of Bratenfond.]",
+          "text": "For the sauce, sweat the pan juices with flour, add vinegar water and red wine, then add the soaked currants and raisins and enough sugar for a sour-sweet taste.\n[Vegan: use vegetable stock with the pan juices of the vegan roast instead of Bratenfond.]",
           "ingredient_ids": [
-            "vegan_bratenfond",
-            "mehl",
-            "essigwasser",
-            "rotwein",
-            "korinthen",
-            "rosinen",
-            "zucker"
+            "vegan_pan_juices",
+            "flour",
+            "vinegar_water",
+            "red_wine",
+            "currants",
+            "raisins",
+            "sugar"
           ],
           "tool_ids": [],
           "duration": null,
@@ -2009,9 +2077,9 @@
         },
         {
           "order": 10,
-          "text": "Den Braten, falls noch nicht geschnitten, eine Stunde vor dem Anrichten in die Soße legen, damit er deren Geschmack annimmt.\n[Vegan: use seitan roast (or a whole celeriac) instead of Braten. Marinate seitan for 1–2 days at most; a week in an acidic marinade makes it soft. Braise 45–60 minutes instead of hours.]",
+          "text": "If the roast is not yet sliced, put it into the sauce one hour before serving so it takes on its flavour.\n[Vegan: use seitan roast (or a whole celeriac) instead of festen Bratenstücke. Marinate seitan for 1–2 days at most; a week in an acidic marinade makes it soft. Braise 45–60 minutes instead of hours.]",
           "ingredient_ids": [
-            "vegan_braten"
+            "vegan_roast"
           ],
           "tool_ids": [],
           "duration": {
@@ -2019,7 +2087,7 @@
             "min_minutes": 60.0,
             "max_minutes": 60.0
           },
-          "condition": "if the roast is not yet cut",
+          "condition": "Braten noch nicht geschnitten",
           "source": {
             "status": "read",
             "page": 2,
@@ -2030,50 +2098,54 @@
       ],
       "warnings": [
         {
-          "message": "The type of meat and its amount are not stated; the roast quantity is absent.",
+          "message": "The type of meat is not named; only 'festen Bratenstücke' is given.",
           "target_id": null
         },
         {
-          "message": "No amounts are given for pepper, cloves, salt, bay leaves, bacon, butter, flour, red wine, currants, raisins; quantities left absent.",
+          "message": "Servings are not stated; the value 4 is an estimate from the marinade volume.",
           "target_id": null
         },
         {
-          "message": "Servings are not stated and cannot be reliably estimated from the text.",
+          "message": "No amounts are given for most ingredients (flour, red wine, currants, raisins, butter, bacon, spices).",
           "target_id": null
         },
         {
-          "message": "The text was read by vision; old spelling such as 'garbrötscheln', 'Anbraten' and 'läßt' should be checked against the scan.",
+          "message": "The text uses old spelling and the archaic verb 'garbrötscheln'; check the transcription.",
           "target_id": null
         },
         {
-          "message": "Apples, carrots and juniper berries are marked optional from 'kann man'; amounts are only 'einige'.",
+          "message": "The title Sauerbraten comes from the page header, not the running text.",
           "target_id": null
         },
         {
-          "message": "The step about adding the pan-juice sauce mentions 'dass' where the source reads 'daß'; check transcription.",
+          "message": "The frying pan is implied, not named in the text.",
+          "target_id": null
+        },
+        {
+          "message": "Marinade times: 'nach dem 1. Tag oder 2. Tag' and 'nach 8 Tagen' were taken as stated; the 8-day duration is recorded as 11520 minutes.",
           "target_id": null
         },
         {
           "message": "Vegan check, Rotwein: Some wines are clarified with egg white, gelatin or isinglass. Choose one labelled vegan.",
-          "target_id": "rotwein"
+          "target_id": "red_wine"
         },
         {
           "message": "Vegan check, Zucker: Some cane sugar is filtered through bone char. Beet sugar and sugar labelled vegan are safe.",
-          "target_id": "zucker"
+          "target_id": "sugar"
         }
       ]
     },
     "changes": [
       {
         "rule": "vegan",
-        "target": "braten",
-        "before": "Braten",
+        "target": "roast",
+        "before": "festen Bratenstücke",
         "after": "seitan roast (or a whole celeriac)",
         "reason": "The meat is the main ingredient. Seitan holds together in a long braise and takes up the marinade; a whole celeriac is a soy- and gluten-free alternative."
       },
       {
         "rule": "vegan",
-        "target": "speck",
+        "target": "bacon",
         "before": "Speck",
         "after": "smoked tofu, diced",
         "reason": "Cured pork; smoked tofu brings the smoky, salty note."
@@ -2087,7 +2159,7 @@
       },
       {
         "rule": "vegan",
-        "target": "bratenfond",
+        "target": "pan_juices",
         "before": "Bratenfond",
         "after": "vegetable stock with the pan juices of the vegan roast",
         "reason": "There are no meat juices in a vegan version; stock plus the juices of the browned substitute takes their place."
@@ -2095,42 +2167,42 @@
       {
         "rule": "vegan",
         "target": "step 1",
-        "before": "Braten",
+        "before": "festen Bratenstücke",
         "after": "seitan roast (or a whole celeriac)",
         "reason": "Substitution carried into the method. Marinate seitan for 1–2 days at most; a week in an acidic marinade makes it soft. Braise 45–60 minutes instead of hours."
       },
       {
         "rule": "vegan",
         "target": "step 3",
-        "before": "Braten",
+        "before": "festen Bratenstücke",
         "after": "seitan roast (or a whole celeriac)",
         "reason": "Substitution carried into the method. Marinate seitan for 1–2 days at most; a week in an acidic marinade makes it soft. Braise 45–60 minutes instead of hours."
       },
       {
         "rule": "vegan",
         "target": "step 4",
-        "before": "Braten",
+        "before": "festen Bratenstücke",
         "after": "seitan roast (or a whole celeriac)",
         "reason": "Substitution carried into the method. Marinate seitan for 1–2 days at most; a week in an acidic marinade makes it soft. Braise 45–60 minutes instead of hours."
       },
       {
         "rule": "vegan",
         "target": "step 5",
-        "before": "Braten, Speck, Butter",
+        "before": "festen Bratenstücke, Speck, Butter",
         "after": "seitan roast (or a whole celeriac), smoked tofu, diced, vegan butter",
         "reason": "Substitution carried into the method. Marinate seitan for 1–2 days at most; a week in an acidic marinade makes it soft. Braise 45–60 minutes instead of hours."
       },
       {
         "rule": "vegan",
         "target": "step 6",
-        "before": "Braten",
+        "before": "festen Bratenstücke",
         "after": "seitan roast (or a whole celeriac)",
         "reason": "Substitution carried into the method. Marinate seitan for 1–2 days at most; a week in an acidic marinade makes it soft. Braise 45–60 minutes instead of hours."
       },
       {
         "rule": "vegan",
         "target": "step 8",
-        "before": "Braten",
+        "before": "festen Bratenstücke",
         "after": "seitan roast (or a whole celeriac)",
         "reason": "Substitution carried into the method. Marinate seitan for 1–2 days at most; a week in an acidic marinade makes it soft. Braise 45–60 minutes instead of hours."
       },
@@ -2144,20 +2216,20 @@
       {
         "rule": "vegan",
         "target": "step 10",
-        "before": "Braten",
+        "before": "festen Bratenstücke",
         "after": "seitan roast (or a whole celeriac)",
         "reason": "Substitution carried into the method. Marinate seitan for 1–2 days at most; a week in an acidic marinade makes it soft. Braise 45–60 minutes instead of hours."
       },
       {
         "rule": "vegan",
-        "target": "rotwein",
+        "target": "red_wine",
         "before": "Rotwein",
         "after": "unchanged, check the label",
         "reason": "Some wines are clarified with egg white, gelatin or isinglass. Choose one labelled vegan."
       },
       {
         "rule": "vegan",
-        "target": "zucker",
+        "target": "sugar",
         "before": "Zucker",
         "after": "unchanged, check the label",
         "reason": "Some cane sugar is filtered through bone char. Beet sugar and sugar labelled vegan are safe."
@@ -2167,25 +2239,25 @@
         "target": "servings",
         "before": "4",
         "after": "6",
-        "reason": "Requested 6 servings; the original serves 4 (assumed by the user: 4)."
+        "reason": "Requested 6 servings; the original serves 4 (inferred, not stated: No serving count is stated. Estimated from about 1 l of marinade and a roast of solid cut.)."
       },
       {
         "rule": "scale",
-        "target": "essig",
+        "target": "vinegar",
         "before": "½ l Essig",
         "after": "¾ l Essig",
         "reason": "×1 ½"
       },
       {
         "rule": "scale",
-        "target": "wasser",
+        "target": "water",
         "before": "½ l Wasser",
         "after": "¾ l Wasser",
         "reason": "×1 ½"
       },
       {
         "rule": "scale",
-        "target": "zwiebeln",
+        "target": "onions",
         "before": "4 Zwiebeln",
         "after": "6 Zwiebeln",
         "reason": "×1 ½"
@@ -2193,7 +2265,7 @@
       {
         "rule": "scale",
         "target": "amounts not given",
-        "before": "Pfeffer, Nelken, Salz, Lorbeerblätter, seitan roast (or a whole celeriac), Essigwasser, smoked tofu, diced, vegan butter, Äpfel, Möhren, Wacholderbeeren, vegetable stock with the pan juices of the vegan roast, Mehl, Rotwein, Korinthen, Rosinen, Zucker",
+        "before": "seitan roast (or a whole celeriac), Pfeffer, Nelken, Salz, Lorbeerblätter, Essigwasser, smoked tofu, diced, vegan butter, Äpfel, Möhren, Wacholderbeeren, vegetable stock with the pan juices of the vegan roast, Mehl, Rotwein, Korinthen, Rosinen, Zucker",
         "after": "unchanged",
         "reason": "The recipe gives no number for these, so there is nothing to multiply. Adjust by taste."
       },
@@ -2207,7 +2279,7 @@
       {
         "rule": "scale",
         "target": "tools",
-        "before": "pot",
+        "before": "pot, frying pan",
         "after": "check sizes",
         "reason": "Amounts change by ×1 ½; check that pots and pans still fit."
       }
