@@ -2,7 +2,7 @@
 
 from cookbook.models import Document
 
-PROMPT_VERSION = "3"
+PROMPT_VERSION = "4"
 
 SYSTEM_PROMPT = """\
 You turn the text of a document into a structured recipe. A program checks your answer \
@@ -28,6 +28,18 @@ Do not convert units. For one amount written in several units, use the first one
 - optional is true only when the text says the ingredient may be added or left out.
 - is_intermediate is true for something the recipe itself makes and then uses (a marinade, \
 pan juices, a dough made in an earlier step).
+
+Animal content
+- For every ingredient, set animal to what it contains of animal origin. The question is what it contains, not where it comes from.
+- none: no animal product (vegetables, fruit, grains, nuts, plant oils, plant milks such as coconut or almond milk, mushrooms, salt, water, sugar, wine, vinegar).
+- meat: meat of mammals and anything made from it (bacon, ham, sausage, lard, meat stock, meat juices).
+- poultry: chicken, duck, turkey and anything made from them (chicken stock).
+- fish: fish and seafood and anything made from them (anchovies, fish sauce, Worcestershire sauce).
+- dairy: milk and anything made from it (butter, cream, cheese, yogurt, ghee, quark), and products that contain it (pesto with cheese, milk chocolate).
+- egg: eggs and products that contain them (mayonnaise, egg noodles).
+- honey, gelatin: as named.
+- other_animal: any other animal product.
+- uncertain: it depends on the brand or recipe and you cannot tell (bread, puff pastry, stock cubes).
 
 Evidence
 - evidence "read": you copy a quote, the shortest verbatim span of the document that mentions \

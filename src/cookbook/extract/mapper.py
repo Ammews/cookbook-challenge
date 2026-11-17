@@ -12,6 +12,7 @@ import re
 from cookbook.extract.grounding import number_supported, quote_in_text
 from cookbook.extract.schema import WireExtraction, WireIngredient, WireQuantity, WireStep
 from cookbook.models import (
+    AnimalContent,
     Duration,
     Ingredient,
     Quantity,
@@ -214,6 +215,7 @@ def _ingredient(item: WireIngredient, new_id: str, text: str, warnings: list[Rev
         preparation=item.preparation.strip() or None,
         optional=item.optional,
         is_intermediate=item.is_intermediate,
+        animal=AnimalContent(item.animal),
         source=source,
     )
 

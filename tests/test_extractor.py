@@ -22,7 +22,7 @@ def quantity(kind="exact", value=0.0, unit="", raw=""):
 def wire_ingredient(id="onion", quote="4 Zwiebeln", value=4.0, evidence="read", note="", kind="exact"):
     return WireIngredient(
         id=id, name=id, name_original="Zwiebeln", quantity=quantity(kind, value),
-        preparation="", optional=False, is_intermediate=False,
+        preparation="", optional=False, is_intermediate=False, animal="none",
         evidence=evidence, page=1, quote=quote, note=note,
     )
 
@@ -177,7 +177,7 @@ def named(id, name, original, kind="absent", value=0.0, raw="", quote="Zwiebeln"
     return WireIngredient(
         id=id, name=name, name_original=original,
         quantity=WireQuantity(kind=kind, value=value, max_value=0, unit="", raw=raw),
-        preparation="", optional=optional, is_intermediate=False,
+        preparation="", optional=optional, is_intermediate=False, animal="none",
         evidence="read", page=1, quote=quote, note="",
     )
 
@@ -233,3 +233,11 @@ def test_different_ingredients_with_similar_names_are_not_merged():
         steps=[],
     )
     assert len(Extractor(ScriptedModel(answer)).extract(DOCUMENT).recipe.ingredients) == 2
+
+
+def test_animal_content_is_carried_into_the_recipe():
+    from cookbook.models import AnimalContent
+
+    pesto = named("pesto", "pesto", "pesto").model_copy(update={"animal": "dairy"})
+    recipe = Extractor(ScriptedModel(wire([pesto], steps=[]))).extract(DOCUMENT).recipe
+    assert recipe.ingredients[0].animal is AnimalContent.DAIRY

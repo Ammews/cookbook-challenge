@@ -16,6 +16,9 @@ from pydantic import BaseModel, Field
 
 Kind = Literal["exact", "vague", "to_taste", "absent"]
 Evidence = Literal["read", "inferred", "missing"]
+Animal = Literal[
+    "none", "meat", "poultry", "fish", "dairy", "egg", "honey", "gelatin", "other_animal", "uncertain"
+]
 
 
 class WireQuantity(BaseModel):
@@ -39,6 +42,7 @@ class WireIngredient(BaseModel):
     preparation: str = Field(description='e.g. "sliced"; "" if none.')
     optional: bool
     is_intermediate: bool
+    animal: Animal = Field(description="What of animal origin it contains; see the prompt.")
     evidence: Evidence
     page: int = Field(description="Page number, 0 if unknown.")
     quote: str = Field(description="Shortest verbatim span mentioning it; '' if not read.")

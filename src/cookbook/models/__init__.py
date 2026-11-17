@@ -2,7 +2,7 @@
 
 from cookbook.models.change import Change
 from cookbook.models.document import Document, InputKind, LlmUsage, Page, ReadMethod
-from cookbook.models.ingredient import Ingredient
+from cookbook.models.ingredient import AnimalContent, Ingredient
 from cookbook.models.quantity import Quantity, QuantityKind
 from cookbook.models.recipe import Recipe, ReviewWarning, Servings
 from cookbook.models.source import Source, SourceStatus
@@ -10,6 +10,7 @@ from cookbook.models.step import Duration, Step
 from cookbook.models.tool import Tool
 
 __all__ = [
+    "AnimalContent",
     "Change",
     "Document",
     "Duration",
