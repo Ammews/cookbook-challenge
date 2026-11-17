@@ -29,13 +29,15 @@ expect:
     - match: [fermento]
       quantity: {accept: [{value: 3, unit: [colher, colheres, colher de chá, colheres de chá, teaspoon, tsp]}]}
     - match: [cenoura]
+      exclude: [creme]
       quantity: {accept: [{value: 2}]}
+      note: '"creme de cenoura" (carrots blended with milk) is a legitimate intermediate, not a duplicate.'
     - match: [leite]
       quantity: {accept: [{value: 1, unit: [xícara, xícaras, xícara de chá, cup]}]}
   absent_ingredients: [cravo, erva-doce, achocolatado, margarina, oatbran, limão, manteiga, chocolate, sal]
-  ingredient_count: {min: 7, max: 7}
+  ingredient_count: {min: 7, max: 8}
   tools:
-    - match: [batedeira]
-    - match: [forma, fôrma]
-    - match: [forno]
+    - match: [batedeira, mixer]
+    - match: [forma, fôrma, pan, tin]
+    - match: [forno, oven]
   step_count: {min: 3, max: 6}

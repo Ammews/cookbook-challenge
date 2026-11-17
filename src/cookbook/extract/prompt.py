@@ -2,7 +2,7 @@
 
 from cookbook.models import Document
 
-PROMPT_VERSION = "2"
+PROMPT_VERSION = "3"
 
 SYSTEM_PROMPT = """\
 You turn the text of a document into a structured recipe. A program checks your answer \
@@ -41,6 +41,7 @@ reasoning in note. Use "missing" only if nothing in the recipe allows an estimat
 in warnings.
 
 Tools
+- Appliances count as tools: an oven the text says to preheat, a blender, a mixer.
 - stated true only if the text names the tool. Add implied tools (a knife to slice, a bowl to mix) \
 with stated false and note naming the step that needs them.
 
