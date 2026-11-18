@@ -1,0 +1,973 @@
+{
+  "document": {
+    "name": "pdf-en-stag-waffles.pdf",
+    "kind": "pdf",
+    "pages": [
+      {
+        "number": 1,
+        "text": "THE STAG COOK BOOK\nIV\nWarren G. Harding\nWAFFLES\n2 eggs\n2\ntablespoons sugar\n2\ntablespoons butter\ni\nteaspoon\nsalt\n1\npint milk\nflour to make thin batter\n2\nlarge teaspoons of baking powder\nBeat yolks of eggs, add sugar and\nsalt, melt butter, add\nmilk and flour; last just before ready to bake add beaten\nwhites of eggs and baking powder.\nBake on hot waffle iron.\nEditor's Note:—There\nis a great deal of argument about\nthe proper dressing for waffles.\nVarious gravies are used by\none\nschool of\nwaffle\neaters\n;\nwhile\nhoney, maple\nsyrup, and\nvarious\nspecially\nflavored\nsugar\npowders\nare\npreferred\nby\nanother.\nPresident\nHarding\nis\na\nstaunch\nupholder\nof\nthe\ngravy\nschool and\nlikes\nhis\nin the form of creamed chipped\nbeef.\n[36]",
+        "method": "pdf_text_layer",
+        "decoration_text": [],
+        "uncertain": [],
+        "usage": null
+      }
+    ]
+  },
+  "extraction": {
+    "is_recipe": true,
+    "recipes_in_document": 1,
+    "recipe": {
+      "title": "Waffles",
+      "language": "en",
+      "servings": {
+        "value": 4,
+        "source": {
+          "status": "inferred",
+          "page": 1,
+          "quote": null,
+          "note": "Estimated from 2 eggs, 1 pint of milk and enough flour for a thin batter; the text does not state a yield."
+        }
+      },
+      "ingredients": [
+        {
+          "id": "eggs",
+          "name": "eggs",
+          "name_original": "eggs",
+          "quantity": {
+            "kind": "exact",
+            "value": 2.0,
+            "max_value": null,
+            "unit": null,
+            "raw": "2"
+          },
+          "preparation": "separated",
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "egg",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "2 eggs",
+            "note": null
+          }
+        },
+        {
+          "id": "sugar",
+          "name": "sugar",
+          "name_original": "sugar",
+          "quantity": {
+            "kind": "exact",
+            "value": 2.0,
+            "max_value": null,
+            "unit": "tablespoons",
+            "raw": "2 tablespoons"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "2 tablespoons sugar",
+            "note": null
+          }
+        },
+        {
+          "id": "butter",
+          "name": "butter",
+          "name_original": "butter",
+          "quantity": {
+            "kind": "exact",
+            "value": 2.0,
+            "max_value": null,
+            "unit": "tablespoons",
+            "raw": "2 tablespoons"
+          },
+          "preparation": "melted",
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "dairy",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "2 tablespoons butter",
+            "note": null
+          }
+        },
+        {
+          "id": "salt",
+          "name": "salt",
+          "name_original": "salt",
+          "quantity": {
+            "kind": "vague",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": "i teaspoon"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "i teaspoon salt",
+            "note": null
+          }
+        },
+        {
+          "id": "milk",
+          "name": "milk",
+          "name_original": "milk",
+          "quantity": {
+            "kind": "exact",
+            "value": 1.0,
+            "max_value": null,
+            "unit": "pint",
+            "raw": "1 pint"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "dairy",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "1 pint milk",
+            "note": null
+          }
+        },
+        {
+          "id": "flour",
+          "name": "flour",
+          "name_original": "flour",
+          "quantity": {
+            "kind": "vague",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": "to make thin batter"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "flour to make thin batter",
+            "note": null
+          }
+        },
+        {
+          "id": "baking_powder",
+          "name": "baking powder",
+          "name_original": "baking powder",
+          "quantity": {
+            "kind": "exact",
+            "value": 2.0,
+            "max_value": null,
+            "unit": "large teaspoons",
+            "raw": "2 large teaspoons"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "2 large teaspoons of baking powder",
+            "note": null
+          }
+        }
+      ],
+      "tools": [
+        {
+          "id": "waffle_iron",
+          "name": "waffle iron",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Bake on hot waffle iron.",
+            "note": null
+          }
+        },
+        {
+          "id": "bowl",
+          "name": "mixing bowl",
+          "source": {
+            "status": "inferred",
+            "page": 1,
+            "quote": null,
+            "note": "Implied by the step that beats the egg yolks and whites and mixes the batter."
+          }
+        }
+      ],
+      "steps": [
+        {
+          "order": 1,
+          "text": "Beat yolks of eggs, add sugar and salt.",
+          "ingredient_ids": [
+            "eggs",
+            "sugar",
+            "salt"
+          ],
+          "tool_ids": [
+            "bowl"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Beat yolks of eggs, add sugar and salt,",
+            "note": null
+          }
+        },
+        {
+          "order": 2,
+          "text": "Melt butter, add milk and flour.",
+          "ingredient_ids": [
+            "butter",
+            "milk",
+            "flour"
+          ],
+          "tool_ids": [
+            "bowl"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "melt butter, add milk and flour;",
+            "note": null
+          }
+        },
+        {
+          "order": 3,
+          "text": "Just before ready to bake, add beaten whites of eggs and baking powder.",
+          "ingredient_ids": [
+            "eggs",
+            "baking_powder"
+          ],
+          "tool_ids": [
+            "bowl"
+          ],
+          "duration": null,
+          "condition": "just before ready to bake",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "last just before ready to bake add beaten whites of eggs and baking powder.",
+            "note": null
+          }
+        },
+        {
+          "order": 4,
+          "text": "Bake on hot waffle iron.",
+          "ingredient_ids": [
+            "baking_powder"
+          ],
+          "tool_ids": [
+            "waffle_iron"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Bake on hot waffle iron.",
+            "note": null
+          }
+        }
+      ],
+      "warnings": [
+        {
+          "message": "The salt amount is printed as 'i teaspoon', which is probably an OCR form of 1 teaspoon; the number is not in the text, so it is recorded as vague with no value. Please check the transcription.",
+          "target_id": null
+        },
+        {
+          "message": "The flour has no numeric amount; it is only described by the batter consistency.",
+          "target_id": null
+        },
+        {
+          "message": "The servings count is inferred, not stated.",
+          "target_id": null
+        },
+        {
+          "message": "The editor's note about gravies, honey and syrup dressings is not part of the recipe and was ignored.",
+          "target_id": null
+        },
+        {
+          "message": "The step 'Bake on hot waffle iron' links to baking powder only because it is the last ingredient added; the text does not name an ingredient for baking.",
+          "target_id": null
+        }
+      ]
+    },
+    "usage": [
+      {
+        "model": "claude-haiku-5-5",
+        "input_tokens": 4666,
+        "output_tokens": 3779,
+        "seconds": 14.908646800000497,
+        "cached": false
+      },
+      {
+        "model": "claude-haiku-5-5",
+        "input_tokens": 6643,
+        "output_tokens": 2578,
+        "seconds": 9.45405480000045,
+        "cached": false
+      }
+    ],
+    "problems_found": [
+      "ingredient 'salt': amount [1.0] does not appear in its quote 'i teaspoon salt'"
+    ],
+    "problems_left": []
+  },
+  "manipulation": {
+    "original": {
+      "title": "Waffles",
+      "language": "en",
+      "servings": {
+        "value": 4,
+        "source": {
+          "status": "inferred",
+          "page": 1,
+          "quote": null,
+          "note": "Estimated from 2 eggs, 1 pint of milk and enough flour for a thin batter; the text does not state a yield."
+        }
+      },
+      "ingredients": [
+        {
+          "id": "eggs",
+          "name": "eggs",
+          "name_original": "eggs",
+          "quantity": {
+            "kind": "exact",
+            "value": 2.0,
+            "max_value": null,
+            "unit": null,
+            "raw": "2"
+          },
+          "preparation": "separated",
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "egg",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "2 eggs",
+            "note": null
+          }
+        },
+        {
+          "id": "sugar",
+          "name": "sugar",
+          "name_original": "sugar",
+          "quantity": {
+            "kind": "exact",
+            "value": 2.0,
+            "max_value": null,
+            "unit": "tablespoons",
+            "raw": "2 tablespoons"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "2 tablespoons sugar",
+            "note": null
+          }
+        },
+        {
+          "id": "butter",
+          "name": "butter",
+          "name_original": "butter",
+          "quantity": {
+            "kind": "exact",
+            "value": 2.0,
+            "max_value": null,
+            "unit": "tablespoons",
+            "raw": "2 tablespoons"
+          },
+          "preparation": "melted",
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "dairy",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "2 tablespoons butter",
+            "note": null
+          }
+        },
+        {
+          "id": "salt",
+          "name": "salt",
+          "name_original": "salt",
+          "quantity": {
+            "kind": "vague",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": "i teaspoon"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "i teaspoon salt",
+            "note": null
+          }
+        },
+        {
+          "id": "milk",
+          "name": "milk",
+          "name_original": "milk",
+          "quantity": {
+            "kind": "exact",
+            "value": 1.0,
+            "max_value": null,
+            "unit": "pint",
+            "raw": "1 pint"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "dairy",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "1 pint milk",
+            "note": null
+          }
+        },
+        {
+          "id": "flour",
+          "name": "flour",
+          "name_original": "flour",
+          "quantity": {
+            "kind": "vague",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": "to make thin batter"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "flour to make thin batter",
+            "note": null
+          }
+        },
+        {
+          "id": "baking_powder",
+          "name": "baking powder",
+          "name_original": "baking powder",
+          "quantity": {
+            "kind": "exact",
+            "value": 2.0,
+            "max_value": null,
+            "unit": "large teaspoons",
+            "raw": "2 large teaspoons"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "2 large teaspoons of baking powder",
+            "note": null
+          }
+        }
+      ],
+      "tools": [
+        {
+          "id": "waffle_iron",
+          "name": "waffle iron",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Bake on hot waffle iron.",
+            "note": null
+          }
+        },
+        {
+          "id": "bowl",
+          "name": "mixing bowl",
+          "source": {
+            "status": "inferred",
+            "page": 1,
+            "quote": null,
+            "note": "Implied by the step that beats the egg yolks and whites and mixes the batter."
+          }
+        }
+      ],
+      "steps": [
+        {
+          "order": 1,
+          "text": "Beat yolks of eggs, add sugar and salt.",
+          "ingredient_ids": [
+            "eggs",
+            "sugar",
+            "salt"
+          ],
+          "tool_ids": [
+            "bowl"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Beat yolks of eggs, add sugar and salt,",
+            "note": null
+          }
+        },
+        {
+          "order": 2,
+          "text": "Melt butter, add milk and flour.",
+          "ingredient_ids": [
+            "butter",
+            "milk",
+            "flour"
+          ],
+          "tool_ids": [
+            "bowl"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "melt butter, add milk and flour;",
+            "note": null
+          }
+        },
+        {
+          "order": 3,
+          "text": "Just before ready to bake, add beaten whites of eggs and baking powder.",
+          "ingredient_ids": [
+            "eggs",
+            "baking_powder"
+          ],
+          "tool_ids": [
+            "bowl"
+          ],
+          "duration": null,
+          "condition": "just before ready to bake",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "last just before ready to bake add beaten whites of eggs and baking powder.",
+            "note": null
+          }
+        },
+        {
+          "order": 4,
+          "text": "Bake on hot waffle iron.",
+          "ingredient_ids": [
+            "baking_powder"
+          ],
+          "tool_ids": [
+            "waffle_iron"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Bake on hot waffle iron.",
+            "note": null
+          }
+        }
+      ],
+      "warnings": [
+        {
+          "message": "The salt amount is printed as 'i teaspoon', which is probably an OCR form of 1 teaspoon; the number is not in the text, so it is recorded as vague with no value. Please check the transcription.",
+          "target_id": null
+        },
+        {
+          "message": "The flour has no numeric amount; it is only described by the batter consistency.",
+          "target_id": null
+        },
+        {
+          "message": "The servings count is inferred, not stated.",
+          "target_id": null
+        },
+        {
+          "message": "The editor's note about gravies, honey and syrup dressings is not part of the recipe and was ignored.",
+          "target_id": null
+        },
+        {
+          "message": "The step 'Bake on hot waffle iron' links to baking powder only because it is the last ingredient added; the text does not name an ingredient for baking.",
+          "target_id": null
+        }
+      ]
+    },
+    "recipe": {
+      "title": "Waffles",
+      "language": "en",
+      "servings": {
+        "value": 4,
+        "source": {
+          "status": "inferred",
+          "page": 1,
+          "quote": null,
+          "note": "Estimated from 2 eggs, 1 pint of milk and enough flour for a thin batter; the text does not state a yield."
+        }
+      },
+      "ingredients": [
+        {
+          "id": "vegan_eggs",
+          "name": "flax egg (1 tbsp ground flaxseed + 3 tbsp water per egg)",
+          "name_original": "flax egg (1 tbsp ground flaxseed + 3 tbsp water per egg)",
+          "quantity": {
+            "kind": "exact",
+            "value": 2.0,
+            "max_value": null,
+            "unit": null,
+            "raw": "2"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "rule",
+            "page": 1,
+            "quote": "2 eggs",
+            "note": "vegan substitute for 'eggs': Eggs that bind a dough or batter; a flax egg does the same."
+          }
+        },
+        {
+          "id": "sugar",
+          "name": "sugar",
+          "name_original": "sugar",
+          "quantity": {
+            "kind": "exact",
+            "value": 2.0,
+            "max_value": null,
+            "unit": "tablespoons",
+            "raw": "2 tablespoons"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "2 tablespoons sugar",
+            "note": null
+          }
+        },
+        {
+          "id": "vegan_butter",
+          "name": "vegan butter",
+          "name_original": "vegan butter",
+          "quantity": {
+            "kind": "exact",
+            "value": 2.0,
+            "max_value": null,
+            "unit": "tablespoons",
+            "raw": "2 tablespoons"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "rule",
+            "page": 1,
+            "quote": "2 tablespoons butter",
+            "note": "vegan substitute for 'butter': Dairy butter; vegan butter behaves the same for frying and baking."
+          }
+        },
+        {
+          "id": "salt",
+          "name": "salt",
+          "name_original": "salt",
+          "quantity": {
+            "kind": "vague",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": "i teaspoon"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "i teaspoon salt",
+            "note": null
+          }
+        },
+        {
+          "id": "vegan_milk",
+          "name": "oat milk",
+          "name_original": "oat milk",
+          "quantity": {
+            "kind": "exact",
+            "value": 1.0,
+            "max_value": null,
+            "unit": "pint",
+            "raw": "1 pint"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "rule",
+            "page": 1,
+            "quote": "1 pint milk",
+            "note": "vegan substitute for 'milk': Dairy milk."
+          }
+        },
+        {
+          "id": "flour",
+          "name": "flour",
+          "name_original": "flour",
+          "quantity": {
+            "kind": "vague",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": "to make thin batter"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "flour to make thin batter",
+            "note": null
+          }
+        },
+        {
+          "id": "baking_powder",
+          "name": "baking powder",
+          "name_original": "baking powder",
+          "quantity": {
+            "kind": "exact",
+            "value": 2.0,
+            "max_value": null,
+            "unit": "large teaspoons",
+            "raw": "2 large teaspoons"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "2 large teaspoons of baking powder",
+            "note": null
+          }
+        }
+      ],
+      "tools": [
+        {
+          "id": "waffle_iron",
+          "name": "waffle iron",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Bake on hot waffle iron.",
+            "note": null
+          }
+        },
+        {
+          "id": "bowl",
+          "name": "mixing bowl",
+          "source": {
+            "status": "inferred",
+            "page": 1,
+            "quote": null,
+            "note": "Implied by the step that beats the egg yolks and whites and mixes the batter."
+          }
+        }
+      ],
+      "steps": [
+        {
+          "order": 1,
+          "text": "Beat yolks of eggs, add sugar and salt.\n[Vegan: use flax egg (1 tbsp ground flaxseed + 3 tbsp water per egg) instead of eggs.]",
+          "ingredient_ids": [
+            "vegan_eggs",
+            "sugar",
+            "salt"
+          ],
+          "tool_ids": [
+            "bowl"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Beat yolks of eggs, add sugar and salt,",
+            "note": null
+          }
+        },
+        {
+          "order": 2,
+          "text": "Melt butter, add milk and flour.\n[Vegan: use vegan butter instead of butter; use oat milk instead of milk.]",
+          "ingredient_ids": [
+            "vegan_butter",
+            "vegan_milk",
+            "flour"
+          ],
+          "tool_ids": [
+            "bowl"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "melt butter, add milk and flour;",
+            "note": null
+          }
+        },
+        {
+          "order": 3,
+          "text": "Just before ready to bake, add beaten whites of eggs and baking powder.\n[Vegan: use flax egg (1 tbsp ground flaxseed + 3 tbsp water per egg) instead of eggs.]",
+          "ingredient_ids": [
+            "vegan_eggs",
+            "baking_powder"
+          ],
+          "tool_ids": [
+            "bowl"
+          ],
+          "duration": null,
+          "condition": "just before ready to bake",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "last just before ready to bake add beaten whites of eggs and baking powder.",
+            "note": null
+          }
+        },
+        {
+          "order": 4,
+          "text": "Bake on hot waffle iron.",
+          "ingredient_ids": [
+            "baking_powder"
+          ],
+          "tool_ids": [
+            "waffle_iron"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Bake on hot waffle iron.",
+            "note": null
+          }
+        }
+      ],
+      "warnings": [
+        {
+          "message": "The salt amount is printed as 'i teaspoon', which is probably an OCR form of 1 teaspoon; the number is not in the text, so it is recorded as vague with no value. Please check the transcription.",
+          "target_id": null
+        },
+        {
+          "message": "The flour has no numeric amount; it is only described by the batter consistency.",
+          "target_id": null
+        },
+        {
+          "message": "The servings count is inferred, not stated.",
+          "target_id": null
+        },
+        {
+          "message": "The editor's note about gravies, honey and syrup dressings is not part of the recipe and was ignored.",
+          "target_id": null
+        },
+        {
+          "message": "The step 'Bake on hot waffle iron' links to baking powder only because it is the last ingredient added; the text does not name an ingredient for baking.",
+          "target_id": null
+        },
+        {
+          "message": "Vegan check, sugar: Some cane sugar is filtered through bone char. Beet sugar and sugar labelled vegan are safe.",
+          "target_id": "sugar"
+        }
+      ]
+    },
+    "changes": [
+      {
+        "rule": "vegan",
+        "target": "eggs",
+        "before": "eggs",
+        "after": "flax egg (1 tbsp ground flaxseed + 3 tbsp water per egg)",
+        "reason": "Eggs that bind a dough or batter; a flax egg does the same."
+      },
+      {
+        "rule": "vegan",
+        "target": "butter",
+        "before": "butter",
+        "after": "vegan butter",
+        "reason": "Dairy butter; vegan butter behaves the same for frying and baking."
+      },
+      {
+        "rule": "vegan",
+        "target": "milk",
+        "before": "milk",
+        "after": "oat milk",
+        "reason": "Dairy milk."
+      },
+      {
+        "rule": "vegan",
+        "target": "step 1",
+        "before": "eggs",
+        "after": "flax egg (1 tbsp ground flaxseed + 3 tbsp water per egg)",
+        "reason": "Substitution carried into the method."
+      },
+      {
+        "rule": "vegan",
+        "target": "step 2",
+        "before": "butter, milk",
+        "after": "vegan butter, oat milk",
+        "reason": "Substitution carried into the method."
+      },
+      {
+        "rule": "vegan",
+        "target": "step 3",
+        "before": "eggs",
+        "after": "flax egg (1 tbsp ground flaxseed + 3 tbsp water per egg)",
+        "reason": "Substitution carried into the method."
+      },
+      {
+        "rule": "vegan",
+        "target": "sugar",
+        "before": "sugar",
+        "after": "unchanged, check the label",
+        "reason": "Some cane sugar is filtered through bone char. Beet sugar and sugar labelled vegan are safe."
+      }
+    ]
+  }
+}

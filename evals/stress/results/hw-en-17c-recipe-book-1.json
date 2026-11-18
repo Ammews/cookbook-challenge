@@ -1,0 +1,511 @@
+{
+  "document": {
+    "name": "hw-en-17c-recipe-book-1.jpg",
+    "kind": "image",
+    "pages": [
+      {
+        "number": 1,
+        "text": "For a scald Head.\n\nTake pison & Eanse seeth them together, make a plaister herof shaut of the haire and apply it somewhat hott.\n\nTo make Breath sweet\n\nTake the powder of Sage, of winter Savoric, of Cloves & mace nutmegg all powders a litle musk steeped in juice of Lemons & white wine, drink of this compound a spoonfull or two morning & night.\n\nA water to cleare hands & face\n\nTake a quart of fair water, a pint of white wine, the juice of 4. Lemons, put therin Beanblossems, white lilly Blossoms, Elder blossomes, of each one handfull, put to it 4 whole Daizy roots 4 marsh mallow roots, 2. or 3. Branches of wild tansy as much flumitorie, the weight of 2d in camphire, put all these in an earthen pott, sett it in warm Ashes all night, in the morning strain it through a peice of white cotton, put it in a narrow mouthed glasse, sett it in the heat of the sun 3 or 4 dayes, if there bee any pimples or freckles in the face take a quantitie of water in the glasse & steep the white dung of an hen in it one night, then strane it through a cloth, wash your face w th this morning & night, if your hands, adde three or 4 bruised Almonds this is a most excellint water, prob.\n\nA powder for teeth\n\nTake the powder of Sage, the shavings of Ivory put y m among the juice of Lemons, night & morn, rubb your teeth herwith, it will make them both white & sweet.\n\nTo kill Quicksilver\n\nPutt it into a glass viol, put fasting spittle to it, stopp the viol with wax then shake it till it look like Ashes.\n\nFor a sore throat\n\nTake 3 d of quicksilver, put it in a wooden dish & kill it with w th fasting spitle then take 4 th of oyle of Bayes, put to it the juice of Sage leaves, so grind all well together & putt it in a gally pott to keep it all the yeare, annoint y crown of the head & y nape of the neck, lay a very little at once, so do it when you goe to bed, keep you warm, thrice dressing with care, prob.\n\nAnother\n\nQuicker pills & Iron cares 1 d Boyle them in a quart of posset ale till y 3 d part bee consumed, let em remain in y drink, take 8 spoonfulls night & morning.\n\nAnother\n\nMr Briscoe Take a great Onion, cutt of y topp, fill it with Luce honey, roast it w th y topp on, when rosted, take & bind it to the nape of y neck this will cure.\n\nFor a Quinsy\n\nTake Alburgracu, beat it to powder, put to it a pint of strong Ale & honey to sweeten it, then strain it, put Nutmeg to give it a taste if it",
+        "method": "vision",
+        "decoration_text": [
+          "4",
+          "Ven: Stanley",
+          "Mr Briscoe"
+        ],
+        "uncertain": [
+          "pison",
+          "Eanse",
+          "Savoric",
+          "Beanblossems",
+          "Alburgracu",
+          "Quicker",
+          "Luce",
+          "flumitorie",
+          "Lemons",
+          "Quicksilver"
+        ],
+        "usage": {
+          "model": "claude-haiku-5-5",
+          "input_tokens": 3617,
+          "output_tokens": 1086,
+          "seconds": 5.355737299998509,
+          "cached": false
+        }
+      }
+    ]
+  },
+  "extraction": {
+    "is_recipe": true,
+    "recipes_in_document": 9,
+    "recipe": {
+      "title": "For a scald Head",
+      "language": "en",
+      "servings": {
+        "value": null,
+        "source": {
+          "status": "missing",
+          "page": null,
+          "quote": null,
+          "note": "the document does not say"
+        }
+      },
+      "ingredients": [
+        {
+          "id": "pison",
+          "name": "pison (unclear, possibly pitch)",
+          "name_original": "pison",
+          "quantity": {
+            "kind": "absent",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Take pison & Eanse seeth them together",
+            "note": "Transcription unsure about this word; identity inferred as a substance to be boiled."
+          }
+        },
+        {
+          "id": "eanse",
+          "name": "Eanse (unclear)",
+          "name_original": "Eanse",
+          "quantity": {
+            "kind": "absent",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Take pison & Eanse seeth them together",
+            "note": "Transcription unsure about this word; identity not determined."
+          }
+        }
+      ],
+      "tools": [
+        {
+          "id": "pot",
+          "name": "pot",
+          "source": {
+            "status": "inferred",
+            "page": 1,
+            "quote": "seeth them together",
+            "note": "Implied by the boiling step; no vessel is named."
+          }
+        }
+      ],
+      "steps": [
+        {
+          "order": 1,
+          "text": "Take pison and Eanse and seeth them together.",
+          "ingredient_ids": [
+            "pison",
+            "eanse"
+          ],
+          "tool_ids": [
+            "pot"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Take pison & Eanse seeth them together",
+            "note": null
+          }
+        },
+        {
+          "order": 2,
+          "text": "Make a plaister of them, shaved of the hair.",
+          "ingredient_ids": [
+            "pison",
+            "eanse"
+          ],
+          "tool_ids": [],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "make a plaister herof shaut of the haire",
+            "note": null
+          }
+        },
+        {
+          "order": 3,
+          "text": "Apply it somewhat hot to the head.",
+          "ingredient_ids": [
+            "pison",
+            "eanse"
+          ],
+          "tool_ids": [],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "apply it somewhat hott",
+            "note": null
+          }
+        }
+      ],
+      "warnings": [
+        {
+          "message": "This is a 17th-century remedy, not a cooking recipe; no amounts, servings or times are given.",
+          "target_id": null
+        },
+        {
+          "message": "The page holds about nine remedies; only the first, 'For a scald Head', was extracted, and the others were skipped (Breath sweet, water to clear hands and face, powder for teeth, kill quicksilver, sore throat, two 'Another' remedies, and quinsy).",
+          "target_id": null
+        },
+        {
+          "message": "Transcription unsure about 'pison' and 'Eanse'; the ingredients are not identified.",
+          "target_id": null
+        },
+        {
+          "message": "'shaut of the haire' is probably a transcription of 'shaved off the hair', so the step wording is a guess.",
+          "target_id": null
+        },
+        {
+          "message": "Servings missing; no quantities given.",
+          "target_id": null
+        },
+        {
+          "message": "The pot is implied by the boiling step and not named in the text.",
+          "target_id": null
+        }
+      ]
+    },
+    "usage": [
+      {
+        "model": "claude-haiku-5-5",
+        "input_tokens": 5369,
+        "output_tokens": 2544,
+        "seconds": 11.772394199999326,
+        "cached": false
+      }
+    ],
+    "problems_found": [],
+    "problems_left": []
+  },
+  "manipulation": {
+    "original": {
+      "title": "For a scald Head",
+      "language": "en",
+      "servings": {
+        "value": null,
+        "source": {
+          "status": "missing",
+          "page": null,
+          "quote": null,
+          "note": "the document does not say"
+        }
+      },
+      "ingredients": [
+        {
+          "id": "pison",
+          "name": "pison (unclear, possibly pitch)",
+          "name_original": "pison",
+          "quantity": {
+            "kind": "absent",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Take pison & Eanse seeth them together",
+            "note": "Transcription unsure about this word; identity inferred as a substance to be boiled."
+          }
+        },
+        {
+          "id": "eanse",
+          "name": "Eanse (unclear)",
+          "name_original": "Eanse",
+          "quantity": {
+            "kind": "absent",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Take pison & Eanse seeth them together",
+            "note": "Transcription unsure about this word; identity not determined."
+          }
+        }
+      ],
+      "tools": [
+        {
+          "id": "pot",
+          "name": "pot",
+          "source": {
+            "status": "inferred",
+            "page": 1,
+            "quote": "seeth them together",
+            "note": "Implied by the boiling step; no vessel is named."
+          }
+        }
+      ],
+      "steps": [
+        {
+          "order": 1,
+          "text": "Take pison and Eanse and seeth them together.",
+          "ingredient_ids": [
+            "pison",
+            "eanse"
+          ],
+          "tool_ids": [
+            "pot"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Take pison & Eanse seeth them together",
+            "note": null
+          }
+        },
+        {
+          "order": 2,
+          "text": "Make a plaister of them, shaved of the hair.",
+          "ingredient_ids": [
+            "pison",
+            "eanse"
+          ],
+          "tool_ids": [],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "make a plaister herof shaut of the haire",
+            "note": null
+          }
+        },
+        {
+          "order": 3,
+          "text": "Apply it somewhat hot to the head.",
+          "ingredient_ids": [
+            "pison",
+            "eanse"
+          ],
+          "tool_ids": [],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "apply it somewhat hott",
+            "note": null
+          }
+        }
+      ],
+      "warnings": [
+        {
+          "message": "This is a 17th-century remedy, not a cooking recipe; no amounts, servings or times are given.",
+          "target_id": null
+        },
+        {
+          "message": "The page holds about nine remedies; only the first, 'For a scald Head', was extracted, and the others were skipped (Breath sweet, water to clear hands and face, powder for teeth, kill quicksilver, sore throat, two 'Another' remedies, and quinsy).",
+          "target_id": null
+        },
+        {
+          "message": "Transcription unsure about 'pison' and 'Eanse'; the ingredients are not identified.",
+          "target_id": null
+        },
+        {
+          "message": "'shaut of the haire' is probably a transcription of 'shaved off the hair', so the step wording is a guess.",
+          "target_id": null
+        },
+        {
+          "message": "Servings missing; no quantities given.",
+          "target_id": null
+        },
+        {
+          "message": "The pot is implied by the boiling step and not named in the text.",
+          "target_id": null
+        }
+      ]
+    },
+    "recipe": {
+      "title": "For a scald Head",
+      "language": "en",
+      "servings": {
+        "value": null,
+        "source": {
+          "status": "missing",
+          "page": null,
+          "quote": null,
+          "note": "the document does not say"
+        }
+      },
+      "ingredients": [
+        {
+          "id": "pison",
+          "name": "pison (unclear, possibly pitch)",
+          "name_original": "pison",
+          "quantity": {
+            "kind": "absent",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Take pison & Eanse seeth them together",
+            "note": "Transcription unsure about this word; identity inferred as a substance to be boiled."
+          }
+        },
+        {
+          "id": "eanse",
+          "name": "Eanse (unclear)",
+          "name_original": "Eanse",
+          "quantity": {
+            "kind": "absent",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Take pison & Eanse seeth them together",
+            "note": "Transcription unsure about this word; identity not determined."
+          }
+        }
+      ],
+      "tools": [
+        {
+          "id": "pot",
+          "name": "pot",
+          "source": {
+            "status": "inferred",
+            "page": 1,
+            "quote": "seeth them together",
+            "note": "Implied by the boiling step; no vessel is named."
+          }
+        }
+      ],
+      "steps": [
+        {
+          "order": 1,
+          "text": "Take pison and Eanse and seeth them together.",
+          "ingredient_ids": [
+            "pison",
+            "eanse"
+          ],
+          "tool_ids": [
+            "pot"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Take pison & Eanse seeth them together",
+            "note": null
+          }
+        },
+        {
+          "order": 2,
+          "text": "Make a plaister of them, shaved of the hair.",
+          "ingredient_ids": [
+            "pison",
+            "eanse"
+          ],
+          "tool_ids": [],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "make a plaister herof shaut of the haire",
+            "note": null
+          }
+        },
+        {
+          "order": 3,
+          "text": "Apply it somewhat hot to the head.",
+          "ingredient_ids": [
+            "pison",
+            "eanse"
+          ],
+          "tool_ids": [],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "apply it somewhat hott",
+            "note": null
+          }
+        }
+      ],
+      "warnings": [
+        {
+          "message": "This is a 17th-century remedy, not a cooking recipe; no amounts, servings or times are given.",
+          "target_id": null
+        },
+        {
+          "message": "The page holds about nine remedies; only the first, 'For a scald Head', was extracted, and the others were skipped (Breath sweet, water to clear hands and face, powder for teeth, kill quicksilver, sore throat, two 'Another' remedies, and quinsy).",
+          "target_id": null
+        },
+        {
+          "message": "Transcription unsure about 'pison' and 'Eanse'; the ingredients are not identified.",
+          "target_id": null
+        },
+        {
+          "message": "'shaut of the haire' is probably a transcription of 'shaved off the hair', so the step wording is a guess.",
+          "target_id": null
+        },
+        {
+          "message": "Servings missing; no quantities given.",
+          "target_id": null
+        },
+        {
+          "message": "The pot is implied by the boiling step and not named in the text.",
+          "target_id": null
+        }
+      ]
+    },
+    "changes": []
+  }
+}

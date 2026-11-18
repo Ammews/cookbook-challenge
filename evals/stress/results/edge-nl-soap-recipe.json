@@ -1,0 +1,699 @@
+{
+  "document": {
+    "name": "edge-nl-soap-recipe.jpg",
+    "kind": "image",
+    "pages": [
+      {
+        "number": 1,
+        "text": "Neem 3 k. lijnolie [?], dit gewoon kind [?] warm maken. Laat 1 pond Cassonda [?] op in en 1/2 k. water en door dit goed door de 3 k. warme olie. Laat het geheel 3 dagen staan. Dit is om de hoeveelheid er uit te laten trekken. Daarna in groote emmer met bijvolging van 10 k. water en 3 uur tegen de kook houden. Dit levert ongv. 25 [?] pond zeep.",
+        "method": "vision",
+        "decoration_text": [],
+        "uncertain": [
+          "lijnolie",
+          "kind",
+          "Cassonda",
+          "25"
+        ],
+        "usage": {
+          "model": "claude-haiku-5-5",
+          "input_tokens": 4523,
+          "output_tokens": 1233,
+          "seconds": 6.671342999999979,
+          "cached": false
+        }
+      }
+    ]
+  },
+  "extraction": {
+    "is_recipe": true,
+    "recipes_in_document": 1,
+    "recipe": {
+      "title": "Zeep (soap recipe)",
+      "language": "nl",
+      "servings": {
+        "value": null,
+        "source": {
+          "status": "missing",
+          "page": null,
+          "quote": null,
+          "note": "The text gives a yield of about 25 pounds of soap, not a number of servings."
+        }
+      },
+      "ingredients": [
+        {
+          "id": "linseed_oil",
+          "name": "linseed oil",
+          "name_original": "lijnolie",
+          "quantity": {
+            "kind": "exact",
+            "value": 3.0,
+            "max_value": null,
+            "unit": "k",
+            "raw": "3 k."
+          },
+          "preparation": "warm",
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Neem 3 k. lijnolie",
+            "note": "The word lijnolie was marked uncertain by the transcription."
+          }
+        },
+        {
+          "id": "cassonda_sugar",
+          "name": "cassonda sugar",
+          "name_original": "Cassonda",
+          "quantity": {
+            "kind": "exact",
+            "value": 1.0,
+            "max_value": null,
+            "unit": "pond",
+            "raw": "1 pond"
+          },
+          "preparation": "dissolved in the water",
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Laat 1 pond Cassonda",
+            "note": "The word Cassonda was marked uncertain by the transcription."
+          }
+        },
+        {
+          "id": "water",
+          "name": "water",
+          "name_original": "water",
+          "quantity": {
+            "kind": "exact",
+            "value": 0.5,
+            "max_value": null,
+            "unit": "k",
+            "raw": "1/2 k."
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "1/2 k. water",
+            "note": "Water is also mentioned later as 10 k. for the boiling pot; only the first amount is kept."
+          }
+        }
+      ],
+      "tools": [
+        {
+          "id": "large_bucket",
+          "name": "large bucket",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "in groote emmer",
+            "note": null
+          }
+        },
+        {
+          "id": "stove",
+          "name": "stove or heat source",
+          "source": {
+            "status": "inferred",
+            "page": 1,
+            "quote": "tegen de kook houden",
+            "note": "Implied by the instructions to heat the oil warm and keep the mixture at boiling point."
+          }
+        }
+      ],
+      "steps": [
+        {
+          "order": 1,
+          "text": "Heat the linseed oil until warm.",
+          "ingredient_ids": [
+            "linseed_oil"
+          ],
+          "tool_ids": [
+            "stove"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Neem 3 k. lijnolie [?], dit gewoon kind [?] warm maken.",
+            "note": null
+          }
+        },
+        {
+          "order": 2,
+          "text": "Dissolve the Cassonda sugar in the water and stir it thoroughly through the warm linseed oil.",
+          "ingredient_ids": [
+            "cassonda_sugar",
+            "water",
+            "linseed_oil"
+          ],
+          "tool_ids": [],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Laat 1 pond Cassonda [?] op in en 1/2 k. water en door dit goed door de 3 k. warme olie.",
+            "note": null
+          }
+        },
+        {
+          "order": 3,
+          "text": "Let the whole mixture stand for 3 days so that the substance is drawn out.",
+          "ingredient_ids": [
+            "linseed_oil",
+            "cassonda_sugar",
+            "water"
+          ],
+          "tool_ids": [],
+          "duration": {
+            "raw": "3 dagen",
+            "min_minutes": 4320.0,
+            "max_minutes": 4320.0
+          },
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Laat het geheel 3 dagen staan. Dit is om de hoeveelheid er uit te laten trekken.",
+            "note": null
+          }
+        },
+        {
+          "order": 4,
+          "text": "Put the mixture into a large bucket with the addition of 10 k. water and keep it at the boil for 3 hours.",
+          "ingredient_ids": [
+            "linseed_oil",
+            "cassonda_sugar",
+            "water"
+          ],
+          "tool_ids": [
+            "large_bucket",
+            "stove"
+          ],
+          "duration": {
+            "raw": "3 uur",
+            "min_minutes": 180.0,
+            "max_minutes": 180.0
+          },
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Daarna in groote emmer met bijvolging van 10 k. water en 3 uur tegen de kook houden.",
+            "note": null
+          }
+        }
+      ],
+      "warnings": [
+        {
+          "message": "The transcription was unsure about lijnolie, kind, Cassonda and 25; please check them against the page.",
+          "target_id": null
+        },
+        {
+          "message": "The word kind (in 'dit gewoon kind warm maken') was not identified. It may name a further ingredient, possibly a fat of animal origin, which would change the animal content; it was not added as an ingredient.",
+          "target_id": null
+        },
+        {
+          "message": "The document is a soap recipe, not a food recipe, and names no alkali (such as lye). The reviewer should check whether a missing ingredient was omitted.",
+          "target_id": null
+        },
+        {
+          "message": "Water is mentioned twice (1/2 k. and 10 k.); one entry was kept with the first amount.",
+          "target_id": null
+        },
+        {
+          "message": "The unit 'k.' is not explained in the text and was kept as written.",
+          "target_id": null
+        },
+        {
+          "message": "The yield of about 25 pounds of soap was not recorded as servings.",
+          "target_id": null
+        }
+      ]
+    },
+    "usage": [
+      {
+        "model": "claude-haiku-5-5",
+        "input_tokens": 4544,
+        "output_tokens": 3760,
+        "seconds": 16.32616330000019,
+        "cached": false
+      }
+    ],
+    "problems_found": [],
+    "problems_left": []
+  },
+  "manipulation": {
+    "original": {
+      "title": "Zeep (soap recipe)",
+      "language": "nl",
+      "servings": {
+        "value": null,
+        "source": {
+          "status": "missing",
+          "page": null,
+          "quote": null,
+          "note": "The text gives a yield of about 25 pounds of soap, not a number of servings."
+        }
+      },
+      "ingredients": [
+        {
+          "id": "linseed_oil",
+          "name": "linseed oil",
+          "name_original": "lijnolie",
+          "quantity": {
+            "kind": "exact",
+            "value": 3.0,
+            "max_value": null,
+            "unit": "k",
+            "raw": "3 k."
+          },
+          "preparation": "warm",
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Neem 3 k. lijnolie",
+            "note": "The word lijnolie was marked uncertain by the transcription."
+          }
+        },
+        {
+          "id": "cassonda_sugar",
+          "name": "cassonda sugar",
+          "name_original": "Cassonda",
+          "quantity": {
+            "kind": "exact",
+            "value": 1.0,
+            "max_value": null,
+            "unit": "pond",
+            "raw": "1 pond"
+          },
+          "preparation": "dissolved in the water",
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Laat 1 pond Cassonda",
+            "note": "The word Cassonda was marked uncertain by the transcription."
+          }
+        },
+        {
+          "id": "water",
+          "name": "water",
+          "name_original": "water",
+          "quantity": {
+            "kind": "exact",
+            "value": 0.5,
+            "max_value": null,
+            "unit": "k",
+            "raw": "1/2 k."
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "1/2 k. water",
+            "note": "Water is also mentioned later as 10 k. for the boiling pot; only the first amount is kept."
+          }
+        }
+      ],
+      "tools": [
+        {
+          "id": "large_bucket",
+          "name": "large bucket",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "in groote emmer",
+            "note": null
+          }
+        },
+        {
+          "id": "stove",
+          "name": "stove or heat source",
+          "source": {
+            "status": "inferred",
+            "page": 1,
+            "quote": "tegen de kook houden",
+            "note": "Implied by the instructions to heat the oil warm and keep the mixture at boiling point."
+          }
+        }
+      ],
+      "steps": [
+        {
+          "order": 1,
+          "text": "Heat the linseed oil until warm.",
+          "ingredient_ids": [
+            "linseed_oil"
+          ],
+          "tool_ids": [
+            "stove"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Neem 3 k. lijnolie [?], dit gewoon kind [?] warm maken.",
+            "note": null
+          }
+        },
+        {
+          "order": 2,
+          "text": "Dissolve the Cassonda sugar in the water and stir it thoroughly through the warm linseed oil.",
+          "ingredient_ids": [
+            "cassonda_sugar",
+            "water",
+            "linseed_oil"
+          ],
+          "tool_ids": [],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Laat 1 pond Cassonda [?] op in en 1/2 k. water en door dit goed door de 3 k. warme olie.",
+            "note": null
+          }
+        },
+        {
+          "order": 3,
+          "text": "Let the whole mixture stand for 3 days so that the substance is drawn out.",
+          "ingredient_ids": [
+            "linseed_oil",
+            "cassonda_sugar",
+            "water"
+          ],
+          "tool_ids": [],
+          "duration": {
+            "raw": "3 dagen",
+            "min_minutes": 4320.0,
+            "max_minutes": 4320.0
+          },
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Laat het geheel 3 dagen staan. Dit is om de hoeveelheid er uit te laten trekken.",
+            "note": null
+          }
+        },
+        {
+          "order": 4,
+          "text": "Put the mixture into a large bucket with the addition of 10 k. water and keep it at the boil for 3 hours.",
+          "ingredient_ids": [
+            "linseed_oil",
+            "cassonda_sugar",
+            "water"
+          ],
+          "tool_ids": [
+            "large_bucket",
+            "stove"
+          ],
+          "duration": {
+            "raw": "3 uur",
+            "min_minutes": 180.0,
+            "max_minutes": 180.0
+          },
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Daarna in groote emmer met bijvolging van 10 k. water en 3 uur tegen de kook houden.",
+            "note": null
+          }
+        }
+      ],
+      "warnings": [
+        {
+          "message": "The transcription was unsure about lijnolie, kind, Cassonda and 25; please check them against the page.",
+          "target_id": null
+        },
+        {
+          "message": "The word kind (in 'dit gewoon kind warm maken') was not identified. It may name a further ingredient, possibly a fat of animal origin, which would change the animal content; it was not added as an ingredient.",
+          "target_id": null
+        },
+        {
+          "message": "The document is a soap recipe, not a food recipe, and names no alkali (such as lye). The reviewer should check whether a missing ingredient was omitted.",
+          "target_id": null
+        },
+        {
+          "message": "Water is mentioned twice (1/2 k. and 10 k.); one entry was kept with the first amount.",
+          "target_id": null
+        },
+        {
+          "message": "The unit 'k.' is not explained in the text and was kept as written.",
+          "target_id": null
+        },
+        {
+          "message": "The yield of about 25 pounds of soap was not recorded as servings.",
+          "target_id": null
+        }
+      ]
+    },
+    "recipe": {
+      "title": "Zeep (soap recipe)",
+      "language": "nl",
+      "servings": {
+        "value": null,
+        "source": {
+          "status": "missing",
+          "page": null,
+          "quote": null,
+          "note": "The text gives a yield of about 25 pounds of soap, not a number of servings."
+        }
+      },
+      "ingredients": [
+        {
+          "id": "linseed_oil",
+          "name": "linseed oil",
+          "name_original": "lijnolie",
+          "quantity": {
+            "kind": "exact",
+            "value": 3.0,
+            "max_value": null,
+            "unit": "k",
+            "raw": "3 k."
+          },
+          "preparation": "warm",
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Neem 3 k. lijnolie",
+            "note": "The word lijnolie was marked uncertain by the transcription."
+          }
+        },
+        {
+          "id": "cassonda_sugar",
+          "name": "cassonda sugar",
+          "name_original": "Cassonda",
+          "quantity": {
+            "kind": "exact",
+            "value": 1.0,
+            "max_value": null,
+            "unit": "pond",
+            "raw": "1 pond"
+          },
+          "preparation": "dissolved in the water",
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Laat 1 pond Cassonda",
+            "note": "The word Cassonda was marked uncertain by the transcription."
+          }
+        },
+        {
+          "id": "water",
+          "name": "water",
+          "name_original": "water",
+          "quantity": {
+            "kind": "exact",
+            "value": 0.5,
+            "max_value": null,
+            "unit": "k",
+            "raw": "1/2 k."
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "1/2 k. water",
+            "note": "Water is also mentioned later as 10 k. for the boiling pot; only the first amount is kept."
+          }
+        }
+      ],
+      "tools": [
+        {
+          "id": "large_bucket",
+          "name": "large bucket",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "in groote emmer",
+            "note": null
+          }
+        },
+        {
+          "id": "stove",
+          "name": "stove or heat source",
+          "source": {
+            "status": "inferred",
+            "page": 1,
+            "quote": "tegen de kook houden",
+            "note": "Implied by the instructions to heat the oil warm and keep the mixture at boiling point."
+          }
+        }
+      ],
+      "steps": [
+        {
+          "order": 1,
+          "text": "Heat the linseed oil until warm.",
+          "ingredient_ids": [
+            "linseed_oil"
+          ],
+          "tool_ids": [
+            "stove"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Neem 3 k. lijnolie [?], dit gewoon kind [?] warm maken.",
+            "note": null
+          }
+        },
+        {
+          "order": 2,
+          "text": "Dissolve the Cassonda sugar in the water and stir it thoroughly through the warm linseed oil.",
+          "ingredient_ids": [
+            "cassonda_sugar",
+            "water",
+            "linseed_oil"
+          ],
+          "tool_ids": [],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Laat 1 pond Cassonda [?] op in en 1/2 k. water en door dit goed door de 3 k. warme olie.",
+            "note": null
+          }
+        },
+        {
+          "order": 3,
+          "text": "Let the whole mixture stand for 3 days so that the substance is drawn out.",
+          "ingredient_ids": [
+            "linseed_oil",
+            "cassonda_sugar",
+            "water"
+          ],
+          "tool_ids": [],
+          "duration": {
+            "raw": "3 dagen",
+            "min_minutes": 4320.0,
+            "max_minutes": 4320.0
+          },
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Laat het geheel 3 dagen staan. Dit is om de hoeveelheid er uit te laten trekken.",
+            "note": null
+          }
+        },
+        {
+          "order": 4,
+          "text": "Put the mixture into a large bucket with the addition of 10 k. water and keep it at the boil for 3 hours.",
+          "ingredient_ids": [
+            "linseed_oil",
+            "cassonda_sugar",
+            "water"
+          ],
+          "tool_ids": [
+            "large_bucket",
+            "stove"
+          ],
+          "duration": {
+            "raw": "3 uur",
+            "min_minutes": 180.0,
+            "max_minutes": 180.0
+          },
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Daarna in groote emmer met bijvolging van 10 k. water en 3 uur tegen de kook houden.",
+            "note": null
+          }
+        }
+      ],
+      "warnings": [
+        {
+          "message": "The transcription was unsure about lijnolie, kind, Cassonda and 25; please check them against the page.",
+          "target_id": null
+        },
+        {
+          "message": "The word kind (in 'dit gewoon kind warm maken') was not identified. It may name a further ingredient, possibly a fat of animal origin, which would change the animal content; it was not added as an ingredient.",
+          "target_id": null
+        },
+        {
+          "message": "The document is a soap recipe, not a food recipe, and names no alkali (such as lye). The reviewer should check whether a missing ingredient was omitted.",
+          "target_id": null
+        },
+        {
+          "message": "Water is mentioned twice (1/2 k. and 10 k.); one entry was kept with the first amount.",
+          "target_id": null
+        },
+        {
+          "message": "The unit 'k.' is not explained in the text and was kept as written.",
+          "target_id": null
+        },
+        {
+          "message": "The yield of about 25 pounds of soap was not recorded as servings.",
+          "target_id": null
+        },
+        {
+          "message": "Vegan check, Cassonda: Some cane sugar is filtered through bone char. Beet sugar and sugar labelled vegan are safe.",
+          "target_id": "cassonda_sugar"
+        }
+      ]
+    },
+    "changes": [
+      {
+        "rule": "vegan",
+        "target": "cassonda_sugar",
+        "before": "Cassonda",
+        "after": "unchanged, check the label",
+        "reason": "Some cane sugar is filtered through bone char. Beet sugar and sugar labelled vegan are safe."
+      }
+    ]
+  }
+}

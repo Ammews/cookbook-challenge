@@ -1,0 +1,1325 @@
+{
+  "document": {
+    "name": "pdf-en-stag-chili.pdf",
+    "kind": "pdf",
+    "pages": [
+      {
+        "number": 1,
+        "text": "THE STAG COOK BOOK\nXLVIII\nT. A. Dorgan\nCHILI CON CARNE\nComes\nthrough\nwith\na\nnatural\nWhat\nis my favorite filler for the feed bag?\nWell,\nI'll\nbe on\nthe\nsquare with my\nanswer.\n.\n.\n.\nIt's\nChili\ncon\nCarne.\nI might have said Terrapin Maryland,\nor some other\nRitzy dish, but thought I'd better come with a natural.\nI'll play Chili con Carne and tamales as they are served\nin California (where\nI was born)\nagainst any dish\nI've\never forked over.\nRecipe\nCut,\nsay\", two pounds of good beef\nin small pieces the\nsize of\nthe\nfirst finger joint.\nAdd some\nof\nthe chopped\nfat, mix and salt.\nPut two tablespoonsful of lard in a deep pot and heat.\nTo this add a chopped onion.\nWhen the onion\nis about\nhalf cooked add the meat.\nStir well until the meat has\nboiled down in\nits juice.\nWhen\nit starts to fry add about\none and a half pints of hot water, three tablespoonsful of\nGebhardt's\nEagle\nChili Powder and\na few\nbuttons\nof\nchopped\ngarlic.\nSimmer and\nstir well until the meat\nis\ntender.\n[98]",
+        "method": "pdf_text_layer",
+        "decoration_text": [],
+        "uncertain": [],
+        "usage": null
+      }
+    ]
+  },
+  "extraction": {
+    "is_recipe": true,
+    "recipes_in_document": 1,
+    "recipe": {
+      "title": "Chili con Carne",
+      "language": "en",
+      "servings": {
+        "value": 4,
+        "source": {
+          "status": "inferred",
+          "page": 1,
+          "quote": null,
+          "note": "No servings are stated. Two pounds of beef with about one and a half pints of water suggests roughly four servings."
+        }
+      },
+      "ingredients": [
+        {
+          "id": "beef",
+          "name": "beef",
+          "name_original": "good beef",
+          "quantity": {
+            "kind": "exact",
+            "value": 2.0,
+            "max_value": null,
+            "unit": "pounds",
+            "raw": "two pounds"
+          },
+          "preparation": "cut in small pieces the size of the first finger joint",
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "meat",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Cut, say\", two pounds of good beef in small pieces the size of the first finger joint.",
+            "note": null
+          }
+        },
+        {
+          "id": "beef_fat",
+          "name": "beef fat",
+          "name_original": "the chopped fat",
+          "quantity": {
+            "kind": "vague",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": "some"
+          },
+          "preparation": "chopped",
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "meat",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Add some of the chopped fat, mix and salt.",
+            "note": null
+          }
+        },
+        {
+          "id": "salt",
+          "name": "salt",
+          "name_original": "salt",
+          "quantity": {
+            "kind": "absent",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "mix and salt.",
+            "note": null
+          }
+        },
+        {
+          "id": "lard",
+          "name": "lard",
+          "name_original": "lard",
+          "quantity": {
+            "kind": "exact",
+            "value": 2.0,
+            "max_value": null,
+            "unit": "tablespoonsful",
+            "raw": "two tablespoonsful"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "meat",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Put two tablespoonsful of lard in a deep pot and heat.",
+            "note": null
+          }
+        },
+        {
+          "id": "onion",
+          "name": "onion",
+          "name_original": "a chopped onion",
+          "quantity": {
+            "kind": "exact",
+            "value": 1.0,
+            "max_value": null,
+            "unit": null,
+            "raw": "a"
+          },
+          "preparation": "chopped",
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "To this add a chopped onion.",
+            "note": null
+          }
+        },
+        {
+          "id": "water",
+          "name": "hot water",
+          "name_original": "hot water",
+          "quantity": {
+            "kind": "exact",
+            "value": 1.5,
+            "max_value": null,
+            "unit": "pints",
+            "raw": "about one and a half pints"
+          },
+          "preparation": "hot",
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "inferred",
+            "page": 1,
+            "quote": "add about one and a half pints of hot water",
+            "note": "The amount is written in words as 'one and a half' rather than as the digits 1.5; the value 1.5 is converted from those words and the unit 'pints' is as written."
+          }
+        },
+        {
+          "id": "chili_powder",
+          "name": "chili powder",
+          "name_original": "Gebhardt's Eagle Chili Powder",
+          "quantity": {
+            "kind": "exact",
+            "value": 3.0,
+            "max_value": null,
+            "unit": "tablespoonsful",
+            "raw": "three tablespoonsful"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "three tablespoonsful of Gebhardt's Eagle Chili Powder",
+            "note": null
+          }
+        },
+        {
+          "id": "garlic",
+          "name": "garlic",
+          "name_original": "garlic",
+          "quantity": {
+            "kind": "vague",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": "a few buttons"
+          },
+          "preparation": "chopped",
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "a few buttons of chopped garlic.",
+            "note": null
+          }
+        }
+      ],
+      "tools": [
+        {
+          "id": "deep_pot",
+          "name": "deep pot",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Put two tablespoonsful of lard in a deep pot and heat.",
+            "note": null
+          }
+        },
+        {
+          "id": "knife",
+          "name": "knife",
+          "source": {
+            "status": "inferred",
+            "page": 1,
+            "quote": "Cut, say\", two pounds of good beef in small pieces the size of the first finger joint.",
+            "note": "Implied by cutting the beef and chopping the fat, onion and garlic."
+          }
+        },
+        {
+          "id": "stove",
+          "name": "stove",
+          "source": {
+            "status": "inferred",
+            "page": 1,
+            "quote": "Put two tablespoonsful of lard in a deep pot and heat.",
+            "note": "Implied by heating the pot in the lard step."
+          }
+        }
+      ],
+      "steps": [
+        {
+          "order": 1,
+          "text": "Cut, say\", two pounds of good beef in small pieces the size of the first finger joint.",
+          "ingredient_ids": [
+            "beef"
+          ],
+          "tool_ids": [
+            "knife"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Cut, say\", two pounds of good beef in small pieces the size of the first finger joint.",
+            "note": null
+          }
+        },
+        {
+          "order": 2,
+          "text": "Add some of the chopped fat, mix and salt.",
+          "ingredient_ids": [
+            "beef_fat",
+            "salt"
+          ],
+          "tool_ids": [],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Add some of the chopped fat, mix and salt.",
+            "note": null
+          }
+        },
+        {
+          "order": 3,
+          "text": "Put two tablespoonsful of lard in a deep pot and heat.",
+          "ingredient_ids": [
+            "lard"
+          ],
+          "tool_ids": [
+            "deep_pot",
+            "stove"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Put two tablespoonsful of lard in a deep pot and heat.",
+            "note": null
+          }
+        },
+        {
+          "order": 4,
+          "text": "To this add a chopped onion.",
+          "ingredient_ids": [
+            "onion"
+          ],
+          "tool_ids": [
+            "deep_pot"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "To this add a chopped onion.",
+            "note": null
+          }
+        },
+        {
+          "order": 5,
+          "text": "When the onion is about half cooked add the meat.",
+          "ingredient_ids": [
+            "onion",
+            "beef"
+          ],
+          "tool_ids": [
+            "deep_pot"
+          ],
+          "duration": null,
+          "condition": "When the onion is about half cooked.",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "When the onion is about half cooked add the meat.",
+            "note": null
+          }
+        },
+        {
+          "order": 6,
+          "text": "Stir well until the meat has boiled down in its juice.",
+          "ingredient_ids": [
+            "beef"
+          ],
+          "tool_ids": [
+            "deep_pot"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Stir well until the meat has boiled down in its juice.",
+            "note": null
+          }
+        },
+        {
+          "order": 7,
+          "text": "When it starts to fry add about one and a half pints of hot water, three tablespoonsful of Gebhardt's Eagle Chili Powder and a few buttons of chopped garlic.",
+          "ingredient_ids": [
+            "water",
+            "chili_powder",
+            "garlic"
+          ],
+          "tool_ids": [
+            "deep_pot"
+          ],
+          "duration": null,
+          "condition": "When it starts to fry.",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "When it starts to fry add about one and a half pints of hot water, three tablespoonsful of Gebhardt's Eagle Chili Powder and a few buttons of chopped garlic.",
+            "note": null
+          }
+        },
+        {
+          "order": 8,
+          "text": "Simmer and stir well until the meat is tender.",
+          "ingredient_ids": [
+            "beef"
+          ],
+          "tool_ids": [
+            "deep_pot"
+          ],
+          "duration": null,
+          "condition": "Until the meat is tender.",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Simmer and stir well until the meat is tender.",
+            "note": null
+          }
+        }
+      ],
+      "warnings": [
+        {
+          "message": "The beef fat is not named as beef; it is assumed to be beef fat from the same meat, so check the animal origin.",
+          "target_id": null
+        },
+        {
+          "message": "No amount is given for salt; it is recorded as absent.",
+          "target_id": null
+        },
+        {
+          "message": "Garlic amount is 'a few buttons', which is vague and has no unit.",
+          "target_id": null
+        },
+        {
+          "message": "Onion amount 'a' is a count of one, inferred from 'a chopped onion'.",
+          "target_id": null
+        },
+        {
+          "message": "Servings are not stated and were inferred from the amounts.",
+          "target_id": null
+        },
+        {
+          "message": "The water amount is written as 'one and a half' in words; the value 1.5 is converted from the words, so check it against the scan.",
+          "target_id": null
+        },
+        {
+          "message": "The source is an old text with OCR-like spacing; quotes such as 'Cut, say\"' contain a stray quotation mark and should be checked against the scan.",
+          "target_id": null
+        },
+        {
+          "message": "Old units such as 'tablespoonsful' and 'pints' are kept as written and not converted.",
+          "target_id": null
+        }
+      ]
+    },
+    "usage": [
+      {
+        "model": "claude-haiku-5-5",
+        "input_tokens": 4770,
+        "output_tokens": 5086,
+        "seconds": 18.971164699998553,
+        "cached": false
+      },
+      {
+        "model": "claude-haiku-5-5",
+        "input_tokens": 7733,
+        "output_tokens": 3614,
+        "seconds": 12.507535000000644,
+        "cached": false
+      }
+    ],
+    "problems_found": [
+      "ingredient 'water': amount [1.5] does not appear in its quote 'add about one and a half pints of hot water'"
+    ],
+    "problems_left": []
+  },
+  "manipulation": {
+    "original": {
+      "title": "Chili con Carne",
+      "language": "en",
+      "servings": {
+        "value": 4,
+        "source": {
+          "status": "inferred",
+          "page": 1,
+          "quote": null,
+          "note": "No servings are stated. Two pounds of beef with about one and a half pints of water suggests roughly four servings."
+        }
+      },
+      "ingredients": [
+        {
+          "id": "beef",
+          "name": "beef",
+          "name_original": "good beef",
+          "quantity": {
+            "kind": "exact",
+            "value": 2.0,
+            "max_value": null,
+            "unit": "pounds",
+            "raw": "two pounds"
+          },
+          "preparation": "cut in small pieces the size of the first finger joint",
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "meat",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Cut, say\", two pounds of good beef in small pieces the size of the first finger joint.",
+            "note": null
+          }
+        },
+        {
+          "id": "beef_fat",
+          "name": "beef fat",
+          "name_original": "the chopped fat",
+          "quantity": {
+            "kind": "vague",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": "some"
+          },
+          "preparation": "chopped",
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "meat",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Add some of the chopped fat, mix and salt.",
+            "note": null
+          }
+        },
+        {
+          "id": "salt",
+          "name": "salt",
+          "name_original": "salt",
+          "quantity": {
+            "kind": "absent",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "mix and salt.",
+            "note": null
+          }
+        },
+        {
+          "id": "lard",
+          "name": "lard",
+          "name_original": "lard",
+          "quantity": {
+            "kind": "exact",
+            "value": 2.0,
+            "max_value": null,
+            "unit": "tablespoonsful",
+            "raw": "two tablespoonsful"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "meat",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Put two tablespoonsful of lard in a deep pot and heat.",
+            "note": null
+          }
+        },
+        {
+          "id": "onion",
+          "name": "onion",
+          "name_original": "a chopped onion",
+          "quantity": {
+            "kind": "exact",
+            "value": 1.0,
+            "max_value": null,
+            "unit": null,
+            "raw": "a"
+          },
+          "preparation": "chopped",
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "To this add a chopped onion.",
+            "note": null
+          }
+        },
+        {
+          "id": "water",
+          "name": "hot water",
+          "name_original": "hot water",
+          "quantity": {
+            "kind": "exact",
+            "value": 1.5,
+            "max_value": null,
+            "unit": "pints",
+            "raw": "about one and a half pints"
+          },
+          "preparation": "hot",
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "inferred",
+            "page": 1,
+            "quote": "add about one and a half pints of hot water",
+            "note": "The amount is written in words as 'one and a half' rather than as the digits 1.5; the value 1.5 is converted from those words and the unit 'pints' is as written."
+          }
+        },
+        {
+          "id": "chili_powder",
+          "name": "chili powder",
+          "name_original": "Gebhardt's Eagle Chili Powder",
+          "quantity": {
+            "kind": "exact",
+            "value": 3.0,
+            "max_value": null,
+            "unit": "tablespoonsful",
+            "raw": "three tablespoonsful"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "three tablespoonsful of Gebhardt's Eagle Chili Powder",
+            "note": null
+          }
+        },
+        {
+          "id": "garlic",
+          "name": "garlic",
+          "name_original": "garlic",
+          "quantity": {
+            "kind": "vague",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": "a few buttons"
+          },
+          "preparation": "chopped",
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "a few buttons of chopped garlic.",
+            "note": null
+          }
+        }
+      ],
+      "tools": [
+        {
+          "id": "deep_pot",
+          "name": "deep pot",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Put two tablespoonsful of lard in a deep pot and heat.",
+            "note": null
+          }
+        },
+        {
+          "id": "knife",
+          "name": "knife",
+          "source": {
+            "status": "inferred",
+            "page": 1,
+            "quote": "Cut, say\", two pounds of good beef in small pieces the size of the first finger joint.",
+            "note": "Implied by cutting the beef and chopping the fat, onion and garlic."
+          }
+        },
+        {
+          "id": "stove",
+          "name": "stove",
+          "source": {
+            "status": "inferred",
+            "page": 1,
+            "quote": "Put two tablespoonsful of lard in a deep pot and heat.",
+            "note": "Implied by heating the pot in the lard step."
+          }
+        }
+      ],
+      "steps": [
+        {
+          "order": 1,
+          "text": "Cut, say\", two pounds of good beef in small pieces the size of the first finger joint.",
+          "ingredient_ids": [
+            "beef"
+          ],
+          "tool_ids": [
+            "knife"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Cut, say\", two pounds of good beef in small pieces the size of the first finger joint.",
+            "note": null
+          }
+        },
+        {
+          "order": 2,
+          "text": "Add some of the chopped fat, mix and salt.",
+          "ingredient_ids": [
+            "beef_fat",
+            "salt"
+          ],
+          "tool_ids": [],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Add some of the chopped fat, mix and salt.",
+            "note": null
+          }
+        },
+        {
+          "order": 3,
+          "text": "Put two tablespoonsful of lard in a deep pot and heat.",
+          "ingredient_ids": [
+            "lard"
+          ],
+          "tool_ids": [
+            "deep_pot",
+            "stove"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Put two tablespoonsful of lard in a deep pot and heat.",
+            "note": null
+          }
+        },
+        {
+          "order": 4,
+          "text": "To this add a chopped onion.",
+          "ingredient_ids": [
+            "onion"
+          ],
+          "tool_ids": [
+            "deep_pot"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "To this add a chopped onion.",
+            "note": null
+          }
+        },
+        {
+          "order": 5,
+          "text": "When the onion is about half cooked add the meat.",
+          "ingredient_ids": [
+            "onion",
+            "beef"
+          ],
+          "tool_ids": [
+            "deep_pot"
+          ],
+          "duration": null,
+          "condition": "When the onion is about half cooked.",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "When the onion is about half cooked add the meat.",
+            "note": null
+          }
+        },
+        {
+          "order": 6,
+          "text": "Stir well until the meat has boiled down in its juice.",
+          "ingredient_ids": [
+            "beef"
+          ],
+          "tool_ids": [
+            "deep_pot"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Stir well until the meat has boiled down in its juice.",
+            "note": null
+          }
+        },
+        {
+          "order": 7,
+          "text": "When it starts to fry add about one and a half pints of hot water, three tablespoonsful of Gebhardt's Eagle Chili Powder and a few buttons of chopped garlic.",
+          "ingredient_ids": [
+            "water",
+            "chili_powder",
+            "garlic"
+          ],
+          "tool_ids": [
+            "deep_pot"
+          ],
+          "duration": null,
+          "condition": "When it starts to fry.",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "When it starts to fry add about one and a half pints of hot water, three tablespoonsful of Gebhardt's Eagle Chili Powder and a few buttons of chopped garlic.",
+            "note": null
+          }
+        },
+        {
+          "order": 8,
+          "text": "Simmer and stir well until the meat is tender.",
+          "ingredient_ids": [
+            "beef"
+          ],
+          "tool_ids": [
+            "deep_pot"
+          ],
+          "duration": null,
+          "condition": "Until the meat is tender.",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Simmer and stir well until the meat is tender.",
+            "note": null
+          }
+        }
+      ],
+      "warnings": [
+        {
+          "message": "The beef fat is not named as beef; it is assumed to be beef fat from the same meat, so check the animal origin.",
+          "target_id": null
+        },
+        {
+          "message": "No amount is given for salt; it is recorded as absent.",
+          "target_id": null
+        },
+        {
+          "message": "Garlic amount is 'a few buttons', which is vague and has no unit.",
+          "target_id": null
+        },
+        {
+          "message": "Onion amount 'a' is a count of one, inferred from 'a chopped onion'.",
+          "target_id": null
+        },
+        {
+          "message": "Servings are not stated and were inferred from the amounts.",
+          "target_id": null
+        },
+        {
+          "message": "The water amount is written as 'one and a half' in words; the value 1.5 is converted from the words, so check it against the scan.",
+          "target_id": null
+        },
+        {
+          "message": "The source is an old text with OCR-like spacing; quotes such as 'Cut, say\"' contain a stray quotation mark and should be checked against the scan.",
+          "target_id": null
+        },
+        {
+          "message": "Old units such as 'tablespoonsful' and 'pints' are kept as written and not converted.",
+          "target_id": null
+        }
+      ]
+    },
+    "recipe": {
+      "title": "Chili con Carne",
+      "language": "en",
+      "servings": {
+        "value": 4,
+        "source": {
+          "status": "inferred",
+          "page": 1,
+          "quote": null,
+          "note": "No servings are stated. Two pounds of beef with about one and a half pints of water suggests roughly four servings."
+        }
+      },
+      "ingredients": [
+        {
+          "id": "vegan_beef",
+          "name": "seitan roast (or a whole celeriac)",
+          "name_original": "seitan roast (or a whole celeriac)",
+          "quantity": {
+            "kind": "vague",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": "same weight as the beef it replaces"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "rule",
+            "page": 1,
+            "quote": "Cut, say\", two pounds of good beef in small pieces the size of the first finger joint.",
+            "note": "vegan substitute for 'good beef': The meat is the main ingredient. Seitan holds together in a long braise and takes up the marinade; a whole celeriac is a soy- and gluten-free alternative."
+          }
+        },
+        {
+          "id": "vegan_beef_fat",
+          "name": "vegetable oil",
+          "name_original": "vegetable oil",
+          "quantity": {
+            "kind": "vague",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": "some"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "rule",
+            "page": 1,
+            "quote": "Add some of the chopped fat, mix and salt.",
+            "note": "vegan substitute for 'the chopped fat': Animal fat; any neutral oil does the same job for browning."
+          }
+        },
+        {
+          "id": "salt",
+          "name": "salt",
+          "name_original": "salt",
+          "quantity": {
+            "kind": "absent",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "mix and salt.",
+            "note": null
+          }
+        },
+        {
+          "id": "vegan_lard",
+          "name": "vegetable oil",
+          "name_original": "vegetable oil",
+          "quantity": {
+            "kind": "exact",
+            "value": 2.0,
+            "max_value": null,
+            "unit": "tablespoonsful",
+            "raw": "two tablespoonsful"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "rule",
+            "page": 1,
+            "quote": "Put two tablespoonsful of lard in a deep pot and heat.",
+            "note": "vegan substitute for 'lard': Animal fat; any neutral oil does the same job for browning."
+          }
+        },
+        {
+          "id": "onion",
+          "name": "onion",
+          "name_original": "a chopped onion",
+          "quantity": {
+            "kind": "exact",
+            "value": 1.0,
+            "max_value": null,
+            "unit": null,
+            "raw": "a"
+          },
+          "preparation": "chopped",
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "To this add a chopped onion.",
+            "note": null
+          }
+        },
+        {
+          "id": "water",
+          "name": "hot water",
+          "name_original": "hot water",
+          "quantity": {
+            "kind": "exact",
+            "value": 1.5,
+            "max_value": null,
+            "unit": "pints",
+            "raw": "about one and a half pints"
+          },
+          "preparation": "hot",
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "inferred",
+            "page": 1,
+            "quote": "add about one and a half pints of hot water",
+            "note": "The amount is written in words as 'one and a half' rather than as the digits 1.5; the value 1.5 is converted from those words and the unit 'pints' is as written."
+          }
+        },
+        {
+          "id": "chili_powder",
+          "name": "chili powder",
+          "name_original": "Gebhardt's Eagle Chili Powder",
+          "quantity": {
+            "kind": "exact",
+            "value": 3.0,
+            "max_value": null,
+            "unit": "tablespoonsful",
+            "raw": "three tablespoonsful"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "three tablespoonsful of Gebhardt's Eagle Chili Powder",
+            "note": null
+          }
+        },
+        {
+          "id": "garlic",
+          "name": "garlic",
+          "name_original": "garlic",
+          "quantity": {
+            "kind": "vague",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": "a few buttons"
+          },
+          "preparation": "chopped",
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "a few buttons of chopped garlic.",
+            "note": null
+          }
+        }
+      ],
+      "tools": [
+        {
+          "id": "deep_pot",
+          "name": "deep pot",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Put two tablespoonsful of lard in a deep pot and heat.",
+            "note": null
+          }
+        },
+        {
+          "id": "knife",
+          "name": "knife",
+          "source": {
+            "status": "inferred",
+            "page": 1,
+            "quote": "Cut, say\", two pounds of good beef in small pieces the size of the first finger joint.",
+            "note": "Implied by cutting the beef and chopping the fat, onion and garlic."
+          }
+        },
+        {
+          "id": "stove",
+          "name": "stove",
+          "source": {
+            "status": "inferred",
+            "page": 1,
+            "quote": "Put two tablespoonsful of lard in a deep pot and heat.",
+            "note": "Implied by heating the pot in the lard step."
+          }
+        }
+      ],
+      "steps": [
+        {
+          "order": 1,
+          "text": "Cut, say\", two pounds of good beef in small pieces the size of the first finger joint.\n[Vegan: use seitan roast (or a whole celeriac) instead of good beef. Marinate seitan for 1–2 days at most; a week in an acidic marinade makes it soft. Braise 45–60 minutes instead of hours.]",
+          "ingredient_ids": [
+            "vegan_beef"
+          ],
+          "tool_ids": [
+            "knife"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Cut, say\", two pounds of good beef in small pieces the size of the first finger joint.",
+            "note": null
+          }
+        },
+        {
+          "order": 2,
+          "text": "Add some of the chopped fat, mix and salt.\n[Vegan: use vegetable oil instead of the chopped fat; use vegetable oil instead of lard.]",
+          "ingredient_ids": [
+            "vegan_beef_fat",
+            "salt"
+          ],
+          "tool_ids": [],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Add some of the chopped fat, mix and salt.",
+            "note": null
+          }
+        },
+        {
+          "order": 3,
+          "text": "Put two tablespoonsful of lard in a deep pot and heat.\n[Vegan: use vegetable oil instead of the chopped fat; use vegetable oil instead of lard.]",
+          "ingredient_ids": [
+            "vegan_lard"
+          ],
+          "tool_ids": [
+            "deep_pot",
+            "stove"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Put two tablespoonsful of lard in a deep pot and heat.",
+            "note": null
+          }
+        },
+        {
+          "order": 4,
+          "text": "To this add a chopped onion.",
+          "ingredient_ids": [
+            "onion"
+          ],
+          "tool_ids": [
+            "deep_pot"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "To this add a chopped onion.",
+            "note": null
+          }
+        },
+        {
+          "order": 5,
+          "text": "When the onion is about half cooked add the meat.\n[Vegan: use seitan roast (or a whole celeriac) instead of good beef. Marinate seitan for 1–2 days at most; a week in an acidic marinade makes it soft. Braise 45–60 minutes instead of hours.]",
+          "ingredient_ids": [
+            "onion",
+            "vegan_beef"
+          ],
+          "tool_ids": [
+            "deep_pot"
+          ],
+          "duration": null,
+          "condition": "When the onion is about half cooked.",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "When the onion is about half cooked add the meat.",
+            "note": null
+          }
+        },
+        {
+          "order": 6,
+          "text": "Stir well until the meat has boiled down in its juice.\n[Vegan: use seitan roast (or a whole celeriac) instead of good beef. Marinate seitan for 1–2 days at most; a week in an acidic marinade makes it soft. Braise 45–60 minutes instead of hours.]",
+          "ingredient_ids": [
+            "vegan_beef"
+          ],
+          "tool_ids": [
+            "deep_pot"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Stir well until the meat has boiled down in its juice.",
+            "note": null
+          }
+        },
+        {
+          "order": 7,
+          "text": "When it starts to fry add about one and a half pints of hot water, three tablespoonsful of Gebhardt's Eagle Chili Powder and a few buttons of chopped garlic.",
+          "ingredient_ids": [
+            "water",
+            "chili_powder",
+            "garlic"
+          ],
+          "tool_ids": [
+            "deep_pot"
+          ],
+          "duration": null,
+          "condition": "When it starts to fry.",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "When it starts to fry add about one and a half pints of hot water, three tablespoonsful of Gebhardt's Eagle Chili Powder and a few buttons of chopped garlic.",
+            "note": null
+          }
+        },
+        {
+          "order": 8,
+          "text": "Simmer and stir well until the meat is tender.\n[Vegan: use seitan roast (or a whole celeriac) instead of good beef. Marinate seitan for 1–2 days at most; a week in an acidic marinade makes it soft. Braise 45–60 minutes instead of hours.]",
+          "ingredient_ids": [
+            "vegan_beef"
+          ],
+          "tool_ids": [
+            "deep_pot"
+          ],
+          "duration": null,
+          "condition": "Until the meat is tender.",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Simmer and stir well until the meat is tender.",
+            "note": null
+          }
+        }
+      ],
+      "warnings": [
+        {
+          "message": "The beef fat is not named as beef; it is assumed to be beef fat from the same meat, so check the animal origin.",
+          "target_id": null
+        },
+        {
+          "message": "No amount is given for salt; it is recorded as absent.",
+          "target_id": null
+        },
+        {
+          "message": "Garlic amount is 'a few buttons', which is vague and has no unit.",
+          "target_id": null
+        },
+        {
+          "message": "Onion amount 'a' is a count of one, inferred from 'a chopped onion'.",
+          "target_id": null
+        },
+        {
+          "message": "Servings are not stated and were inferred from the amounts.",
+          "target_id": null
+        },
+        {
+          "message": "The water amount is written as 'one and a half' in words; the value 1.5 is converted from the words, so check it against the scan.",
+          "target_id": null
+        },
+        {
+          "message": "The source is an old text with OCR-like spacing; quotes such as 'Cut, say\"' contain a stray quotation mark and should be checked against the scan.",
+          "target_id": null
+        },
+        {
+          "message": "Old units such as 'tablespoonsful' and 'pints' are kept as written and not converted.",
+          "target_id": null
+        }
+      ]
+    },
+    "changes": [
+      {
+        "rule": "vegan",
+        "target": "beef",
+        "before": "good beef",
+        "after": "seitan roast (or a whole celeriac)",
+        "reason": "The meat is the main ingredient. Seitan holds together in a long braise and takes up the marinade; a whole celeriac is a soy- and gluten-free alternative."
+      },
+      {
+        "rule": "vegan",
+        "target": "beef_fat",
+        "before": "the chopped fat",
+        "after": "vegetable oil",
+        "reason": "Animal fat; any neutral oil does the same job for browning."
+      },
+      {
+        "rule": "vegan",
+        "target": "lard",
+        "before": "lard",
+        "after": "vegetable oil",
+        "reason": "Animal fat; any neutral oil does the same job for browning."
+      },
+      {
+        "rule": "vegan",
+        "target": "step 1",
+        "before": "good beef",
+        "after": "seitan roast (or a whole celeriac)",
+        "reason": "Substitution carried into the method. Marinate seitan for 1–2 days at most; a week in an acidic marinade makes it soft. Braise 45–60 minutes instead of hours."
+      },
+      {
+        "rule": "vegan",
+        "target": "step 2",
+        "before": "the chopped fat, lard",
+        "after": "vegetable oil, vegetable oil",
+        "reason": "Substitution carried into the method."
+      },
+      {
+        "rule": "vegan",
+        "target": "step 3",
+        "before": "the chopped fat, lard",
+        "after": "vegetable oil, vegetable oil",
+        "reason": "Substitution carried into the method."
+      },
+      {
+        "rule": "vegan",
+        "target": "step 5",
+        "before": "good beef",
+        "after": "seitan roast (or a whole celeriac)",
+        "reason": "Substitution carried into the method. Marinate seitan for 1–2 days at most; a week in an acidic marinade makes it soft. Braise 45–60 minutes instead of hours."
+      },
+      {
+        "rule": "vegan",
+        "target": "step 6",
+        "before": "good beef",
+        "after": "seitan roast (or a whole celeriac)",
+        "reason": "Substitution carried into the method. Marinate seitan for 1–2 days at most; a week in an acidic marinade makes it soft. Braise 45–60 minutes instead of hours."
+      },
+      {
+        "rule": "vegan",
+        "target": "step 8",
+        "before": "good beef",
+        "after": "seitan roast (or a whole celeriac)",
+        "reason": "Substitution carried into the method. Marinate seitan for 1–2 days at most; a week in an acidic marinade makes it soft. Braise 45–60 minutes instead of hours."
+      }
+    ]
+  }
+}

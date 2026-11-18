@@ -1,0 +1,56 @@
+{
+  "document": {
+    "name": "edge-fr-carnet-1872.jpg",
+    "kind": "image",
+    "pages": [
+      {
+        "number": 1,
+        "text": "— nous avons eu 5 dîner MM. et Mme Paul Meurice, M. Louis Blum, M. Louis Koch. — après le dîner MM. Louis Blanc, Nagar, Blosset, Duvedies, et Mmes Duvedies. — compte fin mois, dépense de la maison, dîners, etc. ——— 1416-20 — orgue cette (non à obtenir) ——— 1095-80 — ons, sous, sous, [?] (non à obtenir) ——— 1227-60 1re mois. de Mme Hélène Stany — 5 — à Victor, à compte de son trimestre (1er arriéré payé) ——— 1500 — à Alice (à compte des 2 mois d'avril) ——— 500 — remboursé à E. Allix (reste ci-joint) ——— 475 — E. Allix a dîné ce soir, après loge MM. Lefort et Maurice ——— Paul Meurice. — renouvellement de la provision de bois et de charbon. ——— 103-85 — marchand ne va pas mieux, cette glissade est finie. 2. Prix à M. Duquesnel, il a eu l'honneur de la 40e représentation, Ray Blanc a fait 6 200 f. — Mlle Albertine Sévan, a joué en province, à Lyon (au Vaudeville à Caen) 25 ans, a eu un enfant, travaille avec un théâtre de Paris, demande à venir me rejoindre Marie Solomé. — 3 plateaux de laque de Chine pour espaces [?] ——— 4-80 — à onze francs ——— 20 — timbre-poste ——— 10 — après le dîner MM. Léon Boyer, M. Edmond Doray j'ai envoyé Acte et Paroles au Baron E. Marcotte.",
+        "method": "vision",
+        "decoration_text": [
+          "23"
+        ],
+        "uncertain": [
+          "Duvedies",
+          "Blosset",
+          "Nagar",
+          "cette",
+          "ons",
+          "sous",
+          "Albertine",
+          "Sévan",
+          "Vaudeville",
+          "Caen",
+          "Solomé",
+          "Doray",
+          "Marcotte",
+          "espaces"
+        ],
+        "usage": {
+          "model": "claude-haiku-5-5",
+          "input_tokens": 4307,
+          "output_tokens": 1197,
+          "seconds": 7.123845100000835,
+          "cached": false
+        }
+      }
+    ]
+  },
+  "extraction": {
+    "is_recipe": false,
+    "recipes_in_document": 0,
+    "recipe": null,
+    "usage": [
+      {
+        "model": "claude-haiku-5-5",
+        "input_tokens": 5043,
+        "output_tokens": 245,
+        "seconds": 2.142830700000559,
+        "cached": false
+      }
+    ],
+    "problems_found": [],
+    "problems_left": []
+  },
+  "manipulation": null
+}

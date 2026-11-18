@@ -1,0 +1,518 @@
+{
+  "document": {
+    "name": "hw-de-bertha-backwaren.jpg",
+    "kind": "image",
+    "pages": [
+      {
+        "number": 1,
+        "text": "Grießguß 3 l. Milch ¼ ₩ Zucker 2 bis ¾ ₩ Grieß 1 Tüten Vanille 8 Eier. Im Gebäck 1 ₩ Mehl 1 ₩ Puddingpulver ½ ₩ Butter ¾ ₩ Zucker 2 Pakat Backpulver. Mehl Kringel ¾ ₩ ½ ₩ Butter ½ ₩ Zucker. Grundteig [?] Zutaten: 3–3½ ₩ Mehl, 1–1½ ₩ Butter, 1½ ₩ Zucker, 4 Eier, 3 l Milch und Pudding. Festkuchen [?] Zutaten: ½ ₩ Margarine ¼ ₩ gute Butter, ¾ ₩ Zucker, 6 Eidotter, 9 Eiweiß [?] manche zu Schnee geschlagen, 1½ ₩ Mehl ½ Zitrone, ¼ ₩ Rosinen, 3 Eßl. Mandeln, ½ Pakat Backpulver [?], 1½ Pfd. Kuchen [?]",
+        "method": "vision",
+        "decoration_text": [
+          "Getränke",
+          "Braten",
+          "Pudding, Auflauf",
+          "Diverses"
+        ],
+        "uncertain": [
+          "Grießguß",
+          "Vanille",
+          "Grundteig",
+          "Festkuchen",
+          "Eiweiß",
+          "manche",
+          "Backpulver",
+          "Kuchen",
+          "Mehl Kringel",
+          "Im Gebäck",
+          "Puddingpulver"
+        ],
+        "usage": {
+          "model": "claude-haiku-5-5",
+          "input_tokens": 4235,
+          "output_tokens": 1661,
+          "seconds": 8.333875999998781,
+          "cached": false
+        }
+      }
+    ]
+  },
+  "extraction": {
+    "is_recipe": true,
+    "recipes_in_document": 5,
+    "recipe": {
+      "title": "Grießguß",
+      "language": "de",
+      "servings": {
+        "value": null,
+        "source": {
+          "status": "missing",
+          "page": null,
+          "quote": null,
+          "note": "No serving count given."
+        }
+      },
+      "ingredients": [
+        {
+          "id": "milk",
+          "name": "milk",
+          "name_original": "Milch",
+          "quantity": {
+            "kind": "exact",
+            "value": 3.0,
+            "max_value": null,
+            "unit": "l",
+            "raw": "3 l"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "dairy",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Grießguß 3 l. Milch",
+            "note": "The 3 l stands in the heading line; it is taken as the milk amount."
+          }
+        },
+        {
+          "id": "sugar",
+          "name": "sugar",
+          "name_original": "Zucker",
+          "quantity": {
+            "kind": "exact",
+            "value": 0.25,
+            "max_value": null,
+            "unit": null,
+            "raw": "¼ ₩"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Milch ¼ ₩ Zucker 2 bis ¾ ₩",
+            "note": null
+          }
+        },
+        {
+          "id": "semolina",
+          "name": "semolina",
+          "name_original": "Grieß",
+          "quantity": {
+            "kind": "absent",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Grieß 1 Tüten Vanille",
+            "note": null
+          }
+        },
+        {
+          "id": "vanilla",
+          "name": "vanilla",
+          "name_original": "Vanille",
+          "quantity": {
+            "kind": "exact",
+            "value": 1.0,
+            "max_value": null,
+            "unit": "Tüten",
+            "raw": "1 Tüten"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "1 Tüten Vanille",
+            "note": null
+          }
+        },
+        {
+          "id": "egg",
+          "name": "egg",
+          "name_original": "Eier",
+          "quantity": {
+            "kind": "exact",
+            "value": 8.0,
+            "max_value": null,
+            "unit": null,
+            "raw": "8 Eier"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "egg",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "8 Eier",
+            "note": null
+          }
+        }
+      ],
+      "tools": [],
+      "steps": [],
+      "warnings": [
+        {
+          "message": "The page lists ingredients only; no preparation steps are given for Grießguß.",
+          "target_id": null
+        },
+        {
+          "message": "The unit symbol ₩ is unreadable and the amounts for milk, sugar and semolina are ambiguous; the semolina amount is not legible.",
+          "target_id": null
+        },
+        {
+          "message": "The page holds several recipes (Grießguß, Grundteig, Festkuchen, Mehl Kringel, Im Gebäck); only Grießguß was extracted and the others were skipped.",
+          "target_id": null
+        },
+        {
+          "message": "Transcription was unsure about Grießguß, Vanille and Backpulver; please verify against the image.",
+          "target_id": null
+        }
+      ]
+    },
+    "usage": [
+      {
+        "model": "claude-haiku-5-5",
+        "input_tokens": 4866,
+        "output_tokens": 3101,
+        "seconds": 14.264575400000467,
+        "cached": false
+      }
+    ],
+    "problems_found": [],
+    "problems_left": []
+  },
+  "manipulation": {
+    "original": {
+      "title": "Grießguß",
+      "language": "de",
+      "servings": {
+        "value": null,
+        "source": {
+          "status": "missing",
+          "page": null,
+          "quote": null,
+          "note": "No serving count given."
+        }
+      },
+      "ingredients": [
+        {
+          "id": "milk",
+          "name": "milk",
+          "name_original": "Milch",
+          "quantity": {
+            "kind": "exact",
+            "value": 3.0,
+            "max_value": null,
+            "unit": "l",
+            "raw": "3 l"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "dairy",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Grießguß 3 l. Milch",
+            "note": "The 3 l stands in the heading line; it is taken as the milk amount."
+          }
+        },
+        {
+          "id": "sugar",
+          "name": "sugar",
+          "name_original": "Zucker",
+          "quantity": {
+            "kind": "exact",
+            "value": 0.25,
+            "max_value": null,
+            "unit": null,
+            "raw": "¼ ₩"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Milch ¼ ₩ Zucker 2 bis ¾ ₩",
+            "note": null
+          }
+        },
+        {
+          "id": "semolina",
+          "name": "semolina",
+          "name_original": "Grieß",
+          "quantity": {
+            "kind": "absent",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Grieß 1 Tüten Vanille",
+            "note": null
+          }
+        },
+        {
+          "id": "vanilla",
+          "name": "vanilla",
+          "name_original": "Vanille",
+          "quantity": {
+            "kind": "exact",
+            "value": 1.0,
+            "max_value": null,
+            "unit": "Tüten",
+            "raw": "1 Tüten"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "1 Tüten Vanille",
+            "note": null
+          }
+        },
+        {
+          "id": "egg",
+          "name": "egg",
+          "name_original": "Eier",
+          "quantity": {
+            "kind": "exact",
+            "value": 8.0,
+            "max_value": null,
+            "unit": null,
+            "raw": "8 Eier"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "egg",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "8 Eier",
+            "note": null
+          }
+        }
+      ],
+      "tools": [],
+      "steps": [],
+      "warnings": [
+        {
+          "message": "The page lists ingredients only; no preparation steps are given for Grießguß.",
+          "target_id": null
+        },
+        {
+          "message": "The unit symbol ₩ is unreadable and the amounts for milk, sugar and semolina are ambiguous; the semolina amount is not legible.",
+          "target_id": null
+        },
+        {
+          "message": "The page holds several recipes (Grießguß, Grundteig, Festkuchen, Mehl Kringel, Im Gebäck); only Grießguß was extracted and the others were skipped.",
+          "target_id": null
+        },
+        {
+          "message": "Transcription was unsure about Grießguß, Vanille and Backpulver; please verify against the image.",
+          "target_id": null
+        }
+      ]
+    },
+    "recipe": {
+      "title": "Grießguß",
+      "language": "de",
+      "servings": {
+        "value": null,
+        "source": {
+          "status": "missing",
+          "page": null,
+          "quote": null,
+          "note": "No serving count given."
+        }
+      },
+      "ingredients": [
+        {
+          "id": "vegan_milk",
+          "name": "oat milk",
+          "name_original": "oat milk",
+          "quantity": {
+            "kind": "exact",
+            "value": 3.0,
+            "max_value": null,
+            "unit": "l",
+            "raw": "3 l"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "rule",
+            "page": 1,
+            "quote": "Grießguß 3 l. Milch",
+            "note": "vegan substitute for 'Milch': Dairy milk."
+          }
+        },
+        {
+          "id": "sugar",
+          "name": "sugar",
+          "name_original": "Zucker",
+          "quantity": {
+            "kind": "exact",
+            "value": 0.25,
+            "max_value": null,
+            "unit": null,
+            "raw": "¼ ₩"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Milch ¼ ₩ Zucker 2 bis ¾ ₩",
+            "note": null
+          }
+        },
+        {
+          "id": "semolina",
+          "name": "semolina",
+          "name_original": "Grieß",
+          "quantity": {
+            "kind": "absent",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Grieß 1 Tüten Vanille",
+            "note": null
+          }
+        },
+        {
+          "id": "vanilla",
+          "name": "vanilla",
+          "name_original": "Vanille",
+          "quantity": {
+            "kind": "exact",
+            "value": 1.0,
+            "max_value": null,
+            "unit": "Tüten",
+            "raw": "1 Tüten"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "1 Tüten Vanille",
+            "note": null
+          }
+        },
+        {
+          "id": "vegan_egg",
+          "name": "flax egg (1 tbsp ground flaxseed + 3 tbsp water per egg)",
+          "name_original": "flax egg (1 tbsp ground flaxseed + 3 tbsp water per egg)",
+          "quantity": {
+            "kind": "exact",
+            "value": 8.0,
+            "max_value": null,
+            "unit": null,
+            "raw": "8 Eier"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "rule",
+            "page": 1,
+            "quote": "8 Eier",
+            "note": "vegan substitute for 'Eier': Eggs that bind a dough or batter; a flax egg does the same."
+          }
+        }
+      ],
+      "tools": [],
+      "steps": [],
+      "warnings": [
+        {
+          "message": "The page lists ingredients only; no preparation steps are given for Grießguß.",
+          "target_id": null
+        },
+        {
+          "message": "The unit symbol ₩ is unreadable and the amounts for milk, sugar and semolina are ambiguous; the semolina amount is not legible.",
+          "target_id": null
+        },
+        {
+          "message": "The page holds several recipes (Grießguß, Grundteig, Festkuchen, Mehl Kringel, Im Gebäck); only Grießguß was extracted and the others were skipped.",
+          "target_id": null
+        },
+        {
+          "message": "Transcription was unsure about Grießguß, Vanille and Backpulver; please verify against the image.",
+          "target_id": null
+        },
+        {
+          "message": "Vegan check, Zucker: Some cane sugar is filtered through bone char. Beet sugar and sugar labelled vegan are safe.",
+          "target_id": "sugar"
+        }
+      ]
+    },
+    "changes": [
+      {
+        "rule": "vegan",
+        "target": "milk",
+        "before": "Milch",
+        "after": "oat milk",
+        "reason": "Dairy milk."
+      },
+      {
+        "rule": "vegan",
+        "target": "egg",
+        "before": "Eier",
+        "after": "flax egg (1 tbsp ground flaxseed + 3 tbsp water per egg)",
+        "reason": "Eggs that bind a dough or batter; a flax egg does the same."
+      },
+      {
+        "rule": "vegan",
+        "target": "sugar",
+        "before": "Zucker",
+        "after": "unchanged, check the label",
+        "reason": "Some cane sugar is filtered through bone char. Beet sugar and sugar labelled vegan are safe."
+      }
+    ]
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "document": {
+    "name": "edge-de-juedisches-kochbuch.jpg",
+    "kind": "image",
+    "pages": [
+      {
+        "number": 1,
+        "text": "Vollständiges Praktisches Kochbuch für die jüdische Küche",
+        "method": "vision",
+        "decoration_text": [
+          "Vollständiges",
+          "Praktisches",
+          "Kochbuch",
+          "für die",
+          "jüdische Küche"
+        ],
+        "uncertain": [],
+        "usage": {
+          "model": "claude-haiku-5-5",
+          "input_tokens": 4091,
+          "output_tokens": 82,
+          "seconds": 1.7542253999999957,
+          "cached": false
+        }
+      }
+    ]
+  },
+  "extraction": {
+    "is_recipe": false,
+    "recipes_in_document": 0,
+    "recipe": null,
+    "usage": [
+      {
+        "model": "claude-haiku-5-5",
+        "input_tokens": 4407,
+        "output_tokens": 400,
+        "seconds": 2.7193099000014627,
+        "cached": false
+      }
+    ],
+    "problems_found": [],
+    "problems_left": []
+  },
+  "manipulation": null
+}

@@ -1,0 +1,1634 @@
+{
+  "document": {
+    "name": "hw-de-bertha-braten-1.jpg",
+    "kind": "image",
+    "pages": [
+      {
+        "number": 1,
+        "text": "Rindfleischerbraten\n\nZubereitung: Das Fleisch wird gewaschen und abgetrocknet, dann mit Salz und Pfeffer eingerieben und in heissem Fett von allen Seiten scharf anbraten, dann giesst man so viel heisses Wasser hinzu, dass der Braten fast bedeckt ist, in dieser Brühe lässt man das Fleisch fertig schmoren, bis es sich mit der Gabel durchstechen lässt. Dann rührt man etwas Mehl mit Wasser oder Milch an und gibt es zur Brühe, lässt es aufkochen und schmeckt mit Salz und Pfeffer ab. Das Fleisch wird in portionsstücke geschnitten, auf Fleischplatten angerichtet und mit Petersilie, Tomaten [?] oder Gemüse garniert und zu Tisch gereicht.\n\nKalbsbraten\n\nZubereitung: Das Fleisch wird gewaschen und mit Salz und Pfeffer eingerieben, dann gut angebraten und zugedeckt, es lässt das Fleisch innen und lässt es von allen Seiten gut braten, dann wird das Fleisch weiter behandelt mit Fleischbrühe und die Brühe mit Salz und Pfeffer abgeschmeckt, die Brühe ist sehr wohlschmeckend.",
+        "method": "vision",
+        "decoration_text": [
+          "Braten",
+          "Tunken",
+          "Gemüse",
+          "Salate",
+          "Compotte",
+          "Mehlspeisen",
+          "Pudding",
+          "Eingemachtes",
+          "Backwerk",
+          "Getränke",
+          "Verschiedenes"
+        ],
+        "uncertain": [
+          "Rindfleischerbraten",
+          "portionsstücke",
+          "Tomaten",
+          "Gemüse",
+          "Kalbsbraten"
+        ],
+        "usage": {
+          "model": "claude-haiku-5-5",
+          "input_tokens": 4379,
+          "output_tokens": 1981,
+          "seconds": 9.919777500001146,
+          "cached": false
+        }
+      }
+    ]
+  },
+  "extraction": {
+    "is_recipe": true,
+    "recipes_in_document": 2,
+    "recipe": {
+      "title": "Rindfleischerbraten",
+      "language": "de",
+      "servings": {
+        "value": null,
+        "source": {
+          "status": "missing",
+          "page": null,
+          "quote": null,
+          "note": "The text does not state a number of servings and gives no meat amount to estimate from."
+        }
+      },
+      "ingredients": [
+        {
+          "id": "beef",
+          "name": "beef",
+          "name_original": "Fleisch",
+          "quantity": {
+            "kind": "absent",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "meat",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Das Fleisch wird gewaschen und abgetrocknet",
+            "note": null
+          }
+        },
+        {
+          "id": "salt",
+          "name": "salt",
+          "name_original": "Salz",
+          "quantity": {
+            "kind": "to_taste",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "mit Salz und Pfeffer eingerieben",
+            "note": null
+          }
+        },
+        {
+          "id": "pepper",
+          "name": "pepper",
+          "name_original": "Pfeffer",
+          "quantity": {
+            "kind": "to_taste",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "mit Salz und Pfeffer eingerieben",
+            "note": null
+          }
+        },
+        {
+          "id": "fat",
+          "name": "fat",
+          "name_original": "Fett",
+          "quantity": {
+            "kind": "absent",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": "hot",
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "uncertain",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "in heissem Fett von allen Seiten scharf anbraten",
+            "note": null
+          }
+        },
+        {
+          "id": "water",
+          "name": "water",
+          "name_original": "Wasser",
+          "quantity": {
+            "kind": "to_taste",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": "so viel heisses Wasser"
+          },
+          "preparation": "hot",
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "giesst man so viel heisses Wasser hinzu",
+            "note": null
+          }
+        },
+        {
+          "id": "flour",
+          "name": "flour",
+          "name_original": "Mehl",
+          "quantity": {
+            "kind": "vague",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": "etwas"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "rührt man etwas Mehl mit Wasser oder Milch an",
+            "note": null
+          }
+        },
+        {
+          "id": "milk",
+          "name": "milk",
+          "name_original": "Milch",
+          "quantity": {
+            "kind": "absent",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "dairy",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "mit Wasser oder Milch an",
+            "note": null
+          }
+        },
+        {
+          "id": "gravy",
+          "name": "gravy",
+          "name_original": "Brühe",
+          "quantity": {
+            "kind": "absent",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": true,
+          "animal": "meat",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "in dieser Brühe lässt man das Fleisch fertig schmoren",
+            "note": null
+          }
+        },
+        {
+          "id": "parsley",
+          "name": "parsley",
+          "name_original": "Petersilie",
+          "quantity": {
+            "kind": "absent",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "mit Petersilie, Tomaten [?] oder Gemüse garniert",
+            "note": null
+          }
+        },
+        {
+          "id": "tomato",
+          "name": "tomato",
+          "name_original": "Tomaten",
+          "quantity": {
+            "kind": "absent",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "mit Petersilie, Tomaten [?] oder Gemüse garniert",
+            "note": null
+          }
+        },
+        {
+          "id": "vegetable",
+          "name": "vegetable",
+          "name_original": "Gemüse",
+          "quantity": {
+            "kind": "absent",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Tomaten [?] oder Gemüse garniert",
+            "note": null
+          }
+        }
+      ],
+      "tools": [
+        {
+          "id": "pan",
+          "name": "pan",
+          "source": {
+            "status": "inferred",
+            "page": 1,
+            "quote": "in heissem Fett von allen Seiten scharf anbraten",
+            "note": "Needed for searing the meat in the step that browns it in hot fat."
+          }
+        },
+        {
+          "id": "fork",
+          "name": "fork",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "bis es sich mit der Gabel durchstechen lässt",
+            "note": null
+          }
+        },
+        {
+          "id": "knife",
+          "name": "knife",
+          "source": {
+            "status": "inferred",
+            "page": 1,
+            "quote": "Das Fleisch wird in portionsstücke geschnitten",
+            "note": "Needed to cut the meat into portions."
+          }
+        },
+        {
+          "id": "meat_platter",
+          "name": "meat platter",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "auf Fleischplatten angerichtet",
+            "note": null
+          }
+        }
+      ],
+      "steps": [
+        {
+          "order": 1,
+          "text": "Das Fleisch wird gewaschen und abgetrocknet.",
+          "ingredient_ids": [
+            "beef"
+          ],
+          "tool_ids": [],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Das Fleisch wird gewaschen und abgetrocknet",
+            "note": null
+          }
+        },
+        {
+          "order": 2,
+          "text": "Mit Salz und Pfeffer einreiben.",
+          "ingredient_ids": [
+            "beef",
+            "salt",
+            "pepper"
+          ],
+          "tool_ids": [],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "mit Salz und Pfeffer eingerieben",
+            "note": null
+          }
+        },
+        {
+          "order": 3,
+          "text": "In heissem Fett von allen Seiten scharf anbraten.",
+          "ingredient_ids": [
+            "beef",
+            "fat"
+          ],
+          "tool_ids": [
+            "pan"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "in heissem Fett von allen Seiten scharf anbraten",
+            "note": null
+          }
+        },
+        {
+          "order": 4,
+          "text": "So viel heisses Wasser hinzugießen, dass der Braten fast bedeckt ist.",
+          "ingredient_ids": [
+            "water",
+            "beef"
+          ],
+          "tool_ids": [],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "giesst man so viel heisses Wasser hinzu, dass der Braten fast bedeckt ist",
+            "note": null
+          }
+        },
+        {
+          "order": 5,
+          "text": "In dieser Brühe das Fleisch fertig schmoren.",
+          "ingredient_ids": [
+            "beef",
+            "gravy"
+          ],
+          "tool_ids": [
+            "fork"
+          ],
+          "duration": null,
+          "condition": "bis es sich mit der Gabel durchstechen lässt",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "in dieser Brühe lässt man das Fleisch fertig schmoren, bis es sich mit der Gabel durchstechen lässt",
+            "note": null
+          }
+        },
+        {
+          "order": 6,
+          "text": "Etwas Mehl mit Wasser oder Milch anrühren und zur Brühe geben, aufkochen lassen.",
+          "ingredient_ids": [
+            "flour",
+            "water",
+            "milk",
+            "gravy"
+          ],
+          "tool_ids": [],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "rührt man etwas Mehl mit Wasser oder Milch an und gibt es zur Brühe, lässt es aufkochen",
+            "note": null
+          }
+        },
+        {
+          "order": 7,
+          "text": "Mit Salz und Pfeffer abschmecken.",
+          "ingredient_ids": [
+            "salt",
+            "pepper",
+            "gravy"
+          ],
+          "tool_ids": [],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "und schmeckt mit Salz und Pfeffer ab",
+            "note": null
+          }
+        },
+        {
+          "order": 8,
+          "text": "Das Fleisch in Portionsstücke schneiden.",
+          "ingredient_ids": [
+            "beef"
+          ],
+          "tool_ids": [
+            "knife"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Das Fleisch wird in portionsstücke geschnitten",
+            "note": null
+          }
+        },
+        {
+          "order": 9,
+          "text": "Auf Fleischplatten anrichten, mit Petersilie, Tomaten oder Gemüse garnieren und zu Tisch reichen.",
+          "ingredient_ids": [
+            "beef",
+            "parsley",
+            "tomato",
+            "vegetable"
+          ],
+          "tool_ids": [
+            "meat_platter"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "auf Fleischplatten angerichtet und mit Petersilie, Tomaten [?] oder Gemüse garniert und zu Tisch gereicht",
+            "note": null
+          }
+        }
+      ],
+      "warnings": [
+        {
+          "message": "The document holds two recipes: Rindfleischerbraten (extracted) and Kalbsbraten (skipped).",
+          "target_id": null
+        },
+        {
+          "message": "The transcription was unsure about the title Rindfleischerbraten, the words portionsstücke, Tomaten and Gemüse; 'Tomaten [?]' is marked uncertain on the page.",
+          "target_id": null
+        },
+        {
+          "message": "The type of fat (Fett) is not specified; animal origin is uncertain.",
+          "target_id": null
+        },
+        {
+          "message": "The garnish (Petersilie, Tomaten oder Gemüse) is given as alternatives; all three are listed as ingredients without amounts.",
+          "target_id": null
+        },
+        {
+          "message": "No servings count is stated and no meat amount is given, so servings are missing.",
+          "target_id": null
+        },
+        {
+          "message": "Water or milk for the flour paste is an either-or choice; water is kept as its own ingredient and milk is listed separately.",
+          "target_id": null
+        }
+      ]
+    },
+    "usage": [
+      {
+        "model": "claude-haiku-5-5",
+        "input_tokens": 4942,
+        "output_tokens": 5276,
+        "seconds": 19.58433369999875,
+        "cached": false
+      }
+    ],
+    "problems_found": [],
+    "problems_left": []
+  },
+  "manipulation": {
+    "original": {
+      "title": "Rindfleischerbraten",
+      "language": "de",
+      "servings": {
+        "value": null,
+        "source": {
+          "status": "missing",
+          "page": null,
+          "quote": null,
+          "note": "The text does not state a number of servings and gives no meat amount to estimate from."
+        }
+      },
+      "ingredients": [
+        {
+          "id": "beef",
+          "name": "beef",
+          "name_original": "Fleisch",
+          "quantity": {
+            "kind": "absent",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "meat",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Das Fleisch wird gewaschen und abgetrocknet",
+            "note": null
+          }
+        },
+        {
+          "id": "salt",
+          "name": "salt",
+          "name_original": "Salz",
+          "quantity": {
+            "kind": "to_taste",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "mit Salz und Pfeffer eingerieben",
+            "note": null
+          }
+        },
+        {
+          "id": "pepper",
+          "name": "pepper",
+          "name_original": "Pfeffer",
+          "quantity": {
+            "kind": "to_taste",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "mit Salz und Pfeffer eingerieben",
+            "note": null
+          }
+        },
+        {
+          "id": "fat",
+          "name": "fat",
+          "name_original": "Fett",
+          "quantity": {
+            "kind": "absent",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": "hot",
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "uncertain",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "in heissem Fett von allen Seiten scharf anbraten",
+            "note": null
+          }
+        },
+        {
+          "id": "water",
+          "name": "water",
+          "name_original": "Wasser",
+          "quantity": {
+            "kind": "to_taste",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": "so viel heisses Wasser"
+          },
+          "preparation": "hot",
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "giesst man so viel heisses Wasser hinzu",
+            "note": null
+          }
+        },
+        {
+          "id": "flour",
+          "name": "flour",
+          "name_original": "Mehl",
+          "quantity": {
+            "kind": "vague",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": "etwas"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "rührt man etwas Mehl mit Wasser oder Milch an",
+            "note": null
+          }
+        },
+        {
+          "id": "milk",
+          "name": "milk",
+          "name_original": "Milch",
+          "quantity": {
+            "kind": "absent",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "dairy",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "mit Wasser oder Milch an",
+            "note": null
+          }
+        },
+        {
+          "id": "gravy",
+          "name": "gravy",
+          "name_original": "Brühe",
+          "quantity": {
+            "kind": "absent",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": true,
+          "animal": "meat",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "in dieser Brühe lässt man das Fleisch fertig schmoren",
+            "note": null
+          }
+        },
+        {
+          "id": "parsley",
+          "name": "parsley",
+          "name_original": "Petersilie",
+          "quantity": {
+            "kind": "absent",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "mit Petersilie, Tomaten [?] oder Gemüse garniert",
+            "note": null
+          }
+        },
+        {
+          "id": "tomato",
+          "name": "tomato",
+          "name_original": "Tomaten",
+          "quantity": {
+            "kind": "absent",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "mit Petersilie, Tomaten [?] oder Gemüse garniert",
+            "note": null
+          }
+        },
+        {
+          "id": "vegetable",
+          "name": "vegetable",
+          "name_original": "Gemüse",
+          "quantity": {
+            "kind": "absent",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Tomaten [?] oder Gemüse garniert",
+            "note": null
+          }
+        }
+      ],
+      "tools": [
+        {
+          "id": "pan",
+          "name": "pan",
+          "source": {
+            "status": "inferred",
+            "page": 1,
+            "quote": "in heissem Fett von allen Seiten scharf anbraten",
+            "note": "Needed for searing the meat in the step that browns it in hot fat."
+          }
+        },
+        {
+          "id": "fork",
+          "name": "fork",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "bis es sich mit der Gabel durchstechen lässt",
+            "note": null
+          }
+        },
+        {
+          "id": "knife",
+          "name": "knife",
+          "source": {
+            "status": "inferred",
+            "page": 1,
+            "quote": "Das Fleisch wird in portionsstücke geschnitten",
+            "note": "Needed to cut the meat into portions."
+          }
+        },
+        {
+          "id": "meat_platter",
+          "name": "meat platter",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "auf Fleischplatten angerichtet",
+            "note": null
+          }
+        }
+      ],
+      "steps": [
+        {
+          "order": 1,
+          "text": "Das Fleisch wird gewaschen und abgetrocknet.",
+          "ingredient_ids": [
+            "beef"
+          ],
+          "tool_ids": [],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Das Fleisch wird gewaschen und abgetrocknet",
+            "note": null
+          }
+        },
+        {
+          "order": 2,
+          "text": "Mit Salz und Pfeffer einreiben.",
+          "ingredient_ids": [
+            "beef",
+            "salt",
+            "pepper"
+          ],
+          "tool_ids": [],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "mit Salz und Pfeffer eingerieben",
+            "note": null
+          }
+        },
+        {
+          "order": 3,
+          "text": "In heissem Fett von allen Seiten scharf anbraten.",
+          "ingredient_ids": [
+            "beef",
+            "fat"
+          ],
+          "tool_ids": [
+            "pan"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "in heissem Fett von allen Seiten scharf anbraten",
+            "note": null
+          }
+        },
+        {
+          "order": 4,
+          "text": "So viel heisses Wasser hinzugießen, dass der Braten fast bedeckt ist.",
+          "ingredient_ids": [
+            "water",
+            "beef"
+          ],
+          "tool_ids": [],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "giesst man so viel heisses Wasser hinzu, dass der Braten fast bedeckt ist",
+            "note": null
+          }
+        },
+        {
+          "order": 5,
+          "text": "In dieser Brühe das Fleisch fertig schmoren.",
+          "ingredient_ids": [
+            "beef",
+            "gravy"
+          ],
+          "tool_ids": [
+            "fork"
+          ],
+          "duration": null,
+          "condition": "bis es sich mit der Gabel durchstechen lässt",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "in dieser Brühe lässt man das Fleisch fertig schmoren, bis es sich mit der Gabel durchstechen lässt",
+            "note": null
+          }
+        },
+        {
+          "order": 6,
+          "text": "Etwas Mehl mit Wasser oder Milch anrühren und zur Brühe geben, aufkochen lassen.",
+          "ingredient_ids": [
+            "flour",
+            "water",
+            "milk",
+            "gravy"
+          ],
+          "tool_ids": [],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "rührt man etwas Mehl mit Wasser oder Milch an und gibt es zur Brühe, lässt es aufkochen",
+            "note": null
+          }
+        },
+        {
+          "order": 7,
+          "text": "Mit Salz und Pfeffer abschmecken.",
+          "ingredient_ids": [
+            "salt",
+            "pepper",
+            "gravy"
+          ],
+          "tool_ids": [],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "und schmeckt mit Salz und Pfeffer ab",
+            "note": null
+          }
+        },
+        {
+          "order": 8,
+          "text": "Das Fleisch in Portionsstücke schneiden.",
+          "ingredient_ids": [
+            "beef"
+          ],
+          "tool_ids": [
+            "knife"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Das Fleisch wird in portionsstücke geschnitten",
+            "note": null
+          }
+        },
+        {
+          "order": 9,
+          "text": "Auf Fleischplatten anrichten, mit Petersilie, Tomaten oder Gemüse garnieren und zu Tisch reichen.",
+          "ingredient_ids": [
+            "beef",
+            "parsley",
+            "tomato",
+            "vegetable"
+          ],
+          "tool_ids": [
+            "meat_platter"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "auf Fleischplatten angerichtet und mit Petersilie, Tomaten [?] oder Gemüse garniert und zu Tisch gereicht",
+            "note": null
+          }
+        }
+      ],
+      "warnings": [
+        {
+          "message": "The document holds two recipes: Rindfleischerbraten (extracted) and Kalbsbraten (skipped).",
+          "target_id": null
+        },
+        {
+          "message": "The transcription was unsure about the title Rindfleischerbraten, the words portionsstücke, Tomaten and Gemüse; 'Tomaten [?]' is marked uncertain on the page.",
+          "target_id": null
+        },
+        {
+          "message": "The type of fat (Fett) is not specified; animal origin is uncertain.",
+          "target_id": null
+        },
+        {
+          "message": "The garnish (Petersilie, Tomaten oder Gemüse) is given as alternatives; all three are listed as ingredients without amounts.",
+          "target_id": null
+        },
+        {
+          "message": "No servings count is stated and no meat amount is given, so servings are missing.",
+          "target_id": null
+        },
+        {
+          "message": "Water or milk for the flour paste is an either-or choice; water is kept as its own ingredient and milk is listed separately.",
+          "target_id": null
+        }
+      ]
+    },
+    "recipe": {
+      "title": "Rindfleischerbraten",
+      "language": "de",
+      "servings": {
+        "value": null,
+        "source": {
+          "status": "missing",
+          "page": null,
+          "quote": null,
+          "note": "The text does not state a number of servings and gives no meat amount to estimate from."
+        }
+      },
+      "ingredients": [
+        {
+          "id": "vegan_beef",
+          "name": "seitan roast (or a whole celeriac)",
+          "name_original": "seitan roast (or a whole celeriac)",
+          "quantity": {
+            "kind": "absent",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "rule",
+            "page": 1,
+            "quote": "Das Fleisch wird gewaschen und abgetrocknet",
+            "note": "vegan substitute for 'Fleisch': The meat is the main ingredient. Seitan holds together in a long braise and takes up the marinade; a whole celeriac is a soy- and gluten-free alternative."
+          }
+        },
+        {
+          "id": "salt",
+          "name": "salt",
+          "name_original": "Salz",
+          "quantity": {
+            "kind": "to_taste",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "mit Salz und Pfeffer eingerieben",
+            "note": null
+          }
+        },
+        {
+          "id": "pepper",
+          "name": "pepper",
+          "name_original": "Pfeffer",
+          "quantity": {
+            "kind": "to_taste",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "mit Salz und Pfeffer eingerieben",
+            "note": null
+          }
+        },
+        {
+          "id": "fat",
+          "name": "fat",
+          "name_original": "Fett",
+          "quantity": {
+            "kind": "absent",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": "hot",
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "uncertain",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "in heissem Fett von allen Seiten scharf anbraten",
+            "note": null
+          }
+        },
+        {
+          "id": "water",
+          "name": "water",
+          "name_original": "Wasser",
+          "quantity": {
+            "kind": "to_taste",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": "so viel heisses Wasser"
+          },
+          "preparation": "hot",
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "giesst man so viel heisses Wasser hinzu",
+            "note": null
+          }
+        },
+        {
+          "id": "flour",
+          "name": "flour",
+          "name_original": "Mehl",
+          "quantity": {
+            "kind": "vague",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": "etwas"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "rührt man etwas Mehl mit Wasser oder Milch an",
+            "note": null
+          }
+        },
+        {
+          "id": "vegan_milk",
+          "name": "oat milk",
+          "name_original": "oat milk",
+          "quantity": {
+            "kind": "absent",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "rule",
+            "page": 1,
+            "quote": "mit Wasser oder Milch an",
+            "note": "vegan substitute for 'Milch': Dairy milk."
+          }
+        },
+        {
+          "id": "vegan_gravy",
+          "name": "vegetable stock with the pan juices of the vegan roast",
+          "name_original": "vegetable stock with the pan juices of the vegan roast",
+          "quantity": {
+            "kind": "absent",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": true,
+          "animal": "none",
+          "source": {
+            "status": "rule",
+            "page": 1,
+            "quote": "in dieser Brühe lässt man das Fleisch fertig schmoren",
+            "note": "vegan substitute for 'Brühe': There are no meat juices in a vegan version; stock plus the juices of the browned substitute takes their place."
+          }
+        },
+        {
+          "id": "parsley",
+          "name": "parsley",
+          "name_original": "Petersilie",
+          "quantity": {
+            "kind": "absent",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "mit Petersilie, Tomaten [?] oder Gemüse garniert",
+            "note": null
+          }
+        },
+        {
+          "id": "tomato",
+          "name": "tomato",
+          "name_original": "Tomaten",
+          "quantity": {
+            "kind": "absent",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "mit Petersilie, Tomaten [?] oder Gemüse garniert",
+            "note": null
+          }
+        },
+        {
+          "id": "vegetable",
+          "name": "vegetable",
+          "name_original": "Gemüse",
+          "quantity": {
+            "kind": "absent",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Tomaten [?] oder Gemüse garniert",
+            "note": null
+          }
+        }
+      ],
+      "tools": [
+        {
+          "id": "pan",
+          "name": "pan",
+          "source": {
+            "status": "inferred",
+            "page": 1,
+            "quote": "in heissem Fett von allen Seiten scharf anbraten",
+            "note": "Needed for searing the meat in the step that browns it in hot fat."
+          }
+        },
+        {
+          "id": "fork",
+          "name": "fork",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "bis es sich mit der Gabel durchstechen lässt",
+            "note": null
+          }
+        },
+        {
+          "id": "knife",
+          "name": "knife",
+          "source": {
+            "status": "inferred",
+            "page": 1,
+            "quote": "Das Fleisch wird in portionsstücke geschnitten",
+            "note": "Needed to cut the meat into portions."
+          }
+        },
+        {
+          "id": "meat_platter",
+          "name": "meat platter",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "auf Fleischplatten angerichtet",
+            "note": null
+          }
+        }
+      ],
+      "steps": [
+        {
+          "order": 1,
+          "text": "Das Fleisch wird gewaschen und abgetrocknet.\n[Vegan: use seitan roast (or a whole celeriac) instead of Fleisch. Marinate seitan for 1–2 days at most; a week in an acidic marinade makes it soft. Braise 45–60 minutes instead of hours.]",
+          "ingredient_ids": [
+            "vegan_beef"
+          ],
+          "tool_ids": [],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Das Fleisch wird gewaschen und abgetrocknet",
+            "note": null
+          }
+        },
+        {
+          "order": 2,
+          "text": "Mit Salz und Pfeffer einreiben.\n[Vegan: use seitan roast (or a whole celeriac) instead of Fleisch. Marinate seitan for 1–2 days at most; a week in an acidic marinade makes it soft. Braise 45–60 minutes instead of hours.]",
+          "ingredient_ids": [
+            "vegan_beef",
+            "salt",
+            "pepper"
+          ],
+          "tool_ids": [],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "mit Salz und Pfeffer eingerieben",
+            "note": null
+          }
+        },
+        {
+          "order": 3,
+          "text": "In heissem Fett von allen Seiten scharf anbraten.\n[Vegan: use seitan roast (or a whole celeriac) instead of Fleisch. Marinate seitan for 1–2 days at most; a week in an acidic marinade makes it soft. Braise 45–60 minutes instead of hours.]",
+          "ingredient_ids": [
+            "vegan_beef",
+            "fat"
+          ],
+          "tool_ids": [
+            "pan"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "in heissem Fett von allen Seiten scharf anbraten",
+            "note": null
+          }
+        },
+        {
+          "order": 4,
+          "text": "So viel heisses Wasser hinzugießen, dass der Braten fast bedeckt ist.\n[Vegan: use seitan roast (or a whole celeriac) instead of Fleisch. Marinate seitan for 1–2 days at most; a week in an acidic marinade makes it soft. Braise 45–60 minutes instead of hours.]",
+          "ingredient_ids": [
+            "water",
+            "vegan_beef"
+          ],
+          "tool_ids": [],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "giesst man so viel heisses Wasser hinzu, dass der Braten fast bedeckt ist",
+            "note": null
+          }
+        },
+        {
+          "order": 5,
+          "text": "In dieser Brühe das Fleisch fertig schmoren.\n[Vegan: use seitan roast (or a whole celeriac) instead of Fleisch; use vegetable stock with the pan juices of the vegan roast instead of Brühe. Marinate seitan for 1–2 days at most; a week in an acidic marinade makes it soft. Braise 45–60 minutes instead of hours.]",
+          "ingredient_ids": [
+            "vegan_beef",
+            "vegan_gravy"
+          ],
+          "tool_ids": [
+            "fork"
+          ],
+          "duration": null,
+          "condition": "bis es sich mit der Gabel durchstechen lässt",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "in dieser Brühe lässt man das Fleisch fertig schmoren, bis es sich mit der Gabel durchstechen lässt",
+            "note": null
+          }
+        },
+        {
+          "order": 6,
+          "text": "Etwas Mehl mit Wasser oder Milch anrühren und zur Brühe geben, aufkochen lassen.\n[Vegan: use oat milk instead of Milch; use vegetable stock with the pan juices of the vegan roast instead of Brühe.]",
+          "ingredient_ids": [
+            "flour",
+            "water",
+            "vegan_milk",
+            "vegan_gravy"
+          ],
+          "tool_ids": [],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "rührt man etwas Mehl mit Wasser oder Milch an und gibt es zur Brühe, lässt es aufkochen",
+            "note": null
+          }
+        },
+        {
+          "order": 7,
+          "text": "Mit Salz und Pfeffer abschmecken.\n[Vegan: use vegetable stock with the pan juices of the vegan roast instead of Brühe.]",
+          "ingredient_ids": [
+            "salt",
+            "pepper",
+            "vegan_gravy"
+          ],
+          "tool_ids": [],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "und schmeckt mit Salz und Pfeffer ab",
+            "note": null
+          }
+        },
+        {
+          "order": 8,
+          "text": "Das Fleisch in Portionsstücke schneiden.\n[Vegan: use seitan roast (or a whole celeriac) instead of Fleisch. Marinate seitan for 1–2 days at most; a week in an acidic marinade makes it soft. Braise 45–60 minutes instead of hours.]",
+          "ingredient_ids": [
+            "vegan_beef"
+          ],
+          "tool_ids": [
+            "knife"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Das Fleisch wird in portionsstücke geschnitten",
+            "note": null
+          }
+        },
+        {
+          "order": 9,
+          "text": "Auf Fleischplatten anrichten, mit Petersilie, Tomaten oder Gemüse garnieren und zu Tisch reichen.\n[Vegan: use seitan roast (or a whole celeriac) instead of Fleisch. Marinate seitan for 1–2 days at most; a week in an acidic marinade makes it soft. Braise 45–60 minutes instead of hours.]",
+          "ingredient_ids": [
+            "vegan_beef",
+            "parsley",
+            "tomato",
+            "vegetable"
+          ],
+          "tool_ids": [
+            "meat_platter"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "auf Fleischplatten angerichtet und mit Petersilie, Tomaten [?] oder Gemüse garniert und zu Tisch gereicht",
+            "note": null
+          }
+        }
+      ],
+      "warnings": [
+        {
+          "message": "The document holds two recipes: Rindfleischerbraten (extracted) and Kalbsbraten (skipped).",
+          "target_id": null
+        },
+        {
+          "message": "The transcription was unsure about the title Rindfleischerbraten, the words portionsstücke, Tomaten and Gemüse; 'Tomaten [?]' is marked uncertain on the page.",
+          "target_id": null
+        },
+        {
+          "message": "The type of fat (Fett) is not specified; animal origin is uncertain.",
+          "target_id": null
+        },
+        {
+          "message": "The garnish (Petersilie, Tomaten oder Gemüse) is given as alternatives; all three are listed as ingredients without amounts.",
+          "target_id": null
+        },
+        {
+          "message": "No servings count is stated and no meat amount is given, so servings are missing.",
+          "target_id": null
+        },
+        {
+          "message": "Water or milk for the flour paste is an either-or choice; water is kept as its own ingredient and milk is listed separately.",
+          "target_id": null
+        },
+        {
+          "message": "Not fully vegan: no vegan substitute is known for Fett. Choose one before cooking.",
+          "target_id": null
+        },
+        {
+          "message": "Vegan, Fett: could not tell whether it contains animal products (it depends on the brand or recipe).",
+          "target_id": "fat"
+        }
+      ]
+    },
+    "changes": [
+      {
+        "rule": "vegan",
+        "target": "beef",
+        "before": "Fleisch",
+        "after": "seitan roast (or a whole celeriac)",
+        "reason": "The meat is the main ingredient. Seitan holds together in a long braise and takes up the marinade; a whole celeriac is a soy- and gluten-free alternative."
+      },
+      {
+        "rule": "vegan",
+        "target": "milk",
+        "before": "Milch",
+        "after": "oat milk",
+        "reason": "Dairy milk."
+      },
+      {
+        "rule": "vegan",
+        "target": "gravy",
+        "before": "Brühe",
+        "after": "vegetable stock with the pan juices of the vegan roast",
+        "reason": "There are no meat juices in a vegan version; stock plus the juices of the browned substitute takes their place."
+      },
+      {
+        "rule": "vegan",
+        "target": "step 1",
+        "before": "Fleisch",
+        "after": "seitan roast (or a whole celeriac)",
+        "reason": "Substitution carried into the method. Marinate seitan for 1–2 days at most; a week in an acidic marinade makes it soft. Braise 45–60 minutes instead of hours."
+      },
+      {
+        "rule": "vegan",
+        "target": "step 2",
+        "before": "Fleisch",
+        "after": "seitan roast (or a whole celeriac)",
+        "reason": "Substitution carried into the method. Marinate seitan for 1–2 days at most; a week in an acidic marinade makes it soft. Braise 45–60 minutes instead of hours."
+      },
+      {
+        "rule": "vegan",
+        "target": "step 3",
+        "before": "Fleisch",
+        "after": "seitan roast (or a whole celeriac)",
+        "reason": "Substitution carried into the method. Marinate seitan for 1–2 days at most; a week in an acidic marinade makes it soft. Braise 45–60 minutes instead of hours."
+      },
+      {
+        "rule": "vegan",
+        "target": "step 4",
+        "before": "Fleisch",
+        "after": "seitan roast (or a whole celeriac)",
+        "reason": "Substitution carried into the method. Marinate seitan for 1–2 days at most; a week in an acidic marinade makes it soft. Braise 45–60 minutes instead of hours."
+      },
+      {
+        "rule": "vegan",
+        "target": "step 5",
+        "before": "Fleisch, Brühe",
+        "after": "seitan roast (or a whole celeriac), vegetable stock with the pan juices of the vegan roast",
+        "reason": "Substitution carried into the method. Marinate seitan for 1–2 days at most; a week in an acidic marinade makes it soft. Braise 45–60 minutes instead of hours."
+      },
+      {
+        "rule": "vegan",
+        "target": "step 6",
+        "before": "Milch, Brühe",
+        "after": "oat milk, vegetable stock with the pan juices of the vegan roast",
+        "reason": "Substitution carried into the method."
+      },
+      {
+        "rule": "vegan",
+        "target": "step 7",
+        "before": "Brühe",
+        "after": "vegetable stock with the pan juices of the vegan roast",
+        "reason": "Substitution carried into the method."
+      },
+      {
+        "rule": "vegan",
+        "target": "step 8",
+        "before": "Fleisch",
+        "after": "seitan roast (or a whole celeriac)",
+        "reason": "Substitution carried into the method. Marinate seitan for 1–2 days at most; a week in an acidic marinade makes it soft. Braise 45–60 minutes instead of hours."
+      },
+      {
+        "rule": "vegan",
+        "target": "step 9",
+        "before": "Fleisch",
+        "after": "seitan roast (or a whole celeriac)",
+        "reason": "Substitution carried into the method. Marinate seitan for 1–2 days at most; a week in an acidic marinade makes it soft. Braise 45–60 minutes instead of hours."
+      },
+      {
+        "rule": "vegan",
+        "target": "fat",
+        "before": "Fett",
+        "after": "unchanged, no known substitute",
+        "reason": "could not tell whether it contains animal products (it depends on the brand or recipe)."
+      }
+    ]
+  }
+}

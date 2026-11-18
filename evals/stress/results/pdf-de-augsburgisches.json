@@ -1,0 +1,1782 @@
+{
+  "document": {
+    "name": "pdf-de-augsburgisches.pdf",
+    "kind": "pdf",
+    "pages": [
+      {
+        "number": 1,
+        "text": "252 Verschiedene Arten von Fleischspeisen\n\n300. Rouletten von Kalbfleisch auf andre Art.\n\nMan schneidet und klopft das Fleisch, wie vorhin angezeigt worden ist. Dann bestreicht man jedes Stücklein Fleisch mit zergangenem Butter, bestreut es auf der mit Butter bestrichenen Seite mit geriebenen und untereinander gemischten schwarzen Brod-Brosamen (Musel), fein geschnittenen Schalottenzwiebeln, Peterlingkraut, Salz, ein wenig Pfeffer, Ingwer und Nägelein. Wickelt die Stücklein zusammen, und bindet sie mit einem Faden, und legt sie, wie schon Nr. 299. gesagt, in zergangenen Butter in einen Fußhafen. Wann noch etwas von dem untereinander Gemischten übrig ist, so streut man es darauf herum, deckt das Geschirr fest zu, und läßt die Rouletten eine Stunde dämpfen. Alsdann thut man den Deckel weg, und läßt sie gelb werden. Eine Viertelstunde vor dem Anrichten nimmt man sie heraus, und gießt, wenn es für 4 Personen Rouletten sind, ein Quart sauren Raum, nebst etlichen Löffeln voll Fleischbrühe in das Geschirr, worinnen die Rouletten gedämpft worden sind. Nun thut man auch geschnittene Citronenschaalen, nebst Salz dazu, und läßt es noch ein wenig aufkochen; legt die Rouletten darein, daß sie wieder recht heiß werden, richtet sie hernach auf eine Schüssel an, und trägt sie auf.\n\n301. Se",
+        "method": "vision",
+        "decoration_text": [
+          "252",
+          "Verschiedene Arten von Fleischspeisen",
+          "300.",
+          "301."
+        ],
+        "uncertain": [
+          "Musel",
+          "Peterlingkraut",
+          "Fußhafen",
+          "Raum",
+          "Nägelein"
+        ],
+        "usage": {
+          "model": "claude-haiku-5-5",
+          "input_tokens": 3947,
+          "output_tokens": 722,
+          "seconds": 3.857853100000284,
+          "cached": false
+        }
+      },
+      {
+        "number": 2,
+        "text": "301. Gedämpfte kälberne Vögel.\n\nSchneid von einem Kalbsschlegel Stücke nach Belieben, wasch und klopfe sie ein wenig, spicke sie auf allen Seiten mit Speck, bestreue sie mit nur wenig Salz und ein wenig Pfeffer. Zerschneide etliche Zwiebeln in dünne Scheiben, und lege diese, wie auch gewaschenes Peterlingkraut, in ein Geschirr unter und auf die kälberne Vögel, gieß Essig darüber, und laß sie einen halben Tag, oder auch länger liegen. Dann laß Butter in einem Fußhafen oder Kasserol zergehen, lege die sogenannten Vögel darein, salze sie noch ein klein wenig, decke das Geschirr zu, und laß sie eine Viertelstunde dämpfen. Wann sie bald gelb werden wollen, so bestreue sie mit Mehl, und mache sie damit vollends gelb. Dann thu den Peterling und die Zwiebeln aus dem Essig dazu, wie auch etwas von diesem Essig, worinnen sie gebeizt worden sind, nebst etlichen Löffeln voll Fleischbrühe und Citronenschaalen. Laß die Vögel vollends so lang kochen, bis sie weich sind, und nur wenige Brühe mehr haben, und gieb sie mit geschnittenen Citronen-Schaalen und Blätzchen daran, auf den Tisch.\n\n302. Auf andere Art\n\nWerden die kälberne Vögel also gedämpft: Wenn sie, wie Nr. 301. gezeigt worden ist, von einem Kalbsschlegel zugeschnitten, gespickt worden,",
+        "method": "vision",
+        "decoration_text": [
+          "und Geflügel in Brühen.",
+          "253"
+        ],
+        "uncertain": [],
+        "usage": {
+          "model": "claude-haiku-5-5",
+          "input_tokens": 3947,
+          "output_tokens": 1666,
+          "seconds": 6.8867723000003025,
+          "cached": false
+        }
+      }
+    ]
+  },
+  "extraction": {
+    "is_recipe": true,
+    "recipes_in_document": 3,
+    "recipe": {
+      "title": "Rouletten von Kalbfleisch auf andre Art",
+      "language": "de",
+      "servings": {
+        "value": 4,
+        "source": {
+          "status": "read",
+          "page": 1,
+          "quote": "wenn es für 4 Personen Rouletten sind",
+          "note": "Stated only conditionally in the text, for the sour cream amount."
+        }
+      },
+      "ingredients": [
+        {
+          "id": "veal",
+          "name": "veal",
+          "name_original": "Kalbfleisch",
+          "quantity": {
+            "kind": "absent",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": "cut and beaten thin",
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "meat",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Rouletten von Kalbfleisch auf andre Art.",
+            "note": null
+          }
+        },
+        {
+          "id": "butter",
+          "name": "butter",
+          "name_original": "Butter",
+          "quantity": {
+            "kind": "absent",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": "melted",
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "dairy",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "mit zergangenem Butter",
+            "note": null
+          }
+        },
+        {
+          "id": "breadcrumbs",
+          "name": "breadcrumbs from black bread",
+          "name_original": "schwarzen Brod-Brosamen (Musel)",
+          "quantity": {
+            "kind": "absent",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": "grated and mixed",
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "uncertain",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "geriebenen und untereinander gemischten schwarzen Brod-Brosamen (Musel)",
+            "note": null
+          }
+        },
+        {
+          "id": "shallot",
+          "name": "shallots",
+          "name_original": "Schalottenzwiebeln",
+          "quantity": {
+            "kind": "absent",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": "finely sliced",
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "fein geschnittenen Schalottenzwiebeln",
+            "note": null
+          }
+        },
+        {
+          "id": "parsley",
+          "name": "parsley",
+          "name_original": "Peterlingkraut",
+          "quantity": {
+            "kind": "absent",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Peterlingkraut, Salz, ein wenig Pfeffer",
+            "note": null
+          }
+        },
+        {
+          "id": "salt",
+          "name": "salt",
+          "name_original": "Salz",
+          "quantity": {
+            "kind": "absent",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Peterlingkraut, Salz, ein wenig Pfeffer",
+            "note": null
+          }
+        },
+        {
+          "id": "pepper",
+          "name": "pepper",
+          "name_original": "Pfeffer",
+          "quantity": {
+            "kind": "vague",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": "ein wenig"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "ein wenig Pfeffer, Ingwer und Nägelein",
+            "note": null
+          }
+        },
+        {
+          "id": "ginger",
+          "name": "ginger",
+          "name_original": "Ingwer",
+          "quantity": {
+            "kind": "absent",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Ingwer und Nägelein",
+            "note": null
+          }
+        },
+        {
+          "id": "cloves",
+          "name": "cloves",
+          "name_original": "Nägelein",
+          "quantity": {
+            "kind": "absent",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Ingwer und Nägelein",
+            "note": null
+          }
+        },
+        {
+          "id": "sour_cream",
+          "name": "sour cream",
+          "name_original": "sauren Raum",
+          "quantity": {
+            "kind": "exact",
+            "value": 1.0,
+            "max_value": null,
+            "unit": "Quart",
+            "raw": "ein Quart"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "dairy",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "ein Quart sauren Raum",
+            "note": null
+          }
+        },
+        {
+          "id": "meat_broth",
+          "name": "meat broth",
+          "name_original": "Fleischbrühe",
+          "quantity": {
+            "kind": "vague",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": "etlichen Löffeln voll"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "meat",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "nebst etlichen Löffeln voll Fleischbrühe",
+            "note": null
+          }
+        },
+        {
+          "id": "lemon_peel",
+          "name": "lemon peel",
+          "name_original": "Citronenschaalen",
+          "quantity": {
+            "kind": "absent",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": "cut",
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "geschnittene Citronenschaalen, nebst Salz dazu",
+            "note": null
+          }
+        }
+      ],
+      "tools": [
+        {
+          "id": "knife",
+          "name": "knife",
+          "source": {
+            "status": "inferred",
+            "page": 1,
+            "quote": "Man schneidet und klopft das Fleisch",
+            "note": "Implied by 'schneidet' in the first step."
+          }
+        },
+        {
+          "id": "mallet",
+          "name": "meat mallet",
+          "source": {
+            "status": "inferred",
+            "page": 1,
+            "quote": "Man schneidet und klopft das Fleisch",
+            "note": "Implied by 'klopft' in the first step."
+          }
+        },
+        {
+          "id": "kitchen_twine",
+          "name": "kitchen twine",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "bindet sie mit einem Faden",
+            "note": null
+          }
+        },
+        {
+          "id": "fusshafen",
+          "name": "Fußhafen (pot)",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "in einen Fußhafen",
+            "note": null
+          }
+        },
+        {
+          "id": "lid",
+          "name": "lid",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "thut man den Deckel weg",
+            "note": null
+          }
+        },
+        {
+          "id": "stove",
+          "name": "stove",
+          "source": {
+            "status": "inferred",
+            "page": 1,
+            "quote": "läßt die Rouletten eine Stunde dämpfen",
+            "note": "Implied by the steaming and browning steps."
+          }
+        },
+        {
+          "id": "serving_dish",
+          "name": "serving dish",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "richtet sie hernach auf eine Schüssel an",
+            "note": null
+          }
+        }
+      ],
+      "steps": [
+        {
+          "order": 1,
+          "text": "Man schneidet und klopft das Fleisch, wie vorhin angezeigt worden ist.",
+          "ingredient_ids": [
+            "veal"
+          ],
+          "tool_ids": [
+            "knife",
+            "mallet"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Man schneidet und klopft das Fleisch, wie vorhin angezeigt worden ist.",
+            "note": null
+          }
+        },
+        {
+          "order": 2,
+          "text": "Jedes Stücklein Fleisch mit zerlassener Butter bestreichen und auf der buttrigen Seite mit den gemischten Bröseln (Musel), fein geschnittenen Schalottenzwiebeln, Peterlingkraut, Salz, wenig Pfeffer, Ingwer und Nägelein bestreuen.",
+          "ingredient_ids": [
+            "veal",
+            "butter",
+            "breadcrumbs",
+            "shallot",
+            "parsley",
+            "salt",
+            "pepper",
+            "ginger",
+            "cloves"
+          ],
+          "tool_ids": [],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Dann bestreicht man jedes Stücklein Fleisch mit zergangenem Butter, bestreut es auf der mit Butter bestrichenen Seite mit geriebenen und untereinander gemischten schwarzen Brod-Brosamen (Musel), fein geschnittenen Schalottenzwiebeln, Peterlingkraut, Salz, ein wenig Pfeffer, Ingwer und Nägelein.",
+            "note": null
+          }
+        },
+        {
+          "order": 3,
+          "text": "Die Stücklein zusammenwickeln, mit einem Faden binden und wie bei Nr. 299 in zerlassener Butter in einen Fußhafen legen.",
+          "ingredient_ids": [
+            "veal",
+            "butter"
+          ],
+          "tool_ids": [
+            "kitchen_twine",
+            "fusshafen"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Wickelt die Stücklein zusammen, und bindet sie mit einem Faden, und legt sie, wie schon Nr. 299. gesagt, in zergangenen Butter in einen Fußhafen.",
+            "note": null
+          }
+        },
+        {
+          "order": 4,
+          "text": "Übriges Gemisch darüber streuen, das Geschirr fest zudecken und die Rouletten eine Stunde dämpfen lassen.",
+          "ingredient_ids": [
+            "breadcrumbs",
+            "veal"
+          ],
+          "tool_ids": [
+            "lid",
+            "stove"
+          ],
+          "duration": {
+            "raw": "eine Stunde",
+            "min_minutes": 60.0,
+            "max_minutes": 60.0
+          },
+          "condition": "Falls noch etwas vom Gemisch übrig ist.",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Wann noch etwas von dem untereinander Gemischten übrig ist, so streut man es darauf herum, deckt das Geschirr fest zu, und läßt die Rouletten eine Stunde dämpfen.",
+            "note": null
+          }
+        },
+        {
+          "order": 5,
+          "text": "Den Deckel abnehmen und die Rouletten gelb werden lassen.",
+          "ingredient_ids": [
+            "veal"
+          ],
+          "tool_ids": [
+            "lid"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Alsdann thut man den Deckel weg, und läßt sie gelb werden.",
+            "note": null
+          }
+        },
+        {
+          "order": 6,
+          "text": "Eine Viertelstunde vor dem Anrichten die Rouletten herausnehmen; saure Sahne nebst etlichen Löffeln Fleischbrühe in das Geschirr gießen, in dem sie gedämpft wurden.",
+          "ingredient_ids": [
+            "veal",
+            "sour_cream",
+            "meat_broth"
+          ],
+          "tool_ids": [],
+          "duration": {
+            "raw": "eine Viertelstunde",
+            "min_minutes": 15.0,
+            "max_minutes": 15.0
+          },
+          "condition": "Die Menge von einem Quart saurer Sahne gilt, wenn es für 4 Personen ist.",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Eine Viertelstunde vor dem Anrichten nimmt man sie heraus, und gießt, wenn es für 4 Personen Rouletten sind, ein Quart sauren Raum, nebst etlichen Löffeln voll Fleischbrühe in das Geschirr, worinnen die Rouletten gedämpft worden sind.",
+            "note": null
+          }
+        },
+        {
+          "order": 7,
+          "text": "Geschnittene Zitronenschalen und Salz dazugeben und das Ganze noch ein wenig aufkochen lassen.",
+          "ingredient_ids": [
+            "lemon_peel",
+            "salt",
+            "sour_cream"
+          ],
+          "tool_ids": [],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Nun thut man auch geschnittene Citronenschaalen, nebst Salz dazu, und läßt es noch ein wenig aufkochen",
+            "note": null
+          }
+        },
+        {
+          "order": 8,
+          "text": "Die Rouletten wieder darin heiß werden lassen, dann auf einer Schüssel anrichten und servieren.",
+          "ingredient_ids": [
+            "veal"
+          ],
+          "tool_ids": [
+            "serving_dish"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "legt die Rouletten darein, daß sie wieder recht heiß werden, richtet sie hernach auf eine Schüssel an, und trägt sie auf.",
+            "note": null
+          }
+        }
+      ],
+      "warnings": [
+        {
+          "message": "Recipe 300 is extracted as the first complete recipe. The document also contains recipe 301 (Gedämpfte kälberne Vögel), recipe 302 (Auf andere Art) and a partly visible recipe 301 heading on page 1; the text ends mid-document, so the total count may be higher.",
+          "target_id": null
+        },
+        {
+          "message": "Words the transcription was unsure about: Musel (read as breadcrumbs), Peterlingkraut (parsley), Fußhafen (pot), Raum (read as sour cream, probably Rahm), Nägelein (cloves).",
+          "target_id": null
+        },
+        {
+          "message": "Almost no ingredient amounts are given in this recipe; amounts are marked absent, not guessed.",
+          "target_id": null
+        },
+        {
+          "message": "The method refers to earlier recipes ('wie vorhin angezeigt', 'wie schon Nr. 299') that are not part of this extraction.",
+          "target_id": null
+        },
+        {
+          "message": "Servings of 4 come only from the conditional phrase about the sour cream quantity.",
+          "target_id": null
+        }
+      ]
+    },
+    "usage": [
+      {
+        "model": "claude-haiku-5-5",
+        "input_tokens": 5695,
+        "output_tokens": 7872,
+        "seconds": 28.818148599999404,
+        "cached": false
+      }
+    ],
+    "problems_found": [],
+    "problems_left": []
+  },
+  "manipulation": {
+    "original": {
+      "title": "Rouletten von Kalbfleisch auf andre Art",
+      "language": "de",
+      "servings": {
+        "value": 4,
+        "source": {
+          "status": "read",
+          "page": 1,
+          "quote": "wenn es für 4 Personen Rouletten sind",
+          "note": "Stated only conditionally in the text, for the sour cream amount."
+        }
+      },
+      "ingredients": [
+        {
+          "id": "veal",
+          "name": "veal",
+          "name_original": "Kalbfleisch",
+          "quantity": {
+            "kind": "absent",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": "cut and beaten thin",
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "meat",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Rouletten von Kalbfleisch auf andre Art.",
+            "note": null
+          }
+        },
+        {
+          "id": "butter",
+          "name": "butter",
+          "name_original": "Butter",
+          "quantity": {
+            "kind": "absent",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": "melted",
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "dairy",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "mit zergangenem Butter",
+            "note": null
+          }
+        },
+        {
+          "id": "breadcrumbs",
+          "name": "breadcrumbs from black bread",
+          "name_original": "schwarzen Brod-Brosamen (Musel)",
+          "quantity": {
+            "kind": "absent",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": "grated and mixed",
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "uncertain",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "geriebenen und untereinander gemischten schwarzen Brod-Brosamen (Musel)",
+            "note": null
+          }
+        },
+        {
+          "id": "shallot",
+          "name": "shallots",
+          "name_original": "Schalottenzwiebeln",
+          "quantity": {
+            "kind": "absent",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": "finely sliced",
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "fein geschnittenen Schalottenzwiebeln",
+            "note": null
+          }
+        },
+        {
+          "id": "parsley",
+          "name": "parsley",
+          "name_original": "Peterlingkraut",
+          "quantity": {
+            "kind": "absent",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Peterlingkraut, Salz, ein wenig Pfeffer",
+            "note": null
+          }
+        },
+        {
+          "id": "salt",
+          "name": "salt",
+          "name_original": "Salz",
+          "quantity": {
+            "kind": "absent",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Peterlingkraut, Salz, ein wenig Pfeffer",
+            "note": null
+          }
+        },
+        {
+          "id": "pepper",
+          "name": "pepper",
+          "name_original": "Pfeffer",
+          "quantity": {
+            "kind": "vague",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": "ein wenig"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "ein wenig Pfeffer, Ingwer und Nägelein",
+            "note": null
+          }
+        },
+        {
+          "id": "ginger",
+          "name": "ginger",
+          "name_original": "Ingwer",
+          "quantity": {
+            "kind": "absent",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Ingwer und Nägelein",
+            "note": null
+          }
+        },
+        {
+          "id": "cloves",
+          "name": "cloves",
+          "name_original": "Nägelein",
+          "quantity": {
+            "kind": "absent",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Ingwer und Nägelein",
+            "note": null
+          }
+        },
+        {
+          "id": "sour_cream",
+          "name": "sour cream",
+          "name_original": "sauren Raum",
+          "quantity": {
+            "kind": "exact",
+            "value": 1.0,
+            "max_value": null,
+            "unit": "Quart",
+            "raw": "ein Quart"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "dairy",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "ein Quart sauren Raum",
+            "note": null
+          }
+        },
+        {
+          "id": "meat_broth",
+          "name": "meat broth",
+          "name_original": "Fleischbrühe",
+          "quantity": {
+            "kind": "vague",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": "etlichen Löffeln voll"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "meat",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "nebst etlichen Löffeln voll Fleischbrühe",
+            "note": null
+          }
+        },
+        {
+          "id": "lemon_peel",
+          "name": "lemon peel",
+          "name_original": "Citronenschaalen",
+          "quantity": {
+            "kind": "absent",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": "cut",
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "geschnittene Citronenschaalen, nebst Salz dazu",
+            "note": null
+          }
+        }
+      ],
+      "tools": [
+        {
+          "id": "knife",
+          "name": "knife",
+          "source": {
+            "status": "inferred",
+            "page": 1,
+            "quote": "Man schneidet und klopft das Fleisch",
+            "note": "Implied by 'schneidet' in the first step."
+          }
+        },
+        {
+          "id": "mallet",
+          "name": "meat mallet",
+          "source": {
+            "status": "inferred",
+            "page": 1,
+            "quote": "Man schneidet und klopft das Fleisch",
+            "note": "Implied by 'klopft' in the first step."
+          }
+        },
+        {
+          "id": "kitchen_twine",
+          "name": "kitchen twine",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "bindet sie mit einem Faden",
+            "note": null
+          }
+        },
+        {
+          "id": "fusshafen",
+          "name": "Fußhafen (pot)",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "in einen Fußhafen",
+            "note": null
+          }
+        },
+        {
+          "id": "lid",
+          "name": "lid",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "thut man den Deckel weg",
+            "note": null
+          }
+        },
+        {
+          "id": "stove",
+          "name": "stove",
+          "source": {
+            "status": "inferred",
+            "page": 1,
+            "quote": "läßt die Rouletten eine Stunde dämpfen",
+            "note": "Implied by the steaming and browning steps."
+          }
+        },
+        {
+          "id": "serving_dish",
+          "name": "serving dish",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "richtet sie hernach auf eine Schüssel an",
+            "note": null
+          }
+        }
+      ],
+      "steps": [
+        {
+          "order": 1,
+          "text": "Man schneidet und klopft das Fleisch, wie vorhin angezeigt worden ist.",
+          "ingredient_ids": [
+            "veal"
+          ],
+          "tool_ids": [
+            "knife",
+            "mallet"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Man schneidet und klopft das Fleisch, wie vorhin angezeigt worden ist.",
+            "note": null
+          }
+        },
+        {
+          "order": 2,
+          "text": "Jedes Stücklein Fleisch mit zerlassener Butter bestreichen und auf der buttrigen Seite mit den gemischten Bröseln (Musel), fein geschnittenen Schalottenzwiebeln, Peterlingkraut, Salz, wenig Pfeffer, Ingwer und Nägelein bestreuen.",
+          "ingredient_ids": [
+            "veal",
+            "butter",
+            "breadcrumbs",
+            "shallot",
+            "parsley",
+            "salt",
+            "pepper",
+            "ginger",
+            "cloves"
+          ],
+          "tool_ids": [],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Dann bestreicht man jedes Stücklein Fleisch mit zergangenem Butter, bestreut es auf der mit Butter bestrichenen Seite mit geriebenen und untereinander gemischten schwarzen Brod-Brosamen (Musel), fein geschnittenen Schalottenzwiebeln, Peterlingkraut, Salz, ein wenig Pfeffer, Ingwer und Nägelein.",
+            "note": null
+          }
+        },
+        {
+          "order": 3,
+          "text": "Die Stücklein zusammenwickeln, mit einem Faden binden und wie bei Nr. 299 in zerlassener Butter in einen Fußhafen legen.",
+          "ingredient_ids": [
+            "veal",
+            "butter"
+          ],
+          "tool_ids": [
+            "kitchen_twine",
+            "fusshafen"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Wickelt die Stücklein zusammen, und bindet sie mit einem Faden, und legt sie, wie schon Nr. 299. gesagt, in zergangenen Butter in einen Fußhafen.",
+            "note": null
+          }
+        },
+        {
+          "order": 4,
+          "text": "Übriges Gemisch darüber streuen, das Geschirr fest zudecken und die Rouletten eine Stunde dämpfen lassen.",
+          "ingredient_ids": [
+            "breadcrumbs",
+            "veal"
+          ],
+          "tool_ids": [
+            "lid",
+            "stove"
+          ],
+          "duration": {
+            "raw": "eine Stunde",
+            "min_minutes": 60.0,
+            "max_minutes": 60.0
+          },
+          "condition": "Falls noch etwas vom Gemisch übrig ist.",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Wann noch etwas von dem untereinander Gemischten übrig ist, so streut man es darauf herum, deckt das Geschirr fest zu, und läßt die Rouletten eine Stunde dämpfen.",
+            "note": null
+          }
+        },
+        {
+          "order": 5,
+          "text": "Den Deckel abnehmen und die Rouletten gelb werden lassen.",
+          "ingredient_ids": [
+            "veal"
+          ],
+          "tool_ids": [
+            "lid"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Alsdann thut man den Deckel weg, und läßt sie gelb werden.",
+            "note": null
+          }
+        },
+        {
+          "order": 6,
+          "text": "Eine Viertelstunde vor dem Anrichten die Rouletten herausnehmen; saure Sahne nebst etlichen Löffeln Fleischbrühe in das Geschirr gießen, in dem sie gedämpft wurden.",
+          "ingredient_ids": [
+            "veal",
+            "sour_cream",
+            "meat_broth"
+          ],
+          "tool_ids": [],
+          "duration": {
+            "raw": "eine Viertelstunde",
+            "min_minutes": 15.0,
+            "max_minutes": 15.0
+          },
+          "condition": "Die Menge von einem Quart saurer Sahne gilt, wenn es für 4 Personen ist.",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Eine Viertelstunde vor dem Anrichten nimmt man sie heraus, und gießt, wenn es für 4 Personen Rouletten sind, ein Quart sauren Raum, nebst etlichen Löffeln voll Fleischbrühe in das Geschirr, worinnen die Rouletten gedämpft worden sind.",
+            "note": null
+          }
+        },
+        {
+          "order": 7,
+          "text": "Geschnittene Zitronenschalen und Salz dazugeben und das Ganze noch ein wenig aufkochen lassen.",
+          "ingredient_ids": [
+            "lemon_peel",
+            "salt",
+            "sour_cream"
+          ],
+          "tool_ids": [],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Nun thut man auch geschnittene Citronenschaalen, nebst Salz dazu, und läßt es noch ein wenig aufkochen",
+            "note": null
+          }
+        },
+        {
+          "order": 8,
+          "text": "Die Rouletten wieder darin heiß werden lassen, dann auf einer Schüssel anrichten und servieren.",
+          "ingredient_ids": [
+            "veal"
+          ],
+          "tool_ids": [
+            "serving_dish"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "legt die Rouletten darein, daß sie wieder recht heiß werden, richtet sie hernach auf eine Schüssel an, und trägt sie auf.",
+            "note": null
+          }
+        }
+      ],
+      "warnings": [
+        {
+          "message": "Recipe 300 is extracted as the first complete recipe. The document also contains recipe 301 (Gedämpfte kälberne Vögel), recipe 302 (Auf andere Art) and a partly visible recipe 301 heading on page 1; the text ends mid-document, so the total count may be higher.",
+          "target_id": null
+        },
+        {
+          "message": "Words the transcription was unsure about: Musel (read as breadcrumbs), Peterlingkraut (parsley), Fußhafen (pot), Raum (read as sour cream, probably Rahm), Nägelein (cloves).",
+          "target_id": null
+        },
+        {
+          "message": "Almost no ingredient amounts are given in this recipe; amounts are marked absent, not guessed.",
+          "target_id": null
+        },
+        {
+          "message": "The method refers to earlier recipes ('wie vorhin angezeigt', 'wie schon Nr. 299') that are not part of this extraction.",
+          "target_id": null
+        },
+        {
+          "message": "Servings of 4 come only from the conditional phrase about the sour cream quantity.",
+          "target_id": null
+        }
+      ]
+    },
+    "recipe": {
+      "title": "Rouletten von Kalbfleisch auf andre Art",
+      "language": "de",
+      "servings": {
+        "value": 4,
+        "source": {
+          "status": "read",
+          "page": 1,
+          "quote": "wenn es für 4 Personen Rouletten sind",
+          "note": "Stated only conditionally in the text, for the sour cream amount."
+        }
+      },
+      "ingredients": [
+        {
+          "id": "vegan_veal",
+          "name": "seitan roast (or a whole celeriac)",
+          "name_original": "seitan roast (or a whole celeriac)",
+          "quantity": {
+            "kind": "absent",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "rule",
+            "page": 1,
+            "quote": "Rouletten von Kalbfleisch auf andre Art.",
+            "note": "vegan substitute for 'Kalbfleisch': The meat is the main ingredient. Seitan holds together in a long braise and takes up the marinade; a whole celeriac is a soy- and gluten-free alternative."
+          }
+        },
+        {
+          "id": "vegan_butter",
+          "name": "vegan butter",
+          "name_original": "vegan butter",
+          "quantity": {
+            "kind": "absent",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "rule",
+            "page": 1,
+            "quote": "mit zergangenem Butter",
+            "note": "vegan substitute for 'Butter': Dairy butter; vegan butter behaves the same for frying and baking."
+          }
+        },
+        {
+          "id": "breadcrumbs",
+          "name": "breadcrumbs from black bread",
+          "name_original": "schwarzen Brod-Brosamen (Musel)",
+          "quantity": {
+            "kind": "absent",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": "grated and mixed",
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "uncertain",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "geriebenen und untereinander gemischten schwarzen Brod-Brosamen (Musel)",
+            "note": null
+          }
+        },
+        {
+          "id": "shallot",
+          "name": "shallots",
+          "name_original": "Schalottenzwiebeln",
+          "quantity": {
+            "kind": "absent",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": "finely sliced",
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "fein geschnittenen Schalottenzwiebeln",
+            "note": null
+          }
+        },
+        {
+          "id": "parsley",
+          "name": "parsley",
+          "name_original": "Peterlingkraut",
+          "quantity": {
+            "kind": "absent",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Peterlingkraut, Salz, ein wenig Pfeffer",
+            "note": null
+          }
+        },
+        {
+          "id": "salt",
+          "name": "salt",
+          "name_original": "Salz",
+          "quantity": {
+            "kind": "absent",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Peterlingkraut, Salz, ein wenig Pfeffer",
+            "note": null
+          }
+        },
+        {
+          "id": "pepper",
+          "name": "pepper",
+          "name_original": "Pfeffer",
+          "quantity": {
+            "kind": "vague",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": "ein wenig"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "ein wenig Pfeffer, Ingwer und Nägelein",
+            "note": null
+          }
+        },
+        {
+          "id": "ginger",
+          "name": "ginger",
+          "name_original": "Ingwer",
+          "quantity": {
+            "kind": "absent",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Ingwer und Nägelein",
+            "note": null
+          }
+        },
+        {
+          "id": "cloves",
+          "name": "cloves",
+          "name_original": "Nägelein",
+          "quantity": {
+            "kind": "absent",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Ingwer und Nägelein",
+            "note": null
+          }
+        },
+        {
+          "id": "vegan_sour_cream",
+          "name": "plant-based sour cream or cream",
+          "name_original": "plant-based sour cream or cream",
+          "quantity": {
+            "kind": "exact",
+            "value": 1.0,
+            "max_value": null,
+            "unit": "Quart",
+            "raw": "ein Quart"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "rule",
+            "page": 1,
+            "quote": "ein Quart sauren Raum",
+            "note": "vegan substitute for 'sauren Raum': Dairy cream."
+          }
+        },
+        {
+          "id": "vegan_meat_broth",
+          "name": "vegetable stock with the pan juices of the vegan roast",
+          "name_original": "vegetable stock with the pan juices of the vegan roast",
+          "quantity": {
+            "kind": "vague",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": "etlichen Löffeln voll"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "rule",
+            "page": 1,
+            "quote": "nebst etlichen Löffeln voll Fleischbrühe",
+            "note": "vegan substitute for 'Fleischbrühe': There are no meat juices in a vegan version; stock plus the juices of the browned substitute takes their place."
+          }
+        },
+        {
+          "id": "lemon_peel",
+          "name": "lemon peel",
+          "name_original": "Citronenschaalen",
+          "quantity": {
+            "kind": "absent",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": "cut",
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "geschnittene Citronenschaalen, nebst Salz dazu",
+            "note": null
+          }
+        }
+      ],
+      "tools": [
+        {
+          "id": "knife",
+          "name": "knife",
+          "source": {
+            "status": "inferred",
+            "page": 1,
+            "quote": "Man schneidet und klopft das Fleisch",
+            "note": "Implied by 'schneidet' in the first step."
+          }
+        },
+        {
+          "id": "mallet",
+          "name": "meat mallet",
+          "source": {
+            "status": "inferred",
+            "page": 1,
+            "quote": "Man schneidet und klopft das Fleisch",
+            "note": "Implied by 'klopft' in the first step."
+          }
+        },
+        {
+          "id": "kitchen_twine",
+          "name": "kitchen twine",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "bindet sie mit einem Faden",
+            "note": null
+          }
+        },
+        {
+          "id": "fusshafen",
+          "name": "Fußhafen (pot)",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "in einen Fußhafen",
+            "note": null
+          }
+        },
+        {
+          "id": "lid",
+          "name": "lid",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "thut man den Deckel weg",
+            "note": null
+          }
+        },
+        {
+          "id": "stove",
+          "name": "stove",
+          "source": {
+            "status": "inferred",
+            "page": 1,
+            "quote": "läßt die Rouletten eine Stunde dämpfen",
+            "note": "Implied by the steaming and browning steps."
+          }
+        },
+        {
+          "id": "serving_dish",
+          "name": "serving dish",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "richtet sie hernach auf eine Schüssel an",
+            "note": null
+          }
+        }
+      ],
+      "steps": [
+        {
+          "order": 1,
+          "text": "Man schneidet und klopft das Fleisch, wie vorhin angezeigt worden ist.\n[Vegan: use seitan roast (or a whole celeriac) instead of Kalbfleisch. Marinate seitan for 1–2 days at most; a week in an acidic marinade makes it soft. Braise 45–60 minutes instead of hours.]",
+          "ingredient_ids": [
+            "vegan_veal"
+          ],
+          "tool_ids": [
+            "knife",
+            "mallet"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Man schneidet und klopft das Fleisch, wie vorhin angezeigt worden ist.",
+            "note": null
+          }
+        },
+        {
+          "order": 2,
+          "text": "Jedes Stücklein Fleisch mit zerlassener Butter bestreichen und auf der buttrigen Seite mit den gemischten Bröseln (Musel), fein geschnittenen Schalottenzwiebeln, Peterlingkraut, Salz, wenig Pfeffer, Ingwer und Nägelein bestreuen.\n[Vegan: use seitan roast (or a whole celeriac) instead of Kalbfleisch; use vegan butter instead of Butter. Marinate seitan for 1–2 days at most; a week in an acidic marinade makes it soft. Braise 45–60 minutes instead of hours.]",
+          "ingredient_ids": [
+            "vegan_veal",
+            "vegan_butter",
+            "breadcrumbs",
+            "shallot",
+            "parsley",
+            "salt",
+            "pepper",
+            "ginger",
+            "cloves"
+          ],
+          "tool_ids": [],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Dann bestreicht man jedes Stücklein Fleisch mit zergangenem Butter, bestreut es auf der mit Butter bestrichenen Seite mit geriebenen und untereinander gemischten schwarzen Brod-Brosamen (Musel), fein geschnittenen Schalottenzwiebeln, Peterlingkraut, Salz, ein wenig Pfeffer, Ingwer und Nägelein.",
+            "note": null
+          }
+        },
+        {
+          "order": 3,
+          "text": "Die Stücklein zusammenwickeln, mit einem Faden binden und wie bei Nr. 299 in zerlassener Butter in einen Fußhafen legen.\n[Vegan: use seitan roast (or a whole celeriac) instead of Kalbfleisch; use vegan butter instead of Butter. Marinate seitan for 1–2 days at most; a week in an acidic marinade makes it soft. Braise 45–60 minutes instead of hours.]",
+          "ingredient_ids": [
+            "vegan_veal",
+            "vegan_butter"
+          ],
+          "tool_ids": [
+            "kitchen_twine",
+            "fusshafen"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Wickelt die Stücklein zusammen, und bindet sie mit einem Faden, und legt sie, wie schon Nr. 299. gesagt, in zergangenen Butter in einen Fußhafen.",
+            "note": null
+          }
+        },
+        {
+          "order": 4,
+          "text": "Übriges Gemisch darüber streuen, das Geschirr fest zudecken und die Rouletten eine Stunde dämpfen lassen.\n[Vegan: use seitan roast (or a whole celeriac) instead of Kalbfleisch. Marinate seitan for 1–2 days at most; a week in an acidic marinade makes it soft. Braise 45–60 minutes instead of hours.]",
+          "ingredient_ids": [
+            "breadcrumbs",
+            "vegan_veal"
+          ],
+          "tool_ids": [
+            "lid",
+            "stove"
+          ],
+          "duration": {
+            "raw": "eine Stunde",
+            "min_minutes": 60.0,
+            "max_minutes": 60.0
+          },
+          "condition": "Falls noch etwas vom Gemisch übrig ist.",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Wann noch etwas von dem untereinander Gemischten übrig ist, so streut man es darauf herum, deckt das Geschirr fest zu, und läßt die Rouletten eine Stunde dämpfen.",
+            "note": null
+          }
+        },
+        {
+          "order": 5,
+          "text": "Den Deckel abnehmen und die Rouletten gelb werden lassen.\n[Vegan: use seitan roast (or a whole celeriac) instead of Kalbfleisch. Marinate seitan for 1–2 days at most; a week in an acidic marinade makes it soft. Braise 45–60 minutes instead of hours.]",
+          "ingredient_ids": [
+            "vegan_veal"
+          ],
+          "tool_ids": [
+            "lid"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Alsdann thut man den Deckel weg, und läßt sie gelb werden.",
+            "note": null
+          }
+        },
+        {
+          "order": 6,
+          "text": "Eine Viertelstunde vor dem Anrichten die Rouletten herausnehmen; saure Sahne nebst etlichen Löffeln Fleischbrühe in das Geschirr gießen, in dem sie gedämpft wurden.\n[Vegan: use seitan roast (or a whole celeriac) instead of Kalbfleisch; use plant-based sour cream or cream instead of sauren Raum; use vegetable stock with the pan juices of the vegan roast instead of Fleischbrühe. Marinate seitan for 1–2 days at most; a week in an acidic marinade makes it soft. Braise 45–60 minutes instead of hours.]",
+          "ingredient_ids": [
+            "vegan_veal",
+            "vegan_sour_cream",
+            "vegan_meat_broth"
+          ],
+          "tool_ids": [],
+          "duration": {
+            "raw": "eine Viertelstunde",
+            "min_minutes": 15.0,
+            "max_minutes": 15.0
+          },
+          "condition": "Die Menge von einem Quart saurer Sahne gilt, wenn es für 4 Personen ist.",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Eine Viertelstunde vor dem Anrichten nimmt man sie heraus, und gießt, wenn es für 4 Personen Rouletten sind, ein Quart sauren Raum, nebst etlichen Löffeln voll Fleischbrühe in das Geschirr, worinnen die Rouletten gedämpft worden sind.",
+            "note": null
+          }
+        },
+        {
+          "order": 7,
+          "text": "Geschnittene Zitronenschalen und Salz dazugeben und das Ganze noch ein wenig aufkochen lassen.\n[Vegan: use plant-based sour cream or cream instead of sauren Raum.]",
+          "ingredient_ids": [
+            "lemon_peel",
+            "salt",
+            "vegan_sour_cream"
+          ],
+          "tool_ids": [],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Nun thut man auch geschnittene Citronenschaalen, nebst Salz dazu, und läßt es noch ein wenig aufkochen",
+            "note": null
+          }
+        },
+        {
+          "order": 8,
+          "text": "Die Rouletten wieder darin heiß werden lassen, dann auf einer Schüssel anrichten und servieren.\n[Vegan: use seitan roast (or a whole celeriac) instead of Kalbfleisch. Marinate seitan for 1–2 days at most; a week in an acidic marinade makes it soft. Braise 45–60 minutes instead of hours.]",
+          "ingredient_ids": [
+            "vegan_veal"
+          ],
+          "tool_ids": [
+            "serving_dish"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "legt die Rouletten darein, daß sie wieder recht heiß werden, richtet sie hernach auf eine Schüssel an, und trägt sie auf.",
+            "note": null
+          }
+        }
+      ],
+      "warnings": [
+        {
+          "message": "Recipe 300 is extracted as the first complete recipe. The document also contains recipe 301 (Gedämpfte kälberne Vögel), recipe 302 (Auf andere Art) and a partly visible recipe 301 heading on page 1; the text ends mid-document, so the total count may be higher.",
+          "target_id": null
+        },
+        {
+          "message": "Words the transcription was unsure about: Musel (read as breadcrumbs), Peterlingkraut (parsley), Fußhafen (pot), Raum (read as sour cream, probably Rahm), Nägelein (cloves).",
+          "target_id": null
+        },
+        {
+          "message": "Almost no ingredient amounts are given in this recipe; amounts are marked absent, not guessed.",
+          "target_id": null
+        },
+        {
+          "message": "The method refers to earlier recipes ('wie vorhin angezeigt', 'wie schon Nr. 299') that are not part of this extraction.",
+          "target_id": null
+        },
+        {
+          "message": "Servings of 4 come only from the conditional phrase about the sour cream quantity.",
+          "target_id": null
+        },
+        {
+          "message": "Not fully vegan: no vegan substitute is known for schwarzen Brod-Brosamen (Musel). Choose one before cooking.",
+          "target_id": null
+        },
+        {
+          "message": "Vegan, schwarzen Brod-Brosamen (Musel): could not tell whether it contains animal products (it depends on the brand or recipe).",
+          "target_id": "breadcrumbs"
+        }
+      ]
+    },
+    "changes": [
+      {
+        "rule": "vegan",
+        "target": "veal",
+        "before": "Kalbfleisch",
+        "after": "seitan roast (or a whole celeriac)",
+        "reason": "The meat is the main ingredient. Seitan holds together in a long braise and takes up the marinade; a whole celeriac is a soy- and gluten-free alternative."
+      },
+      {
+        "rule": "vegan",
+        "target": "butter",
+        "before": "Butter",
+        "after": "vegan butter",
+        "reason": "Dairy butter; vegan butter behaves the same for frying and baking."
+      },
+      {
+        "rule": "vegan",
+        "target": "sour_cream",
+        "before": "sauren Raum",
+        "after": "plant-based sour cream or cream",
+        "reason": "Dairy cream."
+      },
+      {
+        "rule": "vegan",
+        "target": "meat_broth",
+        "before": "Fleischbrühe",
+        "after": "vegetable stock with the pan juices of the vegan roast",
+        "reason": "There are no meat juices in a vegan version; stock plus the juices of the browned substitute takes their place."
+      },
+      {
+        "rule": "vegan",
+        "target": "step 1",
+        "before": "Kalbfleisch",
+        "after": "seitan roast (or a whole celeriac)",
+        "reason": "Substitution carried into the method. Marinate seitan for 1–2 days at most; a week in an acidic marinade makes it soft. Braise 45–60 minutes instead of hours."
+      },
+      {
+        "rule": "vegan",
+        "target": "step 2",
+        "before": "Kalbfleisch, Butter",
+        "after": "seitan roast (or a whole celeriac), vegan butter",
+        "reason": "Substitution carried into the method. Marinate seitan for 1–2 days at most; a week in an acidic marinade makes it soft. Braise 45–60 minutes instead of hours."
+      },
+      {
+        "rule": "vegan",
+        "target": "step 3",
+        "before": "Kalbfleisch, Butter",
+        "after": "seitan roast (or a whole celeriac), vegan butter",
+        "reason": "Substitution carried into the method. Marinate seitan for 1–2 days at most; a week in an acidic marinade makes it soft. Braise 45–60 minutes instead of hours."
+      },
+      {
+        "rule": "vegan",
+        "target": "step 4",
+        "before": "Kalbfleisch",
+        "after": "seitan roast (or a whole celeriac)",
+        "reason": "Substitution carried into the method. Marinate seitan for 1–2 days at most; a week in an acidic marinade makes it soft. Braise 45–60 minutes instead of hours."
+      },
+      {
+        "rule": "vegan",
+        "target": "step 5",
+        "before": "Kalbfleisch",
+        "after": "seitan roast (or a whole celeriac)",
+        "reason": "Substitution carried into the method. Marinate seitan for 1–2 days at most; a week in an acidic marinade makes it soft. Braise 45–60 minutes instead of hours."
+      },
+      {
+        "rule": "vegan",
+        "target": "step 6",
+        "before": "Kalbfleisch, sauren Raum, Fleischbrühe",
+        "after": "seitan roast (or a whole celeriac), plant-based sour cream or cream, vegetable stock with the pan juices of the vegan roast",
+        "reason": "Substitution carried into the method. Marinate seitan for 1–2 days at most; a week in an acidic marinade makes it soft. Braise 45–60 minutes instead of hours."
+      },
+      {
+        "rule": "vegan",
+        "target": "step 7",
+        "before": "sauren Raum",
+        "after": "plant-based sour cream or cream",
+        "reason": "Substitution carried into the method."
+      },
+      {
+        "rule": "vegan",
+        "target": "step 8",
+        "before": "Kalbfleisch",
+        "after": "seitan roast (or a whole celeriac)",
+        "reason": "Substitution carried into the method. Marinate seitan for 1–2 days at most; a week in an acidic marinade makes it soft. Braise 45–60 minutes instead of hours."
+      },
+      {
+        "rule": "vegan",
+        "target": "breadcrumbs",
+        "before": "schwarzen Brod-Brosamen (Musel)",
+        "after": "unchanged, no known substitute",
+        "reason": "could not tell whether it contains animal products (it depends on the brand or recipe)."
+      }
+    ]
+  }
+}

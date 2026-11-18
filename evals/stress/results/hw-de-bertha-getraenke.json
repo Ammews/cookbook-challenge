@@ -1,0 +1,898 @@
+{
+  "document": {
+    "name": "hw-de-bertha-getraenke.jpg",
+    "kind": "image",
+    "pages": [
+      {
+        "number": 1,
+        "text": "Schluss das Fett, die Masse darf aber dann nicht zu stark sein, für gewöhnliche Formen genügt 2/3 der Masse. Makronenhalbmonde. Zubereitung: Auf Blechtafeln Makronenhalbmonde spritzen [?], diese mit Flüssigkeit bestreichen, den Rand mit Makronenmasse umspritzen und mit Gelee oder Marmelade ausgefüllt. Löffelbiskuit. Zutaten: 150 gr. Mehl, 150 gr. Zucker, 5 Eier, Vanillezucker u. Salz. Zubereitung: Die geschlagene Eischneemasse, die Masse wird in einen Spritzbeutel gefüllt, auf ein gefettetes Blech mit Mehl bestäubt und Tröpfchen gespritzt [?]. Das Gebäck muss mindestens 1 Std. bei ganz schwacher Hitze trocknen, es wird dann bei stärkerer Hitze gebacken. Man kann auch das Gebäck auf ein gefettetes Papier legen, damit es sich vom Blech gut ablöst, wenn die Unterseite etwas angetrocknet ist. Silber- & Goldkuchen. Zutaten zur Silbermasse: 1 Tasse Butter, 2 Tassen Zucker, 4 Tassen Mehl, 1 Tasse Milch, 1 Pkt. Backpulver, 4-5 Eier. Zutaten zur Goldmasse: Man nimmt dieselben wie bei Silbermasse, nur statt Eiweiss Eigelb. Zubereitung: Die Teigmasse, die Hälften werden mit Schokoladenguss [?] vermischt, das eine Drittel mit Kakao gefärbt, und zwei Drittel mit Schokoladenguss und Eigelb vermischt. Schichtkuchen. Zubereitung: Man spaltet sich einen Kuchen [?] der Länge nach, dann ...",
+        "method": "vision",
+        "decoration_text": [
+          "Verschiedenes"
+        ],
+        "uncertain": [
+          "Makronenhalbmonde",
+          "spritzen",
+          "gespritzt",
+          "Silber- & Goldkuchen",
+          "Schokoladenguss",
+          "Eigelb",
+          "Kuchen",
+          "Schichtkuchen",
+          "Eiweiss",
+          "Kakao",
+          "Zubereitung",
+          "Vanillezucker",
+          "Drittel",
+          "Hälften"
+        ],
+        "usage": {
+          "model": "claude-haiku-5-5",
+          "input_tokens": 4235,
+          "output_tokens": 2084,
+          "seconds": 10.511846499999592,
+          "cached": false
+        }
+      }
+    ]
+  },
+  "extraction": {
+    "is_recipe": true,
+    "recipes_in_document": 4,
+    "recipe": {
+      "title": "Löffelbiskuit",
+      "language": "de",
+      "servings": {
+        "value": null,
+        "source": {
+          "status": "missing",
+          "page": null,
+          "quote": null,
+          "note": "the document does not say"
+        }
+      },
+      "ingredients": [
+        {
+          "id": "flour",
+          "name": "flour",
+          "name_original": "Mehl",
+          "quantity": {
+            "kind": "exact",
+            "value": 150.0,
+            "max_value": null,
+            "unit": "gr.",
+            "raw": "150 gr."
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "150 gr. Mehl",
+            "note": null
+          }
+        },
+        {
+          "id": "sugar",
+          "name": "sugar",
+          "name_original": "Zucker",
+          "quantity": {
+            "kind": "exact",
+            "value": 150.0,
+            "max_value": null,
+            "unit": "gr.",
+            "raw": "150 gr."
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "150 gr. Zucker",
+            "note": null
+          }
+        },
+        {
+          "id": "eggs",
+          "name": "eggs",
+          "name_original": "Eier",
+          "quantity": {
+            "kind": "exact",
+            "value": 5.0,
+            "max_value": null,
+            "unit": null,
+            "raw": "5"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "egg",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "5 Eier",
+            "note": null
+          }
+        },
+        {
+          "id": "vanilla_sugar",
+          "name": "vanilla sugar",
+          "name_original": "Vanillezucker",
+          "quantity": {
+            "kind": "absent",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Vanillezucker u. Salz",
+            "note": null
+          }
+        },
+        {
+          "id": "salt",
+          "name": "salt",
+          "name_original": "Salz",
+          "quantity": {
+            "kind": "absent",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Vanillezucker u. Salz",
+            "note": null
+          }
+        }
+      ],
+      "tools": [
+        {
+          "id": "baking_tray",
+          "name": "baking tray",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "auf ein gefettetes Blech",
+            "note": null
+          }
+        },
+        {
+          "id": "piping_bag",
+          "name": "piping bag",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "in einen Spritzbeutel gefüllt",
+            "note": null
+          }
+        },
+        {
+          "id": "baking_paper",
+          "name": "greased paper",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "auf ein gefettetes Papier legen",
+            "note": null
+          }
+        },
+        {
+          "id": "oven",
+          "name": "oven",
+          "source": {
+            "status": "inferred",
+            "page": 1,
+            "quote": null,
+            "note": "Implied by the baking step (bei stärkerer Hitze gebacken) and the drying at weak heat; the text does not name an oven."
+          }
+        }
+      ],
+      "steps": [
+        {
+          "order": 1,
+          "text": "Die geschlagene Eischneemasse in einen Spritzbeutel füllen, auf ein gefettetes Blech mit Mehl bestäuben und Tröpfchen spritzen.",
+          "ingredient_ids": [
+            "eggs",
+            "flour"
+          ],
+          "tool_ids": [
+            "piping_bag",
+            "baking_tray"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Die geschlagene Eischneemasse, die Masse wird in einen Spritzbeutel gefüllt, auf ein gefettetes Blech mit Mehl bestäubt und Tröpfchen gespritzt [?]",
+            "note": null
+          }
+        },
+        {
+          "order": 2,
+          "text": "Das Gebäck mindestens 1 Std. bei ganz schwacher Hitze trocknen.",
+          "ingredient_ids": [],
+          "tool_ids": [
+            "oven"
+          ],
+          "duration": {
+            "raw": "mindestens 1 Std.",
+            "min_minutes": 60.0,
+            "max_minutes": 60.0
+          },
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Das Gebäck muss mindestens 1 Std. bei ganz schwacher Hitze trocknen",
+            "note": null
+          }
+        },
+        {
+          "order": 3,
+          "text": "Dann bei stärkerer Hitze backen.",
+          "ingredient_ids": [],
+          "tool_ids": [
+            "oven"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "es wird dann bei stärkerer Hitze gebacken",
+            "note": null
+          }
+        },
+        {
+          "order": 4,
+          "text": "Das Gebäck auf ein gefettetes Papier legen, damit es sich vom Blech gut ablöst.",
+          "ingredient_ids": [],
+          "tool_ids": [
+            "baking_paper",
+            "baking_tray"
+          ],
+          "duration": null,
+          "condition": "wenn die Unterseite etwas angetrocknet ist",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Man kann auch das Gebäck auf ein gefettetes Papier legen, damit es sich vom Blech gut ablöst, wenn die Unterseite etwas angetrocknet ist.",
+            "note": null
+          }
+        }
+      ],
+      "warnings": [
+        {
+          "message": "Document holds four recipes (Makronenhalbmonde, Löffelbiskuit, Silber- & Goldkuchen, Schichtkuchen); only Löffelbiskuit was extracted. Makronenhalbmonde, Silber- & Goldkuchen and Schichtkuchen were skipped. Makronenhalbmonde has no ingredient list on this page and Schichtkuchen is cut off.",
+          "target_id": null
+        },
+        {
+          "message": "Transcription unsure about 'gespritzt [?]' in the Löffelbiskuit step and the words Eischneemasse, Tröpfchen, Eiweiss and Zubereitung; check the step wording against the scan.",
+          "target_id": null
+        },
+        {
+          "message": "Vanillezucker and Salz have no amounts in the text and are recorded as absent.",
+          "target_id": null
+        },
+        {
+          "message": "The amount of flour and sugar is 150 gr. each, as written; the unit gr. is kept as written.",
+          "target_id": null
+        },
+        {
+          "message": "No servings are stated and none were estimated.",
+          "target_id": null
+        },
+        {
+          "message": "The oven is not named in the text; it is listed as an implied tool.",
+          "target_id": null
+        }
+      ]
+    },
+    "usage": [
+      {
+        "model": "claude-haiku-5-5",
+        "input_tokens": 5173,
+        "output_tokens": 3768,
+        "seconds": 15.109980199998972,
+        "cached": false
+      }
+    ],
+    "problems_found": [],
+    "problems_left": []
+  },
+  "manipulation": {
+    "original": {
+      "title": "Löffelbiskuit",
+      "language": "de",
+      "servings": {
+        "value": null,
+        "source": {
+          "status": "missing",
+          "page": null,
+          "quote": null,
+          "note": "the document does not say"
+        }
+      },
+      "ingredients": [
+        {
+          "id": "flour",
+          "name": "flour",
+          "name_original": "Mehl",
+          "quantity": {
+            "kind": "exact",
+            "value": 150.0,
+            "max_value": null,
+            "unit": "gr.",
+            "raw": "150 gr."
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "150 gr. Mehl",
+            "note": null
+          }
+        },
+        {
+          "id": "sugar",
+          "name": "sugar",
+          "name_original": "Zucker",
+          "quantity": {
+            "kind": "exact",
+            "value": 150.0,
+            "max_value": null,
+            "unit": "gr.",
+            "raw": "150 gr."
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "150 gr. Zucker",
+            "note": null
+          }
+        },
+        {
+          "id": "eggs",
+          "name": "eggs",
+          "name_original": "Eier",
+          "quantity": {
+            "kind": "exact",
+            "value": 5.0,
+            "max_value": null,
+            "unit": null,
+            "raw": "5"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "egg",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "5 Eier",
+            "note": null
+          }
+        },
+        {
+          "id": "vanilla_sugar",
+          "name": "vanilla sugar",
+          "name_original": "Vanillezucker",
+          "quantity": {
+            "kind": "absent",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Vanillezucker u. Salz",
+            "note": null
+          }
+        },
+        {
+          "id": "salt",
+          "name": "salt",
+          "name_original": "Salz",
+          "quantity": {
+            "kind": "absent",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Vanillezucker u. Salz",
+            "note": null
+          }
+        }
+      ],
+      "tools": [
+        {
+          "id": "baking_tray",
+          "name": "baking tray",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "auf ein gefettetes Blech",
+            "note": null
+          }
+        },
+        {
+          "id": "piping_bag",
+          "name": "piping bag",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "in einen Spritzbeutel gefüllt",
+            "note": null
+          }
+        },
+        {
+          "id": "baking_paper",
+          "name": "greased paper",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "auf ein gefettetes Papier legen",
+            "note": null
+          }
+        },
+        {
+          "id": "oven",
+          "name": "oven",
+          "source": {
+            "status": "inferred",
+            "page": 1,
+            "quote": null,
+            "note": "Implied by the baking step (bei stärkerer Hitze gebacken) and the drying at weak heat; the text does not name an oven."
+          }
+        }
+      ],
+      "steps": [
+        {
+          "order": 1,
+          "text": "Die geschlagene Eischneemasse in einen Spritzbeutel füllen, auf ein gefettetes Blech mit Mehl bestäuben und Tröpfchen spritzen.",
+          "ingredient_ids": [
+            "eggs",
+            "flour"
+          ],
+          "tool_ids": [
+            "piping_bag",
+            "baking_tray"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Die geschlagene Eischneemasse, die Masse wird in einen Spritzbeutel gefüllt, auf ein gefettetes Blech mit Mehl bestäubt und Tröpfchen gespritzt [?]",
+            "note": null
+          }
+        },
+        {
+          "order": 2,
+          "text": "Das Gebäck mindestens 1 Std. bei ganz schwacher Hitze trocknen.",
+          "ingredient_ids": [],
+          "tool_ids": [
+            "oven"
+          ],
+          "duration": {
+            "raw": "mindestens 1 Std.",
+            "min_minutes": 60.0,
+            "max_minutes": 60.0
+          },
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Das Gebäck muss mindestens 1 Std. bei ganz schwacher Hitze trocknen",
+            "note": null
+          }
+        },
+        {
+          "order": 3,
+          "text": "Dann bei stärkerer Hitze backen.",
+          "ingredient_ids": [],
+          "tool_ids": [
+            "oven"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "es wird dann bei stärkerer Hitze gebacken",
+            "note": null
+          }
+        },
+        {
+          "order": 4,
+          "text": "Das Gebäck auf ein gefettetes Papier legen, damit es sich vom Blech gut ablöst.",
+          "ingredient_ids": [],
+          "tool_ids": [
+            "baking_paper",
+            "baking_tray"
+          ],
+          "duration": null,
+          "condition": "wenn die Unterseite etwas angetrocknet ist",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Man kann auch das Gebäck auf ein gefettetes Papier legen, damit es sich vom Blech gut ablöst, wenn die Unterseite etwas angetrocknet ist.",
+            "note": null
+          }
+        }
+      ],
+      "warnings": [
+        {
+          "message": "Document holds four recipes (Makronenhalbmonde, Löffelbiskuit, Silber- & Goldkuchen, Schichtkuchen); only Löffelbiskuit was extracted. Makronenhalbmonde, Silber- & Goldkuchen and Schichtkuchen were skipped. Makronenhalbmonde has no ingredient list on this page and Schichtkuchen is cut off.",
+          "target_id": null
+        },
+        {
+          "message": "Transcription unsure about 'gespritzt [?]' in the Löffelbiskuit step and the words Eischneemasse, Tröpfchen, Eiweiss and Zubereitung; check the step wording against the scan.",
+          "target_id": null
+        },
+        {
+          "message": "Vanillezucker and Salz have no amounts in the text and are recorded as absent.",
+          "target_id": null
+        },
+        {
+          "message": "The amount of flour and sugar is 150 gr. each, as written; the unit gr. is kept as written.",
+          "target_id": null
+        },
+        {
+          "message": "No servings are stated and none were estimated.",
+          "target_id": null
+        },
+        {
+          "message": "The oven is not named in the text; it is listed as an implied tool.",
+          "target_id": null
+        }
+      ]
+    },
+    "recipe": {
+      "title": "Löffelbiskuit",
+      "language": "de",
+      "servings": {
+        "value": null,
+        "source": {
+          "status": "missing",
+          "page": null,
+          "quote": null,
+          "note": "the document does not say"
+        }
+      },
+      "ingredients": [
+        {
+          "id": "flour",
+          "name": "flour",
+          "name_original": "Mehl",
+          "quantity": {
+            "kind": "exact",
+            "value": 150.0,
+            "max_value": null,
+            "unit": "gr.",
+            "raw": "150 gr."
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "150 gr. Mehl",
+            "note": null
+          }
+        },
+        {
+          "id": "sugar",
+          "name": "sugar",
+          "name_original": "Zucker",
+          "quantity": {
+            "kind": "exact",
+            "value": 150.0,
+            "max_value": null,
+            "unit": "gr.",
+            "raw": "150 gr."
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "150 gr. Zucker",
+            "note": null
+          }
+        },
+        {
+          "id": "vegan_eggs",
+          "name": "flax egg (1 tbsp ground flaxseed + 3 tbsp water per egg)",
+          "name_original": "flax egg (1 tbsp ground flaxseed + 3 tbsp water per egg)",
+          "quantity": {
+            "kind": "exact",
+            "value": 5.0,
+            "max_value": null,
+            "unit": null,
+            "raw": "5"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "rule",
+            "page": 1,
+            "quote": "5 Eier",
+            "note": "vegan substitute for 'Eier': Eggs that bind a dough or batter; a flax egg does the same."
+          }
+        },
+        {
+          "id": "vanilla_sugar",
+          "name": "vanilla sugar",
+          "name_original": "Vanillezucker",
+          "quantity": {
+            "kind": "absent",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Vanillezucker u. Salz",
+            "note": null
+          }
+        },
+        {
+          "id": "salt",
+          "name": "salt",
+          "name_original": "Salz",
+          "quantity": {
+            "kind": "absent",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Vanillezucker u. Salz",
+            "note": null
+          }
+        }
+      ],
+      "tools": [
+        {
+          "id": "baking_tray",
+          "name": "baking tray",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "auf ein gefettetes Blech",
+            "note": null
+          }
+        },
+        {
+          "id": "piping_bag",
+          "name": "piping bag",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "in einen Spritzbeutel gefüllt",
+            "note": null
+          }
+        },
+        {
+          "id": "baking_paper",
+          "name": "greased paper",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "auf ein gefettetes Papier legen",
+            "note": null
+          }
+        },
+        {
+          "id": "oven",
+          "name": "oven",
+          "source": {
+            "status": "inferred",
+            "page": 1,
+            "quote": null,
+            "note": "Implied by the baking step (bei stärkerer Hitze gebacken) and the drying at weak heat; the text does not name an oven."
+          }
+        }
+      ],
+      "steps": [
+        {
+          "order": 1,
+          "text": "Die geschlagene Eischneemasse in einen Spritzbeutel füllen, auf ein gefettetes Blech mit Mehl bestäuben und Tröpfchen spritzen.\n[Vegan: use flax egg (1 tbsp ground flaxseed + 3 tbsp water per egg) instead of Eier.]",
+          "ingredient_ids": [
+            "vegan_eggs",
+            "flour"
+          ],
+          "tool_ids": [
+            "piping_bag",
+            "baking_tray"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Die geschlagene Eischneemasse, die Masse wird in einen Spritzbeutel gefüllt, auf ein gefettetes Blech mit Mehl bestäubt und Tröpfchen gespritzt [?]",
+            "note": null
+          }
+        },
+        {
+          "order": 2,
+          "text": "Das Gebäck mindestens 1 Std. bei ganz schwacher Hitze trocknen.",
+          "ingredient_ids": [],
+          "tool_ids": [
+            "oven"
+          ],
+          "duration": {
+            "raw": "mindestens 1 Std.",
+            "min_minutes": 60.0,
+            "max_minutes": 60.0
+          },
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Das Gebäck muss mindestens 1 Std. bei ganz schwacher Hitze trocknen",
+            "note": null
+          }
+        },
+        {
+          "order": 3,
+          "text": "Dann bei stärkerer Hitze backen.",
+          "ingredient_ids": [],
+          "tool_ids": [
+            "oven"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "es wird dann bei stärkerer Hitze gebacken",
+            "note": null
+          }
+        },
+        {
+          "order": 4,
+          "text": "Das Gebäck auf ein gefettetes Papier legen, damit es sich vom Blech gut ablöst.",
+          "ingredient_ids": [],
+          "tool_ids": [
+            "baking_paper",
+            "baking_tray"
+          ],
+          "duration": null,
+          "condition": "wenn die Unterseite etwas angetrocknet ist",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Man kann auch das Gebäck auf ein gefettetes Papier legen, damit es sich vom Blech gut ablöst, wenn die Unterseite etwas angetrocknet ist.",
+            "note": null
+          }
+        }
+      ],
+      "warnings": [
+        {
+          "message": "Document holds four recipes (Makronenhalbmonde, Löffelbiskuit, Silber- & Goldkuchen, Schichtkuchen); only Löffelbiskuit was extracted. Makronenhalbmonde, Silber- & Goldkuchen and Schichtkuchen were skipped. Makronenhalbmonde has no ingredient list on this page and Schichtkuchen is cut off.",
+          "target_id": null
+        },
+        {
+          "message": "Transcription unsure about 'gespritzt [?]' in the Löffelbiskuit step and the words Eischneemasse, Tröpfchen, Eiweiss and Zubereitung; check the step wording against the scan.",
+          "target_id": null
+        },
+        {
+          "message": "Vanillezucker and Salz have no amounts in the text and are recorded as absent.",
+          "target_id": null
+        },
+        {
+          "message": "The amount of flour and sugar is 150 gr. each, as written; the unit gr. is kept as written.",
+          "target_id": null
+        },
+        {
+          "message": "No servings are stated and none were estimated.",
+          "target_id": null
+        },
+        {
+          "message": "The oven is not named in the text; it is listed as an implied tool.",
+          "target_id": null
+        },
+        {
+          "message": "Vegan check, Zucker: Some cane sugar is filtered through bone char. Beet sugar and sugar labelled vegan are safe.",
+          "target_id": "sugar"
+        },
+        {
+          "message": "Vegan check, Vanillezucker: Some cane sugar is filtered through bone char. Beet sugar and sugar labelled vegan are safe.",
+          "target_id": "vanilla_sugar"
+        }
+      ]
+    },
+    "changes": [
+      {
+        "rule": "vegan",
+        "target": "eggs",
+        "before": "Eier",
+        "after": "flax egg (1 tbsp ground flaxseed + 3 tbsp water per egg)",
+        "reason": "Eggs that bind a dough or batter; a flax egg does the same."
+      },
+      {
+        "rule": "vegan",
+        "target": "step 1",
+        "before": "Eier",
+        "after": "flax egg (1 tbsp ground flaxseed + 3 tbsp water per egg)",
+        "reason": "Substitution carried into the method."
+      },
+      {
+        "rule": "vegan",
+        "target": "sugar",
+        "before": "Zucker",
+        "after": "unchanged, check the label",
+        "reason": "Some cane sugar is filtered through bone char. Beet sugar and sugar labelled vegan are safe."
+      },
+      {
+        "rule": "vegan",
+        "target": "vanilla_sugar",
+        "before": "Vanillezucker",
+        "after": "unchanged, check the label",
+        "reason": "Some cane sugar is filtered through bone char. Beet sugar and sugar labelled vegan are safe."
+      }
+    ]
+  }
+}

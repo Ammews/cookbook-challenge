@@ -1,0 +1,2274 @@
+{
+  "document": {
+    "name": "pdf-en-stag-favorite-menu.pdf",
+    "kind": "pdf",
+    "pages": [
+      {
+        "number": 1,
+        "text": "THE STAG COOK BOOK\nLXXVIII\nCharles W. Eliot\nA FAVORITE MENU\nI can hardly say that\nI have\na\n\"favorite dish.\"\nBut\na\nfavorite menu\nfor luncheon\nor\ndinner\nis clam\nsoup,\ncorned beef hash, and baked Indian pudding.\nNote.—If you want to try Dr.\nEliot's menu why not\nuse Rex Beach's clam\nspecialty?\nThen for the corned beef hash get plenty of fine lean\ncorned beef and cut\nit\ninto one-eighth inch\nbits.\nChop one small onion\ninto very\nfine\nparticles.\nTake\ncold boiled potatoes\n(fairly firm) and cut or chop.\nPrepare some drawn\nbutter and add\na few drops of\nWorcestershire sauce, salt and pepper. Now mix the meat,\npotatoes, onion and drawn\nbutter.\nMold and\npat\ninto\nsmall,\nflat,\nelliptical loaves\n(individual servings)\nand fry\nin\na\nhot,\nlightly\nbuttered\npan.\nTurn\nfrequently\nuntil\nwell browned on both sides.\nServe sprinkled with minced\nparsley.\nTop\noff with\nthis baked\nIndian pudding:\nYou must have\nI\nquart\nof\nmilk,\n3\neggs,\nYz\ncup\nof\nthe\nfinest seeded\nraisins,\n1\nteaspoonful of\nsalt, 2 heaping\ntablespoonsful of corn meal, 4 heaping tablespoonsful of\nsugar,\n1 heaping tablespoonful of butter.\n[156]",
+        "method": "pdf_text_layer",
+        "decoration_text": [],
+        "uncertain": [],
+        "usage": null
+      },
+      {
+        "number": 2,
+        "text": "WRITTEN FOR MEN BY MEN\nBoil\nthe milk\nin\na double\nboiler and\nsprinkle\nin the\ncorn meal, stirring all the time.\nCook twelve minutes.\nBeat\nthe\neggs, adding the\nsalt, sugar and\na half\ntea-\nspoonful of ground\nginger.\nAdd\nthis mixture with\nthe\nbutter\nto milk and\nmeal,\nthen add\nthe\nraisins and\nstir\nuntil\nperfectly mixed.\nRemove from\nthe double\nboiler\nand\nbake\nfor one\nhour.\nYou will agree with Dr. Eliot.\n[157]",
+        "method": "pdf_text_layer",
+        "decoration_text": [],
+        "uncertain": [],
+        "usage": null
+      }
+    ]
+  },
+  "extraction": {
+    "is_recipe": true,
+    "recipes_in_document": 1,
+    "recipe": {
+      "title": "A Favorite Menu: Corned Beef Hash with Baked Indian Pudding",
+      "language": "en",
+      "servings": {
+        "value": 6,
+        "source": {
+          "status": "inferred",
+          "page": null,
+          "quote": null,
+          "note": "The text does not state servings. Estimated from one quart of milk for the pudding and the hash made as individual loaves."
+        }
+      },
+      "ingredients": [
+        {
+          "id": "corned_beef",
+          "name": "corned beef",
+          "name_original": "fine lean corned beef",
+          "quantity": {
+            "kind": "vague",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": "plenty of"
+          },
+          "preparation": "fine, lean, cut into one-eighth inch bits",
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "meat",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "get plenty of fine lean corned beef and cut it into one-eighth inch bits",
+            "note": null
+          }
+        },
+        {
+          "id": "onion",
+          "name": "onion",
+          "name_original": "one small onion",
+          "quantity": {
+            "kind": "exact",
+            "value": 1.0,
+            "max_value": null,
+            "unit": null,
+            "raw": "one small"
+          },
+          "preparation": "chopped very fine",
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Chop one small onion into very fine particles.",
+            "note": null
+          }
+        },
+        {
+          "id": "potatoes",
+          "name": "cold boiled potatoes",
+          "name_original": "cold boiled potatoes",
+          "quantity": {
+            "kind": "absent",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": "fairly firm, cut or chopped",
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "cold boiled potatoes (fairly firm) and cut or chop.",
+            "note": null
+          }
+        },
+        {
+          "id": "drawn_butter",
+          "name": "drawn butter",
+          "name_original": "drawn butter",
+          "quantity": {
+            "kind": "vague",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": "some"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": true,
+          "animal": "dairy",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Prepare some drawn butter",
+            "note": null
+          }
+        },
+        {
+          "id": "worcestershire_sauce",
+          "name": "Worcestershire sauce",
+          "name_original": "Worcestershire sauce",
+          "quantity": {
+            "kind": "vague",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": "a few drops of"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "fish",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "add a few drops of Worcestershire sauce, salt and pepper",
+            "note": null
+          }
+        },
+        {
+          "id": "salt",
+          "name": "salt",
+          "name_original": "salt",
+          "quantity": {
+            "kind": "exact",
+            "value": 1.0,
+            "max_value": null,
+            "unit": "teaspoonful",
+            "raw": "1 teaspoonful of"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "1 teaspoonful of salt",
+            "note": null
+          }
+        },
+        {
+          "id": "pepper",
+          "name": "pepper",
+          "name_original": "pepper",
+          "quantity": {
+            "kind": "to_taste",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "salt and pepper",
+            "note": null
+          }
+        },
+        {
+          "id": "parsley",
+          "name": "parsley",
+          "name_original": "minced parsley",
+          "quantity": {
+            "kind": "absent",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": "minced",
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Serve sprinkled with minced parsley.",
+            "note": null
+          }
+        },
+        {
+          "id": "milk",
+          "name": "milk",
+          "name_original": "milk",
+          "quantity": {
+            "kind": "exact",
+            "value": 1.0,
+            "max_value": null,
+            "unit": "quart",
+            "raw": "I quart of"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "dairy",
+          "source": {
+            "status": "inferred",
+            "page": 1,
+            "quote": "You must have I quart of milk",
+            "note": "The OCR text prints the letter 'I' where the numeral 1 is meant; read as one quart."
+          }
+        },
+        {
+          "id": "eggs",
+          "name": "eggs",
+          "name_original": "eggs",
+          "quantity": {
+            "kind": "exact",
+            "value": 3.0,
+            "max_value": null,
+            "unit": null,
+            "raw": "3 eggs"
+          },
+          "preparation": "beaten",
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "egg",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "3 eggs",
+            "note": null
+          }
+        },
+        {
+          "id": "raisins",
+          "name": "raisins",
+          "name_original": "finest seeded raisins",
+          "quantity": {
+            "kind": "exact",
+            "value": 0.5,
+            "max_value": null,
+            "unit": "cup",
+            "raw": "Yz cup of"
+          },
+          "preparation": "seeded",
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "inferred",
+            "page": 1,
+            "quote": "Yz cup of the finest seeded raisins",
+            "note": "The OCR text prints 'Yz' where the fraction one-half is meant; read as 0.5 cup."
+          }
+        },
+        {
+          "id": "corn_meal",
+          "name": "corn meal",
+          "name_original": "corn meal",
+          "quantity": {
+            "kind": "exact",
+            "value": 2.0,
+            "max_value": null,
+            "unit": "tablespoonsful",
+            "raw": "2 heaping tablespoonsful of"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "2 heaping tablespoonsful of corn meal",
+            "note": null
+          }
+        },
+        {
+          "id": "sugar",
+          "name": "sugar",
+          "name_original": "sugar",
+          "quantity": {
+            "kind": "exact",
+            "value": 4.0,
+            "max_value": null,
+            "unit": "tablespoonsful",
+            "raw": "4 heaping tablespoonsful of"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "4 heaping tablespoonsful of sugar",
+            "note": null
+          }
+        },
+        {
+          "id": "butter",
+          "name": "butter",
+          "name_original": "butter",
+          "quantity": {
+            "kind": "exact",
+            "value": 1.0,
+            "max_value": null,
+            "unit": "tablespoonful",
+            "raw": "1 heaping tablespoonful of"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "dairy",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "1 heaping tablespoonful of butter",
+            "note": null
+          }
+        },
+        {
+          "id": "ginger",
+          "name": "ground ginger",
+          "name_original": "ground ginger",
+          "quantity": {
+            "kind": "exact",
+            "value": 0.5,
+            "max_value": null,
+            "unit": "teaspoonful",
+            "raw": "a half tea-spoonful of"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 2,
+            "quote": "a half tea-spoonful of ground ginger",
+            "note": null
+          }
+        }
+      ],
+      "tools": [
+        {
+          "id": "knife",
+          "name": "knife",
+          "source": {
+            "status": "inferred",
+            "page": 1,
+            "quote": "cut it into one-eighth inch bits",
+            "note": "Needed to cut the corned beef, chop the onion and cut the potatoes."
+          }
+        },
+        {
+          "id": "bowl",
+          "name": "bowl",
+          "source": {
+            "status": "inferred",
+            "page": 1,
+            "quote": "Now mix the meat, potatoes, onion and drawn butter.",
+            "note": "Needed to mix the hash and to beat the eggs."
+          }
+        },
+        {
+          "id": "frying_pan",
+          "name": "frying pan",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "fry in a hot, lightly buttered pan",
+            "note": null
+          }
+        },
+        {
+          "id": "double_boiler",
+          "name": "double boiler",
+          "source": {
+            "status": "read",
+            "page": 2,
+            "quote": "Boil the milk in a double boiler",
+            "note": null
+          }
+        },
+        {
+          "id": "oven",
+          "name": "oven",
+          "source": {
+            "status": "inferred",
+            "page": 2,
+            "quote": "bake for one hour",
+            "note": "Needed to bake the pudding; the oven is not named in the text."
+          }
+        }
+      ],
+      "steps": [
+        {
+          "order": 1,
+          "text": "Cut the corned beef into one-eighth inch bits.",
+          "ingredient_ids": [
+            "corned_beef"
+          ],
+          "tool_ids": [
+            "knife"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "get plenty of fine lean corned beef and cut it into one-eighth inch bits.",
+            "note": null
+          }
+        },
+        {
+          "order": 2,
+          "text": "Chop the onion into very fine particles.",
+          "ingredient_ids": [
+            "onion"
+          ],
+          "tool_ids": [
+            "knife"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Chop one small onion into very fine particles.",
+            "note": null
+          }
+        },
+        {
+          "order": 3,
+          "text": "Cut or chop the cold boiled potatoes.",
+          "ingredient_ids": [
+            "potatoes"
+          ],
+          "tool_ids": [
+            "knife"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Take cold boiled potatoes (fairly firm) and cut or chop.",
+            "note": null
+          }
+        },
+        {
+          "order": 4,
+          "text": "Prepare the drawn butter.",
+          "ingredient_ids": [
+            "drawn_butter"
+          ],
+          "tool_ids": [],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Prepare some drawn butter",
+            "note": null
+          }
+        },
+        {
+          "order": 5,
+          "text": "Add a few drops of Worcestershire sauce, salt and pepper to the drawn butter.",
+          "ingredient_ids": [
+            "worcestershire_sauce",
+            "salt",
+            "pepper",
+            "drawn_butter"
+          ],
+          "tool_ids": [],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "add a few drops of Worcestershire sauce, salt and pepper",
+            "note": null
+          }
+        },
+        {
+          "order": 6,
+          "text": "Mix the meat, potatoes, onion and drawn butter.",
+          "ingredient_ids": [
+            "corned_beef",
+            "potatoes",
+            "onion",
+            "drawn_butter"
+          ],
+          "tool_ids": [
+            "bowl"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Now mix the meat, potatoes, onion and drawn butter.",
+            "note": null
+          }
+        },
+        {
+          "order": 7,
+          "text": "Mold and pat into small, flat, elliptical loaves (individual servings).",
+          "ingredient_ids": [
+            "corned_beef",
+            "potatoes",
+            "onion",
+            "drawn_butter"
+          ],
+          "tool_ids": [],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Mold and pat into small, flat, elliptical loaves",
+            "note": null
+          }
+        },
+        {
+          "order": 8,
+          "text": "Fry in a hot, lightly buttered pan, turning frequently until well browned on both sides.",
+          "ingredient_ids": [
+            "corned_beef",
+            "potatoes",
+            "onion",
+            "drawn_butter"
+          ],
+          "tool_ids": [
+            "frying_pan"
+          ],
+          "duration": null,
+          "condition": "until well browned on both sides",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "fry in a hot, lightly buttered pan. Turn frequently until well browned on both sides.",
+            "note": null
+          }
+        },
+        {
+          "order": 9,
+          "text": "Serve sprinkled with minced parsley.",
+          "ingredient_ids": [
+            "parsley"
+          ],
+          "tool_ids": [],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Serve sprinkled with minced parsley.",
+            "note": null
+          }
+        },
+        {
+          "order": 10,
+          "text": "Boil the milk in a double boiler and sprinkle in the corn meal, stirring all the time.",
+          "ingredient_ids": [
+            "milk",
+            "corn_meal"
+          ],
+          "tool_ids": [
+            "double_boiler"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 2,
+            "quote": "Boil the milk in a double boiler and sprinkle in the corn meal, stirring all the time.",
+            "note": null
+          }
+        },
+        {
+          "order": 11,
+          "text": "Cook for twelve minutes.",
+          "ingredient_ids": [],
+          "tool_ids": [
+            "double_boiler"
+          ],
+          "duration": {
+            "raw": "twelve minutes",
+            "min_minutes": 12.0,
+            "max_minutes": 12.0
+          },
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 2,
+            "quote": "Cook twelve minutes.",
+            "note": null
+          }
+        },
+        {
+          "order": 12,
+          "text": "Beat the eggs, adding the salt, sugar and a half teaspoonful of ground ginger.",
+          "ingredient_ids": [
+            "eggs",
+            "salt",
+            "sugar",
+            "ginger"
+          ],
+          "tool_ids": [
+            "bowl"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 2,
+            "quote": "Beat the eggs, adding the salt, sugar and a half tea-spoonful of ground ginger.",
+            "note": null
+          }
+        },
+        {
+          "order": 13,
+          "text": "Add this mixture with the butter to the milk and meal, then add the raisins and stir until perfectly mixed.",
+          "ingredient_ids": [
+            "eggs",
+            "salt",
+            "sugar",
+            "ginger",
+            "butter",
+            "milk",
+            "corn_meal",
+            "raisins"
+          ],
+          "tool_ids": [],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 2,
+            "quote": "Add this mixture with the butter to milk and meal, then add the raisins and stir until perfectly mixed.",
+            "note": null
+          }
+        },
+        {
+          "order": 14,
+          "text": "Remove from the double boiler and bake for one hour.",
+          "ingredient_ids": [],
+          "tool_ids": [
+            "double_boiler",
+            "oven"
+          ],
+          "duration": {
+            "raw": "one hour",
+            "min_minutes": 60.0,
+            "max_minutes": 60.0
+          },
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 2,
+            "quote": "Remove from the double boiler and bake for one hour.",
+            "note": null
+          }
+        }
+      ],
+      "warnings": [
+        {
+          "message": "The document is a menu with a clam soup, but it gives no clam soup recipe; only the hash and the Indian pudding are extracted. The Rex Beach note was ignored.",
+          "target_id": null
+        },
+        {
+          "message": "The OCR prints 'I' for the numeral 1 in 'I quart' for milk; it is read as 1 quart and should be checked against the page image.",
+          "target_id": null
+        },
+        {
+          "message": "The OCR prints 'Yz' for the fraction one-half in 'Yz cup' for raisins; it is read as 0.5 cup and should be checked against the page image.",
+          "target_id": null
+        },
+        {
+          "message": "Salt appears twice (for the hash with no amount, and for the pudding with 1 teaspoonful); it is kept as one entry with the pudding amount.",
+          "target_id": null
+        },
+        {
+          "message": "The oven, knife and bowl are implied tools not named in the text.",
+          "target_id": null
+        },
+        {
+          "message": "Servings are inferred, not stated.",
+          "target_id": null
+        },
+        {
+          "message": "The pudding's cooking time of 12 minutes is for the cornmeal in milk, as the text says.",
+          "target_id": null
+        }
+      ]
+    },
+    "usage": [
+      {
+        "model": "claude-haiku-5-5",
+        "input_tokens": 5099,
+        "output_tokens": 9452,
+        "seconds": 34.37458549999974,
+        "cached": false
+      },
+      {
+        "model": "claude-haiku-5-5",
+        "input_tokens": 10093,
+        "output_tokens": 5917,
+        "seconds": 19.748552400000335,
+        "cached": false
+      }
+    ],
+    "problems_found": [
+      "ingredient 'milk': amount [1.0] does not appear in its quote 'You must have I quart of milk'",
+      "ingredient 'raisins': amount [0.5] does not appear in its quote 'Yz cup of the finest seeded raisins'"
+    ],
+    "problems_left": []
+  },
+  "manipulation": {
+    "original": {
+      "title": "A Favorite Menu: Corned Beef Hash with Baked Indian Pudding",
+      "language": "en",
+      "servings": {
+        "value": 6,
+        "source": {
+          "status": "inferred",
+          "page": null,
+          "quote": null,
+          "note": "The text does not state servings. Estimated from one quart of milk for the pudding and the hash made as individual loaves."
+        }
+      },
+      "ingredients": [
+        {
+          "id": "corned_beef",
+          "name": "corned beef",
+          "name_original": "fine lean corned beef",
+          "quantity": {
+            "kind": "vague",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": "plenty of"
+          },
+          "preparation": "fine, lean, cut into one-eighth inch bits",
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "meat",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "get plenty of fine lean corned beef and cut it into one-eighth inch bits",
+            "note": null
+          }
+        },
+        {
+          "id": "onion",
+          "name": "onion",
+          "name_original": "one small onion",
+          "quantity": {
+            "kind": "exact",
+            "value": 1.0,
+            "max_value": null,
+            "unit": null,
+            "raw": "one small"
+          },
+          "preparation": "chopped very fine",
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Chop one small onion into very fine particles.",
+            "note": null
+          }
+        },
+        {
+          "id": "potatoes",
+          "name": "cold boiled potatoes",
+          "name_original": "cold boiled potatoes",
+          "quantity": {
+            "kind": "absent",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": "fairly firm, cut or chopped",
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "cold boiled potatoes (fairly firm) and cut or chop.",
+            "note": null
+          }
+        },
+        {
+          "id": "drawn_butter",
+          "name": "drawn butter",
+          "name_original": "drawn butter",
+          "quantity": {
+            "kind": "vague",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": "some"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": true,
+          "animal": "dairy",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Prepare some drawn butter",
+            "note": null
+          }
+        },
+        {
+          "id": "worcestershire_sauce",
+          "name": "Worcestershire sauce",
+          "name_original": "Worcestershire sauce",
+          "quantity": {
+            "kind": "vague",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": "a few drops of"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "fish",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "add a few drops of Worcestershire sauce, salt and pepper",
+            "note": null
+          }
+        },
+        {
+          "id": "salt",
+          "name": "salt",
+          "name_original": "salt",
+          "quantity": {
+            "kind": "exact",
+            "value": 1.0,
+            "max_value": null,
+            "unit": "teaspoonful",
+            "raw": "1 teaspoonful of"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "1 teaspoonful of salt",
+            "note": null
+          }
+        },
+        {
+          "id": "pepper",
+          "name": "pepper",
+          "name_original": "pepper",
+          "quantity": {
+            "kind": "to_taste",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "salt and pepper",
+            "note": null
+          }
+        },
+        {
+          "id": "parsley",
+          "name": "parsley",
+          "name_original": "minced parsley",
+          "quantity": {
+            "kind": "absent",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": "minced",
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Serve sprinkled with minced parsley.",
+            "note": null
+          }
+        },
+        {
+          "id": "milk",
+          "name": "milk",
+          "name_original": "milk",
+          "quantity": {
+            "kind": "exact",
+            "value": 1.0,
+            "max_value": null,
+            "unit": "quart",
+            "raw": "I quart of"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "dairy",
+          "source": {
+            "status": "inferred",
+            "page": 1,
+            "quote": "You must have I quart of milk",
+            "note": "The OCR text prints the letter 'I' where the numeral 1 is meant; read as one quart."
+          }
+        },
+        {
+          "id": "eggs",
+          "name": "eggs",
+          "name_original": "eggs",
+          "quantity": {
+            "kind": "exact",
+            "value": 3.0,
+            "max_value": null,
+            "unit": null,
+            "raw": "3 eggs"
+          },
+          "preparation": "beaten",
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "egg",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "3 eggs",
+            "note": null
+          }
+        },
+        {
+          "id": "raisins",
+          "name": "raisins",
+          "name_original": "finest seeded raisins",
+          "quantity": {
+            "kind": "exact",
+            "value": 0.5,
+            "max_value": null,
+            "unit": "cup",
+            "raw": "Yz cup of"
+          },
+          "preparation": "seeded",
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "inferred",
+            "page": 1,
+            "quote": "Yz cup of the finest seeded raisins",
+            "note": "The OCR text prints 'Yz' where the fraction one-half is meant; read as 0.5 cup."
+          }
+        },
+        {
+          "id": "corn_meal",
+          "name": "corn meal",
+          "name_original": "corn meal",
+          "quantity": {
+            "kind": "exact",
+            "value": 2.0,
+            "max_value": null,
+            "unit": "tablespoonsful",
+            "raw": "2 heaping tablespoonsful of"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "2 heaping tablespoonsful of corn meal",
+            "note": null
+          }
+        },
+        {
+          "id": "sugar",
+          "name": "sugar",
+          "name_original": "sugar",
+          "quantity": {
+            "kind": "exact",
+            "value": 4.0,
+            "max_value": null,
+            "unit": "tablespoonsful",
+            "raw": "4 heaping tablespoonsful of"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "4 heaping tablespoonsful of sugar",
+            "note": null
+          }
+        },
+        {
+          "id": "butter",
+          "name": "butter",
+          "name_original": "butter",
+          "quantity": {
+            "kind": "exact",
+            "value": 1.0,
+            "max_value": null,
+            "unit": "tablespoonful",
+            "raw": "1 heaping tablespoonful of"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "dairy",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "1 heaping tablespoonful of butter",
+            "note": null
+          }
+        },
+        {
+          "id": "ginger",
+          "name": "ground ginger",
+          "name_original": "ground ginger",
+          "quantity": {
+            "kind": "exact",
+            "value": 0.5,
+            "max_value": null,
+            "unit": "teaspoonful",
+            "raw": "a half tea-spoonful of"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 2,
+            "quote": "a half tea-spoonful of ground ginger",
+            "note": null
+          }
+        }
+      ],
+      "tools": [
+        {
+          "id": "knife",
+          "name": "knife",
+          "source": {
+            "status": "inferred",
+            "page": 1,
+            "quote": "cut it into one-eighth inch bits",
+            "note": "Needed to cut the corned beef, chop the onion and cut the potatoes."
+          }
+        },
+        {
+          "id": "bowl",
+          "name": "bowl",
+          "source": {
+            "status": "inferred",
+            "page": 1,
+            "quote": "Now mix the meat, potatoes, onion and drawn butter.",
+            "note": "Needed to mix the hash and to beat the eggs."
+          }
+        },
+        {
+          "id": "frying_pan",
+          "name": "frying pan",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "fry in a hot, lightly buttered pan",
+            "note": null
+          }
+        },
+        {
+          "id": "double_boiler",
+          "name": "double boiler",
+          "source": {
+            "status": "read",
+            "page": 2,
+            "quote": "Boil the milk in a double boiler",
+            "note": null
+          }
+        },
+        {
+          "id": "oven",
+          "name": "oven",
+          "source": {
+            "status": "inferred",
+            "page": 2,
+            "quote": "bake for one hour",
+            "note": "Needed to bake the pudding; the oven is not named in the text."
+          }
+        }
+      ],
+      "steps": [
+        {
+          "order": 1,
+          "text": "Cut the corned beef into one-eighth inch bits.",
+          "ingredient_ids": [
+            "corned_beef"
+          ],
+          "tool_ids": [
+            "knife"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "get plenty of fine lean corned beef and cut it into one-eighth inch bits.",
+            "note": null
+          }
+        },
+        {
+          "order": 2,
+          "text": "Chop the onion into very fine particles.",
+          "ingredient_ids": [
+            "onion"
+          ],
+          "tool_ids": [
+            "knife"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Chop one small onion into very fine particles.",
+            "note": null
+          }
+        },
+        {
+          "order": 3,
+          "text": "Cut or chop the cold boiled potatoes.",
+          "ingredient_ids": [
+            "potatoes"
+          ],
+          "tool_ids": [
+            "knife"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Take cold boiled potatoes (fairly firm) and cut or chop.",
+            "note": null
+          }
+        },
+        {
+          "order": 4,
+          "text": "Prepare the drawn butter.",
+          "ingredient_ids": [
+            "drawn_butter"
+          ],
+          "tool_ids": [],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Prepare some drawn butter",
+            "note": null
+          }
+        },
+        {
+          "order": 5,
+          "text": "Add a few drops of Worcestershire sauce, salt and pepper to the drawn butter.",
+          "ingredient_ids": [
+            "worcestershire_sauce",
+            "salt",
+            "pepper",
+            "drawn_butter"
+          ],
+          "tool_ids": [],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "add a few drops of Worcestershire sauce, salt and pepper",
+            "note": null
+          }
+        },
+        {
+          "order": 6,
+          "text": "Mix the meat, potatoes, onion and drawn butter.",
+          "ingredient_ids": [
+            "corned_beef",
+            "potatoes",
+            "onion",
+            "drawn_butter"
+          ],
+          "tool_ids": [
+            "bowl"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Now mix the meat, potatoes, onion and drawn butter.",
+            "note": null
+          }
+        },
+        {
+          "order": 7,
+          "text": "Mold and pat into small, flat, elliptical loaves (individual servings).",
+          "ingredient_ids": [
+            "corned_beef",
+            "potatoes",
+            "onion",
+            "drawn_butter"
+          ],
+          "tool_ids": [],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Mold and pat into small, flat, elliptical loaves",
+            "note": null
+          }
+        },
+        {
+          "order": 8,
+          "text": "Fry in a hot, lightly buttered pan, turning frequently until well browned on both sides.",
+          "ingredient_ids": [
+            "corned_beef",
+            "potatoes",
+            "onion",
+            "drawn_butter"
+          ],
+          "tool_ids": [
+            "frying_pan"
+          ],
+          "duration": null,
+          "condition": "until well browned on both sides",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "fry in a hot, lightly buttered pan. Turn frequently until well browned on both sides.",
+            "note": null
+          }
+        },
+        {
+          "order": 9,
+          "text": "Serve sprinkled with minced parsley.",
+          "ingredient_ids": [
+            "parsley"
+          ],
+          "tool_ids": [],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Serve sprinkled with minced parsley.",
+            "note": null
+          }
+        },
+        {
+          "order": 10,
+          "text": "Boil the milk in a double boiler and sprinkle in the corn meal, stirring all the time.",
+          "ingredient_ids": [
+            "milk",
+            "corn_meal"
+          ],
+          "tool_ids": [
+            "double_boiler"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 2,
+            "quote": "Boil the milk in a double boiler and sprinkle in the corn meal, stirring all the time.",
+            "note": null
+          }
+        },
+        {
+          "order": 11,
+          "text": "Cook for twelve minutes.",
+          "ingredient_ids": [],
+          "tool_ids": [
+            "double_boiler"
+          ],
+          "duration": {
+            "raw": "twelve minutes",
+            "min_minutes": 12.0,
+            "max_minutes": 12.0
+          },
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 2,
+            "quote": "Cook twelve minutes.",
+            "note": null
+          }
+        },
+        {
+          "order": 12,
+          "text": "Beat the eggs, adding the salt, sugar and a half teaspoonful of ground ginger.",
+          "ingredient_ids": [
+            "eggs",
+            "salt",
+            "sugar",
+            "ginger"
+          ],
+          "tool_ids": [
+            "bowl"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 2,
+            "quote": "Beat the eggs, adding the salt, sugar and a half tea-spoonful of ground ginger.",
+            "note": null
+          }
+        },
+        {
+          "order": 13,
+          "text": "Add this mixture with the butter to the milk and meal, then add the raisins and stir until perfectly mixed.",
+          "ingredient_ids": [
+            "eggs",
+            "salt",
+            "sugar",
+            "ginger",
+            "butter",
+            "milk",
+            "corn_meal",
+            "raisins"
+          ],
+          "tool_ids": [],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 2,
+            "quote": "Add this mixture with the butter to milk and meal, then add the raisins and stir until perfectly mixed.",
+            "note": null
+          }
+        },
+        {
+          "order": 14,
+          "text": "Remove from the double boiler and bake for one hour.",
+          "ingredient_ids": [],
+          "tool_ids": [
+            "double_boiler",
+            "oven"
+          ],
+          "duration": {
+            "raw": "one hour",
+            "min_minutes": 60.0,
+            "max_minutes": 60.0
+          },
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 2,
+            "quote": "Remove from the double boiler and bake for one hour.",
+            "note": null
+          }
+        }
+      ],
+      "warnings": [
+        {
+          "message": "The document is a menu with a clam soup, but it gives no clam soup recipe; only the hash and the Indian pudding are extracted. The Rex Beach note was ignored.",
+          "target_id": null
+        },
+        {
+          "message": "The OCR prints 'I' for the numeral 1 in 'I quart' for milk; it is read as 1 quart and should be checked against the page image.",
+          "target_id": null
+        },
+        {
+          "message": "The OCR prints 'Yz' for the fraction one-half in 'Yz cup' for raisins; it is read as 0.5 cup and should be checked against the page image.",
+          "target_id": null
+        },
+        {
+          "message": "Salt appears twice (for the hash with no amount, and for the pudding with 1 teaspoonful); it is kept as one entry with the pudding amount.",
+          "target_id": null
+        },
+        {
+          "message": "The oven, knife and bowl are implied tools not named in the text.",
+          "target_id": null
+        },
+        {
+          "message": "Servings are inferred, not stated.",
+          "target_id": null
+        },
+        {
+          "message": "The pudding's cooking time of 12 minutes is for the cornmeal in milk, as the text says.",
+          "target_id": null
+        }
+      ]
+    },
+    "recipe": {
+      "title": "A Favorite Menu: Corned Beef Hash with Baked Indian Pudding",
+      "language": "en",
+      "servings": {
+        "value": 6,
+        "source": {
+          "status": "inferred",
+          "page": null,
+          "quote": null,
+          "note": "The text does not state servings. Estimated from one quart of milk for the pudding and the hash made as individual loaves."
+        }
+      },
+      "ingredients": [
+        {
+          "id": "vegan_corned_beef",
+          "name": "seitan roast (or a whole celeriac)",
+          "name_original": "seitan roast (or a whole celeriac)",
+          "quantity": {
+            "kind": "vague",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": "plenty of"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "rule",
+            "page": 1,
+            "quote": "get plenty of fine lean corned beef and cut it into one-eighth inch bits",
+            "note": "vegan substitute for 'fine lean corned beef': The meat is the main ingredient. Seitan holds together in a long braise and takes up the marinade; a whole celeriac is a soy- and gluten-free alternative."
+          }
+        },
+        {
+          "id": "onion",
+          "name": "onion",
+          "name_original": "one small onion",
+          "quantity": {
+            "kind": "exact",
+            "value": 1.0,
+            "max_value": null,
+            "unit": null,
+            "raw": "one small"
+          },
+          "preparation": "chopped very fine",
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Chop one small onion into very fine particles.",
+            "note": null
+          }
+        },
+        {
+          "id": "potatoes",
+          "name": "cold boiled potatoes",
+          "name_original": "cold boiled potatoes",
+          "quantity": {
+            "kind": "absent",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": "fairly firm, cut or chopped",
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "cold boiled potatoes (fairly firm) and cut or chop.",
+            "note": null
+          }
+        },
+        {
+          "id": "vegan_drawn_butter",
+          "name": "vegan butter",
+          "name_original": "vegan butter",
+          "quantity": {
+            "kind": "vague",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": "some"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": true,
+          "animal": "none",
+          "source": {
+            "status": "rule",
+            "page": 1,
+            "quote": "Prepare some drawn butter",
+            "note": "vegan substitute for 'drawn butter': Dairy butter; vegan butter behaves the same for frying and baking."
+          }
+        },
+        {
+          "id": "worcestershire_sauce",
+          "name": "Worcestershire sauce",
+          "name_original": "Worcestershire sauce",
+          "quantity": {
+            "kind": "vague",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": "a few drops of"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "fish",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "add a few drops of Worcestershire sauce, salt and pepper",
+            "note": null
+          }
+        },
+        {
+          "id": "salt",
+          "name": "salt",
+          "name_original": "salt",
+          "quantity": {
+            "kind": "exact",
+            "value": 1.0,
+            "max_value": null,
+            "unit": "teaspoonful",
+            "raw": "1 teaspoonful of"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "1 teaspoonful of salt",
+            "note": null
+          }
+        },
+        {
+          "id": "pepper",
+          "name": "pepper",
+          "name_original": "pepper",
+          "quantity": {
+            "kind": "to_taste",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "salt and pepper",
+            "note": null
+          }
+        },
+        {
+          "id": "parsley",
+          "name": "parsley",
+          "name_original": "minced parsley",
+          "quantity": {
+            "kind": "absent",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": "minced",
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Serve sprinkled with minced parsley.",
+            "note": null
+          }
+        },
+        {
+          "id": "vegan_milk",
+          "name": "oat milk",
+          "name_original": "oat milk",
+          "quantity": {
+            "kind": "exact",
+            "value": 1.0,
+            "max_value": null,
+            "unit": "quart",
+            "raw": "I quart of"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "rule",
+            "page": 1,
+            "quote": "You must have I quart of milk",
+            "note": "vegan substitute for 'milk': Dairy milk."
+          }
+        },
+        {
+          "id": "vegan_eggs",
+          "name": "flax egg (1 tbsp ground flaxseed + 3 tbsp water per egg)",
+          "name_original": "flax egg (1 tbsp ground flaxseed + 3 tbsp water per egg)",
+          "quantity": {
+            "kind": "exact",
+            "value": 3.0,
+            "max_value": null,
+            "unit": null,
+            "raw": "3 eggs"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "rule",
+            "page": 1,
+            "quote": "3 eggs",
+            "note": "vegan substitute for 'eggs': Eggs that bind a dough or batter; a flax egg does the same."
+          }
+        },
+        {
+          "id": "raisins",
+          "name": "raisins",
+          "name_original": "finest seeded raisins",
+          "quantity": {
+            "kind": "exact",
+            "value": 0.5,
+            "max_value": null,
+            "unit": "cup",
+            "raw": "Yz cup of"
+          },
+          "preparation": "seeded",
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "inferred",
+            "page": 1,
+            "quote": "Yz cup of the finest seeded raisins",
+            "note": "The OCR text prints 'Yz' where the fraction one-half is meant; read as 0.5 cup."
+          }
+        },
+        {
+          "id": "corn_meal",
+          "name": "corn meal",
+          "name_original": "corn meal",
+          "quantity": {
+            "kind": "exact",
+            "value": 2.0,
+            "max_value": null,
+            "unit": "tablespoonsful",
+            "raw": "2 heaping tablespoonsful of"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "2 heaping tablespoonsful of corn meal",
+            "note": null
+          }
+        },
+        {
+          "id": "sugar",
+          "name": "sugar",
+          "name_original": "sugar",
+          "quantity": {
+            "kind": "exact",
+            "value": 4.0,
+            "max_value": null,
+            "unit": "tablespoonsful",
+            "raw": "4 heaping tablespoonsful of"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "4 heaping tablespoonsful of sugar",
+            "note": null
+          }
+        },
+        {
+          "id": "vegan_butter",
+          "name": "vegan butter",
+          "name_original": "vegan butter",
+          "quantity": {
+            "kind": "exact",
+            "value": 1.0,
+            "max_value": null,
+            "unit": "tablespoonful",
+            "raw": "1 heaping tablespoonful of"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "rule",
+            "page": 1,
+            "quote": "1 heaping tablespoonful of butter",
+            "note": "vegan substitute for 'butter': Dairy butter; vegan butter behaves the same for frying and baking."
+          }
+        },
+        {
+          "id": "ginger",
+          "name": "ground ginger",
+          "name_original": "ground ginger",
+          "quantity": {
+            "kind": "exact",
+            "value": 0.5,
+            "max_value": null,
+            "unit": "teaspoonful",
+            "raw": "a half tea-spoonful of"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 2,
+            "quote": "a half tea-spoonful of ground ginger",
+            "note": null
+          }
+        }
+      ],
+      "tools": [
+        {
+          "id": "knife",
+          "name": "knife",
+          "source": {
+            "status": "inferred",
+            "page": 1,
+            "quote": "cut it into one-eighth inch bits",
+            "note": "Needed to cut the corned beef, chop the onion and cut the potatoes."
+          }
+        },
+        {
+          "id": "bowl",
+          "name": "bowl",
+          "source": {
+            "status": "inferred",
+            "page": 1,
+            "quote": "Now mix the meat, potatoes, onion and drawn butter.",
+            "note": "Needed to mix the hash and to beat the eggs."
+          }
+        },
+        {
+          "id": "frying_pan",
+          "name": "frying pan",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "fry in a hot, lightly buttered pan",
+            "note": null
+          }
+        },
+        {
+          "id": "double_boiler",
+          "name": "double boiler",
+          "source": {
+            "status": "read",
+            "page": 2,
+            "quote": "Boil the milk in a double boiler",
+            "note": null
+          }
+        },
+        {
+          "id": "oven",
+          "name": "oven",
+          "source": {
+            "status": "inferred",
+            "page": 2,
+            "quote": "bake for one hour",
+            "note": "Needed to bake the pudding; the oven is not named in the text."
+          }
+        }
+      ],
+      "steps": [
+        {
+          "order": 1,
+          "text": "Cut the corned beef into one-eighth inch bits.\n[Vegan: use seitan roast (or a whole celeriac) instead of fine lean corned beef. Marinate seitan for 1–2 days at most; a week in an acidic marinade makes it soft. Braise 45–60 minutes instead of hours.]",
+          "ingredient_ids": [
+            "vegan_corned_beef"
+          ],
+          "tool_ids": [
+            "knife"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "get plenty of fine lean corned beef and cut it into one-eighth inch bits.",
+            "note": null
+          }
+        },
+        {
+          "order": 2,
+          "text": "Chop the onion into very fine particles.",
+          "ingredient_ids": [
+            "onion"
+          ],
+          "tool_ids": [
+            "knife"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Chop one small onion into very fine particles.",
+            "note": null
+          }
+        },
+        {
+          "order": 3,
+          "text": "Cut or chop the cold boiled potatoes.",
+          "ingredient_ids": [
+            "potatoes"
+          ],
+          "tool_ids": [
+            "knife"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Take cold boiled potatoes (fairly firm) and cut or chop.",
+            "note": null
+          }
+        },
+        {
+          "order": 4,
+          "text": "Prepare the drawn butter.\n[Vegan: use vegan butter instead of drawn butter; use vegan butter instead of butter.]",
+          "ingredient_ids": [
+            "vegan_drawn_butter"
+          ],
+          "tool_ids": [],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Prepare some drawn butter",
+            "note": null
+          }
+        },
+        {
+          "order": 5,
+          "text": "Add a few drops of Worcestershire sauce, salt and pepper to the drawn butter.\n[Vegan: use vegan butter instead of drawn butter; use vegan butter instead of butter.]",
+          "ingredient_ids": [
+            "worcestershire_sauce",
+            "salt",
+            "pepper",
+            "vegan_drawn_butter"
+          ],
+          "tool_ids": [],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "add a few drops of Worcestershire sauce, salt and pepper",
+            "note": null
+          }
+        },
+        {
+          "order": 6,
+          "text": "Mix the meat, potatoes, onion and drawn butter.\n[Vegan: use seitan roast (or a whole celeriac) instead of fine lean corned beef; use vegan butter instead of drawn butter; use vegan butter instead of butter. Marinate seitan for 1–2 days at most; a week in an acidic marinade makes it soft. Braise 45–60 minutes instead of hours.]",
+          "ingredient_ids": [
+            "vegan_corned_beef",
+            "potatoes",
+            "onion",
+            "vegan_drawn_butter"
+          ],
+          "tool_ids": [
+            "bowl"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Now mix the meat, potatoes, onion and drawn butter.",
+            "note": null
+          }
+        },
+        {
+          "order": 7,
+          "text": "Mold and pat into small, flat, elliptical loaves (individual servings).\n[Vegan: use seitan roast (or a whole celeriac) instead of fine lean corned beef; use vegan butter instead of drawn butter. Marinate seitan for 1–2 days at most; a week in an acidic marinade makes it soft. Braise 45–60 minutes instead of hours.]",
+          "ingredient_ids": [
+            "vegan_corned_beef",
+            "potatoes",
+            "onion",
+            "vegan_drawn_butter"
+          ],
+          "tool_ids": [],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Mold and pat into small, flat, elliptical loaves",
+            "note": null
+          }
+        },
+        {
+          "order": 8,
+          "text": "Fry in a hot, lightly buttered pan, turning frequently until well browned on both sides.\n[Vegan: use seitan roast (or a whole celeriac) instead of fine lean corned beef; use vegan butter instead of drawn butter. Marinate seitan for 1–2 days at most; a week in an acidic marinade makes it soft. Braise 45–60 minutes instead of hours.]",
+          "ingredient_ids": [
+            "vegan_corned_beef",
+            "potatoes",
+            "onion",
+            "vegan_drawn_butter"
+          ],
+          "tool_ids": [
+            "frying_pan"
+          ],
+          "duration": null,
+          "condition": "until well browned on both sides",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "fry in a hot, lightly buttered pan. Turn frequently until well browned on both sides.",
+            "note": null
+          }
+        },
+        {
+          "order": 9,
+          "text": "Serve sprinkled with minced parsley.",
+          "ingredient_ids": [
+            "parsley"
+          ],
+          "tool_ids": [],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Serve sprinkled with minced parsley.",
+            "note": null
+          }
+        },
+        {
+          "order": 10,
+          "text": "Boil the milk in a double boiler and sprinkle in the corn meal, stirring all the time.\n[Vegan: use oat milk instead of milk.]",
+          "ingredient_ids": [
+            "vegan_milk",
+            "corn_meal"
+          ],
+          "tool_ids": [
+            "double_boiler"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 2,
+            "quote": "Boil the milk in a double boiler and sprinkle in the corn meal, stirring all the time.",
+            "note": null
+          }
+        },
+        {
+          "order": 11,
+          "text": "Cook for twelve minutes.",
+          "ingredient_ids": [],
+          "tool_ids": [
+            "double_boiler"
+          ],
+          "duration": {
+            "raw": "twelve minutes",
+            "min_minutes": 12.0,
+            "max_minutes": 12.0
+          },
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 2,
+            "quote": "Cook twelve minutes.",
+            "note": null
+          }
+        },
+        {
+          "order": 12,
+          "text": "Beat the eggs, adding the salt, sugar and a half teaspoonful of ground ginger.\n[Vegan: use flax egg (1 tbsp ground flaxseed + 3 tbsp water per egg) instead of eggs.]",
+          "ingredient_ids": [
+            "vegan_eggs",
+            "salt",
+            "sugar",
+            "ginger"
+          ],
+          "tool_ids": [
+            "bowl"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 2,
+            "quote": "Beat the eggs, adding the salt, sugar and a half tea-spoonful of ground ginger.",
+            "note": null
+          }
+        },
+        {
+          "order": 13,
+          "text": "Add this mixture with the butter to the milk and meal, then add the raisins and stir until perfectly mixed.\n[Vegan: use vegan butter instead of drawn butter; use oat milk instead of milk; use flax egg (1 tbsp ground flaxseed + 3 tbsp water per egg) instead of eggs; use vegan butter instead of butter.]",
+          "ingredient_ids": [
+            "vegan_eggs",
+            "salt",
+            "sugar",
+            "ginger",
+            "vegan_butter",
+            "vegan_milk",
+            "corn_meal",
+            "raisins"
+          ],
+          "tool_ids": [],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 2,
+            "quote": "Add this mixture with the butter to milk and meal, then add the raisins and stir until perfectly mixed.",
+            "note": null
+          }
+        },
+        {
+          "order": 14,
+          "text": "Remove from the double boiler and bake for one hour.",
+          "ingredient_ids": [],
+          "tool_ids": [
+            "double_boiler",
+            "oven"
+          ],
+          "duration": {
+            "raw": "one hour",
+            "min_minutes": 60.0,
+            "max_minutes": 60.0
+          },
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 2,
+            "quote": "Remove from the double boiler and bake for one hour.",
+            "note": null
+          }
+        }
+      ],
+      "warnings": [
+        {
+          "message": "The document is a menu with a clam soup, but it gives no clam soup recipe; only the hash and the Indian pudding are extracted. The Rex Beach note was ignored.",
+          "target_id": null
+        },
+        {
+          "message": "The OCR prints 'I' for the numeral 1 in 'I quart' for milk; it is read as 1 quart and should be checked against the page image.",
+          "target_id": null
+        },
+        {
+          "message": "The OCR prints 'Yz' for the fraction one-half in 'Yz cup' for raisins; it is read as 0.5 cup and should be checked against the page image.",
+          "target_id": null
+        },
+        {
+          "message": "Salt appears twice (for the hash with no amount, and for the pudding with 1 teaspoonful); it is kept as one entry with the pudding amount.",
+          "target_id": null
+        },
+        {
+          "message": "The oven, knife and bowl are implied tools not named in the text.",
+          "target_id": null
+        },
+        {
+          "message": "Servings are inferred, not stated.",
+          "target_id": null
+        },
+        {
+          "message": "The pudding's cooking time of 12 minutes is for the cornmeal in milk, as the text says.",
+          "target_id": null
+        },
+        {
+          "message": "Not fully vegan: no vegan substitute is known for Worcestershire sauce. Choose one before cooking.",
+          "target_id": null
+        },
+        {
+          "message": "Vegan, Worcestershire sauce: contains fish, and no vegan substitute is known for it.",
+          "target_id": "worcestershire_sauce"
+        },
+        {
+          "message": "Vegan check, sugar: Some cane sugar is filtered through bone char. Beet sugar and sugar labelled vegan are safe.",
+          "target_id": "sugar"
+        }
+      ]
+    },
+    "changes": [
+      {
+        "rule": "vegan",
+        "target": "corned_beef",
+        "before": "fine lean corned beef",
+        "after": "seitan roast (or a whole celeriac)",
+        "reason": "The meat is the main ingredient. Seitan holds together in a long braise and takes up the marinade; a whole celeriac is a soy- and gluten-free alternative."
+      },
+      {
+        "rule": "vegan",
+        "target": "drawn_butter",
+        "before": "drawn butter",
+        "after": "vegan butter",
+        "reason": "Dairy butter; vegan butter behaves the same for frying and baking."
+      },
+      {
+        "rule": "vegan",
+        "target": "milk",
+        "before": "milk",
+        "after": "oat milk",
+        "reason": "Dairy milk."
+      },
+      {
+        "rule": "vegan",
+        "target": "eggs",
+        "before": "eggs",
+        "after": "flax egg (1 tbsp ground flaxseed + 3 tbsp water per egg)",
+        "reason": "Eggs that bind a dough or batter; a flax egg does the same."
+      },
+      {
+        "rule": "vegan",
+        "target": "butter",
+        "before": "butter",
+        "after": "vegan butter",
+        "reason": "Dairy butter; vegan butter behaves the same for frying and baking."
+      },
+      {
+        "rule": "vegan",
+        "target": "step 1",
+        "before": "fine lean corned beef",
+        "after": "seitan roast (or a whole celeriac)",
+        "reason": "Substitution carried into the method. Marinate seitan for 1–2 days at most; a week in an acidic marinade makes it soft. Braise 45–60 minutes instead of hours."
+      },
+      {
+        "rule": "vegan",
+        "target": "step 4",
+        "before": "drawn butter, butter",
+        "after": "vegan butter, vegan butter",
+        "reason": "Substitution carried into the method."
+      },
+      {
+        "rule": "vegan",
+        "target": "step 5",
+        "before": "drawn butter, butter",
+        "after": "vegan butter, vegan butter",
+        "reason": "Substitution carried into the method."
+      },
+      {
+        "rule": "vegan",
+        "target": "step 6",
+        "before": "fine lean corned beef, drawn butter, butter",
+        "after": "seitan roast (or a whole celeriac), vegan butter, vegan butter",
+        "reason": "Substitution carried into the method. Marinate seitan for 1–2 days at most; a week in an acidic marinade makes it soft. Braise 45–60 minutes instead of hours."
+      },
+      {
+        "rule": "vegan",
+        "target": "step 7",
+        "before": "fine lean corned beef, drawn butter",
+        "after": "seitan roast (or a whole celeriac), vegan butter",
+        "reason": "Substitution carried into the method. Marinate seitan for 1–2 days at most; a week in an acidic marinade makes it soft. Braise 45–60 minutes instead of hours."
+      },
+      {
+        "rule": "vegan",
+        "target": "step 8",
+        "before": "fine lean corned beef, drawn butter",
+        "after": "seitan roast (or a whole celeriac), vegan butter",
+        "reason": "Substitution carried into the method. Marinate seitan for 1–2 days at most; a week in an acidic marinade makes it soft. Braise 45–60 minutes instead of hours."
+      },
+      {
+        "rule": "vegan",
+        "target": "step 10",
+        "before": "milk",
+        "after": "oat milk",
+        "reason": "Substitution carried into the method."
+      },
+      {
+        "rule": "vegan",
+        "target": "step 12",
+        "before": "eggs",
+        "after": "flax egg (1 tbsp ground flaxseed + 3 tbsp water per egg)",
+        "reason": "Substitution carried into the method."
+      },
+      {
+        "rule": "vegan",
+        "target": "step 13",
+        "before": "drawn butter, milk, eggs, butter",
+        "after": "vegan butter, oat milk, flax egg (1 tbsp ground flaxseed + 3 tbsp water per egg), vegan butter",
+        "reason": "Substitution carried into the method."
+      },
+      {
+        "rule": "vegan",
+        "target": "worcestershire_sauce",
+        "before": "Worcestershire sauce",
+        "after": "unchanged, no known substitute",
+        "reason": "contains fish, and no vegan substitute is known for it."
+      },
+      {
+        "rule": "vegan",
+        "target": "sugar",
+        "before": "sugar",
+        "after": "unchanged, check the label",
+        "reason": "Some cane sugar is filtered through bone char. Beet sugar and sugar labelled vegan are safe."
+      }
+    ]
+  }
+}

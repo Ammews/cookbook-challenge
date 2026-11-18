@@ -1,0 +1,1273 @@
+{
+  "document": {
+    "name": "card-en-fudge-cake.pdf",
+    "kind": "pdf",
+    "pages": [
+      {
+        "number": 1,
+        "text": "4 tbsp. butter - Cream with yolks of 2 eggs. Add 2 cups granulated sugar. Add 2¼ cups Swansdown flour in which has been placed ½ tsp. salt and 3 tsp. baking powder. Add flour alternately with 1½ cups whole milk. Then add 4 squares melted chocolate, 1 tsp. vanilla, 1 cup nuts and stiffly beaten whites of 2 eggs. Dear Grandmother:— This is a long promised recipe finally coming. Emily Frances",
+        "method": "vision",
+        "decoration_text": [
+          "Wellsey Fudge Cake"
+        ],
+        "uncertain": [],
+        "usage": {
+          "model": "claude-haiku-5-5",
+          "input_tokens": 3875,
+          "output_tokens": 747,
+          "seconds": 4.544213899998795,
+          "cached": false
+        }
+      },
+      {
+        "number": 2,
+        "text": "Mrs. William F. Weber\nWorthington,\nOhio",
+        "method": "vision",
+        "decoration_text": [
+          "COLUMBUS, OHIO",
+          "SEP 18 11:30 AM 1934",
+          "THIS SIDE OF CARD IS FOR ADDRESS",
+          "POSTAL CARD",
+          "ONE CENT",
+          "JEFFERSON",
+          "1",
+          "Columbus 06420"
+        ],
+        "uncertain": [],
+        "usage": {
+          "model": "claude-haiku-5-5",
+          "input_tokens": 3875,
+          "output_tokens": 381,
+          "seconds": 2.858182300000408,
+          "cached": false
+        }
+      }
+    ]
+  },
+  "extraction": {
+    "is_recipe": true,
+    "recipes_in_document": 1,
+    "recipe": {
+      "title": "Wellsey Fudge Cake",
+      "language": "en",
+      "servings": {
+        "value": null,
+        "source": {
+          "status": "missing",
+          "page": null,
+          "quote": null,
+          "note": "the document does not say"
+        }
+      },
+      "ingredients": [
+        {
+          "id": "butter",
+          "name": "butter",
+          "name_original": "butter",
+          "quantity": {
+            "kind": "exact",
+            "value": 4.0,
+            "max_value": null,
+            "unit": "tbsp.",
+            "raw": "4 tbsp."
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "dairy",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "4 tbsp. butter",
+            "note": null
+          }
+        },
+        {
+          "id": "eggs",
+          "name": "eggs",
+          "name_original": "eggs",
+          "quantity": {
+            "kind": "exact",
+            "value": 2.0,
+            "max_value": null,
+            "unit": null,
+            "raw": "2"
+          },
+          "preparation": "yolks and stiffly beaten whites separated",
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "egg",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Cream with yolks of 2 eggs",
+            "note": null
+          }
+        },
+        {
+          "id": "sugar",
+          "name": "granulated sugar",
+          "name_original": "granulated sugar",
+          "quantity": {
+            "kind": "exact",
+            "value": 2.0,
+            "max_value": null,
+            "unit": "cups",
+            "raw": "2 cups"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Add 2 cups granulated sugar",
+            "note": null
+          }
+        },
+        {
+          "id": "flour",
+          "name": "flour",
+          "name_original": "Swansdown flour",
+          "quantity": {
+            "kind": "exact",
+            "value": 2.25,
+            "max_value": null,
+            "unit": "cups",
+            "raw": "2¼ cups"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Add 2¼ cups Swansdown flour",
+            "note": null
+          }
+        },
+        {
+          "id": "salt",
+          "name": "salt",
+          "name_original": "salt",
+          "quantity": {
+            "kind": "exact",
+            "value": 0.5,
+            "max_value": null,
+            "unit": "tsp.",
+            "raw": "½ tsp."
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "½ tsp. salt",
+            "note": null
+          }
+        },
+        {
+          "id": "baking_powder",
+          "name": "baking powder",
+          "name_original": "baking powder",
+          "quantity": {
+            "kind": "exact",
+            "value": 3.0,
+            "max_value": null,
+            "unit": "tsp.",
+            "raw": "3 tsp."
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "3 tsp. baking powder",
+            "note": null
+          }
+        },
+        {
+          "id": "milk",
+          "name": "whole milk",
+          "name_original": "whole milk",
+          "quantity": {
+            "kind": "exact",
+            "value": 1.5,
+            "max_value": null,
+            "unit": "cups",
+            "raw": "1½ cups"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "dairy",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "1½ cups whole milk",
+            "note": null
+          }
+        },
+        {
+          "id": "chocolate",
+          "name": "melted chocolate",
+          "name_original": "melted chocolate",
+          "quantity": {
+            "kind": "exact",
+            "value": 4.0,
+            "max_value": null,
+            "unit": "squares",
+            "raw": "4 squares"
+          },
+          "preparation": "melted",
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "uncertain",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "4 squares melted chocolate",
+            "note": null
+          }
+        },
+        {
+          "id": "vanilla",
+          "name": "vanilla",
+          "name_original": "vanilla",
+          "quantity": {
+            "kind": "exact",
+            "value": 1.0,
+            "max_value": null,
+            "unit": "tsp.",
+            "raw": "1 tsp."
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "1 tsp. vanilla",
+            "note": null
+          }
+        },
+        {
+          "id": "nuts",
+          "name": "nuts",
+          "name_original": "nuts",
+          "quantity": {
+            "kind": "exact",
+            "value": 1.0,
+            "max_value": null,
+            "unit": "cup",
+            "raw": "1 cup"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "1 cup nuts",
+            "note": null
+          }
+        }
+      ],
+      "tools": [
+        {
+          "id": "mixing_bowl",
+          "name": "mixing bowl",
+          "source": {
+            "status": "inferred",
+            "page": 1,
+            "quote": null,
+            "note": "Implied by the creaming and mixing steps; the text does not name a bowl."
+          }
+        }
+      ],
+      "steps": [
+        {
+          "order": 1,
+          "text": "Cream the butter with the yolks of 2 eggs.",
+          "ingredient_ids": [
+            "butter",
+            "eggs"
+          ],
+          "tool_ids": [
+            "mixing_bowl"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "4 tbsp. butter - Cream with yolks of 2 eggs.",
+            "note": null
+          }
+        },
+        {
+          "order": 2,
+          "text": "Add 2 cups granulated sugar.",
+          "ingredient_ids": [
+            "sugar"
+          ],
+          "tool_ids": [
+            "mixing_bowl"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Add 2 cups granulated sugar.",
+            "note": null
+          }
+        },
+        {
+          "order": 3,
+          "text": "Add 2¼ cups Swansdown flour in which has been placed ½ tsp. salt and 3 tsp. baking powder.",
+          "ingredient_ids": [
+            "flour",
+            "salt",
+            "baking_powder"
+          ],
+          "tool_ids": [
+            "mixing_bowl"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Add 2¼ cups Swansdown flour in which has been placed ½ tsp. salt and 3 tsp. baking powder.",
+            "note": null
+          }
+        },
+        {
+          "order": 4,
+          "text": "Add flour alternately with 1½ cups whole milk.",
+          "ingredient_ids": [
+            "flour",
+            "milk"
+          ],
+          "tool_ids": [
+            "mixing_bowl"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Add flour alternately with 1½ cups whole milk.",
+            "note": null
+          }
+        },
+        {
+          "order": 5,
+          "text": "Then add 4 squares melted chocolate, 1 tsp. vanilla, 1 cup nuts and stiffly beaten whites of 2 eggs.",
+          "ingredient_ids": [
+            "chocolate",
+            "vanilla",
+            "nuts",
+            "eggs"
+          ],
+          "tool_ids": [
+            "mixing_bowl"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Then add 4 squares melted chocolate, 1 tsp. vanilla, 1 cup nuts and stiffly beaten whites of 2 eggs.",
+            "note": null
+          }
+        }
+      ],
+      "warnings": [
+        {
+          "message": "The title 'Wellsey Fudge Cake' comes from a label printed outside the running text, not from the recipe body.",
+          "target_id": null
+        },
+        {
+          "message": "The recipe text is a fragment: no oven temperature, baking time, pan size or method for the finished cake is given.",
+          "target_id": null
+        },
+        {
+          "message": "The eggs appear twice (yolks for creaming, whites for folding); they are recorded as one ingredient entry with quantity 2.",
+          "target_id": null
+        },
+        {
+          "message": "The chocolate is written only as 'melted chocolate'; its animal content is uncertain because milk chocolate would be dairy.",
+          "target_id": null
+        },
+        {
+          "message": "Servings are not stated and were not estimated.",
+          "target_id": null
+        },
+        {
+          "message": "The text is a letter on a postcard; the opening greeting and signature are not part of the recipe.",
+          "target_id": null
+        },
+        {
+          "message": "Step 1 and the later steps assume a mixing bowl, which the text does not name.",
+          "target_id": null
+        }
+      ]
+    },
+    "usage": [
+      {
+        "model": "claude-haiku-5-5",
+        "input_tokens": 4681,
+        "output_tokens": 4318,
+        "seconds": 16.185277600001427,
+        "cached": false
+      }
+    ],
+    "problems_found": [],
+    "problems_left": []
+  },
+  "manipulation": {
+    "original": {
+      "title": "Wellsey Fudge Cake",
+      "language": "en",
+      "servings": {
+        "value": null,
+        "source": {
+          "status": "missing",
+          "page": null,
+          "quote": null,
+          "note": "the document does not say"
+        }
+      },
+      "ingredients": [
+        {
+          "id": "butter",
+          "name": "butter",
+          "name_original": "butter",
+          "quantity": {
+            "kind": "exact",
+            "value": 4.0,
+            "max_value": null,
+            "unit": "tbsp.",
+            "raw": "4 tbsp."
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "dairy",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "4 tbsp. butter",
+            "note": null
+          }
+        },
+        {
+          "id": "eggs",
+          "name": "eggs",
+          "name_original": "eggs",
+          "quantity": {
+            "kind": "exact",
+            "value": 2.0,
+            "max_value": null,
+            "unit": null,
+            "raw": "2"
+          },
+          "preparation": "yolks and stiffly beaten whites separated",
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "egg",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Cream with yolks of 2 eggs",
+            "note": null
+          }
+        },
+        {
+          "id": "sugar",
+          "name": "granulated sugar",
+          "name_original": "granulated sugar",
+          "quantity": {
+            "kind": "exact",
+            "value": 2.0,
+            "max_value": null,
+            "unit": "cups",
+            "raw": "2 cups"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Add 2 cups granulated sugar",
+            "note": null
+          }
+        },
+        {
+          "id": "flour",
+          "name": "flour",
+          "name_original": "Swansdown flour",
+          "quantity": {
+            "kind": "exact",
+            "value": 2.25,
+            "max_value": null,
+            "unit": "cups",
+            "raw": "2¼ cups"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Add 2¼ cups Swansdown flour",
+            "note": null
+          }
+        },
+        {
+          "id": "salt",
+          "name": "salt",
+          "name_original": "salt",
+          "quantity": {
+            "kind": "exact",
+            "value": 0.5,
+            "max_value": null,
+            "unit": "tsp.",
+            "raw": "½ tsp."
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "½ tsp. salt",
+            "note": null
+          }
+        },
+        {
+          "id": "baking_powder",
+          "name": "baking powder",
+          "name_original": "baking powder",
+          "quantity": {
+            "kind": "exact",
+            "value": 3.0,
+            "max_value": null,
+            "unit": "tsp.",
+            "raw": "3 tsp."
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "3 tsp. baking powder",
+            "note": null
+          }
+        },
+        {
+          "id": "milk",
+          "name": "whole milk",
+          "name_original": "whole milk",
+          "quantity": {
+            "kind": "exact",
+            "value": 1.5,
+            "max_value": null,
+            "unit": "cups",
+            "raw": "1½ cups"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "dairy",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "1½ cups whole milk",
+            "note": null
+          }
+        },
+        {
+          "id": "chocolate",
+          "name": "melted chocolate",
+          "name_original": "melted chocolate",
+          "quantity": {
+            "kind": "exact",
+            "value": 4.0,
+            "max_value": null,
+            "unit": "squares",
+            "raw": "4 squares"
+          },
+          "preparation": "melted",
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "uncertain",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "4 squares melted chocolate",
+            "note": null
+          }
+        },
+        {
+          "id": "vanilla",
+          "name": "vanilla",
+          "name_original": "vanilla",
+          "quantity": {
+            "kind": "exact",
+            "value": 1.0,
+            "max_value": null,
+            "unit": "tsp.",
+            "raw": "1 tsp."
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "1 tsp. vanilla",
+            "note": null
+          }
+        },
+        {
+          "id": "nuts",
+          "name": "nuts",
+          "name_original": "nuts",
+          "quantity": {
+            "kind": "exact",
+            "value": 1.0,
+            "max_value": null,
+            "unit": "cup",
+            "raw": "1 cup"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "1 cup nuts",
+            "note": null
+          }
+        }
+      ],
+      "tools": [
+        {
+          "id": "mixing_bowl",
+          "name": "mixing bowl",
+          "source": {
+            "status": "inferred",
+            "page": 1,
+            "quote": null,
+            "note": "Implied by the creaming and mixing steps; the text does not name a bowl."
+          }
+        }
+      ],
+      "steps": [
+        {
+          "order": 1,
+          "text": "Cream the butter with the yolks of 2 eggs.",
+          "ingredient_ids": [
+            "butter",
+            "eggs"
+          ],
+          "tool_ids": [
+            "mixing_bowl"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "4 tbsp. butter - Cream with yolks of 2 eggs.",
+            "note": null
+          }
+        },
+        {
+          "order": 2,
+          "text": "Add 2 cups granulated sugar.",
+          "ingredient_ids": [
+            "sugar"
+          ],
+          "tool_ids": [
+            "mixing_bowl"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Add 2 cups granulated sugar.",
+            "note": null
+          }
+        },
+        {
+          "order": 3,
+          "text": "Add 2¼ cups Swansdown flour in which has been placed ½ tsp. salt and 3 tsp. baking powder.",
+          "ingredient_ids": [
+            "flour",
+            "salt",
+            "baking_powder"
+          ],
+          "tool_ids": [
+            "mixing_bowl"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Add 2¼ cups Swansdown flour in which has been placed ½ tsp. salt and 3 tsp. baking powder.",
+            "note": null
+          }
+        },
+        {
+          "order": 4,
+          "text": "Add flour alternately with 1½ cups whole milk.",
+          "ingredient_ids": [
+            "flour",
+            "milk"
+          ],
+          "tool_ids": [
+            "mixing_bowl"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Add flour alternately with 1½ cups whole milk.",
+            "note": null
+          }
+        },
+        {
+          "order": 5,
+          "text": "Then add 4 squares melted chocolate, 1 tsp. vanilla, 1 cup nuts and stiffly beaten whites of 2 eggs.",
+          "ingredient_ids": [
+            "chocolate",
+            "vanilla",
+            "nuts",
+            "eggs"
+          ],
+          "tool_ids": [
+            "mixing_bowl"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Then add 4 squares melted chocolate, 1 tsp. vanilla, 1 cup nuts and stiffly beaten whites of 2 eggs.",
+            "note": null
+          }
+        }
+      ],
+      "warnings": [
+        {
+          "message": "The title 'Wellsey Fudge Cake' comes from a label printed outside the running text, not from the recipe body.",
+          "target_id": null
+        },
+        {
+          "message": "The recipe text is a fragment: no oven temperature, baking time, pan size or method for the finished cake is given.",
+          "target_id": null
+        },
+        {
+          "message": "The eggs appear twice (yolks for creaming, whites for folding); they are recorded as one ingredient entry with quantity 2.",
+          "target_id": null
+        },
+        {
+          "message": "The chocolate is written only as 'melted chocolate'; its animal content is uncertain because milk chocolate would be dairy.",
+          "target_id": null
+        },
+        {
+          "message": "Servings are not stated and were not estimated.",
+          "target_id": null
+        },
+        {
+          "message": "The text is a letter on a postcard; the opening greeting and signature are not part of the recipe.",
+          "target_id": null
+        },
+        {
+          "message": "Step 1 and the later steps assume a mixing bowl, which the text does not name.",
+          "target_id": null
+        }
+      ]
+    },
+    "recipe": {
+      "title": "Wellsey Fudge Cake",
+      "language": "en",
+      "servings": {
+        "value": null,
+        "source": {
+          "status": "missing",
+          "page": null,
+          "quote": null,
+          "note": "the document does not say"
+        }
+      },
+      "ingredients": [
+        {
+          "id": "vegan_butter",
+          "name": "vegan butter",
+          "name_original": "vegan butter",
+          "quantity": {
+            "kind": "exact",
+            "value": 4.0,
+            "max_value": null,
+            "unit": "tbsp.",
+            "raw": "4 tbsp."
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "rule",
+            "page": 1,
+            "quote": "4 tbsp. butter",
+            "note": "vegan substitute for 'butter': Dairy butter; vegan butter behaves the same for frying and baking."
+          }
+        },
+        {
+          "id": "vegan_eggs",
+          "name": "flax egg (1 tbsp ground flaxseed + 3 tbsp water per egg)",
+          "name_original": "flax egg (1 tbsp ground flaxseed + 3 tbsp water per egg)",
+          "quantity": {
+            "kind": "exact",
+            "value": 2.0,
+            "max_value": null,
+            "unit": null,
+            "raw": "2"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "rule",
+            "page": 1,
+            "quote": "Cream with yolks of 2 eggs",
+            "note": "vegan substitute for 'eggs': Eggs that bind a dough or batter; a flax egg does the same."
+          }
+        },
+        {
+          "id": "sugar",
+          "name": "granulated sugar",
+          "name_original": "granulated sugar",
+          "quantity": {
+            "kind": "exact",
+            "value": 2.0,
+            "max_value": null,
+            "unit": "cups",
+            "raw": "2 cups"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Add 2 cups granulated sugar",
+            "note": null
+          }
+        },
+        {
+          "id": "flour",
+          "name": "flour",
+          "name_original": "Swansdown flour",
+          "quantity": {
+            "kind": "exact",
+            "value": 2.25,
+            "max_value": null,
+            "unit": "cups",
+            "raw": "2¼ cups"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Add 2¼ cups Swansdown flour",
+            "note": null
+          }
+        },
+        {
+          "id": "salt",
+          "name": "salt",
+          "name_original": "salt",
+          "quantity": {
+            "kind": "exact",
+            "value": 0.5,
+            "max_value": null,
+            "unit": "tsp.",
+            "raw": "½ tsp."
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "½ tsp. salt",
+            "note": null
+          }
+        },
+        {
+          "id": "baking_powder",
+          "name": "baking powder",
+          "name_original": "baking powder",
+          "quantity": {
+            "kind": "exact",
+            "value": 3.0,
+            "max_value": null,
+            "unit": "tsp.",
+            "raw": "3 tsp."
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "3 tsp. baking powder",
+            "note": null
+          }
+        },
+        {
+          "id": "vegan_milk",
+          "name": "oat milk",
+          "name_original": "oat milk",
+          "quantity": {
+            "kind": "exact",
+            "value": 1.5,
+            "max_value": null,
+            "unit": "cups",
+            "raw": "1½ cups"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "rule",
+            "page": 1,
+            "quote": "1½ cups whole milk",
+            "note": "vegan substitute for 'whole milk': Dairy milk."
+          }
+        },
+        {
+          "id": "chocolate",
+          "name": "melted chocolate",
+          "name_original": "melted chocolate",
+          "quantity": {
+            "kind": "exact",
+            "value": 4.0,
+            "max_value": null,
+            "unit": "squares",
+            "raw": "4 squares"
+          },
+          "preparation": "melted",
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "uncertain",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "4 squares melted chocolate",
+            "note": null
+          }
+        },
+        {
+          "id": "vanilla",
+          "name": "vanilla",
+          "name_original": "vanilla",
+          "quantity": {
+            "kind": "exact",
+            "value": 1.0,
+            "max_value": null,
+            "unit": "tsp.",
+            "raw": "1 tsp."
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "1 tsp. vanilla",
+            "note": null
+          }
+        },
+        {
+          "id": "nuts",
+          "name": "nuts",
+          "name_original": "nuts",
+          "quantity": {
+            "kind": "exact",
+            "value": 1.0,
+            "max_value": null,
+            "unit": "cup",
+            "raw": "1 cup"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "1 cup nuts",
+            "note": null
+          }
+        }
+      ],
+      "tools": [
+        {
+          "id": "mixing_bowl",
+          "name": "mixing bowl",
+          "source": {
+            "status": "inferred",
+            "page": 1,
+            "quote": null,
+            "note": "Implied by the creaming and mixing steps; the text does not name a bowl."
+          }
+        }
+      ],
+      "steps": [
+        {
+          "order": 1,
+          "text": "Cream the butter with the yolks of 2 eggs.\n[Vegan: use vegan butter instead of butter; use flax egg (1 tbsp ground flaxseed + 3 tbsp water per egg) instead of eggs.]",
+          "ingredient_ids": [
+            "vegan_butter",
+            "vegan_eggs"
+          ],
+          "tool_ids": [
+            "mixing_bowl"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "4 tbsp. butter - Cream with yolks of 2 eggs.",
+            "note": null
+          }
+        },
+        {
+          "order": 2,
+          "text": "Add 2 cups granulated sugar.",
+          "ingredient_ids": [
+            "sugar"
+          ],
+          "tool_ids": [
+            "mixing_bowl"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Add 2 cups granulated sugar.",
+            "note": null
+          }
+        },
+        {
+          "order": 3,
+          "text": "Add 2¼ cups Swansdown flour in which has been placed ½ tsp. salt and 3 tsp. baking powder.",
+          "ingredient_ids": [
+            "flour",
+            "salt",
+            "baking_powder"
+          ],
+          "tool_ids": [
+            "mixing_bowl"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Add 2¼ cups Swansdown flour in which has been placed ½ tsp. salt and 3 tsp. baking powder.",
+            "note": null
+          }
+        },
+        {
+          "order": 4,
+          "text": "Add flour alternately with 1½ cups whole milk.\n[Vegan: use oat milk instead of whole milk.]",
+          "ingredient_ids": [
+            "flour",
+            "vegan_milk"
+          ],
+          "tool_ids": [
+            "mixing_bowl"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Add flour alternately with 1½ cups whole milk.",
+            "note": null
+          }
+        },
+        {
+          "order": 5,
+          "text": "Then add 4 squares melted chocolate, 1 tsp. vanilla, 1 cup nuts and stiffly beaten whites of 2 eggs.\n[Vegan: use flax egg (1 tbsp ground flaxseed + 3 tbsp water per egg) instead of eggs.]",
+          "ingredient_ids": [
+            "chocolate",
+            "vanilla",
+            "nuts",
+            "vegan_eggs"
+          ],
+          "tool_ids": [
+            "mixing_bowl"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Then add 4 squares melted chocolate, 1 tsp. vanilla, 1 cup nuts and stiffly beaten whites of 2 eggs.",
+            "note": null
+          }
+        }
+      ],
+      "warnings": [
+        {
+          "message": "The title 'Wellsey Fudge Cake' comes from a label printed outside the running text, not from the recipe body.",
+          "target_id": null
+        },
+        {
+          "message": "The recipe text is a fragment: no oven temperature, baking time, pan size or method for the finished cake is given.",
+          "target_id": null
+        },
+        {
+          "message": "The eggs appear twice (yolks for creaming, whites for folding); they are recorded as one ingredient entry with quantity 2.",
+          "target_id": null
+        },
+        {
+          "message": "The chocolate is written only as 'melted chocolate'; its animal content is uncertain because milk chocolate would be dairy.",
+          "target_id": null
+        },
+        {
+          "message": "Servings are not stated and were not estimated.",
+          "target_id": null
+        },
+        {
+          "message": "The text is a letter on a postcard; the opening greeting and signature are not part of the recipe.",
+          "target_id": null
+        },
+        {
+          "message": "Step 1 and the later steps assume a mixing bowl, which the text does not name.",
+          "target_id": null
+        },
+        {
+          "message": "Not fully vegan: no vegan substitute is known for melted chocolate. Choose one before cooking.",
+          "target_id": null
+        },
+        {
+          "message": "Vegan, melted chocolate: could not tell whether it contains animal products (it depends on the brand or recipe).",
+          "target_id": "chocolate"
+        },
+        {
+          "message": "Vegan check, granulated sugar: Some cane sugar is filtered through bone char. Beet sugar and sugar labelled vegan are safe.",
+          "target_id": "sugar"
+        },
+        {
+          "message": "Vegan check, melted chocolate: Milk chocolate is not vegan; dark chocolate often is. Check the label.",
+          "target_id": "chocolate"
+        }
+      ]
+    },
+    "changes": [
+      {
+        "rule": "vegan",
+        "target": "butter",
+        "before": "butter",
+        "after": "vegan butter",
+        "reason": "Dairy butter; vegan butter behaves the same for frying and baking."
+      },
+      {
+        "rule": "vegan",
+        "target": "eggs",
+        "before": "eggs",
+        "after": "flax egg (1 tbsp ground flaxseed + 3 tbsp water per egg)",
+        "reason": "Eggs that bind a dough or batter; a flax egg does the same."
+      },
+      {
+        "rule": "vegan",
+        "target": "milk",
+        "before": "whole milk",
+        "after": "oat milk",
+        "reason": "Dairy milk."
+      },
+      {
+        "rule": "vegan",
+        "target": "step 1",
+        "before": "butter, eggs",
+        "after": "vegan butter, flax egg (1 tbsp ground flaxseed + 3 tbsp water per egg)",
+        "reason": "Substitution carried into the method."
+      },
+      {
+        "rule": "vegan",
+        "target": "step 4",
+        "before": "whole milk",
+        "after": "oat milk",
+        "reason": "Substitution carried into the method."
+      },
+      {
+        "rule": "vegan",
+        "target": "step 5",
+        "before": "eggs",
+        "after": "flax egg (1 tbsp ground flaxseed + 3 tbsp water per egg)",
+        "reason": "Substitution carried into the method."
+      },
+      {
+        "rule": "vegan",
+        "target": "chocolate",
+        "before": "melted chocolate",
+        "after": "unchanged, no known substitute",
+        "reason": "could not tell whether it contains animal products (it depends on the brand or recipe)."
+      },
+      {
+        "rule": "vegan",
+        "target": "sugar",
+        "before": "granulated sugar",
+        "after": "unchanged, check the label",
+        "reason": "Some cane sugar is filtered through bone char. Beet sugar and sugar labelled vegan are safe."
+      },
+      {
+        "rule": "vegan",
+        "target": "chocolate",
+        "before": "melted chocolate",
+        "after": "unchanged, check the label",
+        "reason": "Milk chocolate is not vegan; dark chocolate often is. Check the label."
+      }
+    ]
+  }
+}

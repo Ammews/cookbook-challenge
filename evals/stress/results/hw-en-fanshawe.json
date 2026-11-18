@@ -1,0 +1,1370 @@
+{
+  "document": {
+    "name": "hw-en-fanshawe.jpg",
+    "kind": "image",
+    "pages": [
+      {
+        "number": 1,
+        "text": "Rosemary, Red Sage, Endive, Succory, Borrage, wilde Mayjoram of each a good handfull. You must boyle these herbes in water 1/2 an houre, One ounce of Nutmegs, one ounce of ginger, one ounce of liquorice one ounce of carniseeds [?], Red Dock roots 2 ounces, sweet fennell seeds 1/2 an ounce, bruise Your seeds, slice your Nutmegs and ginger and Dock rootes. You must put all these seeds and spices in a Bagg & hang the bag in the drinke. You may drinke of it 6 or 7 dayes. This is an excellent drinke for any Rheumatick Body that is inclined to a Dropsie.\n\nAn Excellent way to make Suppositors.\n\nTake 2 ounces of Gumm Dragon, steepe it in Damaske Rose water a nights, put it into a Morter, then have ready beat of the best Rock Allum, as much as will make the gumm into a Past, beat it well in the Morter, then take it out, rowle it into the fashion of Suppositors, and when they be dry putt them up in a Boxe & keepe them for your use, they will keep seaven years if you doe not use them.\n\nAgainst the biting of a Mad Dogge taught by Sir Kenelm Digby.\n\nCrabs claves [?] taken in June or the beginning of July, & beat to powder, & therof as much as will lye upon a shilling drunke in 1/2 a pinte of warme Milke is a most excellent Receipt for any body that hath bene bitten by a Mad Dog.\n\nOf Medicine for the Gaunders by Experience I have found most excellent.\n\nTake a",
+        "method": "vision",
+        "decoration_text": [
+          "My Lady Bedley.",
+          "Ann Hawkone",
+          "St R.D. & Hawkins",
+          "My Lady Bedley",
+          "+",
+          "+"
+        ],
+        "uncertain": [
+          "carniseeds",
+          "claves"
+        ],
+        "usage": {
+          "model": "claude-haiku-5-5",
+          "input_tokens": 5171,
+          "output_tokens": 1740,
+          "seconds": 8.842485999999553,
+          "cached": false
+        }
+      }
+    ]
+  },
+  "extraction": {
+    "is_recipe": true,
+    "recipes_in_document": 4,
+    "recipe": {
+      "title": "Drink for a Rheumatick Body inclined to a Dropsie",
+      "language": "en",
+      "servings": {
+        "value": null,
+        "source": {
+          "status": "missing",
+          "page": null,
+          "quote": null,
+          "note": "The text does not state a number of servings or doses."
+        }
+      },
+      "ingredients": [
+        {
+          "id": "rosemary",
+          "name": "Rosemary",
+          "name_original": "Rosemary",
+          "quantity": {
+            "kind": "vague",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": "of each a good handfull"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Rosemary, Red Sage, Endive, Succory, Borrage, wilde Mayjoram of each a good handfull.",
+            "note": null
+          }
+        },
+        {
+          "id": "red_sage",
+          "name": "Red sage",
+          "name_original": "Red Sage",
+          "quantity": {
+            "kind": "vague",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": "of each a good handfull"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Rosemary, Red Sage, Endive, Succory, Borrage, wilde Mayjoram of each a good handfull.",
+            "note": null
+          }
+        },
+        {
+          "id": "endive",
+          "name": "Endive",
+          "name_original": "Endive",
+          "quantity": {
+            "kind": "vague",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": "of each a good handfull"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Rosemary, Red Sage, Endive, Succory, Borrage, wilde Mayjoram of each a good handfull.",
+            "note": null
+          }
+        },
+        {
+          "id": "succory",
+          "name": "Succory",
+          "name_original": "Succory",
+          "quantity": {
+            "kind": "vague",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": "of each a good handfull"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Rosemary, Red Sage, Endive, Succory, Borrage, wilde Mayjoram of each a good handfull.",
+            "note": null
+          }
+        },
+        {
+          "id": "borage",
+          "name": "Borage",
+          "name_original": "Borrage",
+          "quantity": {
+            "kind": "vague",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": "of each a good handfull"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Rosemary, Red Sage, Endive, Succory, Borrage, wilde Mayjoram of each a good handfull.",
+            "note": null
+          }
+        },
+        {
+          "id": "wild_marjoram",
+          "name": "Wild marjoram",
+          "name_original": "wilde Mayjoram",
+          "quantity": {
+            "kind": "vague",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": "of each a good handfull"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Rosemary, Red Sage, Endive, Succory, Borrage, wilde Mayjoram of each a good handfull.",
+            "note": null
+          }
+        },
+        {
+          "id": "water",
+          "name": "Water",
+          "name_original": "water",
+          "quantity": {
+            "kind": "absent",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "inferred",
+            "page": 1,
+            "quote": "You must boyle these herbes in water 1/2 an houre",
+            "note": "No amount of water is given; it is needed to boil the herbs."
+          }
+        },
+        {
+          "id": "nutmeg",
+          "name": "Nutmeg",
+          "name_original": "Nutmegs",
+          "quantity": {
+            "kind": "exact",
+            "value": 1.0,
+            "max_value": null,
+            "unit": "ounce",
+            "raw": "One ounce"
+          },
+          "preparation": "sliced",
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "One ounce of Nutmegs",
+            "note": null
+          }
+        },
+        {
+          "id": "ginger",
+          "name": "Ginger",
+          "name_original": "ginger",
+          "quantity": {
+            "kind": "exact",
+            "value": 1.0,
+            "max_value": null,
+            "unit": "ounce",
+            "raw": "one ounce"
+          },
+          "preparation": "sliced",
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "one ounce of ginger",
+            "note": null
+          }
+        },
+        {
+          "id": "liquorice",
+          "name": "Liquorice",
+          "name_original": "liquorice",
+          "quantity": {
+            "kind": "exact",
+            "value": 1.0,
+            "max_value": null,
+            "unit": "ounce",
+            "raw": "one ounce"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "one ounce of liquorice",
+            "note": null
+          }
+        },
+        {
+          "id": "caraway_seeds",
+          "name": "Caraway seeds",
+          "name_original": "carniseeds [?]",
+          "quantity": {
+            "kind": "exact",
+            "value": 1.0,
+            "max_value": null,
+            "unit": "ounce",
+            "raw": "one ounce"
+          },
+          "preparation": "bruised",
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "one ounce of carniseeds [?]",
+            "note": "The transcription is unsure of the word; caraway is a guess from the spelling."
+          }
+        },
+        {
+          "id": "red_dock_root",
+          "name": "Red dock root",
+          "name_original": "Red Dock roots",
+          "quantity": {
+            "kind": "exact",
+            "value": 2.0,
+            "max_value": null,
+            "unit": "ounces",
+            "raw": "2 ounces"
+          },
+          "preparation": "sliced",
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Red Dock roots 2 ounces",
+            "note": null
+          }
+        },
+        {
+          "id": "sweet_fennel_seeds",
+          "name": "Sweet fennel seeds",
+          "name_original": "sweet fennell seeds",
+          "quantity": {
+            "kind": "exact",
+            "value": 0.5,
+            "max_value": null,
+            "unit": "ounce",
+            "raw": "1/2 an ounce"
+          },
+          "preparation": "bruised",
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "sweet fennell seeds 1/2 an ounce",
+            "note": null
+          }
+        }
+      ],
+      "tools": [
+        {
+          "id": "bag",
+          "name": "Bag",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "put all these seeds and spices in a Bagg",
+            "note": null
+          }
+        },
+        {
+          "id": "pot",
+          "name": "Pot",
+          "source": {
+            "status": "inferred",
+            "page": 1,
+            "quote": "You must boyle these herbes in water 1/2 an houre",
+            "note": "Implied by the step that boils the herbs in water."
+          }
+        }
+      ],
+      "steps": [
+        {
+          "order": 1,
+          "text": "Boil the herbs in water for half an hour.",
+          "ingredient_ids": [
+            "rosemary",
+            "red_sage",
+            "endive",
+            "succory",
+            "borage",
+            "wild_marjoram",
+            "water"
+          ],
+          "tool_ids": [
+            "pot"
+          ],
+          "duration": {
+            "raw": "1/2 an houre",
+            "min_minutes": 30.0,
+            "max_minutes": 30.0
+          },
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "You must boyle these herbes in water 1/2 an houre",
+            "note": null
+          }
+        },
+        {
+          "order": 2,
+          "text": "Bruise the seeds, and slice the nutmegs, ginger and dock roots.",
+          "ingredient_ids": [
+            "nutmeg",
+            "ginger",
+            "red_dock_root",
+            "caraway_seeds",
+            "sweet_fennel_seeds"
+          ],
+          "tool_ids": [],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "bruise Your seeds, slice your Nutmegs and ginger and Dock rootes.",
+            "note": null
+          }
+        },
+        {
+          "order": 3,
+          "text": "Put all the seeds and spices in a bag and hang the bag in the drink.",
+          "ingredient_ids": [
+            "caraway_seeds",
+            "sweet_fennel_seeds",
+            "nutmeg",
+            "ginger",
+            "red_dock_root",
+            "liquorice"
+          ],
+          "tool_ids": [
+            "bag"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "You must put all these seeds and spices in a Bagg & hang the bag in the drinke.",
+            "note": null
+          }
+        },
+        {
+          "order": 4,
+          "text": "Drink it for 6 or 7 days.",
+          "ingredient_ids": [],
+          "tool_ids": [],
+          "duration": {
+            "raw": "6 or 7 dayes",
+            "min_minutes": 6.0,
+            "max_minutes": 7.0
+          },
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "You may drinke of it 6 or 7 dayes.",
+            "note": null
+          }
+        }
+      ],
+      "warnings": [
+        {
+          "message": "The document holds four remedies: this drink, a method for suppositories, a remedy against a mad dog's bite, and a truncated remedy for the gaunders. I extracted the first complete one, the drink. Skipped: the suppositories, the mad dog remedy, and the gaunders remedy, which is cut off at 'Take a'.",
+          "target_id": null
+        },
+        {
+          "message": "The word 'carniseeds' is marked uncertain by the transcription; I read it as caraway seeds, which should be checked.",
+          "target_id": null
+        },
+        {
+          "message": "The herbs have only the amount 'a good handfull' each, so no numeric amount is given.",
+          "target_id": null
+        },
+        {
+          "message": "The liquorice is listed in the ingredients but the text does not say what to do with it beyond putting it in the bag with the seeds and spices; its use is inferred from the list.",
+          "target_id": null
+        },
+        {
+          "message": "No servings are stated; the drink is taken over 6 or 7 days with no dose given.",
+          "target_id": null
+        },
+        {
+          "message": "The step listing the bag contents includes ingredients from the earlier list; the step grouping is a reading of the instruction.",
+          "target_id": null
+        }
+      ]
+    },
+    "usage": [
+      {
+        "model": "claude-haiku-5-5",
+        "input_tokens": 4971,
+        "output_tokens": 4854,
+        "seconds": 17.998729700000695,
+        "cached": false
+      }
+    ],
+    "problems_found": [],
+    "problems_left": []
+  },
+  "manipulation": {
+    "original": {
+      "title": "Drink for a Rheumatick Body inclined to a Dropsie",
+      "language": "en",
+      "servings": {
+        "value": null,
+        "source": {
+          "status": "missing",
+          "page": null,
+          "quote": null,
+          "note": "The text does not state a number of servings or doses."
+        }
+      },
+      "ingredients": [
+        {
+          "id": "rosemary",
+          "name": "Rosemary",
+          "name_original": "Rosemary",
+          "quantity": {
+            "kind": "vague",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": "of each a good handfull"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Rosemary, Red Sage, Endive, Succory, Borrage, wilde Mayjoram of each a good handfull.",
+            "note": null
+          }
+        },
+        {
+          "id": "red_sage",
+          "name": "Red sage",
+          "name_original": "Red Sage",
+          "quantity": {
+            "kind": "vague",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": "of each a good handfull"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Rosemary, Red Sage, Endive, Succory, Borrage, wilde Mayjoram of each a good handfull.",
+            "note": null
+          }
+        },
+        {
+          "id": "endive",
+          "name": "Endive",
+          "name_original": "Endive",
+          "quantity": {
+            "kind": "vague",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": "of each a good handfull"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Rosemary, Red Sage, Endive, Succory, Borrage, wilde Mayjoram of each a good handfull.",
+            "note": null
+          }
+        },
+        {
+          "id": "succory",
+          "name": "Succory",
+          "name_original": "Succory",
+          "quantity": {
+            "kind": "vague",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": "of each a good handfull"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Rosemary, Red Sage, Endive, Succory, Borrage, wilde Mayjoram of each a good handfull.",
+            "note": null
+          }
+        },
+        {
+          "id": "borage",
+          "name": "Borage",
+          "name_original": "Borrage",
+          "quantity": {
+            "kind": "vague",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": "of each a good handfull"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Rosemary, Red Sage, Endive, Succory, Borrage, wilde Mayjoram of each a good handfull.",
+            "note": null
+          }
+        },
+        {
+          "id": "wild_marjoram",
+          "name": "Wild marjoram",
+          "name_original": "wilde Mayjoram",
+          "quantity": {
+            "kind": "vague",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": "of each a good handfull"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Rosemary, Red Sage, Endive, Succory, Borrage, wilde Mayjoram of each a good handfull.",
+            "note": null
+          }
+        },
+        {
+          "id": "water",
+          "name": "Water",
+          "name_original": "water",
+          "quantity": {
+            "kind": "absent",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "inferred",
+            "page": 1,
+            "quote": "You must boyle these herbes in water 1/2 an houre",
+            "note": "No amount of water is given; it is needed to boil the herbs."
+          }
+        },
+        {
+          "id": "nutmeg",
+          "name": "Nutmeg",
+          "name_original": "Nutmegs",
+          "quantity": {
+            "kind": "exact",
+            "value": 1.0,
+            "max_value": null,
+            "unit": "ounce",
+            "raw": "One ounce"
+          },
+          "preparation": "sliced",
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "One ounce of Nutmegs",
+            "note": null
+          }
+        },
+        {
+          "id": "ginger",
+          "name": "Ginger",
+          "name_original": "ginger",
+          "quantity": {
+            "kind": "exact",
+            "value": 1.0,
+            "max_value": null,
+            "unit": "ounce",
+            "raw": "one ounce"
+          },
+          "preparation": "sliced",
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "one ounce of ginger",
+            "note": null
+          }
+        },
+        {
+          "id": "liquorice",
+          "name": "Liquorice",
+          "name_original": "liquorice",
+          "quantity": {
+            "kind": "exact",
+            "value": 1.0,
+            "max_value": null,
+            "unit": "ounce",
+            "raw": "one ounce"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "one ounce of liquorice",
+            "note": null
+          }
+        },
+        {
+          "id": "caraway_seeds",
+          "name": "Caraway seeds",
+          "name_original": "carniseeds [?]",
+          "quantity": {
+            "kind": "exact",
+            "value": 1.0,
+            "max_value": null,
+            "unit": "ounce",
+            "raw": "one ounce"
+          },
+          "preparation": "bruised",
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "one ounce of carniseeds [?]",
+            "note": "The transcription is unsure of the word; caraway is a guess from the spelling."
+          }
+        },
+        {
+          "id": "red_dock_root",
+          "name": "Red dock root",
+          "name_original": "Red Dock roots",
+          "quantity": {
+            "kind": "exact",
+            "value": 2.0,
+            "max_value": null,
+            "unit": "ounces",
+            "raw": "2 ounces"
+          },
+          "preparation": "sliced",
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Red Dock roots 2 ounces",
+            "note": null
+          }
+        },
+        {
+          "id": "sweet_fennel_seeds",
+          "name": "Sweet fennel seeds",
+          "name_original": "sweet fennell seeds",
+          "quantity": {
+            "kind": "exact",
+            "value": 0.5,
+            "max_value": null,
+            "unit": "ounce",
+            "raw": "1/2 an ounce"
+          },
+          "preparation": "bruised",
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "sweet fennell seeds 1/2 an ounce",
+            "note": null
+          }
+        }
+      ],
+      "tools": [
+        {
+          "id": "bag",
+          "name": "Bag",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "put all these seeds and spices in a Bagg",
+            "note": null
+          }
+        },
+        {
+          "id": "pot",
+          "name": "Pot",
+          "source": {
+            "status": "inferred",
+            "page": 1,
+            "quote": "You must boyle these herbes in water 1/2 an houre",
+            "note": "Implied by the step that boils the herbs in water."
+          }
+        }
+      ],
+      "steps": [
+        {
+          "order": 1,
+          "text": "Boil the herbs in water for half an hour.",
+          "ingredient_ids": [
+            "rosemary",
+            "red_sage",
+            "endive",
+            "succory",
+            "borage",
+            "wild_marjoram",
+            "water"
+          ],
+          "tool_ids": [
+            "pot"
+          ],
+          "duration": {
+            "raw": "1/2 an houre",
+            "min_minutes": 30.0,
+            "max_minutes": 30.0
+          },
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "You must boyle these herbes in water 1/2 an houre",
+            "note": null
+          }
+        },
+        {
+          "order": 2,
+          "text": "Bruise the seeds, and slice the nutmegs, ginger and dock roots.",
+          "ingredient_ids": [
+            "nutmeg",
+            "ginger",
+            "red_dock_root",
+            "caraway_seeds",
+            "sweet_fennel_seeds"
+          ],
+          "tool_ids": [],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "bruise Your seeds, slice your Nutmegs and ginger and Dock rootes.",
+            "note": null
+          }
+        },
+        {
+          "order": 3,
+          "text": "Put all the seeds and spices in a bag and hang the bag in the drink.",
+          "ingredient_ids": [
+            "caraway_seeds",
+            "sweet_fennel_seeds",
+            "nutmeg",
+            "ginger",
+            "red_dock_root",
+            "liquorice"
+          ],
+          "tool_ids": [
+            "bag"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "You must put all these seeds and spices in a Bagg & hang the bag in the drinke.",
+            "note": null
+          }
+        },
+        {
+          "order": 4,
+          "text": "Drink it for 6 or 7 days.",
+          "ingredient_ids": [],
+          "tool_ids": [],
+          "duration": {
+            "raw": "6 or 7 dayes",
+            "min_minutes": 6.0,
+            "max_minutes": 7.0
+          },
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "You may drinke of it 6 or 7 dayes.",
+            "note": null
+          }
+        }
+      ],
+      "warnings": [
+        {
+          "message": "The document holds four remedies: this drink, a method for suppositories, a remedy against a mad dog's bite, and a truncated remedy for the gaunders. I extracted the first complete one, the drink. Skipped: the suppositories, the mad dog remedy, and the gaunders remedy, which is cut off at 'Take a'.",
+          "target_id": null
+        },
+        {
+          "message": "The word 'carniseeds' is marked uncertain by the transcription; I read it as caraway seeds, which should be checked.",
+          "target_id": null
+        },
+        {
+          "message": "The herbs have only the amount 'a good handfull' each, so no numeric amount is given.",
+          "target_id": null
+        },
+        {
+          "message": "The liquorice is listed in the ingredients but the text does not say what to do with it beyond putting it in the bag with the seeds and spices; its use is inferred from the list.",
+          "target_id": null
+        },
+        {
+          "message": "No servings are stated; the drink is taken over 6 or 7 days with no dose given.",
+          "target_id": null
+        },
+        {
+          "message": "The step listing the bag contents includes ingredients from the earlier list; the step grouping is a reading of the instruction.",
+          "target_id": null
+        }
+      ]
+    },
+    "recipe": {
+      "title": "Drink for a Rheumatick Body inclined to a Dropsie",
+      "language": "en",
+      "servings": {
+        "value": null,
+        "source": {
+          "status": "missing",
+          "page": null,
+          "quote": null,
+          "note": "The text does not state a number of servings or doses."
+        }
+      },
+      "ingredients": [
+        {
+          "id": "rosemary",
+          "name": "Rosemary",
+          "name_original": "Rosemary",
+          "quantity": {
+            "kind": "vague",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": "of each a good handfull"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Rosemary, Red Sage, Endive, Succory, Borrage, wilde Mayjoram of each a good handfull.",
+            "note": null
+          }
+        },
+        {
+          "id": "red_sage",
+          "name": "Red sage",
+          "name_original": "Red Sage",
+          "quantity": {
+            "kind": "vague",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": "of each a good handfull"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Rosemary, Red Sage, Endive, Succory, Borrage, wilde Mayjoram of each a good handfull.",
+            "note": null
+          }
+        },
+        {
+          "id": "endive",
+          "name": "Endive",
+          "name_original": "Endive",
+          "quantity": {
+            "kind": "vague",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": "of each a good handfull"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Rosemary, Red Sage, Endive, Succory, Borrage, wilde Mayjoram of each a good handfull.",
+            "note": null
+          }
+        },
+        {
+          "id": "succory",
+          "name": "Succory",
+          "name_original": "Succory",
+          "quantity": {
+            "kind": "vague",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": "of each a good handfull"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Rosemary, Red Sage, Endive, Succory, Borrage, wilde Mayjoram of each a good handfull.",
+            "note": null
+          }
+        },
+        {
+          "id": "borage",
+          "name": "Borage",
+          "name_original": "Borrage",
+          "quantity": {
+            "kind": "vague",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": "of each a good handfull"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Rosemary, Red Sage, Endive, Succory, Borrage, wilde Mayjoram of each a good handfull.",
+            "note": null
+          }
+        },
+        {
+          "id": "wild_marjoram",
+          "name": "Wild marjoram",
+          "name_original": "wilde Mayjoram",
+          "quantity": {
+            "kind": "vague",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": "of each a good handfull"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Rosemary, Red Sage, Endive, Succory, Borrage, wilde Mayjoram of each a good handfull.",
+            "note": null
+          }
+        },
+        {
+          "id": "water",
+          "name": "Water",
+          "name_original": "water",
+          "quantity": {
+            "kind": "absent",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "inferred",
+            "page": 1,
+            "quote": "You must boyle these herbes in water 1/2 an houre",
+            "note": "No amount of water is given; it is needed to boil the herbs."
+          }
+        },
+        {
+          "id": "nutmeg",
+          "name": "Nutmeg",
+          "name_original": "Nutmegs",
+          "quantity": {
+            "kind": "exact",
+            "value": 1.0,
+            "max_value": null,
+            "unit": "ounce",
+            "raw": "One ounce"
+          },
+          "preparation": "sliced",
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "One ounce of Nutmegs",
+            "note": null
+          }
+        },
+        {
+          "id": "ginger",
+          "name": "Ginger",
+          "name_original": "ginger",
+          "quantity": {
+            "kind": "exact",
+            "value": 1.0,
+            "max_value": null,
+            "unit": "ounce",
+            "raw": "one ounce"
+          },
+          "preparation": "sliced",
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "one ounce of ginger",
+            "note": null
+          }
+        },
+        {
+          "id": "liquorice",
+          "name": "Liquorice",
+          "name_original": "liquorice",
+          "quantity": {
+            "kind": "exact",
+            "value": 1.0,
+            "max_value": null,
+            "unit": "ounce",
+            "raw": "one ounce"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "one ounce of liquorice",
+            "note": null
+          }
+        },
+        {
+          "id": "caraway_seeds",
+          "name": "Caraway seeds",
+          "name_original": "carniseeds [?]",
+          "quantity": {
+            "kind": "exact",
+            "value": 1.0,
+            "max_value": null,
+            "unit": "ounce",
+            "raw": "one ounce"
+          },
+          "preparation": "bruised",
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "one ounce of carniseeds [?]",
+            "note": "The transcription is unsure of the word; caraway is a guess from the spelling."
+          }
+        },
+        {
+          "id": "red_dock_root",
+          "name": "Red dock root",
+          "name_original": "Red Dock roots",
+          "quantity": {
+            "kind": "exact",
+            "value": 2.0,
+            "max_value": null,
+            "unit": "ounces",
+            "raw": "2 ounces"
+          },
+          "preparation": "sliced",
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Red Dock roots 2 ounces",
+            "note": null
+          }
+        },
+        {
+          "id": "sweet_fennel_seeds",
+          "name": "Sweet fennel seeds",
+          "name_original": "sweet fennell seeds",
+          "quantity": {
+            "kind": "exact",
+            "value": 0.5,
+            "max_value": null,
+            "unit": "ounce",
+            "raw": "1/2 an ounce"
+          },
+          "preparation": "bruised",
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "sweet fennell seeds 1/2 an ounce",
+            "note": null
+          }
+        }
+      ],
+      "tools": [
+        {
+          "id": "bag",
+          "name": "Bag",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "put all these seeds and spices in a Bagg",
+            "note": null
+          }
+        },
+        {
+          "id": "pot",
+          "name": "Pot",
+          "source": {
+            "status": "inferred",
+            "page": 1,
+            "quote": "You must boyle these herbes in water 1/2 an houre",
+            "note": "Implied by the step that boils the herbs in water."
+          }
+        }
+      ],
+      "steps": [
+        {
+          "order": 1,
+          "text": "Boil the herbs in water for half an hour.",
+          "ingredient_ids": [
+            "rosemary",
+            "red_sage",
+            "endive",
+            "succory",
+            "borage",
+            "wild_marjoram",
+            "water"
+          ],
+          "tool_ids": [
+            "pot"
+          ],
+          "duration": {
+            "raw": "1/2 an houre",
+            "min_minutes": 30.0,
+            "max_minutes": 30.0
+          },
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "You must boyle these herbes in water 1/2 an houre",
+            "note": null
+          }
+        },
+        {
+          "order": 2,
+          "text": "Bruise the seeds, and slice the nutmegs, ginger and dock roots.",
+          "ingredient_ids": [
+            "nutmeg",
+            "ginger",
+            "red_dock_root",
+            "caraway_seeds",
+            "sweet_fennel_seeds"
+          ],
+          "tool_ids": [],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "bruise Your seeds, slice your Nutmegs and ginger and Dock rootes.",
+            "note": null
+          }
+        },
+        {
+          "order": 3,
+          "text": "Put all the seeds and spices in a bag and hang the bag in the drink.",
+          "ingredient_ids": [
+            "caraway_seeds",
+            "sweet_fennel_seeds",
+            "nutmeg",
+            "ginger",
+            "red_dock_root",
+            "liquorice"
+          ],
+          "tool_ids": [
+            "bag"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "You must put all these seeds and spices in a Bagg & hang the bag in the drinke.",
+            "note": null
+          }
+        },
+        {
+          "order": 4,
+          "text": "Drink it for 6 or 7 days.",
+          "ingredient_ids": [],
+          "tool_ids": [],
+          "duration": {
+            "raw": "6 or 7 dayes",
+            "min_minutes": 6.0,
+            "max_minutes": 7.0
+          },
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "You may drinke of it 6 or 7 dayes.",
+            "note": null
+          }
+        }
+      ],
+      "warnings": [
+        {
+          "message": "The document holds four remedies: this drink, a method for suppositories, a remedy against a mad dog's bite, and a truncated remedy for the gaunders. I extracted the first complete one, the drink. Skipped: the suppositories, the mad dog remedy, and the gaunders remedy, which is cut off at 'Take a'.",
+          "target_id": null
+        },
+        {
+          "message": "The word 'carniseeds' is marked uncertain by the transcription; I read it as caraway seeds, which should be checked.",
+          "target_id": null
+        },
+        {
+          "message": "The herbs have only the amount 'a good handfull' each, so no numeric amount is given.",
+          "target_id": null
+        },
+        {
+          "message": "The liquorice is listed in the ingredients but the text does not say what to do with it beyond putting it in the bag with the seeds and spices; its use is inferred from the list.",
+          "target_id": null
+        },
+        {
+          "message": "No servings are stated; the drink is taken over 6 or 7 days with no dose given.",
+          "target_id": null
+        },
+        {
+          "message": "The step listing the bag contents includes ingredients from the earlier list; the step grouping is a reading of the instruction.",
+          "target_id": null
+        }
+      ]
+    },
+    "changes": []
+  }
+}

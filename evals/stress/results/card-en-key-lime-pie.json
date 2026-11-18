@@ -1,0 +1,1276 @@
+{
+  "document": {
+    "name": "card-en-key-lime-pie.pdf",
+    "kind": "pdf",
+    "pages": [
+      {
+        "number": 1,
+        "text": "This recipe, \"Ann's Key Lime Pie\" was in \"Cook's Corner\" in the Dispatch. Another recipe was found while clipping coupons from the Sunday Dispatch next to a coupon for Carnation Sweetened Condensed milk and it was called \"Creamy Frozen Lime Pie\" \"55\"'s Key Lime Pie Here's what's cookin' Creamy Frozen Lime Pie Recipe from the kitchen of Connie Sharpnack",
+        "method": "vision",
+        "decoration_text": [
+          "Red Farm Studio",
+          "PAWTUCKET, R.I.",
+          "SAGE",
+          "SAGE"
+        ],
+        "uncertain": [
+          "Ann's",
+          "Dispatch",
+          "Another",
+          "Sunday",
+          "Carnation",
+          "Sweetened",
+          "Connie",
+          "Sharpnack"
+        ],
+        "usage": {
+          "model": "claude-haiku-5-5",
+          "input_tokens": 5099,
+          "output_tokens": 268,
+          "seconds": 2.382445100000041,
+          "cached": false
+        }
+      },
+      {
+        "number": 2,
+        "text": "Ann's Key Lime Pie\n\n1 prepared graham cracker pie crust\n1 package (8 oz) cream cheese, softened\n1 can (14 oz) sweetened condensed milk (not evaporated)\n1 cup evaporated milk\n1/2 cup lime juice\nGrated peel of 1 small lime\n\nPreheat oven to 375°. Brush pie crust with egg white and bake for 5 minutes, or until browned.\nIn a small mixer bowl, beat cream cheese until smooth. Gradually add sweetened condensed milk and evaporated milk. Beat until smooth. With mixer on medium speed, add lime juice and grated peel, mixing until smooth.\nPour into pie crust and freeze for at least 2 hours. Let stand at room temperature 10 to 15 minutes before serving. (over)",
+        "method": "vision",
+        "decoration_text": [],
+        "uncertain": [
+          "Ann's"
+        ],
+        "usage": {
+          "model": "claude-haiku-5-5",
+          "input_tokens": 5099,
+          "output_tokens": 318,
+          "seconds": 2.2697153000008257,
+          "cached": false
+        }
+      }
+    ]
+  },
+  "extraction": {
+    "is_recipe": true,
+    "recipes_in_document": 2,
+    "recipe": {
+      "title": "Ann's Key Lime Pie",
+      "language": "en",
+      "servings": {
+        "value": 8,
+        "source": {
+          "status": "inferred",
+          "page": null,
+          "quote": null,
+          "note": "Not stated. Estimated from a standard 9-inch pie made with one prepared crust and about 3 cups of filling."
+        }
+      },
+      "ingredients": [
+        {
+          "id": "prepared_graham_cracker_pie_crust",
+          "name": "prepared graham cracker pie crust",
+          "name_original": "prepared graham cracker pie crust",
+          "quantity": {
+            "kind": "exact",
+            "value": 1.0,
+            "max_value": null,
+            "unit": null,
+            "raw": "1"
+          },
+          "preparation": "prepared",
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "uncertain",
+          "source": {
+            "status": "read",
+            "page": 2,
+            "quote": "1 prepared graham cracker pie crust",
+            "note": null
+          }
+        },
+        {
+          "id": "cream_cheese",
+          "name": "cream cheese",
+          "name_original": "cream cheese",
+          "quantity": {
+            "kind": "exact",
+            "value": 8.0,
+            "max_value": null,
+            "unit": "oz",
+            "raw": "1 package (8 oz)"
+          },
+          "preparation": "softened",
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "dairy",
+          "source": {
+            "status": "read",
+            "page": 2,
+            "quote": "1 package (8 oz) cream cheese, softened",
+            "note": null
+          }
+        },
+        {
+          "id": "sweetened_condensed_milk",
+          "name": "sweetened condensed milk",
+          "name_original": "sweetened condensed milk",
+          "quantity": {
+            "kind": "exact",
+            "value": 14.0,
+            "max_value": null,
+            "unit": "oz",
+            "raw": "1 can (14 oz)"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "dairy",
+          "source": {
+            "status": "read",
+            "page": 2,
+            "quote": "1 can (14 oz) sweetened condensed milk (not evaporated)",
+            "note": null
+          }
+        },
+        {
+          "id": "evaporated_milk",
+          "name": "evaporated milk",
+          "name_original": "evaporated milk",
+          "quantity": {
+            "kind": "exact",
+            "value": 1.0,
+            "max_value": null,
+            "unit": "cup",
+            "raw": "1 cup"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "dairy",
+          "source": {
+            "status": "read",
+            "page": 2,
+            "quote": "1 cup evaporated milk",
+            "note": null
+          }
+        },
+        {
+          "id": "lime_juice",
+          "name": "lime juice",
+          "name_original": "lime juice",
+          "quantity": {
+            "kind": "exact",
+            "value": 0.5,
+            "max_value": null,
+            "unit": "cup",
+            "raw": "1/2 cup"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 2,
+            "quote": "1/2 cup lime juice",
+            "note": null
+          }
+        },
+        {
+          "id": "lime_peel",
+          "name": "lime peel",
+          "name_original": "Grated peel of 1 small lime",
+          "quantity": {
+            "kind": "exact",
+            "value": 1.0,
+            "max_value": null,
+            "unit": null,
+            "raw": "1 small"
+          },
+          "preparation": "grated",
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 2,
+            "quote": "Grated peel of 1 small lime",
+            "note": null
+          }
+        },
+        {
+          "id": "egg_white",
+          "name": "egg white",
+          "name_original": "egg white",
+          "quantity": {
+            "kind": "absent",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "egg",
+          "source": {
+            "status": "read",
+            "page": 2,
+            "quote": "Brush pie crust with egg white",
+            "note": null
+          }
+        }
+      ],
+      "tools": [
+        {
+          "id": "oven",
+          "name": "oven",
+          "source": {
+            "status": "read",
+            "page": 2,
+            "quote": "Preheat oven to 375°.",
+            "note": null
+          }
+        },
+        {
+          "id": "mixer_bowl",
+          "name": "small mixer bowl",
+          "source": {
+            "status": "read",
+            "page": 2,
+            "quote": "In a small mixer bowl, beat cream cheese until smooth.",
+            "note": null
+          }
+        },
+        {
+          "id": "mixer",
+          "name": "mixer",
+          "source": {
+            "status": "read",
+            "page": 2,
+            "quote": "With mixer on medium speed, add lime juice and grated peel, mixing until smooth.",
+            "note": null
+          }
+        },
+        {
+          "id": "freezer",
+          "name": "freezer",
+          "source": {
+            "status": "inferred",
+            "page": 2,
+            "quote": "Pour into pie crust and freeze for at least 2 hours.",
+            "note": "Needed for the freezing step; the text says only 'freeze'."
+          }
+        }
+      ],
+      "steps": [
+        {
+          "order": 1,
+          "text": "Preheat oven to 375°.",
+          "ingredient_ids": [],
+          "tool_ids": [
+            "oven"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 2,
+            "quote": "Preheat oven to 375°.",
+            "note": null
+          }
+        },
+        {
+          "order": 2,
+          "text": "Brush pie crust with egg white and bake for 5 minutes, or until browned.",
+          "ingredient_ids": [
+            "prepared_graham_cracker_pie_crust",
+            "egg_white"
+          ],
+          "tool_ids": [
+            "oven"
+          ],
+          "duration": {
+            "raw": "5 minutes",
+            "min_minutes": 5.0,
+            "max_minutes": 5.0
+          },
+          "condition": "or until browned",
+          "source": {
+            "status": "read",
+            "page": 2,
+            "quote": "Brush pie crust with egg white and bake for 5 minutes, or until browned.",
+            "note": null
+          }
+        },
+        {
+          "order": 3,
+          "text": "In a small mixer bowl, beat cream cheese until smooth.",
+          "ingredient_ids": [
+            "cream_cheese"
+          ],
+          "tool_ids": [
+            "mixer_bowl",
+            "mixer"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 2,
+            "quote": "In a small mixer bowl, beat cream cheese until smooth.",
+            "note": null
+          }
+        },
+        {
+          "order": 4,
+          "text": "Gradually add sweetened condensed milk and evaporated milk. Beat until smooth.",
+          "ingredient_ids": [
+            "sweetened_condensed_milk",
+            "evaporated_milk"
+          ],
+          "tool_ids": [
+            "mixer"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 2,
+            "quote": "Gradually add sweetened condensed milk and evaporated milk. Beat until smooth.",
+            "note": null
+          }
+        },
+        {
+          "order": 5,
+          "text": "With mixer on medium speed, add lime juice and grated peel, mixing until smooth.",
+          "ingredient_ids": [
+            "lime_juice",
+            "lime_peel"
+          ],
+          "tool_ids": [
+            "mixer"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 2,
+            "quote": "With mixer on medium speed, add lime juice and grated peel, mixing until smooth.",
+            "note": null
+          }
+        },
+        {
+          "order": 6,
+          "text": "Pour into pie crust and freeze for at least 2 hours.",
+          "ingredient_ids": [
+            "prepared_graham_cracker_pie_crust"
+          ],
+          "tool_ids": [
+            "freezer"
+          ],
+          "duration": {
+            "raw": "at least 2 hours",
+            "min_minutes": 120.0,
+            "max_minutes": 120.0
+          },
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 2,
+            "quote": "Pour into pie crust and freeze for at least 2 hours.",
+            "note": null
+          }
+        },
+        {
+          "order": 7,
+          "text": "Let stand at room temperature 10 to 15 minutes before serving.",
+          "ingredient_ids": [],
+          "tool_ids": [],
+          "duration": {
+            "raw": "10 to 15 minutes",
+            "min_minutes": 10.0,
+            "max_minutes": 15.0
+          },
+          "condition": "before serving",
+          "source": {
+            "status": "read",
+            "page": 2,
+            "quote": "Let stand at room temperature 10 to 15 minutes before serving.",
+            "note": null
+          }
+        }
+      ],
+      "warnings": [
+        {
+          "message": "The document holds two recipes: 'Ann's Key Lime Pie' (page 2, extracted) and 'Creamy Frozen Lime Pie' from the kitchen of Connie Sharpnack (page 1, skipped). Only the title of the second appears on page 1, with no ingredients or steps.",
+          "target_id": null
+        },
+        {
+          "message": "The title 'Ann's Key Lime Pie' and the word 'Dispatch' were marked as uncertain by the transcription.",
+          "target_id": null
+        },
+        {
+          "message": "Page 2 ends with '(over)', so the recipe may continue on the reverse side, which was not provided.",
+          "target_id": null
+        },
+        {
+          "message": "The egg white is used for brushing but has no amount in the text, so its quantity is absent.",
+          "target_id": null
+        },
+        {
+          "message": "The prepared graham cracker pie crust may contain animal ingredients such as honey or milk, depending on the brand, so its animal classification is uncertain.",
+          "target_id": null
+        },
+        {
+          "message": "Servings are not stated and were estimated from a typical pie size.",
+          "target_id": null
+        },
+        {
+          "message": "The mixer bowl, mixer and freezer are named or implied by the text; the freezer is not named and was added as an implied tool.",
+          "target_id": null
+        }
+      ]
+    },
+    "usage": [
+      {
+        "model": "claude-haiku-5-5",
+        "input_tokens": 4903,
+        "output_tokens": 5117,
+        "seconds": 19.200918499998807,
+        "cached": false
+      }
+    ],
+    "problems_found": [],
+    "problems_left": []
+  },
+  "manipulation": {
+    "original": {
+      "title": "Ann's Key Lime Pie",
+      "language": "en",
+      "servings": {
+        "value": 8,
+        "source": {
+          "status": "inferred",
+          "page": null,
+          "quote": null,
+          "note": "Not stated. Estimated from a standard 9-inch pie made with one prepared crust and about 3 cups of filling."
+        }
+      },
+      "ingredients": [
+        {
+          "id": "prepared_graham_cracker_pie_crust",
+          "name": "prepared graham cracker pie crust",
+          "name_original": "prepared graham cracker pie crust",
+          "quantity": {
+            "kind": "exact",
+            "value": 1.0,
+            "max_value": null,
+            "unit": null,
+            "raw": "1"
+          },
+          "preparation": "prepared",
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "uncertain",
+          "source": {
+            "status": "read",
+            "page": 2,
+            "quote": "1 prepared graham cracker pie crust",
+            "note": null
+          }
+        },
+        {
+          "id": "cream_cheese",
+          "name": "cream cheese",
+          "name_original": "cream cheese",
+          "quantity": {
+            "kind": "exact",
+            "value": 8.0,
+            "max_value": null,
+            "unit": "oz",
+            "raw": "1 package (8 oz)"
+          },
+          "preparation": "softened",
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "dairy",
+          "source": {
+            "status": "read",
+            "page": 2,
+            "quote": "1 package (8 oz) cream cheese, softened",
+            "note": null
+          }
+        },
+        {
+          "id": "sweetened_condensed_milk",
+          "name": "sweetened condensed milk",
+          "name_original": "sweetened condensed milk",
+          "quantity": {
+            "kind": "exact",
+            "value": 14.0,
+            "max_value": null,
+            "unit": "oz",
+            "raw": "1 can (14 oz)"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "dairy",
+          "source": {
+            "status": "read",
+            "page": 2,
+            "quote": "1 can (14 oz) sweetened condensed milk (not evaporated)",
+            "note": null
+          }
+        },
+        {
+          "id": "evaporated_milk",
+          "name": "evaporated milk",
+          "name_original": "evaporated milk",
+          "quantity": {
+            "kind": "exact",
+            "value": 1.0,
+            "max_value": null,
+            "unit": "cup",
+            "raw": "1 cup"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "dairy",
+          "source": {
+            "status": "read",
+            "page": 2,
+            "quote": "1 cup evaporated milk",
+            "note": null
+          }
+        },
+        {
+          "id": "lime_juice",
+          "name": "lime juice",
+          "name_original": "lime juice",
+          "quantity": {
+            "kind": "exact",
+            "value": 0.5,
+            "max_value": null,
+            "unit": "cup",
+            "raw": "1/2 cup"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 2,
+            "quote": "1/2 cup lime juice",
+            "note": null
+          }
+        },
+        {
+          "id": "lime_peel",
+          "name": "lime peel",
+          "name_original": "Grated peel of 1 small lime",
+          "quantity": {
+            "kind": "exact",
+            "value": 1.0,
+            "max_value": null,
+            "unit": null,
+            "raw": "1 small"
+          },
+          "preparation": "grated",
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 2,
+            "quote": "Grated peel of 1 small lime",
+            "note": null
+          }
+        },
+        {
+          "id": "egg_white",
+          "name": "egg white",
+          "name_original": "egg white",
+          "quantity": {
+            "kind": "absent",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "egg",
+          "source": {
+            "status": "read",
+            "page": 2,
+            "quote": "Brush pie crust with egg white",
+            "note": null
+          }
+        }
+      ],
+      "tools": [
+        {
+          "id": "oven",
+          "name": "oven",
+          "source": {
+            "status": "read",
+            "page": 2,
+            "quote": "Preheat oven to 375°.",
+            "note": null
+          }
+        },
+        {
+          "id": "mixer_bowl",
+          "name": "small mixer bowl",
+          "source": {
+            "status": "read",
+            "page": 2,
+            "quote": "In a small mixer bowl, beat cream cheese until smooth.",
+            "note": null
+          }
+        },
+        {
+          "id": "mixer",
+          "name": "mixer",
+          "source": {
+            "status": "read",
+            "page": 2,
+            "quote": "With mixer on medium speed, add lime juice and grated peel, mixing until smooth.",
+            "note": null
+          }
+        },
+        {
+          "id": "freezer",
+          "name": "freezer",
+          "source": {
+            "status": "inferred",
+            "page": 2,
+            "quote": "Pour into pie crust and freeze for at least 2 hours.",
+            "note": "Needed for the freezing step; the text says only 'freeze'."
+          }
+        }
+      ],
+      "steps": [
+        {
+          "order": 1,
+          "text": "Preheat oven to 375°.",
+          "ingredient_ids": [],
+          "tool_ids": [
+            "oven"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 2,
+            "quote": "Preheat oven to 375°.",
+            "note": null
+          }
+        },
+        {
+          "order": 2,
+          "text": "Brush pie crust with egg white and bake for 5 minutes, or until browned.",
+          "ingredient_ids": [
+            "prepared_graham_cracker_pie_crust",
+            "egg_white"
+          ],
+          "tool_ids": [
+            "oven"
+          ],
+          "duration": {
+            "raw": "5 minutes",
+            "min_minutes": 5.0,
+            "max_minutes": 5.0
+          },
+          "condition": "or until browned",
+          "source": {
+            "status": "read",
+            "page": 2,
+            "quote": "Brush pie crust with egg white and bake for 5 minutes, or until browned.",
+            "note": null
+          }
+        },
+        {
+          "order": 3,
+          "text": "In a small mixer bowl, beat cream cheese until smooth.",
+          "ingredient_ids": [
+            "cream_cheese"
+          ],
+          "tool_ids": [
+            "mixer_bowl",
+            "mixer"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 2,
+            "quote": "In a small mixer bowl, beat cream cheese until smooth.",
+            "note": null
+          }
+        },
+        {
+          "order": 4,
+          "text": "Gradually add sweetened condensed milk and evaporated milk. Beat until smooth.",
+          "ingredient_ids": [
+            "sweetened_condensed_milk",
+            "evaporated_milk"
+          ],
+          "tool_ids": [
+            "mixer"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 2,
+            "quote": "Gradually add sweetened condensed milk and evaporated milk. Beat until smooth.",
+            "note": null
+          }
+        },
+        {
+          "order": 5,
+          "text": "With mixer on medium speed, add lime juice and grated peel, mixing until smooth.",
+          "ingredient_ids": [
+            "lime_juice",
+            "lime_peel"
+          ],
+          "tool_ids": [
+            "mixer"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 2,
+            "quote": "With mixer on medium speed, add lime juice and grated peel, mixing until smooth.",
+            "note": null
+          }
+        },
+        {
+          "order": 6,
+          "text": "Pour into pie crust and freeze for at least 2 hours.",
+          "ingredient_ids": [
+            "prepared_graham_cracker_pie_crust"
+          ],
+          "tool_ids": [
+            "freezer"
+          ],
+          "duration": {
+            "raw": "at least 2 hours",
+            "min_minutes": 120.0,
+            "max_minutes": 120.0
+          },
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 2,
+            "quote": "Pour into pie crust and freeze for at least 2 hours.",
+            "note": null
+          }
+        },
+        {
+          "order": 7,
+          "text": "Let stand at room temperature 10 to 15 minutes before serving.",
+          "ingredient_ids": [],
+          "tool_ids": [],
+          "duration": {
+            "raw": "10 to 15 minutes",
+            "min_minutes": 10.0,
+            "max_minutes": 15.0
+          },
+          "condition": "before serving",
+          "source": {
+            "status": "read",
+            "page": 2,
+            "quote": "Let stand at room temperature 10 to 15 minutes before serving.",
+            "note": null
+          }
+        }
+      ],
+      "warnings": [
+        {
+          "message": "The document holds two recipes: 'Ann's Key Lime Pie' (page 2, extracted) and 'Creamy Frozen Lime Pie' from the kitchen of Connie Sharpnack (page 1, skipped). Only the title of the second appears on page 1, with no ingredients or steps.",
+          "target_id": null
+        },
+        {
+          "message": "The title 'Ann's Key Lime Pie' and the word 'Dispatch' were marked as uncertain by the transcription.",
+          "target_id": null
+        },
+        {
+          "message": "Page 2 ends with '(over)', so the recipe may continue on the reverse side, which was not provided.",
+          "target_id": null
+        },
+        {
+          "message": "The egg white is used for brushing but has no amount in the text, so its quantity is absent.",
+          "target_id": null
+        },
+        {
+          "message": "The prepared graham cracker pie crust may contain animal ingredients such as honey or milk, depending on the brand, so its animal classification is uncertain.",
+          "target_id": null
+        },
+        {
+          "message": "Servings are not stated and were estimated from a typical pie size.",
+          "target_id": null
+        },
+        {
+          "message": "The mixer bowl, mixer and freezer are named or implied by the text; the freezer is not named and was added as an implied tool.",
+          "target_id": null
+        }
+      ]
+    },
+    "recipe": {
+      "title": "Ann's Key Lime Pie",
+      "language": "en",
+      "servings": {
+        "value": 8,
+        "source": {
+          "status": "inferred",
+          "page": null,
+          "quote": null,
+          "note": "Not stated. Estimated from a standard 9-inch pie made with one prepared crust and about 3 cups of filling."
+        }
+      },
+      "ingredients": [
+        {
+          "id": "prepared_graham_cracker_pie_crust",
+          "name": "prepared graham cracker pie crust",
+          "name_original": "prepared graham cracker pie crust",
+          "quantity": {
+            "kind": "exact",
+            "value": 1.0,
+            "max_value": null,
+            "unit": null,
+            "raw": "1"
+          },
+          "preparation": "prepared",
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "uncertain",
+          "source": {
+            "status": "read",
+            "page": 2,
+            "quote": "1 prepared graham cracker pie crust",
+            "note": null
+          }
+        },
+        {
+          "id": "vegan_cream_cheese",
+          "name": "plant-based cream cheese",
+          "name_original": "plant-based cream cheese",
+          "quantity": {
+            "kind": "exact",
+            "value": 8.0,
+            "max_value": null,
+            "unit": "oz",
+            "raw": "1 package (8 oz)"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "rule",
+            "page": 2,
+            "quote": "1 package (8 oz) cream cheese, softened",
+            "note": "vegan substitute for 'cream cheese': Dairy cream cheese."
+          }
+        },
+        {
+          "id": "sweetened_condensed_milk",
+          "name": "sweetened condensed milk",
+          "name_original": "sweetened condensed milk",
+          "quantity": {
+            "kind": "exact",
+            "value": 14.0,
+            "max_value": null,
+            "unit": "oz",
+            "raw": "1 can (14 oz)"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "dairy",
+          "source": {
+            "status": "read",
+            "page": 2,
+            "quote": "1 can (14 oz) sweetened condensed milk (not evaporated)",
+            "note": null
+          }
+        },
+        {
+          "id": "vegan_evaporated_milk",
+          "name": "oat milk",
+          "name_original": "oat milk",
+          "quantity": {
+            "kind": "exact",
+            "value": 1.0,
+            "max_value": null,
+            "unit": "cup",
+            "raw": "1 cup"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "rule",
+            "page": 2,
+            "quote": "1 cup evaporated milk",
+            "note": "vegan substitute for 'evaporated milk': Dairy milk."
+          }
+        },
+        {
+          "id": "lime_juice",
+          "name": "lime juice",
+          "name_original": "lime juice",
+          "quantity": {
+            "kind": "exact",
+            "value": 0.5,
+            "max_value": null,
+            "unit": "cup",
+            "raw": "1/2 cup"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 2,
+            "quote": "1/2 cup lime juice",
+            "note": null
+          }
+        },
+        {
+          "id": "lime_peel",
+          "name": "lime peel",
+          "name_original": "Grated peel of 1 small lime",
+          "quantity": {
+            "kind": "exact",
+            "value": 1.0,
+            "max_value": null,
+            "unit": null,
+            "raw": "1 small"
+          },
+          "preparation": "grated",
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 2,
+            "quote": "Grated peel of 1 small lime",
+            "note": null
+          }
+        },
+        {
+          "id": "vegan_egg_white",
+          "name": "flax egg (1 tbsp ground flaxseed + 3 tbsp water per egg)",
+          "name_original": "flax egg (1 tbsp ground flaxseed + 3 tbsp water per egg)",
+          "quantity": {
+            "kind": "absent",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "rule",
+            "page": 2,
+            "quote": "Brush pie crust with egg white",
+            "note": "vegan substitute for 'egg white': Eggs that bind a dough or batter; a flax egg does the same."
+          }
+        }
+      ],
+      "tools": [
+        {
+          "id": "oven",
+          "name": "oven",
+          "source": {
+            "status": "read",
+            "page": 2,
+            "quote": "Preheat oven to 375°.",
+            "note": null
+          }
+        },
+        {
+          "id": "mixer_bowl",
+          "name": "small mixer bowl",
+          "source": {
+            "status": "read",
+            "page": 2,
+            "quote": "In a small mixer bowl, beat cream cheese until smooth.",
+            "note": null
+          }
+        },
+        {
+          "id": "mixer",
+          "name": "mixer",
+          "source": {
+            "status": "read",
+            "page": 2,
+            "quote": "With mixer on medium speed, add lime juice and grated peel, mixing until smooth.",
+            "note": null
+          }
+        },
+        {
+          "id": "freezer",
+          "name": "freezer",
+          "source": {
+            "status": "inferred",
+            "page": 2,
+            "quote": "Pour into pie crust and freeze for at least 2 hours.",
+            "note": "Needed for the freezing step; the text says only 'freeze'."
+          }
+        }
+      ],
+      "steps": [
+        {
+          "order": 1,
+          "text": "Preheat oven to 375°.",
+          "ingredient_ids": [],
+          "tool_ids": [
+            "oven"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 2,
+            "quote": "Preheat oven to 375°.",
+            "note": null
+          }
+        },
+        {
+          "order": 2,
+          "text": "Brush pie crust with egg white and bake for 5 minutes, or until browned.\n[Vegan: use flax egg (1 tbsp ground flaxseed + 3 tbsp water per egg) instead of egg white.]",
+          "ingredient_ids": [
+            "prepared_graham_cracker_pie_crust",
+            "vegan_egg_white"
+          ],
+          "tool_ids": [
+            "oven"
+          ],
+          "duration": {
+            "raw": "5 minutes",
+            "min_minutes": 5.0,
+            "max_minutes": 5.0
+          },
+          "condition": "or until browned",
+          "source": {
+            "status": "read",
+            "page": 2,
+            "quote": "Brush pie crust with egg white and bake for 5 minutes, or until browned.",
+            "note": null
+          }
+        },
+        {
+          "order": 3,
+          "text": "In a small mixer bowl, beat cream cheese until smooth.\n[Vegan: use plant-based cream cheese instead of cream cheese.]",
+          "ingredient_ids": [
+            "vegan_cream_cheese"
+          ],
+          "tool_ids": [
+            "mixer_bowl",
+            "mixer"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 2,
+            "quote": "In a small mixer bowl, beat cream cheese until smooth.",
+            "note": null
+          }
+        },
+        {
+          "order": 4,
+          "text": "Gradually add sweetened condensed milk and evaporated milk. Beat until smooth.\n[Vegan: use oat milk instead of evaporated milk.]",
+          "ingredient_ids": [
+            "sweetened_condensed_milk",
+            "vegan_evaporated_milk"
+          ],
+          "tool_ids": [
+            "mixer"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 2,
+            "quote": "Gradually add sweetened condensed milk and evaporated milk. Beat until smooth.",
+            "note": null
+          }
+        },
+        {
+          "order": 5,
+          "text": "With mixer on medium speed, add lime juice and grated peel, mixing until smooth.",
+          "ingredient_ids": [
+            "lime_juice",
+            "lime_peel"
+          ],
+          "tool_ids": [
+            "mixer"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 2,
+            "quote": "With mixer on medium speed, add lime juice and grated peel, mixing until smooth.",
+            "note": null
+          }
+        },
+        {
+          "order": 6,
+          "text": "Pour into pie crust and freeze for at least 2 hours.",
+          "ingredient_ids": [
+            "prepared_graham_cracker_pie_crust"
+          ],
+          "tool_ids": [
+            "freezer"
+          ],
+          "duration": {
+            "raw": "at least 2 hours",
+            "min_minutes": 120.0,
+            "max_minutes": 120.0
+          },
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 2,
+            "quote": "Pour into pie crust and freeze for at least 2 hours.",
+            "note": null
+          }
+        },
+        {
+          "order": 7,
+          "text": "Let stand at room temperature 10 to 15 minutes before serving.",
+          "ingredient_ids": [],
+          "tool_ids": [],
+          "duration": {
+            "raw": "10 to 15 minutes",
+            "min_minutes": 10.0,
+            "max_minutes": 15.0
+          },
+          "condition": "before serving",
+          "source": {
+            "status": "read",
+            "page": 2,
+            "quote": "Let stand at room temperature 10 to 15 minutes before serving.",
+            "note": null
+          }
+        }
+      ],
+      "warnings": [
+        {
+          "message": "The document holds two recipes: 'Ann's Key Lime Pie' (page 2, extracted) and 'Creamy Frozen Lime Pie' from the kitchen of Connie Sharpnack (page 1, skipped). Only the title of the second appears on page 1, with no ingredients or steps.",
+          "target_id": null
+        },
+        {
+          "message": "The title 'Ann's Key Lime Pie' and the word 'Dispatch' were marked as uncertain by the transcription.",
+          "target_id": null
+        },
+        {
+          "message": "Page 2 ends with '(over)', so the recipe may continue on the reverse side, which was not provided.",
+          "target_id": null
+        },
+        {
+          "message": "The egg white is used for brushing but has no amount in the text, so its quantity is absent.",
+          "target_id": null
+        },
+        {
+          "message": "The prepared graham cracker pie crust may contain animal ingredients such as honey or milk, depending on the brand, so its animal classification is uncertain.",
+          "target_id": null
+        },
+        {
+          "message": "Servings are not stated and were estimated from a typical pie size.",
+          "target_id": null
+        },
+        {
+          "message": "The mixer bowl, mixer and freezer are named or implied by the text; the freezer is not named and was added as an implied tool.",
+          "target_id": null
+        },
+        {
+          "message": "Not fully vegan: no vegan substitute is known for prepared graham cracker pie crust, sweetened condensed milk. Choose one before cooking.",
+          "target_id": null
+        },
+        {
+          "message": "Vegan, prepared graham cracker pie crust: could not tell whether it contains animal products (it depends on the brand or recipe).",
+          "target_id": "prepared_graham_cracker_pie_crust"
+        },
+        {
+          "message": "Vegan, sweetened condensed milk: contains dairy, and no vegan substitute is known for it.",
+          "target_id": "sweetened_condensed_milk"
+        }
+      ]
+    },
+    "changes": [
+      {
+        "rule": "vegan",
+        "target": "cream_cheese",
+        "before": "cream cheese",
+        "after": "plant-based cream cheese",
+        "reason": "Dairy cream cheese."
+      },
+      {
+        "rule": "vegan",
+        "target": "evaporated_milk",
+        "before": "evaporated milk",
+        "after": "oat milk",
+        "reason": "Dairy milk."
+      },
+      {
+        "rule": "vegan",
+        "target": "egg_white",
+        "before": "egg white",
+        "after": "flax egg (1 tbsp ground flaxseed + 3 tbsp water per egg)",
+        "reason": "Eggs that bind a dough or batter; a flax egg does the same."
+      },
+      {
+        "rule": "vegan",
+        "target": "step 2",
+        "before": "egg white",
+        "after": "flax egg (1 tbsp ground flaxseed + 3 tbsp water per egg)",
+        "reason": "Substitution carried into the method."
+      },
+      {
+        "rule": "vegan",
+        "target": "step 3",
+        "before": "cream cheese",
+        "after": "plant-based cream cheese",
+        "reason": "Substitution carried into the method."
+      },
+      {
+        "rule": "vegan",
+        "target": "step 4",
+        "before": "evaporated milk",
+        "after": "oat milk",
+        "reason": "Substitution carried into the method."
+      },
+      {
+        "rule": "vegan",
+        "target": "prepared_graham_cracker_pie_crust",
+        "before": "prepared graham cracker pie crust",
+        "after": "unchanged, no known substitute",
+        "reason": "could not tell whether it contains animal products (it depends on the brand or recipe)."
+      },
+      {
+        "rule": "vegan",
+        "target": "sweetened_condensed_milk",
+        "before": "sweetened condensed milk",
+        "after": "unchanged, no known substitute",
+        "reason": "contains dairy, and no vegan substitute is known for it."
+      }
+    ]
+  }
+}

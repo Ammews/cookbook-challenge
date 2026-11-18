@@ -1,0 +1,1429 @@
+{
+  "document": {
+    "name": "card-en-apple-cake.jpg",
+    "kind": "image",
+    "pages": [
+      {
+        "number": 1,
+        "text": "Apple Cake (M Whitman) 1½ c flour 1 T baking powder ¼ # butter 2/3 c sugar ½ lemon rind 3 egg seperated sift together cream Add flour + milk alternately (¼ c milk) Fold in beaten egg whites. Places apple slices on top. Bake 45 mins in 350° oven. Glaze - sugar - 1t vanilla - water.",
+        "method": "vision",
+        "decoration_text": [],
+        "uncertain": [],
+        "usage": {
+          "model": "claude-haiku-5-5",
+          "input_tokens": 2327,
+          "output_tokens": 829,
+          "seconds": 5.172166399999696,
+          "cached": false
+        }
+      }
+    ]
+  },
+  "extraction": {
+    "is_recipe": true,
+    "recipes_in_document": 1,
+    "recipe": {
+      "title": "Apple Cake",
+      "language": "en",
+      "servings": {
+        "value": 8,
+        "source": {
+          "status": "inferred",
+          "page": 1,
+          "quote": null,
+          "note": "Not stated. Estimated at 8 from 1½ c flour, 3 eggs and a 45-minute bake in a standard cake tin."
+        }
+      },
+      "ingredients": [
+        {
+          "id": "flour",
+          "name": "flour",
+          "name_original": "flour",
+          "quantity": {
+            "kind": "exact",
+            "value": 1.5,
+            "max_value": null,
+            "unit": "c",
+            "raw": "1½ c"
+          },
+          "preparation": "sifted",
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "1½ c flour",
+            "note": null
+          }
+        },
+        {
+          "id": "baking_powder",
+          "name": "baking powder",
+          "name_original": "baking powder",
+          "quantity": {
+            "kind": "exact",
+            "value": 1.0,
+            "max_value": null,
+            "unit": "T",
+            "raw": "1 T"
+          },
+          "preparation": "sifted",
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "1 T baking powder",
+            "note": null
+          }
+        },
+        {
+          "id": "butter",
+          "name": "butter",
+          "name_original": "butter",
+          "quantity": {
+            "kind": "exact",
+            "value": 0.25,
+            "max_value": null,
+            "unit": "#",
+            "raw": "¼ #"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "dairy",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "¼ # butter",
+            "note": null
+          }
+        },
+        {
+          "id": "sugar",
+          "name": "sugar",
+          "name_original": "sugar",
+          "quantity": {
+            "kind": "exact",
+            "value": 0.67,
+            "max_value": null,
+            "unit": "c",
+            "raw": "2/3 c"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "2/3 c sugar",
+            "note": "Also named in the glaze line without its own amount; one entry kept."
+          }
+        },
+        {
+          "id": "lemon_rind",
+          "name": "lemon rind",
+          "name_original": "lemon rind",
+          "quantity": {
+            "kind": "exact",
+            "value": 0.5,
+            "max_value": null,
+            "unit": null,
+            "raw": "½"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "½ lemon rind",
+            "note": null
+          }
+        },
+        {
+          "id": "egg",
+          "name": "egg",
+          "name_original": "egg",
+          "quantity": {
+            "kind": "exact",
+            "value": 3.0,
+            "max_value": null,
+            "unit": null,
+            "raw": "3"
+          },
+          "preparation": "separated",
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "egg",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "3 egg seperated",
+            "note": null
+          }
+        },
+        {
+          "id": "milk",
+          "name": "milk",
+          "name_original": "milk",
+          "quantity": {
+            "kind": "exact",
+            "value": 0.25,
+            "max_value": null,
+            "unit": "c",
+            "raw": "¼ c"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "dairy",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "¼ c milk",
+            "note": null
+          }
+        },
+        {
+          "id": "apple",
+          "name": "apple",
+          "name_original": "apple slices",
+          "quantity": {
+            "kind": "absent",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": "sliced",
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Places apple slices on top",
+            "note": null
+          }
+        },
+        {
+          "id": "vanilla",
+          "name": "vanilla",
+          "name_original": "vanilla",
+          "quantity": {
+            "kind": "exact",
+            "value": 1.0,
+            "max_value": null,
+            "unit": "t",
+            "raw": "1t"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "1t vanilla",
+            "note": null
+          }
+        },
+        {
+          "id": "water",
+          "name": "water",
+          "name_original": "water",
+          "quantity": {
+            "kind": "absent",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "water",
+            "note": null
+          }
+        }
+      ],
+      "tools": [
+        {
+          "id": "oven",
+          "name": "oven",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "350° oven",
+            "note": null
+          }
+        },
+        {
+          "id": "sieve",
+          "name": "sieve",
+          "source": {
+            "status": "inferred",
+            "page": 1,
+            "quote": "sift together",
+            "note": "Implied by the sifting step."
+          }
+        },
+        {
+          "id": "bowl",
+          "name": "bowl",
+          "source": {
+            "status": "inferred",
+            "page": 1,
+            "quote": "cream",
+            "note": "Implied by the creaming and mixing steps."
+          }
+        },
+        {
+          "id": "baking_pan",
+          "name": "cake tin",
+          "source": {
+            "status": "inferred",
+            "page": 1,
+            "quote": "Bake 45 mins in 350° oven.",
+            "note": "Implied by the bake step; not named in the text."
+          }
+        }
+      ],
+      "steps": [
+        {
+          "order": 1,
+          "text": "Sift together flour and baking powder.",
+          "ingredient_ids": [
+            "flour",
+            "baking_powder"
+          ],
+          "tool_ids": [
+            "sieve"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "sift together",
+            "note": null
+          }
+        },
+        {
+          "order": 2,
+          "text": "Cream butter and sugar.",
+          "ingredient_ids": [
+            "butter",
+            "sugar"
+          ],
+          "tool_ids": [
+            "bowl"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "cream",
+            "note": null
+          }
+        },
+        {
+          "order": 3,
+          "text": "Add flour and milk alternately (¼ c milk).",
+          "ingredient_ids": [
+            "flour",
+            "milk"
+          ],
+          "tool_ids": [
+            "bowl"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Add flour + milk alternately (¼ c milk)",
+            "note": null
+          }
+        },
+        {
+          "order": 4,
+          "text": "Fold in beaten egg whites.",
+          "ingredient_ids": [
+            "egg"
+          ],
+          "tool_ids": [
+            "bowl"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Fold in beaten egg whites.",
+            "note": null
+          }
+        },
+        {
+          "order": 5,
+          "text": "Place apple slices on top.",
+          "ingredient_ids": [
+            "apple"
+          ],
+          "tool_ids": [],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Places apple slices on top.",
+            "note": null
+          }
+        },
+        {
+          "order": 6,
+          "text": "Bake for 45 minutes in a 350° oven.",
+          "ingredient_ids": [],
+          "tool_ids": [
+            "oven",
+            "baking_pan"
+          ],
+          "duration": {
+            "raw": "45 mins",
+            "min_minutes": 45.0,
+            "max_minutes": 45.0
+          },
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Bake 45 mins in 350° oven.",
+            "note": null
+          }
+        },
+        {
+          "order": 7,
+          "text": "Glaze: sugar, 1 t vanilla, water.",
+          "ingredient_ids": [
+            "sugar",
+            "vanilla",
+            "water"
+          ],
+          "tool_ids": [
+            "bowl"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Glaze - sugar - 1t vanilla - water.",
+            "note": null
+          }
+        }
+      ],
+      "warnings": [
+        {
+          "message": "The card gives no method for the glaze and no amounts for its sugar or water; the glaze step is taken from the list only.",
+          "target_id": null
+        },
+        {
+          "message": "Lemon rind is listed but no step says where it goes.",
+          "target_id": null
+        },
+        {
+          "message": "The egg whites are folded in but the card does not say to separate the eggs; the separation is read from 'seperated' (old spelling).",
+          "target_id": null
+        },
+        {
+          "message": "Butter unit '#' is read as pound and kept as written, not converted.",
+          "target_id": null
+        },
+        {
+          "message": "Apple slices have no amount.",
+          "target_id": null
+        },
+        {
+          "message": "Servings are not stated; 8 is an estimate.",
+          "target_id": null
+        },
+        {
+          "message": "The bake step implies a cake tin that the text does not name.",
+          "target_id": null
+        },
+        {
+          "message": "Sugar appears in the cake and in the glaze; one entry is kept with the cake amount.",
+          "target_id": null
+        }
+      ]
+    },
+    "usage": [
+      {
+        "model": "claude-haiku-5-5",
+        "input_tokens": 4474,
+        "output_tokens": 4853,
+        "seconds": 19.181789899999785,
+        "cached": false
+      }
+    ],
+    "problems_found": [],
+    "problems_left": []
+  },
+  "manipulation": {
+    "original": {
+      "title": "Apple Cake",
+      "language": "en",
+      "servings": {
+        "value": 8,
+        "source": {
+          "status": "inferred",
+          "page": 1,
+          "quote": null,
+          "note": "Not stated. Estimated at 8 from 1½ c flour, 3 eggs and a 45-minute bake in a standard cake tin."
+        }
+      },
+      "ingredients": [
+        {
+          "id": "flour",
+          "name": "flour",
+          "name_original": "flour",
+          "quantity": {
+            "kind": "exact",
+            "value": 1.5,
+            "max_value": null,
+            "unit": "c",
+            "raw": "1½ c"
+          },
+          "preparation": "sifted",
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "1½ c flour",
+            "note": null
+          }
+        },
+        {
+          "id": "baking_powder",
+          "name": "baking powder",
+          "name_original": "baking powder",
+          "quantity": {
+            "kind": "exact",
+            "value": 1.0,
+            "max_value": null,
+            "unit": "T",
+            "raw": "1 T"
+          },
+          "preparation": "sifted",
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "1 T baking powder",
+            "note": null
+          }
+        },
+        {
+          "id": "butter",
+          "name": "butter",
+          "name_original": "butter",
+          "quantity": {
+            "kind": "exact",
+            "value": 0.25,
+            "max_value": null,
+            "unit": "#",
+            "raw": "¼ #"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "dairy",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "¼ # butter",
+            "note": null
+          }
+        },
+        {
+          "id": "sugar",
+          "name": "sugar",
+          "name_original": "sugar",
+          "quantity": {
+            "kind": "exact",
+            "value": 0.67,
+            "max_value": null,
+            "unit": "c",
+            "raw": "2/3 c"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "2/3 c sugar",
+            "note": "Also named in the glaze line without its own amount; one entry kept."
+          }
+        },
+        {
+          "id": "lemon_rind",
+          "name": "lemon rind",
+          "name_original": "lemon rind",
+          "quantity": {
+            "kind": "exact",
+            "value": 0.5,
+            "max_value": null,
+            "unit": null,
+            "raw": "½"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "½ lemon rind",
+            "note": null
+          }
+        },
+        {
+          "id": "egg",
+          "name": "egg",
+          "name_original": "egg",
+          "quantity": {
+            "kind": "exact",
+            "value": 3.0,
+            "max_value": null,
+            "unit": null,
+            "raw": "3"
+          },
+          "preparation": "separated",
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "egg",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "3 egg seperated",
+            "note": null
+          }
+        },
+        {
+          "id": "milk",
+          "name": "milk",
+          "name_original": "milk",
+          "quantity": {
+            "kind": "exact",
+            "value": 0.25,
+            "max_value": null,
+            "unit": "c",
+            "raw": "¼ c"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "dairy",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "¼ c milk",
+            "note": null
+          }
+        },
+        {
+          "id": "apple",
+          "name": "apple",
+          "name_original": "apple slices",
+          "quantity": {
+            "kind": "absent",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": "sliced",
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Places apple slices on top",
+            "note": null
+          }
+        },
+        {
+          "id": "vanilla",
+          "name": "vanilla",
+          "name_original": "vanilla",
+          "quantity": {
+            "kind": "exact",
+            "value": 1.0,
+            "max_value": null,
+            "unit": "t",
+            "raw": "1t"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "1t vanilla",
+            "note": null
+          }
+        },
+        {
+          "id": "water",
+          "name": "water",
+          "name_original": "water",
+          "quantity": {
+            "kind": "absent",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "water",
+            "note": null
+          }
+        }
+      ],
+      "tools": [
+        {
+          "id": "oven",
+          "name": "oven",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "350° oven",
+            "note": null
+          }
+        },
+        {
+          "id": "sieve",
+          "name": "sieve",
+          "source": {
+            "status": "inferred",
+            "page": 1,
+            "quote": "sift together",
+            "note": "Implied by the sifting step."
+          }
+        },
+        {
+          "id": "bowl",
+          "name": "bowl",
+          "source": {
+            "status": "inferred",
+            "page": 1,
+            "quote": "cream",
+            "note": "Implied by the creaming and mixing steps."
+          }
+        },
+        {
+          "id": "baking_pan",
+          "name": "cake tin",
+          "source": {
+            "status": "inferred",
+            "page": 1,
+            "quote": "Bake 45 mins in 350° oven.",
+            "note": "Implied by the bake step; not named in the text."
+          }
+        }
+      ],
+      "steps": [
+        {
+          "order": 1,
+          "text": "Sift together flour and baking powder.",
+          "ingredient_ids": [
+            "flour",
+            "baking_powder"
+          ],
+          "tool_ids": [
+            "sieve"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "sift together",
+            "note": null
+          }
+        },
+        {
+          "order": 2,
+          "text": "Cream butter and sugar.",
+          "ingredient_ids": [
+            "butter",
+            "sugar"
+          ],
+          "tool_ids": [
+            "bowl"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "cream",
+            "note": null
+          }
+        },
+        {
+          "order": 3,
+          "text": "Add flour and milk alternately (¼ c milk).",
+          "ingredient_ids": [
+            "flour",
+            "milk"
+          ],
+          "tool_ids": [
+            "bowl"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Add flour + milk alternately (¼ c milk)",
+            "note": null
+          }
+        },
+        {
+          "order": 4,
+          "text": "Fold in beaten egg whites.",
+          "ingredient_ids": [
+            "egg"
+          ],
+          "tool_ids": [
+            "bowl"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Fold in beaten egg whites.",
+            "note": null
+          }
+        },
+        {
+          "order": 5,
+          "text": "Place apple slices on top.",
+          "ingredient_ids": [
+            "apple"
+          ],
+          "tool_ids": [],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Places apple slices on top.",
+            "note": null
+          }
+        },
+        {
+          "order": 6,
+          "text": "Bake for 45 minutes in a 350° oven.",
+          "ingredient_ids": [],
+          "tool_ids": [
+            "oven",
+            "baking_pan"
+          ],
+          "duration": {
+            "raw": "45 mins",
+            "min_minutes": 45.0,
+            "max_minutes": 45.0
+          },
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Bake 45 mins in 350° oven.",
+            "note": null
+          }
+        },
+        {
+          "order": 7,
+          "text": "Glaze: sugar, 1 t vanilla, water.",
+          "ingredient_ids": [
+            "sugar",
+            "vanilla",
+            "water"
+          ],
+          "tool_ids": [
+            "bowl"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Glaze - sugar - 1t vanilla - water.",
+            "note": null
+          }
+        }
+      ],
+      "warnings": [
+        {
+          "message": "The card gives no method for the glaze and no amounts for its sugar or water; the glaze step is taken from the list only.",
+          "target_id": null
+        },
+        {
+          "message": "Lemon rind is listed but no step says where it goes.",
+          "target_id": null
+        },
+        {
+          "message": "The egg whites are folded in but the card does not say to separate the eggs; the separation is read from 'seperated' (old spelling).",
+          "target_id": null
+        },
+        {
+          "message": "Butter unit '#' is read as pound and kept as written, not converted.",
+          "target_id": null
+        },
+        {
+          "message": "Apple slices have no amount.",
+          "target_id": null
+        },
+        {
+          "message": "Servings are not stated; 8 is an estimate.",
+          "target_id": null
+        },
+        {
+          "message": "The bake step implies a cake tin that the text does not name.",
+          "target_id": null
+        },
+        {
+          "message": "Sugar appears in the cake and in the glaze; one entry is kept with the cake amount.",
+          "target_id": null
+        }
+      ]
+    },
+    "recipe": {
+      "title": "Apple Cake",
+      "language": "en",
+      "servings": {
+        "value": 8,
+        "source": {
+          "status": "inferred",
+          "page": 1,
+          "quote": null,
+          "note": "Not stated. Estimated at 8 from 1½ c flour, 3 eggs and a 45-minute bake in a standard cake tin."
+        }
+      },
+      "ingredients": [
+        {
+          "id": "flour",
+          "name": "flour",
+          "name_original": "flour",
+          "quantity": {
+            "kind": "exact",
+            "value": 1.5,
+            "max_value": null,
+            "unit": "c",
+            "raw": "1½ c"
+          },
+          "preparation": "sifted",
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "1½ c flour",
+            "note": null
+          }
+        },
+        {
+          "id": "baking_powder",
+          "name": "baking powder",
+          "name_original": "baking powder",
+          "quantity": {
+            "kind": "exact",
+            "value": 1.0,
+            "max_value": null,
+            "unit": "T",
+            "raw": "1 T"
+          },
+          "preparation": "sifted",
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "1 T baking powder",
+            "note": null
+          }
+        },
+        {
+          "id": "vegan_butter",
+          "name": "vegan butter",
+          "name_original": "vegan butter",
+          "quantity": {
+            "kind": "exact",
+            "value": 0.25,
+            "max_value": null,
+            "unit": "#",
+            "raw": "¼ #"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "rule",
+            "page": 1,
+            "quote": "¼ # butter",
+            "note": "vegan substitute for 'butter': Dairy butter; vegan butter behaves the same for frying and baking."
+          }
+        },
+        {
+          "id": "sugar",
+          "name": "sugar",
+          "name_original": "sugar",
+          "quantity": {
+            "kind": "exact",
+            "value": 0.67,
+            "max_value": null,
+            "unit": "c",
+            "raw": "2/3 c"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "2/3 c sugar",
+            "note": "Also named in the glaze line without its own amount; one entry kept."
+          }
+        },
+        {
+          "id": "lemon_rind",
+          "name": "lemon rind",
+          "name_original": "lemon rind",
+          "quantity": {
+            "kind": "exact",
+            "value": 0.5,
+            "max_value": null,
+            "unit": null,
+            "raw": "½"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "½ lemon rind",
+            "note": null
+          }
+        },
+        {
+          "id": "vegan_egg",
+          "name": "flax egg (1 tbsp ground flaxseed + 3 tbsp water per egg)",
+          "name_original": "flax egg (1 tbsp ground flaxseed + 3 tbsp water per egg)",
+          "quantity": {
+            "kind": "exact",
+            "value": 3.0,
+            "max_value": null,
+            "unit": null,
+            "raw": "3"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "rule",
+            "page": 1,
+            "quote": "3 egg seperated",
+            "note": "vegan substitute for 'egg': Eggs that bind a dough or batter; a flax egg does the same."
+          }
+        },
+        {
+          "id": "vegan_milk",
+          "name": "oat milk",
+          "name_original": "oat milk",
+          "quantity": {
+            "kind": "exact",
+            "value": 0.25,
+            "max_value": null,
+            "unit": "c",
+            "raw": "¼ c"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "rule",
+            "page": 1,
+            "quote": "¼ c milk",
+            "note": "vegan substitute for 'milk': Dairy milk."
+          }
+        },
+        {
+          "id": "apple",
+          "name": "apple",
+          "name_original": "apple slices",
+          "quantity": {
+            "kind": "absent",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": "sliced",
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Places apple slices on top",
+            "note": null
+          }
+        },
+        {
+          "id": "vanilla",
+          "name": "vanilla",
+          "name_original": "vanilla",
+          "quantity": {
+            "kind": "exact",
+            "value": 1.0,
+            "max_value": null,
+            "unit": "t",
+            "raw": "1t"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "1t vanilla",
+            "note": null
+          }
+        },
+        {
+          "id": "water",
+          "name": "water",
+          "name_original": "water",
+          "quantity": {
+            "kind": "absent",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "water",
+            "note": null
+          }
+        }
+      ],
+      "tools": [
+        {
+          "id": "oven",
+          "name": "oven",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "350° oven",
+            "note": null
+          }
+        },
+        {
+          "id": "sieve",
+          "name": "sieve",
+          "source": {
+            "status": "inferred",
+            "page": 1,
+            "quote": "sift together",
+            "note": "Implied by the sifting step."
+          }
+        },
+        {
+          "id": "bowl",
+          "name": "bowl",
+          "source": {
+            "status": "inferred",
+            "page": 1,
+            "quote": "cream",
+            "note": "Implied by the creaming and mixing steps."
+          }
+        },
+        {
+          "id": "baking_pan",
+          "name": "cake tin",
+          "source": {
+            "status": "inferred",
+            "page": 1,
+            "quote": "Bake 45 mins in 350° oven.",
+            "note": "Implied by the bake step; not named in the text."
+          }
+        }
+      ],
+      "steps": [
+        {
+          "order": 1,
+          "text": "Sift together flour and baking powder.",
+          "ingredient_ids": [
+            "flour",
+            "baking_powder"
+          ],
+          "tool_ids": [
+            "sieve"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "sift together",
+            "note": null
+          }
+        },
+        {
+          "order": 2,
+          "text": "Cream butter and sugar.\n[Vegan: use vegan butter instead of butter.]",
+          "ingredient_ids": [
+            "vegan_butter",
+            "sugar"
+          ],
+          "tool_ids": [
+            "bowl"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "cream",
+            "note": null
+          }
+        },
+        {
+          "order": 3,
+          "text": "Add flour and milk alternately (¼ c milk).\n[Vegan: use oat milk instead of milk.]",
+          "ingredient_ids": [
+            "flour",
+            "vegan_milk"
+          ],
+          "tool_ids": [
+            "bowl"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Add flour + milk alternately (¼ c milk)",
+            "note": null
+          }
+        },
+        {
+          "order": 4,
+          "text": "Fold in beaten egg whites.\n[Vegan: use flax egg (1 tbsp ground flaxseed + 3 tbsp water per egg) instead of egg.]",
+          "ingredient_ids": [
+            "vegan_egg"
+          ],
+          "tool_ids": [
+            "bowl"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Fold in beaten egg whites.",
+            "note": null
+          }
+        },
+        {
+          "order": 5,
+          "text": "Place apple slices on top.",
+          "ingredient_ids": [
+            "apple"
+          ],
+          "tool_ids": [],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Places apple slices on top.",
+            "note": null
+          }
+        },
+        {
+          "order": 6,
+          "text": "Bake for 45 minutes in a 350° oven.",
+          "ingredient_ids": [],
+          "tool_ids": [
+            "oven",
+            "baking_pan"
+          ],
+          "duration": {
+            "raw": "45 mins",
+            "min_minutes": 45.0,
+            "max_minutes": 45.0
+          },
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Bake 45 mins in 350° oven.",
+            "note": null
+          }
+        },
+        {
+          "order": 7,
+          "text": "Glaze: sugar, 1 t vanilla, water.",
+          "ingredient_ids": [
+            "sugar",
+            "vanilla",
+            "water"
+          ],
+          "tool_ids": [
+            "bowl"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Glaze - sugar - 1t vanilla - water.",
+            "note": null
+          }
+        }
+      ],
+      "warnings": [
+        {
+          "message": "The card gives no method for the glaze and no amounts for its sugar or water; the glaze step is taken from the list only.",
+          "target_id": null
+        },
+        {
+          "message": "Lemon rind is listed but no step says where it goes.",
+          "target_id": null
+        },
+        {
+          "message": "The egg whites are folded in but the card does not say to separate the eggs; the separation is read from 'seperated' (old spelling).",
+          "target_id": null
+        },
+        {
+          "message": "Butter unit '#' is read as pound and kept as written, not converted.",
+          "target_id": null
+        },
+        {
+          "message": "Apple slices have no amount.",
+          "target_id": null
+        },
+        {
+          "message": "Servings are not stated; 8 is an estimate.",
+          "target_id": null
+        },
+        {
+          "message": "The bake step implies a cake tin that the text does not name.",
+          "target_id": null
+        },
+        {
+          "message": "Sugar appears in the cake and in the glaze; one entry is kept with the cake amount.",
+          "target_id": null
+        },
+        {
+          "message": "Vegan check, sugar: Some cane sugar is filtered through bone char. Beet sugar and sugar labelled vegan are safe.",
+          "target_id": "sugar"
+        }
+      ]
+    },
+    "changes": [
+      {
+        "rule": "vegan",
+        "target": "butter",
+        "before": "butter",
+        "after": "vegan butter",
+        "reason": "Dairy butter; vegan butter behaves the same for frying and baking."
+      },
+      {
+        "rule": "vegan",
+        "target": "egg",
+        "before": "egg",
+        "after": "flax egg (1 tbsp ground flaxseed + 3 tbsp water per egg)",
+        "reason": "Eggs that bind a dough or batter; a flax egg does the same."
+      },
+      {
+        "rule": "vegan",
+        "target": "milk",
+        "before": "milk",
+        "after": "oat milk",
+        "reason": "Dairy milk."
+      },
+      {
+        "rule": "vegan",
+        "target": "step 2",
+        "before": "butter",
+        "after": "vegan butter",
+        "reason": "Substitution carried into the method."
+      },
+      {
+        "rule": "vegan",
+        "target": "step 3",
+        "before": "milk",
+        "after": "oat milk",
+        "reason": "Substitution carried into the method."
+      },
+      {
+        "rule": "vegan",
+        "target": "step 4",
+        "before": "egg",
+        "after": "flax egg (1 tbsp ground flaxseed + 3 tbsp water per egg)",
+        "reason": "Substitution carried into the method."
+      },
+      {
+        "rule": "vegan",
+        "target": "sugar",
+        "before": "sugar",
+        "after": "unchanged, check the label",
+        "reason": "Some cane sugar is filtered through bone char. Beet sugar and sugar labelled vegan are safe."
+      }
+    ]
+  }
+}

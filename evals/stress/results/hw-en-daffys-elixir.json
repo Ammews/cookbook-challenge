@@ -1,0 +1,1358 @@
+{
+  "document": {
+    "name": "hw-en-daffys-elixir.jpg",
+    "kind": "image",
+    "pages": [
+      {
+        "number": 1,
+        "text": "Dr daffys Elixar from his owne hand\n\nTake 3 pints of aqua-vita, of Rhubarb and Sena each half an ounce. Coriander & aniseed half an ounce, one quarter of a drachm of Saffron, 3 pennyworth of Cochineal, one ounce of Liquorish, 1 pound of Raisins of the sun stoned. let the Rhubarb and Liquoris be sliced, the seeds and Saffron rubbed in a mortar, then put all the ingredients into the aqua-vita and let it stand a weeke\n\nThen strain it but dont squeeze the Cloth. to the same ingredients you may put a pint of aqua-vita more, let it stand a week & it will be as good as the other.\ntake 1-2 or 3 spoonfuls at night going to bed and in the morning as you find occasion it purges gently. you need not keep the House, you may make it with Brandy insted of aqua-vita but aqua-vita is best",
+        "method": "vision",
+        "decoration_text": [
+          "13"
+        ],
+        "uncertain": [
+          "Elixar",
+          "Liquoris",
+          "insted"
+        ],
+        "usage": {
+          "model": "claude-haiku-5-5",
+          "input_tokens": 4883,
+          "output_tokens": 373,
+          "seconds": 2.864363599999706,
+          "cached": false
+        }
+      }
+    ]
+  },
+  "extraction": {
+    "is_recipe": true,
+    "recipes_in_document": 1,
+    "recipe": {
+      "title": "Dr Daffy's Elixir",
+      "language": "en",
+      "servings": {
+        "value": null,
+        "source": {
+          "status": "missing",
+          "page": null,
+          "quote": null,
+          "note": "The text does not state a yield, and the amounts do not allow a reliable estimate."
+        }
+      },
+      "ingredients": [
+        {
+          "id": "aqua_vita",
+          "name": "aqua vita",
+          "name_original": "aqua-vita",
+          "quantity": {
+            "kind": "exact",
+            "value": 3.0,
+            "max_value": null,
+            "unit": "pints",
+            "raw": "3 pints"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Take 3 pints of aqua-vita",
+            "note": null
+          }
+        },
+        {
+          "id": "rhubarb",
+          "name": "rhubarb",
+          "name_original": "Rhubarb",
+          "quantity": {
+            "kind": "exact",
+            "value": 0.5,
+            "max_value": null,
+            "unit": "ounce",
+            "raw": "half an ounce"
+          },
+          "preparation": "sliced",
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Rhubarb and Sena each half an ounce",
+            "note": null
+          }
+        },
+        {
+          "id": "senna",
+          "name": "senna",
+          "name_original": "Sena",
+          "quantity": {
+            "kind": "exact",
+            "value": 0.5,
+            "max_value": null,
+            "unit": "ounce",
+            "raw": "half an ounce"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Sena each half an ounce",
+            "note": null
+          }
+        },
+        {
+          "id": "coriander",
+          "name": "coriander",
+          "name_original": "Coriander",
+          "quantity": {
+            "kind": "exact",
+            "value": 0.5,
+            "max_value": null,
+            "unit": "ounce",
+            "raw": "half an ounce"
+          },
+          "preparation": "rubbed in a mortar",
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Coriander & aniseed half an ounce",
+            "note": null
+          }
+        },
+        {
+          "id": "aniseed",
+          "name": "aniseed",
+          "name_original": "aniseed",
+          "quantity": {
+            "kind": "exact",
+            "value": 0.5,
+            "max_value": null,
+            "unit": "ounce",
+            "raw": "half an ounce"
+          },
+          "preparation": "rubbed in a mortar",
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Coriander & aniseed half an ounce",
+            "note": null
+          }
+        },
+        {
+          "id": "saffron",
+          "name": "saffron",
+          "name_original": "Saffron",
+          "quantity": {
+            "kind": "exact",
+            "value": 0.25,
+            "max_value": null,
+            "unit": "drachm",
+            "raw": "one quarter of a drachm"
+          },
+          "preparation": "rubbed in a mortar",
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "inferred",
+            "page": 1,
+            "quote": "one quarter of a drachm of Saffron",
+            "note": "The amount is written in words ('one quarter of a drachm'); the value 0.25 is the numeral form of that amount, not a number that appears in the quote."
+          }
+        },
+        {
+          "id": "cochineal",
+          "name": "cochineal",
+          "name_original": "Cochineal",
+          "quantity": {
+            "kind": "exact",
+            "value": 3.0,
+            "max_value": null,
+            "unit": "pennyworth",
+            "raw": "3 pennyworth"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "other_animal",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "3 pennyworth of Cochineal",
+            "note": null
+          }
+        },
+        {
+          "id": "liquorice",
+          "name": "liquorice",
+          "name_original": "Liquorish",
+          "quantity": {
+            "kind": "exact",
+            "value": 1.0,
+            "max_value": null,
+            "unit": "ounce",
+            "raw": "one ounce"
+          },
+          "preparation": "sliced",
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "one ounce of Liquorish",
+            "note": null
+          }
+        },
+        {
+          "id": "raisins",
+          "name": "raisins",
+          "name_original": "Raisins of the sun",
+          "quantity": {
+            "kind": "exact",
+            "value": 1.0,
+            "max_value": null,
+            "unit": "pound",
+            "raw": "1 pound"
+          },
+          "preparation": "stoned",
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "1 pound of Raisins of the sun stoned",
+            "note": null
+          }
+        }
+      ],
+      "tools": [
+        {
+          "id": "mortar",
+          "name": "mortar",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "rubbed in a mortar",
+            "note": null
+          }
+        },
+        {
+          "id": "cloth",
+          "name": "cloth",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "but dont squeeze the Cloth",
+            "note": null
+          }
+        },
+        {
+          "id": "strainer",
+          "name": "strainer",
+          "source": {
+            "status": "inferred",
+            "page": 1,
+            "quote": null,
+            "note": "Implied by the step 'Then strain it', which needs a strainer."
+          }
+        },
+        {
+          "id": "knife",
+          "name": "knife",
+          "source": {
+            "status": "inferred",
+            "page": 1,
+            "quote": null,
+            "note": "Implied by the step slicing the rhubarb and liquorice."
+          }
+        },
+        {
+          "id": "jar",
+          "name": "jar",
+          "source": {
+            "status": "inferred",
+            "page": 1,
+            "quote": null,
+            "note": "Implied by the step where everything stands a week in the aqua-vita."
+          }
+        }
+      ],
+      "steps": [
+        {
+          "order": 1,
+          "text": "Let the Rhubarb and Liquoris be sliced.",
+          "ingredient_ids": [
+            "rhubarb",
+            "liquorice"
+          ],
+          "tool_ids": [
+            "knife"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "let the Rhubarb and Liquoris be sliced",
+            "note": null
+          }
+        },
+        {
+          "order": 2,
+          "text": "Rub the seeds and Saffron in a mortar.",
+          "ingredient_ids": [
+            "coriander",
+            "aniseed",
+            "saffron"
+          ],
+          "tool_ids": [
+            "mortar"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "the seeds and Saffron rubbed in a mortar",
+            "note": null
+          }
+        },
+        {
+          "order": 3,
+          "text": "Put all the ingredients into the aqua-vita and let it stand a week.",
+          "ingredient_ids": [
+            "aqua_vita",
+            "rhubarb",
+            "senna",
+            "coriander",
+            "aniseed",
+            "saffron",
+            "cochineal",
+            "liquorice",
+            "raisins"
+          ],
+          "tool_ids": [
+            "jar"
+          ],
+          "duration": {
+            "raw": "a weeke",
+            "min_minutes": 10080.0,
+            "max_minutes": 10080.0
+          },
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "then put all the ingredients into the aqua-vita and let it stand a weeke",
+            "note": null
+          }
+        },
+        {
+          "order": 4,
+          "text": "Strain it, but do not squeeze the cloth.",
+          "ingredient_ids": [
+            "aqua_vita"
+          ],
+          "tool_ids": [
+            "strainer",
+            "cloth"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Then strain it but dont squeeze the Cloth.",
+            "note": null
+          }
+        },
+        {
+          "order": 5,
+          "text": "Optionally, add a pint of aqua-vita more to the same ingredients and let it stand a week.",
+          "ingredient_ids": [
+            "aqua_vita"
+          ],
+          "tool_ids": [
+            "jar"
+          ],
+          "duration": {
+            "raw": "a week",
+            "min_minutes": 10080.0,
+            "max_minutes": 10080.0
+          },
+          "condition": "if you want to add more aqua-vita",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "to the same ingredients you may put a pint of aqua-vita more, let it stand a week",
+            "note": null
+          }
+        },
+        {
+          "order": 6,
+          "text": "Take 1-2 or 3 spoonfuls at night going to bed and in the morning as you find occasion; it purges gently.",
+          "ingredient_ids": [],
+          "tool_ids": [],
+          "duration": null,
+          "condition": "at night going to bed and in the morning, as you find occasion",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "take 1-2 or 3 spoonfuls at night going to bed and in the morning as you find occasion it purges gently",
+            "note": null
+          }
+        }
+      ],
+      "warnings": [
+        {
+          "message": "Transcription was unsure about 'Elixar' (title), 'Liquoris' and 'insted'; the ingredient is written 'Liquorish' in the first mention and 'Liquoris' in the method.",
+          "target_id": null
+        },
+        {
+          "message": "The text allows Brandy instead of aqua-vita; it is not listed as an ingredient, only the aqua-vita is used.",
+          "target_id": null
+        },
+        {
+          "message": "The text allows one extra pint of aqua-vita; it is folded into the aqua-vita entry and the optional step, not added as a separate amount.",
+          "target_id": null
+        },
+        {
+          "message": "The yield is not stated; servings are missing.",
+          "target_id": null
+        },
+        {
+          "message": "'Sena' is read as senna and 'Raisins of the sun' as raisins; the seeds mentioned in the method are the coriander and aniseed.",
+          "target_id": null
+        },
+        {
+          "message": "Cochineal is an insect product and is classed as other_animal.",
+          "target_id": null
+        },
+        {
+          "message": "The dose '1-2 or 3 spoonfuls' is ambiguous and is recorded as written, without a unit or a single amount.",
+          "target_id": null
+        },
+        {
+          "message": "Steps 2 and 4 to 6 are inferred from the text; the knife, strainer and jar are implied tools, not named in the document.",
+          "target_id": null
+        },
+        {
+          "message": "The saffron amount is written in words ('one quarter of a drachm') and was converted to 0.25; please check.",
+          "target_id": null
+        }
+      ]
+    },
+    "usage": [
+      {
+        "model": "claude-haiku-5-5",
+        "input_tokens": 4695,
+        "output_tokens": 5522,
+        "seconds": 20.937531800000215,
+        "cached": false
+      },
+      {
+        "model": "claude-haiku-5-5",
+        "input_tokens": 7759,
+        "output_tokens": 3726,
+        "seconds": 12.643726000000242,
+        "cached": false
+      }
+    ],
+    "problems_found": [
+      "ingredient 'saffron': amount [0.25] does not appear in its quote 'one quarter of a drachm of Saffron'"
+    ],
+    "problems_left": []
+  },
+  "manipulation": {
+    "original": {
+      "title": "Dr Daffy's Elixir",
+      "language": "en",
+      "servings": {
+        "value": null,
+        "source": {
+          "status": "missing",
+          "page": null,
+          "quote": null,
+          "note": "The text does not state a yield, and the amounts do not allow a reliable estimate."
+        }
+      },
+      "ingredients": [
+        {
+          "id": "aqua_vita",
+          "name": "aqua vita",
+          "name_original": "aqua-vita",
+          "quantity": {
+            "kind": "exact",
+            "value": 3.0,
+            "max_value": null,
+            "unit": "pints",
+            "raw": "3 pints"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Take 3 pints of aqua-vita",
+            "note": null
+          }
+        },
+        {
+          "id": "rhubarb",
+          "name": "rhubarb",
+          "name_original": "Rhubarb",
+          "quantity": {
+            "kind": "exact",
+            "value": 0.5,
+            "max_value": null,
+            "unit": "ounce",
+            "raw": "half an ounce"
+          },
+          "preparation": "sliced",
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Rhubarb and Sena each half an ounce",
+            "note": null
+          }
+        },
+        {
+          "id": "senna",
+          "name": "senna",
+          "name_original": "Sena",
+          "quantity": {
+            "kind": "exact",
+            "value": 0.5,
+            "max_value": null,
+            "unit": "ounce",
+            "raw": "half an ounce"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Sena each half an ounce",
+            "note": null
+          }
+        },
+        {
+          "id": "coriander",
+          "name": "coriander",
+          "name_original": "Coriander",
+          "quantity": {
+            "kind": "exact",
+            "value": 0.5,
+            "max_value": null,
+            "unit": "ounce",
+            "raw": "half an ounce"
+          },
+          "preparation": "rubbed in a mortar",
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Coriander & aniseed half an ounce",
+            "note": null
+          }
+        },
+        {
+          "id": "aniseed",
+          "name": "aniseed",
+          "name_original": "aniseed",
+          "quantity": {
+            "kind": "exact",
+            "value": 0.5,
+            "max_value": null,
+            "unit": "ounce",
+            "raw": "half an ounce"
+          },
+          "preparation": "rubbed in a mortar",
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Coriander & aniseed half an ounce",
+            "note": null
+          }
+        },
+        {
+          "id": "saffron",
+          "name": "saffron",
+          "name_original": "Saffron",
+          "quantity": {
+            "kind": "exact",
+            "value": 0.25,
+            "max_value": null,
+            "unit": "drachm",
+            "raw": "one quarter of a drachm"
+          },
+          "preparation": "rubbed in a mortar",
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "inferred",
+            "page": 1,
+            "quote": "one quarter of a drachm of Saffron",
+            "note": "The amount is written in words ('one quarter of a drachm'); the value 0.25 is the numeral form of that amount, not a number that appears in the quote."
+          }
+        },
+        {
+          "id": "cochineal",
+          "name": "cochineal",
+          "name_original": "Cochineal",
+          "quantity": {
+            "kind": "exact",
+            "value": 3.0,
+            "max_value": null,
+            "unit": "pennyworth",
+            "raw": "3 pennyworth"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "other_animal",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "3 pennyworth of Cochineal",
+            "note": null
+          }
+        },
+        {
+          "id": "liquorice",
+          "name": "liquorice",
+          "name_original": "Liquorish",
+          "quantity": {
+            "kind": "exact",
+            "value": 1.0,
+            "max_value": null,
+            "unit": "ounce",
+            "raw": "one ounce"
+          },
+          "preparation": "sliced",
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "one ounce of Liquorish",
+            "note": null
+          }
+        },
+        {
+          "id": "raisins",
+          "name": "raisins",
+          "name_original": "Raisins of the sun",
+          "quantity": {
+            "kind": "exact",
+            "value": 1.0,
+            "max_value": null,
+            "unit": "pound",
+            "raw": "1 pound"
+          },
+          "preparation": "stoned",
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "1 pound of Raisins of the sun stoned",
+            "note": null
+          }
+        }
+      ],
+      "tools": [
+        {
+          "id": "mortar",
+          "name": "mortar",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "rubbed in a mortar",
+            "note": null
+          }
+        },
+        {
+          "id": "cloth",
+          "name": "cloth",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "but dont squeeze the Cloth",
+            "note": null
+          }
+        },
+        {
+          "id": "strainer",
+          "name": "strainer",
+          "source": {
+            "status": "inferred",
+            "page": 1,
+            "quote": null,
+            "note": "Implied by the step 'Then strain it', which needs a strainer."
+          }
+        },
+        {
+          "id": "knife",
+          "name": "knife",
+          "source": {
+            "status": "inferred",
+            "page": 1,
+            "quote": null,
+            "note": "Implied by the step slicing the rhubarb and liquorice."
+          }
+        },
+        {
+          "id": "jar",
+          "name": "jar",
+          "source": {
+            "status": "inferred",
+            "page": 1,
+            "quote": null,
+            "note": "Implied by the step where everything stands a week in the aqua-vita."
+          }
+        }
+      ],
+      "steps": [
+        {
+          "order": 1,
+          "text": "Let the Rhubarb and Liquoris be sliced.",
+          "ingredient_ids": [
+            "rhubarb",
+            "liquorice"
+          ],
+          "tool_ids": [
+            "knife"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "let the Rhubarb and Liquoris be sliced",
+            "note": null
+          }
+        },
+        {
+          "order": 2,
+          "text": "Rub the seeds and Saffron in a mortar.",
+          "ingredient_ids": [
+            "coriander",
+            "aniseed",
+            "saffron"
+          ],
+          "tool_ids": [
+            "mortar"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "the seeds and Saffron rubbed in a mortar",
+            "note": null
+          }
+        },
+        {
+          "order": 3,
+          "text": "Put all the ingredients into the aqua-vita and let it stand a week.",
+          "ingredient_ids": [
+            "aqua_vita",
+            "rhubarb",
+            "senna",
+            "coriander",
+            "aniseed",
+            "saffron",
+            "cochineal",
+            "liquorice",
+            "raisins"
+          ],
+          "tool_ids": [
+            "jar"
+          ],
+          "duration": {
+            "raw": "a weeke",
+            "min_minutes": 10080.0,
+            "max_minutes": 10080.0
+          },
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "then put all the ingredients into the aqua-vita and let it stand a weeke",
+            "note": null
+          }
+        },
+        {
+          "order": 4,
+          "text": "Strain it, but do not squeeze the cloth.",
+          "ingredient_ids": [
+            "aqua_vita"
+          ],
+          "tool_ids": [
+            "strainer",
+            "cloth"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Then strain it but dont squeeze the Cloth.",
+            "note": null
+          }
+        },
+        {
+          "order": 5,
+          "text": "Optionally, add a pint of aqua-vita more to the same ingredients and let it stand a week.",
+          "ingredient_ids": [
+            "aqua_vita"
+          ],
+          "tool_ids": [
+            "jar"
+          ],
+          "duration": {
+            "raw": "a week",
+            "min_minutes": 10080.0,
+            "max_minutes": 10080.0
+          },
+          "condition": "if you want to add more aqua-vita",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "to the same ingredients you may put a pint of aqua-vita more, let it stand a week",
+            "note": null
+          }
+        },
+        {
+          "order": 6,
+          "text": "Take 1-2 or 3 spoonfuls at night going to bed and in the morning as you find occasion; it purges gently.",
+          "ingredient_ids": [],
+          "tool_ids": [],
+          "duration": null,
+          "condition": "at night going to bed and in the morning, as you find occasion",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "take 1-2 or 3 spoonfuls at night going to bed and in the morning as you find occasion it purges gently",
+            "note": null
+          }
+        }
+      ],
+      "warnings": [
+        {
+          "message": "Transcription was unsure about 'Elixar' (title), 'Liquoris' and 'insted'; the ingredient is written 'Liquorish' in the first mention and 'Liquoris' in the method.",
+          "target_id": null
+        },
+        {
+          "message": "The text allows Brandy instead of aqua-vita; it is not listed as an ingredient, only the aqua-vita is used.",
+          "target_id": null
+        },
+        {
+          "message": "The text allows one extra pint of aqua-vita; it is folded into the aqua-vita entry and the optional step, not added as a separate amount.",
+          "target_id": null
+        },
+        {
+          "message": "The yield is not stated; servings are missing.",
+          "target_id": null
+        },
+        {
+          "message": "'Sena' is read as senna and 'Raisins of the sun' as raisins; the seeds mentioned in the method are the coriander and aniseed.",
+          "target_id": null
+        },
+        {
+          "message": "Cochineal is an insect product and is classed as other_animal.",
+          "target_id": null
+        },
+        {
+          "message": "The dose '1-2 or 3 spoonfuls' is ambiguous and is recorded as written, without a unit or a single amount.",
+          "target_id": null
+        },
+        {
+          "message": "Steps 2 and 4 to 6 are inferred from the text; the knife, strainer and jar are implied tools, not named in the document.",
+          "target_id": null
+        },
+        {
+          "message": "The saffron amount is written in words ('one quarter of a drachm') and was converted to 0.25; please check.",
+          "target_id": null
+        }
+      ]
+    },
+    "recipe": {
+      "title": "Dr Daffy's Elixir",
+      "language": "en",
+      "servings": {
+        "value": null,
+        "source": {
+          "status": "missing",
+          "page": null,
+          "quote": null,
+          "note": "The text does not state a yield, and the amounts do not allow a reliable estimate."
+        }
+      },
+      "ingredients": [
+        {
+          "id": "aqua_vita",
+          "name": "aqua vita",
+          "name_original": "aqua-vita",
+          "quantity": {
+            "kind": "exact",
+            "value": 3.0,
+            "max_value": null,
+            "unit": "pints",
+            "raw": "3 pints"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Take 3 pints of aqua-vita",
+            "note": null
+          }
+        },
+        {
+          "id": "rhubarb",
+          "name": "rhubarb",
+          "name_original": "Rhubarb",
+          "quantity": {
+            "kind": "exact",
+            "value": 0.5,
+            "max_value": null,
+            "unit": "ounce",
+            "raw": "half an ounce"
+          },
+          "preparation": "sliced",
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Rhubarb and Sena each half an ounce",
+            "note": null
+          }
+        },
+        {
+          "id": "senna",
+          "name": "senna",
+          "name_original": "Sena",
+          "quantity": {
+            "kind": "exact",
+            "value": 0.5,
+            "max_value": null,
+            "unit": "ounce",
+            "raw": "half an ounce"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Sena each half an ounce",
+            "note": null
+          }
+        },
+        {
+          "id": "coriander",
+          "name": "coriander",
+          "name_original": "Coriander",
+          "quantity": {
+            "kind": "exact",
+            "value": 0.5,
+            "max_value": null,
+            "unit": "ounce",
+            "raw": "half an ounce"
+          },
+          "preparation": "rubbed in a mortar",
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Coriander & aniseed half an ounce",
+            "note": null
+          }
+        },
+        {
+          "id": "aniseed",
+          "name": "aniseed",
+          "name_original": "aniseed",
+          "quantity": {
+            "kind": "exact",
+            "value": 0.5,
+            "max_value": null,
+            "unit": "ounce",
+            "raw": "half an ounce"
+          },
+          "preparation": "rubbed in a mortar",
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Coriander & aniseed half an ounce",
+            "note": null
+          }
+        },
+        {
+          "id": "saffron",
+          "name": "saffron",
+          "name_original": "Saffron",
+          "quantity": {
+            "kind": "exact",
+            "value": 0.25,
+            "max_value": null,
+            "unit": "drachm",
+            "raw": "one quarter of a drachm"
+          },
+          "preparation": "rubbed in a mortar",
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "inferred",
+            "page": 1,
+            "quote": "one quarter of a drachm of Saffron",
+            "note": "The amount is written in words ('one quarter of a drachm'); the value 0.25 is the numeral form of that amount, not a number that appears in the quote."
+          }
+        },
+        {
+          "id": "cochineal",
+          "name": "cochineal",
+          "name_original": "Cochineal",
+          "quantity": {
+            "kind": "exact",
+            "value": 3.0,
+            "max_value": null,
+            "unit": "pennyworth",
+            "raw": "3 pennyworth"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "other_animal",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "3 pennyworth of Cochineal",
+            "note": null
+          }
+        },
+        {
+          "id": "liquorice",
+          "name": "liquorice",
+          "name_original": "Liquorish",
+          "quantity": {
+            "kind": "exact",
+            "value": 1.0,
+            "max_value": null,
+            "unit": "ounce",
+            "raw": "one ounce"
+          },
+          "preparation": "sliced",
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "one ounce of Liquorish",
+            "note": null
+          }
+        },
+        {
+          "id": "raisins",
+          "name": "raisins",
+          "name_original": "Raisins of the sun",
+          "quantity": {
+            "kind": "exact",
+            "value": 1.0,
+            "max_value": null,
+            "unit": "pound",
+            "raw": "1 pound"
+          },
+          "preparation": "stoned",
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "1 pound of Raisins of the sun stoned",
+            "note": null
+          }
+        }
+      ],
+      "tools": [
+        {
+          "id": "mortar",
+          "name": "mortar",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "rubbed in a mortar",
+            "note": null
+          }
+        },
+        {
+          "id": "cloth",
+          "name": "cloth",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "but dont squeeze the Cloth",
+            "note": null
+          }
+        },
+        {
+          "id": "strainer",
+          "name": "strainer",
+          "source": {
+            "status": "inferred",
+            "page": 1,
+            "quote": null,
+            "note": "Implied by the step 'Then strain it', which needs a strainer."
+          }
+        },
+        {
+          "id": "knife",
+          "name": "knife",
+          "source": {
+            "status": "inferred",
+            "page": 1,
+            "quote": null,
+            "note": "Implied by the step slicing the rhubarb and liquorice."
+          }
+        },
+        {
+          "id": "jar",
+          "name": "jar",
+          "source": {
+            "status": "inferred",
+            "page": 1,
+            "quote": null,
+            "note": "Implied by the step where everything stands a week in the aqua-vita."
+          }
+        }
+      ],
+      "steps": [
+        {
+          "order": 1,
+          "text": "Let the Rhubarb and Liquoris be sliced.",
+          "ingredient_ids": [
+            "rhubarb",
+            "liquorice"
+          ],
+          "tool_ids": [
+            "knife"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "let the Rhubarb and Liquoris be sliced",
+            "note": null
+          }
+        },
+        {
+          "order": 2,
+          "text": "Rub the seeds and Saffron in a mortar.",
+          "ingredient_ids": [
+            "coriander",
+            "aniseed",
+            "saffron"
+          ],
+          "tool_ids": [
+            "mortar"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "the seeds and Saffron rubbed in a mortar",
+            "note": null
+          }
+        },
+        {
+          "order": 3,
+          "text": "Put all the ingredients into the aqua-vita and let it stand a week.",
+          "ingredient_ids": [
+            "aqua_vita",
+            "rhubarb",
+            "senna",
+            "coriander",
+            "aniseed",
+            "saffron",
+            "cochineal",
+            "liquorice",
+            "raisins"
+          ],
+          "tool_ids": [
+            "jar"
+          ],
+          "duration": {
+            "raw": "a weeke",
+            "min_minutes": 10080.0,
+            "max_minutes": 10080.0
+          },
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "then put all the ingredients into the aqua-vita and let it stand a weeke",
+            "note": null
+          }
+        },
+        {
+          "order": 4,
+          "text": "Strain it, but do not squeeze the cloth.",
+          "ingredient_ids": [
+            "aqua_vita"
+          ],
+          "tool_ids": [
+            "strainer",
+            "cloth"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Then strain it but dont squeeze the Cloth.",
+            "note": null
+          }
+        },
+        {
+          "order": 5,
+          "text": "Optionally, add a pint of aqua-vita more to the same ingredients and let it stand a week.",
+          "ingredient_ids": [
+            "aqua_vita"
+          ],
+          "tool_ids": [
+            "jar"
+          ],
+          "duration": {
+            "raw": "a week",
+            "min_minutes": 10080.0,
+            "max_minutes": 10080.0
+          },
+          "condition": "if you want to add more aqua-vita",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "to the same ingredients you may put a pint of aqua-vita more, let it stand a week",
+            "note": null
+          }
+        },
+        {
+          "order": 6,
+          "text": "Take 1-2 or 3 spoonfuls at night going to bed and in the morning as you find occasion; it purges gently.",
+          "ingredient_ids": [],
+          "tool_ids": [],
+          "duration": null,
+          "condition": "at night going to bed and in the morning, as you find occasion",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "take 1-2 or 3 spoonfuls at night going to bed and in the morning as you find occasion it purges gently",
+            "note": null
+          }
+        }
+      ],
+      "warnings": [
+        {
+          "message": "Transcription was unsure about 'Elixar' (title), 'Liquoris' and 'insted'; the ingredient is written 'Liquorish' in the first mention and 'Liquoris' in the method.",
+          "target_id": null
+        },
+        {
+          "message": "The text allows Brandy instead of aqua-vita; it is not listed as an ingredient, only the aqua-vita is used.",
+          "target_id": null
+        },
+        {
+          "message": "The text allows one extra pint of aqua-vita; it is folded into the aqua-vita entry and the optional step, not added as a separate amount.",
+          "target_id": null
+        },
+        {
+          "message": "The yield is not stated; servings are missing.",
+          "target_id": null
+        },
+        {
+          "message": "'Sena' is read as senna and 'Raisins of the sun' as raisins; the seeds mentioned in the method are the coriander and aniseed.",
+          "target_id": null
+        },
+        {
+          "message": "Cochineal is an insect product and is classed as other_animal.",
+          "target_id": null
+        },
+        {
+          "message": "The dose '1-2 or 3 spoonfuls' is ambiguous and is recorded as written, without a unit or a single amount.",
+          "target_id": null
+        },
+        {
+          "message": "Steps 2 and 4 to 6 are inferred from the text; the knife, strainer and jar are implied tools, not named in the document.",
+          "target_id": null
+        },
+        {
+          "message": "The saffron amount is written in words ('one quarter of a drachm') and was converted to 0.25; please check.",
+          "target_id": null
+        },
+        {
+          "message": "Not fully vegan: no vegan substitute is known for Cochineal. Choose one before cooking.",
+          "target_id": null
+        },
+        {
+          "message": "Vegan, Cochineal: contains other animal, and no vegan substitute is known for it.",
+          "target_id": "cochineal"
+        }
+      ]
+    },
+    "changes": [
+      {
+        "rule": "vegan",
+        "target": "cochineal",
+        "before": "Cochineal",
+        "after": "unchanged, no known substitute",
+        "reason": "contains other animal, and no vegan substitute is known for it."
+      }
+    ]
+  }
+}

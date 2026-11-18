@@ -1,0 +1,945 @@
+{
+  "document": {
+    "name": "pdf-en-way-to-mans-heart.pdf",
+    "kind": "pdf",
+    "pages": [
+      {
+        "number": 1,
+        "text": "Winter Salad.—122. Take the white parts of two heads of celery and cut them up very fine, slice half a boiled beet, shell one-fourth of a pint of shrimps, mix all together in half a pint of mayonnaise sauce, and dust over with powdered coral. Chicken Salad.—123. The white meat of cold boiled chicken or turkey, three-quarters of the same bulk of chopped celery, a rich mayonnaise. Chop the meat fine, removing every scrap of fat, gristle and skin; mix carefully with the celery, and set in a cold place while you mix the mayonnaise. Be sure to make enough mayonnaise, not only to mix thoroughly with the chicken, but to lie on the top. Garnish with a wreath of lettuce hearts, hard boiled eggs, pickled cucumbers and beets cut into shapes. Shrimp Salad.—124. Boil a quart of fresh shrimps for twenty minutes. Open and throw away the shells. Take the crisp leaves of a head of lettuce, and place in a salad-bowl with two fresh tomatoes peeled and sliced. Add the shrimps and pour over all a mayonnaise—red, if convenient—and serve. Tomato Salad.—125. Twelve tomatoes peeled and sliced, four eggs boiled hard, one egg (raw) well beaten, one teaspoonful of salt, one-half of a teaspoonful of cayenne pepper, one teaspoonful of sugar, one teacupful of vinegar; set on ice to become perfectly cold.",
+        "method": "vision",
+        "decoration_text": [
+          "— 57 —"
+        ],
+        "uncertain": [],
+        "usage": {
+          "model": "claude-haiku-5-5",
+          "input_tokens": 4235,
+          "output_tokens": 555,
+          "seconds": 3.067915700001322,
+          "cached": false
+        }
+      },
+      {
+        "number": 2,
+        "text": "Lobster Salad.—126.\n\nOne fine lobster, one lettuce, one endive, three or four hard boiled eggs, some mayonnaise dressing; if possible, some aspic jelly. Remove the flesh from the body and claws of the lobster, and cut into pieces. Let the lettuce be well washed and dried, cut it up, and mix it with the lobster and some mayonnaise sauce. Put a border of chopped aspic on a dish. Heap the salad in the middle. Decorate the salad with pieces of endive and hard boiled eggs cut in quarters.\n\nOrange Salad.—127.\n\nTwo oranges, one-fourth of a pint of oil, one teaspoonful of vinegar, one saltspoonful of pepper, one-half of a saltspoonful of salt. Cut the oranges into thin slices. Mix the vinegar, pepper, salt and oil, and pour over the orange.\n\nOyster Salad.—128.\n\nDirections for dressing one gallon of oysters; Heat the oysters until they curd or plump; mix together the well-beaten yolks of twelve raw eggs, half a cupful of made mustard, one teacupful of white sugar, one teacupful of butter. These ingredients must be made hot, and be ready to pour over the oysters as soon as these are ladled out of the kettle. As shortly before the time of serving supper as is practicable, chop up as much bleached celery as will fill a quart measure; add it to the dressed oysters, mixing lightly with a wooden fork and spoon, and placing it in a salad bowl, ready for serving.",
+        "method": "vision",
+        "decoration_text": [
+          "— 58 —"
+        ],
+        "uncertain": [],
+        "usage": {
+          "model": "claude-haiku-5-5",
+          "input_tokens": 4235,
+          "output_tokens": 568,
+          "seconds": 2.7185657000009087,
+          "cached": false
+        }
+      }
+    ]
+  },
+  "extraction": {
+    "is_recipe": true,
+    "recipes_in_document": 7,
+    "recipe": {
+      "title": "Winter Salad",
+      "language": "en",
+      "servings": {
+        "value": 4,
+        "source": {
+          "status": "inferred",
+          "page": 1,
+          "quote": null,
+          "note": "Servings are not stated. Estimated at about four portions from two heads of celery, a boiled beet, a quarter pint of shrimps and half a pint of mayonnaise."
+        }
+      },
+      "ingredients": [
+        {
+          "id": "celery",
+          "name": "celery",
+          "name_original": "celery",
+          "quantity": {
+            "kind": "exact",
+            "value": 2.0,
+            "max_value": null,
+            "unit": "heads",
+            "raw": "two heads"
+          },
+          "preparation": "white parts only, cut very fine",
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "the white parts of two heads of celery",
+            "note": null
+          }
+        },
+        {
+          "id": "beet",
+          "name": "beet",
+          "name_original": "beet",
+          "quantity": {
+            "kind": "exact",
+            "value": 0.5,
+            "max_value": null,
+            "unit": null,
+            "raw": "half"
+          },
+          "preparation": "boiled, sliced",
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "half a boiled beet",
+            "note": null
+          }
+        },
+        {
+          "id": "shrimps",
+          "name": "shrimps",
+          "name_original": "shrimps",
+          "quantity": {
+            "kind": "exact",
+            "value": 0.25,
+            "max_value": null,
+            "unit": "pint",
+            "raw": "one-fourth of a pint"
+          },
+          "preparation": "shelled",
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "fish",
+          "source": {
+            "status": "inferred",
+            "page": 1,
+            "quote": "one-fourth of a pint of shrimps",
+            "note": "the amount 0.25 pint is not written in the quoted text"
+          }
+        },
+        {
+          "id": "mayonnaise",
+          "name": "mayonnaise sauce",
+          "name_original": "mayonnaise sauce",
+          "quantity": {
+            "kind": "exact",
+            "value": 0.5,
+            "max_value": null,
+            "unit": "pint",
+            "raw": "half a pint"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "egg",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "half a pint of mayonnaise sauce",
+            "note": null
+          }
+        },
+        {
+          "id": "coral_powder",
+          "name": "powdered coral",
+          "name_original": "powdered coral",
+          "quantity": {
+            "kind": "absent",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": "powdered",
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "uncertain",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "powdered coral",
+            "note": null
+          }
+        }
+      ],
+      "tools": [
+        {
+          "id": "knife",
+          "name": "knife",
+          "source": {
+            "status": "inferred",
+            "page": 1,
+            "quote": null,
+            "note": "Implied by cutting the celery very fine and slicing the beet."
+          }
+        },
+        {
+          "id": "mixing_bowl",
+          "name": "mixing bowl",
+          "source": {
+            "status": "inferred",
+            "page": 1,
+            "quote": null,
+            "note": "Implied by mixing the celery, beet and shrimps in the mayonnaise."
+          }
+        }
+      ],
+      "steps": [
+        {
+          "order": 1,
+          "text": "Take the white parts of two heads of celery and cut them up very fine.",
+          "ingredient_ids": [
+            "celery"
+          ],
+          "tool_ids": [
+            "knife"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Take the white parts of two heads of celery and cut them up very fine",
+            "note": null
+          }
+        },
+        {
+          "order": 2,
+          "text": "Slice half a boiled beet.",
+          "ingredient_ids": [
+            "beet"
+          ],
+          "tool_ids": [
+            "knife"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "slice half a boiled beet",
+            "note": null
+          }
+        },
+        {
+          "order": 3,
+          "text": "Shell one-fourth of a pint of shrimps.",
+          "ingredient_ids": [
+            "shrimps"
+          ],
+          "tool_ids": [],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "shell one-fourth of a pint of shrimps",
+            "note": null
+          }
+        },
+        {
+          "order": 4,
+          "text": "Mix all together in half a pint of mayonnaise sauce.",
+          "ingredient_ids": [
+            "celery",
+            "beet",
+            "shrimps",
+            "mayonnaise"
+          ],
+          "tool_ids": [
+            "mixing_bowl"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "mix all together in half a pint of mayonnaise sauce",
+            "note": null
+          }
+        },
+        {
+          "order": 5,
+          "text": "Dust over with powdered coral.",
+          "ingredient_ids": [
+            "coral_powder"
+          ],
+          "tool_ids": [],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "dust over with powdered coral",
+            "note": null
+          }
+        }
+      ],
+      "warnings": [
+        {
+          "message": "The document holds seven recipes (Winter Salad 122 to Oyster Salad 128). Only the first, Winter Salad (122), was extracted. Skipped: Chicken Salad (123), Shrimp Salad (124), Tomato Salad (125), Lobster Salad (126), Orange Salad (127), Oyster Salad (128).",
+          "target_id": null
+        },
+        {
+          "message": "Servings are not stated in the text and were inferred as four.",
+          "target_id": null
+        },
+        {
+          "message": "Powdered coral is of uncertain animal origin and no amount is given; the reviewer should check what the coral powder is.",
+          "target_id": null
+        },
+        {
+          "message": "Shrimps are shellfish and are classed as fish here.",
+          "target_id": null
+        },
+        {
+          "message": "The amount for the boiled beet ('half') has no unit, so it is taken as a count of one beet.",
+          "target_id": null
+        },
+        {
+          "message": "The shrimp amount is written in words ('one-fourth of a pint'); the value 0.25 is the numeric form of that wording and does not appear literally in the quote, so the reviewer should confirm it.",
+          "target_id": null
+        },
+        {
+          "message": "The beet amount 'half' is also written in words and converted to 0.5.",
+          "target_id": null
+        },
+        {
+          "message": "Amount of 'shrimps' is not in the text it cites; check it.",
+          "target_id": "shrimps"
+        },
+        {
+          "message": "1 problem(s) remained after the correction round.",
+          "target_id": null
+        }
+      ]
+    },
+    "usage": [
+      {
+        "model": "claude-haiku-5-5",
+        "input_tokens": 5433,
+        "output_tokens": 3563,
+        "seconds": 14.338845200001742,
+        "cached": false
+      },
+      {
+        "model": "claude-haiku-5-5",
+        "input_tokens": 7364,
+        "output_tokens": 2827,
+        "seconds": 10.88606450000043,
+        "cached": false
+      }
+    ],
+    "problems_found": [
+      "ingredient 'shrimps': amount [0.25] does not appear in its quote 'one-fourth of a pint of shrimps'"
+    ],
+    "problems_left": [
+      "ingredient 'shrimps': amount [0.25] does not appear in its quote 'one-fourth of a pint of shrimps'"
+    ]
+  },
+  "manipulation": {
+    "original": {
+      "title": "Winter Salad",
+      "language": "en",
+      "servings": {
+        "value": 4,
+        "source": {
+          "status": "inferred",
+          "page": 1,
+          "quote": null,
+          "note": "Servings are not stated. Estimated at about four portions from two heads of celery, a boiled beet, a quarter pint of shrimps and half a pint of mayonnaise."
+        }
+      },
+      "ingredients": [
+        {
+          "id": "celery",
+          "name": "celery",
+          "name_original": "celery",
+          "quantity": {
+            "kind": "exact",
+            "value": 2.0,
+            "max_value": null,
+            "unit": "heads",
+            "raw": "two heads"
+          },
+          "preparation": "white parts only, cut very fine",
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "the white parts of two heads of celery",
+            "note": null
+          }
+        },
+        {
+          "id": "beet",
+          "name": "beet",
+          "name_original": "beet",
+          "quantity": {
+            "kind": "exact",
+            "value": 0.5,
+            "max_value": null,
+            "unit": null,
+            "raw": "half"
+          },
+          "preparation": "boiled, sliced",
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "half a boiled beet",
+            "note": null
+          }
+        },
+        {
+          "id": "shrimps",
+          "name": "shrimps",
+          "name_original": "shrimps",
+          "quantity": {
+            "kind": "exact",
+            "value": 0.25,
+            "max_value": null,
+            "unit": "pint",
+            "raw": "one-fourth of a pint"
+          },
+          "preparation": "shelled",
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "fish",
+          "source": {
+            "status": "inferred",
+            "page": 1,
+            "quote": "one-fourth of a pint of shrimps",
+            "note": "the amount 0.25 pint is not written in the quoted text"
+          }
+        },
+        {
+          "id": "mayonnaise",
+          "name": "mayonnaise sauce",
+          "name_original": "mayonnaise sauce",
+          "quantity": {
+            "kind": "exact",
+            "value": 0.5,
+            "max_value": null,
+            "unit": "pint",
+            "raw": "half a pint"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "egg",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "half a pint of mayonnaise sauce",
+            "note": null
+          }
+        },
+        {
+          "id": "coral_powder",
+          "name": "powdered coral",
+          "name_original": "powdered coral",
+          "quantity": {
+            "kind": "absent",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": "powdered",
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "uncertain",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "powdered coral",
+            "note": null
+          }
+        }
+      ],
+      "tools": [
+        {
+          "id": "knife",
+          "name": "knife",
+          "source": {
+            "status": "inferred",
+            "page": 1,
+            "quote": null,
+            "note": "Implied by cutting the celery very fine and slicing the beet."
+          }
+        },
+        {
+          "id": "mixing_bowl",
+          "name": "mixing bowl",
+          "source": {
+            "status": "inferred",
+            "page": 1,
+            "quote": null,
+            "note": "Implied by mixing the celery, beet and shrimps in the mayonnaise."
+          }
+        }
+      ],
+      "steps": [
+        {
+          "order": 1,
+          "text": "Take the white parts of two heads of celery and cut them up very fine.",
+          "ingredient_ids": [
+            "celery"
+          ],
+          "tool_ids": [
+            "knife"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Take the white parts of two heads of celery and cut them up very fine",
+            "note": null
+          }
+        },
+        {
+          "order": 2,
+          "text": "Slice half a boiled beet.",
+          "ingredient_ids": [
+            "beet"
+          ],
+          "tool_ids": [
+            "knife"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "slice half a boiled beet",
+            "note": null
+          }
+        },
+        {
+          "order": 3,
+          "text": "Shell one-fourth of a pint of shrimps.",
+          "ingredient_ids": [
+            "shrimps"
+          ],
+          "tool_ids": [],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "shell one-fourth of a pint of shrimps",
+            "note": null
+          }
+        },
+        {
+          "order": 4,
+          "text": "Mix all together in half a pint of mayonnaise sauce.",
+          "ingredient_ids": [
+            "celery",
+            "beet",
+            "shrimps",
+            "mayonnaise"
+          ],
+          "tool_ids": [
+            "mixing_bowl"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "mix all together in half a pint of mayonnaise sauce",
+            "note": null
+          }
+        },
+        {
+          "order": 5,
+          "text": "Dust over with powdered coral.",
+          "ingredient_ids": [
+            "coral_powder"
+          ],
+          "tool_ids": [],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "dust over with powdered coral",
+            "note": null
+          }
+        }
+      ],
+      "warnings": [
+        {
+          "message": "The document holds seven recipes (Winter Salad 122 to Oyster Salad 128). Only the first, Winter Salad (122), was extracted. Skipped: Chicken Salad (123), Shrimp Salad (124), Tomato Salad (125), Lobster Salad (126), Orange Salad (127), Oyster Salad (128).",
+          "target_id": null
+        },
+        {
+          "message": "Servings are not stated in the text and were inferred as four.",
+          "target_id": null
+        },
+        {
+          "message": "Powdered coral is of uncertain animal origin and no amount is given; the reviewer should check what the coral powder is.",
+          "target_id": null
+        },
+        {
+          "message": "Shrimps are shellfish and are classed as fish here.",
+          "target_id": null
+        },
+        {
+          "message": "The amount for the boiled beet ('half') has no unit, so it is taken as a count of one beet.",
+          "target_id": null
+        },
+        {
+          "message": "The shrimp amount is written in words ('one-fourth of a pint'); the value 0.25 is the numeric form of that wording and does not appear literally in the quote, so the reviewer should confirm it.",
+          "target_id": null
+        },
+        {
+          "message": "The beet amount 'half' is also written in words and converted to 0.5.",
+          "target_id": null
+        },
+        {
+          "message": "Amount of 'shrimps' is not in the text it cites; check it.",
+          "target_id": "shrimps"
+        },
+        {
+          "message": "1 problem(s) remained after the correction round.",
+          "target_id": null
+        }
+      ]
+    },
+    "recipe": {
+      "title": "Winter Salad",
+      "language": "en",
+      "servings": {
+        "value": 4,
+        "source": {
+          "status": "inferred",
+          "page": 1,
+          "quote": null,
+          "note": "Servings are not stated. Estimated at about four portions from two heads of celery, a boiled beet, a quarter pint of shrimps and half a pint of mayonnaise."
+        }
+      },
+      "ingredients": [
+        {
+          "id": "celery",
+          "name": "celery",
+          "name_original": "celery",
+          "quantity": {
+            "kind": "exact",
+            "value": 2.0,
+            "max_value": null,
+            "unit": "heads",
+            "raw": "two heads"
+          },
+          "preparation": "white parts only, cut very fine",
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "the white parts of two heads of celery",
+            "note": null
+          }
+        },
+        {
+          "id": "beet",
+          "name": "beet",
+          "name_original": "beet",
+          "quantity": {
+            "kind": "exact",
+            "value": 0.5,
+            "max_value": null,
+            "unit": null,
+            "raw": "half"
+          },
+          "preparation": "boiled, sliced",
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "half a boiled beet",
+            "note": null
+          }
+        },
+        {
+          "id": "vegan_shrimps",
+          "name": "marinated smoked tofu",
+          "name_original": "marinated smoked tofu",
+          "quantity": {
+            "kind": "vague",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": "same weight as the shrimps it replaces"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "rule",
+            "page": 1,
+            "quote": "one-fourth of a pint of shrimps",
+            "note": "vegan substitute for 'shrimps': Fish or seafood."
+          }
+        },
+        {
+          "id": "mayonnaise",
+          "name": "mayonnaise sauce",
+          "name_original": "mayonnaise sauce",
+          "quantity": {
+            "kind": "exact",
+            "value": 0.5,
+            "max_value": null,
+            "unit": "pint",
+            "raw": "half a pint"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "egg",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "half a pint of mayonnaise sauce",
+            "note": null
+          }
+        },
+        {
+          "id": "coral_powder",
+          "name": "powdered coral",
+          "name_original": "powdered coral",
+          "quantity": {
+            "kind": "absent",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": "powdered",
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "uncertain",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "powdered coral",
+            "note": null
+          }
+        }
+      ],
+      "tools": [
+        {
+          "id": "knife",
+          "name": "knife",
+          "source": {
+            "status": "inferred",
+            "page": 1,
+            "quote": null,
+            "note": "Implied by cutting the celery very fine and slicing the beet."
+          }
+        },
+        {
+          "id": "mixing_bowl",
+          "name": "mixing bowl",
+          "source": {
+            "status": "inferred",
+            "page": 1,
+            "quote": null,
+            "note": "Implied by mixing the celery, beet and shrimps in the mayonnaise."
+          }
+        }
+      ],
+      "steps": [
+        {
+          "order": 1,
+          "text": "Take the white parts of two heads of celery and cut them up very fine.",
+          "ingredient_ids": [
+            "celery"
+          ],
+          "tool_ids": [
+            "knife"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Take the white parts of two heads of celery and cut them up very fine",
+            "note": null
+          }
+        },
+        {
+          "order": 2,
+          "text": "Slice half a boiled beet.",
+          "ingredient_ids": [
+            "beet"
+          ],
+          "tool_ids": [
+            "knife"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "slice half a boiled beet",
+            "note": null
+          }
+        },
+        {
+          "order": 3,
+          "text": "Shell one-fourth of a pint of shrimps.\n[Vegan: use marinated smoked tofu instead of shrimps.]",
+          "ingredient_ids": [
+            "vegan_shrimps"
+          ],
+          "tool_ids": [],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "shell one-fourth of a pint of shrimps",
+            "note": null
+          }
+        },
+        {
+          "order": 4,
+          "text": "Mix all together in half a pint of mayonnaise sauce.\n[Vegan: use marinated smoked tofu instead of shrimps.]",
+          "ingredient_ids": [
+            "celery",
+            "beet",
+            "vegan_shrimps",
+            "mayonnaise"
+          ],
+          "tool_ids": [
+            "mixing_bowl"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "mix all together in half a pint of mayonnaise sauce",
+            "note": null
+          }
+        },
+        {
+          "order": 5,
+          "text": "Dust over with powdered coral.",
+          "ingredient_ids": [
+            "coral_powder"
+          ],
+          "tool_ids": [],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "dust over with powdered coral",
+            "note": null
+          }
+        }
+      ],
+      "warnings": [
+        {
+          "message": "The document holds seven recipes (Winter Salad 122 to Oyster Salad 128). Only the first, Winter Salad (122), was extracted. Skipped: Chicken Salad (123), Shrimp Salad (124), Tomato Salad (125), Lobster Salad (126), Orange Salad (127), Oyster Salad (128).",
+          "target_id": null
+        },
+        {
+          "message": "Servings are not stated in the text and were inferred as four.",
+          "target_id": null
+        },
+        {
+          "message": "Powdered coral is of uncertain animal origin and no amount is given; the reviewer should check what the coral powder is.",
+          "target_id": null
+        },
+        {
+          "message": "Shrimps are shellfish and are classed as fish here.",
+          "target_id": null
+        },
+        {
+          "message": "The amount for the boiled beet ('half') has no unit, so it is taken as a count of one beet.",
+          "target_id": null
+        },
+        {
+          "message": "The shrimp amount is written in words ('one-fourth of a pint'); the value 0.25 is the numeric form of that wording and does not appear literally in the quote, so the reviewer should confirm it.",
+          "target_id": null
+        },
+        {
+          "message": "The beet amount 'half' is also written in words and converted to 0.5.",
+          "target_id": null
+        },
+        {
+          "message": "Amount of 'shrimps' is not in the text it cites; check it.",
+          "target_id": "shrimps"
+        },
+        {
+          "message": "1 problem(s) remained after the correction round.",
+          "target_id": null
+        },
+        {
+          "message": "Not fully vegan: no vegan substitute is known for mayonnaise sauce, powdered coral. Choose one before cooking.",
+          "target_id": null
+        },
+        {
+          "message": "Vegan, mayonnaise sauce: contains egg, and no vegan substitute is known for it.",
+          "target_id": "mayonnaise"
+        },
+        {
+          "message": "Vegan, powdered coral: could not tell whether it contains animal products (it depends on the brand or recipe).",
+          "target_id": "coral_powder"
+        }
+      ]
+    },
+    "changes": [
+      {
+        "rule": "vegan",
+        "target": "shrimps",
+        "before": "shrimps",
+        "after": "marinated smoked tofu",
+        "reason": "Fish or seafood."
+      },
+      {
+        "rule": "vegan",
+        "target": "step 3",
+        "before": "shrimps",
+        "after": "marinated smoked tofu",
+        "reason": "Substitution carried into the method."
+      },
+      {
+        "rule": "vegan",
+        "target": "step 4",
+        "before": "shrimps",
+        "after": "marinated smoked tofu",
+        "reason": "Substitution carried into the method."
+      },
+      {
+        "rule": "vegan",
+        "target": "mayonnaise",
+        "before": "mayonnaise sauce",
+        "after": "unchanged, no known substitute",
+        "reason": "contains egg, and no vegan substitute is known for it."
+      },
+      {
+        "rule": "vegan",
+        "target": "coral_powder",
+        "before": "powdered coral",
+        "after": "unchanged, no known substitute",
+        "reason": "could not tell whether it contains animal products (it depends on the brand or recipe)."
+      }
+    ]
+  }
+}

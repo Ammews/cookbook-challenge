@@ -1,0 +1,889 @@
+{
+  "document": {
+    "name": "pdf-fr-gouffe.pdf",
+    "kind": "pdf",
+    "pages": [
+      {
+        "number": 1,
+        "text": "MARMELADE D'ABRICOTS.\n\nAvez 4 kilos d'abricots tout épluchés et coupés en quartiers; mettez-les dans une terrine avec 2 kilos 400 de sucre pilé;\n\nRemuez avec la cuiller de bois pour faire fondre le sucre; lorsqu'il est fondu, mettez les abricots dans la bassine et remuez avec l'écumoire pendant 10 minutes de bouillon;\n\nRetirez l'écumoire et agitez-la en l'air pour la rafraîchir;\n\nFrottez avec le doigt sur l'écumoire, et si la marmelade est greneuse [?], elle est cuite. On peut aussi s'assurer de la cuisson en mettant gros comme une noisette de marmelade sur une assiette, et en voyant si elle ne s'étale pas;\n\nMettez en pot, laissez refroidir et couvrez comme la gelée de groseilles.\n\nGELÉE DE POMMES.\n\nAvez 3 kilos de pommes de reinette de Canada tout épluchées; on peut faire de la gelée avec toute sorte de pommes, mais on doit prendre de préférence le calville ou le canada.\n\nMettez les pommes dans la bassine avec 4 litres d'eau, et faites-les bouillir jusqu'à entière cuisson.\n\nLorsqu'elles sont réduites en marmelade, égouttez sur le tamis de crin, pesez le jus, remettez-le dans la bassine avec 6 hectos de sucre cassé en morceaux par kilo de jus.\n\nLa marmelade qui a servi pour la gelée peut s'employer dans le ménage pour flans, charlottes, compotes, etc.;\n\nFaites fondre sur le feu; passez à la serviette; faites cuire à 28 degrés et en deux parties;\n\nMettez dans les pots et couvrez comme il est dit à l'article Gelée de groseilles (page 322).\n\nGELÉE DE COINGS.\n\nAvez 2 kilos de coings tout épluchés; coupez-les en quatre, puis retirez les peaux, les cœurs et les pépins;\n\nMettez-les, à mesure que vous les épluchez, dans une terrine d'eau froide pour éviter qu'ils rougissent;",
+        "method": "vision",
+        "decoration_text": [
+          "324 LE LIVRE DE CUISINE. — PREMIÈRE PARTIE."
+        ],
+        "uncertain": [
+          "greneuse"
+        ],
+        "usage": {
+          "model": "claude-haiku-5-5",
+          "input_tokens": 3875,
+          "output_tokens": 2463,
+          "seconds": 9.942339400000492,
+          "cached": false
+        }
+      },
+      {
+        "number": 2,
+        "text": "Mettez-les ensuite dans la bassine, avec 4 litres d'eau, et faites cuire jusqu'à ce qu'ils soient en marmelade;\nÉgouttez sur le tamis, pesez le jus;\nMettez 6 hectos de sucre par kilo de jus;\nFinissez comme la Gelée de pommes (voir l'article précédent).\n\nCERNEAUX AU VERJUS.\n\nAyez 50 cerneaux que vous égouttez bien; mettez-les dans le compotier;\nArrosez-les d'un demi-décilitre de jus de verjus que vous ferez en pilant une grappe de verjus; vous passerez ensuite celui-ci avec pression à travers un linge blanc;\nAjoutez 30 grammes de gros sel et 2 prises de poivre.\nOn prépare les cerneaux 5 minutes avant de servir.\n\nFROMAGES ET FRUITS DE SAISON.\n\nOn comprend qu'il n'y ait pas d'indications spéciales à donner pour les fromages et les fruits de saison, si ce n'est qu'on doit acheter les fruits dans les belles qualités et choisir les fromages, aux différentes époques, dans les meilleures conditions suivant les espèces.\nCe qui importe surtout, c'est de savoir comment on doit servir cette partie du dessert. Les fruits surtout gagnent beaucoup à être dressés dans certaines conditions de goût et d'élégance. Les dessins ci-joints donneront une idée de la manière dont on doit les arranger pour les présenter convenablement sur la table.",
+        "method": "vision",
+        "decoration_text": [
+          "DESSERT.",
+          "323",
+          "Fig. 93. Pommes de cabille [?]"
+        ],
+        "uncertain": [
+          "cabille"
+        ],
+        "usage": {
+          "model": "claude-haiku-5-5",
+          "input_tokens": 3875,
+          "output_tokens": 2174,
+          "seconds": 9.277883400000064,
+          "cached": false
+        }
+      }
+    ]
+  },
+  "extraction": {
+    "is_recipe": true,
+    "recipes_in_document": 4,
+    "recipe": {
+      "title": "Marmelade d'abricots",
+      "language": "fr",
+      "servings": {
+        "value": null,
+        "source": {
+          "status": "missing",
+          "page": null,
+          "quote": null,
+          "note": "the document does not say"
+        }
+      },
+      "ingredients": [
+        {
+          "id": "apricot",
+          "name": "apricot",
+          "name_original": "abricots",
+          "quantity": {
+            "kind": "exact",
+            "value": 4.0,
+            "max_value": null,
+            "unit": "kilos",
+            "raw": "4 kilos"
+          },
+          "preparation": "peeled and quartered",
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "4 kilos d'abricots",
+            "note": null
+          }
+        },
+        {
+          "id": "sugar",
+          "name": "sugar",
+          "name_original": "sucre pilé",
+          "quantity": {
+            "kind": "exact",
+            "value": 2.4,
+            "max_value": null,
+            "unit": "kilos",
+            "raw": "2 kilos 400"
+          },
+          "preparation": "powdered",
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "inferred",
+            "page": 1,
+            "quote": "2 kilos 400 de sucre pilé",
+            "note": "The text writes '2 kilos 400' (2 kilos plus 400 grams); 2.4 kilos is derived from it, not written as such."
+          }
+        }
+      ],
+      "tools": [
+        {
+          "id": "terrine",
+          "name": "terrine",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "mettez-les dans une terrine",
+            "note": null
+          }
+        },
+        {
+          "id": "wooden_spoon",
+          "name": "wooden spoon",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "la cuiller de bois",
+            "note": null
+          }
+        },
+        {
+          "id": "bassine",
+          "name": "bassine",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "mettez les abricots dans la bassine",
+            "note": null
+          }
+        },
+        {
+          "id": "skimmer",
+          "name": "skimmer",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "remuez avec l'écumoire",
+            "note": null
+          }
+        },
+        {
+          "id": "plate",
+          "name": "plate",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "sur une assiette",
+            "note": null
+          }
+        },
+        {
+          "id": "stove",
+          "name": "stove",
+          "source": {
+            "status": "inferred",
+            "page": 1,
+            "quote": null,
+            "note": "Implied by the boiling in the bassine step (Lorsqu'il est fondu, mettez les abricots dans la bassine et remuez avec l'écumoire pendant 10 minutes de bouillon); no heat source is named."
+          }
+        }
+      ],
+      "steps": [
+        {
+          "order": 1,
+          "text": "Avez 4 kilos d'abricots tout épluchés et coupés en quartiers; mettez-les dans une terrine avec 2 kilos 400 de sucre pilé;",
+          "ingredient_ids": [
+            "apricot",
+            "sugar"
+          ],
+          "tool_ids": [
+            "terrine"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Avez 4 kilos d'abricots tout épluchés et coupés en quartiers; mettez-les dans une terrine avec 2 kilos 400 de sucre pilé;",
+            "note": null
+          }
+        },
+        {
+          "order": 2,
+          "text": "Remuez avec la cuiller de bois pour faire fondre le sucre;",
+          "ingredient_ids": [
+            "sugar"
+          ],
+          "tool_ids": [
+            "wooden_spoon"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Remuez avec la cuiller de bois pour faire fondre le sucre;",
+            "note": null
+          }
+        },
+        {
+          "order": 3,
+          "text": "Lorsqu'il est fondu, mettez les abricots dans la bassine et remuez avec l'écumoire pendant 10 minutes de bouillon;",
+          "ingredient_ids": [
+            "apricot",
+            "sugar"
+          ],
+          "tool_ids": [
+            "bassine",
+            "skimmer",
+            "stove"
+          ],
+          "duration": {
+            "raw": "10 minutes",
+            "min_minutes": 10.0,
+            "max_minutes": 10.0
+          },
+          "condition": "lorsque le sucre est fondu",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "lorsqu'il est fondu, mettez les abricots dans la bassine et remuez avec l'écumoire pendant 10 minutes de bouillon;",
+            "note": null
+          }
+        },
+        {
+          "order": 4,
+          "text": "Retirez l'écumoire et agitez-la en l'air pour la rafraîchir;",
+          "ingredient_ids": [],
+          "tool_ids": [
+            "skimmer"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Retirez l'écumoire et agitez-la en l'air pour la rafraîchir;",
+            "note": null
+          }
+        },
+        {
+          "order": 5,
+          "text": "Frottez avec le doigt sur l'écumoire, et si la marmelade est greneuse [?], elle est cuite. On peut aussi s'assurer de la cuisson en mettant gros comme une noisette de marmelade sur une assiette, et en voyant si elle ne s'étale pas;",
+          "ingredient_ids": [
+            "apricot",
+            "sugar"
+          ],
+          "tool_ids": [
+            "skimmer",
+            "plate"
+          ],
+          "duration": null,
+          "condition": "si la marmelade est greneuse, elle est cuite",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Frottez avec le doigt sur l'écumoire, et si la marmelade est greneuse [?], elle est cuite. On peut aussi s'assurer de la cuisson en mettant gros comme une noisette de marmelade sur une assiette, et en voyant si elle ne s'étale pas;",
+            "note": null
+          }
+        },
+        {
+          "order": 6,
+          "text": "Mettez en pot, laissez refroidir et couvrez comme la gelée de groseilles.",
+          "ingredient_ids": [
+            "apricot",
+            "sugar"
+          ],
+          "tool_ids": [],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Mettez en pot, laissez refroidir et couvrez comme la gelée de groseilles.",
+            "note": null
+          }
+        }
+      ],
+      "warnings": [
+        {
+          "message": "The word 'greneuse' was marked uncertain by the transcription; the reading is unverified.",
+          "target_id": null
+        },
+        {
+          "message": "The amount '2 kilos 400' is written as 2 kilos plus 400 grams; it was converted to 2.4 kilos, please check.",
+          "target_id": null
+        },
+        {
+          "message": "No servings are stated and the apricot quantities do not give a servings count, so servings are missing.",
+          "target_id": null
+        },
+        {
+          "message": "Extracted the first recipe only. Skipped: Gelée de pommes, Gelée de coings, Cerneaux au verjus. The section 'Fromages et fruits de saison' is not a recipe.",
+          "target_id": null
+        },
+        {
+          "message": "The last step refers to 'la gelée de groseilles', which is not in this document; the covering method is unknown.",
+          "target_id": null
+        },
+        {
+          "message": "The document does not name a heat source; 'stove' is implied by the boiling step and marked as not stated.",
+          "target_id": null
+        },
+        {
+          "message": "The step 'Retirez l'écumoire' has no ingredients or duration and is kept as written.",
+          "target_id": null
+        }
+      ]
+    },
+    "usage": [
+      {
+        "model": "claude-haiku-5-5",
+        "input_tokens": 5786,
+        "output_tokens": 4746,
+        "seconds": 18.16100860000006,
+        "cached": false
+      },
+      {
+        "model": "claude-haiku-5-5",
+        "input_tokens": 8045,
+        "output_tokens": 3533,
+        "seconds": 13.237103800000114,
+        "cached": false
+      }
+    ],
+    "problems_found": [
+      "ingredient 'sugar': amount [2.4] does not appear in its quote '2 kilos 400 de sucre pilé'"
+    ],
+    "problems_left": []
+  },
+  "manipulation": {
+    "original": {
+      "title": "Marmelade d'abricots",
+      "language": "fr",
+      "servings": {
+        "value": null,
+        "source": {
+          "status": "missing",
+          "page": null,
+          "quote": null,
+          "note": "the document does not say"
+        }
+      },
+      "ingredients": [
+        {
+          "id": "apricot",
+          "name": "apricot",
+          "name_original": "abricots",
+          "quantity": {
+            "kind": "exact",
+            "value": 4.0,
+            "max_value": null,
+            "unit": "kilos",
+            "raw": "4 kilos"
+          },
+          "preparation": "peeled and quartered",
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "4 kilos d'abricots",
+            "note": null
+          }
+        },
+        {
+          "id": "sugar",
+          "name": "sugar",
+          "name_original": "sucre pilé",
+          "quantity": {
+            "kind": "exact",
+            "value": 2.4,
+            "max_value": null,
+            "unit": "kilos",
+            "raw": "2 kilos 400"
+          },
+          "preparation": "powdered",
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "inferred",
+            "page": 1,
+            "quote": "2 kilos 400 de sucre pilé",
+            "note": "The text writes '2 kilos 400' (2 kilos plus 400 grams); 2.4 kilos is derived from it, not written as such."
+          }
+        }
+      ],
+      "tools": [
+        {
+          "id": "terrine",
+          "name": "terrine",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "mettez-les dans une terrine",
+            "note": null
+          }
+        },
+        {
+          "id": "wooden_spoon",
+          "name": "wooden spoon",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "la cuiller de bois",
+            "note": null
+          }
+        },
+        {
+          "id": "bassine",
+          "name": "bassine",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "mettez les abricots dans la bassine",
+            "note": null
+          }
+        },
+        {
+          "id": "skimmer",
+          "name": "skimmer",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "remuez avec l'écumoire",
+            "note": null
+          }
+        },
+        {
+          "id": "plate",
+          "name": "plate",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "sur une assiette",
+            "note": null
+          }
+        },
+        {
+          "id": "stove",
+          "name": "stove",
+          "source": {
+            "status": "inferred",
+            "page": 1,
+            "quote": null,
+            "note": "Implied by the boiling in the bassine step (Lorsqu'il est fondu, mettez les abricots dans la bassine et remuez avec l'écumoire pendant 10 minutes de bouillon); no heat source is named."
+          }
+        }
+      ],
+      "steps": [
+        {
+          "order": 1,
+          "text": "Avez 4 kilos d'abricots tout épluchés et coupés en quartiers; mettez-les dans une terrine avec 2 kilos 400 de sucre pilé;",
+          "ingredient_ids": [
+            "apricot",
+            "sugar"
+          ],
+          "tool_ids": [
+            "terrine"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Avez 4 kilos d'abricots tout épluchés et coupés en quartiers; mettez-les dans une terrine avec 2 kilos 400 de sucre pilé;",
+            "note": null
+          }
+        },
+        {
+          "order": 2,
+          "text": "Remuez avec la cuiller de bois pour faire fondre le sucre;",
+          "ingredient_ids": [
+            "sugar"
+          ],
+          "tool_ids": [
+            "wooden_spoon"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Remuez avec la cuiller de bois pour faire fondre le sucre;",
+            "note": null
+          }
+        },
+        {
+          "order": 3,
+          "text": "Lorsqu'il est fondu, mettez les abricots dans la bassine et remuez avec l'écumoire pendant 10 minutes de bouillon;",
+          "ingredient_ids": [
+            "apricot",
+            "sugar"
+          ],
+          "tool_ids": [
+            "bassine",
+            "skimmer",
+            "stove"
+          ],
+          "duration": {
+            "raw": "10 minutes",
+            "min_minutes": 10.0,
+            "max_minutes": 10.0
+          },
+          "condition": "lorsque le sucre est fondu",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "lorsqu'il est fondu, mettez les abricots dans la bassine et remuez avec l'écumoire pendant 10 minutes de bouillon;",
+            "note": null
+          }
+        },
+        {
+          "order": 4,
+          "text": "Retirez l'écumoire et agitez-la en l'air pour la rafraîchir;",
+          "ingredient_ids": [],
+          "tool_ids": [
+            "skimmer"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Retirez l'écumoire et agitez-la en l'air pour la rafraîchir;",
+            "note": null
+          }
+        },
+        {
+          "order": 5,
+          "text": "Frottez avec le doigt sur l'écumoire, et si la marmelade est greneuse [?], elle est cuite. On peut aussi s'assurer de la cuisson en mettant gros comme une noisette de marmelade sur une assiette, et en voyant si elle ne s'étale pas;",
+          "ingredient_ids": [
+            "apricot",
+            "sugar"
+          ],
+          "tool_ids": [
+            "skimmer",
+            "plate"
+          ],
+          "duration": null,
+          "condition": "si la marmelade est greneuse, elle est cuite",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Frottez avec le doigt sur l'écumoire, et si la marmelade est greneuse [?], elle est cuite. On peut aussi s'assurer de la cuisson en mettant gros comme une noisette de marmelade sur une assiette, et en voyant si elle ne s'étale pas;",
+            "note": null
+          }
+        },
+        {
+          "order": 6,
+          "text": "Mettez en pot, laissez refroidir et couvrez comme la gelée de groseilles.",
+          "ingredient_ids": [
+            "apricot",
+            "sugar"
+          ],
+          "tool_ids": [],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Mettez en pot, laissez refroidir et couvrez comme la gelée de groseilles.",
+            "note": null
+          }
+        }
+      ],
+      "warnings": [
+        {
+          "message": "The word 'greneuse' was marked uncertain by the transcription; the reading is unverified.",
+          "target_id": null
+        },
+        {
+          "message": "The amount '2 kilos 400' is written as 2 kilos plus 400 grams; it was converted to 2.4 kilos, please check.",
+          "target_id": null
+        },
+        {
+          "message": "No servings are stated and the apricot quantities do not give a servings count, so servings are missing.",
+          "target_id": null
+        },
+        {
+          "message": "Extracted the first recipe only. Skipped: Gelée de pommes, Gelée de coings, Cerneaux au verjus. The section 'Fromages et fruits de saison' is not a recipe.",
+          "target_id": null
+        },
+        {
+          "message": "The last step refers to 'la gelée de groseilles', which is not in this document; the covering method is unknown.",
+          "target_id": null
+        },
+        {
+          "message": "The document does not name a heat source; 'stove' is implied by the boiling step and marked as not stated.",
+          "target_id": null
+        },
+        {
+          "message": "The step 'Retirez l'écumoire' has no ingredients or duration and is kept as written.",
+          "target_id": null
+        }
+      ]
+    },
+    "recipe": {
+      "title": "Marmelade d'abricots",
+      "language": "fr",
+      "servings": {
+        "value": null,
+        "source": {
+          "status": "missing",
+          "page": null,
+          "quote": null,
+          "note": "the document does not say"
+        }
+      },
+      "ingredients": [
+        {
+          "id": "apricot",
+          "name": "apricot",
+          "name_original": "abricots",
+          "quantity": {
+            "kind": "exact",
+            "value": 4.0,
+            "max_value": null,
+            "unit": "kilos",
+            "raw": "4 kilos"
+          },
+          "preparation": "peeled and quartered",
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "4 kilos d'abricots",
+            "note": null
+          }
+        },
+        {
+          "id": "sugar",
+          "name": "sugar",
+          "name_original": "sucre pilé",
+          "quantity": {
+            "kind": "exact",
+            "value": 2.4,
+            "max_value": null,
+            "unit": "kilos",
+            "raw": "2 kilos 400"
+          },
+          "preparation": "powdered",
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "inferred",
+            "page": 1,
+            "quote": "2 kilos 400 de sucre pilé",
+            "note": "The text writes '2 kilos 400' (2 kilos plus 400 grams); 2.4 kilos is derived from it, not written as such."
+          }
+        }
+      ],
+      "tools": [
+        {
+          "id": "terrine",
+          "name": "terrine",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "mettez-les dans une terrine",
+            "note": null
+          }
+        },
+        {
+          "id": "wooden_spoon",
+          "name": "wooden spoon",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "la cuiller de bois",
+            "note": null
+          }
+        },
+        {
+          "id": "bassine",
+          "name": "bassine",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "mettez les abricots dans la bassine",
+            "note": null
+          }
+        },
+        {
+          "id": "skimmer",
+          "name": "skimmer",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "remuez avec l'écumoire",
+            "note": null
+          }
+        },
+        {
+          "id": "plate",
+          "name": "plate",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "sur une assiette",
+            "note": null
+          }
+        },
+        {
+          "id": "stove",
+          "name": "stove",
+          "source": {
+            "status": "inferred",
+            "page": 1,
+            "quote": null,
+            "note": "Implied by the boiling in the bassine step (Lorsqu'il est fondu, mettez les abricots dans la bassine et remuez avec l'écumoire pendant 10 minutes de bouillon); no heat source is named."
+          }
+        }
+      ],
+      "steps": [
+        {
+          "order": 1,
+          "text": "Avez 4 kilos d'abricots tout épluchés et coupés en quartiers; mettez-les dans une terrine avec 2 kilos 400 de sucre pilé;",
+          "ingredient_ids": [
+            "apricot",
+            "sugar"
+          ],
+          "tool_ids": [
+            "terrine"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Avez 4 kilos d'abricots tout épluchés et coupés en quartiers; mettez-les dans une terrine avec 2 kilos 400 de sucre pilé;",
+            "note": null
+          }
+        },
+        {
+          "order": 2,
+          "text": "Remuez avec la cuiller de bois pour faire fondre le sucre;",
+          "ingredient_ids": [
+            "sugar"
+          ],
+          "tool_ids": [
+            "wooden_spoon"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Remuez avec la cuiller de bois pour faire fondre le sucre;",
+            "note": null
+          }
+        },
+        {
+          "order": 3,
+          "text": "Lorsqu'il est fondu, mettez les abricots dans la bassine et remuez avec l'écumoire pendant 10 minutes de bouillon;",
+          "ingredient_ids": [
+            "apricot",
+            "sugar"
+          ],
+          "tool_ids": [
+            "bassine",
+            "skimmer",
+            "stove"
+          ],
+          "duration": {
+            "raw": "10 minutes",
+            "min_minutes": 10.0,
+            "max_minutes": 10.0
+          },
+          "condition": "lorsque le sucre est fondu",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "lorsqu'il est fondu, mettez les abricots dans la bassine et remuez avec l'écumoire pendant 10 minutes de bouillon;",
+            "note": null
+          }
+        },
+        {
+          "order": 4,
+          "text": "Retirez l'écumoire et agitez-la en l'air pour la rafraîchir;",
+          "ingredient_ids": [],
+          "tool_ids": [
+            "skimmer"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Retirez l'écumoire et agitez-la en l'air pour la rafraîchir;",
+            "note": null
+          }
+        },
+        {
+          "order": 5,
+          "text": "Frottez avec le doigt sur l'écumoire, et si la marmelade est greneuse [?], elle est cuite. On peut aussi s'assurer de la cuisson en mettant gros comme une noisette de marmelade sur une assiette, et en voyant si elle ne s'étale pas;",
+          "ingredient_ids": [
+            "apricot",
+            "sugar"
+          ],
+          "tool_ids": [
+            "skimmer",
+            "plate"
+          ],
+          "duration": null,
+          "condition": "si la marmelade est greneuse, elle est cuite",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Frottez avec le doigt sur l'écumoire, et si la marmelade est greneuse [?], elle est cuite. On peut aussi s'assurer de la cuisson en mettant gros comme une noisette de marmelade sur une assiette, et en voyant si elle ne s'étale pas;",
+            "note": null
+          }
+        },
+        {
+          "order": 6,
+          "text": "Mettez en pot, laissez refroidir et couvrez comme la gelée de groseilles.",
+          "ingredient_ids": [
+            "apricot",
+            "sugar"
+          ],
+          "tool_ids": [],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Mettez en pot, laissez refroidir et couvrez comme la gelée de groseilles.",
+            "note": null
+          }
+        }
+      ],
+      "warnings": [
+        {
+          "message": "The word 'greneuse' was marked uncertain by the transcription; the reading is unverified.",
+          "target_id": null
+        },
+        {
+          "message": "The amount '2 kilos 400' is written as 2 kilos plus 400 grams; it was converted to 2.4 kilos, please check.",
+          "target_id": null
+        },
+        {
+          "message": "No servings are stated and the apricot quantities do not give a servings count, so servings are missing.",
+          "target_id": null
+        },
+        {
+          "message": "Extracted the first recipe only. Skipped: Gelée de pommes, Gelée de coings, Cerneaux au verjus. The section 'Fromages et fruits de saison' is not a recipe.",
+          "target_id": null
+        },
+        {
+          "message": "The last step refers to 'la gelée de groseilles', which is not in this document; the covering method is unknown.",
+          "target_id": null
+        },
+        {
+          "message": "The document does not name a heat source; 'stove' is implied by the boiling step and marked as not stated.",
+          "target_id": null
+        },
+        {
+          "message": "The step 'Retirez l'écumoire' has no ingredients or duration and is kept as written.",
+          "target_id": null
+        },
+        {
+          "message": "Vegan check, sucre pilé: Some cane sugar is filtered through bone char. Beet sugar and sugar labelled vegan are safe.",
+          "target_id": "sugar"
+        }
+      ]
+    },
+    "changes": [
+      {
+        "rule": "vegan",
+        "target": "sugar",
+        "before": "sucre pilé",
+        "after": "unchanged, check the label",
+        "reason": "Some cane sugar is filtered through bone char. Beet sugar and sugar labelled vegan are safe."
+      }
+    ]
+  }
+}

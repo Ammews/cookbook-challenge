@@ -1,0 +1,784 @@
+{
+  "document": {
+    "name": "hw-de-bertha-saucen.jpg",
+    "kind": "image",
+    "pages": [
+      {
+        "number": 1,
+        "text": "Eiweiß - Guß [?]\nMan muß eine Messerspitze, u. füllt diese mit der Zuckerbollen weg [?]. Dann gibt man eine Messerspitze Zimt [?] u. schmeckt das ganze mit Salz u. etwas mit Muskatnuß ab. Ferner nicht zu dick, dann wird man etwas Wasser [?] zusetzen, u. Schmeckend [?].\n\nSchinkensauce - Guß [?]\n4 Eigelb [?] ganz fein, 2 Eidotter verrühren mit 1 Eßl. Mehl verrühren, dann tut man 1/2 l. Schinkensauce [?], 1/4 lt. Wasser, zwei Esslöffel Zitronen u. Zucker u. Runsel [?] mit Gewürz [?] dazu u. gesalzt und gesalzt das ganze [?] klein [?], bis es fest.\n\nMürbeteig [?] - Guß [?]\n6 Eidotter verrühren mit etwas Zucker, 1/2 Lt. Butter und Zitronenschalen [?] auf dem Feuer zu einem dicken Brei rühren, bis sie fest. Dann gibt man 2-3 Eßlöffel Rum [?]. Die Guß darf nicht zu heiß stehen, damit die Eidotter nicht gerinnen. Diese Guß wird zu Pfirsichkompott [?] gereicht.",
+        "method": "vision",
+        "decoration_text": [],
+        "uncertain": [
+          "Eiweiß",
+          "Zuckerbollen",
+          "Zimt",
+          "Schinkensauce",
+          "Eigelb",
+          "Runsel",
+          "Gewürz",
+          "Mürbeteig",
+          "Zitronenschalen",
+          "Rum",
+          "Pfirsichkompott",
+          "Schmeckend",
+          "Wasser"
+        ],
+        "usage": {
+          "model": "claude-haiku-5-5",
+          "input_tokens": 4235,
+          "output_tokens": 1582,
+          "seconds": 8.890761499998916,
+          "cached": false
+        }
+      }
+    ]
+  },
+  "extraction": {
+    "is_recipe": true,
+    "recipes_in_document": 3,
+    "recipe": {
+      "title": "Eiweiß-Guß",
+      "language": "de",
+      "servings": {
+        "value": null,
+        "source": {
+          "status": "missing",
+          "page": null,
+          "quote": null,
+          "note": "No number of servings is given."
+        }
+      },
+      "ingredients": [
+        {
+          "id": "egg_white",
+          "name": "egg white",
+          "name_original": "Eiweiß",
+          "quantity": {
+            "kind": "absent",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "egg",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Eiweiß - Guß",
+            "note": null
+          }
+        },
+        {
+          "id": "sugar",
+          "name": "sugar",
+          "name_original": "Zucker",
+          "quantity": {
+            "kind": "vague",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": "eine Messerspitze"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Man muß eine Messerspitze",
+            "note": null
+          }
+        },
+        {
+          "id": "cinnamon",
+          "name": "cinnamon",
+          "name_original": "Zimt",
+          "quantity": {
+            "kind": "vague",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": "eine Messerspitze"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "dann gibt man eine Messerspitze Zimt",
+            "note": null
+          }
+        },
+        {
+          "id": "salt",
+          "name": "salt",
+          "name_original": "Salz",
+          "quantity": {
+            "kind": "to_taste",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "schmeckt das ganze mit Salz",
+            "note": null
+          }
+        },
+        {
+          "id": "nutmeg",
+          "name": "nutmeg",
+          "name_original": "Muskatnuß",
+          "quantity": {
+            "kind": "vague",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": "etwas"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "etwas mit Muskatnuß ab",
+            "note": null
+          }
+        },
+        {
+          "id": "water",
+          "name": "water",
+          "name_original": "Wasser",
+          "quantity": {
+            "kind": "vague",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": "etwas"
+          },
+          "preparation": null,
+          "optional": true,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "wird man etwas Wasser zusetzen",
+            "note": null
+          }
+        }
+      ],
+      "tools": [],
+      "steps": [
+        {
+          "order": 1,
+          "text": "Man muß eine Messerspitze Zucker, u. füllt diese mit der Zuckerbollen weg.",
+          "ingredient_ids": [
+            "sugar"
+          ],
+          "tool_ids": [],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Man muß eine Messerspitze, u. füllt diese mit der Zuckerbollen weg",
+            "note": null
+          }
+        },
+        {
+          "order": 2,
+          "text": "Dann gibt man eine Messerspitze Zimt.",
+          "ingredient_ids": [
+            "cinnamon"
+          ],
+          "tool_ids": [],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Dann gibt man eine Messerspitze Zimt",
+            "note": null
+          }
+        },
+        {
+          "order": 3,
+          "text": "Das ganze mit Salz und etwas Muskatnuß abschmecken.",
+          "ingredient_ids": [
+            "salt",
+            "nutmeg"
+          ],
+          "tool_ids": [],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "schmeckt das ganze mit Salz u. etwas mit Muskatnuß ab",
+            "note": null
+          }
+        },
+        {
+          "order": 4,
+          "text": "Ferner nicht zu dick machen; dann etwas Wasser zusetzen.",
+          "ingredient_ids": [
+            "water"
+          ],
+          "tool_ids": [],
+          "duration": null,
+          "condition": "wenn die Masse zu dick ist",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Ferner nicht zu dick, dann wird man etwas Wasser zusetzen",
+            "note": null
+          }
+        }
+      ],
+      "warnings": [
+        {
+          "message": "The document contains three sauce recipes: Eiweiß-Guß (extracted), Schinkensauce-Guß and Mürbeteig-Guß (skipped).",
+          "target_id": null
+        },
+        {
+          "message": "The transcription is unreliable for this recipe: Zuckerbollen, Zimt, Runsel, Schmeckend and Wasser were marked uncertain, and the first sentence is garbled.",
+          "target_id": null
+        },
+        {
+          "message": "No amount of egg white is given; the sugar and cinnamon amounts are only the pinch (Messerspitze) implied by the text, and the sugar is uncertain.",
+          "target_id": null
+        },
+        {
+          "message": "The step order and the last step's wording are reconstructed from a garbled text and should be checked against the original.",
+          "target_id": null
+        },
+        {
+          "message": "No tools are named; none were added because the text does not imply any.",
+          "target_id": null
+        }
+      ]
+    },
+    "usage": [
+      {
+        "model": "claude-haiku-5-5",
+        "input_tokens": 4943,
+        "output_tokens": 3021,
+        "seconds": 11.929665999999997,
+        "cached": false
+      }
+    ],
+    "problems_found": [],
+    "problems_left": []
+  },
+  "manipulation": {
+    "original": {
+      "title": "Eiweiß-Guß",
+      "language": "de",
+      "servings": {
+        "value": null,
+        "source": {
+          "status": "missing",
+          "page": null,
+          "quote": null,
+          "note": "No number of servings is given."
+        }
+      },
+      "ingredients": [
+        {
+          "id": "egg_white",
+          "name": "egg white",
+          "name_original": "Eiweiß",
+          "quantity": {
+            "kind": "absent",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "egg",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Eiweiß - Guß",
+            "note": null
+          }
+        },
+        {
+          "id": "sugar",
+          "name": "sugar",
+          "name_original": "Zucker",
+          "quantity": {
+            "kind": "vague",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": "eine Messerspitze"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Man muß eine Messerspitze",
+            "note": null
+          }
+        },
+        {
+          "id": "cinnamon",
+          "name": "cinnamon",
+          "name_original": "Zimt",
+          "quantity": {
+            "kind": "vague",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": "eine Messerspitze"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "dann gibt man eine Messerspitze Zimt",
+            "note": null
+          }
+        },
+        {
+          "id": "salt",
+          "name": "salt",
+          "name_original": "Salz",
+          "quantity": {
+            "kind": "to_taste",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "schmeckt das ganze mit Salz",
+            "note": null
+          }
+        },
+        {
+          "id": "nutmeg",
+          "name": "nutmeg",
+          "name_original": "Muskatnuß",
+          "quantity": {
+            "kind": "vague",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": "etwas"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "etwas mit Muskatnuß ab",
+            "note": null
+          }
+        },
+        {
+          "id": "water",
+          "name": "water",
+          "name_original": "Wasser",
+          "quantity": {
+            "kind": "vague",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": "etwas"
+          },
+          "preparation": null,
+          "optional": true,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "wird man etwas Wasser zusetzen",
+            "note": null
+          }
+        }
+      ],
+      "tools": [],
+      "steps": [
+        {
+          "order": 1,
+          "text": "Man muß eine Messerspitze Zucker, u. füllt diese mit der Zuckerbollen weg.",
+          "ingredient_ids": [
+            "sugar"
+          ],
+          "tool_ids": [],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Man muß eine Messerspitze, u. füllt diese mit der Zuckerbollen weg",
+            "note": null
+          }
+        },
+        {
+          "order": 2,
+          "text": "Dann gibt man eine Messerspitze Zimt.",
+          "ingredient_ids": [
+            "cinnamon"
+          ],
+          "tool_ids": [],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Dann gibt man eine Messerspitze Zimt",
+            "note": null
+          }
+        },
+        {
+          "order": 3,
+          "text": "Das ganze mit Salz und etwas Muskatnuß abschmecken.",
+          "ingredient_ids": [
+            "salt",
+            "nutmeg"
+          ],
+          "tool_ids": [],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "schmeckt das ganze mit Salz u. etwas mit Muskatnuß ab",
+            "note": null
+          }
+        },
+        {
+          "order": 4,
+          "text": "Ferner nicht zu dick machen; dann etwas Wasser zusetzen.",
+          "ingredient_ids": [
+            "water"
+          ],
+          "tool_ids": [],
+          "duration": null,
+          "condition": "wenn die Masse zu dick ist",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Ferner nicht zu dick, dann wird man etwas Wasser zusetzen",
+            "note": null
+          }
+        }
+      ],
+      "warnings": [
+        {
+          "message": "The document contains three sauce recipes: Eiweiß-Guß (extracted), Schinkensauce-Guß and Mürbeteig-Guß (skipped).",
+          "target_id": null
+        },
+        {
+          "message": "The transcription is unreliable for this recipe: Zuckerbollen, Zimt, Runsel, Schmeckend and Wasser were marked uncertain, and the first sentence is garbled.",
+          "target_id": null
+        },
+        {
+          "message": "No amount of egg white is given; the sugar and cinnamon amounts are only the pinch (Messerspitze) implied by the text, and the sugar is uncertain.",
+          "target_id": null
+        },
+        {
+          "message": "The step order and the last step's wording are reconstructed from a garbled text and should be checked against the original.",
+          "target_id": null
+        },
+        {
+          "message": "No tools are named; none were added because the text does not imply any.",
+          "target_id": null
+        }
+      ]
+    },
+    "recipe": {
+      "title": "Eiweiß-Guß",
+      "language": "de",
+      "servings": {
+        "value": null,
+        "source": {
+          "status": "missing",
+          "page": null,
+          "quote": null,
+          "note": "No number of servings is given."
+        }
+      },
+      "ingredients": [
+        {
+          "id": "vegan_egg_white",
+          "name": "flax egg (1 tbsp ground flaxseed + 3 tbsp water per egg)",
+          "name_original": "flax egg (1 tbsp ground flaxseed + 3 tbsp water per egg)",
+          "quantity": {
+            "kind": "absent",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "rule",
+            "page": 1,
+            "quote": "Eiweiß - Guß",
+            "note": "vegan substitute for 'Eiweiß': Eggs that bind a dough or batter; a flax egg does the same."
+          }
+        },
+        {
+          "id": "sugar",
+          "name": "sugar",
+          "name_original": "Zucker",
+          "quantity": {
+            "kind": "vague",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": "eine Messerspitze"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Man muß eine Messerspitze",
+            "note": null
+          }
+        },
+        {
+          "id": "cinnamon",
+          "name": "cinnamon",
+          "name_original": "Zimt",
+          "quantity": {
+            "kind": "vague",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": "eine Messerspitze"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "dann gibt man eine Messerspitze Zimt",
+            "note": null
+          }
+        },
+        {
+          "id": "salt",
+          "name": "salt",
+          "name_original": "Salz",
+          "quantity": {
+            "kind": "to_taste",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "schmeckt das ganze mit Salz",
+            "note": null
+          }
+        },
+        {
+          "id": "nutmeg",
+          "name": "nutmeg",
+          "name_original": "Muskatnuß",
+          "quantity": {
+            "kind": "vague",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": "etwas"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "etwas mit Muskatnuß ab",
+            "note": null
+          }
+        },
+        {
+          "id": "water",
+          "name": "water",
+          "name_original": "Wasser",
+          "quantity": {
+            "kind": "vague",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": "etwas"
+          },
+          "preparation": null,
+          "optional": true,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "wird man etwas Wasser zusetzen",
+            "note": null
+          }
+        }
+      ],
+      "tools": [],
+      "steps": [
+        {
+          "order": 1,
+          "text": "Man muß eine Messerspitze Zucker, u. füllt diese mit der Zuckerbollen weg.",
+          "ingredient_ids": [
+            "sugar"
+          ],
+          "tool_ids": [],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Man muß eine Messerspitze, u. füllt diese mit der Zuckerbollen weg",
+            "note": null
+          }
+        },
+        {
+          "order": 2,
+          "text": "Dann gibt man eine Messerspitze Zimt.",
+          "ingredient_ids": [
+            "cinnamon"
+          ],
+          "tool_ids": [],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Dann gibt man eine Messerspitze Zimt",
+            "note": null
+          }
+        },
+        {
+          "order": 3,
+          "text": "Das ganze mit Salz und etwas Muskatnuß abschmecken.",
+          "ingredient_ids": [
+            "salt",
+            "nutmeg"
+          ],
+          "tool_ids": [],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "schmeckt das ganze mit Salz u. etwas mit Muskatnuß ab",
+            "note": null
+          }
+        },
+        {
+          "order": 4,
+          "text": "Ferner nicht zu dick machen; dann etwas Wasser zusetzen.",
+          "ingredient_ids": [
+            "water"
+          ],
+          "tool_ids": [],
+          "duration": null,
+          "condition": "wenn die Masse zu dick ist",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Ferner nicht zu dick, dann wird man etwas Wasser zusetzen",
+            "note": null
+          }
+        }
+      ],
+      "warnings": [
+        {
+          "message": "The document contains three sauce recipes: Eiweiß-Guß (extracted), Schinkensauce-Guß and Mürbeteig-Guß (skipped).",
+          "target_id": null
+        },
+        {
+          "message": "The transcription is unreliable for this recipe: Zuckerbollen, Zimt, Runsel, Schmeckend and Wasser were marked uncertain, and the first sentence is garbled.",
+          "target_id": null
+        },
+        {
+          "message": "No amount of egg white is given; the sugar and cinnamon amounts are only the pinch (Messerspitze) implied by the text, and the sugar is uncertain.",
+          "target_id": null
+        },
+        {
+          "message": "The step order and the last step's wording are reconstructed from a garbled text and should be checked against the original.",
+          "target_id": null
+        },
+        {
+          "message": "No tools are named; none were added because the text does not imply any.",
+          "target_id": null
+        },
+        {
+          "message": "Vegan check, Zucker: Some cane sugar is filtered through bone char. Beet sugar and sugar labelled vegan are safe.",
+          "target_id": "sugar"
+        }
+      ]
+    },
+    "changes": [
+      {
+        "rule": "vegan",
+        "target": "egg_white",
+        "before": "Eiweiß",
+        "after": "flax egg (1 tbsp ground flaxseed + 3 tbsp water per egg)",
+        "reason": "Eggs that bind a dough or batter; a flax egg does the same."
+      },
+      {
+        "rule": "vegan",
+        "target": "sugar",
+        "before": "Zucker",
+        "after": "unchanged, check the label",
+        "reason": "Some cane sugar is filtered through bone char. Beet sugar and sugar labelled vegan are safe."
+      }
+    ]
+  }
+}

@@ -269,6 +269,28 @@ so that `main` stays as submitted:
   fat" could be plant fat), so it is flagged instead of turned into oil. That
   is the behaviour I chose: a warning, not a guess.
 
+## Session 9: stress set of real documents
+
+**Asked:** I had meant PDFs and handwritten recipes when I asked for online
+recipes, not text files: collect about 50, Pinterest has many.
+
+**What the agent pushed back on:** Pinterest is behind a login and forbids
+scraping, and nearly everything on it is copyrighted, so it cannot go in a
+public repository. It proposed open sources instead (Wikimedia Commons,
+Internet Archive scans, Wellcome Collection, DPLA) and a split: collect 50,
+run a subset, read the outputs. I agreed.
+
+**What it built**, on the branch `test/stress-set`: 50 documents with source
+and licence in a manifest, a `cookbook stress` command, and a report. It ran
+22 of them.
+
+**What reading the outputs showed** (details in `evals/stress/README.md`):
+no crashes; correct refusals, including a file named "recipe" that is really
+a medieval Church Slavonic manuscript (the agent's manifest note was wrong,
+the pipeline was right); several recipes on most pages, of which only the
+first is extracted; soap and medicine recipes accepted as recipes; the old
+pound sign read as "₩", but flagged as unreadable.
+
 **Things I should double-check myself**
 - The transcription prompt tells the model to re-join words hyphenated across
   lines. That is convenient for later quote matching, but it means the

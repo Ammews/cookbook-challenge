@@ -1,0 +1,1102 @@
+{
+  "document": {
+    "name": "card-en-aunt-ruth.jpg",
+    "kind": "image",
+    "pages": [
+      {
+        "number": 1,
+        "text": "Aunt Ruth's Pound Cake\n\n½ pound butter\n1 ½ cups sifted cake flour\n4 eggs\n1 ½ cups sugar\n1 teaspoon vanilla\n\nCream butter. Add flour and continue mixing until well blended. Beat eggs well. Add sugar gradually to beaten eggs. Combine two mixtures. Add vanilla. Beat vigorously for five minutes. Bake in loaf pan one hour at 300°.",
+        "method": "vision",
+        "decoration_text": [],
+        "uncertain": [],
+        "usage": {
+          "model": "claude-haiku-5-5",
+          "input_tokens": 955,
+          "output_tokens": 192,
+          "seconds": 1.7846372000003612,
+          "cached": false
+        }
+      }
+    ]
+  },
+  "extraction": {
+    "is_recipe": true,
+    "recipes_in_document": 1,
+    "recipe": {
+      "title": "Aunt Ruth's Pound Cake",
+      "language": "en",
+      "servings": {
+        "value": 8,
+        "source": {
+          "status": "inferred",
+          "page": null,
+          "quote": null,
+          "note": "Not stated. Estimated at about 8 slices for a loaf cake made with 1 ½ cups flour, ½ pound butter and 4 eggs."
+        }
+      },
+      "ingredients": [
+        {
+          "id": "butter",
+          "name": "butter",
+          "name_original": "butter",
+          "quantity": {
+            "kind": "exact",
+            "value": 0.5,
+            "max_value": null,
+            "unit": "pound",
+            "raw": "½ pound"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "dairy",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "½ pound butter",
+            "note": null
+          }
+        },
+        {
+          "id": "cake_flour",
+          "name": "cake flour",
+          "name_original": "cake flour",
+          "quantity": {
+            "kind": "exact",
+            "value": 1.5,
+            "max_value": null,
+            "unit": "cups",
+            "raw": "1 ½ cups"
+          },
+          "preparation": "sifted",
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "1 ½ cups sifted cake flour",
+            "note": null
+          }
+        },
+        {
+          "id": "egg",
+          "name": "egg",
+          "name_original": "eggs",
+          "quantity": {
+            "kind": "exact",
+            "value": 4.0,
+            "max_value": null,
+            "unit": null,
+            "raw": "4"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "egg",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "4 eggs",
+            "note": null
+          }
+        },
+        {
+          "id": "sugar",
+          "name": "sugar",
+          "name_original": "sugar",
+          "quantity": {
+            "kind": "exact",
+            "value": 1.5,
+            "max_value": null,
+            "unit": "cups",
+            "raw": "1 ½ cups"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "1 ½ cups sugar",
+            "note": null
+          }
+        },
+        {
+          "id": "vanilla",
+          "name": "vanilla",
+          "name_original": "vanilla",
+          "quantity": {
+            "kind": "exact",
+            "value": 1.0,
+            "max_value": null,
+            "unit": "teaspoon",
+            "raw": "1 teaspoon"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "1 teaspoon vanilla",
+            "note": null
+          }
+        }
+      ],
+      "tools": [
+        {
+          "id": "loaf_pan",
+          "name": "loaf pan",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Bake in loaf pan one hour at 300°.",
+            "note": null
+          }
+        },
+        {
+          "id": "oven",
+          "name": "oven",
+          "source": {
+            "status": "inferred",
+            "page": 1,
+            "quote": "Bake in loaf pan one hour at 300°.",
+            "note": "Implied by baking at 300° in the step 'Bake in loaf pan one hour at 300°'."
+          }
+        },
+        {
+          "id": "mixing_bowl",
+          "name": "mixing bowl",
+          "source": {
+            "status": "inferred",
+            "page": 1,
+            "quote": "Cream butter.",
+            "note": "Implied by the step 'Cream butter' and the later mixing steps."
+          }
+        },
+        {
+          "id": "whisk",
+          "name": "whisk",
+          "source": {
+            "status": "inferred",
+            "page": 1,
+            "quote": "Beat eggs well.",
+            "note": "Implied by the step 'Beat eggs well' and 'Beat vigorously for five minutes'; a mixer could also be used."
+          }
+        }
+      ],
+      "steps": [
+        {
+          "order": 1,
+          "text": "Cream butter.",
+          "ingredient_ids": [
+            "butter"
+          ],
+          "tool_ids": [
+            "mixing_bowl"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Cream butter.",
+            "note": null
+          }
+        },
+        {
+          "order": 2,
+          "text": "Add flour and continue mixing until well blended.",
+          "ingredient_ids": [
+            "cake_flour"
+          ],
+          "tool_ids": [
+            "mixing_bowl"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Add flour and continue mixing until well blended.",
+            "note": null
+          }
+        },
+        {
+          "order": 3,
+          "text": "Beat eggs well.",
+          "ingredient_ids": [
+            "egg"
+          ],
+          "tool_ids": [
+            "whisk"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Beat eggs well.",
+            "note": null
+          }
+        },
+        {
+          "order": 4,
+          "text": "Add sugar gradually to beaten eggs.",
+          "ingredient_ids": [
+            "sugar",
+            "egg"
+          ],
+          "tool_ids": [],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Add sugar gradually to beaten eggs.",
+            "note": null
+          }
+        },
+        {
+          "order": 5,
+          "text": "Combine two mixtures.",
+          "ingredient_ids": [
+            "butter",
+            "cake_flour",
+            "egg",
+            "sugar"
+          ],
+          "tool_ids": [
+            "mixing_bowl"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Combine two mixtures.",
+            "note": null
+          }
+        },
+        {
+          "order": 6,
+          "text": "Add vanilla.",
+          "ingredient_ids": [
+            "vanilla"
+          ],
+          "tool_ids": [],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Add vanilla.",
+            "note": null
+          }
+        },
+        {
+          "order": 7,
+          "text": "Beat vigorously for five minutes.",
+          "ingredient_ids": [],
+          "tool_ids": [
+            "whisk"
+          ],
+          "duration": {
+            "raw": "five minutes",
+            "min_minutes": 5.0,
+            "max_minutes": 5.0
+          },
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Beat vigorously for five minutes.",
+            "note": null
+          }
+        },
+        {
+          "order": 8,
+          "text": "Bake in loaf pan one hour at 300°.",
+          "ingredient_ids": [],
+          "tool_ids": [
+            "loaf_pan",
+            "oven"
+          ],
+          "duration": {
+            "raw": "one hour",
+            "min_minutes": 60.0,
+            "max_minutes": 60.0
+          },
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Bake in loaf pan one hour at 300°.",
+            "note": null
+          }
+        }
+      ],
+      "warnings": [
+        {
+          "message": "The oven temperature 300° has no unit on the card; it is assumed to be Fahrenheit.",
+          "target_id": null
+        },
+        {
+          "message": "The step 'Combine two mixtures' does not name the two mixtures; the linked ingredients are an assumption.",
+          "target_id": null
+        },
+        {
+          "message": "The step 'Add vanilla' does not say whether the vanilla is extract or beans; it is recorded as written.",
+          "target_id": null
+        },
+        {
+          "message": "Servings were not stated and are an estimate.",
+          "target_id": null
+        }
+      ]
+    },
+    "usage": [
+      {
+        "model": "claude-haiku-5-5",
+        "input_tokens": 4496,
+        "output_tokens": 3531,
+        "seconds": 13.111708099999305,
+        "cached": false
+      }
+    ],
+    "problems_found": [],
+    "problems_left": []
+  },
+  "manipulation": {
+    "original": {
+      "title": "Aunt Ruth's Pound Cake",
+      "language": "en",
+      "servings": {
+        "value": 8,
+        "source": {
+          "status": "inferred",
+          "page": null,
+          "quote": null,
+          "note": "Not stated. Estimated at about 8 slices for a loaf cake made with 1 ½ cups flour, ½ pound butter and 4 eggs."
+        }
+      },
+      "ingredients": [
+        {
+          "id": "butter",
+          "name": "butter",
+          "name_original": "butter",
+          "quantity": {
+            "kind": "exact",
+            "value": 0.5,
+            "max_value": null,
+            "unit": "pound",
+            "raw": "½ pound"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "dairy",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "½ pound butter",
+            "note": null
+          }
+        },
+        {
+          "id": "cake_flour",
+          "name": "cake flour",
+          "name_original": "cake flour",
+          "quantity": {
+            "kind": "exact",
+            "value": 1.5,
+            "max_value": null,
+            "unit": "cups",
+            "raw": "1 ½ cups"
+          },
+          "preparation": "sifted",
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "1 ½ cups sifted cake flour",
+            "note": null
+          }
+        },
+        {
+          "id": "egg",
+          "name": "egg",
+          "name_original": "eggs",
+          "quantity": {
+            "kind": "exact",
+            "value": 4.0,
+            "max_value": null,
+            "unit": null,
+            "raw": "4"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "egg",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "4 eggs",
+            "note": null
+          }
+        },
+        {
+          "id": "sugar",
+          "name": "sugar",
+          "name_original": "sugar",
+          "quantity": {
+            "kind": "exact",
+            "value": 1.5,
+            "max_value": null,
+            "unit": "cups",
+            "raw": "1 ½ cups"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "1 ½ cups sugar",
+            "note": null
+          }
+        },
+        {
+          "id": "vanilla",
+          "name": "vanilla",
+          "name_original": "vanilla",
+          "quantity": {
+            "kind": "exact",
+            "value": 1.0,
+            "max_value": null,
+            "unit": "teaspoon",
+            "raw": "1 teaspoon"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "1 teaspoon vanilla",
+            "note": null
+          }
+        }
+      ],
+      "tools": [
+        {
+          "id": "loaf_pan",
+          "name": "loaf pan",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Bake in loaf pan one hour at 300°.",
+            "note": null
+          }
+        },
+        {
+          "id": "oven",
+          "name": "oven",
+          "source": {
+            "status": "inferred",
+            "page": 1,
+            "quote": "Bake in loaf pan one hour at 300°.",
+            "note": "Implied by baking at 300° in the step 'Bake in loaf pan one hour at 300°'."
+          }
+        },
+        {
+          "id": "mixing_bowl",
+          "name": "mixing bowl",
+          "source": {
+            "status": "inferred",
+            "page": 1,
+            "quote": "Cream butter.",
+            "note": "Implied by the step 'Cream butter' and the later mixing steps."
+          }
+        },
+        {
+          "id": "whisk",
+          "name": "whisk",
+          "source": {
+            "status": "inferred",
+            "page": 1,
+            "quote": "Beat eggs well.",
+            "note": "Implied by the step 'Beat eggs well' and 'Beat vigorously for five minutes'; a mixer could also be used."
+          }
+        }
+      ],
+      "steps": [
+        {
+          "order": 1,
+          "text": "Cream butter.",
+          "ingredient_ids": [
+            "butter"
+          ],
+          "tool_ids": [
+            "mixing_bowl"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Cream butter.",
+            "note": null
+          }
+        },
+        {
+          "order": 2,
+          "text": "Add flour and continue mixing until well blended.",
+          "ingredient_ids": [
+            "cake_flour"
+          ],
+          "tool_ids": [
+            "mixing_bowl"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Add flour and continue mixing until well blended.",
+            "note": null
+          }
+        },
+        {
+          "order": 3,
+          "text": "Beat eggs well.",
+          "ingredient_ids": [
+            "egg"
+          ],
+          "tool_ids": [
+            "whisk"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Beat eggs well.",
+            "note": null
+          }
+        },
+        {
+          "order": 4,
+          "text": "Add sugar gradually to beaten eggs.",
+          "ingredient_ids": [
+            "sugar",
+            "egg"
+          ],
+          "tool_ids": [],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Add sugar gradually to beaten eggs.",
+            "note": null
+          }
+        },
+        {
+          "order": 5,
+          "text": "Combine two mixtures.",
+          "ingredient_ids": [
+            "butter",
+            "cake_flour",
+            "egg",
+            "sugar"
+          ],
+          "tool_ids": [
+            "mixing_bowl"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Combine two mixtures.",
+            "note": null
+          }
+        },
+        {
+          "order": 6,
+          "text": "Add vanilla.",
+          "ingredient_ids": [
+            "vanilla"
+          ],
+          "tool_ids": [],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Add vanilla.",
+            "note": null
+          }
+        },
+        {
+          "order": 7,
+          "text": "Beat vigorously for five minutes.",
+          "ingredient_ids": [],
+          "tool_ids": [
+            "whisk"
+          ],
+          "duration": {
+            "raw": "five minutes",
+            "min_minutes": 5.0,
+            "max_minutes": 5.0
+          },
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Beat vigorously for five minutes.",
+            "note": null
+          }
+        },
+        {
+          "order": 8,
+          "text": "Bake in loaf pan one hour at 300°.",
+          "ingredient_ids": [],
+          "tool_ids": [
+            "loaf_pan",
+            "oven"
+          ],
+          "duration": {
+            "raw": "one hour",
+            "min_minutes": 60.0,
+            "max_minutes": 60.0
+          },
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Bake in loaf pan one hour at 300°.",
+            "note": null
+          }
+        }
+      ],
+      "warnings": [
+        {
+          "message": "The oven temperature 300° has no unit on the card; it is assumed to be Fahrenheit.",
+          "target_id": null
+        },
+        {
+          "message": "The step 'Combine two mixtures' does not name the two mixtures; the linked ingredients are an assumption.",
+          "target_id": null
+        },
+        {
+          "message": "The step 'Add vanilla' does not say whether the vanilla is extract or beans; it is recorded as written.",
+          "target_id": null
+        },
+        {
+          "message": "Servings were not stated and are an estimate.",
+          "target_id": null
+        }
+      ]
+    },
+    "recipe": {
+      "title": "Aunt Ruth's Pound Cake",
+      "language": "en",
+      "servings": {
+        "value": 8,
+        "source": {
+          "status": "inferred",
+          "page": null,
+          "quote": null,
+          "note": "Not stated. Estimated at about 8 slices for a loaf cake made with 1 ½ cups flour, ½ pound butter and 4 eggs."
+        }
+      },
+      "ingredients": [
+        {
+          "id": "vegan_butter",
+          "name": "vegan butter",
+          "name_original": "vegan butter",
+          "quantity": {
+            "kind": "exact",
+            "value": 0.5,
+            "max_value": null,
+            "unit": "pound",
+            "raw": "½ pound"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "rule",
+            "page": 1,
+            "quote": "½ pound butter",
+            "note": "vegan substitute for 'butter': Dairy butter; vegan butter behaves the same for frying and baking."
+          }
+        },
+        {
+          "id": "cake_flour",
+          "name": "cake flour",
+          "name_original": "cake flour",
+          "quantity": {
+            "kind": "exact",
+            "value": 1.5,
+            "max_value": null,
+            "unit": "cups",
+            "raw": "1 ½ cups"
+          },
+          "preparation": "sifted",
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "1 ½ cups sifted cake flour",
+            "note": null
+          }
+        },
+        {
+          "id": "vegan_egg",
+          "name": "flax egg (1 tbsp ground flaxseed + 3 tbsp water per egg)",
+          "name_original": "flax egg (1 tbsp ground flaxseed + 3 tbsp water per egg)",
+          "quantity": {
+            "kind": "exact",
+            "value": 4.0,
+            "max_value": null,
+            "unit": null,
+            "raw": "4"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "rule",
+            "page": 1,
+            "quote": "4 eggs",
+            "note": "vegan substitute for 'eggs': Eggs that bind a dough or batter; a flax egg does the same."
+          }
+        },
+        {
+          "id": "sugar",
+          "name": "sugar",
+          "name_original": "sugar",
+          "quantity": {
+            "kind": "exact",
+            "value": 1.5,
+            "max_value": null,
+            "unit": "cups",
+            "raw": "1 ½ cups"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "1 ½ cups sugar",
+            "note": null
+          }
+        },
+        {
+          "id": "vanilla",
+          "name": "vanilla",
+          "name_original": "vanilla",
+          "quantity": {
+            "kind": "exact",
+            "value": 1.0,
+            "max_value": null,
+            "unit": "teaspoon",
+            "raw": "1 teaspoon"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "1 teaspoon vanilla",
+            "note": null
+          }
+        }
+      ],
+      "tools": [
+        {
+          "id": "loaf_pan",
+          "name": "loaf pan",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Bake in loaf pan one hour at 300°.",
+            "note": null
+          }
+        },
+        {
+          "id": "oven",
+          "name": "oven",
+          "source": {
+            "status": "inferred",
+            "page": 1,
+            "quote": "Bake in loaf pan one hour at 300°.",
+            "note": "Implied by baking at 300° in the step 'Bake in loaf pan one hour at 300°'."
+          }
+        },
+        {
+          "id": "mixing_bowl",
+          "name": "mixing bowl",
+          "source": {
+            "status": "inferred",
+            "page": 1,
+            "quote": "Cream butter.",
+            "note": "Implied by the step 'Cream butter' and the later mixing steps."
+          }
+        },
+        {
+          "id": "whisk",
+          "name": "whisk",
+          "source": {
+            "status": "inferred",
+            "page": 1,
+            "quote": "Beat eggs well.",
+            "note": "Implied by the step 'Beat eggs well' and 'Beat vigorously for five minutes'; a mixer could also be used."
+          }
+        }
+      ],
+      "steps": [
+        {
+          "order": 1,
+          "text": "Cream butter.\n[Vegan: use vegan butter instead of butter.]",
+          "ingredient_ids": [
+            "vegan_butter"
+          ],
+          "tool_ids": [
+            "mixing_bowl"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Cream butter.",
+            "note": null
+          }
+        },
+        {
+          "order": 2,
+          "text": "Add flour and continue mixing until well blended.",
+          "ingredient_ids": [
+            "cake_flour"
+          ],
+          "tool_ids": [
+            "mixing_bowl"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Add flour and continue mixing until well blended.",
+            "note": null
+          }
+        },
+        {
+          "order": 3,
+          "text": "Beat eggs well.\n[Vegan: use flax egg (1 tbsp ground flaxseed + 3 tbsp water per egg) instead of eggs.]",
+          "ingredient_ids": [
+            "vegan_egg"
+          ],
+          "tool_ids": [
+            "whisk"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Beat eggs well.",
+            "note": null
+          }
+        },
+        {
+          "order": 4,
+          "text": "Add sugar gradually to beaten eggs.\n[Vegan: use flax egg (1 tbsp ground flaxseed + 3 tbsp water per egg) instead of eggs.]",
+          "ingredient_ids": [
+            "sugar",
+            "vegan_egg"
+          ],
+          "tool_ids": [],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Add sugar gradually to beaten eggs.",
+            "note": null
+          }
+        },
+        {
+          "order": 5,
+          "text": "Combine two mixtures.\n[Vegan: use vegan butter instead of butter; use flax egg (1 tbsp ground flaxseed + 3 tbsp water per egg) instead of eggs.]",
+          "ingredient_ids": [
+            "vegan_butter",
+            "cake_flour",
+            "vegan_egg",
+            "sugar"
+          ],
+          "tool_ids": [
+            "mixing_bowl"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Combine two mixtures.",
+            "note": null
+          }
+        },
+        {
+          "order": 6,
+          "text": "Add vanilla.",
+          "ingredient_ids": [
+            "vanilla"
+          ],
+          "tool_ids": [],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Add vanilla.",
+            "note": null
+          }
+        },
+        {
+          "order": 7,
+          "text": "Beat vigorously for five minutes.",
+          "ingredient_ids": [],
+          "tool_ids": [
+            "whisk"
+          ],
+          "duration": {
+            "raw": "five minutes",
+            "min_minutes": 5.0,
+            "max_minutes": 5.0
+          },
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Beat vigorously for five minutes.",
+            "note": null
+          }
+        },
+        {
+          "order": 8,
+          "text": "Bake in loaf pan one hour at 300°.",
+          "ingredient_ids": [],
+          "tool_ids": [
+            "loaf_pan",
+            "oven"
+          ],
+          "duration": {
+            "raw": "one hour",
+            "min_minutes": 60.0,
+            "max_minutes": 60.0
+          },
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Bake in loaf pan one hour at 300°.",
+            "note": null
+          }
+        }
+      ],
+      "warnings": [
+        {
+          "message": "The oven temperature 300° has no unit on the card; it is assumed to be Fahrenheit.",
+          "target_id": null
+        },
+        {
+          "message": "The step 'Combine two mixtures' does not name the two mixtures; the linked ingredients are an assumption.",
+          "target_id": null
+        },
+        {
+          "message": "The step 'Add vanilla' does not say whether the vanilla is extract or beans; it is recorded as written.",
+          "target_id": null
+        },
+        {
+          "message": "Servings were not stated and are an estimate.",
+          "target_id": null
+        },
+        {
+          "message": "Vegan check, sugar: Some cane sugar is filtered through bone char. Beet sugar and sugar labelled vegan are safe.",
+          "target_id": "sugar"
+        }
+      ]
+    },
+    "changes": [
+      {
+        "rule": "vegan",
+        "target": "butter",
+        "before": "butter",
+        "after": "vegan butter",
+        "reason": "Dairy butter; vegan butter behaves the same for frying and baking."
+      },
+      {
+        "rule": "vegan",
+        "target": "egg",
+        "before": "eggs",
+        "after": "flax egg (1 tbsp ground flaxseed + 3 tbsp water per egg)",
+        "reason": "Eggs that bind a dough or batter; a flax egg does the same."
+      },
+      {
+        "rule": "vegan",
+        "target": "step 1",
+        "before": "butter",
+        "after": "vegan butter",
+        "reason": "Substitution carried into the method."
+      },
+      {
+        "rule": "vegan",
+        "target": "step 3",
+        "before": "eggs",
+        "after": "flax egg (1 tbsp ground flaxseed + 3 tbsp water per egg)",
+        "reason": "Substitution carried into the method."
+      },
+      {
+        "rule": "vegan",
+        "target": "step 4",
+        "before": "eggs",
+        "after": "flax egg (1 tbsp ground flaxseed + 3 tbsp water per egg)",
+        "reason": "Substitution carried into the method."
+      },
+      {
+        "rule": "vegan",
+        "target": "step 5",
+        "before": "butter, eggs",
+        "after": "vegan butter, flax egg (1 tbsp ground flaxseed + 3 tbsp water per egg)",
+        "reason": "Substitution carried into the method."
+      },
+      {
+        "rule": "vegan",
+        "target": "sugar",
+        "before": "sugar",
+        "after": "unchanged, check the label",
+        "reason": "Some cane sugar is filtered through bone char. Beet sugar and sugar labelled vegan are safe."
+      }
+    ]
+  }
+}

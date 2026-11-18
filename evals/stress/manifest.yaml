@@ -489,7 +489,7 @@
 - id: edge-fr-handwritten-note
   type: handwritten
   language: fr
-  note: French handwritten recipe note
+  note: 'Edge case: titled "Note-manuscrite-recette" on Commons, but the image is a medieval Church Slavonic manuscript, not a recipe'
   title: Note-manuscrite-recette.jpg
   license: CC BY-SA 4.0
   author: Amaël laloyaux
