@@ -43,6 +43,7 @@
           "preparation": "cut up",
           "optional": false,
           "is_intermediate": false,
+          "animal": "poultry",
           "source": {
             "status": "read",
             "page": 1,
@@ -51,24 +52,25 @@
           }
         },
         {
-          "id": "bacon_grease",
-          "name": "bacon grease or other fat",
+          "id": "fat",
+          "name": "bacon grease, lard or other fat",
           "name_original": "Bacon grease, lard, or other fat",
           "quantity": {
-            "kind": "vague",
+            "kind": "absent",
             "value": null,
             "max_value": null,
             "unit": null,
-            "raw": "some"
+            "raw": ""
           },
           "preparation": null,
           "optional": false,
           "is_intermediate": false,
+          "animal": "uncertain",
           "source": {
             "status": "read",
             "page": 1,
-            "quote": "with some bacon grease",
-            "note": null
+            "quote": "Bacon grease, lard, or other fat",
+            "note": "Merged with the later 'Bacon grease or oil' entry. Could be animal fat or plant oil depending on choice."
           }
         },
         {
@@ -79,12 +81,13 @@
             "kind": "exact",
             "value": 2.0,
             "max_value": null,
-            "unit": null,
+            "unit": "standard-size containers",
             "raw": "2 standard-size containers"
           },
           "preparation": null,
           "optional": false,
           "is_intermediate": false,
+          "animal": "dairy",
           "source": {
             "status": "read",
             "page": 1,
@@ -106,11 +109,12 @@
           "preparation": null,
           "optional": false,
           "is_intermediate": false,
+          "animal": "none",
           "source": {
             "status": "read",
             "page": 1,
             "quote": "season with paprika to taste",
-            "note": null
+            "note": "No amount in the ingredient list; amount taken from the procedure."
           }
         },
         {
@@ -127,10 +131,11 @@
           "preparation": "finely chopped",
           "optional": false,
           "is_intermediate": false,
+          "animal": "none",
           "source": {
             "status": "read",
             "page": 1,
-            "quote": "Brown the onions in a heavy skillet",
+            "quote": "White or yellow onion, finely chopped",
             "note": null
           }
         },
@@ -148,6 +153,7 @@
           "preparation": null,
           "optional": false,
           "is_intermediate": false,
+          "animal": "none",
           "source": {
             "status": "read",
             "page": 1,
@@ -169,6 +175,7 @@
           "preparation": null,
           "optional": false,
           "is_intermediate": false,
+          "animal": "egg",
           "source": {
             "status": "read",
             "page": 1,
@@ -190,6 +197,7 @@
           "preparation": null,
           "optional": false,
           "is_intermediate": false,
+          "animal": "none",
           "source": {
             "status": "read",
             "page": 1,
@@ -206,23 +214,46 @@
             "value": null,
             "max_value": null,
             "unit": null,
-            "raw": "a pinch of salt"
+            "raw": "a pinch"
           },
           "preparation": null,
           "optional": false,
           "is_intermediate": false,
+          "animal": "none",
           "source": {
             "status": "read",
             "page": 1,
             "quote": "a pinch of salt",
             "note": null
           }
+        },
+        {
+          "id": "dough",
+          "name": "dumpling dough",
+          "name_original": "dough",
+          "quantity": {
+            "kind": "absent",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": true,
+          "animal": "egg",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Combine flour, eggs, and a pinch of salt with enough to make a dough.",
+            "note": "Made in the dumplings step from flour, eggs and salt."
+          }
         }
       ],
       "tools": [
         {
           "id": "big_pot",
-          "name": "big pot",
+          "name": "Big pot",
           "source": {
             "status": "read",
             "page": 1,
@@ -232,7 +263,7 @@
         },
         {
           "id": "pan_with_lid",
-          "name": "pan with lid",
+          "name": "Pan with lid",
           "source": {
             "status": "read",
             "page": 1,
@@ -242,17 +273,17 @@
         },
         {
           "id": "heavy_skillet",
-          "name": "heavy skillet",
+          "name": "Heavy skillet",
           "source": {
             "status": "read",
             "page": 1,
-            "quote": "in a heavy skillet",
+            "quote": "Brown the onions in a heavy skillet",
             "note": null
           }
         },
         {
           "id": "dessert_spoon",
-          "name": "dessert spoon",
+          "name": "Dessert spoon",
           "source": {
             "status": "read",
             "page": 1,
@@ -262,7 +293,7 @@
         },
         {
           "id": "melon_baller",
-          "name": "melon baller",
+          "name": "Melon baller",
           "source": {
             "status": "read",
             "page": 1,
@@ -272,22 +303,12 @@
         },
         {
           "id": "bowl",
-          "name": "bowl",
+          "name": "Bowl",
           "source": {
             "status": "inferred",
             "page": 1,
             "quote": "put in a bowl with a tiny slick of melted fat",
-            "note": "Implied for combining the dough and for holding the drained dumplings (steps 5 and 9)."
-          }
-        },
-        {
-          "id": "colander",
-          "name": "colander",
-          "source": {
-            "status": "inferred",
-            "page": 1,
-            "quote": "Drain",
-            "note": "Implied to drain the dumplings after boiling (step 9)."
+            "note": "Implied by the draining step; needed to hold the dumplings."
           }
         }
       ],
@@ -297,7 +318,7 @@
           "text": "Brown the onions in a heavy skillet with some bacon grease until softened and well-colored.",
           "ingredient_ids": [
             "onion",
-            "bacon_grease"
+            "fat"
           ],
           "tool_ids": [
             "heavy_skillet"
@@ -318,7 +339,9 @@
             "chicken",
             "paprika"
           ],
-          "tool_ids": [],
+          "tool_ids": [
+            "heavy_skillet"
+          ],
           "duration": null,
           "condition": null,
           "source": {
@@ -330,10 +353,9 @@
         },
         {
           "order": 3,
-          "text": "Turn heat down, add enough water to cover the bottom of the pan, and cook on low. Keep covered with the lid slightly cocked to prevent boiling.",
+          "text": "Turn heat down, add enough water to cover the bottom of the pan, and cook on low. Keep covered but with the lid slightly cocked to prevent boiling.",
           "ingredient_ids": [
-            "water",
-            "chicken"
+            "water"
           ],
           "tool_ids": [
             "pan_with_lid"
@@ -363,15 +385,14 @@
         },
         {
           "order": 5,
-          "text": "Combine flour, eggs, and a pinch of salt with enough to make a dough.",
+          "text": "Combine flour, eggs, and a pinch of salt with enough to make a dough. For dumplings to be sticky inside, make a wetter dough; for all the way through, make a drier dough.",
           "ingredient_ids": [
             "flour",
             "eggs",
-            "salt"
+            "salt",
+            "dough"
           ],
-          "tool_ids": [
-            "bowl"
-          ],
+          "tool_ids": [],
           "duration": null,
           "condition": null,
           "source": {
@@ -383,32 +404,15 @@
         },
         {
           "order": 6,
-          "text": "Make a wetter dough for dumplings that should be sticky inside; make a drier dough for dumplings that should be cooked all the way through.",
+          "text": "Use a dessert spoon (or a melon baller for smaller dumplings) to drop pieces of dough into boiling salted water. To keep them from sticking to the spoon, let it heat up in the water.",
           "ingredient_ids": [
-            "flour",
-            "eggs"
-          ],
-          "tool_ids": [],
-          "duration": null,
-          "condition": "wetter dough for sticky centres, drier dough for fully cooked centres",
-          "source": {
-            "status": "read",
-            "page": 1,
-            "quote": "For dumplings to be ‘sticky’ inside, make a wetter dough; for all the way through, make a drier dough.",
-            "note": null
-          }
-        },
-        {
-          "order": 7,
-          "text": "Use a dessert spoon (or a melon baller for smaller dumplings) to drop pieces of dough into boiling salted water.",
-          "ingredient_ids": [
-            "flour",
-            "water",
-            "salt"
+            "dough",
+            "water"
           ],
           "tool_ids": [
             "dessert_spoon",
-            "melon_baller"
+            "melon_baller",
+            "big_pot"
           ],
           "duration": null,
           "condition": null,
@@ -420,38 +424,16 @@
           }
         },
         {
-          "order": 8,
-          "text": "Let the spoon heat up in the water so the dough does not stick to it.",
-          "ingredient_ids": [
-            "water"
-          ],
-          "tool_ids": [
-            "dessert_spoon"
-          ],
-          "duration": null,
-          "condition": null,
-          "source": {
-            "status": "read",
-            "page": 1,
-            "quote": "To keep them from sticking to the spoon, let it heat up in the water.",
-            "note": null
-          }
-        },
-        {
-          "order": 9,
+          "order": 7,
           "text": "Let simmer until the dumplings float. Drain, put in a bowl with a tiny slick of melted fat, and keep them to one side in a warm place.",
           "ingredient_ids": [
-            "bacon_grease"
+            "dough",
+            "fat"
           ],
           "tool_ids": [
-            "colander",
             "bowl"
           ],
-          "duration": {
-            "raw": "until the dumplings float",
-            "min_minutes": null,
-            "max_minutes": null
-          },
+          "duration": null,
           "condition": "until the dumplings float",
           "source": {
             "status": "read",
@@ -461,42 +443,27 @@
           }
         },
         {
-          "order": 10,
-          "text": "Once the chicken is fully cooked (160°F) and the dumplings are all done, stir dumplings and sour cream into the pan of chicken.",
+          "order": 8,
+          "text": "Once the chicken is fully cooked (160°F) and your dumplings are all done, stir dumplings and sour cream into the pan of chicken. Mix thoroughly but carefully to coat.",
           "ingredient_ids": [
             "chicken",
+            "dough",
             "sour_cream"
           ],
           "tool_ids": [
             "pan_with_lid"
           ],
           "duration": null,
-          "condition": "once the chicken is fully cooked (160°F)",
+          "condition": "once the chicken is fully cooked (160°F) and the dumplings are done",
           "source": {
             "status": "read",
             "page": 1,
-            "quote": "Once the chicken is fully cooked (160°F) and your dumplings are all done, stir dumplings and sour cream into the pan of chicken.",
+            "quote": "Once the chicken is fully cooked (160°F) and your dumplings are all done, stir dumplings and sour cream into the pan of chicken. Mix thoroughly but carefully to coat.",
             "note": null
           }
         },
         {
-          "order": 11,
-          "text": "Mix thoroughly but carefully to coat.",
-          "ingredient_ids": [
-            "chicken"
-          ],
-          "tool_ids": [],
-          "duration": null,
-          "condition": null,
-          "source": {
-            "status": "read",
-            "page": 1,
-            "quote": "Mix thoroughly but carefully to coat.",
-            "note": null
-          }
-        },
-        {
-          "order": 12,
+          "order": 9,
           "text": "Add more paprika until it is more pink (or orange) than white.",
           "ingredient_ids": [
             "paprika"
@@ -512,28 +479,14 @@
           }
         },
         {
-          "order": 13,
-          "text": "Taste the sauce; it may need more paprika or salt.",
+          "order": 10,
+          "text": "Taste sauce; it may need more paprika or salt. Sometimes it is easier to remove the chicken, and then pour the dumplings and sour cream over the top to coat (when serving), depending on how big your pan is.",
           "ingredient_ids": [
             "paprika",
-            "salt"
-          ],
-          "tool_ids": [],
-          "duration": null,
-          "condition": null,
-          "source": {
-            "status": "read",
-            "page": 1,
-            "quote": "Taste sauce; it may need more paprika or salt.",
-            "note": null
-          }
-        },
-        {
-          "order": 14,
-          "text": "Sometimes it is easier to remove the chicken, and then pour the dumplings and sour cream over the top to coat when serving.",
-          "ingredient_ids": [
+            "salt",
+            "sour_cream",
             "chicken",
-            "sour_cream"
+            "dough"
           ],
           "tool_ids": [],
           "duration": null,
@@ -541,46 +494,42 @@
           "source": {
             "status": "read",
             "page": 1,
-            "quote": "Sometimes it is easier to remove the chicken, and then pour the dumplings and sour cream over the top to coat (when serving), depending on how big your pan is.",
+            "quote": "Taste sauce; it may need more paprika or salt. Sometimes it is easier to remove the chicken, and then pour the dumplings and sour cream over the top to coat (when serving), depending on how big your pan is.",
             "note": null
           }
         }
       ],
       "warnings": [
         {
-          "message": "Bacon grease is listed as 'Bacon grease, lard, or other fat' and again as 'Bacon grease or oil'; merged into one entry.",
+          "message": "The fat is listed as bacon grease, lard, or other fat and again as bacon grease or oil; these were merged into one entry, and its animal origin is uncertain.",
           "target_id": null
         },
         {
-          "message": "The amount of bacon grease is only given as 'some' in the browning step; the amount is vague.",
+          "message": "The paprika has no amount in the ingredient list; the to-taste amount comes from the procedure.",
           "target_id": null
         },
         {
-          "message": "Flour is given as both cups and grams; the first unit (cups) was used.",
+          "message": "The flour is given in cups with a gram range; the first unit (cups) was kept and the weight was not used.",
           "target_id": null
         },
         {
-          "message": "Eggs have no size given; the count is a range of 2 to 3.",
+          "message": "The eggs are given as a range of 2 to 3.",
           "target_id": null
         },
         {
-          "message": "Paprika, onion, water and salt have no amount in the ingredient list; amounts come from the procedure or are absent.",
+          "message": "The oven temperature and chicken doneness of 160°F was kept as written and not converted.",
           "target_id": null
         },
         {
-          "message": "'Heavy skillet' and 'pan with lid' may be the same vessel; both were kept as listed.",
+          "message": "The melon baller is an alternative to the dessert spoon and was recorded as a tool anyway.",
           "target_id": null
         },
         {
-          "message": "The procedure gives no cooking times for the chicken or the dumplings beyond 'until the dumplings float'.",
+          "message": "The bowl was not named in the equipment list and is implied by the draining step.",
           "target_id": null
         },
         {
-          "message": "The 160°F doneness temperature is taken as written.",
-          "target_id": null
-        },
-        {
-          "message": "Sour cream container size is not stated; the count of 2 containers was kept with an empty unit.",
+          "message": "The notes section (seeded rye bread) was ignored as it is not part of the recipe.",
           "target_id": null
         }
       ]
@@ -588,9 +537,9 @@
     "usage": [
       {
         "model": "claude-haiku-5-5",
-        "input_tokens": 4524,
-        "output_tokens": 7017,
-        "seconds": 25.77219889999992,
+        "input_tokens": 5026,
+        "output_tokens": 8078,
+        "seconds": 28.55985259999943,
         "cached": true
       }
     ],
@@ -625,6 +574,7 @@
           "preparation": "cut up",
           "optional": false,
           "is_intermediate": false,
+          "animal": "poultry",
           "source": {
             "status": "read",
             "page": 1,
@@ -633,24 +583,25 @@
           }
         },
         {
-          "id": "bacon_grease",
-          "name": "bacon grease or other fat",
+          "id": "fat",
+          "name": "bacon grease, lard or other fat",
           "name_original": "Bacon grease, lard, or other fat",
           "quantity": {
-            "kind": "vague",
+            "kind": "absent",
             "value": null,
             "max_value": null,
             "unit": null,
-            "raw": "some"
+            "raw": ""
           },
           "preparation": null,
           "optional": false,
           "is_intermediate": false,
+          "animal": "uncertain",
           "source": {
             "status": "read",
             "page": 1,
-            "quote": "with some bacon grease",
-            "note": null
+            "quote": "Bacon grease, lard, or other fat",
+            "note": "Merged with the later 'Bacon grease or oil' entry. Could be animal fat or plant oil depending on choice."
           }
         },
         {
@@ -661,12 +612,13 @@
             "kind": "exact",
             "value": 2.0,
             "max_value": null,
-            "unit": null,
+            "unit": "standard-size containers",
             "raw": "2 standard-size containers"
           },
           "preparation": null,
           "optional": false,
           "is_intermediate": false,
+          "animal": "dairy",
           "source": {
             "status": "read",
             "page": 1,
@@ -688,11 +640,12 @@
           "preparation": null,
           "optional": false,
           "is_intermediate": false,
+          "animal": "none",
           "source": {
             "status": "read",
             "page": 1,
             "quote": "season with paprika to taste",
-            "note": null
+            "note": "No amount in the ingredient list; amount taken from the procedure."
           }
         },
         {
@@ -709,10 +662,11 @@
           "preparation": "finely chopped",
           "optional": false,
           "is_intermediate": false,
+          "animal": "none",
           "source": {
             "status": "read",
             "page": 1,
-            "quote": "Brown the onions in a heavy skillet",
+            "quote": "White or yellow onion, finely chopped",
             "note": null
           }
         },
@@ -730,6 +684,7 @@
           "preparation": null,
           "optional": false,
           "is_intermediate": false,
+          "animal": "none",
           "source": {
             "status": "read",
             "page": 1,
@@ -751,6 +706,7 @@
           "preparation": null,
           "optional": false,
           "is_intermediate": false,
+          "animal": "egg",
           "source": {
             "status": "read",
             "page": 1,
@@ -772,6 +728,7 @@
           "preparation": null,
           "optional": false,
           "is_intermediate": false,
+          "animal": "none",
           "source": {
             "status": "read",
             "page": 1,
@@ -788,23 +745,46 @@
             "value": null,
             "max_value": null,
             "unit": null,
-            "raw": "a pinch of salt"
+            "raw": "a pinch"
           },
           "preparation": null,
           "optional": false,
           "is_intermediate": false,
+          "animal": "none",
           "source": {
             "status": "read",
             "page": 1,
             "quote": "a pinch of salt",
             "note": null
           }
+        },
+        {
+          "id": "dough",
+          "name": "dumpling dough",
+          "name_original": "dough",
+          "quantity": {
+            "kind": "absent",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": true,
+          "animal": "egg",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Combine flour, eggs, and a pinch of salt with enough to make a dough.",
+            "note": "Made in the dumplings step from flour, eggs and salt."
+          }
         }
       ],
       "tools": [
         {
           "id": "big_pot",
-          "name": "big pot",
+          "name": "Big pot",
           "source": {
             "status": "read",
             "page": 1,
@@ -814,7 +794,7 @@
         },
         {
           "id": "pan_with_lid",
-          "name": "pan with lid",
+          "name": "Pan with lid",
           "source": {
             "status": "read",
             "page": 1,
@@ -824,17 +804,17 @@
         },
         {
           "id": "heavy_skillet",
-          "name": "heavy skillet",
+          "name": "Heavy skillet",
           "source": {
             "status": "read",
             "page": 1,
-            "quote": "in a heavy skillet",
+            "quote": "Brown the onions in a heavy skillet",
             "note": null
           }
         },
         {
           "id": "dessert_spoon",
-          "name": "dessert spoon",
+          "name": "Dessert spoon",
           "source": {
             "status": "read",
             "page": 1,
@@ -844,7 +824,7 @@
         },
         {
           "id": "melon_baller",
-          "name": "melon baller",
+          "name": "Melon baller",
           "source": {
             "status": "read",
             "page": 1,
@@ -854,22 +834,12 @@
         },
         {
           "id": "bowl",
-          "name": "bowl",
+          "name": "Bowl",
           "source": {
             "status": "inferred",
             "page": 1,
             "quote": "put in a bowl with a tiny slick of melted fat",
-            "note": "Implied for combining the dough and for holding the drained dumplings (steps 5 and 9)."
-          }
-        },
-        {
-          "id": "colander",
-          "name": "colander",
-          "source": {
-            "status": "inferred",
-            "page": 1,
-            "quote": "Drain",
-            "note": "Implied to drain the dumplings after boiling (step 9)."
+            "note": "Implied by the draining step; needed to hold the dumplings."
           }
         }
       ],
@@ -879,7 +849,7 @@
           "text": "Brown the onions in a heavy skillet with some bacon grease until softened and well-colored.",
           "ingredient_ids": [
             "onion",
-            "bacon_grease"
+            "fat"
           ],
           "tool_ids": [
             "heavy_skillet"
@@ -900,7 +870,9 @@
             "chicken",
             "paprika"
           ],
-          "tool_ids": [],
+          "tool_ids": [
+            "heavy_skillet"
+          ],
           "duration": null,
           "condition": null,
           "source": {
@@ -912,10 +884,9 @@
         },
         {
           "order": 3,
-          "text": "Turn heat down, add enough water to cover the bottom of the pan, and cook on low. Keep covered with the lid slightly cocked to prevent boiling.",
+          "text": "Turn heat down, add enough water to cover the bottom of the pan, and cook on low. Keep covered but with the lid slightly cocked to prevent boiling.",
           "ingredient_ids": [
-            "water",
-            "chicken"
+            "water"
           ],
           "tool_ids": [
             "pan_with_lid"
@@ -945,15 +916,14 @@
         },
         {
           "order": 5,
-          "text": "Combine flour, eggs, and a pinch of salt with enough to make a dough.",
+          "text": "Combine flour, eggs, and a pinch of salt with enough to make a dough. For dumplings to be sticky inside, make a wetter dough; for all the way through, make a drier dough.",
           "ingredient_ids": [
             "flour",
             "eggs",
-            "salt"
+            "salt",
+            "dough"
           ],
-          "tool_ids": [
-            "bowl"
-          ],
+          "tool_ids": [],
           "duration": null,
           "condition": null,
           "source": {
@@ -965,32 +935,15 @@
         },
         {
           "order": 6,
-          "text": "Make a wetter dough for dumplings that should be sticky inside; make a drier dough for dumplings that should be cooked all the way through.",
+          "text": "Use a dessert spoon (or a melon baller for smaller dumplings) to drop pieces of dough into boiling salted water. To keep them from sticking to the spoon, let it heat up in the water.",
           "ingredient_ids": [
-            "flour",
-            "eggs"
-          ],
-          "tool_ids": [],
-          "duration": null,
-          "condition": "wetter dough for sticky centres, drier dough for fully cooked centres",
-          "source": {
-            "status": "read",
-            "page": 1,
-            "quote": "For dumplings to be ‘sticky’ inside, make a wetter dough; for all the way through, make a drier dough.",
-            "note": null
-          }
-        },
-        {
-          "order": 7,
-          "text": "Use a dessert spoon (or a melon baller for smaller dumplings) to drop pieces of dough into boiling salted water.",
-          "ingredient_ids": [
-            "flour",
-            "water",
-            "salt"
+            "dough",
+            "water"
           ],
           "tool_ids": [
             "dessert_spoon",
-            "melon_baller"
+            "melon_baller",
+            "big_pot"
           ],
           "duration": null,
           "condition": null,
@@ -1002,38 +955,16 @@
           }
         },
         {
-          "order": 8,
-          "text": "Let the spoon heat up in the water so the dough does not stick to it.",
-          "ingredient_ids": [
-            "water"
-          ],
-          "tool_ids": [
-            "dessert_spoon"
-          ],
-          "duration": null,
-          "condition": null,
-          "source": {
-            "status": "read",
-            "page": 1,
-            "quote": "To keep them from sticking to the spoon, let it heat up in the water.",
-            "note": null
-          }
-        },
-        {
-          "order": 9,
+          "order": 7,
           "text": "Let simmer until the dumplings float. Drain, put in a bowl with a tiny slick of melted fat, and keep them to one side in a warm place.",
           "ingredient_ids": [
-            "bacon_grease"
+            "dough",
+            "fat"
           ],
           "tool_ids": [
-            "colander",
             "bowl"
           ],
-          "duration": {
-            "raw": "until the dumplings float",
-            "min_minutes": null,
-            "max_minutes": null
-          },
+          "duration": null,
           "condition": "until the dumplings float",
           "source": {
             "status": "read",
@@ -1043,42 +974,27 @@
           }
         },
         {
-          "order": 10,
-          "text": "Once the chicken is fully cooked (160°F) and the dumplings are all done, stir dumplings and sour cream into the pan of chicken.",
+          "order": 8,
+          "text": "Once the chicken is fully cooked (160°F) and your dumplings are all done, stir dumplings and sour cream into the pan of chicken. Mix thoroughly but carefully to coat.",
           "ingredient_ids": [
             "chicken",
+            "dough",
             "sour_cream"
           ],
           "tool_ids": [
             "pan_with_lid"
           ],
           "duration": null,
-          "condition": "once the chicken is fully cooked (160°F)",
+          "condition": "once the chicken is fully cooked (160°F) and the dumplings are done",
           "source": {
             "status": "read",
             "page": 1,
-            "quote": "Once the chicken is fully cooked (160°F) and your dumplings are all done, stir dumplings and sour cream into the pan of chicken.",
+            "quote": "Once the chicken is fully cooked (160°F) and your dumplings are all done, stir dumplings and sour cream into the pan of chicken. Mix thoroughly but carefully to coat.",
             "note": null
           }
         },
         {
-          "order": 11,
-          "text": "Mix thoroughly but carefully to coat.",
-          "ingredient_ids": [
-            "chicken"
-          ],
-          "tool_ids": [],
-          "duration": null,
-          "condition": null,
-          "source": {
-            "status": "read",
-            "page": 1,
-            "quote": "Mix thoroughly but carefully to coat.",
-            "note": null
-          }
-        },
-        {
-          "order": 12,
+          "order": 9,
           "text": "Add more paprika until it is more pink (or orange) than white.",
           "ingredient_ids": [
             "paprika"
@@ -1094,28 +1010,14 @@
           }
         },
         {
-          "order": 13,
-          "text": "Taste the sauce; it may need more paprika or salt.",
+          "order": 10,
+          "text": "Taste sauce; it may need more paprika or salt. Sometimes it is easier to remove the chicken, and then pour the dumplings and sour cream over the top to coat (when serving), depending on how big your pan is.",
           "ingredient_ids": [
             "paprika",
-            "salt"
-          ],
-          "tool_ids": [],
-          "duration": null,
-          "condition": null,
-          "source": {
-            "status": "read",
-            "page": 1,
-            "quote": "Taste sauce; it may need more paprika or salt.",
-            "note": null
-          }
-        },
-        {
-          "order": 14,
-          "text": "Sometimes it is easier to remove the chicken, and then pour the dumplings and sour cream over the top to coat when serving.",
-          "ingredient_ids": [
+            "salt",
+            "sour_cream",
             "chicken",
-            "sour_cream"
+            "dough"
           ],
           "tool_ids": [],
           "duration": null,
@@ -1123,46 +1025,42 @@
           "source": {
             "status": "read",
             "page": 1,
-            "quote": "Sometimes it is easier to remove the chicken, and then pour the dumplings and sour cream over the top to coat (when serving), depending on how big your pan is.",
+            "quote": "Taste sauce; it may need more paprika or salt. Sometimes it is easier to remove the chicken, and then pour the dumplings and sour cream over the top to coat (when serving), depending on how big your pan is.",
             "note": null
           }
         }
       ],
       "warnings": [
         {
-          "message": "Bacon grease is listed as 'Bacon grease, lard, or other fat' and again as 'Bacon grease or oil'; merged into one entry.",
+          "message": "The fat is listed as bacon grease, lard, or other fat and again as bacon grease or oil; these were merged into one entry, and its animal origin is uncertain.",
           "target_id": null
         },
         {
-          "message": "The amount of bacon grease is only given as 'some' in the browning step; the amount is vague.",
+          "message": "The paprika has no amount in the ingredient list; the to-taste amount comes from the procedure.",
           "target_id": null
         },
         {
-          "message": "Flour is given as both cups and grams; the first unit (cups) was used.",
+          "message": "The flour is given in cups with a gram range; the first unit (cups) was kept and the weight was not used.",
           "target_id": null
         },
         {
-          "message": "Eggs have no size given; the count is a range of 2 to 3.",
+          "message": "The eggs are given as a range of 2 to 3.",
           "target_id": null
         },
         {
-          "message": "Paprika, onion, water and salt have no amount in the ingredient list; amounts come from the procedure or are absent.",
+          "message": "The oven temperature and chicken doneness of 160°F was kept as written and not converted.",
           "target_id": null
         },
         {
-          "message": "'Heavy skillet' and 'pan with lid' may be the same vessel; both were kept as listed.",
+          "message": "The melon baller is an alternative to the dessert spoon and was recorded as a tool anyway.",
           "target_id": null
         },
         {
-          "message": "The procedure gives no cooking times for the chicken or the dumplings beyond 'until the dumplings float'.",
+          "message": "The bowl was not named in the equipment list and is implied by the draining step.",
           "target_id": null
         },
         {
-          "message": "The 160°F doneness temperature is taken as written.",
-          "target_id": null
-        },
-        {
-          "message": "Sour cream container size is not stated; the count of 2 containers was kept with an empty unit.",
+          "message": "The notes section (seeded rye bread) was ignored as it is not part of the recipe.",
           "target_id": null
         }
       ]
@@ -1194,6 +1092,7 @@
           "preparation": null,
           "optional": false,
           "is_intermediate": false,
+          "animal": "none",
           "source": {
             "status": "rule",
             "page": 1,
@@ -1202,24 +1101,25 @@
           }
         },
         {
-          "id": "vegan_bacon_grease",
-          "name": "vegetable oil",
-          "name_original": "vegetable oil",
+          "id": "fat",
+          "name": "bacon grease, lard or other fat",
+          "name_original": "Bacon grease, lard, or other fat",
           "quantity": {
-            "kind": "vague",
+            "kind": "absent",
             "value": null,
             "max_value": null,
             "unit": null,
-            "raw": "some"
+            "raw": ""
           },
           "preparation": null,
           "optional": false,
           "is_intermediate": false,
+          "animal": "uncertain",
           "source": {
-            "status": "rule",
+            "status": "read",
             "page": 1,
-            "quote": "with some bacon grease",
-            "note": "vegan substitute for 'Bacon grease, lard, or other fat': Animal fat; any neutral oil does the same job for browning."
+            "quote": "Bacon grease, lard, or other fat",
+            "note": "Merged with the later 'Bacon grease or oil' entry. Could be animal fat or plant oil depending on choice."
           }
         },
         {
@@ -1230,12 +1130,13 @@
             "kind": "exact",
             "value": 3.0,
             "max_value": null,
-            "unit": null,
+            "unit": "standard-size containers",
             "raw": "2 standard-size containers"
           },
           "preparation": null,
           "optional": false,
           "is_intermediate": false,
+          "animal": "none",
           "source": {
             "status": "rule",
             "page": 1,
@@ -1257,11 +1158,12 @@
           "preparation": null,
           "optional": false,
           "is_intermediate": false,
+          "animal": "none",
           "source": {
             "status": "read",
             "page": 1,
             "quote": "season with paprika to taste",
-            "note": null
+            "note": "No amount in the ingredient list; amount taken from the procedure."
           }
         },
         {
@@ -1278,10 +1180,11 @@
           "preparation": "finely chopped",
           "optional": false,
           "is_intermediate": false,
+          "animal": "none",
           "source": {
             "status": "read",
             "page": 1,
-            "quote": "Brown the onions in a heavy skillet",
+            "quote": "White or yellow onion, finely chopped",
             "note": null
           }
         },
@@ -1299,6 +1202,7 @@
           "preparation": null,
           "optional": false,
           "is_intermediate": false,
+          "animal": "none",
           "source": {
             "status": "read",
             "page": 1,
@@ -1320,11 +1224,12 @@
           "preparation": null,
           "optional": false,
           "is_intermediate": false,
+          "animal": "none",
           "source": {
             "status": "rule",
             "page": 1,
             "quote": "2–3 eggs",
-            "note": "vegan substitute for '2–3 eggs': Eggs; a flax egg binds doughs and batters."
+            "note": "vegan substitute for '2–3 eggs': Eggs that bind a dough or batter; a flax egg does the same."
           }
         },
         {
@@ -1341,6 +1246,7 @@
           "preparation": null,
           "optional": false,
           "is_intermediate": false,
+          "animal": "none",
           "source": {
             "status": "read",
             "page": 1,
@@ -1357,23 +1263,46 @@
             "value": null,
             "max_value": null,
             "unit": null,
-            "raw": "a pinch of salt"
+            "raw": "a pinch"
           },
           "preparation": null,
           "optional": false,
           "is_intermediate": false,
+          "animal": "none",
           "source": {
             "status": "read",
             "page": 1,
             "quote": "a pinch of salt",
             "note": null
           }
+        },
+        {
+          "id": "dough",
+          "name": "dumpling dough",
+          "name_original": "dough",
+          "quantity": {
+            "kind": "absent",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": ""
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": true,
+          "animal": "egg",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Combine flour, eggs, and a pinch of salt with enough to make a dough.",
+            "note": "Made in the dumplings step from flour, eggs and salt."
+          }
         }
       ],
       "tools": [
         {
           "id": "big_pot",
-          "name": "big pot",
+          "name": "Big pot",
           "source": {
             "status": "read",
             "page": 1,
@@ -1383,7 +1312,7 @@
         },
         {
           "id": "pan_with_lid",
-          "name": "pan with lid",
+          "name": "Pan with lid",
           "source": {
             "status": "read",
             "page": 1,
@@ -1393,17 +1322,17 @@
         },
         {
           "id": "heavy_skillet",
-          "name": "heavy skillet",
+          "name": "Heavy skillet",
           "source": {
             "status": "read",
             "page": 1,
-            "quote": "in a heavy skillet",
+            "quote": "Brown the onions in a heavy skillet",
             "note": null
           }
         },
         {
           "id": "dessert_spoon",
-          "name": "dessert spoon",
+          "name": "Dessert spoon",
           "source": {
             "status": "read",
             "page": 1,
@@ -1413,7 +1342,7 @@
         },
         {
           "id": "melon_baller",
-          "name": "melon baller",
+          "name": "Melon baller",
           "source": {
             "status": "read",
             "page": 1,
@@ -1423,32 +1352,22 @@
         },
         {
           "id": "bowl",
-          "name": "bowl",
+          "name": "Bowl",
           "source": {
             "status": "inferred",
             "page": 1,
             "quote": "put in a bowl with a tiny slick of melted fat",
-            "note": "Implied for combining the dough and for holding the drained dumplings (steps 5 and 9)."
-          }
-        },
-        {
-          "id": "colander",
-          "name": "colander",
-          "source": {
-            "status": "inferred",
-            "page": 1,
-            "quote": "Drain",
-            "note": "Implied to drain the dumplings after boiling (step 9)."
+            "note": "Implied by the draining step; needed to hold the dumplings."
           }
         }
       ],
       "steps": [
         {
           "order": 1,
-          "text": "Brown the onions in a heavy skillet with some bacon grease until softened and well-colored.\n[Vegan: use vegetable oil instead of Bacon grease, lard, or other fat.]",
+          "text": "Brown the onions in a heavy skillet with some bacon grease until softened and well-colored.",
           "ingredient_ids": [
             "onion",
-            "vegan_bacon_grease"
+            "fat"
           ],
           "tool_ids": [
             "heavy_skillet"
@@ -1469,7 +1388,9 @@
             "vegan_chicken",
             "paprika"
           ],
-          "tool_ids": [],
+          "tool_ids": [
+            "heavy_skillet"
+          ],
           "duration": null,
           "condition": null,
           "source": {
@@ -1481,10 +1402,9 @@
         },
         {
           "order": 3,
-          "text": "Turn heat down, add enough water to cover the bottom of the pan, and cook on low. Keep covered with the lid slightly cocked to prevent boiling.\n[Vegan: use oyster mushrooms or seitan pieces instead of 1 whole chicken, cut up (skin optional). Brown the mushrooms or seitan briefly; they cook much faster than chicken.]",
+          "text": "Turn heat down, add enough water to cover the bottom of the pan, and cook on low. Keep covered but with the lid slightly cocked to prevent boiling.",
           "ingredient_ids": [
-            "water",
-            "vegan_chicken"
+            "water"
           ],
           "tool_ids": [
             "pan_with_lid"
@@ -1514,15 +1434,14 @@
         },
         {
           "order": 5,
-          "text": "Combine flour, eggs, and a pinch of salt with enough to make a dough.\n[Vegan: use flax egg (1 tbsp ground flaxseed + 3 tbsp water per egg) instead of 2–3 eggs.]",
+          "text": "Combine flour, eggs, and a pinch of salt with enough to make a dough. For dumplings to be sticky inside, make a wetter dough; for all the way through, make a drier dough.\n[Vegan: use flax egg (1 tbsp ground flaxseed + 3 tbsp water per egg) instead of 2–3 eggs.]",
           "ingredient_ids": [
             "flour",
             "vegan_eggs",
-            "salt"
+            "salt",
+            "dough"
           ],
-          "tool_ids": [
-            "bowl"
-          ],
+          "tool_ids": [],
           "duration": null,
           "condition": null,
           "source": {
@@ -1534,32 +1453,15 @@
         },
         {
           "order": 6,
-          "text": "Make a wetter dough for dumplings that should be sticky inside; make a drier dough for dumplings that should be cooked all the way through.\n[Vegan: use flax egg (1 tbsp ground flaxseed + 3 tbsp water per egg) instead of 2–3 eggs.]",
+          "text": "Use a dessert spoon (or a melon baller for smaller dumplings) to drop pieces of dough into boiling salted water. To keep them from sticking to the spoon, let it heat up in the water.",
           "ingredient_ids": [
-            "flour",
-            "vegan_eggs"
-          ],
-          "tool_ids": [],
-          "duration": null,
-          "condition": "wetter dough for sticky centres, drier dough for fully cooked centres",
-          "source": {
-            "status": "read",
-            "page": 1,
-            "quote": "For dumplings to be ‘sticky’ inside, make a wetter dough; for all the way through, make a drier dough.",
-            "note": null
-          }
-        },
-        {
-          "order": 7,
-          "text": "Use a dessert spoon (or a melon baller for smaller dumplings) to drop pieces of dough into boiling salted water.",
-          "ingredient_ids": [
-            "flour",
-            "water",
-            "salt"
+            "dough",
+            "water"
           ],
           "tool_ids": [
             "dessert_spoon",
-            "melon_baller"
+            "melon_baller",
+            "big_pot"
           ],
           "duration": null,
           "condition": null,
@@ -1571,38 +1473,16 @@
           }
         },
         {
-          "order": 8,
-          "text": "Let the spoon heat up in the water so the dough does not stick to it.",
+          "order": 7,
+          "text": "Let simmer until the dumplings float. Drain, put in a bowl with a tiny slick of melted fat, and keep them to one side in a warm place.",
           "ingredient_ids": [
-            "water"
+            "dough",
+            "fat"
           ],
           "tool_ids": [
-            "dessert_spoon"
-          ],
-          "duration": null,
-          "condition": null,
-          "source": {
-            "status": "read",
-            "page": 1,
-            "quote": "To keep them from sticking to the spoon, let it heat up in the water.",
-            "note": null
-          }
-        },
-        {
-          "order": 9,
-          "text": "Let simmer until the dumplings float. Drain, put in a bowl with a tiny slick of melted fat, and keep them to one side in a warm place.\n[Vegan: use vegetable oil instead of Bacon grease, lard, or other fat.]",
-          "ingredient_ids": [
-            "vegan_bacon_grease"
-          ],
-          "tool_ids": [
-            "colander",
             "bowl"
           ],
-          "duration": {
-            "raw": "until the dumplings float",
-            "min_minutes": null,
-            "max_minutes": null
-          },
+          "duration": null,
           "condition": "until the dumplings float",
           "source": {
             "status": "read",
@@ -1612,42 +1492,27 @@
           }
         },
         {
-          "order": 10,
-          "text": "Once the chicken is fully cooked (160°F) and the dumplings are all done, stir dumplings and sour cream into the pan of chicken.\n[Vegan: use oyster mushrooms or seitan pieces instead of 1 whole chicken, cut up (skin optional); use plant-based sour cream or cream instead of 2 standard-size containers of sour cream. Brown the mushrooms or seitan briefly; they cook much faster than chicken.]",
+          "order": 8,
+          "text": "Once the chicken is fully cooked (160°F) and your dumplings are all done, stir dumplings and sour cream into the pan of chicken. Mix thoroughly but carefully to coat.\n[Vegan: use oyster mushrooms or seitan pieces instead of 1 whole chicken, cut up (skin optional); use plant-based sour cream or cream instead of 2 standard-size containers of sour cream. Brown the mushrooms or seitan briefly; they cook much faster than chicken.]",
           "ingredient_ids": [
             "vegan_chicken",
+            "dough",
             "vegan_sour_cream"
           ],
           "tool_ids": [
             "pan_with_lid"
           ],
           "duration": null,
-          "condition": "once the chicken is fully cooked (160°F)",
+          "condition": "once the chicken is fully cooked (160°F) and the dumplings are done",
           "source": {
             "status": "read",
             "page": 1,
-            "quote": "Once the chicken is fully cooked (160°F) and your dumplings are all done, stir dumplings and sour cream into the pan of chicken.",
+            "quote": "Once the chicken is fully cooked (160°F) and your dumplings are all done, stir dumplings and sour cream into the pan of chicken. Mix thoroughly but carefully to coat.",
             "note": null
           }
         },
         {
-          "order": 11,
-          "text": "Mix thoroughly but carefully to coat.\n[Vegan: use oyster mushrooms or seitan pieces instead of 1 whole chicken, cut up (skin optional). Brown the mushrooms or seitan briefly; they cook much faster than chicken.]",
-          "ingredient_ids": [
-            "vegan_chicken"
-          ],
-          "tool_ids": [],
-          "duration": null,
-          "condition": null,
-          "source": {
-            "status": "read",
-            "page": 1,
-            "quote": "Mix thoroughly but carefully to coat.",
-            "note": null
-          }
-        },
-        {
-          "order": 12,
+          "order": 9,
           "text": "Add more paprika until it is more pink (or orange) than white.",
           "ingredient_ids": [
             "paprika"
@@ -1663,28 +1528,14 @@
           }
         },
         {
-          "order": 13,
-          "text": "Taste the sauce; it may need more paprika or salt.",
+          "order": 10,
+          "text": "Taste sauce; it may need more paprika or salt. Sometimes it is easier to remove the chicken, and then pour the dumplings and sour cream over the top to coat (when serving), depending on how big your pan is.\n[Vegan: use oyster mushrooms or seitan pieces instead of 1 whole chicken, cut up (skin optional); use plant-based sour cream or cream instead of 2 standard-size containers of sour cream. Brown the mushrooms or seitan briefly; they cook much faster than chicken.]",
           "ingredient_ids": [
             "paprika",
-            "salt"
-          ],
-          "tool_ids": [],
-          "duration": null,
-          "condition": null,
-          "source": {
-            "status": "read",
-            "page": 1,
-            "quote": "Taste sauce; it may need more paprika or salt.",
-            "note": null
-          }
-        },
-        {
-          "order": 14,
-          "text": "Sometimes it is easier to remove the chicken, and then pour the dumplings and sour cream over the top to coat when serving.\n[Vegan: use oyster mushrooms or seitan pieces instead of 1 whole chicken, cut up (skin optional); use plant-based sour cream or cream instead of 2 standard-size containers of sour cream. Brown the mushrooms or seitan briefly; they cook much faster than chicken.]",
-          "ingredient_ids": [
+            "salt",
+            "vegan_sour_cream",
             "vegan_chicken",
-            "vegan_sour_cream"
+            "dough"
           ],
           "tool_ids": [],
           "duration": null,
@@ -1692,47 +1543,51 @@
           "source": {
             "status": "read",
             "page": 1,
-            "quote": "Sometimes it is easier to remove the chicken, and then pour the dumplings and sour cream over the top to coat (when serving), depending on how big your pan is.",
+            "quote": "Taste sauce; it may need more paprika or salt. Sometimes it is easier to remove the chicken, and then pour the dumplings and sour cream over the top to coat (when serving), depending on how big your pan is.",
             "note": null
           }
         }
       ],
       "warnings": [
         {
-          "message": "Bacon grease is listed as 'Bacon grease, lard, or other fat' and again as 'Bacon grease or oil'; merged into one entry.",
+          "message": "The fat is listed as bacon grease, lard, or other fat and again as bacon grease or oil; these were merged into one entry, and its animal origin is uncertain.",
           "target_id": null
         },
         {
-          "message": "The amount of bacon grease is only given as 'some' in the browning step; the amount is vague.",
+          "message": "The paprika has no amount in the ingredient list; the to-taste amount comes from the procedure.",
           "target_id": null
         },
         {
-          "message": "Flour is given as both cups and grams; the first unit (cups) was used.",
+          "message": "The flour is given in cups with a gram range; the first unit (cups) was kept and the weight was not used.",
           "target_id": null
         },
         {
-          "message": "Eggs have no size given; the count is a range of 2 to 3.",
+          "message": "The eggs are given as a range of 2 to 3.",
           "target_id": null
         },
         {
-          "message": "Paprika, onion, water and salt have no amount in the ingredient list; amounts come from the procedure or are absent.",
+          "message": "The oven temperature and chicken doneness of 160°F was kept as written and not converted.",
           "target_id": null
         },
         {
-          "message": "'Heavy skillet' and 'pan with lid' may be the same vessel; both were kept as listed.",
+          "message": "The melon baller is an alternative to the dessert spoon and was recorded as a tool anyway.",
           "target_id": null
         },
         {
-          "message": "The procedure gives no cooking times for the chicken or the dumplings beyond 'until the dumplings float'.",
+          "message": "The bowl was not named in the equipment list and is implied by the draining step.",
           "target_id": null
         },
         {
-          "message": "The 160°F doneness temperature is taken as written.",
+          "message": "The notes section (seeded rye bread) was ignored as it is not part of the recipe.",
           "target_id": null
         },
         {
-          "message": "Sour cream container size is not stated; the count of 2 containers was kept with an empty unit.",
+          "message": "Not fully vegan: no vegan substitute is known for Bacon grease, lard, or other fat. Choose one before cooking.",
           "target_id": null
+        },
+        {
+          "message": "Vegan, Bacon grease, lard, or other fat: could not tell whether it contains animal products (it depends on the brand or recipe).",
+          "target_id": "fat"
         }
       ]
     },
@@ -1746,13 +1601,6 @@
       },
       {
         "rule": "vegan",
-        "target": "bacon_grease",
-        "before": "Bacon grease, lard, or other fat",
-        "after": "vegetable oil",
-        "reason": "Animal fat; any neutral oil does the same job for browning."
-      },
-      {
-        "rule": "vegan",
         "target": "sour_cream",
         "before": "2 standard-size containers of sour cream",
         "after": "plant-based sour cream or cream",
@@ -1763,25 +1611,11 @@
         "target": "eggs",
         "before": "2–3 eggs",
         "after": "flax egg (1 tbsp ground flaxseed + 3 tbsp water per egg)",
-        "reason": "Eggs; a flax egg binds doughs and batters."
-      },
-      {
-        "rule": "vegan",
-        "target": "step 1",
-        "before": "Bacon grease, lard, or other fat",
-        "after": "vegetable oil",
-        "reason": "Substitution carried into the method."
+        "reason": "Eggs that bind a dough or batter; a flax egg does the same."
       },
       {
         "rule": "vegan",
         "target": "step 2",
-        "before": "1 whole chicken, cut up (skin optional)",
-        "after": "oyster mushrooms or seitan pieces",
-        "reason": "Substitution carried into the method. Brown the mushrooms or seitan briefly; they cook much faster than chicken."
-      },
-      {
-        "rule": "vegan",
-        "target": "step 3",
         "before": "1 whole chicken, cut up (skin optional)",
         "after": "oyster mushrooms or seitan pieces",
         "reason": "Substitution carried into the method. Brown the mushrooms or seitan briefly; they cook much faster than chicken."
@@ -1802,17 +1636,10 @@
       },
       {
         "rule": "vegan",
-        "target": "step 6",
-        "before": "2–3 eggs",
-        "after": "flax egg (1 tbsp ground flaxseed + 3 tbsp water per egg)",
-        "reason": "Substitution carried into the method."
-      },
-      {
-        "rule": "vegan",
-        "target": "step 9",
-        "before": "Bacon grease, lard, or other fat",
-        "after": "vegetable oil",
-        "reason": "Substitution carried into the method."
+        "target": "step 8",
+        "before": "1 whole chicken, cut up (skin optional), 2 standard-size containers of sour cream",
+        "after": "oyster mushrooms or seitan pieces, plant-based sour cream or cream",
+        "reason": "Substitution carried into the method. Brown the mushrooms or seitan briefly; they cook much faster than chicken."
       },
       {
         "rule": "vegan",
@@ -1823,17 +1650,10 @@
       },
       {
         "rule": "vegan",
-        "target": "step 11",
-        "before": "1 whole chicken, cut up (skin optional)",
-        "after": "oyster mushrooms or seitan pieces",
-        "reason": "Substitution carried into the method. Brown the mushrooms or seitan briefly; they cook much faster than chicken."
-      },
-      {
-        "rule": "vegan",
-        "target": "step 14",
-        "before": "1 whole chicken, cut up (skin optional), 2 standard-size containers of sour cream",
-        "after": "oyster mushrooms or seitan pieces, plant-based sour cream or cream",
-        "reason": "Substitution carried into the method. Brown the mushrooms or seitan briefly; they cook much faster than chicken."
+        "target": "fat",
+        "before": "Bacon grease, lard, or other fat",
+        "after": "unchanged, no known substitute",
+        "reason": "could not tell whether it contains animal products (it depends on the brand or recipe)."
       },
       {
         "rule": "scale",
@@ -1845,8 +1665,8 @@
       {
         "rule": "scale",
         "target": "vegan_sour_cream",
-        "before": "2 plant-based sour cream or cream",
-        "after": "3 plant-based sour cream or cream",
+        "before": "2 standard-size containers plant-based sour cream or cream",
+        "after": "3 standard-size containers plant-based sour cream or cream",
         "reason": "×1 ½"
       },
       {
@@ -1866,21 +1686,14 @@
       {
         "rule": "scale",
         "target": "amounts not given",
-        "before": "oyster mushrooms or seitan pieces, vegetable oil, Paprika, White or yellow onion, finely chopped, Water, Salt",
+        "before": "oyster mushrooms or seitan pieces, Bacon grease, lard, or other fat, Paprika, White or yellow onion, finely chopped, Water, Salt, dough",
         "after": "unchanged",
         "reason": "The recipe gives no number for these, so there is nothing to multiply. Adjust by taste."
       },
       {
         "rule": "scale",
-        "target": "times",
-        "before": "as written",
-        "after": "unchanged",
-        "reason": "Cooking and marinating times depend on the size of each piece, not on the number of people. A bigger roast needs longer: check doneness instead of the clock."
-      },
-      {
-        "rule": "scale",
         "target": "tools",
-        "before": "big pot, pan with lid, heavy skillet, dessert spoon, melon baller, bowl, colander",
+        "before": "Big pot, Pan with lid, Heavy skillet, Dessert spoon, Melon baller, Bowl",
         "after": "check sizes",
         "reason": "Amounts change by ×1 ½; check that pots and pans still fit."
       }

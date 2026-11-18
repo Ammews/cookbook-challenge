@@ -26,21 +26,21 @@
     "is_recipe": true,
     "recipes_in_document": 1,
     "recipe": {
-      "title": "Spicy Gingerbread",
+      "title": "SPICY GINGERBREAD",
       "language": "en",
       "servings": {
-        "value": 8,
+        "value": null,
         "source": {
-          "status": "inferred",
-          "page": 1,
+          "status": "missing",
+          "page": null,
           "quote": null,
-          "note": "Not stated in the text. Estimated from one batch of 2 1/2 c flour, a typical 8-serving loaf or square cake."
+          "note": "the document does not say"
         }
       },
       "ingredients": [
         {
-          "id": "eggs",
-          "name": "eggs",
+          "id": "egg",
+          "name": "egg",
           "name_original": "eggs",
           "quantity": {
             "kind": "exact",
@@ -52,6 +52,7 @@
           "preparation": "beaten",
           "optional": false,
           "is_intermediate": false,
+          "animal": "egg",
           "source": {
             "status": "read",
             "page": 1,
@@ -73,6 +74,7 @@
           "preparation": null,
           "optional": false,
           "is_intermediate": false,
+          "animal": "none",
           "source": {
             "status": "read",
             "page": 1,
@@ -94,6 +96,7 @@
           "preparation": null,
           "optional": false,
           "is_intermediate": false,
+          "animal": "none",
           "source": {
             "status": "read",
             "page": 1,
@@ -115,6 +118,7 @@
           "preparation": "melted",
           "optional": false,
           "is_intermediate": false,
+          "animal": "uncertain",
           "source": {
             "status": "read",
             "page": 1,
@@ -136,6 +140,7 @@
           "preparation": null,
           "optional": false,
           "is_intermediate": false,
+          "animal": "none",
           "source": {
             "status": "read",
             "page": 1,
@@ -157,6 +162,7 @@
           "preparation": null,
           "optional": false,
           "is_intermediate": false,
+          "animal": "none",
           "source": {
             "status": "read",
             "page": 1,
@@ -178,6 +184,7 @@
           "preparation": null,
           "optional": false,
           "is_intermediate": false,
+          "animal": "none",
           "source": {
             "status": "read",
             "page": 1,
@@ -199,6 +206,7 @@
           "preparation": null,
           "optional": false,
           "is_intermediate": false,
+          "animal": "none",
           "source": {
             "status": "read",
             "page": 1,
@@ -220,6 +228,7 @@
           "preparation": null,
           "optional": false,
           "is_intermediate": false,
+          "animal": "none",
           "source": {
             "status": "read",
             "page": 1,
@@ -241,6 +250,7 @@
           "preparation": null,
           "optional": false,
           "is_intermediate": false,
+          "animal": "none",
           "source": {
             "status": "read",
             "page": 1,
@@ -262,6 +272,7 @@
           "preparation": null,
           "optional": false,
           "is_intermediate": false,
+          "animal": "none",
           "source": {
             "status": "read",
             "page": 1,
@@ -283,6 +294,7 @@
           "preparation": "boiling",
           "optional": false,
           "is_intermediate": false,
+          "animal": "none",
           "source": {
             "status": "read",
             "page": 1,
@@ -309,7 +321,7 @@
             "status": "inferred",
             "page": 1,
             "quote": null,
-            "note": "Implied: needed to beat the eggs and mix the sugar, molasses, shortening and dry ingredients in the first steps."
+            "note": "Implied by the mixing steps 'Add beaten eggs to sugar, molasses and shortening' and 'Add dry ingredients'."
           }
         }
       ],
@@ -318,7 +330,7 @@
           "order": 1,
           "text": "Add beaten eggs to sugar, molasses and shortening.",
           "ingredient_ids": [
-            "eggs",
+            "egg",
             "brown_sugar",
             "molasses",
             "shortening"
@@ -365,9 +377,7 @@
           "ingredient_ids": [
             "water"
           ],
-          "tool_ids": [
-            "bowl"
-          ],
+          "tool_ids": [],
           "duration": null,
           "condition": null,
           "source": {
@@ -396,35 +406,31 @@
       ],
       "warnings": [
         {
-          "message": "Servings are not stated; 8 is an estimate from the flour quantity.",
+          "message": "No servings stated and no baking time or oven temperature given; 'moderate oven' is the only heat instruction.",
           "target_id": null
         },
         {
-          "message": "The text says only 'moderate oven' with no temperature; no baking time or pan size is given.",
+          "message": "Shortening may be animal fat (lard) or vegetable fat depending on the product; marked uncertain.",
           "target_id": null
         },
         {
-          "message": "No preheating step is written; the oven is listed because the text says to bake in it.",
+          "message": "Units 't' and 'c' are read as teaspoon and cup; the text does not spell them out.",
           "target_id": null
         },
         {
-          "message": "The abbreviation 't' is read as teaspoon and 'c' as cup; the source does not spell these out.",
+          "message": "'Soda' is read as baking soda; the text does not say so.",
           "target_id": null
         },
         {
-          "message": "'soda' is written without 'baking'; it is kept as written and may mean baking soda.",
+          "message": "Step 3 says 'hot water' while the ingredient list says 'boiling water'; treated as the same ingredient.",
           "target_id": null
         },
         {
-          "message": "The word 'hot' in 'Add hot water' is read against 'boiling water' in the ingredient list; both are kept.",
+          "message": "The step 'Add hot water' does not specify whether the 1 c of boiling water is used whole.",
           "target_id": null
         },
         {
-          "message": "Transcription by vision; amounts such as '1/2' and '3/4' should be checked against the original image.",
-          "target_id": null
-        },
-        {
-          "message": "The bowl is an implied tool, not named in the text.",
+          "message": "The bowl is implied, not stated in the text.",
           "target_id": null
         }
       ]
@@ -432,9 +438,9 @@
     "usage": [
       {
         "model": "claude-haiku-5-5",
-        "input_tokens": 4012,
-        "output_tokens": 4238,
-        "seconds": 16.334524699999974,
+        "input_tokens": 4514,
+        "output_tokens": 3889,
+        "seconds": 14.3583907000002,
         "cached": true
       }
     ],

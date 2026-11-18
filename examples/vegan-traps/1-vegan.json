@@ -1,0 +1,1393 @@
+{
+  "document": {
+    "name": "input.txt",
+    "kind": "text",
+    "pages": [
+      {
+        "number": 1,
+        "text": "Butternut Pesto Noodles\nServes 2\n\nIngredients\n200 g egg noodles\n1 small butternut squash, peeled and diced\n2 tbsp olive oil\n200 ml coconut milk\n3 tbsp basil pesto\n1 tsp Worcestershire sauce\n20 g butter\n30 g Parmesan, grated\nSalt and pepper to taste\n\nMethod\n1. Preheat the oven to 200°C. Toss the squash with the olive oil and roast for 25 minutes.\n2. Cook the egg noodles in salted water until tender, then drain.\n3. Melt the butter in a large pan, add the coconut milk, pesto and Worcestershire sauce and simmer for 3 minutes.\n4. Add the roasted squash and the noodles to the pan and stir to coat.\n5. Serve with the Parmesan on top.",
+        "method": "plain_text",
+        "decoration_text": [],
+        "uncertain": [],
+        "usage": null
+      }
+    ]
+  },
+  "extraction": {
+    "is_recipe": true,
+    "recipes_in_document": 1,
+    "recipe": {
+      "title": "Butternut Pesto Noodles",
+      "language": "en",
+      "servings": {
+        "value": 2,
+        "source": {
+          "status": "read",
+          "page": 1,
+          "quote": "Serves 2",
+          "note": null
+        }
+      },
+      "ingredients": [
+        {
+          "id": "egg_noodles",
+          "name": "egg noodles",
+          "name_original": "egg noodles",
+          "quantity": {
+            "kind": "exact",
+            "value": 200.0,
+            "max_value": null,
+            "unit": "g",
+            "raw": "200 g"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "egg",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "200 g egg noodles",
+            "note": null
+          }
+        },
+        {
+          "id": "butternut_squash",
+          "name": "butternut squash",
+          "name_original": "butternut squash",
+          "quantity": {
+            "kind": "exact",
+            "value": 1.0,
+            "max_value": null,
+            "unit": null,
+            "raw": "1"
+          },
+          "preparation": "small, peeled and diced",
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "1 small butternut squash, peeled and diced",
+            "note": null
+          }
+        },
+        {
+          "id": "olive_oil",
+          "name": "olive oil",
+          "name_original": "olive oil",
+          "quantity": {
+            "kind": "exact",
+            "value": 2.0,
+            "max_value": null,
+            "unit": "tbsp",
+            "raw": "2 tbsp"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "2 tbsp olive oil",
+            "note": null
+          }
+        },
+        {
+          "id": "coconut_milk",
+          "name": "coconut milk",
+          "name_original": "coconut milk",
+          "quantity": {
+            "kind": "exact",
+            "value": 200.0,
+            "max_value": null,
+            "unit": "ml",
+            "raw": "200 ml"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "200 ml coconut milk",
+            "note": null
+          }
+        },
+        {
+          "id": "basil_pesto",
+          "name": "basil pesto",
+          "name_original": "basil pesto",
+          "quantity": {
+            "kind": "exact",
+            "value": 3.0,
+            "max_value": null,
+            "unit": "tbsp",
+            "raw": "3 tbsp"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "uncertain",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "3 tbsp basil pesto",
+            "note": null
+          }
+        },
+        {
+          "id": "worcestershire_sauce",
+          "name": "Worcestershire sauce",
+          "name_original": "Worcestershire sauce",
+          "quantity": {
+            "kind": "exact",
+            "value": 1.0,
+            "max_value": null,
+            "unit": "tsp",
+            "raw": "1 tsp"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "fish",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "1 tsp Worcestershire sauce",
+            "note": null
+          }
+        },
+        {
+          "id": "butter",
+          "name": "butter",
+          "name_original": "butter",
+          "quantity": {
+            "kind": "exact",
+            "value": 20.0,
+            "max_value": null,
+            "unit": "g",
+            "raw": "20 g"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "dairy",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "20 g butter",
+            "note": null
+          }
+        },
+        {
+          "id": "parmesan",
+          "name": "Parmesan",
+          "name_original": "Parmesan",
+          "quantity": {
+            "kind": "exact",
+            "value": 30.0,
+            "max_value": null,
+            "unit": "g",
+            "raw": "30 g"
+          },
+          "preparation": "grated",
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "dairy",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "30 g Parmesan, grated",
+            "note": null
+          }
+        },
+        {
+          "id": "salt",
+          "name": "salt",
+          "name_original": "Salt",
+          "quantity": {
+            "kind": "to_taste",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": "to taste"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Salt and pepper to taste",
+            "note": null
+          }
+        },
+        {
+          "id": "pepper",
+          "name": "pepper",
+          "name_original": "pepper",
+          "quantity": {
+            "kind": "to_taste",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": "to taste"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Salt and pepper to taste",
+            "note": null
+          }
+        }
+      ],
+      "tools": [
+        {
+          "id": "oven",
+          "name": "oven",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Preheat the oven to 200°C.",
+            "note": null
+          }
+        },
+        {
+          "id": "roasting_tin",
+          "name": "roasting tin",
+          "source": {
+            "status": "inferred",
+            "page": 1,
+            "quote": "roast for 25 minutes",
+            "note": "Implied by step 1, where the squash is roasted in the oven."
+          }
+        },
+        {
+          "id": "saucepan",
+          "name": "saucepan",
+          "source": {
+            "status": "inferred",
+            "page": 1,
+            "quote": "Cook the egg noodles in salted water",
+            "note": "Implied by step 2, where the noodles are cooked in salted water."
+          }
+        },
+        {
+          "id": "colander",
+          "name": "colander",
+          "source": {
+            "status": "inferred",
+            "page": 1,
+            "quote": "until tender, then drain",
+            "note": "Implied by step 2, where the noodles are drained."
+          }
+        },
+        {
+          "id": "large_pan",
+          "name": "large pan",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Melt the butter in a large pan",
+            "note": null
+          }
+        }
+      ],
+      "steps": [
+        {
+          "order": 1,
+          "text": "Preheat the oven to 200°C.",
+          "ingredient_ids": [],
+          "tool_ids": [
+            "oven"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Preheat the oven to 200°C.",
+            "note": null
+          }
+        },
+        {
+          "order": 2,
+          "text": "Toss the squash with the olive oil and roast for 25 minutes.",
+          "ingredient_ids": [
+            "butternut_squash",
+            "olive_oil"
+          ],
+          "tool_ids": [
+            "roasting_tin",
+            "oven"
+          ],
+          "duration": {
+            "raw": "25 minutes",
+            "min_minutes": 25.0,
+            "max_minutes": 25.0
+          },
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Toss the squash with the olive oil and roast for 25 minutes.",
+            "note": null
+          }
+        },
+        {
+          "order": 3,
+          "text": "Cook the egg noodles in salted water until tender, then drain.",
+          "ingredient_ids": [
+            "egg_noodles",
+            "salt"
+          ],
+          "tool_ids": [
+            "saucepan",
+            "colander"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Cook the egg noodles in salted water until tender, then drain.",
+            "note": null
+          }
+        },
+        {
+          "order": 4,
+          "text": "Melt the butter in a large pan, add the coconut milk, pesto and Worcestershire sauce and simmer for 3 minutes.",
+          "ingredient_ids": [
+            "butter",
+            "coconut_milk",
+            "basil_pesto",
+            "worcestershire_sauce"
+          ],
+          "tool_ids": [
+            "large_pan"
+          ],
+          "duration": {
+            "raw": "3 minutes",
+            "min_minutes": 3.0,
+            "max_minutes": 3.0
+          },
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Melt the butter in a large pan, add the coconut milk, pesto and Worcestershire sauce and simmer for 3 minutes.",
+            "note": null
+          }
+        },
+        {
+          "order": 5,
+          "text": "Add the roasted squash and the noodles to the pan and stir to coat.",
+          "ingredient_ids": [
+            "butternut_squash",
+            "egg_noodles"
+          ],
+          "tool_ids": [
+            "large_pan"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Add the roasted squash and the noodles to the pan and stir to coat.",
+            "note": null
+          }
+        },
+        {
+          "order": 6,
+          "text": "Serve with the Parmesan on top.",
+          "ingredient_ids": [
+            "parmesan"
+          ],
+          "tool_ids": [],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Serve with the Parmesan on top.",
+            "note": null
+          }
+        }
+      ],
+      "warnings": [
+        {
+          "message": "Basil pesto is usually made with Parmesan or other cheese, but the text does not say; animal set to uncertain.",
+          "target_id": null
+        },
+        {
+          "message": "Worcestershire sauce is marked fish because it usually contains anchovies.",
+          "target_id": null
+        },
+        {
+          "message": "Salt and pepper have no amount (to taste); value is 0 as the schema requires a number.",
+          "target_id": null
+        },
+        {
+          "message": "Roasting tin, saucepan and colander are implied by the steps and not named in the text.",
+          "target_id": null
+        },
+        {
+          "message": "Butternut squash amount is a count (1) with no unit; the text says small.",
+          "target_id": null
+        }
+      ]
+    },
+    "usage": [
+      {
+        "model": "claude-haiku-5-5",
+        "input_tokens": 4612,
+        "output_tokens": 4515,
+        "seconds": 19.740596900000128,
+        "cached": true
+      }
+    ],
+    "problems_found": [],
+    "problems_left": []
+  },
+  "manipulation": {
+    "original": {
+      "title": "Butternut Pesto Noodles",
+      "language": "en",
+      "servings": {
+        "value": 2,
+        "source": {
+          "status": "read",
+          "page": 1,
+          "quote": "Serves 2",
+          "note": null
+        }
+      },
+      "ingredients": [
+        {
+          "id": "egg_noodles",
+          "name": "egg noodles",
+          "name_original": "egg noodles",
+          "quantity": {
+            "kind": "exact",
+            "value": 200.0,
+            "max_value": null,
+            "unit": "g",
+            "raw": "200 g"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "egg",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "200 g egg noodles",
+            "note": null
+          }
+        },
+        {
+          "id": "butternut_squash",
+          "name": "butternut squash",
+          "name_original": "butternut squash",
+          "quantity": {
+            "kind": "exact",
+            "value": 1.0,
+            "max_value": null,
+            "unit": null,
+            "raw": "1"
+          },
+          "preparation": "small, peeled and diced",
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "1 small butternut squash, peeled and diced",
+            "note": null
+          }
+        },
+        {
+          "id": "olive_oil",
+          "name": "olive oil",
+          "name_original": "olive oil",
+          "quantity": {
+            "kind": "exact",
+            "value": 2.0,
+            "max_value": null,
+            "unit": "tbsp",
+            "raw": "2 tbsp"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "2 tbsp olive oil",
+            "note": null
+          }
+        },
+        {
+          "id": "coconut_milk",
+          "name": "coconut milk",
+          "name_original": "coconut milk",
+          "quantity": {
+            "kind": "exact",
+            "value": 200.0,
+            "max_value": null,
+            "unit": "ml",
+            "raw": "200 ml"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "200 ml coconut milk",
+            "note": null
+          }
+        },
+        {
+          "id": "basil_pesto",
+          "name": "basil pesto",
+          "name_original": "basil pesto",
+          "quantity": {
+            "kind": "exact",
+            "value": 3.0,
+            "max_value": null,
+            "unit": "tbsp",
+            "raw": "3 tbsp"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "uncertain",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "3 tbsp basil pesto",
+            "note": null
+          }
+        },
+        {
+          "id": "worcestershire_sauce",
+          "name": "Worcestershire sauce",
+          "name_original": "Worcestershire sauce",
+          "quantity": {
+            "kind": "exact",
+            "value": 1.0,
+            "max_value": null,
+            "unit": "tsp",
+            "raw": "1 tsp"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "fish",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "1 tsp Worcestershire sauce",
+            "note": null
+          }
+        },
+        {
+          "id": "butter",
+          "name": "butter",
+          "name_original": "butter",
+          "quantity": {
+            "kind": "exact",
+            "value": 20.0,
+            "max_value": null,
+            "unit": "g",
+            "raw": "20 g"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "dairy",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "20 g butter",
+            "note": null
+          }
+        },
+        {
+          "id": "parmesan",
+          "name": "Parmesan",
+          "name_original": "Parmesan",
+          "quantity": {
+            "kind": "exact",
+            "value": 30.0,
+            "max_value": null,
+            "unit": "g",
+            "raw": "30 g"
+          },
+          "preparation": "grated",
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "dairy",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "30 g Parmesan, grated",
+            "note": null
+          }
+        },
+        {
+          "id": "salt",
+          "name": "salt",
+          "name_original": "Salt",
+          "quantity": {
+            "kind": "to_taste",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": "to taste"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Salt and pepper to taste",
+            "note": null
+          }
+        },
+        {
+          "id": "pepper",
+          "name": "pepper",
+          "name_original": "pepper",
+          "quantity": {
+            "kind": "to_taste",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": "to taste"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Salt and pepper to taste",
+            "note": null
+          }
+        }
+      ],
+      "tools": [
+        {
+          "id": "oven",
+          "name": "oven",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Preheat the oven to 200°C.",
+            "note": null
+          }
+        },
+        {
+          "id": "roasting_tin",
+          "name": "roasting tin",
+          "source": {
+            "status": "inferred",
+            "page": 1,
+            "quote": "roast for 25 minutes",
+            "note": "Implied by step 1, where the squash is roasted in the oven."
+          }
+        },
+        {
+          "id": "saucepan",
+          "name": "saucepan",
+          "source": {
+            "status": "inferred",
+            "page": 1,
+            "quote": "Cook the egg noodles in salted water",
+            "note": "Implied by step 2, where the noodles are cooked in salted water."
+          }
+        },
+        {
+          "id": "colander",
+          "name": "colander",
+          "source": {
+            "status": "inferred",
+            "page": 1,
+            "quote": "until tender, then drain",
+            "note": "Implied by step 2, where the noodles are drained."
+          }
+        },
+        {
+          "id": "large_pan",
+          "name": "large pan",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Melt the butter in a large pan",
+            "note": null
+          }
+        }
+      ],
+      "steps": [
+        {
+          "order": 1,
+          "text": "Preheat the oven to 200°C.",
+          "ingredient_ids": [],
+          "tool_ids": [
+            "oven"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Preheat the oven to 200°C.",
+            "note": null
+          }
+        },
+        {
+          "order": 2,
+          "text": "Toss the squash with the olive oil and roast for 25 minutes.",
+          "ingredient_ids": [
+            "butternut_squash",
+            "olive_oil"
+          ],
+          "tool_ids": [
+            "roasting_tin",
+            "oven"
+          ],
+          "duration": {
+            "raw": "25 minutes",
+            "min_minutes": 25.0,
+            "max_minutes": 25.0
+          },
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Toss the squash with the olive oil and roast for 25 minutes.",
+            "note": null
+          }
+        },
+        {
+          "order": 3,
+          "text": "Cook the egg noodles in salted water until tender, then drain.",
+          "ingredient_ids": [
+            "egg_noodles",
+            "salt"
+          ],
+          "tool_ids": [
+            "saucepan",
+            "colander"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Cook the egg noodles in salted water until tender, then drain.",
+            "note": null
+          }
+        },
+        {
+          "order": 4,
+          "text": "Melt the butter in a large pan, add the coconut milk, pesto and Worcestershire sauce and simmer for 3 minutes.",
+          "ingredient_ids": [
+            "butter",
+            "coconut_milk",
+            "basil_pesto",
+            "worcestershire_sauce"
+          ],
+          "tool_ids": [
+            "large_pan"
+          ],
+          "duration": {
+            "raw": "3 minutes",
+            "min_minutes": 3.0,
+            "max_minutes": 3.0
+          },
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Melt the butter in a large pan, add the coconut milk, pesto and Worcestershire sauce and simmer for 3 minutes.",
+            "note": null
+          }
+        },
+        {
+          "order": 5,
+          "text": "Add the roasted squash and the noodles to the pan and stir to coat.",
+          "ingredient_ids": [
+            "butternut_squash",
+            "egg_noodles"
+          ],
+          "tool_ids": [
+            "large_pan"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Add the roasted squash and the noodles to the pan and stir to coat.",
+            "note": null
+          }
+        },
+        {
+          "order": 6,
+          "text": "Serve with the Parmesan on top.",
+          "ingredient_ids": [
+            "parmesan"
+          ],
+          "tool_ids": [],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Serve with the Parmesan on top.",
+            "note": null
+          }
+        }
+      ],
+      "warnings": [
+        {
+          "message": "Basil pesto is usually made with Parmesan or other cheese, but the text does not say; animal set to uncertain.",
+          "target_id": null
+        },
+        {
+          "message": "Worcestershire sauce is marked fish because it usually contains anchovies.",
+          "target_id": null
+        },
+        {
+          "message": "Salt and pepper have no amount (to taste); value is 0 as the schema requires a number.",
+          "target_id": null
+        },
+        {
+          "message": "Roasting tin, saucepan and colander are implied by the steps and not named in the text.",
+          "target_id": null
+        },
+        {
+          "message": "Butternut squash amount is a count (1) with no unit; the text says small.",
+          "target_id": null
+        }
+      ]
+    },
+    "recipe": {
+      "title": "Butternut Pesto Noodles",
+      "language": "en",
+      "servings": {
+        "value": 2,
+        "source": {
+          "status": "read",
+          "page": 1,
+          "quote": "Serves 2",
+          "note": null
+        }
+      },
+      "ingredients": [
+        {
+          "id": "egg_noodles",
+          "name": "egg noodles",
+          "name_original": "egg noodles",
+          "quantity": {
+            "kind": "exact",
+            "value": 200.0,
+            "max_value": null,
+            "unit": "g",
+            "raw": "200 g"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "egg",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "200 g egg noodles",
+            "note": null
+          }
+        },
+        {
+          "id": "butternut_squash",
+          "name": "butternut squash",
+          "name_original": "butternut squash",
+          "quantity": {
+            "kind": "exact",
+            "value": 1.0,
+            "max_value": null,
+            "unit": null,
+            "raw": "1"
+          },
+          "preparation": "small, peeled and diced",
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "1 small butternut squash, peeled and diced",
+            "note": null
+          }
+        },
+        {
+          "id": "olive_oil",
+          "name": "olive oil",
+          "name_original": "olive oil",
+          "quantity": {
+            "kind": "exact",
+            "value": 2.0,
+            "max_value": null,
+            "unit": "tbsp",
+            "raw": "2 tbsp"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "2 tbsp olive oil",
+            "note": null
+          }
+        },
+        {
+          "id": "coconut_milk",
+          "name": "coconut milk",
+          "name_original": "coconut milk",
+          "quantity": {
+            "kind": "exact",
+            "value": 200.0,
+            "max_value": null,
+            "unit": "ml",
+            "raw": "200 ml"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "200 ml coconut milk",
+            "note": null
+          }
+        },
+        {
+          "id": "basil_pesto",
+          "name": "basil pesto",
+          "name_original": "basil pesto",
+          "quantity": {
+            "kind": "exact",
+            "value": 3.0,
+            "max_value": null,
+            "unit": "tbsp",
+            "raw": "3 tbsp"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "uncertain",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "3 tbsp basil pesto",
+            "note": null
+          }
+        },
+        {
+          "id": "worcestershire_sauce",
+          "name": "Worcestershire sauce",
+          "name_original": "Worcestershire sauce",
+          "quantity": {
+            "kind": "exact",
+            "value": 1.0,
+            "max_value": null,
+            "unit": "tsp",
+            "raw": "1 tsp"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "fish",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "1 tsp Worcestershire sauce",
+            "note": null
+          }
+        },
+        {
+          "id": "vegan_butter",
+          "name": "vegan butter",
+          "name_original": "vegan butter",
+          "quantity": {
+            "kind": "exact",
+            "value": 20.0,
+            "max_value": null,
+            "unit": "g",
+            "raw": "20 g"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "rule",
+            "page": 1,
+            "quote": "20 g butter",
+            "note": "vegan substitute for 'butter': Dairy butter; vegan butter behaves the same for frying and baking."
+          }
+        },
+        {
+          "id": "vegan_parmesan",
+          "name": "vegan parmesan or nutritional yeast",
+          "name_original": "vegan parmesan or nutritional yeast",
+          "quantity": {
+            "kind": "exact",
+            "value": 30.0,
+            "max_value": null,
+            "unit": "g",
+            "raw": "30 g"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "rule",
+            "page": 1,
+            "quote": "30 g Parmesan, grated",
+            "note": "vegan substitute for 'Parmesan': Hard cheese, used for its salty, savoury taste."
+          }
+        },
+        {
+          "id": "salt",
+          "name": "salt",
+          "name_original": "Salt",
+          "quantity": {
+            "kind": "to_taste",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": "to taste"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Salt and pepper to taste",
+            "note": null
+          }
+        },
+        {
+          "id": "pepper",
+          "name": "pepper",
+          "name_original": "pepper",
+          "quantity": {
+            "kind": "to_taste",
+            "value": null,
+            "max_value": null,
+            "unit": null,
+            "raw": "to taste"
+          },
+          "preparation": null,
+          "optional": false,
+          "is_intermediate": false,
+          "animal": "none",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Salt and pepper to taste",
+            "note": null
+          }
+        }
+      ],
+      "tools": [
+        {
+          "id": "oven",
+          "name": "oven",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Preheat the oven to 200°C.",
+            "note": null
+          }
+        },
+        {
+          "id": "roasting_tin",
+          "name": "roasting tin",
+          "source": {
+            "status": "inferred",
+            "page": 1,
+            "quote": "roast for 25 minutes",
+            "note": "Implied by step 1, where the squash is roasted in the oven."
+          }
+        },
+        {
+          "id": "saucepan",
+          "name": "saucepan",
+          "source": {
+            "status": "inferred",
+            "page": 1,
+            "quote": "Cook the egg noodles in salted water",
+            "note": "Implied by step 2, where the noodles are cooked in salted water."
+          }
+        },
+        {
+          "id": "colander",
+          "name": "colander",
+          "source": {
+            "status": "inferred",
+            "page": 1,
+            "quote": "until tender, then drain",
+            "note": "Implied by step 2, where the noodles are drained."
+          }
+        },
+        {
+          "id": "large_pan",
+          "name": "large pan",
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Melt the butter in a large pan",
+            "note": null
+          }
+        }
+      ],
+      "steps": [
+        {
+          "order": 1,
+          "text": "Preheat the oven to 200°C.",
+          "ingredient_ids": [],
+          "tool_ids": [
+            "oven"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Preheat the oven to 200°C.",
+            "note": null
+          }
+        },
+        {
+          "order": 2,
+          "text": "Toss the squash with the olive oil and roast for 25 minutes.",
+          "ingredient_ids": [
+            "butternut_squash",
+            "olive_oil"
+          ],
+          "tool_ids": [
+            "roasting_tin",
+            "oven"
+          ],
+          "duration": {
+            "raw": "25 minutes",
+            "min_minutes": 25.0,
+            "max_minutes": 25.0
+          },
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Toss the squash with the olive oil and roast for 25 minutes.",
+            "note": null
+          }
+        },
+        {
+          "order": 3,
+          "text": "Cook the egg noodles in salted water until tender, then drain.",
+          "ingredient_ids": [
+            "egg_noodles",
+            "salt"
+          ],
+          "tool_ids": [
+            "saucepan",
+            "colander"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Cook the egg noodles in salted water until tender, then drain.",
+            "note": null
+          }
+        },
+        {
+          "order": 4,
+          "text": "Melt the butter in a large pan, add the coconut milk, pesto and Worcestershire sauce and simmer for 3 minutes.\n[Vegan: use vegan butter instead of butter.]",
+          "ingredient_ids": [
+            "vegan_butter",
+            "coconut_milk",
+            "basil_pesto",
+            "worcestershire_sauce"
+          ],
+          "tool_ids": [
+            "large_pan"
+          ],
+          "duration": {
+            "raw": "3 minutes",
+            "min_minutes": 3.0,
+            "max_minutes": 3.0
+          },
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Melt the butter in a large pan, add the coconut milk, pesto and Worcestershire sauce and simmer for 3 minutes.",
+            "note": null
+          }
+        },
+        {
+          "order": 5,
+          "text": "Add the roasted squash and the noodles to the pan and stir to coat.",
+          "ingredient_ids": [
+            "butternut_squash",
+            "egg_noodles"
+          ],
+          "tool_ids": [
+            "large_pan"
+          ],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Add the roasted squash and the noodles to the pan and stir to coat.",
+            "note": null
+          }
+        },
+        {
+          "order": 6,
+          "text": "Serve with the Parmesan on top.\n[Vegan: use vegan parmesan or nutritional yeast instead of Parmesan.]",
+          "ingredient_ids": [
+            "vegan_parmesan"
+          ],
+          "tool_ids": [],
+          "duration": null,
+          "condition": null,
+          "source": {
+            "status": "read",
+            "page": 1,
+            "quote": "Serve with the Parmesan on top.",
+            "note": null
+          }
+        }
+      ],
+      "warnings": [
+        {
+          "message": "Basil pesto is usually made with Parmesan or other cheese, but the text does not say; animal set to uncertain.",
+          "target_id": null
+        },
+        {
+          "message": "Worcestershire sauce is marked fish because it usually contains anchovies.",
+          "target_id": null
+        },
+        {
+          "message": "Salt and pepper have no amount (to taste); value is 0 as the schema requires a number.",
+          "target_id": null
+        },
+        {
+          "message": "Roasting tin, saucepan and colander are implied by the steps and not named in the text.",
+          "target_id": null
+        },
+        {
+          "message": "Butternut squash amount is a count (1) with no unit; the text says small.",
+          "target_id": null
+        },
+        {
+          "message": "Not fully vegan: no vegan substitute is known for egg noodles, basil pesto, Worcestershire sauce. Choose one before cooking.",
+          "target_id": null
+        },
+        {
+          "message": "Vegan, egg noodles: contains egg, and no vegan substitute is known for it.",
+          "target_id": "egg_noodles"
+        },
+        {
+          "message": "Vegan, basil pesto: could not tell whether it contains animal products (it depends on the brand or recipe).",
+          "target_id": "basil_pesto"
+        },
+        {
+          "message": "Vegan, Worcestershire sauce: contains fish, and no vegan substitute is known for it.",
+          "target_id": "worcestershire_sauce"
+        }
+      ]
+    },
+    "changes": [
+      {
+        "rule": "vegan",
+        "target": "butter",
+        "before": "butter",
+        "after": "vegan butter",
+        "reason": "Dairy butter; vegan butter behaves the same for frying and baking."
+      },
+      {
+        "rule": "vegan",
+        "target": "parmesan",
+        "before": "Parmesan",
+        "after": "vegan parmesan or nutritional yeast",
+        "reason": "Hard cheese, used for its salty, savoury taste."
+      },
+      {
+        "rule": "vegan",
+        "target": "step 4",
+        "before": "butter",
+        "after": "vegan butter",
+        "reason": "Substitution carried into the method."
+      },
+      {
+        "rule": "vegan",
+        "target": "step 6",
+        "before": "Parmesan",
+        "after": "vegan parmesan or nutritional yeast",
+        "reason": "Substitution carried into the method."
+      },
+      {
+        "rule": "vegan",
+        "target": "egg_noodles",
+        "before": "egg noodles",
+        "after": "unchanged, no known substitute",
+        "reason": "contains egg, and no vegan substitute is known for it."
+      },
+      {
+        "rule": "vegan",
+        "target": "basil_pesto",
+        "before": "basil pesto",
+        "after": "unchanged, no known substitute",
+        "reason": "could not tell whether it contains animal products (it depends on the brand or recipe)."
+      },
+      {
+        "rule": "vegan",
+        "target": "worcestershire_sauce",
+        "before": "Worcestershire sauce",
+        "after": "unchanged, no known substitute",
+        "reason": "contains fish, and no vegan substitute is known for it."
+      }
+    ]
+  }
+}
