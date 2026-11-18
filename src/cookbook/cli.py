@@ -3,6 +3,7 @@
     cookbook run <file> [--servings N] [--vegan] [--metric] [--out DIR]
     cookbook ingest <file>
     cookbook eval [--case ID]
+    cookbook stress [id ...]
     cookbook web [--port 8000]
 """
 
@@ -63,6 +64,10 @@ def _parser() -> argparse.ArgumentParser:
     ingest.add_argument("file", type=Path)
     ingest.add_argument("--json", type=Path, metavar="PATH", help="also save the document as JSON")
     ingest.set_defaults(handler=_ingest)
+
+    stress = commands.add_parser("stress", help="run real documents from evals/stress and report what happened")
+    stress.add_argument("ids", nargs="*", help="document ids to run (default: all)")
+    stress.set_defaults(handler=_stress)
 
     web = commands.add_parser("web", help="start the local web page (needs: uv sync --extra web)")
     web.add_argument("--port", type=int, default=8000)
@@ -129,6 +134,27 @@ def _eval(args: argparse.Namespace) -> int:
     args.report.write_text(report, encoding="utf-8")
     print(report)
     print(f"Saved to {args.report}")
+    return 0
+
+
+def _stress(args: argparse.Namespace) -> int:
+    from cookbook.evaluation.stress import load_manifest, render_stress_report, run_document
+
+    folder = Path("evals/stress")
+    documents = load_manifest(folder)
+    chosen = [d for d in documents if not args.ids or d.id in args.ids]
+    unknown = sorted(set(args.ids) - {d.id for d in documents})
+    if unknown:
+        return _fail(f"unknown document id(s): {', '.join(unknown)}")
+    settings = Settings.from_env()
+    ingestor, extractor = build_ingestor(settings), build_extractor(settings)
+    rows = []
+    for number, document in enumerate(chosen, start=1):
+        print(f"[{number}/{len(chosen)}] {document.id} ...", flush=True)
+        rows.append(run_document(document, folder, folder / "results", ingestor, extractor))
+    report = render_stress_report(rows, total=len(documents))
+    (folder / "REPORT.md").write_text(report, encoding="utf-8")
+    print(report)
     return 0
 
 
