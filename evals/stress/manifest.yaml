@@ -1,0 +1,518 @@
+- id: hw-de-bertha-braten-1
+  type: handwritten
+  language: de
+  note: German handwritten family cookbook
+  title: Kochbuch von Bertha Buch Zwei Kapitel 04 Braten 01.jpg
+  license: CC BY 4.0
+  author: Thirunavukkarasye-Raveendran
+  source: https://commons.wikimedia.org/wiki/File:Kochbuch_von_Bertha_Buch_Zwei_Kapitel_04_Braten_01.jpg
+  file: files/hw-de-bertha-braten-1.jpg
+  bytes: 2082051
+- id: hw-de-bertha-braten-2
+  type: handwritten
+  language: de
+  note: German handwritten family cookbook
+  title: Kochbuch von Bertha Buch Zwei Kapitel 04 Braten 02.jpg
+  license: CC BY 4.0
+  author: Thirunavukkarasye-Raveendran
+  source: https://commons.wikimedia.org/wiki/File:Kochbuch_von_Bertha_Buch_Zwei_Kapitel_04_Braten_02.jpg
+  file: files/hw-de-bertha-braten-2.jpg
+  bytes: 2051031
+- id: hw-de-bertha-saucen
+  type: handwritten
+  language: de
+  note: German handwritten family cookbook
+  title: Kochbuch von Bertha Buch Eins Kapitel 03 Saucen 02.jpg
+  license: CC BY 4.0
+  author: Thirunavukkarasye-Raveendran
+  source: https://commons.wikimedia.org/wiki/File:Kochbuch_von_Bertha_Buch_Eins_Kapitel_03_Saucen_02.jpg
+  file: files/hw-de-bertha-saucen.jpg
+  bytes: 1704394
+- id: hw-de-bertha-gemuese
+  type: handwritten
+  language: de
+  note: German handwritten family cookbook
+  title: Kochbuch von Bertha Buch Eins Kapitel 05 Gemüse 01.jpg
+  license: CC BY 4.0
+  author: Thirunavukkarasye-Raveendran
+  source: https://commons.wikimedia.org/wiki/File:Kochbuch_von_Bertha_Buch_Eins_Kapitel_05_Gem%C3%BCse_01.jpg
+  file: files/hw-de-bertha-gemuese.jpg
+  bytes: 1747115
+- id: hw-de-bertha-backwaren
+  type: handwritten
+  language: de
+  note: German handwritten family cookbook
+  title: Kochbuch von Bertha Buch Eins Kapitel 08 Backwaren 03.jpg
+  license: CC BY 4.0
+  author: Thirunavukkarasye-Raveendran
+  source: https://commons.wikimedia.org/wiki/File:Kochbuch_von_Bertha_Buch_Eins_Kapitel_08_Backwaren_03.jpg
+  file: files/hw-de-bertha-backwaren.jpg
+  bytes: 1644000
+- id: hw-de-bertha-pudding-1
+  type: handwritten
+  language: de
+  note: German handwritten family cookbook
+  title: Kochbuch von Bertha Buch Eins Kapitel 11 Pudding 01.jpg
+  license: CC BY 4.0
+  author: Thirunavukkarasye-Raveendran
+  source: https://commons.wikimedia.org/wiki/File:Kochbuch_von_Bertha_Buch_Eins_Kapitel_11_Pudding_01.jpg
+  file: files/hw-de-bertha-pudding-1.jpg
+  bytes: 1620654
+- id: hw-de-bertha-pudding-2
+  type: handwritten
+  language: de
+  note: German handwritten family cookbook
+  title: Kochbuch von Bertha Buch Zwei Kapitel 10 Pudding 05.jpg
+  license: CC BY 4.0
+  author: Thirunavukkarasye-Raveendran
+  source: https://commons.wikimedia.org/wiki/File:Kochbuch_von_Bertha_Buch_Zwei_Kapitel_10_Pudding_05.jpg
+  file: files/hw-de-bertha-pudding-2.jpg
+  bytes: 1844253
+- id: hw-de-bertha-suppen
+  type: handwritten
+  language: de
+  note: German handwritten family cookbook
+  title: Kochbuch von Bertha Buch Zwei Kapitel 01 Suppen 01.jpg
+  license: CC BY 4.0
+  author: Thirunavukkarasye-Raveendran
+  source: https://commons.wikimedia.org/wiki/File:Kochbuch_von_Bertha_Buch_Zwei_Kapitel_01_Suppen_01.jpg
+  file: files/hw-de-bertha-suppen.jpg
+  bytes: 2052158
+- id: hw-de-bertha-fleisch
+  type: handwritten
+  language: de
+  note: German handwritten family cookbook
+  title: Kochbuch von Bertha Buch Zwei Kapitel 03 Fleisch 05.jpg
+  license: CC BY 4.0
+  author: Thirunavukkarasye-Raveendran
+  source: https://commons.wikimedia.org/wiki/File:Kochbuch_von_Bertha_Buch_Zwei_Kapitel_03_Fleisch_05.jpg
+  file: files/hw-de-bertha-fleisch.jpg
+  bytes: 2100827
+- id: hw-de-bertha-getraenke
+  type: handwritten
+  language: de
+  note: German handwritten family cookbook
+  title: Kochbuch von Bertha Buch Zwei Kapitel 13 Getränke 03.jpg
+  license: CC BY 4.0
+  author: Thirunavukkarasye-Raveendran
+  source: https://commons.wikimedia.org/wiki/File:Kochbuch_von_Bertha_Buch_Zwei_Kapitel_13_Getr%C3%A4nke_03.jpg
+  file: files/hw-de-bertha-getraenke.jpg
+  bytes: 1855808
+- id: hw-de-bertha-backwerk
+  type: handwritten
+  language: de
+  note: German handwritten family cookbook
+  title: Kochbuch von Bertha Buch Zwei Kapitel 12 Backwerk 04.jpg
+  license: CC BY 4.0
+  author: Thirunavukkarasye-Raveendran
+  source: https://commons.wikimedia.org/wiki/File:Kochbuch_von_Bertha_Buch_Zwei_Kapitel_12_Backwerk_04.jpg
+  file: files/hw-de-bertha-backwerk.jpg
+  bytes: 1801426
+- id: hw-en-17c-recipe-book-1
+  type: handwritten
+  language: en
+  note: 17th-century English recipe book
+  title: English recipe book, 17th century Wellcome L0029444.jpg
+  license: CC BY 4.0
+  author: ''
+  source: https://commons.wikimedia.org/wiki/File:English_recipe_book,_17th_century_Wellcome_L0029444.jpg
+  file: files/hw-en-17c-recipe-book-1.jpg
+  bytes: 1007731
+- id: hw-en-17c-recipe-book-2
+  type: handwritten
+  language: en
+  note: 17th-century English recipe book
+  title: English recipe book, 17th century Wellcome L0029446.jpg
+  license: CC BY 4.0
+  author: ''
+  source: https://commons.wikimedia.org/wiki/File:English_recipe_book,_17th_century_Wellcome_L0029446.jpg
+  file: files/hw-en-17c-recipe-book-2.jpg
+  bytes: 1090847
+- id: hw-en-fanshawe
+  type: handwritten
+  language: en
+  note: Lady Ann Fanshawe's recipe book, 17th century
+  title: Lady Ann Fanshawe's recipe book Wellcome L0030015.jpg
+  license: CC BY 4.0
+  author: ''
+  source: https://commons.wikimedia.org/wiki/File:Lady_Ann_Fanshawe%27s_recipe_book_Wellcome_L0030015.jpg
+  file: files/hw-en-fanshawe.jpg
+  bytes: 2332352
+- id: hw-en-repp
+  type: handwritten
+  language: en
+  note: Dorothea Repp's recipe book
+  title: WMS 7788, Dorothea Repp's Recipe Book Wellcome L0031618.jpg
+  license: CC BY 4.0
+  author: ''
+  source: https://commons.wikimedia.org/wiki/File:WMS_7788,_Dorothea_Repp%27s_Recipe_Book_Wellcome_L0031618.jpg
+  file: files/hw-en-repp.jpg
+  bytes: 963702
+- id: hw-en-bisaker-mince-pies
+  type: handwritten
+  language: en
+  note: Drawings of pie designs; may hold little text
+  title: Designs for mince pies from Hannah Bisaker's recipe book Wellcome L0048306.jpg
+  license: CC BY 4.0
+  author: ''
+  source: https://commons.wikimedia.org/wiki/File:Designs_for_mince_pies_from_Hannah_Bisaker%27s_recipe_book_Wellcome_L0048306.jpg
+  file: files/hw-en-bisaker-mince-pies.jpg
+  bytes: 841880
+- id: hw-en-clermont-1776
+  type: handwritten
+  language: en
+  note: Recipe book, 1776
+  title: B. Clermont, recipe book, 1776 Wellcome L0023796.jpg
+  license: CC BY 4.0
+  author: ''
+  source: https://commons.wikimedia.org/wiki/File:B._Clermont,_recipe_book,_1776_Wellcome_L0023796.jpg
+  file: files/hw-en-clermont-1776.jpg
+  bytes: 846557
+- id: hw-en-daffys-elixir
+  type: handwritten
+  language: en
+  note: 'Edge case: a medicine, not food'
+  title: Handwritten recipe for 'Daffys Elixar' Wellcome L0063217.jpg
+  license: CC BY 4.0
+  author: ''
+  source: https://commons.wikimedia.org/wiki/File:Handwritten_recipe_for_%27Daffys_Elixar%27_Wellcome_L0063217.jpg
+  file: files/hw-en-daffys-elixir.jpg
+  bytes: 1550120
+- id: card-en-apple-cake
+  type: card
+  language: en
+  note: Recipe card, Michigan, about 1950
+  title: Apple cake recipe card - Michigan circa 1950.jpg
+  license: CC BY-SA 4.0
+  author: SJW
+  source: https://commons.wikimedia.org/wiki/File:Apple_cake_recipe_card_-_Michigan_circa_1950.jpg
+  file: files/card-en-apple-cake.jpg
+  bytes: 300652
+- id: card-en-lemon-sponge
+  type: card
+  language: en
+  note: Recipe card, Michigan, about 1950
+  title: Lemon sponge cake recipe card - Michigan circa 1950.jpg
+  license: CC BY-SA 4.0
+  author: SJW
+  source: https://commons.wikimedia.org/wiki/File:Lemon_sponge_cake_recipe_card_-_Michigan_circa_1950.jpg
+  file: files/card-en-lemon-sponge.jpg
+  bytes: 313562
+- id: card-en-orange-cake
+  type: card
+  language: en
+  note: Handwritten recipe card
+  title: Orange cake - Handwritten 2024-05-21 103943 page 1.jpg
+  license: CC BY-SA 4.0
+  author: SJW
+  source: https://commons.wikimedia.org/wiki/File:Orange_cake_-_Handwritten_2024-05-21_103943_page_1.jpg
+  file: files/card-en-orange-cake.jpg
+  bytes: 204907
+- id: card-en-pound-cake
+  type: card
+  language: en
+  note: Handwritten recipe card
+  title: Pound cake recipe card - Handwritten 2024-05-21 103943 page 1.jpg
+  license: CC BY-SA 4.0
+  author: SJGW
+  source: https://commons.wikimedia.org/wiki/File:Pound_cake_recipe_card_-_Handwritten_2024-05-21_103943_page_1.jpg
+  file: files/card-en-pound-cake.jpg
+  bytes: 123822
+- id: card-en-aunt-ruth
+  type: card
+  language: en
+  note: Low resolution (448 px)
+  title: Aunt Ruth pound cake recipe.jpg
+  license: CC BY-SA 3.0
+  author: Jane023
+  source: https://commons.wikimedia.org/wiki/File:Aunt_Ruth_pound_cake_recipe.jpg
+  file: files/card-en-aunt-ruth.jpg
+  bytes: 36316
+- id: card-en-pedernales-chili
+  type: card
+  language: en
+  note: Printed recipe card
+  title: Recipe Card for Pedernales River Chili - DPLA - 3d1051a803e0ab4b9f54b5aada0409ed.jpg
+  license: Public domain
+  author: General Services Administration. National Archives and Records Service. Office of Presidential Libraries. Lyndon B. John
+  source: https://commons.wikimedia.org/wiki/File:Recipe_Card_for_Pedernales_River_Chili_-_DPLA_-_3d1051a803e0ab4b9f54b5aada0409ed.jpg
+  file: files/card-en-pedernales-chili.jpg
+  bytes: 1302373
+- id: card-en-key-lime-pie
+  type: card
+  language: en
+  note: Two-page handwritten recipe, combined into a scanned PDF
+  title: Esther Staat Recipe - DPLA - efe735d152436947171c1bf0a277dd94 (page 1).jpg
+  license: Public domain
+  author: ''
+  source: https://commons.wikimedia.org/wiki/File:Esther_Staat_Recipe_-_DPLA_-_efe735d152436947171c1bf0a277dd94_(page_1).jpg
+  file: files/card-en-key-lime-pie.pdf
+  bytes: 1368298
+- id: card-en-fudge-cake
+  type: card
+  language: en
+  note: Recipe postcard, front and back, combined into a scanned PDF
+  title: Wellsey fudge cake - DPLA - 7b1ac7cab07234e9dd191333d8bb35af (page 1).jpg
+  license: No restrictions
+  author: ''
+  source: https://commons.wikimedia.org/wiki/File:Wellsey_fudge_cake_-_DPLA_-_7b1ac7cab07234e9dd191333d8bb35af_(page_1).jpg
+  file: files/card-en-fudge-cake.pdf
+  bytes: 1040375
+- id: pdf-en-stag-waffles
+  type: printed
+  language: en
+  note: The Stag Cook Book (1922), one page
+  title: The stag cook book 36 Warren G. Harding WAFFLES.pdf
+  license: Public domain
+  author: Carrol Mac Sheridan
+  source: https://commons.wikimedia.org/wiki/File:The_stag_cook_book_36_Warren_G._Harding_WAFFLES.pdf
+  file: files/pdf-en-stag-waffles.pdf
+  bytes: 48091
+- id: pdf-en-stag-meat-loaf
+  type: printed
+  language: en
+  note: The Stag Cook Book (1922), one page
+  title: The stag cook book 84 Charles P. Steinmetz MEAT LOAF.pdf
+  license: Public domain
+  author: Carrol Mac Sheridan
+  source: https://commons.wikimedia.org/wiki/File:The_stag_cook_book_84_Charles_P._Steinmetz_MEAT_LOAF.pdf
+  file: files/pdf-en-stag-meat-loaf.pdf
+  bytes: 82233
+- id: pdf-en-stag-steak-kidney-pie
+  type: printed
+  language: en
+  note: The Stag Cook Book (1922), one page
+  title: The stag cook book 86 Charlie Chaplin STEAK AND KIDNEY PIE.pdf
+  license: Public domain
+  author: Carrol Mac Sheridan
+  source: https://commons.wikimedia.org/wiki/File:The_stag_cook_book_86_Charlie_Chaplin_STEAK_AND_KIDNEY_PIE.pdf
+  file: files/pdf-en-stag-steak-kidney-pie.pdf
+  bytes: 50072
+- id: pdf-en-stag-chili
+  type: printed
+  language: en
+  note: The Stag Cook Book (1922), one page
+  title: The stag cook book 98 T. A. Dorgan CHILI CON CARNE.pdf
+  license: Public domain
+  author: Carrol Mac Sheridan
+  source: https://commons.wikimedia.org/wiki/File:The_stag_cook_book_98_T._A._Dorgan_CHILI_CON_CARNE.pdf
+  file: files/pdf-en-stag-chili.pdf
+  bytes: 50404
+- id: pdf-en-stag-chicken-paprika
+  type: printed
+  language: en
+  note: The Stag Cook Book (1922), one page
+  title: The stag cook book 170 Albert D. Lasker CHICKEN PAPRIKA.pdf
+  license: Public domain
+  author: Carrol Mac Sheridan
+  source: https://commons.wikimedia.org/wiki/File:The_stag_cook_book_170_Albert_D._Lasker_CHICKEN_PAPRIKA.pdf
+  file: files/pdf-en-stag-chicken-paprika.pdf
+  bytes: 45662
+- id: pdf-en-stag-lemon-layer-cake
+  type: printed
+  language: en
+  note: The Stag Cook Book (1922), one page
+  title: The stag cook book 181 Harold Lloyd LEMON LAYER CAKE.pdf
+  license: Public domain
+  author: Carrol Mac Sheridan
+  source: https://commons.wikimedia.org/wiki/File:The_stag_cook_book_181_Harold_Lloyd_LEMON_LAYER_CAKE.pdf
+  file: files/pdf-en-stag-lemon-layer-cake.pdf
+  bytes: 84915
+- id: pdf-en-stag-houdini-mushrooms
+  type: printed
+  language: en
+  note: The Stag Cook Book (1922), one page
+  title: The stag cook book 83 Houdini SCALLOPED MUSHROOMS AND DEVILED EGGS.pdf
+  license: Public domain
+  author: Carrol Mac Sheridan
+  source: https://commons.wikimedia.org/wiki/File:The_stag_cook_book_83_Houdini_SCALLOPED_MUSHROOMS_AND_DEVILED_EGGS.pdf
+  file: files/pdf-en-stag-houdini-mushrooms.pdf
+  bytes: 48650
+- id: pdf-en-stag-favorite-menu
+  type: printed
+  language: en
+  note: The Stag Cook Book (1922), one page
+  title: The stag cook book 156 Charles W. Eliot A FAVORITE MENU.pdf
+  license: Public domain
+  author: Carrol Mac Sheridan
+  source: https://commons.wikimedia.org/wiki/File:The_stag_cook_book_156_Charles_W._Eliot_A_FAVORITE_MENU.pdf
+  file: files/pdf-en-stag-favorite-menu.pdf
+  bytes: 82568
+- id: pdf-de-augsburgisches
+  type: printed
+  language: de
+  note: 18th-century German cookbook, Fraktur
+  title: Augsburgisches Kochbuch (IA 10300203bsb).pdf
+  license: Public domain
+  author: Weiler, Sophie Juliane
+  source: https://commons.wikimedia.org/wiki/File:Augsburgisches_Kochbuch_(IA_10300203bsb).pdf
+  pages_taken: 298-299 of 747
+  file: files/pdf-de-augsburgisches.pdf
+  bytes: 1892261
+- id: pdf-de-hannoverisches
+  type: printed
+  language: de
+  note: German cookbook, Fraktur
+  title: Hannoverisches Kochbuch. 1 (IA 10297659bsb).pdf
+  license: Public domain
+  author: Meyfeld, Ernst
+  source: https://commons.wikimedia.org/wiki/File:Hannoverisches_Kochbuch._1_(IA_10297659bsb).pdf
+  pages_taken: 78-79 of 195
+  file: files/pdf-de-hannoverisches.pdf
+  bytes: 1962813
+- id: pdf-de-deutsch-amerikanisch
+  type: printed
+  language: de
+  note: German-American cookbook
+  title: Das deutsch-amerikanische kochbuch (IA dasdeutschamerik00falk).pdf
+  license: Public domain
+  author: '[Falkenthal, William C.] [from old catalog]'
+  source: https://commons.wikimedia.org/wiki/File:Das_deutsch-amerikanische_kochbuch_(IA_dasdeutschamerik00falk).pdf
+  pages_taken: 163-164 of 408
+  file: files/pdf-de-deutsch-amerikanisch.pdf
+  bytes: 178998
+- id: pdf-de-davidis
+  type: printed
+  language: de
+  note: Davidis, Praktisches Kochbuch
+  title: Henriette Davidis Praktisches kochbuch für die gewöhnliche und feinere küche (IA henriettedavidis01davi).pdf
+  license: Public domain
+  author: Davidis, Henriette, d. 1876. [from old catalog]
+  source: https://commons.wikimedia.org/wiki/File:Henriette_Davidis_Praktisches_kochbuch_f%C3%BCr_die_gew%C3%B6hnliche_und_feinere_k%C3%BCche_(IA_henriettedavidis01davi).pdf
+  pages_taken: 329-330 of 824
+  file: files/pdf-de-davidis.pdf
+  bytes: 314584
+- id: pdf-de-allgemeines
+  type: printed
+  language: de
+  note: Allgemeines deutsches Kochbuch
+  title: Allgemeines deutsches Kochbuch für alle Stände - Ein unentbehrliches Handbuch für Hausfrausen, Haushälterinnen und Köchinnen (IA b28109727).pdf
+  license: Public domain
+  author: Scheibler, Sophie Wilhelmine
+  source: https://commons.wikimedia.org/wiki/File:Allgemeines_deutsches_Kochbuch_f%C3%BCr_alle_St%C3%A4nde_-_Ein_unentbehrliches_Handbuch_f%C3%BCr_Hausfrausen,_Haush%C3%A4lterinnen_und_K%C3%B6chinnen_(IA_b28109727).pdf
+  pages_taken: 244-245 of 610
+  file: files/pdf-de-allgemeines.pdf
+  bytes: 309861
+- id: pdf-de-puppen-kochbuch
+  type: printed
+  language: de
+  note: Children's cookbook, 1880
+  title: Buch - Neues Puppen-Kochbuch - 1880.pdf
+  license: Public domain
+  author: Eleonore Horn
+  source: https://commons.wikimedia.org/wiki/File:Buch_-_Neues_Puppen-Kochbuch_-_1880.pdf
+  pages_taken: 28-29 of 72
+  file: files/pdf-de-puppen-kochbuch.pdf
+  bytes: 622530
+- id: pdf-fr-gouffe
+  type: printed
+  language: fr
+  note: Gouffé, Le livre de cuisine
+  title: Le livre de cuisine - comprenant la cuisine de ménage et la grande cuisine (IA b28125629).pdf
+  license: Public domain
+  author: 'Gouffé, Jules, 1807-
+
+    Ronjat, Etienne Antoine Eugène, 1822-'
+  source: https://commons.wikimedia.org/wiki/File:Le_livre_de_cuisine_-_comprenant_la_cuisine_de_m%C3%A9nage_et_la_grande_cuisine_(IA_b28125629).pdf
+  pages_taken: 360-361 of 901
+  file: files/pdf-fr-gouffe.pdf
+  bytes: 164625
+- id: pdf-fr-nouveau-livre
+  type: printed
+  language: fr
+  note: Le nouveau livre de cuisine
+  title: Le nouveau livre de cuisine - recettes pratiques, recueillies et classées (IA lenouveaulivrede00raym).pdf
+  license: Public domain
+  author: 'Raymond, Emmeline, 1828-1902
+
+    Poul, Henriette, joint author'
+  source: https://commons.wikimedia.org/wiki/File:Le_nouveau_livre_de_cuisine_-_recettes_pratiques,_recueillies_et_class%C3%A9es_(IA_lenouveaulivrede00raym).pdf
+  pages_taken: 212-213 of 532
+  file: files/pdf-fr-nouveau-livre.pdf
+  bytes: 196338
+- id: pdf-en-royal-cookery
+  type: printed
+  language: en
+  note: The Royal Cookery Book, with illustrations
+  title: The royal cookery book (le livre de cuisine) (IA b21505093).pdf
+  license: Public domain
+  author: 'Gouffé, Jules, 1807-
+
+    Gouffé, Alphonse
+
+    University of Leeds. Library'
+  source: https://commons.wikimedia.org/wiki/File:The_royal_cookery_book_(le_livre_de_cuisine)_(IA_b21505093).pdf
+  pages_taken: 305-306 of 764
+  file: files/pdf-en-royal-cookery.pdf
+  bytes: 173300
+- id: pdf-en-way-to-mans-heart
+  type: printed
+  language: en
+  note: The Way to a Man's Heart (1901)
+  title: The Way to a man's heart - a cook book (IA cu31924000654800).pdf
+  license: Public domain
+  author: Hill Street Methodist Church (Lexington, Ky.). Ladies Aid Society
+  source: https://commons.wikimedia.org/wiki/File:The_Way_to_a_man%27s_heart_-_a_cook_book_(IA_cu31924000654800).pdf
+  pages_taken: 75-76 of 188
+  file: files/pdf-en-way-to-mans-heart.pdf
+  bytes: 195026
+- id: edge-de-juedisches-kochbuch
+  type: printed
+  language: de
+  note: 'Edge case: the cover of a printed cookbook, not a recipe'
+  title: Bertha Gumprich – Jüdisches Kochbuch, Wissenschaftliche Bibliothek Trier, Sign 25 A 4.jpg
+  license: CC BY-SA 4.0
+  author: Stadtbibliothek Trier (Wissenschaftliche Bibliothek der Stadt Trier)
+  source: https://commons.wikimedia.org/wiki/File:Bertha_Gumprich_%E2%80%93_J%C3%BCdisches_Kochbuch,_Wissenschaftliche_Bibliothek_Trier,_Sign_25_A_4.jpg
+  file: files/edge-de-juedisches-kochbuch.jpg
+  bytes: 1630323
+- id: edge-nl-soap-recipe
+  type: handwritten
+  language: nl
+  note: 'Edge case: a soap recipe, not food'
+  title: Recept voor vervaardiging van zeep uit lijnolie, water en soda, handgeschreven op vel papier, objectnr 71978.JPG
+  license: CC BY-SA 3.0
+  author: K. Mulder-Compaan
+  source: https://commons.wikimedia.org/wiki/File:Recept_voor_vervaardiging_van_zeep_uit_lijnolie,_water_en_soda,_handgeschreven_op_vel_papier,_objectnr_71978.JPG
+  file: files/edge-nl-soap-recipe.jpg
+  bytes: 1030200
+- id: edge-ca-medical-recipes
+  type: handwritten
+  language: ca
+  note: 'Edge case: medieval medical recipes, Catalan'
+  title: Recetario médico medieval.jpg
+  license: CC BY-SA 4.0
+  author: Dorieo
+  source: https://commons.wikimedia.org/wiki/File:Recetario_m%C3%A9dico_medieval.jpg
+  file: files/edge-ca-medical-recipes.jpg
+  bytes: 1364330
+- id: edge-fr-handwritten-note
+  type: handwritten
+  language: fr
+  note: French handwritten recipe note
+  title: Note-manuscrite-recette.jpg
+  license: CC BY-SA 4.0
+  author: Amaël laloyaux
+  source: https://commons.wikimedia.org/wiki/File:Note-manuscrite-recette.jpg
+  file: files/edge-fr-handwritten-note.jpg
+  bytes: 491112
+- id: edge-en-recipe-that-i-made
+  type: handwritten
+  language: en
+  note: Phone photo of a handwritten recipe
+  title: Recipe that I made.jpg
+  license: CC BY-SA 4.0
+  author: TheRegencyCook
+  source: https://commons.wikimedia.org/wiki/File:Recipe_that_I_made.jpg
+  file: files/edge-en-recipe-that-i-made.jpg
+  bytes: 1359777
+- id: edge-fr-carnet-1872
+  type: handwritten
+  language: fr
+  note: 'Edge case: a notebook page, probably not a recipe'
+  title: Carnet du 20 février au 14 juin 1872, ah696(57).jpg
+  license: CC0
+  author: Hugo, Victor (Besançon, 26–02–1802 - Paris, 22–05–1885), homme ou femme de lettres - Ecrivain
+  source: https://commons.wikimedia.org/wiki/File:Carnet_du_20_f%C3%A9vrier_au_14_juin_1872,_ah696(57).jpg
+  file: files/edge-fr-carnet-1872.jpg
+  bytes: 1279792
