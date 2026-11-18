@@ -61,5 +61,6 @@ Results are cached, so a repeat run is free.
 - **Pages with only ingredient lists** (Bertha, Backwaren) come out with no steps
   and a warning saying so, instead of invented steps.
 - **Old OCR text layers** (the Stag PDFs) produced quotes the code check could not
-  find at first (1–2 problems); the correction round fixed all but one, which
-  was demoted to "guessed".
+  find at first (1–2 problems per page); the correction round fixed all of them.
+  The only problem left in the whole run (in *The Way to a Man's Heart*) was
+  demoted to "guessed" with a warning.
