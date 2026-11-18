@@ -217,6 +217,58 @@ in the hand-in list from the start.
 this check. Comparing the result line by line with the brief should have
 been part of finishing, not a question I had to ask.
 
+## Session 8: vegan rule refactor (after submitting, on a branch)
+
+**What I questioned:** how can a table cover every possible vegan change?
+The agent first said the table covers categories, not dishes, then tested
+it on names outside my examples. It was worse than it had told me:
+- it **missed** salami, mortadella, pesto, mayonnaise and puff pastry, with no
+  warning, so the recipe came out "vegan";
+- it **replaced plant ingredients**: butternut squash became vegan butter
+  (the word starts with "butter"), coconut milk became oat milk, a beef tomato
+  became seitan;
+- it had **no way to say "I don't know"**.
+
+The cause: recognising what an ingredient contains is a language task, and
+the agent had put it in code as a word list. It had not flagged that risk
+when it delivered the rule.
+
+**Decision process:** I proposed four things: classify origin (plant, animal,
+uncertain), classify each ingredient's role in the dish, fall back to the
+model for a substitute when the table has none, and validate every
+substitute with the same classification. I asked the agent to argue against
+it. Its main points: "plant vs animal" is the wrong question (salt is
+neither, pesto is plant-based but contains cheese), and "animal" alone does
+not say what to substitute; role belongs to each use, not to the
+ingredient; a generated substitute is a confident answer exactly where the
+system knows least; validating a model with the same model is circular.
+I kept: one classification of what the ingredient contains, the table as the
+only source of substitutes, and a warning when there is none.
+
+**What was built**, on the branch `refactor/vegan-ingredient-categories`
+so that `main` stays as submitted:
+- an `animal` field classified by the extraction model (prompt v4);
+- the vegan rule searches only the table rows for that category; no row
+  means keep and warn, and the recipe is marked "not fully vegan";
+- a test that every substitute in the table is itself recognised as vegan;
+- 39 new tests, and a new evaluation case with the traps above.
+
+**Run on the real model (prompt v4):** 314/317 at first.
+- Two failures were again **mistakes in the checks**, one of them in the new
+  case the agent had just written: the check for "butter" matched "butternut
+  squash", the same word-start bug the refactor removed from the vegan rule.
+  The other matched "water" inside "Tahini and water, to make a paste".
+- One is real: the model stopped listing the skewer as a tool in the pound
+  cake. Nothing to do with vegan; it shows how a prompt change moves other
+  answers. Left visible in the report: **316/317**.
+- Reading the regenerated examples showed a **false alarm**: the Paprikash
+  dumpling dough was flagged "contains egg, no substitute", although it is
+  made from the eggs the rule had already replaced. Intermediates without
+  their own row are no longer flagged.
+- "Bacon grease, lard, or other fat" is now classified *uncertain* ("or other
+  fat" could be plant fat), so it is flagged instead of turned into oil. That
+  is the behaviour I chose: a warning, not a guess.
+
 **Things I should double-check myself**
 - The transcription prompt tells the model to re-join words hyphenated across
   lines. That is convenient for later quote matching, but it means the

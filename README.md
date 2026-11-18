@@ -7,16 +7,16 @@ for every value, whether it was **read** from the page, **guessed**, or
 
 Built for the finlyt Cookbook Challenge. The test input is a handwritten
 Sauerbraten from 1887; the pipeline is also measured on an
-[11-case evaluation set](evals/README.md) it was not tuned on.
+[12-case evaluation set](evals/README.md) it was not tuned on.
 
 **At a glance**
 
 | | |
 | --- | --- |
 | Sauerbraten, first run | 3 model calls, ≈ 38 s, **≈ $0.006** (repeat runs: $0, from cache) |
-| Evaluation set (11 inputs, 4 languages) | **294/294** checks passed, **≈ $0.04** for the whole set |
+| Evaluation set (12 inputs, 4 languages) | **316/317** checks passed, **≈ $0.04** for the whole set |
 | Fraktur page from 1879 vs human transcription | **99 %** character similarity |
-| Tests | 252, no network or API key needed (10 of them need the optional web extra) |
+| Tests | 291, no network or API key needed (10 of them need the optional web extra) |
 | Model | Claude Haiku 5.5 for reading and extracting; everything else is plain code |
 
 ## Run it
@@ -222,8 +222,15 @@ recipe states what its starting number was based on.
   to whole pieces and the rounding is reported; vague and to-taste amounts
   untouched with a note; times untouched with a note to check doneness; a pot
   size warning when the amount changes by ×1.5 or more.
-- Vegan: a [substitution table](src/cookbook/manipulate/vegan_substitutions.yaml)
-  in a data file anyone can review. Each swap is recorded with its reason;
+- Vegan is split in two. **Recognising** what an ingredient contains is a
+  language task, so the extraction model classifies every ingredient
+  (`animal`: none, meat, poultry, fish, dairy, egg, honey, gelatin,
+  other_animal, uncertain). **Deciding** what to do is code: a
+  [substitution table](src/cookbook/manipulate/vegan_substitutions.yaml) in a
+  data file anyone can review, searched only among the rows for that
+  category. When no row fits ("pesto: contains dairy") or the model is
+  unsure, the ingredient is **kept and flagged**, and the recipe is marked
+  "not fully vegan". The rule never invents a substitute. Each swap is recorded with its reason;
   every step that used the ingredient gets a visible note, including advice
   that only exists because of the swap ("Marinate seitan for 1–2 days at most").
   The meat-based *Bratenfond* becomes vegetable stock with the pan juices of
@@ -246,6 +253,16 @@ recipe states what its starting number was based on.
   guarantees it removes the *Speck*. An LLM could later *rewrite the step
   text* fluently; the code check would then verify that no replaced
   ingredient is still mentioned.
+- **Recognising animal products with a word list** (the first version): it
+  missed pesto, mayonnaise and salami without a warning, and turned butternut
+  squash into vegan butter and coconut milk into oat milk. That put a
+  language task in code; the model now classifies, the table decides.
+- **Letting the model invent a substitute when the table has none**: it would
+  give a confident answer exactly where the system knows least. A warning
+  asking the cook to choose is the honest answer.
+- **Classifying each ingredient's role in the dish** (fat for frying, binder):
+  closer to how a cook substitutes, but a role belongs to each use, not to
+  the ingredient, and it is another unverifiable model output. Left for later.
 - **Scaling cooking times**: physically wrong for a roast.
 - **Converting cups of flour to grams**: needs the density of each ingredient
   (a cup of flour ≈ 125 g, of sugar ≈ 200 g). Without a reviewed density
@@ -304,7 +321,7 @@ a model writing the answer key for another model is circular until a human
 confirms it. The first run already found **errors in my checks** (Portuguese
 tool names, a legitimate intermediate counted as a duplicate) and **one real
 weakness** (the oven was not listed as a tool), fixed with one line in the
-prompt. First run 287/294, after the fixes **294/294**. Report:
+prompt. First run 287/294, after the fixes **294/294**. With the vegan refactor (prompt v4) and a twelfth case built from vegan traps: **316/317**; the one failure is real (the model no longer lists the skewer in the pound cake). Report:
 [`evals/results/latest.md`](evals/results/latest.md). A perfect score on 11
 cases whose checks I have not reviewed yet is a starting point, not proof.
 
@@ -315,6 +332,8 @@ cases whose checks I have not reviewed yet is a starting point, not proof.
 | Detect file type, choose reader | code | deterministic, free |
 | Read handwriting, Fraktur, photos | LLM (vision) | nothing else does it |
 | Understand language: optional, intermediate, condition, which amount belongs to what | LLM | needs reading comprehension in any language |
+| Say what an ingredient contains (pesto: dairy; coconut milk: none) | LLM | knowledge of products in any language; a word list cannot keep up |
+| Choose the vegan substitute, or flag that none is known | code | must be reproducible and reviewable |
 | Check quotes and numbers | code | the whole point is not to trust the model |
 | Scale, vegan, unit handling | code | must be reproducible and explainable |
 | Render output | code | no reason for a model |
