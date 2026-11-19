@@ -2,7 +2,7 @@
 
 from cookbook.models import Document
 
-PROMPT_VERSION = "4"
+PROMPT_VERSION = "5"
 
 SYSTEM_PROMPT = """\
 You turn the text of a document into a structured recipe. A program checks your answer \
@@ -19,7 +19,12 @@ lists of side dishes. Ingredients named only there are NOT ingredients.
 evidence for an ingredient.
 
 Ingredients
-- One entry per ingredient. If an ingredient appears several times, keep one entry.
+- One entry per ingredient. If an ingredient is only mentioned again (in a step, or as "salt" \
+and "salt to taste"), keep one entry.
+- If the recipe has parts with their own ingredient lists (for the dough, for the cream, for the \
+layers) and an ingredient has its own amount in more than one part, give one entry per part. Name \
+the part in name, for example "sugar (cream)", and quote that part's line. Never add the amounts \
+together and never drop one.
 - Never invent an amount. If the text gives no number, use kind vague (some, a little), \
 to_taste (seasoning, "as much as needed until ...") or absent (no amount at all), with value null.
 - For exact amounts copy the number and the unit exactly as written ("½ l" is value 0.5, unit "l"). \

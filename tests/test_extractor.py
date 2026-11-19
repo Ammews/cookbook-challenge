@@ -15,6 +15,13 @@ DOCUMENT = Document(
 )
 
 
+DOCUMENT_TWO_PARTS = Document(
+    name="r.txt",
+    kind=InputKind.TEXT,
+    pages=(Page(number=1, text="Teig: 4 Zwiebeln. Creme: 2 Zwiebeln.", method=ReadMethod.PLAIN_TEXT),),
+)
+
+
 def quantity(kind="exact", value=0.0, unit="", raw=""):
     return WireQuantity(kind=kind, value=value, max_value=0, unit=unit, raw=raw)
 
@@ -225,6 +232,42 @@ def test_merged_ingredient_is_optional_only_if_both_were():
     )
     recipe = Extractor(ScriptedModel(answer)).extract(DOCUMENT).recipe
     assert recipe.ingredients[0].optional is False
+
+
+def test_same_ingredient_with_two_different_amounts_is_kept_twice():
+    # A Napoleon cake card: 2 eggs for the dough, 1 egg for the cream. Merging
+    # them would put 2 eggs on the shopping list instead of 3.
+    answer = wire(
+        [
+            named("eggs", "eggs", "eggs", kind="exact", value=4, raw="4", quote="4 Zwiebeln"),
+            named("eggs_cream", "eggs", "eggs", kind="exact", value=2, raw="2", quote="2 Zwiebeln"),
+        ],
+        steps=[],
+    )
+    recipe = Extractor(ScriptedModel(answer, answer)).extract(DOCUMENT_TWO_PARTS).recipe
+
+    assert [i.quantity.value for i in recipe.ingredients] == [4, 2]
+    assert len({i.id for i in recipe.ingredients}) == 2
+    assert any("different amounts" in w.message for w in recipe.warnings)
+
+
+def test_same_ingredient_with_the_same_amount_is_still_merged():
+    answer = wire(
+        [
+            named("eggs", "eggs", "eggs", kind="exact", value=4, raw="4", quote="4 Zwiebeln"),
+            named("eggs_again", "eggs", "eggs", kind="exact", value=4, raw="4", quote="4 Zwiebeln"),
+        ],
+        steps=[],
+    )
+    recipe = Extractor(ScriptedModel(answer)).extract(DOCUMENT).recipe
+    assert len(recipe.ingredients) == 1
+
+
+def test_prompt_asks_for_one_entry_per_recipe_part():
+    from cookbook.extract.prompt import SYSTEM_PROMPT
+
+    assert "one entry per part" in SYSTEM_PROMPT
+    assert "Never add the amounts" in SYSTEM_PROMPT
 
 
 def test_different_ingredients_with_similar_names_are_not_merged():

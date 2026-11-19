@@ -116,6 +116,10 @@ def merge_duplicates(
     used the dropped entry are pointed at the kept one, and a warning says
     what was merged, so nothing disappears silently.
 
+    Two different exact amounts are never merged: "2 eggs" for the dough and
+    "1 egg" for the cream are two uses, and keeping one would short the
+    shopping list. Both stay, with a warning.
+
     Returns the kept entries and a map from dropped id to kept id.
     """
     kept: list[WireIngredient] = []
@@ -124,6 +128,17 @@ def merge_duplicates(
         match = next((k for k in kept if _same_ingredient(k, item)), None)
         if match is None:
             kept.append(item)
+            continue
+        if _different_exact_amounts(match, item):
+            kept.append(item)
+            warnings.append(
+                ReviewWarning(
+                    message=f"'{item.name_original}' is listed more than once with different amounts "
+                    f"('{match.quantity.raw or match.quote}' and '{item.quantity.raw or item.quote}'); "
+                    "both are kept as separate uses.",
+                    target_id=item.id,
+                )
+            )
             continue
         best = min((match, item), key=lambda i: _KIND_RANK[i.quantity.kind])
         merged = best.model_copy(
@@ -144,6 +159,13 @@ def merge_duplicates(
             )
         )
     return kept, aliases
+
+
+def _different_exact_amounts(a: WireIngredient, b: WireIngredient) -> bool:
+    qa, qb = a.quantity, b.quantity
+    if qa.kind != "exact" or qb.kind != "exact":
+        return False
+    return (qa.value, qa.max_value, qa.unit.strip().lower()) != (qb.value, qb.max_value, qb.unit.strip().lower())
 
 
 def _same_ingredient(a: WireIngredient, b: WireIngredient) -> bool:
