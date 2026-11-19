@@ -14,9 +14,9 @@ Sauerbraten from 1887; the pipeline is also measured on an
 | | |
 | --- | --- |
 | Sauerbraten, first run | 3 model calls, ≈ 38 s, **≈ $0.006** (repeat runs: $0, from cache) |
-| Evaluation set (12 inputs, 4 languages) | **316/317** checks passed, **≈ $0.04** for the whole set |
+| Evaluation set (12 inputs, 4 languages) | **315/316** checks passed, **≈ $0.05** for the whole set |
 | Fraktur page from 1879 vs human transcription | **99 %** character similarity |
-| Tests | 291, no network or API key needed (10 of them need the optional web extra) |
+| Tests | 302, no network or API key needed (10 of them need the optional web extra) |
 | Model | Claude Haiku 5.5 for reading and extracting; everything else is plain code |
 
 ## Run it
@@ -166,7 +166,10 @@ volunteers' transcription.
 - **Code checks every answer** (`extract/grounding.py`): each quote must be in
   the transcribed text (tolerating case, "½" vs "1/2", long s, hyphenation and
   small transcription noise), and each "read" amount must appear in its own
-  quote ("4 Zwiebeln" supports 4, not 5). Ids used by steps must exist.
+  quote ("4 Zwiebeln" supports 4, not 5). The tolerance in quote matching is
+  for words only: a near match must hold exactly the same numbers, so a quote
+  copied with a changed number ("5 Zwiebeln" for "4 Zwiebeln", 90 % similar)
+  is rejected, not accepted as noise. Ids used by steps must exist.
 - Problems go back to the model **once**, with the exact list. Whatever still
   fails is not hidden: it is demoted to "guessed" and a warning is added.
 - **Duplicates are merged in code**, not only by asking the model: two entries
@@ -321,7 +324,7 @@ a model writing the answer key for another model is circular until a human
 confirms it. The first run already found **errors in my checks** (Portuguese
 tool names, a legitimate intermediate counted as a duplicate) and **one real
 weakness** (the oven was not listed as a tool), fixed with one line in the
-prompt. First run 287/294, after the fixes **294/294**. With the vegan refactor (prompt v4) and a twelfth case built from vegan traps: **316/317**; the one failure is real (the model no longer lists the skewer in the pound cake). Report:
+prompt. First run 287/294, after the fixes **294/294**. With the vegan refactor (prompt v4) and a twelfth case built from vegan traps: **316/317** (the one failure: the model stopped listing the skewer in the pound cake). A later run from an empty cache gave **315/316**: the skewer came back, and the paprikash came out with 16 steps where the check allows 8 to 14. Both are the model's run-to-run variation, not a code change. Report:
 [`evals/results/latest.md`](evals/results/latest.md). A perfect score on 11
 cases whose checks I have not reviewed yet is a starting point, not proof.
 

@@ -297,3 +297,33 @@ pound sign read as "₩", but flagged as unreadable.
   transcription is not strictly literal.
 - Haiku 5.5 rejects `temperature`, so "temperature 0" is not available as a
   determinism tool. Reproducibility comes from the cache instead.
+
+## Session 10: a hole in the quote check (preparing for the call)
+
+**Asked:** why quotes are accepted at 85 % similarity.
+
+**What the agent found** while answering, by running the real check: a quote
+with one digit changed is still about 90 % similar. If the model wrote
+"5 Zwiebeln" where the page says "4 Zwiebeln", the quote passed as
+transcription noise, and the number check then found the 5 in the model's
+own wrong quote. Both checks passed and the 5 would have been shown as read.
+The evaluation answers show the model does not do this, but the check is
+meant to catch exactly this kind of invention.
+
+**My decision:** the 85 % tolerance applies to words, never to numbers. I
+asked whether "½" written as "1/2" would then fail; it does not, because
+both texts are normalised first and numbers are compared as values (½, 1/2
+and 1 1/2 are read as 0.5, 0.5 and 1.5).
+
+**What changed:** a near match now also needs the same amounts as the quote,
+read from the matched window widened to whole words (so a number at the
+window's edge is read in full). Articles ("a", "ein", "um") are number words
+but do not count, so a lost or gained article stays noise. Ten new tests;
+six of them fail on the old code.
+
+**Result:** no false alarm on the evaluation set (the only problem the check
+found is the Russian "пол." for half, which the number check already
+reported). The evaluation had to run from an empty cache and came back
+315/316: the skewer is listed again, and one recipe got 16 steps where the
+check allows 8 to 14. That difference is the model's variation between runs,
+not this change.
