@@ -3,7 +3,9 @@
 Two checks, both deterministic:
 - quote check: every quote must appear in the document text (tolerating the
   small differences a transcription introduces: "½" vs "1/2", case, spacing,
-  long s, hyphenation);
+  long s, hyphenation). The tolerance is for words only: a near match counts
+  only if it holds exactly the same numbers as the quote, so "5 Zwiebeln" is
+  never accepted as a noisy copy of "4 Zwiebeln";
 - number check: an exact quantity marked "read" must have its number in its
   own quote. "4 Zwiebeln" can support 4, it cannot support 5.
 
@@ -60,10 +62,49 @@ def quote_in_text(quote: str, text: str) -> bool:
         return False
     window = len(needle)
     step = max(1, window // 6)
+    wanted = _quantities(needle)
     for start in range(0, len(haystack) - window + 1, step):
-        if SequenceMatcher(None, needle, haystack[start:start + window]).ratio() >= _FUZZY_THRESHOLD:
+        if SequenceMatcher(None, needle, haystack[start:start + window]).ratio() < _FUZZY_THRESHOLD:
+            continue
+        # Words may differ a little, numbers may not. Widen the window to whole
+        # words first, so a number cut at the window's edge is read in full.
+        if _same_quantities(wanted, _quantities(_whole_words(haystack, start, start + window))):
             return True
     return False
+
+
+# Articles are also number words ("a", "ein", "um"); a noisy match may gain or
+# lose one without changing any amount, so they do not count here.
+_ARTICLES = {"a", "an", "ein", "eine", "einen", "einem", "einer", "um", "uma"}
+_QUANTITY = re.compile(r"(\d+)\s+(\d+)\s*/\s*(\d+)|(\d+)\s*/\s*(\d+)|(\d+(?:[.,]\d+)?)")
+
+
+def _quantities(text: str) -> list[float]:
+    """The amounts in normalised text, each read once: "1 1/2" is 1.5, and "½", "1/2", "0,5" are all 0.5."""
+    values = []
+    for whole, num, den, frac_num, frac_den, plain in _QUANTITY.findall(text):
+        if den:
+            values.append(int(whole) + int(num) / int(den) if int(den) else float(whole))
+        elif frac_den:
+            values.append(int(frac_num) / int(frac_den) if int(frac_den) else float(frac_num))
+        else:
+            values.append(float(plain.replace(",", ".")))
+    for word in re.findall(r"[^\W\d_]+", text):
+        if word in _NUMBER_WORDS and word not in _ARTICLES:
+            values.append(float(_NUMBER_WORDS[word]))
+    return sorted(values)
+
+
+def _same_quantities(a: list[float], b: list[float]) -> bool:
+    return len(a) == len(b) and all(abs(x - y) <= 0.01 * max(1.0, abs(x)) for x, y in zip(a, b))
+
+
+def _whole_words(text: str, start: int, end: int) -> str:
+    while start > 0 and text[start - 1] != " ":
+        start -= 1
+    while end < len(text) and text[end] != " ":
+        end += 1
+    return text[start:end]
 
 
 def numbers_in(text: str) -> list[float]:

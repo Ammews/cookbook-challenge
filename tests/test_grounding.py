@@ -60,3 +60,41 @@ def test_number_not_in_the_quote_is_not_supported():
 
 def test_digit_inside_a_word_still_counts_once():
     assert 12 in numbers_in("12 oz")
+
+
+# The fuzzy match tolerates noise in words, never in numbers. Before this, a
+# quote with one digit changed was still ~90% similar and passed, and the
+# number check then found the wrong number in the model's own (wrong) quote.
+
+STEP = "Man schneidet 4 Zwiebeln in Scheiben und gibt 2 Lorbeerblätter und ½ l Essig dazu."
+
+
+@pytest.mark.parametrize(
+    "quote",
+    ["5 Zwiebeln", "3 Lorbeerblätter", "9 Zwiebeln in Scheiben", "4 Zwiebeln in Scheiben und gibt 3 Lorbeerblätter"],
+)
+def test_a_changed_number_is_not_accepted_as_transcription_noise(quote):
+    assert not quote_in_text(quote, STEP)
+
+
+def test_noise_in_words_is_still_tolerated_when_the_numbers_match():
+    assert quote_in_text("4 Zwiebeln in Scheibn", STEP)
+    assert quote_in_text("gibt 2 Lorberblätter und", STEP)
+
+
+def test_fraction_sign_and_slash_are_the_same_number_in_a_near_match():
+    assert quote_in_text("und 1/2 l Esig dazu", STEP)
+
+
+def test_a_number_at_the_edge_of_the_window_is_read_in_full():
+    page = "Dann 12 Eier schlagen und alles gut verrühren."
+    assert quote_in_text("Dann 12 Eier schlagn", page)
+    assert not quote_in_text("Dann 13 Eier schlagn", page)
+
+
+def test_an_article_gained_or_lost_does_not_count_as_a_number():
+    assert quote_in_text("add a pinch of salt and stir well", "add the pinch of salt and stir well")
+
+
+def test_a_changed_number_word_is_not_accepted_either():
+    assert not quote_in_text("fünf Zwiebeln in Scheiben schneiden", "vier Zwiebeln in Scheiben schneiden")
