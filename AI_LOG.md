@@ -327,3 +327,30 @@ reported). The evaluation had to run from an empty cache and came back
 315/316: the skewer is listed again, and one recipe got 16 steps where the
 check allows 8 to 14. That difference is the model's variation between runs,
 not this change.
+
+## Session 11: a recipe in two parts shorted the shopping list
+
+**Asked:** I ran a hand-drawn Napoleon cake card through the web page. It
+lists ingredients "for the dough" and "for the cream", and eggs and sugar
+appear in both.
+
+**What came out:** 2 eggs instead of 3, 70 g sugar instead of 180 g, 200 g
+flour instead of 230 g. Warnings said so, but the ingredient table was wrong.
+The drawings (milk bottle, egg, strawberries, vanilla) were correctly ignored,
+and the nutrition block was not read as servings.
+
+**Cause:** two places. The prompt said "if an ingredient appears several
+times, keep one entry", written for "salt" and "salt to taste" in the
+Sauerbraten. And the code's duplicate merge would have collapsed two entries
+with the same name anyway, keeping one amount.
+
+**What changed:** the prompt (now version 5) asks for one entry per recipe
+part, named like "sugar (cream)", and says never to add or drop amounts. The
+code no longer merges two entries with different exact amounts; it keeps
+both and adds a warning. Three new tests. The card now gives all ten lines:
+2 + 1 eggs, 70 + 110 g sugar, 200 + 30 g flour (the 30 g line names no
+ingredient, so flour is marked as guessed). The image itself is not in the
+repository: it came from the web and its licence is unknown.
+**Evaluation with prompt v5:** 315/316. No check got worse because of the
+change; the one failure is a step count (11 steps where the check allows 6 to
+10), the same kind of run-to-run variation as before.

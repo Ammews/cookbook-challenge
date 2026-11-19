@@ -16,7 +16,7 @@ Sauerbraten from 1887; the pipeline is also measured on an
 | Sauerbraten, first run | 3 model calls, ≈ 38 s, **≈ $0.006** (repeat runs: $0, from cache) |
 | Evaluation set (12 inputs, 4 languages) | **315/316** checks passed, **≈ $0.05** for the whole set |
 | Fraktur page from 1879 vs human transcription | **99 %** character similarity |
-| Tests | 302, no network or API key needed (10 of them need the optional web extra) |
+| Tests | 305, no network or API key needed (10 of them need the optional web extra) |
 | Model | Claude Haiku 5.5 for reading and extracting; everything else is plain code |
 
 ## Run it
@@ -176,7 +176,11 @@ volunteers' transcription.
   with the same original or English name ("Salt" and "salt to taste") become
   one, the most precise amount is kept, steps are pointed at the survivor, and
   a warning says what was merged. Different things with similar names
-  (*Korinthen* and *Rosinen*) stay apart.
+  (*Korinthen* and *Rosinen*) stay apart. Two **different exact amounts are
+  never merged**: a cake card with "2 eggs" for the dough and "1 egg" for the
+  cream needs 3 eggs, and merging them shorted the shopping list. The prompt
+  asks for one entry per recipe part ("sugar (cream)"), and the code keeps
+  both entries with a warning if the model still gives them the same name.
 - The prompt asks to extract only the recipe (not notes, variations or side
   dishes), to report how many recipes the document holds, and to refuse
   documents that are not recipes.
@@ -324,7 +328,7 @@ a model writing the answer key for another model is circular until a human
 confirms it. The first run already found **errors in my checks** (Portuguese
 tool names, a legitimate intermediate counted as a duplicate) and **one real
 weakness** (the oven was not listed as a tool), fixed with one line in the
-prompt. First run 287/294, after the fixes **294/294**. With the vegan refactor (prompt v4) and a twelfth case built from vegan traps: **316/317** (the one failure: the model stopped listing the skewer in the pound cake). A later run from an empty cache gave **315/316**: the skewer came back, and the paprikash came out with 16 steps where the check allows 8 to 14. Both are the model's run-to-run variation, not a code change. Report:
+prompt. First run 287/294, after the fixes **294/294**. With the vegan refactor (prompt v4) and a twelfth case built from vegan traps: **316/317** (the one failure: the model stopped listing the skewer in the pound cake). A later run from an empty cache gave **315/316**: the skewer came back, and the paprikash came out with 16 steps where the check allows 8 to 14. Both are the model's run-to-run variation, not a code change. With prompt v5 (one entry per recipe part) it is again **315/316**; the one failure is the chocolate chip cookies coming out with 11 steps where the check allows 6 to 10. Report:
 [`evals/results/latest.md`](evals/results/latest.md). A perfect score on 11
 cases whose checks I have not reviewed yet is a starting point, not proof.
 
