@@ -73,6 +73,89 @@ file ──► 1 INGEST ──► Document ──► 2 EXTRACT ──► Recipe 
          by content     + how read    + code check    has a Source    scale, vegan
 ```
 
+### The flow, step by step
+
+Orange is the model, green is code, red is where the flow stops or warns the
+reader, dashed boxes are the cache.
+
+```mermaid
+flowchart TD
+  A(["File: PDF, image or text"]) --> B{"File type, from the first bytes"}
+  B -->|other| X["Reject: unsupported type"]
+
+  subgraph S1["1 · Ingest"]
+    B -->|text| T["TextReader reads the file"]
+    B -->|PDF| P{"Does this page have a text layer with 40+ characters?"}
+    B -->|image| J
+    P -->|yes| M["PyMuPDF reads the text layer"]
+    P -->|"no: it is a scan"| J["Render JPEG, up to 2000 px"]
+    J --> C1{"Transcription already cached?"}
+    C1 -->|no| V["Vision model transcribes in the original language: running text, decoration text, uncertain words"]
+    V --> K1[".cache/transcriptions"]
+    C1 -->|yes| D
+    K1 --> D
+    T --> D
+    M --> D
+    D["Document: pages joined with page markers"]
+  end
+
+  subgraph S2["2 · Extract"]
+    D --> E["Model reads the text and fills the schema: ingredients (one entry per recipe part), amount and kind, exact quote, read or inferred, optional, intermediate, animal content, tools, steps, servings"]
+    E --> K2[".cache/extractions"]
+    K2 --> R{"Is it a recipe?"}
+    R -->|no| NR["Refuse: not a recipe"]
+    R -->|yes| G["Code checks: quote is in the text, exact or 85% similar in words with the same numbers; read number is in its own quote; step ids exist"]
+    G --> GP{"Problems found?"}
+    GP -->|yes| CORR["Model answers again with the list of problems: one round only"]
+    CORR --> G2["Code checks again"]
+    G2 --> GP2{"Problems left?"}
+    GP2 -->|yes| DEM["Demote to inferred and add a review warning"]
+    GP -->|no| MAP
+    GP2 -->|no| MAP
+    DEM --> MAP
+    MAP["Build the Recipe: merge same-name duplicates with a warning, but never two different exact amounts (2 eggs for the dough + 1 for the cream stay separate); unique ids"]
+  end
+
+  subgraph S3["3 · Manipulate: code only, pure functions"]
+    MAP --> QV{"--vegan?"}
+    QV -->|yes| VA{"Animal content of the ingredient"}
+    VA -->|none| VK["Keep"]
+    VA -->|uncertain| VU["Keep and warn: could not tell"]
+    VA -->|"meat, dairy, egg..."| VT{"Row in the YAML table for that category?"}
+    VT -->|yes| VS["Replace and add a note to the steps that use it"]
+    VT -->|no| VN["Keep and warn: Not fully vegan"]
+    VK --> QS
+    VU --> QS
+    VS --> QS
+    VN --> QS
+    QV -->|no| QS{"--servings?"}
+    QS -->|yes| SB{"Servings read on the page or estimated by the model?"}
+    SB -->|no| SA{"--assume-servings given?"}
+    SA -->|no| SE["Stop: ask for --assume-servings"]
+    SA -->|"yes: labelled assumed by the user"| SC
+    SB -->|yes| SC["Exact amounts x factor, as fractions; counted items rounded; vague, to-taste and times unchanged, with a note; factor 1.5+ warns about the pot"]
+    SC --> QM
+    QS -->|no| QM{"--metric?"}
+    QM -->|yes| MT["Convert to ml, l, g, kg"]
+  end
+
+  subgraph S4["4 · Output"]
+    OUT["Markdown and JSON: source of every value, table of changes, Check before cooking list, cost"]
+  end
+  MT --> OUT
+  QM -->|no| OUT
+  NR --> OUT
+
+  classDef ai fill:#e2a65a40,stroke:#c27a22,stroke-width:2px
+  classDef code fill:#3fa69640,stroke:#1f6f66,stroke-width:1.5px
+  classDef stop fill:#d0594440,stroke:#a23b2a,stroke-width:2px
+  classDef cache fill:transparent,stroke:#7d8a85,stroke-dasharray:5 4
+  class V,E,CORR ai
+  class T,M,J,D,G,G2,MAP,VK,VS,SC,MT,OUT code
+  class X,NR,DEM,VU,VN,SE stop
+  class K1,K2 cache
+```
+
 | Module | What it does | LLM? |
 | --- | --- | --- |
 | `ingest/detect.py` | Decides PDF / image / text from the file's bytes, not its extension | no |
